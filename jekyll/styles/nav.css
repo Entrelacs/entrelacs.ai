@@ -1,0 +1,138 @@
+/* Navbar.module.css */
+
+.navbar {
+  background-color: var(--nav-color);
+  color: var(--dark-blue);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.container {
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.navLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-weight: 3400;
+  transition: color 0.3s ease;
+  font-size: .8rem;
+}
+.navLinks a:hover {
+  color: #555;
+}
+
+.navLinks .cta{
+  background: var(--orange);
+  color: #fff;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  border-radius: 18px;
+}
+
+/* Hamburger menu icon (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 20;
+}
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: var(--dark-blue);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Dropdown menu for mobile */
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: var(--nav-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 0 0 10px 10px;
+  min-width: 180px;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 15;
+}
+.mobileMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.mobileMenu li {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+.mobileMenu a {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.mobileMenu .cta {
+  background: var(--orange);
+  color: #fff;
+  border-radius: 18px;
+  padding: 10px 15px;
+  width: fit-content;
+  display: inline-block;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}

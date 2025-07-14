@@ -1,0 +1,59 @@
+<footer class="footer">
+
+  <!-- Top Section: Logo & Nav Links -->
+  <div class="topSection">
+
+    <!-- Left Side: Logo and Company Name -->
+    <div class="companyInfoContainer">
+      <div class="logoContainer">
+        <img src="/images/logo.png" alt="Entrelacs Logo" width="120" height="120">
+      </div>
+      <h3 class="companyName">Entrelacs</h3>
+    </div>
+
+    <!-- Right Side: Three Columns of Links -->
+    <div class="linksContainer">
+
+      <div class="linkColumn">
+        <h4>What is Entrelacs?</h4>
+        <ul>
+          <li><a href="/about">Technology</a></li>
+          <li><a href="/careers">Reserch</a></li>
+        </ul>
+      </div>
+
+      <div class="linkColumn">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/integrations">Leadership Team</a></li>
+          <li><a href="/case-studies">Panel of Advisers</a></li>
+        </ul>
+      </div>
+
+      <div class="linkColumn">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="/help-center">absl.io</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Section: Legal & Copyright -->
+  <div class="bottomSection">
+    <p id="copyright"></p>
+    <div class="legalLinks">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-of-service">Terms of Use</a>
+      <a href="/legal-mentions">Legal Mentions</a>
+    </div>
+  </div>
+
+</footer>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById('copyright').textContent =
+    `© ${currentYear} Entrelacs. All Rights Reserved.`;
+</script>
