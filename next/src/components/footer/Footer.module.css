@@ -1,0 +1,152 @@
+/* components/Footer.module.css */
+
+.footer {
+    width: 100vw;
+    min-height: 400px;
+    background-color: var(--sea-blue);
+    /* A very dark, rich black */
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0 1.5rem;
+    /* Generous top padding */
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 50px;
+}
+
+.companyInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    /* Spacing between logo and name */
+}
+.companyInfoContainer img{
+    width: 128px;
+    height: 128px;   
+}
+
+.companyName {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.logoContainer{
+    padding: 13px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+}
+.linksContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.linkColumn h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin: 0 0 1.5rem;
+}
+
+.linkColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* Tighter spacing for links */
+}
+
+.linkColumn a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.linkColumn a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Bottom section with a clean line divider */
+.bottomSection {
+    border-top: 1px solid var(--sky-blue);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    /* Spacing from the top section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.legalLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.legalLinks a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.legalLinks a:hover {
+    color: #fff;
+}
+
+
+@media (max-width: 800px) {
+    .topSection{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linksContainer{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .linkColumn h4{
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .linksContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkColumn{
+        margin-bottom: 60px;
+    }
+}
