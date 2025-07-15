@@ -121,7 +121,8 @@
   display: inline-block;
 }
 
-@media (max-width: 650px) {
+
+@media (max-width: 900px) {
   .container {
     padding: 0 20px;
   }
