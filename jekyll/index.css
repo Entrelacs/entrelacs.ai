@@ -190,6 +190,9 @@
         margin-bottom: 80px;
         text-align: center;
     }
+    .content p{
+        text-align: center;
+    }
 
     .contentRight {
         width: 100%;
@@ -306,6 +309,15 @@
         margin-top: 50px;
         width: 100%;
         padding-left: 0px;
+    }
+    .sr1img{
+        margin-right: 0;
+        width: 50px;
+        height: 40px;
+    }
+    .sr1img svg{
+        width: 40px;
+        height: 40px;
     }
 }
 
