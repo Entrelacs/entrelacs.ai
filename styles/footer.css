@@ -91,7 +91,7 @@
 
 /* Bottom section with a clean line divider */
 .bottomSection {
-    border-top: 1px solid var(--sky-blue);
+    /* border-top: 1px solid var(--sky-blue); */
     padding-top: 1.5rem;
     margin-top: 2rem;
     /* Spacing from the top section */
@@ -123,6 +123,15 @@
     border: none;
 }
 
+.footerSocials{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.footerSocials svg{
+    width: 32px;
+    height: 32px;
+}
 
 
 @media (max-width: 800px) {
