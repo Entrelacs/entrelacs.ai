@@ -11,13 +11,13 @@
   width: 100%;
 }
 
-.container {
+.nav_container {
   height: 60px;
-  margin: 0 auto;
-  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -25,6 +25,7 @@
   font-size: 1.2rem;
   text-decoration: none;
   display: flex;
+  color: var(--dark-blue);
   align-items: center;
 }
 .logo img{
@@ -47,17 +48,19 @@
   font-weight: 3400;
   transition: color 0.3s ease;
   font-size: .8rem;
+  color: var(--dark-blue);
 }
 .navLinks a:hover {
   color: #555;
 }
 
 .navLinks .cta{
-  background: var(--orange);
-  color: #fff;
   box-sizing: content-box;
   padding: 10px 15px;
   border-radius: 18px;
+}
+.navLinks .cta a{
+  color: #fff;
 }
 
 /* Hamburger menu icon (hidden by default) */
@@ -123,8 +126,8 @@
 
 
 @media (max-width: 900px) {
-  .container {
-    padding: 0 20px;
+  .nav_container {
+    padding: 0 24px;
   }
   .navLinks {
     display: none;

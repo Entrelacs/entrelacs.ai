@@ -1,61 +1,56 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrelacs</title>
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  {%- include head.html -%}
+  <style type="text/css" media="screen">
+    .container {
+      margin: 100px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 4em;
+      font-weight: 100;
+      line-height: 1.3;
+      letter-spacing: -1px;
+    }
+
+    .images {
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 80px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+    }
+  </style>
+
 </head>
 
 <body>
+  {%- include navBar.html -%}
+  <div class="container">
+    <div class="images">
+      <img src="/images/logo.png" alt="">
+    </div>
+    <h1>404</h1>
+    <p><strong>Sorry but this page does not exist</strong></p>
+  </div>
 
 </body>
 
 </html>
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    font-weight: 100;
-    line-height: 1.3;
-    letter-spacing: -1px;
-  }
-  .images{
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    background: #fff;
-  }
-  .images img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  p{
-    font-size: 16px;
-    font-weight: 100;
-  }
-</style>
-
-<div class="container">
-  <div class="images">
-  <img src="/images/dancing_robot.gif" alt="">
-  <img src="/images/dance2.gif" alt="">
-  <img src="/images/dancing3.gif" alt="">
-  <img src="/images/dancing4.gif" alt="">
-
-  </div>
-  <h1>Uhmm guys... what's going on?<br> This page hasn't been built yet.</h1>
-
-  <p><strong>Sorry but this page does not exist</strong></p>
-  <p>Clearly we need to have a word with our workers</p>
-</div>
