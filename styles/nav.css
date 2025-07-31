@@ -55,8 +55,6 @@
 }
 
 .navLinks .cta{
-  background: var(--orange);
-  color: #fff !important;
   box-sizing: content-box;
   padding: 10px 15px;
   border-radius: 18px;

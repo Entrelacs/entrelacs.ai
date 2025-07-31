@@ -94,11 +94,6 @@
     font-size: 1.4em;
 }
 
-.contentCta button:first-child {
-    border: none;
-    background: var(--orange);
-    color: #fff;
-}
 
 .contentCta button:last-child {
     border: 1px var(--background) solid;

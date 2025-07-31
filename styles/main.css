@@ -56,15 +56,15 @@ img{
 .cta {
   display: block;
     border: none;
-    background: var(--orange);
-    color: #fff;
+    background: var(--orange) !important;
+    color: #fff !important;
     padding: 10px 18px;
     border-radius: 14px;
     font-size: 1.5em;
     cursor: pointer;
 }
 .cta:hover{
-  opacity: .8;
+  background: var(--yellow) !important;
 }
 
 .main_container{
