@@ -51,3 +51,36 @@ img{
   height: 100%;
   object-fit: cover;
 }
+
+
+.cta {
+  display: block;
+    border: none;
+    background: var(--orange);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 14px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.cta:hover{
+  opacity: .8;
+}
+
+.main_container{
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+@media (max-width: 1100px) {
+  .main_container{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 650px) {
+  .main_container{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

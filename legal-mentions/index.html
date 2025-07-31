@@ -1,120 +1,107 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions Légales - ENTRELACS</title>
+  {% include head.html %}
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-
     .container {
       max-width: 800px;
       margin: 40px auto;
-      background: #fff;
-      padding: 40px;
+      padding: 60px 25px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    h1, h2 {
-      color: #2c3e50;
-    }
+    h1{
+      font-size: 2.4em;
+      line-height: .9;
+      margin-bottom: 30px;
 
-    h1 {
-      font-size: 2em;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
     }
-
-    h2 {
+    h2{
+      font-size: 1.8em;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--dark-blue);
+    }
+    p{
       font-size: 1.4em;
-      margin-top: 30px;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
-
-    p {
-      margin: 12px 0;
-    }
-
-    a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-
-    a:hover {
+    a{
       text-decoration: underline;
-    }
-
-    .contact-info, .address {
-      margin: 8px 0;
-    }
-
-    .footer-note {
-      font-size: 0.9em;
-      color: #777;
-      margin-top: 40px;
-      border-top: 1px solid #eee;
-      padding-top: 20px;
+      color: var(--sky-blue);
     }
   </style>
 </head>
+
 <body>
+  {% include navBar.html %}
 
   <div class="container">
     <h1>Mentions Légales</h1>
 
-    <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique (LCEN), il est porté à la connaissance des utilisateurs et visiteurs du site les présentes mentions légales.</p>
+    <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance
+      dans l’économie numérique (LCEN), il est porté à la connaissance des utilisateurs et visiteurs du site les
+      présentes mentions légales.</p>
 
     <h2>1. Éditeur du site</h2>
     <p><strong>ENTRELACS</strong><br>
-    Société par actions simplifiée (SAS) au capital social de 17 125,00 €<br>
-    Immatriculée au Registre du Commerce et des Sociétés d’Annecy sous le numéro 988 841 862 R.C.S. Annecy<br>
-    Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France<br>
-    Date d’immatriculation : 10 juillet 2025</p>
-    <p class="contact-info">
-      E-mail : <a href="mailto:sen@absl.io">sen@absl.io</a><br>
-      Téléphone : 07 83 81 88 11
+      Société par actions simplifiée (SAS) au capital social de 17 125,00 €<br>
+      Immatriculée au Registre du Commerce et des Sociétés d’Annecy sous le numéro 988 841 862 R.C.S. Annecy<br>
+      Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France<br>
+      <strong>d'immatriculation :</strong> 10 juillet 2025 <br>
+      <strong>E-mail :</strong> <a href="mailto:sen@absl.io">sen@absl.io</a><br>
+      <strong>Téléphone :</strong> 07 83 81 88 11
     </p>
 
     <h2>2. Directeur de la publication</h2>
     <p>Le directeur de la publication est le Président de la société ENTRELACS :</p>
     <p><strong>Annecy Behavioral Science Lab</strong><br>
-    Société par actions simplifiée à associé unique (SASU)<br>
-    RCS Annecy n° 892 741 430<br>
-    Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France</p>
+      Société par actions simplifiée à associé unique (SASU)<br>
+      RCS Annecy n° 892 741 430<br>
+      Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France</p>
 
     <h2>3. Hébergeur du site</h2>
     <p>Le site est actuellement hébergé par :</p>
-    <p><strong>Hostinger International Ltd.</strong><br>
-    Adresse : 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>
-    Téléphone : +370.645.03378<br>
-    Site web : <a href="https://www.hostinger.fr" target="_blank">https://www.hostinger.fr</a></p>
+    <p>Hostinger International Ltd.<br>
+      Adresse : 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>
+      Téléphone : +370.645.03378<br>
+      Site web : <a href="https://www.hostinger.fr" target="_blank">https://www.hostinger.fr</a></p>
 
     <p>Une migration vers Google Cloud Platform est prévue. À terme, l’hébergement sera assuré par :</p>
     <p><strong>Google Cloud EMEA Ltd.</strong><br>
-    Adresse : 70 Sir John Rogerson's Quay, Dublin 2, Irlande<br>
-    Site web : <a href="https://cloud.google.com" target="_blank">https://cloud.google.com</a></p>
+      Adresse : 70 Sir John Rogerson's Quay, Dublin 2, Irlande<br>
+      Site web : <a href="https://cloud.google.com" target="_blank">https://cloud.google.com</a></p>
 
     <h2>4. Conditions d’utilisation</h2>
-    <p>L’utilisation du site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites sur le site. Celles-ci peuvent être modifiées ou complétées à tout moment.</p>
+    <p>L’utilisation du site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites
+      sur le site. Celles-ci peuvent être modifiées ou complétées à tout moment.</p>
 
     <h2>5. Propriété intellectuelle</h2>
-    <p>L’ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de la société ENTRELACS, sauf mentions contraires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable.</p>
+    <p>L’ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de la
+      société ENTRELACS, sauf mentions contraires. Toute reproduction, représentation, modification, publication,
+      adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable.</p>
 
     <h2>6. Protection des données personnelles</h2>
-    <p>Le site respecte les dispositions légales relatives à la protection des données personnelles. Pour toute information ou demande relative à la collecte, au traitement ou à la suppression de vos données, veuillez contacter : [adresse e-mail dédiée à la protection des données].</p>
+    <p>Le site respecte les dispositions légales relatives à la protection des données personnelles. Pour toute
+      information ou demande relative à la collecte, au traitement ou à la suppression de vos données, veuillez
+      contacter : [adresse e-mail dédiée à la protection des données].</p>
 
     <h2>7. Cookies</h2>
-    <p>Le site peut être amené à utiliser des cookies. L’utilisateur est libre d’accepter ou de refuser ces cookies via les paramètres de son navigateur ou par une bannière de consentement affichée lors de la première visite.</p>
+    <p>Le site peut être amené à utiliser des cookies. L’utilisateur est libre d’accepter ou de refuser ces cookies via
+      les paramètres de son navigateur ou par une bannière de consentement affichée lors de la première visite.</p>
 
     <p class="footer-note">Dernière mise à jour : 10 juillet 2025</p>
   </div>
+  {% include footer.html %}
 
 </body>
+
 </html>

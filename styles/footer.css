@@ -9,16 +9,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 0 1.5rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
     /* Generous top padding */
 }
 
 .topSection {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 0 2rem;
     margin-bottom: 50px;
 }
 
@@ -29,8 +28,8 @@
     /* Spacing between logo and name */
 }
 .companyInfoContainer img{
-    width: 50px;
-    height: 50px;   
+    width: 60px;
+    height: 60px;   
 }
 
 .companyName {
@@ -40,8 +39,6 @@
     text-align: center;
 }
 .logoContainer{
-    padding: 13px;
-    background-color: #fcfcfc;
     border-radius: 50%;
     /* min-width: 128px;
     min-height: 128px;    */
@@ -60,11 +57,11 @@
 
 .linkColumn h4 {
     /* text-transform: uppercase; */
-    font-size: 1.7em;
-    font-weight: 300;
+    font-size: 1.6em;
+    font-weight: 600;
     letter-spacing: 0.05em;
+    margin-bottom: 15px;
     color: #fff;
-    margin: 0 0 0.5rem;
 }
 
 .linkColumn ul {
@@ -88,6 +85,20 @@
     color: #fff;
     text-decoration: underline;
 }
+
+
+
+.footerSponsers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.footerSponsersImg{
+    width: 80px;
+    height: auto;
+}
+
 
 /* Bottom section with a clean line divider */
 .bottomSection {
@@ -126,11 +137,11 @@
 .footerSocials{
     display: flex;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .footerSocials svg{
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -145,7 +156,7 @@
         width: 100%;
     }
     .linkColumn h4{
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 5px;
     }
 }
