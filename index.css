@@ -115,7 +115,7 @@
     width: 70vw;
     height: auto;
     max-width: 300px;
-    aspect-ratio: 9/18;
+    aspect-ratio: 9/20;
     background: #000;
     border: 5px solid #000;
     border-radius: 40px;
@@ -129,7 +129,7 @@
 
 .smaller_iphone {
     width: 250px;
-    height: 500px;
+    height: 600px;
 }
 
 .screen {
