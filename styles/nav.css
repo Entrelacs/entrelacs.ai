@@ -1,9 +1,8 @@
 /* Navbar.module.css */
 
 .navbar {
-  background-color: var(--nav-color);
-  color: var(--dark-blue);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--teal-background); 
+  backdrop-filter: blur(100px);
   z-index: 10;
   position: fixed;
   top: 0px;
@@ -16,22 +15,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
   margin: 0 auto;
+  padding: 0 80px;
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 24px;
   text-decoration: none;
   display: flex;
   color: var(--dark-blue);
   align-items: center;
 }
 .logo img{
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+@media (max-width: 750px) {
+  .logo img{
+    width: 40px;
+    height: 40px;
+  }
+  .nav_container{
+    height: 60px;
+  }
 }
 
 .navLinks {
@@ -45,22 +53,17 @@
 
 .navLinks a {
   text-decoration: none;
-  font-weight: 3400;
+  font-weight: 500;
   transition: color 0.3s ease;
-  font-size: .8rem;
-  color: var(--dark-blue);
+  font-size: 16px;
 }
 .navLinks a:hover {
   color: #555;
 }
 
-.navLinks .cta{
-  box-sizing: content-box;
-  padding: 10px 15px;
-  border-radius: 18px;
-}
-.navLinks .cta a{
-  color: #fff;
+.navLinks .cta {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* Hamburger menu icon (hidden by default) */
@@ -88,13 +91,14 @@
   position: absolute;
   top: 60px;
   right: 0;
-  background: var(--nav-color);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   border-radius: 0 0 10px 10px;
   min-width: 180px;
   width: 100%;
   padding: 1rem 0;
   z-index: 15;
+  background: #eaf6f3; 
+  backdrop-filter: blur(100px);
 }
 .mobileMenu ul {
   list-style: none;
@@ -116,12 +120,8 @@
   font-weight: 400;
 }
 .mobileMenu .cta {
-  background: var(--orange);
-  color: #fff;
-  border-radius: 18px;
-  padding: 10px 15px;
   width: fit-content;
-  display: inline-block;
+  height: 40px;
 }
 
 
