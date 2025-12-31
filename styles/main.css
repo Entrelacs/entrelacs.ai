@@ -6,6 +6,7 @@
   --background: #f9f7f6;
   --secondary-bg: #eee;
   --text-base: #080808;
+  --text-gray: #5D6A6A;
   --text-lighter: #637475;
 
   --charcoal: #4b4b4b;
@@ -13,12 +14,17 @@
   --orange: #f5bb3e;
   --yellow: #fdd65d;
   --dark-blue: #014656;
+  --navy-blue: #132C47;
   --sea-blue: #00a2ad;
   --sky-blue: #81CED3;
   --teal: #1CAFBF;
   --teal-light: #CDE8EC;
+  --teal-900: #092627;
   --teal-background: #def3f680;
   --tangerine: #002627;
+
+  --green-200: #2E474A;
+  --green-500: #041A1E;
 
   --error-50: #FFE1DA;
   --error-700: #DF2107;
