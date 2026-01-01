@@ -7,6 +7,7 @@
   --secondary-bg: #eee;
   --text-base: #080808;
   --text-gray: #5D6A6A;
+  --text-gray2: #495050;
   --text-lighter: #637475;
 
   --charcoal: #4b4b4b;
@@ -17,6 +18,7 @@
   --sea-blue: #00a2ad;
   --sky-blue: #81CED3;
   --teal: #1CAFBF;
+  --teal-dark: #156B70;
   --teal-light: #CDE8EC;
   --teal-900: #092627;
   --teal-background: #def3f680;
@@ -26,6 +28,7 @@
   --green-500: #041A1E;
 
   --error-50: #FFE1DA;
+  --error-500: #FD4F35;
   --error-700: #DF2107;
   --success-50: #ECFDF3;
   --success-700: #027A48;
@@ -33,14 +36,15 @@
   --brown: #946d65;
 }
 
-
-body {
+html, body {
   color: var(--text-base);
   background: var(--background);
   font-family: "DM Sans" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 * {
@@ -102,7 +106,7 @@ img{
 }
 
 .page{
-  width: 100vw;
+  width: 100%;
 }
 
 .pageItem{
