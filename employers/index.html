@@ -39,8 +39,16 @@
             <div class="tag red">The Problem</div>
             <h2>Social Disconnection: The Hidden Driver of Turnover</h2>
             <p class="lsectionP">Social connection drives retention and performance, yet organizations lack visibility
-                into belonging until exit interviews—making support and intervention come too late.</p>
+                into belonging until exit interviews—making support and intervention come too late.
+            </p>
+
+            {% assign stats =
+            "36% of workers feel lonely at work|Lonely employees are 2× more likely to quit|Replacing talent costs
+            50–200% of salary|A 500-person company loses $7.5M yearly to avoidable turnover"
+            | split: "|"
+            %}
             <ul class="ulCheckmark red" style="margin-top: 30px;">
+                {% for item in stats %}
                 <li>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="20" fill="#F4E6E8" />
@@ -48,36 +56,19 @@
                             d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
                             fill="#FD4F35" />
                     </svg>
-                    <p><span>36%</span> of workers feel lonely at work</p>
+
+                    <p>
+                        {{ item
+                        | replace: "36%", "<span>36%</span>"
+                        | replace: "2×", "<span>2×</span>"
+                        | replace: "50–200%", "<span>50–200%</span>"
+                        | replace: "$7.5M", "<span>$7.5M</span>"
+                        }}
+                    </p>
                 </li>
-                <li>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="20" fill="#F4E6E8" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
-                            fill="#FD4F35" />
-                    </svg>
-                    <p>Lonely employees are <span>2×</span> more likely to quit</p>
-                </li>
-                <li>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="20" fill="#F4E6E8" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
-                            fill="#FD4F35" />
-                    </svg>
-                    <p>Replacing talent costs <span>50–200%</span> of salary</p>
-                </li>
-                <li>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="20" fill="#F4E6E8" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
-                            fill="#FD4F35" />
-                    </svg>
-                    <p>A 500-person company loses <span>$7.5M</span> yearly to avoidable turnover</p>
-                </li>
+                {% endfor %}
             </ul>
+
         </div>
 
 
@@ -94,7 +85,15 @@
                     <p>Employees engage in brief, conversational check-ins (5-7 minutes) about their social
                         connection—both generally and specifically within their work team.</p>
                     <h3>What we measure:</h3>
+
+                    {% assign items =
+                    "Different types of social needs (deep 1-on-1 connections vs. group belonging)|Connection quality
+                    across various relationship contexts|Individual patterns and preferences in how they build
+                    relationships|Early warning signs specific to that person's baseline"
+                    | split: "|"
+                    %}
                     <ul class="ulCheckmark">
+                        {% for text in items %}
                         <li>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -103,39 +102,12 @@
                                     d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
                                     fill="#1CAFBF" />
                             </svg>
-                            <p>Different types of social needs (deep 1-on-1 connections vs. group belonging)</p>
+
+                            <p>{{ text }}</p>
                         </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Connection quality across various relationship contexts</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Individual patterns and preferences in how they build relationships</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Early warning signs specific to that person's baseline</p>
-                        </li>
+                        {% endfor %}
                     </ul>
+
                 </div>
 
                 <div class="arrayItem">
@@ -147,7 +119,16 @@
                     <p>Each employee receives confidential insights about their social connection patterns and
                         practical, personalized recommendations tailored to their unique needs and style.</p>
                     <h3>Employee benefits:</h3>
+
+                    {% assign items =
+                    "Understanding their connection style and what they specifically need|Early awareness of
+                    disconnection before it impacts mental health or career|Actionable strategies matched to their
+                    situation (not generic \"virtual happy hour\" advice)|Validation that others experience similar
+                    challenges"
+                    | split: "|"
+                    %}
                     <ul class="ulCheckmark">
+                        {% for text in items %}
                         <li>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -156,39 +137,10 @@
                                     d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
                                     fill="#1CAFBF" />
                             </svg>
-                            <p>Understanding their connection style and what they specifically need</p>
+
+                            <p>{{ text }}</p>
                         </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Early awareness of disconnection before it impacts mental health or career</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Actionable strategies matched to their situation (not generic "virtual happy hour"
-                                advice)</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Validation that others experience similar challenges</p>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
 
@@ -201,7 +153,13 @@
                     <p>With employee consent, anonymized and aggregated data provides HR teams and managers with
                         unprecedented visibility into team dynamics and organizational connection health</p>
                     <h3>What you'll see:</h3>
+
+                    {% assign items =
+                    "Early warning system|Predictive analytics|Team-level patterns|Trends over time:"
+                    | split: "|"
+                    %}
                     <ul class="ulCheckmark flex">
+                        {% for text in items %}
                         <li>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -210,38 +168,10 @@
                                     d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
                                     fill="#1CAFBF" />
                             </svg>
-                            <p>Early warning system</p>
+
+                            <p>{{ text }}</p>
                         </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Predictive analytics</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Team-level patterns</p>
-                        </li>
-                        <li>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
-                                    fill="#1CAFBF" />
-                            </svg>
-                            <p>Trends over time:</p>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
 

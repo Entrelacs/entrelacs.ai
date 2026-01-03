@@ -13,7 +13,7 @@
 
     <ul class="navLinks">
       <li><a href="/employers">Employers</a></li>
-      <li><a href="/technology">Healthcare</a></li>
+      <li><a href="/healthcare">Healthcare</a></li>
       <li><a href="/technology">Technology</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="/technology">Contact us</a></li>
@@ -24,11 +24,11 @@
 
     <div class="mobileMenu" id="mobileMenu" style="display: none;">
       <ul>
-      <li><a href="/employers">Employers</a></li>
-      <li><a href="/technology">Healthcare</a></li>
-      <li><a href="/technology">Technology</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/technology">Contact us</a></li>
+        <li><a href="/employers">Employers</a></li>
+        <li><a href="/healthcare">Healthcare</a></li>
+        <li><a href="/technology">Technology</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/technology">Contact us</a></li>
         <li class="cta"><a href="/#contact-us">Take Assessment</a></li>
       </ul>
     </div>
@@ -64,4 +64,22 @@
       spans[2].style.transform = 'none';
     });
   });
+
+  // Mark Nav item as active if the url matches it
+  function setActiveNav () {
+    const currentPath = window.location.pathname.replace(/\/$/, "");
+
+    document.querySelectorAll(".navLinks a").forEach(link => {
+      const linkPath = link.getAttribute("href").replace(/\/$/, "");
+
+      if (
+        currentPath === linkPath ||
+        currentPath.startsWith(linkPath + "/")
+      ) {
+        link.classList.add("navactive");
+      }
+    });
+
+  }
+  setActiveNav()
 </script>
