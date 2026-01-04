@@ -58,7 +58,7 @@
   font-size: 16px;
 }
 .navLinks a:hover {
-  color: #555;
+  color: var(--teal);
 }
 
 .navLinks .cta {
