@@ -31,9 +31,6 @@ main{
     color: var(--text-lighter);
 }
 @media (max-width: 650px) {
-    .content{
-        text-align: left;
-    }
     .content h1{
         font-size: 3.8em;
     }
@@ -52,7 +49,6 @@ main{
 
 
 .headerGroup{
-    padding: 80px 160px;
     text-align: center;
 }
 .headerGroup h2{
@@ -67,6 +63,7 @@ main{
     line-height: 1.5;
     color: var(--text-lighter);
 }
+
 
 
 
