@@ -45,8 +45,7 @@ main .cta {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
-    background: url('/images/videoplaceholder.webp') no-repeat center;
-    background-size: 100% 100%;
+    background: var(--teal-background);
 }
 
 #heroLogos {
