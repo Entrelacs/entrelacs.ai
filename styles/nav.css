@@ -1,10 +1,9 @@
 /* Navbar.module.css */
 
 .navbar {
-  background-color: var(--nav-color);
-  color: var(--dark-blue);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  background-color: var(--teal-background); 
+  backdrop-filter: blur(100px);
+  z-index: 100;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -12,26 +11,35 @@
 }
 
 .nav_container {
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
   margin: 0 auto;
+  padding: 0 80px;
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 24px;
   text-decoration: none;
   display: flex;
   color: var(--dark-blue);
   align-items: center;
 }
 .logo img{
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+@media (max-width: 750px) {
+  .logo img{
+    width: 40px;
+    height: 40px;
+  }
+  .nav_container{
+    height: 60px;
+  }
 }
 
 .navLinks {
@@ -45,21 +53,19 @@
 
 .navLinks a {
   text-decoration: none;
-  font-weight: 3400;
+  font-weight: 500;
   transition: color 0.3s ease;
-  font-size: .8rem;
-  color: var(--dark-blue);
+  font-size: 16px;
 }
 .navLinks a:hover {
-  color: #555;
+  color: var(--teal);
 }
 
-.navLinks .cta{
-  box-sizing: content-box;
-  padding: 10px 15px;
-  border-radius: 18px;
+.navLinks .cta {
+  font-weight: 700;
+  font-size: 16px;
 }
-.navLinks .cta a{
+.navLinks .cta:hover{
   color: #fff;
 }
 
@@ -88,13 +94,14 @@
   position: absolute;
   top: 60px;
   right: 0;
-  background: var(--nav-color);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   border-radius: 0 0 10px 10px;
   min-width: 180px;
   width: 100%;
   padding: 1rem 0;
   z-index: 15;
+  background: #eaf6f3; 
+  backdrop-filter: blur(100px);
 }
 .mobileMenu ul {
   list-style: none;
@@ -107,25 +114,22 @@
 }
 .mobileMenu li {
   text-align: center;
-  padding: 0 1.5rem;
+  padding: 5px 1.5rem;
 }
 .mobileMenu a {
   color: var(--dark-blue);
-  font-size: 1rem;
+  font-size: 16px;
   text-decoration: none;
   font-weight: 400;
 }
 .mobileMenu .cta {
-  background: var(--orange);
-  color: #fff;
-  border-radius: 18px;
-  padding: 10px 15px;
   width: fit-content;
-  display: inline-block;
+  height: 40px;
+  color: #fff;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .nav_container {
     padding: 0 24px;
   }
@@ -138,4 +142,8 @@
   .mobileMenu {
     display: block;
   }
+}
+
+.navactive{
+  color: var(--teal);
 }

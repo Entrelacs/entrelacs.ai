@@ -1,86 +1,356 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    {%- include head.html -%}
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrelacs</title>
+    {% include head.html %}
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    {%- include navBar.html -%}
-    <main>
-        <section class="hero">
-            <div class="overlayBackground">
-                <div class="ob1"></div>
-                <div class="ob2"></div>
+    {% include navBar.html %}
+    <main class="page">
+        <div id="hero" class="pageItem">
+            <div class="left">
+                <h2>TECHNOLOGY</h2>
+                <h1>How We're Transforming Mental Health Assessment</h1>
+                <p class="subheader"> Entrelacs combines dynamic psychometric modeling with conversational AI to create
+                    mental health assessments that adapt to each person in real-time,delivering more accurate insights
+                    with better user experience and less assessment burden</p>
+                <div class="ctas">
+                    <a href="/contact-us/" class="cta" style="color: var(--teal); background: var(--teal-light);">
+                        Contact Sales
+                    </a>
+                    <a href="/contact-us/" class="cta">Schedule a Demo</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="/images/employersHero.webp" alt="">
             </div>
 
-            <div class="content main_container">
-                <h1>Meet the Technology</h1>
-                <h2>AI Powered Psychometrics for the modern world.</h2>
-            </div>
-        </section>
-        <section class="main_container">
-            <h3>The Innovation</h3>
-            <br>
-            <p>
-                While significant research has focused on using large language models to generate psychological test items, we've taken the crucial next step: integrating LLMs directly into the assessment process itself. Current AI applications in mental health concentrate heavily on therapy chatbots and conversational interfaces—an increasingly saturated market. However, this focus overlooks a fundamental need: accurate, adaptive psychological assessments with clinical validity.
-            </p>
-            <br>
-            <h3>Our Approach</h3>
-            <br>
-            <p>
-                We address this critical gap by embedding advanced language models into the testing experience, enabling real-time, personalized question selection based on individual response patterns.
-            </p>
-            <div class="key-features">
-                <div class="feature">
-                    <h4>Dynamic Adaptation</h4>
-                    <p>Intelligent question selection that responds to individual response patterns</p>
-                </div>
-                <div class="feature">
-                    <h4>Enhanced Accuracy</h4>
-                    <p>More precise clinical insights through personalized assessment paths</p>
-                </div>
-                <div class="feature">
-                    <h4>Reduced Fatigue</h4>
-                    <p>Optimized question sequences minimize assessment burden</p>
-                </div>
-                <div class="feature">
-                    <h4>Clinical Validity</h4>
-                    <p>Maintained psychometric rigor with improved user engagement</p>
-                </div>
-            </div>
-            <br>
-            <h3>Market Opportunity</h3>
-            <br>
-            <p>
-                The psychometric assessment space represents an underexplored opportunity in healthcare technology. While the market remains crowded with AI therapy solutions, psychological assessment—the foundation of all effective mental health interventions—has seen limited innovation.
-            </p>
-            <p>
-                Our technology creates the infrastructure that enhances all downstream mental health treatments by providing more accurate, engaging, and clinically meaningful assessments. This positions us uniquely in a market ready for transformation.
-            </p>
-            <ul>
-                <li><b>Corporate Wellness:</b> Enterprise organizations seeking data-driven mental health solutions for employee screening, risk assessment, and wellness program effectiveness measurement. Our adaptive assessments provide actionable insights while maintaining employee privacy and engagement.</li>
-                <li><b>Third party integrations:</b> As digital therapy becomes increasingly automated, robust analytics on intervention effectiveness become critical. Our assessments provide both end-users and platform providers with precise measurement tools to optimize treatment outcomes and validate therapeutic approaches.</li>
-                <li><b>Healthcare providers:</b> Our strategic goal includes achieving medical device certification, positioning our technology as a validated clinical assessment tool for healthcare systems, psychiatric practices, and integrated care providers seeking evidence-based diagnostic support.</li>
+        </div>
+
+        <div class="pageItem lsection lcentered">
+            <div class="tag gray">The Innovation</div>
+            <h2>Dynamic Assessments That Evolve With You</h2>
+            <p class="lsectionP">Traditional mental health assessments ask everyone the same questions in the same
+                order. It's like having a doctor follow a rigid script instead of adapting to what you tell them. </p>
+
+            <h3 style="margin-top: 55px;">Entrelacs changes this by:</h3>
+            {% assign stats =
+            "Making assessments feel natural and conversational.|
+            Reducing burden by skipping unnecessary items.|
+            Learning each person’s unique response patterns.|
+            Probing deeper only where truly needed.|
+            Adapting questions instantly for relevance.|
+            Delivering faster, higher-precision clinical insights."
+            | split: "|"
+            %}
+            <ul class="ulCheckmark flex" style="margin-top: 30px;">
+                {% for item in stats %}
+                <li>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#EBEAEA" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                            fill="#495050" />
+                    </svg>
+
+
+                    <p>
+                        {{ item }}
+                    </p>
+                </li>
+                {% endfor %}
             </ul>
-            <br>
-            <h3>The Entrelacs Platform</h3>
-            <br>
-            <p>
-                The platform will be divided into two parts: an assessment app for clients to take the assessment and a web platform for mental health practitioners.
-            </p>
-            <p><b>The App:</b> From the App users are able to take weekly assessments and connect with their therapist, or sponsoring company. The mobile application provides a user-friendly interface for completing personalized psychological assessments, tracking progress over time, and maintaining seamless communication with healthcare providers.</p>
-            <p><b>The Platform:</b> Here HR executives will be able to monitor the wellbeing of their workforce and therapists of their clients. This comprehensive dashboard offers real-time analytics, customizable reporting features, and insights into mental health trends, enabling data-driven decisions to support employee wellness programs and clinical practice management.</p>
-            <p>
-                We are currently organizing beta tests with select organizations and healthcare providers to refine our platform and ensure it meets the highest standards of clinical effectiveness and user experience. If you are interested in participating or learning more about our solution, please <a href="/#contact-us">contact us</a>.
+            <div class="ctas" style="margin-top: 55px;">
+                <a href="/contact-us/" class="cta"
+                    style="background: transparent; color: var(--text-base); border: 1px solid var(--text-lighter);">Schedule
+                    a Demo</a>
+            </div>
+        </div>
 
+
+        <div class="pageItem lsection lcentered">
+            <div class="tag green">Our Technology</div>
+            <h2>Four Core Components</h2>
+            <div class="textPicItem orange">
+                <div class="content">
+                    <div class="text">
+                        <h3>Dynamic Psychometrics</h3>
+                        <p>Entrelacs uses dynamic psychometrics to capture how thoughts, emotions, and behaviors
+                            interact
+                            over time, revealing each person’s unique mental health fingerprint beyond what static
+                            questionnaires can show.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/images/technologyC1.webp" alt="">
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <p style="color: #F6A801;">Learn more</p>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 16.5L9.25 10.75L7.5 12.5L15 20L22.5 12.5L20.75 10.75L15 16.5Z" fill="#F6A801" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="textPicItem blue">
+                <div class="content">
+                    <div class="text">
+                        <h3>Large Language Models(LLM) for Personalized Assessment</h3>
+                        <p>LLMs are AI systems trained on vast amounts of text, enabling them to understand context,
+                            generate natural responses, and conduct coherent conversations. Rather than just matching
+                            keywords, LLMs comprehend nuance, tone, and meaning.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/images/technologyC2.webp" alt="">
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <p style="color: #245B99;">Learn more</p>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 16.5L9.25 10.75L7.5 12.5L15 20L22.5 12.5L20.75 10.75L15 16.5Z" fill="#245B99" />
+                    </svg>
+                </div>
+            </div>
+            <div class="textPicItem purple">
+                <div class="content">
+                    <div class="text">
+                        <h3>Behavioral Data Integration - Coming Soon</h3>
+                        <p>Behavioral data includes digital traces of daily life: communication frequency, activity
+                            levels, sleep patterns, location patterns, app usage. Services like Google Takeout allow
+                            users to export this data from platforms they already use.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/images/technologyC3.webp" alt="">
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <p style="color: #7B7CCC;">Learn more</p>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 16.5L9.25 10.75L7.5 12.5L15 20L22.5 12.5L20.75 10.75L15 16.5Z" fill="#7B7CCC" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="textPicItem green">
+                <div class="content">
+                    <div class="text">
+                        <h3>Multi-Dimensional Profiling - Coming Soon</h3>
+                        <p>Rather than screening for single conditions, the platform assesses multiple psychological
+                            dimensions simultaneously: social connection and loneliness, anxiety symptoms, depressive
+                            symptoms, stress and burnout indicators, and condition-specific symptomatology.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/images/technologyC4.webp" alt="">
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <p style="color: #6CDDAA;">Learn more</p>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 16.5L9.25 10.75L7.5 12.5L15 20L22.5 12.5L20.75 10.75L15 16.5Z" fill="#6CDDAA" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="pageItem lsection lcentered">
+            <h2>Technology That Fits Into Real Life</h2>
+            <p class="lsectionP2">The best assessment is one that people actually complete. We've designed our platform
+                to work in real-world settings—whether that's a busy workplace, a clinical practice, or someone's home.
             </p>
-        </section>
+            <div class="array2" style="margin-top: 60px;">
+                <div class="array2Item">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3568_19815)">
+                            <path
+                                d="M14.892 29.0405L20.755 20.0281C20.755 20.0281 11.9971 16.549 7.91742 19.6674C3.83789 22.7875 0 31.4264 0 31.4264L4.34871 33.9478C4.34871 33.9478 9.85289 23.2819 14.892 29.0405Z"
+                                fill="#156B70" />
+                            <path
+                                d="M30.9582 45.1071L39.9706 39.2441C39.9706 39.2441 43.4497 48.002 40.3313 52.0817C37.2112 56.1595 28.5723 59.9992 28.5723 59.9992L26.0527 55.6505C26.0527 55.6505 36.7187 50.1462 30.9582 45.1071Z"
+                                fill="#156B70" />
+                            <path
+                                d="M24.2219 42.526L22.6746 40.9805C19.8621 48.2901 13.2557 46.7447 13.2557 46.7447C13.2557 46.7447 11.7102 40.1383 19.0199 37.3258L17.4745 35.7803C13.3967 35.0772 8.19461 39.9972 7.35051 44.7763C6.50816 49.5553 6.36719 53.6314 6.36719 53.6314C6.36719 53.6314 10.4431 53.4921 15.224 52.648C20.0049 51.8039 24.925 46.6037 24.2219 42.526Z"
+                                fill="#156B70" />
+                            <path
+                                d="M59.2059 0.79368C52.8264 -2.19636 36.6711 3.39559 27.6861 15.3122C20.8398 24.3887 17.1758 30.5045 17.1758 30.5045L22.614 35.9427L24.0569 37.3856L29.4934 42.822C29.4934 42.822 35.6128 39.1599 44.6893 32.3155C56.6021 23.3285 62.1959 7.17313 59.2059 0.79368ZM32.1832 27.8164C30.6816 26.3149 30.6816 23.8796 32.1832 22.3782C33.6847 20.8768 36.1181 20.8767 37.6214 22.3801C39.1229 23.8816 39.1229 26.315 37.6214 27.8165C36.1181 29.3179 33.6846 29.3179 32.1832 27.8164ZM41.1975 18.804C39.2565 16.8613 39.2565 13.7155 41.1975 11.7746C43.1366 9.83364 46.2841 9.83364 48.2251 11.7746C50.1661 13.7156 50.1661 16.8613 48.2251 18.804C46.2841 20.7431 43.1366 20.7431 41.1975 18.804Z"
+                                fill="#156B70" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3568_19815">
+                                <rect width="60" height="60" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h3>Fast</h3>
+                    <p>Initial assessments take 5-7 minutes. Regular check-ins take 2-3 minutes. Compare this to 20-40
+                        minute traditional questionnaire batteries. Time savings without precision loss.</p>
+                </div>
+                <div class="array2Item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                        <path
+                            d="M12.0312 15.625H53.5938C55.2333 15.625 56.5625 16.9542 56.5625 18.5938V51.4062C56.5625 53.0458 55.2333 54.375 53.5938 54.375H12.0312C10.3917 54.375 9.0625 53.0458 9.0625 51.4062V18.5938C9.0625 16.9542 10.3917 15.625 12.0312 15.625Z"
+                            fill="#156B70" stroke="#156B70" stroke-width="5" />
+                        <path
+                            d="M14.5312 20.2344C14.5312 20.709 14.1465 21.0938 13.6719 21.0938C13.1972 21.0938 12.8125 20.709 12.8125 20.2344C12.8125 19.7597 13.1972 19.375 13.6719 19.375C14.1465 19.375 14.5312 19.7597 14.5312 20.2344Z"
+                            fill="white" stroke="#156B70" stroke-width="5" />
+                        <path
+                            d="M20 20.2344C20 20.709 19.6153 21.0938 19.1406 21.0938C18.666 21.0938 18.2812 20.709 18.2812 20.2344C18.2812 19.7597 18.666 19.375 19.1406 19.375C19.6153 19.375 20 19.7597 20 20.2344Z"
+                            fill="white" stroke="#156B70" stroke-width="5" />
+                        <path
+                            d="M25.4688 20.2344C25.4688 20.709 25.084 21.0938 24.6094 21.0938C24.1347 21.0938 23.75 20.709 23.75 20.2344C23.75 19.7597 24.1347 19.375 24.6094 19.375C25.084 19.375 25.4688 19.7597 25.4688 20.2344Z"
+                            fill="white" stroke="#156B70" stroke-width="5" />
+                        <path
+                            d="M20.7812 33.125H57.9688C59.6083 33.125 60.9375 34.4542 60.9375 36.0938V42.6562C60.9375 44.2958 59.6083 45.625 57.9688 45.625H20.7812C19.1417 45.625 17.8125 44.2958 17.8125 42.6562V36.0938C17.8125 34.4542 19.1417 33.125 20.7812 33.125Z"
+                            fill="#FDAFA4" stroke="#1CAFBF" stroke-width="5" />
+                        <path d="M25.1562 37.1875L29.5312 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                        <path d="M37.1875 37.1875L41.5625 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                        <path d="M49.2188 37.1875L53.5938 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                        <path d="M29.5312 37.1875L25.1562 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                        <path d="M41.5625 37.1875L37.1875 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                        <path d="M53.5938 37.1875L49.2188 41.5625" stroke="#FAF8F4" stroke-width="5"
+                            stroke-linecap="round" />
+                    </svg>
+
+                    <h3>Accessible</h3>
+                    <p>Natural conversation using plain language. No clinical jargon. Works across literacy levels and
+                        language preferences. Adapts to individual communication styles.
+                    </p>
+                </div>
+                <div class="array2Item">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 36.25C5 32.7387 5 30.9832 5.84265 29.7222C6.20745 29.1762 6.6762 28.7075 7.22215 28.3428C8.48327 27.5 10.2389 27.5 13.75 27.5C17.2612 27.5 19.0167 27.5 20.2779 28.3428C20.8238 28.7075 21.2925 29.1762 21.6574 29.7222C22.5 30.9832 22.5 32.7387 22.5 36.25V46.25C22.5 49.7612 22.5 51.5167 21.6574 52.7777C21.2925 53.3237 20.8238 53.7925 20.2779 54.1572C19.0167 55 17.2612 55 13.75 55C10.2389 55 8.48327 55 7.22215 54.1572C6.6762 53.7925 6.20745 53.3237 5.84265 52.7777C5 51.5167 5 49.7612 5 46.25V36.25Z"
+                            fill="#156B70" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M54.9997 25V35C54.9997 44.428 54.9997 49.1422 52.0707 52.071C49.142 55 44.4277 55 34.9997 55C30.752 55 27.4612 55 24.8594 54.7322C25.6965 53.42 25.994 52.0267 26.1252 50.7372C26.25 49.5097 26.25 48.0285 26.2497 46.415V46.25V36.25V36.085C26.25 34.4715 26.25 32.9902 26.1252 31.7627C25.9897 30.4307 25.6767 28.9882 24.7751 27.6387C24.1367 26.6832 23.3164 25.863 22.361 25.2247C21.0115 24.323 19.5689 24.0101 18.2369 23.8746C17.2902 23.7783 16.1927 23.7563 15 23.7514C15.0057 15.1498 15.132 10.7256 17.9286 7.92892C20.8576 5 25.5717 5 34.9997 5C44.4277 5 49.142 5 52.0707 7.92892C54.9997 10.8579 54.9997 15.5719 54.9997 25ZM28.1247 47.5C28.1247 46.4645 28.9642 45.625 29.9997 45.625H42.4997C43.5352 45.625 44.3747 46.4645 44.3747 47.5C44.3747 48.5355 43.5352 49.375 42.4997 49.375H29.9997C28.9642 49.375 28.1247 48.5355 28.1247 47.5Z"
+                            fill="#156B70" />
+                    </svg>
+
+
+                    <h3>Flexible</h3>
+                    <p>Accessible anywhere with cross-device support, native Slack/Teams apps, EHR/HRIS integrations,
+                        offline capability, and flexible scheduled or on-demand assessments.</p>
+                </div>
+                <div class="array2Item">
+                    <svg width="60" height="37" viewBox="0 0 60 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.0435 22.1739H3.91304C1.75193 22.1739 0 20.4219 0 18.2609C0 16.0998 1.75193 14.3478 3.91304 14.3478H13.0435V10.4348C13.0435 4.67181 17.7153 0 23.4783 0H44.3478C47.2294 0 49.5652 2.3359 49.5652 5.21739V7.82609H57.3913C58.8321 7.82609 60 8.99405 60 10.4348C60 11.8755 58.8321 13.0435 57.3913 13.0435H49.5652V23.4783H57.3913C58.8321 23.4783 60 24.6462 60 26.087C60 27.5277 58.8321 28.6957 57.3913 28.6957H49.5652V31.3043C49.5652 34.1859 47.2294 36.5217 44.3478 36.5217H23.4783C17.7153 36.5217 13.0435 31.8498 13.0435 26.087V22.1739ZM20.8696 15.6522V20.8696C20.8696 22.3103 22.0375 23.4783 23.4783 23.4783C24.919 23.4783 26.087 22.3103 26.087 20.8696V15.6522C26.087 14.2114 24.919 13.0435 23.4783 13.0435C22.0375 13.0435 20.8696 14.2114 20.8696 15.6522Z"
+                            fill="#156B70" />
+                    </svg>
+
+
+                    <h3>Actionable</h3>
+                    <p>You receive clear insights, personalized recommendations, progress tracking, baseline
+                        comparisons, and tailored guidance for clinicians, HR, or individuals.</p>
+                </div>
+                <div class="array2Item">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3568_19267)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4314 46.5685 0 30 0C13.4314 0 0 13.4314 0 30C0 46.5685 13.4314 60 30 60ZM30 20C32.4162 20 34.375 18.0413 34.375 15.625C34.375 13.2087 32.4162 11.25 30 11.25C27.5837 11.25 25.625 13.2087 25.625 15.625C25.625 18.0413 27.5837 20 30 20ZM13.9006 20.3956C14.3724 19.098 15.8069 18.4286 17.1044 18.9005C21.3489 20.444 32.6285 22.634 42.8958 18.9005C44.1933 18.4286 45.6278 19.098 46.0995 20.3956C46.5715 21.6932 45.902 23.1276 44.6045 23.5995C41.2703 24.8119 37.8698 25.4797 34.597 25.7738C34.0758 34.615 36.2573 42.424 37.6113 45.132C38.2288 46.367 37.728 47.8685 36.4932 48.486C35.2582 49.1035 33.7565 48.603 33.139 47.368C32.0293 45.1485 30.698 40.906 30 35.6663C29.302 40.906 27.9708 45.1485 26.861 47.368C26.2435 48.603 24.7418 49.1035 23.5068 48.486C22.2719 47.8685 21.7713 46.367 22.3888 45.132C23.7461 42.4175 25.935 34.5763 25.399 25.708C21.0909 25.2788 17.5275 24.3747 15.3957 23.5995C14.0981 23.1276 13.4287 21.6932 13.9006 20.3956Z"
+                                fill="#156B70" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3568_19267">
+                                <rect width="60" height="60" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h3>Inclusive</h3>
+                    <p>Built for fairness across diverse populations with cultural validation, multilingual support,
+                        accessibility features, and continuous bias monitoring.</p>
+                </div>
+                <div class="array2Item">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M30.5769 4.9043C45.3477 4.9043 57.4038 15.7371 57.4038 29.214C57.4038 42.6909 45.3477 53.5237 30.5769 53.5237C28.6589 53.5237 26.7663 53.3411 24.9232 52.9828L24.3612 52.8662L24.1963 52.954C21.8514 54.1545 18.0748 55.1258 12.7584 55.9507L12.1614 56.0417L10.8597 56.2297C8.86943 56.5172 7.72799 54.0361 9.24122 52.7117C10.7585 51.3839 11.9117 49.642 12.6999 47.4557L12.7292 47.367L12.3636 47.0665C7.06175 42.6265 3.89608 36.4038 3.75493 29.6836L3.75 29.214C3.75 15.7371 15.8061 4.9043 30.5769 4.9043ZM38.6538 35.7697H22.5C21.2255 35.7697 20.1923 36.8029 20.1923 38.0774C20.1923 39.3519 21.2255 40.3851 22.5 40.3851H38.6538C39.9283 40.3851 40.9615 39.3519 40.9615 38.0774C40.9615 36.8029 39.9283 35.7697 38.6538 35.7697ZM43.2692 27.1158H17.8846C16.6101 27.1158 15.5769 28.149 15.5769 29.4235C15.5769 30.698 16.6101 31.7312 17.8846 31.7312H43.2692C44.5437 31.7312 45.5769 30.698 45.5769 29.4235C45.5769 28.149 44.5437 27.1158 43.2692 27.1158ZM38.6538 18.462H22.5C21.2255 18.462 20.1923 19.4952 20.1923 20.7697C20.1923 22.0442 21.2255 23.0774 22.5 23.0774H38.6538C39.9283 23.0774 40.9615 22.0442 40.9615 20.7697C40.9615 19.4952 39.9283 18.462 38.6538 18.462Z"
+                            fill="#156B70" />
+                    </svg>
+
+
+                    <h3>Engaging</h3>
+                    <p>Built for fairness across diverse populations with cultural validation, multilingual support,
+                        accessibility features, and continuous bias monitoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem">
+            <div id="ctaBanner">
+                <h2>Transform Your Retention Strategy</h2>
+                <p>Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly
+                    turnover.</p>
+                <ul class="ulCheckmark flex">
+                    <li>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="25" height="25" rx="12.5" fill="#E4DED1" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8094 7.69798L10.3511 14.8959L8.37191 12.7813C8.00732 12.4376 7.43441 12.4167 7.01774 12.7084C6.61149 13.0105 6.49691 13.5417 6.74691 13.9688L9.09066 17.7813C9.31982 18.1355 9.71566 18.3542 10.1636 18.3542C10.5907 18.3542 10.9969 18.1355 11.2261 17.7813C11.6011 17.2917 18.7573 8.76048 18.7573 8.76048C19.6948 7.80215 18.5594 6.9584 17.8094 7.68756V7.69798Z"
+                                fill="#3B1F03" />
+                        </svg>
+                        <p>Demo & ROI Assessment</p>
+                    </li>
+                    <li>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="25" height="25" rx="12.5" fill="#E4DED1" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8094 7.69798L10.3511 14.8959L8.37191 12.7813C8.00732 12.4376 7.43441 12.4167 7.01774 12.7084C6.61149 13.0105 6.49691 13.5417 6.74691 13.9688L9.09066 17.7813C9.31982 18.1355 9.71566 18.3542 10.1636 18.3542C10.5907 18.3542 10.9969 18.1355 11.2261 17.7813C11.6011 17.2917 18.7573 8.76048 18.7573 8.76048C19.6948 7.80215 18.5594 6.9584 17.8094 7.68756V7.69798Z"
+                                fill="#3B1F03" />
+                        </svg>
+                        <p>Implementation & Training</p>
+                    </li>
+                    <li>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="25" height="25" rx="12.5" fill="#E4DED1" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8094 7.69798L10.3511 14.8959L8.37191 12.7813C8.00732 12.4376 7.43441 12.4167 7.01774 12.7084C6.61149 13.0105 6.49691 13.5417 6.74691 13.9688L9.09066 17.7813C9.31982 18.1355 9.71566 18.3542 10.1636 18.3542C10.5907 18.3542 10.9969 18.1355 11.2261 17.7813C11.6011 17.2917 18.7573 8.76048 18.7573 8.76048C19.6948 7.80215 18.5594 6.9584 17.8094 7.68756V7.69798Z"
+                                fill="#3B1F03" />
+                        </svg>
+                        <p>Pilot Program Design</p>
+                    </li>
+                    <li>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="25" height="25" rx="12.5" fill="#E4DED1" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8094 7.69798L10.3511 14.8959L8.37191 12.7813C8.00732 12.4376 7.43441 12.4167 7.01774 12.7084C6.61149 13.0105 6.49691 13.5417 6.74691 13.9688L9.09066 17.7813C9.31982 18.1355 9.71566 18.3542 10.1636 18.3542C10.5907 18.3542 10.9969 18.1355 11.2261 17.7813C11.6011 17.2917 18.7573 8.76048 18.7573 8.76048C19.6948 7.80215 18.5594 6.9584 17.8094 7.68756V7.69798Z"
+                                fill="#3B1F03" />
+                        </svg>
+                        <p>Launch & Optimization</p>
+                    </li>
+                </ul>
+                <p style="margin-top: 50px;">Use our ROI calculator to see how Entrelacs could reduce your costs. </p>
+                <div class="ctas">
+                    <a href="/contact-us/" class="cta" style="color: var(--background); background: #3D2C0A;">Contact Sales</a>
+                    <a href="/contact-us/" class="cta" style="color: var(--text-base); background: var(--background);">Request a
+                        Demo</a>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
-    {%- include footer.html -%}
+
+    {% include footer.html %}
+
+
 </body>
 
 </html>

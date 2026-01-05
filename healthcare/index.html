@@ -1,0 +1,487 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrelacs</title>
+    {% include head.html %}
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    {% include navBar.html %}
+    <main class="page">
+        <div id="hero" class="pageItem">
+            <div class="left">
+                <h2>ENTRELACS FOR HEALTHCARE</h2>
+                <h1>From Assessment Guesswork to Precision Mental Health Care</h1>
+
+                {% assign items =
+                "Unlock deeper accuracy with AI-powered conversational assessments and dynamic psychometrics.|Diagnose
+                with confidence using continuous, data-rich mental health insights.|Deliver the right care faster
+                through tailored, precision treatment matching."
+                | split: "|"
+                %}
+                <ul class="ulCheckmark">
+                    {% for text in items %}
+                    <li>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="#CFDEDE" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                                fill="#1CAFBF" />
+                        </svg>
+
+                        <p style="color: var(--text-base);">{{ text }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="ctas" style="margin-top: 20px;">
+                    <a href="/contact-us/" class="cta" style="color: var(--teal); background: var(--teal-light);">
+                        Contact Sales
+                    </a>
+                    <a href="/contact-us/" class="cta">Schedule a Demo</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="/images/healthcareHero.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="pageItem lsection lcentered">
+            <div class="tag red">The Problem</div>
+            <h2>The Assessment Gap Driving Inefficiency and Poor Outcomes</h2>
+            <p class="lsectionP">Mental health care faces a fundamental problem: the assessment tools we rely on weren't
+                designed for the complexity of the conditions we treat or the technology available to us today.</p>
+
+            {% assign items =
+            "Limited, inaccurate diagnostics miss nuances and evolving symptoms.|
+            Early risks go unseen, leading to preventable mental-health crises.|
+            Early risks go unseen, leading to preventable mental-health crises.|
+            Ineffective care drives unnecessary costs and poor ROI."
+            | split: "|"
+            %}
+
+            <ul class="ulCheckmark flex" style="margin-top: 56px;">
+                {% for text in items %}
+                <li>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#F4E6E8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                            fill="#FD4F35" />
+                    </svg>
+
+                    <p>{{ text }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="pageItem lsection lcentered"
+            style="background: url('/images/entrelacsbg2.webp') no-repeat; background-size: 100% 100%;">
+            <div class="tag green">Our Solution</div>
+            <h2>Entrelacs addresses these challenges at their foundation with assessment technology designed for
+                precision mental health care.</h2>
+            <div class="array" style="margin-top: 60px;">
+                <div class="arrayItem">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="10" fill="#869D9D" />
+                        <g clip-path="url(#clip0_3568_19472)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.5025 23.1418C22.5074 23.2622 22.4869 23.3823 22.4424 23.4943C22.3979 23.6063 22.3304 23.7076 22.2442 23.7918C22.1602 23.8793 22.0593 23.9487 21.9475 23.9957C21.8357 24.0428 21.7154 24.0664 21.5942 24.0652H10.9142C10.7551 24.0714 10.5974 24.0331 10.459 23.9545C10.3206 23.8758 10.2069 23.76 10.1309 23.6202C10.0111 23.4229 9.97289 23.1868 10.0242 22.9618C10.0675 22.7585 10.0892 22.5518 10.1275 22.3468C11.3409 16.6335 14.6909 12.6702 20.1842 10.4635C20.5942 10.2885 21.0175 10.1402 21.4475 10.0218C21.6141 9.98015 21.7896 9.99351 21.9479 10.0599C22.1063 10.1263 22.2388 10.2422 22.3258 10.3902C22.4542 10.5468 22.5125 10.7235 22.5042 10.9235V23.1402L22.5025 23.1418Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M40.001 25.582V25.8337C40.0143 29.7503 38.636 33.0953 35.866 35.8653C33.096 38.6353 29.7527 40.0153 25.8343 40.0003C21.1093 39.9503 17.296 38.062 14.3943 34.3337C13.6724 33.3897 13.0607 32.3664 12.571 31.2837C12.197 30.5833 11.9131 29.8385 11.726 29.067C11.6127 28.4353 11.5777 27.407 12.476 27.407H25.0477C25.1513 27.41 25.2545 27.3914 25.3506 27.3523C25.4468 27.3133 25.5337 27.2547 25.606 27.1803C25.6809 27.108 25.7399 27.0208 25.7792 26.9244C25.8186 26.828 25.8373 26.7244 25.8343 26.6203V12.4537C25.826 11.9553 26.071 11.6937 26.5693 11.667C27.0943 11.6837 27.616 11.7437 28.1327 11.8437C31.916 12.4703 34.9493 14.3237 37.2377 17.4037C38.9818 19.7787 39.9472 22.6358 40.001 25.582Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3568_19472">
+                                <rect width="30" height="30" fill="white" transform="translate(10 10)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h3>Comprehensive Initial Assessment</h3>
+                    <p>Precision psychometrics deliver multi-dimensional insights, risk prediction, and diagnostic
+                        guidance.</p>
+                    <h3>Clinical advantages:</h3>
+
+                    {% assign items =
+                    "Higher precision|
+                    Captures nuanced patterns|
+                    Better patient experience|
+                    Structured documentation|
+                    Adaptive questioning"
+                    | split: "|"
+                    %}
+
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
+                                    fill="#1CAFBF" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="arrayItem">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="10" fill="#869D9D" />
+                        <path
+                            d="M32.5 12.5H17.5C15.425 12.5 13.75 14.1625 13.75 16.2125V29.85C13.75 31.9 15.425 33.5625 17.5 33.5625H18.45C19.45 33.5625 20.4 33.95 21.1 34.65L23.2375 36.7625C24.2125 37.725 25.8 37.725 26.775 36.7625L28.9125 34.65C29.6125 33.95 30.575 33.5625 31.5625 33.5625H32.5C34.575 33.5625 36.25 31.9 36.25 29.85V16.2125C36.25 14.1625 34.575 12.5 32.5 12.5ZM22.975 26.2625C23.4875 26.2625 23.9125 26.6875 23.9125 27.2C23.9125 27.7125 23.4875 28.1375 22.975 28.1375H19.625C19.075 28.1375 18.5625 27.875 18.2375 27.425C17.925 27 17.85 26.475 18 25.975C18.4375 24.6375 19.5125 23.9125 20.4625 23.2625C21.4625 22.5875 22.025 22.1625 22.025 21.4375C22.025 20.7875 21.5 20.2625 20.85 20.2625C20.2 20.2625 19.6875 20.8 19.6875 21.45C19.6875 21.9625 19.2625 22.3875 18.75 22.3875C18.2375 22.3875 17.8125 21.9625 17.8125 21.45C17.8125 19.775 19.175 18.4 20.8625 18.4C22.55 18.4 23.9125 19.7625 23.9125 21.45C23.9125 23.2125 22.5875 24.1125 21.525 24.8375C20.8625 25.2875 20.2375 25.7125 19.925 26.275H22.975V26.2625ZM31.25 26.35H30.9875V27.2125C30.9875 27.725 30.5625 28.15 30.05 28.15C29.5375 28.15 29.1125 27.725 29.1125 27.2125V26.35H26.6625C26.6625 26.35 26.6625 26.35 26.65 26.35C26.0375 26.35 25.475 26.025 25.1625 25.5C24.85 24.9625 24.85 24.3 25.1625 23.775C26.0125 22.3125 27 20.65 27.9 19.2C28.3 18.5625 29.0625 18.275 29.775 18.475C30.4875 18.6875 30.9875 19.3375 30.975 20.0875V24.4875H31.25C31.7625 24.4875 32.1875 24.9125 32.1875 25.425C32.1875 25.9375 31.7625 26.35 31.25 26.35Z"
+                            fill="white" />
+                        <path
+                            d="M29.1133 24.4748V20.7998C28.3758 21.9998 27.6133 23.2873 26.9258 24.4623H29.1133V24.4748Z"
+                            fill="white" />
+                    </svg>
+
+                    <h3>Precision Diagnosis Support</h3>
+                    <p>Advanced modeling offers precise, multi-dimensional diagnostic decision support.</p>
+                    <h3>Diagnostic benefits:</h3>
+
+                    {% assign items =
+                    "Multi-dimensional profiling|
+                    Differential diagnosis suggestions|
+                    Risk stratification|
+                    Severity assessment|
+                    Confidence indicators"
+                    | split: "|"
+                    %}
+
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
+                                    fill="#1CAFBF" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="arrayItem">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="10" fill="#869D9D" />
+                        <rect opacity="0.87" x="22.8789" y="20.0508" width="4" height="10" rx="2"
+                            transform="rotate(135 22.8789 20.0508)" fill="#FBFCFC" />
+                        <rect opacity="0.75" x="20" y="23" width="4" height="10" rx="2" transform="rotate(90 20 23)"
+                            fill="#FBFCFC" />
+                        <rect opacity="0.63" x="20.0508" y="27.1211" width="4" height="10" rx="2"
+                            transform="rotate(45 20.0508 27.1211)" fill="#FBFCFC" />
+                        <rect opacity="0.51" x="23" y="30" width="4" height="10" rx="2" fill="#FBFCFC" />
+                        <rect opacity="0.39" x="37.0234" y="34.1914" width="4" height="10" rx="2"
+                            transform="rotate(135 37.0234 34.1914)" fill="#FBFCFC" />
+                        <rect opacity="0.27" x="40" y="23" width="4" height="10" rx="2" transform="rotate(90 40 23)"
+                            fill="#FBFCFC" />
+                        <rect opacity="0.15" x="34.1953" y="12.9785" width="4" height="10" rx="2"
+                            transform="rotate(45 34.1953 12.9785)" fill="#FBFCFC" />
+                        <rect x="23" y="10" width="4" height="10" rx="2" fill="#FBFCFC" />
+                    </svg>
+
+                    <h3>Continuous Progress Monitoring</h3>
+                    <p>Identifies changes early, boosting adherence, insight, and treatment outcomes.</p>
+                    <h3>Treatment optimization:</h3>
+
+                    {% assign items =
+                    "Therapy modality recommendations based on symptom profiles|
+                    Medication considerations aligned with symptom patterns and patient characteristics|
+                    Patient-specific factors that may influence treatment response|
+                    Contraindications and special considerations flagged automatically|
+                    Expected treatment trajectory based on similar patient profiles"
+                    | split: "|"
+                    %}
+
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
+                                    fill="#1CAFBF" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="arrayItem">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="10" fill="#869D9D" />
+                        <path
+                            d="M34.3879 17.3125L26.9629 13.025C25.7504 12.325 24.2504 12.325 23.0254 13.025L15.6129 17.3125C14.4004 18.0125 13.6504 19.3125 13.6504 20.725V29.275C13.6504 30.675 14.4004 31.975 15.6129 32.6875L23.0379 36.975C24.2504 37.675 25.7504 37.675 26.9754 36.975L34.4004 32.6875C35.6129 31.9875 36.3629 30.6875 36.3629 29.275V20.725C36.3504 19.3125 35.6004 18.025 34.3879 17.3125ZM24.0629 19.6875C24.0629 19.175 24.4879 18.75 25.0004 18.75C25.5129 18.75 25.9379 19.175 25.9379 19.6875V26.25C25.9379 26.7625 25.5129 27.1875 25.0004 27.1875C24.4879 27.1875 24.0629 26.7625 24.0629 26.25V19.6875ZM26.1504 30.7875C26.0879 30.9375 26.0004 31.075 25.8879 31.2C25.6504 31.4375 25.3379 31.5625 25.0004 31.5625C24.8379 31.5625 24.6754 31.525 24.5254 31.4625C24.3629 31.4 24.2379 31.3125 24.1129 31.2C24.0004 31.075 23.9129 30.9375 23.8379 30.7875C23.7754 30.6375 23.7504 30.475 23.7504 30.3125C23.7504 29.9875 23.8754 29.6625 24.1129 29.425C24.2379 29.3125 24.3629 29.225 24.5254 29.1625C24.9879 28.9625 25.5379 29.075 25.8879 29.425C26.0004 29.55 26.0879 29.675 26.1504 29.8375C26.2129 29.9875 26.2504 30.15 26.2504 30.3125C26.2504 30.475 26.2129 30.6375 26.1504 30.7875Z"
+                            fill="#FBFCFC" />
+                    </svg>
+
+                    <h3>Predictive Early Warning System</h3>
+                    <p>Predictive system prevents crises; alerts enable proactive intervention.</p>
+                    <h3>Monitoring advantages:</h3>
+
+                    {% assign items =
+                    "Measurement-based care without administrative burden on clinicians|
+                    Early detection of treatment non-response|
+                    Patient engagement between sessions improves adherence and therapeutic alliance|
+                    Trend analysis showing whether patient is improving, stable, or deteriorating|
+                    Automatic alerts when concerning patterns emerge"
+                    | split: "|"
+                    %}
+
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
+                                    fill="#1CAFBF" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="arrayItem wide">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="10" fill="#869D9D" />
+                        <path
+                            d="M32.5 12.5H17.5C15.425 12.5 13.75 14.1625 13.75 16.2125V29.85C13.75 31.9 15.425 33.5625 17.5 33.5625H18.45C19.45 33.5625 20.4 33.95 21.1 34.65L23.2375 36.7625C24.2125 37.725 25.8 37.725 26.775 36.7625L28.9125 34.65C29.6125 33.95 30.575 33.5625 31.5625 33.5625H32.5C34.575 33.5625 36.25 31.9 36.25 29.85V16.2125C36.25 14.1625 34.575 12.5 32.5 12.5ZM25 17.1875C26.6125 17.1875 27.9125 18.4875 27.9125 20.1C27.9125 21.7125 26.6125 23.0125 25 23.0125C23.3875 23.0125 22.0875 21.7 22.0875 20.1C22.0875 18.4875 23.3875 17.1875 25 17.1875ZM28.35 28.825H21.65C20.6375 28.825 20.05 27.7 20.6125 26.8625C21.4625 25.6 23.1125 24.75 25 24.75C26.8875 24.75 28.5375 25.6 29.3875 26.8625C29.95 27.7 29.35 28.825 28.35 28.825Z"
+                            fill="#FBFCFC" />
+                    </svg>
+
+
+                    <h3>Personalized Treatment Matching (Coming Soon)</h3>
+                    <p>AI recommends optimized, evidence-based treatments tailored to individual profiles.</p>
+                    <h3>Prevention capabilities:</h3>
+
+                    {% assign items =
+                    "Crisis risk alerts notify clinicians of concerning changes requiring immediate attention|
+                    Relapse prediction based on historical patterns and current trajectory|
+                    Proactive outreach before patients reach crisis points|
+                    Reduced emergency utilization|
+                    Longitudinal understanding of each patient's unique warning signs and triggers"
+                    | split: "|"
+                    %}
+
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#DBECEE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7953 9.8542L13.2487 19.0675L10.7153 16.3609C10.2487 15.9209 9.51534 15.8942 8.982 16.2675C8.462 16.6542 8.31534 17.3342 8.63534 17.8809L11.6353 22.7609C11.9287 23.2142 12.4353 23.4942 13.0087 23.4942C13.5553 23.4942 14.0753 23.2142 14.3687 22.7609C14.8487 22.1342 24.0087 11.2142 24.0087 11.2142C25.2087 9.98753 23.7553 8.90753 22.7953 9.84086V9.8542Z"
+                                    fill="#1CAFBF" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection lcentered">
+            <h2>Benefit for your organization</h2>
+            <p class="lsectionP2">Measurable Impact on Culture and Outcomes</p>
+            <div class="textPicItem">
+                <div class="text">
+                    <div>
+                        <p class="textTag">FOR CLINICIANS</p>
+                        <h3>Clinical Tools That Enhance Your Practice</h3>
+                        <p class="textP">Entrelacs integrates seamlessly into your clinical workflow, providing the
+                            tools you need to
+                            deliver more accurate diagnoses and personalized treatment, and continuous patient support.
+                        </p>
+                    </div>
+
+                    {% assign items =
+                    "65-80% precise assessments for confident, accurate diagnosis and treatment planning.|
+                    Sleep easier knowing the system is watching for warning signs you might miss.|
+                    Personalized check-ins boost engagement and adherence"
+                    | split: "|"
+                    %}
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAF1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                                    fill="#080808" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <a href="/contact-us/" class="cta"
+                        style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">
+                        Schedule a demo
+                    </a>
+                </div>
+                <div class="pic">
+                    <img src="/images/healthcareB1.png" alt="">
+                </div>
+            </div>
+            <div class="textPicItem reverse">
+                <div class="text">
+                    <div>
+                        <p class="textTag">FOR PAYERS & HEALTH SYSTEMS</p>
+                        <h3>Data-Driven Mental Health Care Management</h3>
+                        <p class="textP">
+                            Identify members at risk for crisis or deterioration before expensive emergency
+                            or inpatient interventions become necessary. Prevention is dramatically cheaper than crisis
+                            response.
+                        </p>
+                    </div>
+
+                    {% assign items =
+                    "Measure treatment response across your network|
+                    Reduce trial-and-error in treatment selection with precision matching.|
+                     Automated collection of required quality metrics (HEDIS, STAR ratings)."
+                    | split: "|"
+                    %}
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAF1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                                    fill="#080808" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <a href="/contact-us/" class="cta"
+                        style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">
+                        Schedule a demo
+                    </a>
+                </div>
+                <div class="pic">
+                    <img src="/images/healthCareB2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div style="display: none;" class="pageItem lcentered lsection" id="secGreen">
+            <h2 style="text-align: center;">Clinically Validated, Research-Backed</h2>
+
+            <div id="tabs">
+                <div class="tabsNav"></div>
+                <div class="tabsContent"></div>
+            </div>
+
+        </div>
+
+        <div class="pageItem lsection lcentered">
+            <h2 style="text-align: center;">Getting Started</h2>
+            <p class="lsectionP2">Measurable Impact on Culture and Outcomes</p>
+            <div class="textPicItem">
+                <div class="text">
+                    <div>
+                        <p class="textTag">FOR CLINICIANS & PRACTICES</p>
+                        <h3>Schedule a demonstration to see how Entrelacs can enhance your clinical workflow</h3>
+                        <p class="textP">We'll customize the demo to your practice type and patient population.</p>
+                    </div>
+
+                    {% assign items =
+                    "Platform access for selected patients|
+                    Clinician training on interpreting insight|
+                    Integration support (EHR, practice management)|
+                    Outcome data showing impact on your practice"
+                    | split: "|"
+                    %}
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAF1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                                    fill="#080808" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <a href="/contact-us/" class="cta"
+                        style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">
+                        Request Clinician Demo
+                    </a>
+                </div>
+                <div class="pic">
+                    <img src="/images/healthcareB3.jpg" alt="">
+                </div>
+            </div>
+            <div class="textPicItem reverse">
+                <div class="text">
+                    <div>
+                        <p class="textTag">FOR PAYERS & HEALTH SYSTEMS</p>
+                        <h3>Consult with our team about population health implementation strategies</h3>
+                        <p class="textP">
+                            We'll walk through ROI modeling specific to your member population, network structure, and
+                            current utilization patterns.
+                        </p>
+                    </div>
+
+                    {% assign items =
+                    ""
+                    | split: "|"
+                    %}
+                    <ul class="ulCheckmark">
+                        {% for text in items %}
+                        <li>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAF1F1" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M28.4947 12.3168L16.5613 23.8334L13.3947 20.4501C12.8113 19.9001 11.8947 19.8668 11.228 20.3334C10.578 20.8168 10.3947 21.6668 10.7947 22.3501L14.5447 28.4501C14.9113 29.0168 15.5447 29.3668 16.2613 29.3668C16.9447 29.3668 17.5947 29.0168 17.9613 28.4501C18.5613 27.6668 30.0113 14.0168 30.0113 14.0168C31.5113 12.4834 29.6947 11.1334 28.4947 12.3001V12.3168Z"
+                                    fill="#080808" />
+                            </svg>
+                            <p>{{ text }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <a href="/contact-us/" class="cta"
+                        style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">
+                        Schedule a demo
+                    </a>
+                </div>
+                <div class="pic">
+                    <img src="/images/healthcareB4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    {% include footer.html %}
+
+
+</body>
+
+</html>
