@@ -12,24 +12,25 @@
     </div>
 
     <ul class="navLinks">
+      <li><a href="/">Home</a></li>
       <li><a href="/employers">Employers</a></li>
       <li><a href="/healthcare">Healthcare</a></li>
       <li><a href="/technology">Technology</a></li>
       <li><a href="/about">About Us</a></li>
-      <li><a href="/contact-us">Contact us</a></li>
     </ul>
     <ul class="navLinks">
-      <li><a class="cta" href="https://app.entrelacs.ai">Take Assessment</a></li>
+      <li><a class="cta" href="/contact-us/">Contact Us</a></li>
     </ul>
 
     <div class="mobileMenu" id="mobileMenu" style="display: none;">
       <ul>
+        <li><a href="/">Home</a></li>
         <li><a href="/employers">Employers</a></li>
         <li><a href="/healthcare">Healthcare</a></li>
         <li><a href="/technology">Technology</a></li>
         <li><a href="/about">About Us</a></li>
-        <li><a href="/contact-us">Contact us</a></li>
-        <li ><a class="cta" href="https://app.entrelacs.ai">Take Assessment</a></li>
+        <li><a class="cta" href="/contact-us">Contact us</a></li>
+        <!-- <li ><a class="cta" href="https://app.entrelacs.ai">Take Assessment</a></li> -->
       </ul>
     </div>
   </div>
@@ -66,20 +67,29 @@
   });
 
   // Mark Nav item as active if the url matches it
-  function setActiveNav () {
-    const currentPath = window.location.pathname.replace(/\/$/, "");
+  function setActiveNav() {
+  const currentPath = window.location.pathname.replace(/\/$/, "");
 
-    document.querySelectorAll(".navLinks a").forEach(link => {
-      const linkPath = link.getAttribute("href").replace(/\/$/, "");
+  document.querySelectorAll(".navLinks a").forEach(link => {
+    let linkPath = link.getAttribute("href").replace(/\/$/, "");
 
-      if (
-        currentPath === linkPath ||
-        currentPath.startsWith(linkPath + "/")
-      ) {
-        link.classList.add("navactive");
-      }
-    });
+    // Special case for root
+    if (linkPath === "") linkPath = "/";
 
-  }
+    if (linkPath === "/" && currentPath !== "/") {
+      // Don't mark root as active on other paths
+      return;
+    }
+
+    if (
+      currentPath === linkPath ||
+      (linkPath !== "/" && currentPath.startsWith(linkPath + "/"))
+    ) {
+      link.classList.add("navactive");
+    } else {
+      link.classList.remove("navactive");
+    }
+  });
+}
   setActiveNav()
 </script>
