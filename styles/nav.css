@@ -65,6 +65,9 @@
   font-weight: 700;
   font-size: 16px;
 }
+.navLinks .cta:hover{
+  color: #fff;
+}
 
 /* Hamburger menu icon (hidden by default) */
 .hamburger {
