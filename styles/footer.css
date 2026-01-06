@@ -64,8 +64,11 @@
     justify-content: center;
     padding: 40px 0;
     gap: 60px;
+    z-index: 1;
 }
-
+.footerSponsers img{
+    max-height: 100px;
+}
 /* Bottom section with a clean line divider */
 .bottomSection {
     /* border-top: 1px solid var(--sky-blue); */
@@ -148,4 +151,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
+    z-index: 0;
 }
