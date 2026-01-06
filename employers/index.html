@@ -44,7 +44,7 @@
 
             {% assign stats =
             "36% of workers feel lonely at work|Lonely employees are 2× more likely to quit|Replacing talent costs
-            50–200% of salary|A 500-person company loses $7.5M yearly to avoidable turnover"
+            50–200% of salary|A 500-person company can lose $7.5M yearly to avoidable turnover"
             | split: "|"
             %}
             <ul class="ulCheckmark red" style="margin-top: 30px;">
@@ -60,7 +60,7 @@
                     <p>
                         {{ item
                         | replace: "36%", "<span>36%</span>"
-                        | replace: "2×", "<span>2×</span>"
+                        | replace: "2×", "<span>2X</span>"
                         | replace: "50–200%", "<span>50–200%</span>"
                         | replace: "$7.5M", "<span>$7.5M</span>"
                         }}
@@ -73,7 +73,7 @@
 
 
         <div class="pageItem lsection lcentered">
-            <h2 style="text-align: center;">How entrelacs work for employees</h2>
+            <h2 style="text-align: center;">How entrelacs works for employers</h2>
             <p class="lsectionP2">From Invisible Risk to Measurable Action</p>
             <div class="array" style="margin-top: 60px;">
                 <div class="arrayItem">
@@ -155,7 +155,7 @@
                     <h3>What you'll see:</h3>
 
                     {% assign items =
-                    "Early warning system|Predictive analytics|Team-level patterns|Trends over time:"
+                    "Early warning system|Predictive analytics|Team-level patterns|Trends over time"
                     | split: "|"
                     %}
                     <ul class="ulCheckmark flex">
@@ -567,8 +567,7 @@
                 <p style="margin-top: 50px;">Use our ROI calculator to see how Entrelacs could reduce your costs. </p>
                 <div class="ctas">
                     <a href="/contact-us/" class="cta" style="color: var(--background); background: #3D2C0A;">Contact Sales</a>
-                    <a href="/contact-us/" class="cta" style="color: var(--text-base); background: var(--background);">Request a
-                        Demo</a>
+                    <a target="_blank" href="https://absl.io/workplace-roi-calculator/" class="cta" style="color: var(--text-base); background: var(--background);">Use ROI Calculator</a>
                 </div>
             </div>
 
