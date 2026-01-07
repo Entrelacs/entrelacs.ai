@@ -4,6 +4,8 @@
     gap: 64px;
     padding-top: 160px;
     padding-bottom: 160px;
+    background: url(/images/contact.png) no-repeat;
+    background-size: cover;
 }
 .left{
     width: 50%;

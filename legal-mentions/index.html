@@ -9,42 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions Légales - ENTRELACS</title>
   {% include head.html %}
-  <style>
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 60px 25px;
-      border-radius: 8px;
-    }
-
-    h1{
-      font-size: 2.4em;
-      line-height: .9;
-      margin-bottom: 30px;
-
-    }
-    h2{
-      font-size: 1.8em;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: var(--dark-blue);
-    }
-    p{
-      font-size: 1.4em;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    a{
-      text-decoration: underline;
-      color: var(--sky-blue);
-    }
-  </style>
+  <link rel="stylesheet" href="/styles/legal.css">
 </head>
 
 <body>
   {% include navBar.html %}
 
-  <div class="container">
+  <main class="pageItem">
     <h1>Mentions Légales</h1>
 
     <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance
@@ -99,7 +70,7 @@
       les paramètres de son navigateur ou par une bannière de consentement affichée lors de la première visite.</p>
 
     <p class="footer-note">Dernière mise à jour : 10 juillet 2025</p>
-  </div>
+    </main>
   {% include footer.html %}
 
 </body>

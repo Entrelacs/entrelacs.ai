@@ -1,0 +1,56 @@
+main{
+    margin: 160px 0;
+}
+
+h1{
+    font-size: 50px;
+    color: var(--teal-dark);
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 32px;
+    color: var(--navy-blue);
+    margin: 20px 0 10px 0;
+}
+
+h3{
+    font-size: 24px;
+    color: var(--navy-blue);
+    margin: 15px 0 5px 0;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+hr{
+    margin-top: 15px;
+}
+
+ul{
+    margin: 10px 0 20px;
+    list-style-position: inside;
+}
+
+ul li{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+table{
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+td, th{
+    padding: 10px 20px;
+    text-align: left;
+}
+
+main a{
+    color: var(--teal);
+    text-decoration: underline;
+}
