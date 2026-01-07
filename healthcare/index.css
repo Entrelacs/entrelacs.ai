@@ -386,7 +386,7 @@ main .cta {
 
 
 #secGreen {
-    background: linear-gradient(130deg, var(--green-200), var(--green-500));
+    background: var(--green-500);
     color: var(--background);
 }
 
@@ -412,7 +412,96 @@ main .cta {
     width: 100%;
     display: flex;
     gap: 50px;
+    margin-top: 50px;
 }
 .tabsNav{
     width: 400px;
+    flex-shrink: 0;
+}
+.tabNavItem{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.tabNavItem:hover{
+    background: #ffffff22;
+}
+.tabNavItem.active{
+    background: #ffffff22;
+}
+.tabNavItem .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #000;
+    overflow: hidden;
+}
+.tabNavItem p{
+    font-size: 20px;
+    color: #FBFCFC;
+}
+
+
+.tabsContent{
+    width: calc(100% - 450px);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 34px;
+    background: url(/images/h001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.tabsContent::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0000009c;
+    z-index: 0;
+}
+.tabsContent h3,
+.tabsContent p {
+    position: relative;
+    z-index: 1;
+}
+.tabsContent h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FBFCFC;
+    margin-bottom: 10px;
+}
+.tabsContent p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #CFDEDE;
+}
+
+@media (max-width: 1200px) {
+    #tabs{
+        flex-direction: column;
+    }
+    .tabsNav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tabNavItem{
+        width: 47%;
+    }
+    .tabsContent{
+        width: 100%;
+        min-height: 400px;
+    }
+}
+@media (max-width: 1050px) {
+    .tabNavItem{
+        width: 100%;
+    }
 }

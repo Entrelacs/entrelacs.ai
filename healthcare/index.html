@@ -384,12 +384,77 @@
         </div>
 
 
-        <div style="display: none;" class="pageItem lcentered lsection" id="secGreen">
+        <div class="pageItem lcentered lsection" id="secGreen">
             <h2 style="text-align: center;">Clinically Validated, Research-Backed</h2>
 
             <div id="tabs">
-                <div class="tabsNav"></div>
-                <div class="tabsContent"></div>
+                <div class="tabsNav">
+                    <div class="tabNavItem active">
+                        <div class="img">
+                            <img src="/images/h001.png" alt="">
+                        </div>
+                        <p>Scientific Partnerships</p>
+                        <span style="display: none;">
+                            Active collaborations with WHO and OECD social connection initiatives. Participant in EU
+                            Horizon 2020's LONELY-EU project validating measurement across spanerse European
+                            populations.
+                            Advisory relationships with leading academic medical centers.
+                        </span>
+                    </div>
+                    <div class="tabNavItem">
+                        <div class="img">
+                            <img src="/images/h002.jpg" alt="">
+                        </div>
+                        <p>Peer-Reviewed Research</p>
+                        <span style="display: none;">
+                            Our approach is grounded in published research on dynamic network modeling, adaptive
+                            assessment, conversational AI in mental health, and predictive modeling for crisis
+                            prevention.
+                            <br> <br>
+                            Founded by Dr. Hans Rocha IJzerman, Associate Researcher at Oxford Internet Institute and
+                            global expert on social connection.
+                        </span>
+                    </div>
+                    <div class="tabNavItem">
+                        <div class="img">
+                            <img src="/images/h003.jpg" alt="">
+                        </div>
+                        <p>Clinical Validation Studies</p>
+                        <span style="display: none;">
+                            Ongoing validation studies in partnership with academic medical centers demonstrate
+                            diagnostic accuracy, treatment outcome prediction, and crisis prevention effectiveness.
+                        </span>
+                    </div>
+                    <div class="tabNavItem">
+                        <div class="img">
+                            <img src="/images/h004.jpg" alt="">
+                        </div>
+                        <p>Continuous Improvement</p>
+                        <span style="display: none;">
+                            We continuously validate and refine our algorithms using de-identified aggregate data,
+                            ensuring the platform improves over time while maintaining privacy. Our models learn from
+                            outcomes across diverse populations.
+                        </span>
+                    </div>
+                    <div class="tabNavItem">
+                        <div class="img">
+                            <img src="/images/h005.jpg" alt="">
+                        </div>
+                        <p>Regulatory Compliance</p>
+                        <span style="display: none;">
+                            Designed with healthcare standards in mind: HIPAA compliant, SOC 2 Type II certified,
+                            following FDA guidance for clinical decision support software.
+                        </span>
+                    </div>
+                </div>
+                <div class="tabsContent">
+                    <h3>Scientific Partnerships</h3>
+                    <p>
+                        Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon
+                        2020's LONELY-EU project validating measurement across diverse European populations. Advisory
+                        relationships with leading academic medical centers.
+                    </p>
+                </div>
             </div>
 
         </div>
@@ -474,6 +539,40 @@
                 </div>
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const tabItems = document.querySelectorAll(".tabNavItem");
+                const tabsContent = document.querySelector(".tabsContent");
+                const contentTitle = tabsContent.querySelector("h3");
+                const contentText = tabsContent.querySelector("p");
+
+                tabItems.forEach(item => {
+                    item.addEventListener("click", () => {
+                        // Remove active from all tabs
+                        tabItems.forEach(i => i.classList.remove("active"));
+
+                        // Add active to clicked tab
+                        item.classList.add("active");
+
+                        // Update title
+                        const title = item.querySelector("p")?.textContent || "";
+                        contentTitle.textContent = title;
+
+                        // Update paragraph
+                        const text = item.querySelector("span")?.innerHTML || "";
+                        contentText.innerHTML = text.trim();
+
+                        // Update background image
+                        const imgSrc = item.querySelector(".img img")?.getAttribute("src");
+                        if (imgSrc) {
+                            tabsContent.style.backgroundImage = `url('${imgSrc}')`;
+                            tabsContent.style.backgroundSize = "cover";
+                            tabsContent.style.backgroundPosition = "center";
+                        }
+                    });
+                });
+            });
+        </script>
 
 
 
