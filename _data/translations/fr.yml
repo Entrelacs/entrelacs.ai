@@ -1,0 +1,109 @@
+hero:
+  title: "Le laboratoire sanguin de la santé mentale"
+  title_suffix: "— précision, personnalisation et prévention sur une seule plateforme."
+  subtitle: >
+    Entrelacs transforme l’évaluation de la santé mentale en combinant l’IA conversationnelle
+    et des psychométries dynamiques, créant des évaluations qui s’adaptent à chaque individu
+    et gagnent en précision au fil du temps.
+  cta_learn_more: "En savoir plus"
+  cta_request_demo: "Demander une démo"
+
+problem:
+  tag: "Le problème"
+  text: >
+    Les évaluations standardisées de la santé mentale manquent les signes précoces,
+    entraînant un soutien tardif, des interventions inefficaces et des coûts élevés.
+
+solution:
+  tag: "Notre solution"
+  title: "Des soins de santé mentale fondés sur la précision, la personnalisation et la prévention"
+  description: >
+    Entrelacs utilise l’IA conversationnelle et des psychométries adaptatives pour fournir
+    des évaluations évolutives et individualisées, offrant des informations continues et précises
+    sur le bien-être.
+
+pillars:
+  precision:
+    title: "Précision"
+    text: >
+      Entrelacs s’appuie sur l’IA conversationnelle et des psychométries adaptatives pour proposer
+      des évaluations mentales et sociales personnalisées, évolutives et très précises à grande échelle.
+  personalization:
+    title: "Personnalisation"
+    text: >
+      Les analyses et recommandations s’adaptent aux comportements et au contexte de chaque personne,
+      devenant plus précises à chaque interaction.
+  prevention:
+    title: "Prévention"
+    text: >
+      Un suivi continu permet de détecter tôt les changements subtils et d’agir de manière
+      préventive avant que les situations ne s’aggravent.
+
+steps:
+  title: "De la conversation aux soins personnalisés en trois étapes"
+  one:
+    title: "Discuter et découvrir"
+    text: >
+      Notre IA échange avec vous par conversation, analysant le langage, le ton et les schémas
+      afin de mieux comprendre vos interactions sociales.
+  two:
+    title: "L’IA cartographie vos relations"
+    text: >
+      Répondez à des questions d’évaluation personnalisées pour mieux comprendre vos relations
+      sociales et professionnelles.
+  three:
+    title: "Recevoir un rapport personnalisé"
+    text: >
+      Des analyses personnalisées révèlent vos schémas relationnels et vous orientent vers
+      des relations plus saines et plus solides.
+
+benefits:
+  title: "Meilleure évaluation. Meilleurs soins. Meilleurs résultats."
+  subtitle: "Au-delà du dépistage classique de la santé mentale"
+  behavioral:
+    title: "Les sciences comportementales au service de l’IA"
+    text: >
+      L’IA associée à des psychométries avancées fournit des évaluations nuancées et validées,
+      soutenues par des partenariats de recherche internationaux.
+  dynamic:
+    title: "Dynamique, pas statique"
+    text: >
+      Entrelacs suit l’évolution des schémas de santé mentale dans le temps pour une détection
+      plus précoce et des prédictions plus précises.
+  holistic:
+    title: "Évaluation holistique"
+    text: >
+      Une analyse complète de la santé mentale et sociale met en évidence des symptômes,
+      des schémas et des risques souvent ignorés par les méthodes traditionnelles.
+  privacy:
+    title: "Architecture axée sur la confidentialité"
+    text: >
+      Le contrôle des données par l’utilisateur, une sécurité stricte et une confidentialité
+      de niveau médical garantissent la confiance et la sécurité.
+
+platform:
+  tag: "Notre solution"
+  title: "Une seule plateforme. Tous les contextes de santé mentale."
+  workplace:
+    title: "Santé sociale au travail"
+    text: >
+      Surveillez de manière proactive le bien-être des employés, détectez tôt les ruptures
+      et favorisez la rétention grâce à des analyses préventives et personnalisées.
+  clinical:
+    title: "Soins cliniques"
+    text: >
+      Offrez aux cliniciens des évaluations précises et continues pour améliorer le diagnostic,
+      l’adéquation des traitements et l’intervention précoce.
+  community:
+    title: "Santé publique et communautaire"
+    text: >
+      Facilitez le dépistage à grande échelle et l’allocation ciblée des ressources pour soutenir
+      des stratégies de prévention en santé publique.
+
+cta:
+  title: "Découvrez comment Entrelacs peut aider votre organisation"
+  text: >
+    Rejoignez-nous pour construire un avenir où les soins de santé mentale sont aussi uniques
+    que les personnes qu’ils servent.
+  contact: "Nous contacter"
+  demo: "Demander une démo"

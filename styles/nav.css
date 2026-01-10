@@ -147,3 +147,47 @@
 .navactive{
   color: var(--teal);
 }
+
+
+.gtranslate_wrapper{
+  /* display: none; */
+  /* width: 0px;
+  height: 0px;
+  overflow: hidden; */
+}
+
+.languageSwitcher{
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.languageSwitcher svg, .languageSwitcher img{
+  height: 30px;
+}
+.langDropdown{
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  background: var(--background);
+  font-size: 16px;
+}
+.langDropdownitem{
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+.langDropdownitem:hover{
+  background: #ddd;
+}
+
+.langDropdownitem img{
+  width: 30px;
+  height: 30px;
+}

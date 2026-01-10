@@ -1,0 +1,107 @@
+hero:
+  title: "The blood lab for mental health"
+  title_suffix: "— precision, personalization, and prevention in one platform."
+  subtitle: >
+    Entrelacs transforms mental health assessment by combining conversational AI with
+    dynamic psychometrics, creating assessments that adapt to each individual and become
+    more accurate over time
+  cta_learn_more: "Learn More"
+  cta_request_demo: "Request a Demo"
+
+problem:
+  tag: "The Problem"
+  text: >
+    One-size-fits-all mental health assessments miss early signs, causing late support,
+    ineffective interventions and costly outcomes.
+
+solution:
+  tag: "Our Solution"
+  title: "Mental health care with precision, personalization and prevention"
+  description: >
+    Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving,
+    individualized mental health assessments for precise, continuous insights across wellbeing.
+
+pillars:
+  precision:
+    title: "Precision"
+    text: >
+      Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving,
+      personalized, and highly accurate mental and social health assessments at scale.
+  personalization:
+    title: "Personalisation"
+    text: >
+      Insights and recommendations adapt to each person’s patterns and context,
+      becoming precise with each interaction.
+  prevention:
+    title: "Prevention"
+    text: >
+      Continuous monitoring detects subtle shifts early, enabling preventive,
+      personalized mental health care before crises escalate.
+
+steps:
+  title: "From conversation to personalized care in three steps"
+  one:
+    title: "Chat & Discover"
+    text: >
+      Our AI engages with you through conversation, analysing language, tone, and patterns
+      to provide insights into how you connect with others.
+  two:
+    title: "AI maps your connections"
+    text: >
+      Answer personalized assessment questions to help you better understand your social
+      interactions and workplace relationships.
+  three:
+    title: "Get personalized report"
+    text: >
+      Personalized insights reveal your social and workplace connection patterns and guide
+      you toward healthier, stronger relationships.
+
+benefits:
+  title: "Better Assessment. Better Care. Better Outcomes."
+  subtitle: "Beyond standard mental health screening"
+  behavioral:
+    title: "Behavioral Science meets AI"
+    text: >
+      AI combined with advanced psychometrics delivers nuanced, validated assessments
+      backed by global research partnerships.
+  dynamic:
+    title: "Dynamic, not static"
+    text: >
+      Entrelacs tracks changing mental health patterns over time for earlier detection
+      and precise predictions.
+  holistic:
+    title: "Holistic assessment"
+    text: >
+      Comprehensive mental and social health profiling uncovers symptoms, patterns,
+      and risks that traditional screening overlooks.
+  privacy:
+    title: "Privacy-First Architecture"
+    text: >
+      User-controlled data, strict security, and healthcare-grade privacy ensure safety
+      and trust throughout the system.
+
+platform:
+  tag: "Our Solution"
+  title: "One platform. Every mental health setting."
+  workplace:
+    title: "Workplace social health"
+    text: >
+      Proactively monitor employee well-being, detect disconnection early, and support
+      retention through personalized, preventive mental health insights.
+  clinical:
+    title: "Clinical care"
+    text: >
+      Provide clinicians with precise, continuous assessments for better diagnosis,
+      treatment matching, and early intervention before crises emerge.
+  community:
+    title: "Community/Public health"
+    text: >
+      Enable large-scale mental health screening and targeted resource allocation to support
+      preventative public health strategies.
+
+cta:
+  title: "See how Entrelacs can help your organization"
+  text: >
+    Join us in building a future where mental health care is as unique as the individuals it serves
+  contact: "Contact Us"
+  demo: "Request a Demo"
