@@ -6,6 +6,21 @@ navigation:
   about: "À propos"
   contact: "Contactez-nous"
 
+footer:
+  company_name: "Entrelacs"
+  nav:
+    home: "Accueil"
+    employers: "Employeurs"
+    healthcare: "Santé"
+    about: "À propos"
+    technology: "Technologie"
+    contact: "Contactez-nous"
+  legal:
+    privacy: "Politique de confidentialité"
+    terms: "Conditions d'utilisation"
+    mentions: "Mentions légales"
+  copyright: "Entrelacs 2025"
+
 home:
   meta:
     title: "Entrelacs"
