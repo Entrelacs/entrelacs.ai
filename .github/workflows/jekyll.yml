@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # High compatibility version
+          ruby-version: '3.2.3' # High compatibility version
           bundler-cache: true # runs 'bundle install' and caches gems
 
       - name: Setup Pages
