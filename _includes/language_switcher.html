@@ -1,0 +1,70 @@
+<div class="languageSwitcher">
+  
+  {% assign clean_url = page.url %}
+  
+  {% if site.lang == 'fr' %}
+    {% assign clean_url = page.url | remove_first: '/fr' %}
+  {% endif %}
+
+  <div class="langFlag">
+    {% if site.lang == 'fr' %}
+      <img src="{{ site.data.flags.French.flag }}" alt="French">
+    {% else %}
+      <img src="{{ site.data.flags.English.flag }}" alt="English">
+    {% endif %}
+  </div>
+
+  <div class="langDropdown">
+    
+    <a href="{{ clean_url | relative_url }}" class="langDropdownitem">
+      <img src="{{ site.data.flags.English.flag }}" alt="English">
+      <p>English</p>
+    </a>
+
+    <a href="/fr{{ clean_url }}" class="langDropdownitem">
+      <img src="{{ site.data.flags.French.flag }}" alt="French">
+      <p>French</p>
+    </a>
+
+  </div>
+</div>
+<script>
+  (function() {
+    const switchers = document.querySelectorAll('.languageSwitcher');
+
+    switchers.forEach(switcher => {
+      // 1. CHECK: If this specific switcher already has listeners, stop.
+      if (switcher.hasAttribute('data-initialized')) {
+        return; 
+      }
+
+      // 2. MARK: Label this switcher as "done" so future scripts ignore it
+      switcher.setAttribute('data-initialized', 'true');
+
+      const flagTrigger = switcher.querySelector('.langFlag');
+      const dropdown = switcher.querySelector('.langDropdown');
+
+      if (flagTrigger && dropdown) {
+        flagTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          
+          // Close ANY open dropdowns on the page (except this one)
+          document.querySelectorAll('.langDropdown').forEach(d => {
+            if (d !== dropdown) d.style.display = 'none';
+          });
+
+          // Toggle this one
+          dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        });
+      }
+    });
+
+    // 3. GLOBAL LISTENER: Only add this ONCE for the whole page
+    if (!window.langSwitcherGlobalClickSet) {
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.langDropdown').forEach(d => d.style.display = 'none');
+      });
+      window.langSwitcherGlobalClickSet = true;
+    }
+  })();
+</script>

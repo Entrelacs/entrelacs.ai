@@ -18,5 +18,13 @@ title: Entrelacs
 email: hans@entrelacs.ai
 description: >-
   The Mental Health Laboratory: A next generation assessment platform.
-baseurl: "/"
+baseurl: ""
 url: "https://entrelacs.ai/"
+
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+languages: ["en", "fr"] #Supported languages
+default_lang: "en"
+exclude_from_localizations: ["javascript", "images", "css"]
