@@ -1,3 +1,11 @@
+navigation:
+  home: "Home"
+  employers: "Employers"
+  healthcare: "Healthcare"
+  technology: "Technology"
+  about: "About Us"
+  contact: "Contact Us"
+
 home:
   meta:
     title: "Entrelacs"
@@ -68,3 +76,126 @@ home:
     text: "Join us in building a future where mental health care is as unique as the individuals it serves"
     contact_btn: "Contact Us"
     demo_btn: "Request a Demo"
+
+
+employers:
+  meta:
+    title: "Entrelacs for Employers"
+  hero:
+    subtitle: "ENTRELACS FOR EMPLOYERS"
+    title: "Identify disconnection before employees start job searching"
+    description: "Entrelacs uses AI-driven assessments to detect early employee disconnection, deliver personalized relationship guidance, and reduce turnover with measurable organizational ROI."
+    cta_sales: "Contact Sales"
+    cta_demo: "Schedule a Demo"
+  problem:
+    tag: "The Problem"
+    title: "Social Disconnection: The hidden driver of turnover"
+    text: "Social connection drives retention and performance, yet organizations lack visibility into belonging until exit interviews—making support and intervention come too late."
+    stats:
+      - "<span>36%</span> of workers feel lonely at work"
+      - "Lonely employees are <span>2×</span> more likely to quit"
+      - "Replacing talent costs <span>50–200%</span> of salary"
+      - "A 500-person company can lose <span>$7.5M</span> yearly to avoidable turnover"
+  how_it_works:
+    title: "How entrelacs works for employers"
+    subtitle: "From Invisible Risk to Measurable Action"
+    assessment:
+      title: "Personalized Employee Assessment"
+      text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
+      subhead: "What we measure:"
+      list:
+        - "Different types of social needs (deep 1-on-1 connections vs. group belonging)"
+        - "Connection quality across various relationship contexts"
+        - "Individual patterns and preferences in how they build relationships"
+        - "Early warning signs specific to that person's baseline"
+    insights:
+      title: "Individual Insights & Support"
+      text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
+      subhead: "Employee benefits:"
+      list:
+        - "Understanding their connection style and what they specifically need"
+        - "Early awareness of disconnection before it impacts mental health or career"
+        - "Actionable strategies matched to their situation (not generic \"virtual happy hour\" advice)"
+        - "Validation that others experience similar challenges"
+    intelligence:
+      title: "Team & Organizational Intelligence"
+      text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health"
+      subhead: "What you'll see:"
+      list:
+        - "Early warning system"
+        - "Predictive analytics"
+        - "Team-level patterns"
+        - "Trends over time"
+  differentiation:
+    title: "What makes Entrelacs different"
+    subtitle: "Beyond traditional engagement surveys"
+    precision:
+      title: "Precision, not averages"
+      text: "Entrelacs replaces aggregate survey scores with dynamic psychometrics, revealing individual connection patterns across contexts to identify thriving and at-risk groups."
+    privacy:
+      title: "Privacy & trust built in"
+      text: "Employees control data sharing; managers see only anonymized insights, preserving trust, privacy, and psychological safety."
+    continuous:
+      title: "Continuous, not episodic"
+      text: "Regular check-ins build dynamic social health fingerprints, enabling early intervention before declines escalate into serious challenges."
+    actionable:
+      title: "Actionable, not just diagnostic"
+      text: "Beyond data, Entrelacs delivers personalized employee guidance, team-specific manager advice, and targeted HR resource allocation."
+    predictive:
+      title: "Predictive & validated"
+      text: "Built on validated research linking workplace loneliness to turnover, Entrelacs predicts employee departure using advanced, evidence-based assessments."
+  benefits:
+    title: "Benefit for your organization"
+    subtitle: "Measurable impact on culture and outcomes"
+    hr:
+      title: "HR & Leadership"
+      list:
+        - "Early detection of flight risk"
+        - "Reduced turnover costs"
+        - "Data-driven resource allocation"
+        - "Stronger cultural metrics (belonging, safety, trust)"
+      cta: "Schedule a demo"
+    managers:
+      title: "Managers"
+      list:
+        - "Clear visibility into team connection challenges"
+        - "Timely support conversations"
+        - "Targeted team-building that actually works"
+    employees:
+      title: "Employees"
+      list:
+        - "Awareness of their connection needs"
+        - "Practical, personalized guidance"
+        - "Confidential experience with full control of their data"
+  journey:
+    title: "Supporting connection across the employee journey"
+    onboarding:
+      title: "Onboarding & integration"
+      text: "Help new hires connect early and identify integration challenges."
+    restructuring:
+      title: "Team formation & restructuring"
+      text: "Reveal dynamics to accelerate cohesion and reduce friction quickly."
+    remote:
+      title: "Remote & hybrid work"
+      text: "Track connection health in distributed teams with limited social signals."
+    burnout:
+      title: "Burnout prevention"
+      text: "Help new hires connect early and identify integration challenges."
+    high_risk:
+      title: "High-risk populations"
+      text: "Reveal dynamics to accelerate cohesion and reduce friction quickly."
+    exit:
+      title: "Exit risk reduction"
+      text: "Track connection health in distributed teams with limited social signals."
+    cta: "Schedule a demo"
+  cta_banner:
+    title: "Transform your retention strategy"
+    text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
+    list:
+      - "Demo & ROI Assessment"
+      - "Implementation & Training"
+      - "Pilot Program Design"
+      - "Launch & Optimization"
+    roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
+    cta_sales: "Contact Sales"
+    cta_roi: "Use ROI Calculator"

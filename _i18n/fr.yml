@@ -1,3 +1,11 @@
+navigation:
+  home: "Accueil"
+  employers: "Employeurs"
+  healthcare: "Santé"
+  technology: "Technologie"
+  about: "À propos"
+  contact: "Contactez-nous"
+
 home:
   meta:
     title: "Entrelacs"
@@ -68,3 +76,126 @@ home:
     text: "Rejoignez-nous pour construire un avenir où les soins de santé mentale sont aussi uniques que les individus qu'ils servent"
     contact_btn: "Contactez-nous"
     demo_btn: "Demander une démo"
+
+
+employers:
+  meta:
+    title: "Entrelacs pour les Employeurs"
+  hero:
+    subtitle: "ENTRELACS POUR LES EMPLOYEURS"
+    title: "Identifiez la déconnexion avant que vos employés ne cherchent ailleurs"
+    description: "Entrelacs utilise des évaluations par IA pour détecter précocement la déconnexion des employés, offrir des conseils relationnels personnalisés et réduire le roulement avec un retour sur investissement mesurable."
+    cta_sales: "Contacter les ventes"
+    cta_demo: "Planifier une démo"
+  problem:
+    tag: "Le Problème"
+    title: "La déconnexion sociale : moteur caché du roulement"
+    text: "La connexion sociale favorise la rétention et la performance, mais les entreprises manquent de visibilité sur le sentiment d'appartenance jusqu'aux entretiens de départ—rendant l'intervention trop tardive."
+    stats:
+      - "<span>36 %</span> des travailleurs se sentent seuls au travail"
+      - "Les employés isolés sont <span>2×</span> plus susceptibles de démissionner"
+      - "Remplacer un talent coûte <span>50–200 %</span> de son salaire"
+      - "Une entreprise de 500 personnes peut perdre <span>7,5 M$</span> par an en roulement évitable"
+  how_it_works:
+    title: "Comment Entrelacs fonctionne pour les employeurs"
+    subtitle: "Du risque invisible à l'action mesurable"
+    assessment:
+      title: "Évaluation personnalisée de l'employé"
+      text: "Les employés participent à de brefs échanges conversationnels (5-7 minutes) sur leur connexion sociale, tant de manière générale qu'au sein de leur équipe."
+      subhead: "Ce que nous mesurons :"
+      list:
+        - "Différents types de besoins sociaux (connexions 1-à-1 vs appartenance de groupe)"
+        - "Qualité de la connexion dans divers contextes relationnels"
+        - "Modèles individuels et préférences relationnelles"
+        - "Signes avant-coureurs spécifiques à la norme de cette personne"
+    insights:
+      title: "Perspectives et soutien individuels"
+      text: "Chaque employé reçoit des informations confidentielles sur ses schémas de connexion sociale et des recommandations pratiques et personnalisées adaptées à ses besoins uniques."
+      subhead: "Avantages pour l'employé :"
+      list:
+        - "Compréhension de son style de connexion et de ses besoins spécifiques"
+        - "Conscience précoce de la déconnexion avant qu'elle n'impacte la santé mentale ou la carrière"
+        - "Stratégies concrètes adaptées à sa situation (pas de conseils génériques)"
+        - "Validation que d'autres vivent des défis similaires"
+    intelligence:
+      title: "Intelligence d'équipe et organisationnelle"
+      text: "Avec le consentement de l'employé, les données anonymisées et agrégées offrent aux RH et aux gestionnaires une visibilité sans précédent sur la dynamique d'équipe et la santé relationnelle de l'organisation."
+      subhead: "Ce que vous verrez :"
+      list:
+        - "Système d'alerte précoce"
+        - "Analyses prédictives"
+        - "Modèles au niveau de l'équipe"
+        - "Tendances au fil du temps"
+  differentiation:
+    title: "Ce qui différencie Entrelacs"
+    subtitle: "Au-delà des sondages d'engagement traditionnels"
+    precision:
+      title: "Précision, pas de moyennes"
+      text: "Entrelacs remplace les scores globaux par une psychométrie dynamique, révélant les modèles de connexion individuels pour identifier les groupes épanouis et ceux à risque."
+    privacy:
+      title: "Confidentialité et confiance intégrées"
+      text: "Les employés contrôlent le partage des données ; les gestionnaires ne voient que des informations anonymisées, préservant la confiance, la confidentialité et la sécurité psychologique."
+    continuous:
+      title: "Continu, pas épisodique"
+      text: "Des suivis réguliers construisent une empreinte de santé sociale dynamique, permettant une intervention précoce avant que les déclins ne deviennent des problèmes majeurs."
+    actionable:
+      title: "Actionnable, pas juste diagnostique"
+      text: "Au-delà des données, Entrelacs fournit des conseils personnalisés aux employés, des avis spécifiques aux gestionnaires et permet une allocation ciblée des ressources RH."
+    predictive:
+      title: "Prédictif et validé"
+      text: "Basé sur des recherches validées liant la solitude au travail au roulement, Entrelacs prédit le départ des employés grâce à des évaluations avancées et fondées sur des preuves."
+  benefits:
+    title: "Avantages pour votre organisation"
+    subtitle: "Impact mesurable sur la culture et les résultats"
+    hr:
+      title: "RH et Leadership"
+      list:
+        - "Détection précoce du risque de départ"
+        - "Réduction des coûts de roulement"
+        - "Allocation des ressources basée sur les données"
+        - "Indicateurs culturels renforcés (appartenance, sécurité, confiance)"
+      cta: "Planifier une démo"
+    managers:
+      title: "Gestionnaires"
+      list:
+        - "Visibilité claire sur les défis de connexion de l'équipe"
+        - "Conversations de soutien opportunes"
+        - "Renforcement d'équipe ciblé et efficace"
+    employees:
+      title: "Employés"
+      list:
+        - "Conscience de leurs besoins de connexion"
+        - "Conseils pratiques et personnalisés"
+        - "Expérience confidentielle avec contrôle total des données"
+  journey:
+    title: "Soutenir la connexion tout au long du parcours employé"
+    onboarding:
+      title: "Intégration (Onboarding)"
+      text: "Aidez les nouvelles recrues à se connecter tôt et identifiez les défis d'intégration."
+    restructuring:
+      title: "Formation et restructuration d'équipe"
+      text: "Révélez les dynamiques pour accélérer la cohésion et réduire rapidement les frictions."
+    remote:
+      title: "Travail à distance et hybride"
+      text: "Suivez la santé de la connexion dans les équipes distribuées ayant peu de signaux sociaux."
+    burnout:
+      title: "Prévention de l'épuisement"
+      text: "Aidez les nouvelles recrues à se connecter tôt et identifiez les défis d'intégration."
+    high_risk:
+      title: "Populations à haut risque"
+      text: "Révélez les dynamiques pour accélérer la cohésion et réduire rapidement les frictions."
+    exit:
+      title: "Réduction du risque de départ"
+      text: "Suivez la santé de la connexion dans les équipes distribuées ayant peu de signaux sociaux."
+    cta: "Planifier une démo"
+  cta_banner:
+    title: "Transformez votre stratégie de rétention"
+    text: "Découvrez comment Entrelacs aide les organisations à bâtir des équipes plus fortes et connectées tout en réduisant le roulement coûteux."
+    list:
+      - "Démo et évaluation du ROI"
+      - "Mise en œuvre et formation"
+      - "Conception de programme pilote"
+      - "Lancement et optimisation"
+    roi_text: "Utilisez notre calculateur de ROI pour voir comment Entrelacs peut réduire vos coûts."
+    cta_sales: "Contacter les ventes"
+    cta_roi: "Utiliser le calculateur ROI"
