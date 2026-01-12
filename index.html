@@ -1,189 +1,243 @@
 ---
-layout: null
 ---
 
-
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrelacs</title>
+    <title>{% t home.meta.title %}</title>
     {% include head.html %}
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     {% include navBar.html %}
-
     <main class="page">
-
-        <!-- HERO -->
         <div id="hero" class="pageItem">
-            <h1>
-                {% t hero.title %}
-                <span>{{ t.hero.title_suffix }}</span>
-            </h1>
-
-            <p class="subheader">{{ t.hero.subtitle }}</p>
-
+            <h1>{% t home.hero.title_prefix %} <span>{% t home.hero.title_span %}</span> {% t home.hero.title_suffix %}</h1>
+            <p class="subheader">{% t home.hero.subtitle %}</p>
             <div class="ctas">
                 <button class="cta" style="color: var(--teal); background: var(--teal-light);">
-                    <p style="margin-right: 10px;">{{ t.hero.cta_learn_more }}</p>
+                    <p style="margin-right: 10px;">{% t home.hero.cta_learn %}</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1CAFBF" stroke-width="2.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1CAFBF" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
-
-                <a href="/contact-us/" class="cta">{{ t.hero.cta_request_demo }}</a>
+                <a href="{{ site.baseurl}}/contact-us/" class="cta">{% t home.hero.cta_demo %}</a>
             </div>
-
             <div id="heroVideo">
-                <iframe src="https://drive.google.com/file/d/1dRKPy8H8QeRFku6b7wxsw6LV7VrsMQt0/preview"
-                        width="100%" height="100%" allow="autoplay" allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/1QEyT3gvR1x5NLjeVu4a0mDsuESGEOVMw/preview" width="100%"
+                    height="100%" allow="autoplay" allowfullscreen>
+                </iframe>
             </div>
         </div>
 
-        <!-- PROBLEM -->
         <div class="pageItem lsection">
-            <div class="tag red">{{ t.problem.tag }}</div>
-            <h2>{{ t.problem.text }}</h2>
+            <div class="tag red">{% t home.problem.tag %}</div>
+            <h2>{% t home.problem.title %}</h2>
         </div>
 
-        <!-- SOLUTION -->
         <div class="pageItem lsection">
-            <div class="tag green">{{ t.solution.tag }}</div>
-            <h2>{{ t.solution.title }}</h2>
-            <p class="lsectionP">{{ t.solution.description }}</p>
-
+            <div class="tag green">{% t home.solution.tag %}</div>
+            <h2>{% t home.solution.title %}</h2>
+            <p class="lsectionP">{% t home.solution.description %}</p>
             <div class="array" style="margin-top: 40px">
                 <div class="arrayItem">
-                    <img src="/images/precision.webp" alt="">
-                    <h3>{{ t.pillars.precision.title }}</h3>
-                    <p>{{ t.pillars.precision.text }}</p>
+                    <div class="img">
+                        <img src="/images/precision.webp" alt="">
+                    </div>
+                    <h3>{% t home.features.precision.title %}</h3>
+                    <p>{% t home.features.precision.text %}</p>
                 </div>
-
                 <div class="arrayItem">
-                    <img src="/images/personalisation.webp" alt="">
-                    <h3>{{ t.pillars.personalization.title }}</h3>
-                    <p>{{ t.pillars.personalization.text }}</p>
+                    <div class="img">
+                        <img src="/images/personalisation.webp" alt="">
+                    </div>
+                    <h3>{% t home.features.personalisation.title %}</h3>
+                    <p>{% t home.features.personalisation.text %}</p>
                 </div>
-
                 <div class="arrayItem">
-                    <img src="/images/prevention.webp" alt="">
-                    <h3>{{ t.pillars.prevention.title }}</h3>
-                    <p>{{ t.pillars.prevention.text }}</p>
+                    <div class="img">
+                        <img src="/images/prevention.webp" alt="">
+                    </div>
+                    <h3>{% t home.features.prevention.title %}</h3>
+                    <p>{% t home.features.prevention.text %}</p>
                 </div>
             </div>
-
             <div class="ctas" style="margin-top: 56px;">
-                <a href="/contact-us/" class="cta"
-                   style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">
-                    {{ t.hero.cta_request_demo }}
-                </a>
+                <a href="{{ site.baseurl}}/contact-us/" class="cta"
+                    style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">{% t home.solution.cta_demo %}</a>
             </div>
         </div>
 
-        <!-- STEPS -->
         <div id="secGreen" class="pageItem lsection lcentered">
-            <h2 style="text-align:center;">{{ t.steps.title }}</h2>
-
-            <div class="accord" style="padding-top:80px;">
-                <img src="/images/your_profile.webp" alt="">
-
+            <h2 style="text-align: center;">{% t home.how_it_works.title %}</h2>
+            <div class="accord" style="padding-top: 80px;">
+                <div class="img">
+                    <img src="/images/your_profile.webp" alt="">
+                </div>
                 <div class="text">
                     <div class="textItem">
-                        <h4>{{ t.steps.one.title }}</h4>
-                        <p>{{ t.steps.one.text }}</p>
+                        <h4>{% t home.how_it_works.step1.title %}</h4>
+                        <p>{% t home.how_it_works.step1.text %}</p>
                     </div>
-
                     <div class="textItem">
-                        <h4>{{ t.steps.two.title }}</h4>
-                        <p>{{ t.steps.two.text }}</p>
+                        <h4>{% t home.how_it_works.step2.title %}</h4>
+                        <p>{% t home.how_it_works.step2.text %}</p>
                     </div>
-
                     <div class="textItem">
-                        <h4>{{ t.steps.three.title }}</h4>
-                        <p>{{ t.steps.three.text }}</p>
+                        <h4>{% t home.how_it_works.step3.title %}</h4>
+                        <p>{% t home.how_it_works.step3.text %}</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- BENEFITS -->
         <div class="pageItem lsection lcentered">
-            <h2 style="text-align:center;">{{ t.benefits.title }}</h2>
-            <p class="lsectionP2">{{ t.benefits.subtitle }}</p>
-
-            <div class="array2" style="margin-top:60px;">
+            <h2 style="text-align: center;">{% t home.better_outcomes.title %}</h2>
+            <p class="lsectionP2">{% t home.better_outcomes.subtitle %}</p>
+            <div class="array2" style="margin-top: 60px;">
                 <div class="array2Item">
-                    <h3>{{ t.benefits.behavioral.title }}</h3>
-                    <p>{{ t.benefits.behavioral.text }}</p>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M37.5 4.16602H12.5C9.04167 4.16602 6.25 6.93685 6.25 10.3535V33.0827C6.25 36.4993 9.04167 39.291 12.5 39.291H14.0833C15.7292 39.291 17.3333 39.9368 18.5 41.1035L22.0625 44.6243C23.6875 46.2285 26.3125 46.2285 27.9375 44.6243L31.5 41.1035C32.6667 39.9368 34.2708 39.291 35.9167 39.291H37.5C40.9583 39.291 43.75 36.4993 43.75 33.0827V10.3535C43.75 6.93685 40.9583 4.16602 37.5 4.16602ZM25 11.5618C27.25 11.5618 29.0625 13.3952 29.0625 15.6243C29.0625 17.8327 27.3125 19.6035 25.1458 19.6868C25.0625 19.6868 24.9375 19.6868 24.8333 19.6868C22.6458 19.6035 20.9167 17.8327 20.9167 15.6243C20.9375 13.3952 22.75 11.5618 25 11.5618ZM30.7292 30.6035C27.5833 32.7077 22.4167 32.7077 19.2708 30.6035C16.5 28.7702 16.5 25.7285 19.2708 23.8743C22.4375 21.7702 27.6042 21.7702 30.7292 23.8743C33.5 25.7285 33.5 28.7493 30.7292 30.6035Z"
+                            fill="#132C47" />
+                    </svg>
+                    <h3>{% t home.better_outcomes.science.title %}</h3>
+                    <p>{% t home.better_outcomes.science.text %}</p>
                 </div>
-
                 <div class="array2Item">
-                    <h3>{{ t.benefits.dynamic.title }}</h3>
-                    <p>{{ t.benefits.dynamic.text }}</p>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25 20C36.0457 20 45 16.6421 45 12.5C45 8.35788 36.0457 5 25 5C13.9543 5 5 8.35788 5 12.5C5 16.6421 13.9543 20 25 20ZM42.3243 21.25C38.8663 23.4918 32.4028 25 25 25C17.5972 25 11.1337 23.4918 7.67565 21.25C5.97395 22.3531 5 23.6339 5 25C5 29.1423 13.9543 32.5 25 32.5C36.0457 32.5 45 29.1423 45 25C45 23.6339 44.026 22.3531 42.3243 21.25ZM42.3243 33.75C38.8663 35.9918 32.4028 37.5 25 37.5C17.5972 37.5 11.1337 35.9918 7.67565 33.75C5.97395 34.8533 5 36.134 5 37.5C5 41.6423 13.9543 45 25 45C36.0457 45 45 41.6423 45 37.5C45 36.134 44.026 34.8533 42.3243 33.75Z"
+                            fill="#132C47" />
+                    </svg>
+
+                    <h3>{% t home.better_outcomes.dynamic.title %}</h3>
+                    <p>{% t home.better_outcomes.dynamic.text %}</p>
                 </div>
-
                 <div class="array2Item">
-                    <h3>{{ t.benefits.holistic.title }}</h3>
-                    <p>{{ t.benefits.holistic.text }}</p>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M39.5833 6.25H10.4167C8.125 6.25 6.25 8.125 6.25 10.4167V39.5833C6.25 41.875 8.125 43.75 10.4167 43.75H39.5833C41.875 43.75 43.75 41.875 43.75 39.5833V10.4167C43.75 8.125 41.875 6.25 39.5833 6.25ZM18.75 35.4167H14.5833V20.8333H18.75V35.4167ZM27.0833 35.4167H22.9167V14.5833H27.0833V35.4167ZM35.4167 35.4167H31.25V27.0833H35.4167V35.4167Z"
+                            fill="#132C47" />
+                    </svg>
+
+                    <h3>{% t home.better_outcomes.holistic.title %}</h3>
+                    <p>{% t home.better_outcomes.holistic.text %}</p>
                 </div>
-
                 <div class="array2Item">
-                    <h3>{{ t.benefits.privacy.title }}</h3>
-                    <p>{{ t.benefits.privacy.text }}</p>
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M43.7493 34.3757C43.7493 38.4027 40.4848 41.6673 36.4577 41.6673C32.4306 41.6673 29.166 38.4027 29.166 34.3757C29.166 30.3486 32.4306 27.084 36.4577 27.084C40.4848 27.084 43.7493 30.3486 43.7493 34.3757Z"
+                            fill="#132C47" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.60352 20.834C2.60352 19.971 3.30308 19.2715 4.16602 19.2715H45.8327C46.6956 19.2715 47.3952 19.971 47.3952 20.834C47.3952 21.6969 46.6956 22.3965 45.8327 22.3965H4.16602C3.30308 22.3965 2.60352 21.6969 2.60352 20.834Z"
+                            fill="#132C47" />
+                        <path opacity="0.5"
+                            d="M8.72461 19.2708L9.61273 15.7183C10.7495 11.1711 11.318 8.89744 13.0133 7.57371C14.7087 6.25 17.0523 6.25 21.7396 6.25H28.2617C32.949 6.25 35.2925 6.25 36.9879 7.57371C38.6834 8.89744 39.2517 11.1711 40.3886 15.7183L41.2767 19.2708H8.72461Z"
+                            fill="#132C47" />
+                        <path
+                            d="M20.8333 34.3757C20.8333 38.4027 17.5687 41.6673 13.5417 41.6673C9.51458 41.6673 6.25 38.4027 6.25 34.3757C6.25 30.3486 9.51458 27.084 13.5417 27.084C17.5687 27.084 20.8333 30.3486 20.8333 34.3757Z"
+                            fill="#132C47" />
+                        <path opacity="0.5"
+                            d="M20.5918 36.2431C20.7493 35.6469 20.8332 35.0208 20.8332 34.3752C20.8332 33.8068 20.7682 33.2535 20.6451 32.7225L21.5068 32.2916C23.7062 31.1918 26.2952 31.1918 28.4945 32.2916L29.3547 32.7218C29.2316 33.2531 29.1666 33.8064 29.1666 34.3752C29.1666 35.0206 29.2504 35.6462 29.4079 36.2421L27.097 35.0866C25.7772 34.4268 24.2241 34.4268 22.9043 35.0866L20.5918 36.2431Z"
+                            fill="#132C47" />
+                    </svg>
+
+                    <h3>{% t home.better_outcomes.privacy.title %}</h3>
+                    <p>{% t home.better_outcomes.privacy.text %}</p>
                 </div>
             </div>
         </div>
 
-        <!-- PLATFORM -->
+
         <div class="pageItem lsection">
-            <div class="tag green">{{ t.platform.tag }}</div>
-            <h2>{{ t.platform.title }}</h2>
+            <div class="tag green">{% t home.solution.tag %}</div>
+            <h2>{% t home.settings.title %}</h2>
+            <div class="array3" style="margin-top: 60px;">
+                <div class="array3Item" style="background: #F2EFE9;">
+                    <svg width="280" height="361" viewBox="0 0 280 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3568_19082)">
+                            <path opacity="0.5"
+                                d="M403.809 118.605C390.568 178.22 312.312 226.999 256.801 254.72C231.671 267.269 219.106 273.545 202.476 269.852C185.847 266.158 177.119 255.155 159.664 233.147C121.107 184.532 70.8587 107.212 84.0993 47.5967C106.218 -51.9926 202.4 -69.6465 257.244 23.2616C346.263 -37.6941 425.928 19.0156 403.809 118.605Z"
+                                fill="#DED3BB" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M182.911 18.0938C176.29 16.6232 169.73 20.7987 168.259 27.4201L163.821 47.4022L143.839 42.9642C137.218 41.4937 130.658 45.669 129.187 52.2905C127.717 58.9119 131.892 65.4719 138.514 66.9424L158.495 71.3805L154.058 91.362C152.587 97.9831 156.763 104.543 163.384 106.014C170.005 107.484 176.565 103.309 178.036 96.6876L182.474 76.7061L202.455 81.1441C209.077 82.6147 215.637 78.4391 217.107 71.8178C218.578 65.1963 214.402 58.6365 207.781 57.1659L187.799 52.7279L192.237 32.7457C193.708 26.1244 189.532 19.5644 182.911 18.0938Z"
+                                fill="#DED3BB" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3568_19082">
+                                <rect width="393" height="393" fill="white"
+                                    transform="matrix(-0.976212 -0.216819 -0.216819 0.976212 468.861 -23.2383)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
 
-            <div class="array3" style="margin-top:60px;">
-                <div class="array3Item">
-                    <h3>{{ t.platform.workplace.title }}</h3>
-                    <p>{{ t.platform.workplace.text }}</p>
+                    <h3>{% t home.settings.workplace.title %}</h3>
+                    <p>{% t home.settings.workplace.text %}</p>
                 </div>
+                <div class="array3Item" style="background: #E3EEF0;">
+                    <svg width="242" height="292" viewBox="0 0 242 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M322.422 246.845L36.5315 189.088C30.6707 187.904 24.8287 191.782 23.6447 197.643C22.4606 203.504 26.3389 209.346 32.1997 210.53L318.091 268.287C323.951 269.471 329.793 265.592 330.977 259.731C332.161 253.871 328.283 248.029 322.422 246.845Z"
+                            fill="#D1DEDF" />
+                        <path
+                            d="M306.54 -42.7655L163.594 -71.6439C120.711 -80.3075 101.247 -57.6081 94.8646 -26.0171L48.6591 202.696L134.426 220.023L151.927 133.398C153.428 125.965 160.645 121.174 168.078 122.675L227.115 134.602C234.405 136.075 239.339 143.32 237.837 150.754L220.337 237.379L306.104 254.706L352.309 25.993C358.549 -5.62684 349.423 -34.1019 306.54 -42.7655ZM249.866 53.6504L224.851 48.5966L219.797 73.6121C218.613 79.4728 212.771 83.3511 206.91 82.1671C201.05 80.9831 197.171 75.1411 198.355 69.2803L203.409 44.2649L178.394 39.2111C172.533 38.0271 168.655 32.1851 169.839 26.3243C171.023 20.4636 176.865 16.5853 182.725 17.7693L207.741 22.823L212.795 -2.19241C213.979 -8.05317 219.821 -11.9314 225.681 -10.7474C231.542 -9.56341 235.42 -3.7214 234.236 2.13936L229.183 27.1548L254.198 32.2085C260.059 33.3926 263.937 39.2346 262.753 45.0953C261.569 50.9561 255.727 54.8344 249.866 53.6504Z"
+                            fill="#D1DEDF" />
+                    </svg>
 
-                <div class="array3Item">
-                    <h3>{{ t.platform.clinical.title }}</h3>
-                    <p>{{ t.platform.clinical.text }}</p>
+                    <h3>{% t home.settings.clinical.title %}</h3>
+                    <p>{% t home.settings.clinical.text %}</p>
                 </div>
+                <div class="array3Item" style="background: #EAEAEE;">
+                    <svg width="230" height="290" viewBox="0 0 230 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3568_19094)">
+                            <path
+                                d="M174.356 44.1684C196.927 44.1684 215.225 25.8706 215.225 3.29905C215.225 -19.2725 196.927 -37.5703 174.356 -37.5703C151.784 -37.5703 133.486 -19.2725 133.486 3.29905C133.486 25.8706 151.784 44.1684 174.356 44.1684Z"
+                                fill="#D9D8E3" />
+                            <path
+                                d="M317.423 115.739L279.333 107.794C266.356 105.075 253.543 111.023 246.77 121.598C240.191 118.218 233.116 115.304 225.591 112.886V90.2356C225.607 73.098 211.577 59.084 194.5 59.084H155.553C138.386 59.084 124.417 73.098 124.417 90.2356V113.006C116.967 115.379 109.968 118.293 103.344 121.687C96.5702 111.068 83.7427 105.075 70.7502 107.794L32.6292 115.739C15.8968 119.239 5.03715 135.836 8.53682 152.629L18.1048 198.335C21.5746 215.082 38.1865 225.941 54.9342 222.442L66.995 219.918C73.0327 228.84 81.3843 237.026 92.0783 244.025C114.353 258.625 143.777 266.676 175.004 266.676C222.782 266.676 263.937 247.465 282.892 219.873L295.149 222.442C311.881 225.926 328.493 215.082 331.963 198.335L341.545 152.629C345.03 135.836 334.17 119.239 317.423 115.739ZM174.988 251.07C146.781 251.07 120.345 243.965 100.624 230.973C93.865 226.557 88.2625 221.646 83.772 216.389L93.0093 214.451C109.772 210.966 120.631 194.369 117.132 177.607L108.555 136.512C113.557 133.823 118.814 131.465 124.401 129.453V136.948C124.401 154.055 138.4 168.069 155.537 168.069H194.484C211.577 168.069 225.576 154.041 225.576 136.948V129.062C231.268 131.09 236.615 133.418 241.572 136.061L232.875 177.622C229.406 194.384 240.25 210.982 257.012 214.466L266.34 216.419C248.947 237.011 214.536 251.07 174.988 251.07Z"
+                                fill="#D9D8E3" />
+                            <path
+                                d="M49.2548 97.0383C71.3641 92.4119 85.4833 70.7385 80.9169 48.6439C76.2606 26.5645 54.6318 12.3855 32.5071 17.0118C10.4278 21.6228 -3.75125 43.2816 0.875053 65.3762C5.48673 87.4855 27.1455 101.65 49.2548 97.0383Z"
+                                fill="#D9D8E3" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3568_19094">
+                                <rect width="350" height="350" fill="white" transform="translate(0 -60.4473)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
 
-                <div class="array3Item">
-                    <h3>{{ t.platform.community.title }}</h3>
-                    <p>{{ t.platform.community.text }}</p>
+                    <h3>{% t home.settings.community.title %}</h3>
+                    <p>{% t home.settings.community.text %}</p>
                 </div>
             </div>
         </div>
 
-        <!-- CTA -->
         <div class="pageItem">
             <div id="ctaBanner">
-                <h2>{{ t.cta.title }}</h2>
-                <p>{{ t.cta.text }}</p>
-
+                <h2>{% t home.cta_banner.title %}</h2>
+                <p>{% t home.cta_banner.text %}</p>
                 <div class="ctas">
-                    <a href="/contact-us/" class="cta"
-                       style="color: var(--background); background:#3D2C0A;">
-                        {{ t.cta.contact }}
-                    </a>
-                    <a href="/contact-us/" class="cta"
-                       style="color: var(--text-base); background: var(--background);">
-                        {{ t.cta.demo }}
-                    </a>
+                    <a href="{{ site.baseurl}}/contact-us/" class="cta" style="color: var(--background); background: #3D2C0A;">{% t home.cta_banner.contact_btn %}</a>
+                    <a href="{{ site.baseurl}}/contact-us/" class="cta"
+                        style="color: var(--text-base); background: var(--background);">{% t home.cta_banner.demo_btn %}</a>
                 </div>
             </div>
+
         </div>
+
 
     </main>
 
     {% include footer.html %}
+
+
 </body>
+
 </html>

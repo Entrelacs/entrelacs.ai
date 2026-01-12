@@ -20,25 +20,7 @@
     </ul>
     <ul class="navLinks">
       <li><a class="cta" href="/contact-us/">Contact Us</a></li>
-      <li>
-        <div class="languageSwitcher">
-          <div class="langFlag">
-            <img src="{{ site.data.flags.English.flag }}" alt="">
-
-          </div>
-          <div class="langDropdown">
-            <div class="langDropdownitem">
-              <img src="{{ site.data.flags.English.flag }}" alt="">
-              <p>English</p>
-            </div>
-            <div class="langDropdownitem">
-              <img src="{{ site.data.flags.French.flag }}" alt="">
-              <p>French</p>
-            </div>
-          </div>
-
-        </div>
-      </li>
+      <li>{% include language_switcher.html %}</li>
     </ul>
 
     <div class="mobileMenu" id="mobileMenu" style="display: none;">
@@ -49,7 +31,7 @@
         <li><a href="/technology">Technology</a></li>
         <li><a href="/about">About Us</a></li>
         <li><a class="cta" href="/contact-us">Contact us</a></li>
-        <!-- <li ><a class="cta" href="https://app.entrelacs.ai">Take Assessment</a></li> -->
+        <li>{% include language_switcher.html %}</li>
       </ul>
     </div>
   </div>
@@ -111,66 +93,4 @@
     });
   }
   setActiveNav()
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const languageSwitcher = document.querySelector('.languageSwitcher');
-    if (!languageSwitcher) return;
-
-    const langFlag = languageSwitcher.querySelector('.langFlag img');
-    const langDropdown = languageSwitcher.querySelector('.langDropdown');
-    const langItems = langDropdown.querySelectorAll('.langDropdownitem');
-
-    const SOURCE_LANG = 'en';
-    const langCodes = ['en', 'fr', 'es'];
-
-    // ---- CORE TRANSLATION LOGIC (WIDGET CONTROL) ----
-    function translateTo(langCode) {
-    }
-
-    function setLanguage(index) {
-      const item = langItems[index];
-      const langCode = langCodes[index];
-      if (!item || !langCode) return;
-
-      // Update UI flag
-      const itemImg = item.querySelector('img');
-      if (itemImg) langFlag.src = itemImg.src;
-
-      // Execute Translation
-      translateTo(langCode);
-
-      // Save for next visit
-      localStorage.setItem('selectedLanguage', langCode);
-      langDropdown.style.display = 'none';
-    }
-
-    // Restore saved language on load
-    const savedLang = localStorage.getItem('selectedLanguage');
-    if (savedLang && savedLang !== SOURCE_LANG) {
-      const index = langCodes.indexOf(savedLang);
-      if (index !== -1) {
-        // Small delay to let Google Translate finish initialization
-        setTimeout(() => setLanguage(index), 1000);
-      }
-    }
-
-    // UI Handlers (Dropdown open/close)
-    langFlag.parentElement.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDropdown.style.display =
-        langDropdown.style.display === 'block' ? 'none' : 'block';
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!languageSwitcher.contains(e.target)) {
-        langDropdown.style.display = 'none';
-      }
-    });
-
-    langItems.forEach((item, index) => {
-      item.addEventListener('click', () => setLanguage(index));
-    });
-  });
 </script>
