@@ -1,9 +1,7 @@
 ---
 layout: null
-lang: en
 ---
 
-{% assign t = site.data.translations.en %}
 
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
@@ -24,7 +22,7 @@ lang: en
         <!-- HERO -->
         <div id="hero" class="pageItem">
             <h1>
-                {{ t.hero.title }}
+                {% t hero.title %}
                 <span>{{ t.hero.title_suffix }}</span>
             </h1>
 

@@ -23,7 +23,7 @@ url: "https://entrelacs.ai/"
 
 
 plugins:
-  - jekyll-polyglot
+  - jekyll-multiple-languages-plugin
 
 languages: ["en", "fr"] #Supported languages
 default_lang: "en"
