@@ -215,3 +215,137 @@ employers:
     roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
     cta_sales: "Contact Sales"
     cta_roi: "Use ROI Calculator"
+
+healthcare:
+  hero:
+    tag: "ENTRELACS FOR HEALTHCARE"
+    title: "From assessment guesswork to precision mental healthcare"
+    list:
+      - "Unlock deeper accuracy with AI-powered conversational assessments and dynamic psychometrics."
+      - "Diagnose with confidence using continuous, data-rich mental health insights."
+      - "Deliver the right care faster through tailored, precision treatment matching."
+    cta_sales: "Contact Sales"
+    cta_demo: "Schedule a Demo"
+  problem:
+    tag: "The Problem"
+    title: "The assessment gap driving inefficiency and poor outcomes"
+    text: "Mental health care faces a fundamental problem: the assessment tools we rely on weren't designed for the complexity of the conditions we treat or the technology available to us today."
+    list:
+      - "Limited, inaccurate diagnostics miss nuances and evolving symptoms."
+      - "Early risks go unseen, leading to preventable mental-health crises."
+      - "Inefficient treatments rely on trial-and-error and delayed detection."
+      - "Ineffective care drives unnecessary costs and poor ROI."
+  solution:
+    tag: "Our Solution"
+    title: "Entrelacs addresses these challenges at their foundation with assessment technology designed for precision mental health care."
+  features:
+    assessment:
+      title: "Comprehensive initial assessment"
+      text: "Precision psychometrics deliver multi-dimensional insights, risk prediction, and diagnostic guidance."
+      subhead: "Clinical advantages:"
+      list:
+        - "Higher precision"
+        - "Captures nuanced patterns"
+        - "Better patient experience"
+        - "Structured documentation"
+        - "Adaptive questioning"
+    diagnostics:
+      title: "Precision diagnostic support"
+      text: "Advanced modeling offers precise, multi-dimensional diagnostic decision support."
+      subhead: "Diagnostic benefits:"
+      list:
+        - "Multidimensional profiling"
+        - "Differential diagnostic suggestions"
+        - "Risk stratification"
+        - "Severity assessment"
+        - "Confidence indicators"
+    monitoring:
+      title: "Continuous progress monitoring"
+      text: "Identifies changes early, boosting adherence, insight, and treatment outcomes."
+      subhead: "Treatment optimization:"
+      list:
+        - "Therapy modality recommendations based on symptom profiles"
+        - "Medication considerations aligned with symptom patterns and patient characteristics"
+        - "Patient-specific factors that may influence treatment response"
+        - "Contraindications and special considerations flagged automatically"
+        - "Expected treatment trajectory based on similar patient profiles"
+    predictive:
+      title: "Predictive early warning system"
+      text: "Predictive system prevents crises; alerts enable proactive intervention."
+      subhead: "Monitoring advantages:"
+      list:
+        - "Measurement-based care without administrative burden on clinicians"
+        - "Early detection of treatment non-response"
+        - "Patient engagement between sessions improves adherence and therapeutic alliance"
+        - "Trend analysis showing whether patient is improving, stable, or deteriorating"
+        - "Automatic alerts when concerning patterns emerge"
+    treatment:
+      title: "Personalized treatment matching (Coming soon)"
+      text: "AI recommends optimized, evidence-based treatments tailored to individual profiles."
+      subhead: "Prevention capabilities:"
+      list:
+        - "Crisis risk alerts notify clinicians of concerning changes requiring immediate attention"
+        - "Relapse prediction based on historical patterns and current trajectory"
+        - "Proactive outreach before patients reach crisis points"
+        - "Reduced emergency utilization"
+        - "Longitudinal understanding of each patient's unique warning signs and triggers"
+  benefits:
+    main_title: "Benefits for Clinicians"
+    main_subtitle: "Measurable impact on clinical practice and patient outcomes"
+    clinicians:
+      tag: "FOR CLINICIANS"
+      title: "Clinical tools that enhance your practice"
+      text: "Entrelacs integrates seamlessly into your clinical workflow, providing the tools you need to deliver more accurate diagnoses and personalized treatment, and continuous patient support."
+      list:
+        - "65-80% precise assessments for confident, accurate diagnosis and treatment planning."
+        - "Sleep easier knowing the system is watching for warning signs you might miss."
+        - "Personalized check-ins boost engagement and adherence"
+      cta: "Schedule a demo"
+    payers:
+      tag: "FOR PAYERS & HEALTH SYSTEMS"
+      title: "Data-driven mental healthcare management"
+      text: "Identify members at risk for crisis or deterioration before expensive emergency or inpatient interventions become necessary. Prevention is dramatically cheaper than crisis response."
+      list:
+        - "Measure treatment response across your network"
+        - "Reduce trial-and-error in treatment selection with precision matching."
+        - "Automated collection of required quality metrics (HEDIS, STAR ratings)."
+      cta: "Schedule a demo"
+  validation:
+    title: "Clinically Validated, Research-Backed"
+    initial_tab:
+      title: "Scientific Partnerships"
+      text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
+    tabs:
+      - image: "/images/h001.png"
+        title: "Scientific Partnerships"
+        text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
+      - image: "/images/h002.jpg"
+        title: "Peer-Reviewed Research"
+        text: "Our approach is grounded in published research on dynamic network modeling, adaptive assessment, conversational AI in mental health, and predictive modeling for crisis prevention.<br> <br>Founded by Dr. Hans Rocha IJzerman, Associate Researcher at Oxford Internet Institute and global expert on social connection."
+      - image: "/images/h003.jpg"
+        title: "Clinical Validation Studies"
+        text: "Ongoing validation studies in partnership with academic medical centers demonstrate diagnostic accuracy, treatment outcome prediction, and crisis prevention effectiveness."
+      - image: "/images/h004.jpg"
+        title: "Continuous Improvement"
+        text: "We continuously validate and refine our algorithms using de-identified aggregate data, ensuring the platform improves over time while maintaining privacy. Our models learn from outcomes across diverse populations."
+      - image: "/images/h005.jpg"
+        title: "Regulatory Compliance"
+        text: "Designed with healthcare standards in mind: HIPAA compliant, SOC 2 Type II certified, following FDA guidance for clinical decision support software."
+  getting_started:
+    title: "Getting started"
+    clinicians:
+      tag: "FOR CLINICIANS & PRACTICES"
+      title: "Schedule a demonstration to see how Entrelacs can enhance your clinical workflow"
+      text: "We'll customize the demo to your practice type and patient population."
+      list:
+        - "Platform access for selected patients"
+        - "Clinician training on interpreting insight"
+        - "Integration support (EHR, practice management)"
+        - "Outcome data showing impact on your practice"
+      cta: "Request Clinician Demo"
+    payers:
+      tag: "FOR PAYERS & HEALTH SYSTEMS"
+      title: "Consult with our team about population health implementation strategies"
+      text: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
+      list: []
+      cta: "Schedule a demo"
