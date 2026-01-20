@@ -1,7 +1,8 @@
 ---
 ---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
     {%- include head.html -%}
@@ -13,197 +14,56 @@
     <main>
         <section class="hero">
             <div class="content main_container">
-                <h1>Meet the team</h1>
-                <h2>Get to know the dedicated team and expert advisors behind Entrelacs.</h2>
+                <h1>{% t team.hero.title %}</h1>
+                <h2>{% t team.hero.subtitle %}</h2>
             </div>
         </section>
 
         <section class="headerGroup pageItem">
-            <h2>Vision</h2>
-            <p>
-                To revolutionize mental health assessment and care by combining AI and dynamic psychological modeling,
-                delivering precision, personalization, and prevention at scale.
-            </p>
+            <h2>{% t team.vision.title %}</h2>
+            <p>{% t team.vision.text %}</p>
         </section>
 
         <section id="leadership" class="group main_container">
-            <header class="groupHeader">Leadership team</header>
+            <header class="groupHeader">{% t team.leadership.title %}</header>
             <div class="groupList">
+                {% for member in site.translations[site.lang].team.leadership.list %}
                 <div class="groupListItem">
                     <div class="img">
-                        <img src="/images/DrHansIjzerman.png" alt="">
+                        {% if member.image %}
+                        <img src="{{ member.image }}" alt="{{ member.name }}">
+                        {% endif %}
                     </div>
-                    <h3>Dr Hans Rocha IJzerman</h3>
-                    <header>Founder & CEO</header>
-                    <p>Global expert in social connection science, Associate Researcher at Oxford Internet Institute,
-                        leading EU's loneliness response</p>
+                    <h3>{{ member.name }}</h3>
+                    <header>{{ member.role }}</header>
+                    <p>{{ member.bio }}</p>
                 </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/MiguelSilan.gif" alt="">
-                    </div>
-                    <h3>Miguel Silan</h3>
-                    <header>Chief Scientific Officer</header>
-                    <p>Methodology and psychometric specialist driving cultural adaptation</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/FelixMoses.png" alt="">
-                    </div>
-                    <h3>Felix Moses</h3>
-                    <header>Chief Technology Officer</header>
-                    <p>AI/ML expert specializing in language models and technical development</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <!-- <img src="/images/MaddyClifford.png" alt=""> -->
-                    </div>
-                    <h3>Marta Walczak</h3>
-                    <header>Senior UX Designer</header>
-                    <p></p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/CristineClaver.png" alt="">
-                    </div>
-                    <h3>Cristina Claver Sicilia</h3>
-                    <header>Chief Operations Officer</header>
-                    <p>Industrial pharmacist; oversees project execution, business structuring, and fundraising preparation for healthcare innovations.</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/DaniellaRocha.png" alt="">
-                    </div>
-                    <h3>Daniela Rocha Lopes</h3>
-                    <header>Chief Clinical Officer</header>
-                    <p>Experienced clinical psychologist bringing therapeutic insight to scalable relational care</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/matthewReed.jpg" alt="">
-                    </div>
-                    <h3>Matthew Reed</h3>
-                    <header>Chief Financial Officer</header>
-                    <p>Experienced leader in sustainable financial innovation and AI industrialisation strategy.</p>
-                </div>
-                <!-- <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/DmitryKholodkov.jpg" alt="">
-                    </div>
-                    <h3>Dmitry Kholodkov</h3>
-                    <header>Senior AI Researcher & Data Scientist</header>
-                    <p>Prolific AI inventor and Senior Data Scientist architecting novel graphical models to understand
-                        and predict human behavior</p>
-                </div> -->
-                <!-- <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/othmaneTissir.webp" alt="">
-                    </div>
-                    <h3>Othmane Tissir</h3>
-                    <header>Executive Assistant</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <h3>Ivan Ropovik</h3>
-                    <header>Senior Researcher</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/prakharSrivastava.webp" alt="">
-                    </div>
-                    <h3>Prakhar Srivastava</h3>
-                    <header>Senior Researcher</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/sharanyaMosalakanti.jpg" alt="">
-                    </div>
-                    <h3>Sharanya Mosalakanti</h3>
-                    <header>Junior Researcher</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/jamesKoduah.jpg" alt="">
-                    </div>
-                    <h3>James Koduah</h3>
-                    <header>Web Developer</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/kristineRayco.webp" alt="">
-                    </div>
-                    <h3>Kristine Rayco</h3>
-                    <header>UX/UI Designer</header>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <h3>Jerry Oyeniyi</h3>
-                    <header>UX/UI Intern</header>
-                </div>
-            </div> -->
+                {% endfor %}
+            </div>
         </section>
+
         <section id="advisors" class="group main_container">
-            <header class="groupHeader">Panel of Advisors</header>
+            <header class="groupHeader">{% t team.advisors.title %}</header>
             <div class="groupList">
+                {% for advisor in site.translations[site.lang].team.advisors.list %}
                 <div class="groupListItem">
                     <div class="img">
-                        <img src="/images/SandraMartorell.webp" alt="">
+                        {% if advisor.image %}
+                        <img src="{{ advisor.image }}" alt="{{ advisor.name }}">
+                        {% endif %}
                     </div>
-                    <h3>Sandra Martorell</h3>
-                    <p>Hospitality entrepreneur offering insights on human experience and service design to shape
-                        user-centered care</p>
+                    <h3>{{ advisor.name }}</h3>
+                    
+                    {% if advisor.tag %}
+                    <p class="tag">{{ advisor.tag }}</p>
+                    {% endif %}
+
+                    <p>{{ advisor.bio }}</p>
                 </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/DrMichalKosinski.png" alt="">
-                    </div>
-                    <h3>Dr. Michal Kosinski</h3>
-                    <p>Stanford professor, expert in psychometrics and AI-based social prediction.</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/JillianMiranda.png" alt="">
-                    </div>
-                    <h3>Jillian Miranda</h3>
-                    <p>Medtech growth leader, scaling innovation from development to global adoption.</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/RonIvey.png" alt="">
-                    </div>
-                    <h3>Ron Ivey</h3>
-                    <p>Founder of HumanConnection.AI, thought leader in AI ethics and regulation</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/CarsonKelly.png" alt="">
-                    </div>
-                    <h3>Carson Kelly</h3>
-                    <p>Tech veteran and Compassion 2.0 advocate, helping embed compassion-driven models into our
-                        platform.</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                        <img src="/images/emoriebeck.jpg" alt="">
-                    </div>
-                    <h3>Emorie Beck</h3>
-                    <p>Professor at the University of California, Davis. World expert in personalized measurement.</p>
-                </div>
-                <div class="groupListItem">
-                    <div class="img">
-                    </div>
-                    <h3>Policy strategist</h3>
-                    <p class="tag">Confidential</p>
-                    <p>Advises on Medicare/Medicaid access and U.S. reimbursement pathways</p>
-                </div>
+                {% endfor %}
             </div>
         </section>
     </main>
     {%- include footer.html -%}
 </body>
-
 </html>

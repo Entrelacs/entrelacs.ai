@@ -191,3 +191,9 @@
   width: 30px;
   height: 30px;
 }
+
+@media (max-width: 750px) {
+  .langDropdown{
+    left: -60px;
+  }
+}

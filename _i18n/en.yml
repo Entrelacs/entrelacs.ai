@@ -464,7 +464,69 @@ technology:
     learn_more: "Learn more"
     show_less: "Show less"
 
-
+team:
+  hero:
+    title: "Meet the team"
+    subtitle: "Get to know the dedicated team and expert advisors behind Entrelacs."
+  vision:
+    title: "Vision"
+    text: "To revolutionize mental health assessment and care by combining AI and dynamic psychological modeling, delivering precision, personalization, and prevention at scale."
+  leadership:
+    title: "Leadership team"
+    list:
+      - name: "Dr Hans Rocha IJzerman"
+        role: "Founder & CEO"
+        bio: "Global expert in social connection science, Associate Researcher at Oxford Internet Institute, leading EU's loneliness response"
+        image: "/images/DrHansIjzerman.png"
+      - name: "Miguel Silan"
+        role: "Chief Scientific Officer"
+        bio: "Methodology and psychometric specialist driving cultural adaptation"
+        image: "/images/MiguelSilan.gif"
+      - name: "Felix Moses"
+        role: "Chief Technology Officer"
+        bio: "AI/ML expert specializing in language models and technical development"
+        image: "/images/FelixMoses.png"
+      - name: "Marta Walczak"
+        role: "Senior UX Designer"
+        bio: ""
+        image: "" # Image was commented out in source
+      - name: "Cristina Claver Sicilia"
+        role: "Chief Operations Officer"
+        bio: "Industrial pharmacist; oversees project execution, business structuring, and fundraising preparation for healthcare innovations."
+        image: "/images/CristineClaver.png"
+      - name: "Daniela Rocha Lopes"
+        role: "Chief Clinical Officer"
+        bio: "Experienced clinical psychologist bringing therapeutic insight to scalable relational care"
+        image: "/images/DaniellaRocha.png"
+      - name: "Matthew Reed"
+        role: "Chief Financial Officer"
+        bio: "Experienced leader in sustainable financial innovation and AI industrialisation strategy."
+        image: "/images/matthewReed.jpg"
+  advisors:
+    title: "Panel of Advisors"
+    list:
+      - name: "Sandra Martorell"
+        bio: "Hospitality entrepreneur offering insights on human experience and service design to shape user-centered care"
+        image: "/images/SandraMartorell.webp"
+      - name: "Dr. Michal Kosinski"
+        bio: "Stanford professor, expert in psychometrics and AI-based social prediction."
+        image: "/images/DrMichalKosinski.png"
+      - name: "Jillian Miranda"
+        bio: "Medtech growth leader, scaling innovation from development to global adoption."
+        image: "/images/JillianMiranda.png"
+      - name: "Ron Ivey"
+        bio: "Founder of HumanConnection.AI, thought leader in AI ethics and regulation"
+        image: "/images/RonIvey.png"
+      - name: "Carson Kelly"
+        bio: "Tech veteran and Compassion 2.0 advocate, helping embed compassion-driven models into our platform."
+        image: "/images/CarsonKelly.png"
+      - name: "Emorie Beck"
+        bio: "Professor at the University of California, Davis. World expert in personalized measurement."
+        image: "/images/emoriebeck.jpg"
+      - name: "Policy strategist"
+        tag: "Confidential"
+        bio: "Advises on Medicare/Medicaid access and U.S. reimbursement pathways"
+        image: ""
 
 
 
