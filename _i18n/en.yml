@@ -349,3 +349,122 @@ healthcare:
       text: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
       list: []
       cta: "Schedule a demo"
+
+
+
+technology:
+  hero:
+    tag: "TECHNOLOGY"
+    title: "How we're transforming mental health assessment"
+    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time, delivering more accurate insights with better user experience and less assessment burden"
+    cta_sales: "Contact Sales"
+    cta_demo: "Schedule a Demo"
+  innovation:
+    tag: "The Innovation"
+    title: "Dynamic assessments that evolve with you"
+    text: "Traditional mental health assessments ask everyone the same questions in the same order. It's like having a doctor follow a rigid script instead of adapting to what you tell them."
+    subtitle: "Entrelacs changes this by:"
+    list:
+      - "Making assessments feel natural and conversational."
+      - "Reducing burden by skipping unnecessary items."
+      - "Learning each person’s unique response patterns."
+      - "Probing deeper only where truly needed."
+      - "Adapting questions instantly for relevance."
+      - "Delivering faster, higher-precision clinical insights."
+    cta: "Schedule a Demo"
+  core_components:
+    tag: "Our Technology"
+    title: "Four core components"
+    headers:
+      usage: "How we use it"
+      advantage: "The advantage"
+      science: "The science"
+      benefits: "Benefits"
+      safeguards: "Technical safeguards"
+      works: "How it works"
+    psychometrics:
+      title: "Dynamic Psychometrics"
+      intro: "Entrelacs uses dynamic psychometrics to capture how thoughts, emotions, and behaviors interact over time, revealing each person’s unique mental health fingerprint beyond what static questionnaires can show."
+      usage_text: "Entrelacs creates a personalized dynamic network model that maps how an individual’s symptoms interact over time. It learns each person’s stable patterns and early warning shifts, even before symptoms become clinical. With every new interaction, the model becomes more accurate, detecting cascades like sleep issues → anxiety → withdrawal early for timely intervention."
+      advantage_text: "Traditional assessments capture snapshots; Entrelacs captures motion. This dynamic approach transforms assessment from reactive to preventive, enabling clinicians and organizations to act before crises emerge, tailor interventions to personal patterns, and measure progress with unprecedented precision."
+      science_text: "Built on network psychometrics research showing mental health conditions as systems of interacting symptoms rather than discrete disease entities. This approach has demonstrated superior predictive validity for clinical outcomes and treatment response."
+    llm:
+      title: "Large Language Models (LLM) for Personalized Assessment"
+      intro: "LLMs are AI systems trained on vast amounts of text, enabling them to understand context, generate natural responses, and conduct coherent conversations. Rather than just matching keywords, LLMs comprehend nuance, tone, and meaning."
+      usage_intro: "This is fundamentally different from chatbots that just generate responses. Our system:"
+      usage_list:
+        - "Making assessments feel natural and conversational"
+        - "Follows validated assessment frameworks ensuring clinical rigor"
+        - "Adapts questioning dynamically based on individual responses"
+        - "Extracts psychometric features from natural language (not just questionnaire scores)"
+        - "Maintains measurement precision while improving user experience"
+      advantage_text: "Traditional computerized adaptive testing (CAT) requires extensive pre-programmed question banks and complex statistical models. LLMs enable more flexible, conversational assessment while maintaining—and often exceeding—the precision of traditional psychometric approaches."
+      benefits_list:
+        - "Better engagement"
+        - "Adaptive depth"
+        - "Richer data"
+        - "Accessibility"
+      safeguards_list:
+        - "All LLM outputs validated against psychometric standards"
+        - "Human oversight and clinical review of assessment protocols"
+        - "Continuous monitoring for bias and fairness across populations"
+        - "Transparent methodology—clinicians understand how assessments work"
+    behavioral:
+      title: "Behavioral Data Integration - Coming soon"
+      intro: "Behavioral data includes digital traces of daily life: communication frequency, activity levels, sleep patterns, location patterns and app usage. Services like Google Takeout allow users to export this data from platforms they already use."
+      usage_text: "When individuals opt in, Entrelacs analyzes behavioral and conversational data together. Time-series patterns, like activity shifts, social engagement changes, routine disruptions, and sleep irregularities, are detected early. These signals are fused with self-reported data using multimodal models that learn which changes are meaningful for each person versus normal variation."
+      advantage_text: "Self-reported symptoms can be incomplete or biased. Behavioral data provides objective signals that complement conversational assessment:"
+      benefits_list:
+        - "Early detection"
+        - "Objective validation"
+        - "Personalized baselines"
+        - "Real-world context"
+    profiling:
+      title: "Multidimensional Profiling - Coming soon"
+      intro: "Rather than screening for single conditions, the platform assesses multiple psychological dimensions simultaneously: social connection and loneliness, anxiety symptoms, depressive symptoms, stress and burnout indicators, and condition-specific symptomatology."
+      works_text: "Traditional assessment approaches condition-by-condition: \"Do you have depression?\" then \"Do you have anxiety?\" This misses how conditions interact and co-occur."
+      benefits_list:
+        - "Reveals complexity"
+        - "Personalizes treatment"
+        - "Improves diagnosis"
+        - "Tracks holistically"
+  real_life:
+    title: "Technology that fits into real life"
+    subtitle: "The best assessment is one that people actually complete. We've designed our platform to work in real-world settings—whether that's a busy workplace, a clinical practice, or someone's home."
+    fast:
+      title: "Fast"
+      text: "Initial assessments take 5-7 minutes. Regular check-ins take 2-3 minutes. Compare this to 20-40 minute traditional questionnaire batteries. Time savings without precision loss."
+    accessible:
+      title: "Accessible"
+      text: "Natural conversation using plain language. No clinical jargon. Works across literacy levels and language preferences. Adapts to individual communication styles."
+    flexible:
+      title: "Flexible"
+      text: "Accessible anywhere with cross-device support, native Slack/Teams apps, EHR/HRIS integrations, offline capability, and flexible scheduled or on-demand assessments."
+    actionable:
+      title: "Actionable"
+      text: "You receive clear insights, personalized recommendations, progress tracking, baseline comparisons, and tailored guidance for clinicians, HR, or individuals."
+    inclusive:
+      title: "Inclusive"
+      text: "Built for fairness across diverse populations with cultural validation, multilingual support, accessibility features, and continuous bias monitoring."
+    engaging:
+      title: "Engaging"
+      text: "Adaptive questions maintain interest and reduce the fatigue of repetitive questionnaires. Conversational format feels more human than clinical. Immediate feedback provides value to the person being assessed."
+  cta_banner:
+    title: "Transform your retention strategy"
+    text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
+    list:
+      - "Demo & ROI Assessment"
+      - "Implementation & Training"
+      - "Pilot Program Design"
+      - "Launch & Optimization"
+    roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
+    cta_sales: "Contact Sales"
+    cta_demo: "Use ROI Calculator"
+  common:
+    learn_more: "Learn more"
+    show_less: "Show less"
+
+
+
+
+

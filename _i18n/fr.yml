@@ -479,4 +479,119 @@ healthcare:
 
 
 
+technology:
+  hero:
+    tag: "TECHNOLOGIE"
+    title: "Comment nous transformons l'évaluation de la santé mentale"
+    description: "Entrelacs combine la modélisation psychométrique dynamique avec l'IA conversationnelle pour créer des évaluations de santé mentale qui s'adaptent à chaque personne en temps réel, offrant des informations plus précises avec une meilleure expérience utilisateur et moins de charge d'évaluation."
+    cta_sales: "Contacter les ventes"
+    cta_demo: "Planifier une démo"
+  innovation:
+    tag: "L'Innovation"
+    title: "Des évaluations dynamiques qui évoluent avec vous"
+    text: "Les évaluations traditionnelles de santé mentale posent à tout le monde les mêmes questions dans le même ordre. C'est comme avoir un médecin qui suit un script rigide au lieu de s'adapter à ce que vous lui dites."
+    subtitle: "Entrelacs change cela en :"
+    list:
+      - "Rendant les évaluations naturelles et conversationnelles."
+      - "Réduisant la charge en sautant les éléments inutiles."
+      - "Apprenant les modèles de réponse uniques de chaque personne."
+      - "Sondant plus profondément seulement là où c'est vraiment nécessaire."
+      - "Adaptant les questions instantanément pour plus de pertinence."
+      - "Fournissant des informations cliniques plus rapides et plus précises."
+    cta: "Planifier une démo"
+  core_components:
+    tag: "Notre Technologie"
+    title: "Quatre composants clés"
+    headers:
+      usage: "Comment nous l'utilisons"
+      advantage: "L'avantage"
+      science: "La science"
+      benefits: "Bénéfices"
+      safeguards: "Garanties techniques"
+      works: "Comment ça marche"
+    psychometrics:
+      title: "Psychométrie Dynamique"
+      intro: "Entrelacs utilise la psychométrie dynamique pour capturer comment les pensées, les émotions et les comportements interagissent au fil du temps, révélant l'empreinte unique de la santé mentale de chaque personne au-delà de ce que les questionnaires statiques peuvent montrer."
+      usage_text: "Entrelacs crée un modèle de réseau dynamique personnalisé qui cartographie comment les symptômes d'un individu interagissent au fil du temps. Il apprend les modèles stables de chaque personne et les changements d'alerte précoce, même avant que les symptômes ne deviennent cliniques. À chaque nouvelle interaction, le modèle devient plus précis, détectant tôt les cascades comme problèmes de sommeil → anxiété → retrait pour une intervention opportune."
+      advantage_text: "Les évaluations traditionnelles capturent des instantanés ; Entrelacs capture le mouvement. Cette approche dynamique transforme l'évaluation de réactive à préventive, permettant aux cliniciens et aux organisations d'agir avant l'émergence des crises, d'adapter les interventions aux modèles personnels et de mesurer les progrès avec une précision sans précédent."
+      science_text: "Fondé sur la recherche en psychométrie de réseau montrant les conditions de santé mentale comme des systèmes de symptômes en interaction plutôt que comme des entités pathologiques discrètes. Cette approche a démontré une validité prédictive supérieure pour les résultats cliniques et la réponse au traitement."
+    llm:
+      title: "Grands Modèles de Langage (LLM) pour l'Évaluation Personnalisée"
+      intro: "Les LLM sont des systèmes d'IA entraînés sur de vastes quantités de texte, leur permettant de comprendre le contexte, de générer des réponses naturelles et de mener des conversations cohérentes. Plutôt que de simplement faire correspondre des mots-clés, les LLM comprennent la nuance, le ton et le sens."
+      usage_intro: "Ceci est fondamentalement différent des chatbots qui ne font que générer des réponses. Notre système :"
+      usage_list:
+        - "Rend les évaluations naturelles et conversationnelles"
+        - "Suit des cadres d'évaluation validés assurant la rigueur clinique"
+        - "Adapte le questionnement dynamiquement en fonction des réponses individuelles"
+        - "Extrait des caractéristiques psychométriques du langage naturel (pas seulement des scores de questionnaires)"
+        - "Maintient la précision de la mesure tout en améliorant l'expérience utilisateur"
+      advantage_text: "Les tests adaptatifs informatisés traditionnels (CAT) nécessitent de vastes banques de questions préprogrammées et des modèles statistiques complexes. Les LLM permettent une évaluation plus flexible et conversationnelle tout en maintenant—et souvent en dépassant—la précision des approches psychométriques traditionnelles."
+      benefits_list:
+        - "Meilleur engagement"
+        - "Profondeur adaptative"
+        - "Données plus riches"
+        - "Accessibilité"
+      safeguards_list:
+        - "Toutes les sorties LLM validées par rapport aux normes psychométriques"
+        - "Supervision humaine et examen clinique des protocoles d'évaluation"
+        - "Surveillance continue des biais et de l'équité à travers les populations"
+        - "Méthodologie transparente—les cliniciens comprennent comment fonctionnent les évaluations"
+    behavioral:
+      title: "Intégration des Données Comportementales - Bientôt disponible"
+      intro: "Les données comportementales incluent les traces numériques de la vie quotidienne : fréquence de communication, niveaux d'activité, habitudes de sommeil, modèles de localisation et utilisation des applications. Des services comme Google Takeout permettent aux utilisateurs d'exporter ces données depuis les plateformes qu'ils utilisent déjà."
+      usage_text: "Lorsque les individus y consentent, Entrelacs analyse ensemble les données comportementales et conversationnelles. Les modèles de séries temporelles, comme les changements d'activité, les changements d'engagement social, les perturbations de routine et les irrégularités de sommeil, sont détectés tôt. Ces signaux sont fusionnés avec les données autodéclarées à l'aide de modèles multimodaux qui apprennent quels changements sont significatifs pour chaque personne par rapport à la variation normale."
+      advantage_text: "Les symptômes autodéclarés peuvent être incomplets ou biaisés. Les données comportementales fournissent des signaux objectifs qui complètent l'évaluation conversationnelle :"
+      benefits_list:
+        - "Détection précoce"
+        - "Validation objective"
+        - "Lignes de base personnalisées"
+        - "Contexte du monde réel"
+    profiling:
+      title: "Profilage Multidimensionnel - Bientôt disponible"
+      intro: "Plutôt que de dépister des conditions uniques, la plateforme évalue simultanément plusieurs dimensions psychologiques : connexion sociale et solitude, symptômes d'anxiété, symptômes dépressifs, indicateurs de stress et d'épuisement professionnel, et symptomatologie spécifique à la condition."
+      works_text: "Les approches d'évaluation traditionnelles procèdent condition par condition : \"Avez-vous une dépression ?\" puis \"Avez-vous de l'anxiété ?\" Cela manque comment les conditions interagissent et coexistent."
+      benefits_list:
+        - "Révèle la complexité"
+        - "Personnalise le traitement"
+        - "Améliore le diagnostic"
+        - "Suit de manière holistique"
+  real_life:
+    title: "Une technologie qui s'intègre à la vie réelle"
+    subtitle: "La meilleure évaluation est celle que les gens complètent réellement. Nous avons conçu notre plateforme pour fonctionner dans des environnements réels—que ce soit un lieu de travail occupé, une pratique clinique ou le domicile de quelqu'un."
+    fast:
+      title: "Rapide"
+      text: "Les évaluations initiales prennent 5 à 7 minutes. Les contrôles réguliers prennent 2 à 3 minutes. Comparez cela aux 20 à 40 minutes des batteries de questionnaires traditionnelles. Gain de temps sans perte de précision."
+    accessible:
+      title: "Accessible"
+      text: "Conversation naturelle utilisant un langage simple. Pas de jargon clinique. Fonctionne à travers les niveaux d'alphabétisation et les préférences linguistiques. S'adapte aux styles de communication individuels."
+    flexible:
+      title: "Flexible"
+      text: "Accessible partout avec un support multi-appareils, des applications natives Slack/Teams, des intégrations DSE/SIRH, une capacité hors ligne et des évaluations planifiées flexibles ou à la demande."
+    actionable:
+      title: "Actionnable"
+      text: "Vous recevez des informations claires, des recommandations personnalisées, un suivi des progrès, des comparaisons de référence et des conseils sur mesure pour les cliniciens, les RH ou les individus."
+    inclusive:
+      title: "Inclusif"
+      text: "Conçu pour l'équité à travers diverses populations avec validation culturelle, support multilingue, fonctionnalités d'accessibilité et surveillance continue des biais."
+    engaging:
+      title: "Engageant"
+      text: "Les questions adaptatives maintiennent l'intérêt et réduisent la fatigue des questionnaires répétitifs. Le format conversationnel semble plus humain que clinique. Le feedback immédiat apporte de la valeur à la personne évaluée."
+  cta_banner:
+    title: "Transformez votre stratégie de rétention"
+    text: "Découvrez comment Entrelacs aide les organisations à construire des équipes plus fortes et plus connectées tout en réduisant le roulement coûteux."
+    list:
+      - "Démo et Évaluation du ROI"
+      - "Mise en œuvre et Formation"
+      - "Conception de Programme Pilote"
+      - "Lancement et Optimisation"
+    roi_text: "Utilisez notre calculateur de ROI pour voir comment Entrelacs pourrait réduire vos coûts."
+    cta_sales: "Contacter les ventes"
+    cta_demo: "Utiliser le calculateur de ROI"
+  common:
+    learn_more: "En savoir plus"
+    show_less: "Montrer moins"
+
+
+
+
 
