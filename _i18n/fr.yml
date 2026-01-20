@@ -24,6 +24,7 @@ footer:
 home:
   meta:
     title: "Entrelacs"
+  video_link: https://www.youtube.com/embed/PdfPGtb_Aps?si=K_OAVAhh3ICuyiM 
   hero:
     title_prefix: "Le"
     title_span: "laboratoire sanguin de la santé mentale"
