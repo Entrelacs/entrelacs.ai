@@ -21,6 +21,8 @@ footer:
     mentions: "Legal mentions"
   copyright: "Entrelacs 2025"
 
+404: "Sorry but this page does not exist"
+
 home:
   meta:
     title: "Entrelacs"
@@ -527,6 +529,24 @@ team:
         tag: "Confidential"
         bio: "Advises on Medicare/Medicaid access and U.S. reimbursement pathways"
         image: ""
+
+contact:
+  title: "Get in touch"
+  subtitle: "Our friendly team would love to hear from you."
+  form:
+    first_name_label: "First name"
+    first_name_placeholder: "First name"
+    last_name_label: "Last name"
+    last_name_placeholder: "Last name"
+    email_label: "Contact email"
+    email_placeholder: "you@company.com"
+    organization_label: "Organization name"
+    organization_placeholder: "Organization name"
+    message_label: "Message"
+    privacy_agreement_prefix: "You agree to our "
+    privacy_policy_link: "privacy policy"
+    submit_button: "Send message"
+
 
 
 

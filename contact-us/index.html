@@ -1,7 +1,8 @@
 ---
 ---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
     {%- include head.html -%}
@@ -13,42 +14,42 @@
     <main>
         <div class="pageItem content">
             <div class="left">
-                <h1>Get in touch</h1>
-                <h2>Our friendly team would love to hear from you.</h2>
+                <h1>{% t contact.title %}</h1>
+                <h2>{% t contact.subtitle %}</h2>
                 <form action="https://formspree.io/f/mldwoane" method="POST">
                     <div class="item half">
-                        <label for="first-name">First name</label>
-                        <input type="text" id="first-name" name="first_name" placeholder="First name" required>
+                        <label for="first-name">{% t contact.form.first_name_label %}</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="{% t contact.form.first_name_placeholder %}" required>
                     </div>
 
                     <div class="item half">
-                        <label for="last-name">Last name</label>
-                        <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+                        <label for="last-name">{% t contact.form.last_name_label %}</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="{% t contact.form.last_name_placeholder %}" required>
                     </div>
 
                     <div class="item">
-                        <label for="email">Contact email</label>
-                        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        <label for="email">{% t contact.form.email_label %}</label>
+                        <input type="email" id="email" name="email" placeholder="{% t contact.form.email_placeholder %}" required>
                     </div>
 
                     <div class="item">
-                        <label for="organization">Organization name</label>
-                        <input type="text" id="organization" name="organization" placeholder="Organization name">
+                        <label for="organization">{% t contact.form.organization_label %}</label>
+                        <input type="text" id="organization" name="organization" placeholder="{% t contact.form.organization_placeholder %}">
                     </div>
 
                     <div class="item">
-                        <label for="message">Message</label>
+                        <label for="message">{% t contact.form.message_label %}</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
 
                     <div class="checkbox">
                         <input type="checkbox" id="privacy" name="privacy" required>
                         <label for="privacy">
-                            You agree to our <a style="color: var(--teal);" href="/privacy-policy/">privacy policy</a>.
+                            {% t contact.form.privacy_agreement_prefix %}<a style="color: var(--teal);" href="{{ site.baseurl }}/privacy-policy/">{% t contact.form.privacy_policy_link %}</a>.
                         </label>
                     </div>
 
-                    <button type="submit" class="cta">Send message</button>
+                    <button type="submit" class="cta">{% t contact.form.submit_button %}</button>
                 </form>
 
             </div>
@@ -61,5 +62,4 @@
     </main>
     {%- include footer.html -%}
 </body>
-
 </html>

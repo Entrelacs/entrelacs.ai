@@ -21,6 +21,8 @@ footer:
     mentions: "Mentions légales"
   copyright: "Entrelacs 2025"
 
+404: "Désolé, cette page n'existe pas"
+
 home:
   meta:
     title: "Entrelacs"
@@ -655,5 +657,27 @@ team:
         tag: "Confidentiel"
         bio: "Conseille sur l'accès Medicare/Medicaid et les voies de remboursement aux États-Unis"
         image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+
+
+
+contact:
+  title: "Contactez-nous"
+  subtitle: "Notre équipe sera ravie de vous entendre."
+  form:
+    first_name_label: "Prénom"
+    first_name_placeholder: "Prénom"
+    last_name_label: "Nom"
+    last_name_placeholder: "Nom"
+    email_label: "Email de contact"
+    email_placeholder: "vous@entreprise.com"
+    organization_label: "Nom de l'organisation"
+    organization_placeholder: "Nom de l'organisation"
+    message_label: "Message"
+    privacy_agreement_prefix: "Vous acceptez notre "
+    privacy_policy_link: "politique de confidentialité"
+    submit_button: "Envoyer le message"
+
+
+
 
 
