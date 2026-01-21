@@ -493,7 +493,7 @@ team:
       - name: "Marta Walczak"
         role: "Senior UX Designer"
         bio: ""
-        image: "" # Image was commented out in source
+        image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" # Image was commented out in source
       - name: "Cristina Claver Sicilia"
         role: "Chief Operations Officer"
         bio: "Industrial pharmacist; oversees project execution, business structuring, and fundraising preparation for healthcare innovations."
@@ -530,7 +530,7 @@ team:
       - name: "Policy strategist"
         tag: "Confidential"
         bio: "Advises on Medicare/Medicaid access and U.S. reimbursement pathways"
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
 
 contact:
   title: "Get in touch"
@@ -548,6 +548,28 @@ contact:
     privacy_agreement_prefix: "You agree to our "
     privacy_policy_link: "privacy policy"
     submit_button: "Send message"
+
+
+
+roi_calculator:
+  title: "What does loneliness really cost your organization?"
+  description: "See how loneliness impacts your bottom line—and what personalized intervention could save."
+  stats:
+    - value: "1 in 5"
+      text: "Employees worldwide feel lonely at work"
+      source: "Gallup, 2024"
+    - value: "2×"
+      text: "More likely to quit within 12 months"
+      source: "Cigna, 2020"
+    - value: "$154B"
+      text: "Annual cost to US employers from loneliness"
+      source: "Cigna/Surgeon General"
+    - value: "5.7"
+      text: "Extra sick days per year for lonely employees"
+      source: "Bowers et al, 2022"
+  cta: "Calculate your ROI"
+
+
 
 
 

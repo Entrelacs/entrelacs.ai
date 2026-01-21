@@ -682,4 +682,25 @@ contact:
 
 
 
+roi_calculator:
+  title: "Combien la solitude coûte-t-elle vraiment à votre organisation ?"
+  description: "Voyez comment la solitude impacte vos résultats—et ce qu'une intervention personnalisée pourrait économiser."
+  stats:
+    - value: "1 sur 5"
+      text: "Employés dans le monde se sentent seuls au travail"
+      source: "Gallup, 2024"
+    - value: "2×"
+      text: "Plus susceptibles de démissionner dans les 12 mois"
+      source: "Cigna, 2020"
+    - value: "154 Mrd $"
+      text: "Coût annuel pour les employeurs américains dû à la solitude"
+      source: "Cigna/Surgeon General"
+    - value: "5,7"
+      text: "Jours de maladie supplémentaires par an pour les employés seuls"
+      source: "Bowers et al, 2022"
+  cta: "Calculez votre ROI"
+
+
+
+
 

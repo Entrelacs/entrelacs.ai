@@ -1,0 +1,110 @@
+<style>
+    #roiCalculator {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #roiDiv {
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-radius: 20px;
+        background: url(/images/contact.png) no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    @media (min-width: 900px) {
+        #roiDiv {
+            padding-left: 80px !important;
+            padding-right: 80px !important;
+        }
+    }
+
+    #roiDiv h2 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 120%;
+    }
+
+    #roiDiv .rDsp {
+        font-size: 18px;
+        line-height: 150%;
+        max-width: 670px;
+        color: var(--text-gray);
+        margin-bottom: 40px;
+    }
+
+    #roiArray {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .roiArrayItem {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .roiArrayItem header {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--teal);
+        margin-bottom: 10px;
+    }
+
+    .roiArrayItem div p {
+        font-size: 16px !important;
+        margin-bottom: 5px !important;
+        color: var(--text-gray2) !important;
+    }
+
+    .roiArrayItem p {
+        font-size: 14px !important;
+        color: #869D9D !important;
+    }
+    @media (max-width: 1000px) {
+        #roiArray {
+            flex-wrap: wrap;
+        }
+        .roiArrayItem{
+            width: 47%;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 700px) {
+        #roiDiv h2 {
+            font-size: 32px;
+        }
+        .roiArrayItem{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<div id="roiCalculator" class="pageItem">
+    <div id="roiDiv" class="pageItem">
+        <h2>{% t roi_calculator.title %}</h2>
+        <p class="rDsp">{% t roi_calculator.description %}</p>
+        <div id="roiArray">
+            {% for stat in site.translations[site.lang].roi_calculator.stats %}
+            <div class="roiArrayItem">
+                <div>
+                    <header>{{ stat.value }}</header>
+                    <p>{{ stat.text }}</p>
+                </div>
+                <p>{{ stat.source }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t roi_calculator.cta %}</a>
+    </div>
+</div>
