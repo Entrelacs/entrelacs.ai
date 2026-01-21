@@ -3,6 +3,7 @@ navigation:
   employers: "Employers"
   healthcare: "Healthcare"
   technology: "Technology"
+  roi_calculator: "ROI calculator"
   about: "About Us"
   contact: "Contact Us"
 
@@ -14,6 +15,7 @@ footer:
     healthcare: "Healthcare"
     about: "About Us"
     technology: "Technology"
+    roi_calculator: "ROI Calculator"
     contact: "Contact Us"
   legal:
     privacy: "Privacy policy"

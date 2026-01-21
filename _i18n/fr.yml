@@ -3,6 +3,7 @@ navigation:
   employers: "Employeurs"
   healthcare: "Santé"
   technology: "Technologie"
+  roi_calculator: "Calculateur de ROI"
   about: "À propos"
   contact: "Contactez-nous"
 
@@ -14,6 +15,7 @@ footer:
     healthcare: "Santé"
     about: "À propos"
     technology: "Technologie"
+    roi_calculator: "Calculateur de ROI"
     contact: "Contactez-nous"
   legal:
     privacy: "Politique de confidentialité"
