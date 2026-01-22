@@ -568,6 +568,7 @@ roi_calculator:
       text: "Extra sick days per year for lonely employees"
       source: "Bowers et al, 2022"
   cta: "Calculate your ROI"
+  link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/"
 
 
 

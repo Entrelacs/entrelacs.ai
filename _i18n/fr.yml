@@ -699,7 +699,7 @@ roi_calculator:
       text: "Jours de maladie supplémentaires par an pour les employés seuls"
       source: "Bowers et al, 2022"
   cta: "Calculez votre ROI"
-
+  link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/?lang=fr"
 
 
 
