@@ -94,7 +94,7 @@ home:
   cta_banner:
     title: "Découvrez comment Entrelacs peut aider votre organisation"
     text: "Rejoignez-nous pour construire un avenir où les soins de santé mentale sont aussi uniques que les individus qu'ils servent"
-    contact_btn: "Contactez-nous"
+    waiting_list: "Rejoindre la liste d'attente"
     demo_btn: "Demander une démo"
 
 
@@ -679,6 +679,14 @@ contact:
     privacy_policy_link: "politique de confidentialité"
     submit_button: "Envoyer le message"
 
+
+waiting_list:
+    title: "Rejoindre la liste d'attente"
+    subtitle: "Soyez le premier à découvrir Entrelacs."
+    form:
+      email_placeholder: "you@company.com"
+      email_label: "Email de contact"
+      submit_button: "Rejoindre la liste d'attente"
 
 
 

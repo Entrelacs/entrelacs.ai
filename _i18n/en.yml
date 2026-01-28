@@ -94,7 +94,7 @@ home:
   cta_banner:
     title: "See how Entrelacs can help your organization"
     text: "Join us in building a future where mental health care is as unique as the individuals it serves"
-    contact_btn: "Contact Us"
+    waiting_list: "Join our waiting list"
     demo_btn: "Request a Demo"
 
 
@@ -549,6 +549,13 @@ contact:
     privacy_policy_link: "privacy policy"
     submit_button: "Send message"
 
+waiting_list:
+    title: "Join our waiting list"
+    subtitle: "Be the first to experience Entrelacs."
+    form:
+      email_placeholder: "you@company.com"
+      email_label: "Your email"
+      submit_button: "Join the waitlist"
 
 
 roi_calculator:
