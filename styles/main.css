@@ -79,6 +79,7 @@ img{
   padding: 15px 30px;
   background-color: var(--teal);
   color: var(--background);
+  cursor: pointer;
 }
 /* .cta svg{
   width: 10px;
