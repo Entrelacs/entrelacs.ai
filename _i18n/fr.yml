@@ -684,6 +684,10 @@ waiting_list:
     title: "Rejoindre la liste d'attente"
     subtitle: "Soyez le premier à découvrir Entrelacs."
     form:
+      name_label: "Votre nom"
+      name_placeholder: "Jean Dupont"
+      organization_label: "Votre organisation"
+      organization_placeholder: "Entreprise SARL"
       email_placeholder: "you@company.com"
       email_label: "Email de contact"
       submit_button: "Rejoindre la liste d'attente"
