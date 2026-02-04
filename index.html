@@ -10,6 +10,11 @@
     <title>{% t home.meta.title %}</title>
     {% include head.html %}
     <link rel="stylesheet" href="index.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,14 +24,14 @@
             <h1>{% t home.hero.title_prefix %} <span>{% t home.hero.title_span %}</span> {% t home.hero.title_suffix %}</h1>
             <p class="subheader">{% t home.hero.subtitle %}</p>
             <div class="ctas">
-                <a href="{{ site.baseurl}}/waiting-list/" class="cta" style="color: var(--teal); background: var(--teal-light);">
-                    <p style="margin-right: 10px;">{% t home.cta_banner.waiting_list %}</p>
+                <a href="#next" class="cta" style="color: var(--teal); background: var(--teal-light);">
+                    <p style="margin-right: 10px;">{% t home.hero.cta_learn %}</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1CAFBF" stroke-width="2.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                 </a>
-                <a href="{{ site.baseurl}}/contact-us/" class="cta">{% t home.hero.cta_demo %}</a>
+                <a href="{{ site.baseurl}}/waiting-list/" class="cta">{% t home.cta_banner.waiting_list %}</a>
             </div>
             <div id="heroVideo">
                 <iframe src="{% t home.video_link %}" width="100%"
@@ -36,7 +41,7 @@
             </div>
         </div>
 
-        <div class="pageItem lsection">
+        <div class="pageItem lsection" id="next">
             <div class="tag red">{% t home.problem.tag %}</div>
             <h2>{% t home.problem.title %}</h2>
         </div>
@@ -69,8 +74,8 @@
                 </div>
             </div>
             <div class="ctas" style="margin-top: 56px;">
-                <a href="{{ site.baseurl}}/contact-us/" class="cta"
-                    style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">{% t home.solution.cta_demo %}</a>
+                <a href="{{ site.baseurl}}/waiting-list/" class="cta"
+                    style="background: transparent; color: var(--text-base); border: 1px var(--text-lighter) solid;">{% t home.cta_banner.waiting_list%}</a>
             </div>
         </div>
 
