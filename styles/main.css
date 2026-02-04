@@ -79,7 +79,12 @@ img{
   padding: 15px 30px;
   background-color: var(--teal);
   color: var(--background);
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.cta:hover{
+  transform: scale(1.1);
 }
 /* .cta svg{
   width: 10px;
