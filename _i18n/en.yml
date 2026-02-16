@@ -33,7 +33,7 @@ home:
     title_prefix: "The"
     title_span: "blood lab for mental health"
     title_suffix: "— precision, personalization, and prevention in one platform."
-    subtitle: "Entrelacs transforms mental health assessment by combining conversational AI with dynamic psychometrics, creating assessments that adapt to each individual and become more accurate over time" # As it was in your example, or update if specific subtitle needed
+    subtitle: "Entrelacs transforms mental health assessment by combining conversational AI with dynamic psychometrics, creating assessments that adapt to each individual and become more accurate over time."
     cta_learn: "Learn More"
     cta_demo: "Request a Demo"
   problem:
@@ -66,7 +66,7 @@ home:
       title: "Get personalized report"
       text: "Personalized insights reveal your social and workplace connection patterns and guide you toward healthier, stronger relationships."
   better_outcomes:
-    title: "Better Assessment. Better Care. Better Outcomes."
+    title: "Better Assessment. Better Care. <br> Better Outcomes."
     subtitle: "Beyond standard mental health screening"
     science:
       title: "Behavioral Science meets AI"

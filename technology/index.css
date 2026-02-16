@@ -185,7 +185,7 @@ main .cta {
 }
 
 .lsection h2 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.3;
     color: var(--tangerine);
@@ -308,6 +308,7 @@ main .cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;   
 }
 
 .textPicItem .text {
@@ -338,12 +339,14 @@ main .cta {
 }
 .textPicItem .pic {
     max-height: 400px;
-    width: 40%;
-    max-width: 350px;
+    width: 46%;
+    display: flex;
+    justify-content: center;
 }
 
 .textPicItem .pic img {
     object-fit: contain;
+    max-width: 350px;
 }
 
 .learnMore {
