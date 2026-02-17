@@ -499,7 +499,7 @@ team:
       - name: "Marta Walczak"
         role: "Designer UX Senior"
         bio: ""
-        image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+        image: "/images/MartaWalczak.jpg"
       - name: "Cristina Claver Sicilia"
         role: "Directrice des opérations"
         bio: "Pharmacienne industrielle ; supervise l'exécution des projets, la structuration des activités et la préparation des levées de fonds pour les innovations en santé."
