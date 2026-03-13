@@ -1,0 +1,78 @@
+<style>
+    .ctaBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: url(/images/cta_banner.webp) no-repeat center;
+        background-size: cover;
+    }
+
+    .ctas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 24px;
+    }
+
+    main .cta {
+        width: 350px;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .tags p {
+        background: #EAF1F1;
+        padding: 4px 12px;
+        color: #156B70;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        border-radius: 16px;
+    }
+
+    .ctaBanner h2 {
+        color: #092627;
+        text-align: center;
+        font-family: "Libre Baskerville";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.24;
+        letter-spacing: -1px;
+        margin: 12px 0 16px;
+    }
+    .ctaBanner p {
+        color: #495050;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145%;
+    }
+</style>
+
+
+<div class="pageItem ctaBanner">
+    <div class="tags">
+        <p>Precision</p>
+        <p>Personalization</p>
+        <p>Prevention</p>
+    </div>
+    <h2>The future of mental health care is here</h2>
+    <p>Experience the first platform that combines clinical precision with personalized insights and preventive
+        monitoring. Join leading organizations already building the future of mental wellness.
+    </p>
+    <div class="ctas" style="margin-top: 40px;">
+        <a href="{{ site.baseurl }}/contact/" class="cta cta1">Join our waiting list</a>
+        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">Request a demo</a>
+    </div>
+</div>
