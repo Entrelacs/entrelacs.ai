@@ -31,66 +31,215 @@ home:
   video_link: https://drive.google.com/file/d/1QEyT3gvR1x5NLjeVu4a0mDsuESGEOVMw/preview
   hero:
     title_prefix: "Mental health finally gets early detection"
-    title_span: "blood lab for mental health"
-    title_suffix: "— precision, personalization, and prevention in one platform."
-    subtitle: "Entrelacs transforms mental health assessment by combining conversational AI with dynamic psychometrics, creating assessments that adapt to each individual and become more accurate over time."
-    cta_learn: "Learn More"
-    cta_demo: "Request a Demo"
+    tag_text: "Clinical-Grade AI for Mental Health"
+    wheel:
+      item1: "when it matters"
+      item2: "with clinical AI"
+      item3: "before crisis"
+      item4: "when it matters"
+    cta_waitlist: "Join the waitlist for full access"
+    cta_demo: "Request a demo"
   problem:
     tag: "The Problem"
-    title: "One-size-fits-all mental health assessments miss early signs, causing late support, ineffective interventions and costly outcomes."
-  solution:
-    tag: "Our Solution"
-    title: "Mental health care with precision, personalization and prevention"
-    description: "Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving, individualized mental health assessments for precise, continuous insights across wellbeing."
-    cta_demo: "Request a demo"
-  features:
-    precision:
-      title: "Precision"
-      text: "Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving, personalized, and highly accurate mental and social health assessments at scale."
-    personalisation:
-      title: "Personalisation"
-      text: "Insights and recommendations adapt to each person’s patterns and context, becoming precise with each interaction."
-    prevention:
-      title: "Prevention"
-      text: "Continuous monitoring detects subtle shifts early, enabling preventive, personalized mental health care before crises escalate."
+    heading: "Mental health is the only area of medicine without early detection "
+    description: "Clinical-grade screening, matching, and monitoring — so you can act weeks before a crisis, not months after."
+    cardiology:
+      title: "In cardiology"
+      desc: "We catch warning signs years before a heart attack occurs."
+    oncology:
+      title: "In oncology"
+      desc: "We screen before symptoms appear."
+    mental_health:
+      title: "But in <br> mental health"
+      desc: "We wait until someone is already in crisis — when the cost is highest and the window for prevention has already passed."
+  cost:
+    heading: "The cost of waiting"
+    description: "We're missing the early signs that could prevent bigger problems down the road, waiting until someone is already struggling before we act."
+    stats:
+      - value: "€600B"
+        text: "Annual cost in EU alone from reactive mental health care."
+      - value: "10–20%"
+        text: "YoY growth in mental health claims seen by payers."
+      - value: "€15K"
+        text: "Lost per employee annually in productivity and turnover."
+  pillars:
+    heading: "From reactive to preventive in three steps"
+    description: "Three pillars that move mental health care from reactive crisis response to proactive, measurable outcomes."
+    cta: "Join the waiting list"
+    list:
+      - image: "/images/dart-mission-goal-success.svg"
+        tag: "PRECISION"
+        title: "Screen with clinical accuracy, not guesswork"
+        desc: "One 15-minute conversational assessment creates a unique mental health profile for each individual - replacing lengthy and burdensome traditional assessment."
+      - image: "/images/health.svg"
+        tag: "PERSONALIZATION"
+        title: "No more trial-and-error referrals"
+        desc: "AI matches each individual to the most effective intervention from day one — reducing failed treatments and accelerating time to improvement by 2–3x."
+      - image: "/images/fraudprotectmajor.svg"
+        tag: "PREVENTION"
+        title: "Detect deterioration weeks before crisis"
+        desc: "Continuous digital monitoring tracks changes in engagement, language patterns, and behavioral signals between sessions, alerting care teams days to weeks before a crisis — turning reactive care into preventive care."
   how_it_works:
-    title: "From conversation to personalized care in three steps"
-    step1:
-      title: "Chat & Discover"
-      text: "Our AI engages with you through conversation, analysing language, tone, and patterns to provide insights into how you connect with others."
-    step2:
-      title: "AI maps your connections"
-      text: "Answer personalized assessment questions to help you better understand your social interactions and workplace relationships."
-    step3:
-      title: "Get personalized report"
-      text: "Personalized insights reveal your social and workplace connection patterns and guide you toward healthier, stronger relationships."
-  better_outcomes:
-    title: "Better Assessment. Better Care. <br> Better Outcomes."
-    subtitle: "Beyond standard mental health screening"
-    science:
-      title: "Behavioral Science meets AI"
-      text: "AI combined with advanced psychometrics delivers nuanced, validated assessments backed by global research partnerships."
-    dynamic:
-      title: "Dynamic, not static"
-      text: "Entrelacs tracks changing mental health patterns over time for earlier detection and precise predictions."
-    holistic:
-      title: "Holistic assessment"
-      text: "Comprehensive mental and social health profiling uncovers symptoms, patterns, and risks that traditional screening overlooks."
-    privacy:
-      title: "Privacy-First Architecture"
-      text: "User-controlled data, strict security, and healthcare-grade privacy ensure safety and trust throughout the system."
-  settings:
-    title: "One platform. <br> Every mental health setting."
-    workplace:
-      title: "Workplace social health"
-      text: "Proactively monitor employee well-being, detect disconnection early, and support retention through personalized, preventive mental health insights."
-    clinical:
-      title: "Clinical care"
-      text: "Provide clinicians with precise, continuous assessments for better diagnosis, treatment matching, and early intervention before crises emerge."
-    community:
-      title: "Community/Public health"
-      text: "Enable large-scale mental health screening and targeted resource allocation to support preventative public health strategies."
+    tag: "How it works"
+    heading: "Three steps. No disruption. Live in weeks."
+    description: "Three steps that integrate into existing workflows — no additional clinical time required."
+    cards:
+      screen:
+        tag: "SCREEN"
+        title: "15-minute assessment"
+        desc: "A conversational AI assessment identifies the 5–7 most informative questions unique to each person, screening for mood, anxiety, social connection, burnout, and risk factors in a single 15-minute session."
+        benefits:
+          - "Clear risk categories per person"
+          - "Comprehensive"
+          - "No clinical time required"
+      match:
+        tag: "MATCH"
+        title: "Precision care matching"
+        desc: "40–60% of people drop out of mental health care when the first treatment isn't the right fit. Precision matching connects each person to the right intervention from day one — achieving 2–3x faster improvement without trial and error."
+        benefits:
+          - "Right support, first time"
+          - "Fewer failed treatments"
+          - "2-3x faster improvement"
+      monitor:
+        tag: "MONITOR"
+        title: "Continuous monitoring"
+        desc: "Between appointments, the platform continuously tracks behavioral patterns — including digital engagement, language indicators, activity, sleep, and self-reported mood — detecting signs of deterioration days to weeks before a crisis develops. This early warning capability creates a critical window for timely, low-cost intervention before situations escalate."
+        benefits:
+          - "Alerts before problems escalate"
+          - "Tracks changes between visits"
+          - "Early warning before a crisis"
+  research:
+    heading: "Research-grade rigor, real-world proof"
+    description: "Grounded in 80,000+ research articles, validated across 8 countries, and backed by €3M in EU funding."
+    partnership: "Developed in partnership with WHO and EU policy frameworks"
+    stats:
+      - value: "80K+"
+        label: "Research articles reviewed"
+      - value: "8"
+        label: "Countries validated"
+      - value: "€3M"
+        label: "EU research funding awarded"
+      - value: "CE Mark"
+        label: "Certification pathway, 2027"
+  partners:
+    heading: "Developed in collaboration with the world's leading research institutions"
+    description: "Entrelacs is built on global scientific partnerships that ensure every clinical claim is grounded in evidence."
+    logos:
+      - src: "/images/university_of_california.png"
+      - src: "/images/oecd.png"
+      - src: "/images/university_of_oxford.png"
+      - src: "/images/stanford_university.png"
+      - src: "/images/european_commission.png"
+        style: "max-height: 80px;"
+  who_we_serve:
+    tag: "Who we serve"
+    heading: "One platform. Connecting employers, clinicians, and health systems"
+    cards:
+      - bg_color: "#F2EFE9"
+        title: "For Employers"
+        desc: "Spot workforce mental health risks early, before they become costly crises."
+        cta_text: "Learn more"
+        link: "/employers/"
+        svg_content: >
+          <svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5368_67812)">
+                  <path d="M301.833 54.7054L262.592 48.0011L267.062 21.8403C268.247 14.9021 266.628 7.77709 262.56 2.0328C258.492 -3.71149 252.309 -7.60454 245.37 -8.78993L166.888 -22.1985C159.95 -23.3839 152.825 -21.7645 147.081 -17.6966C141.336 -13.6287 137.443 -7.44552 136.258 -0.507255L131.788 25.6535L92.5473 18.9492C85.6091 17.7638 78.4841 19.3832 72.7398 23.4511C66.9955 27.519 63.1025 33.7022 61.9171 40.6404L35.1 197.605C33.9146 204.543 35.534 211.668 39.6018 217.412C43.6697 223.157 49.8529 227.05 56.7912 228.235L266.077 263.991C273.015 265.177 280.14 263.557 285.885 259.489C291.629 255.422 295.522 249.238 296.707 242.3L323.525 85.3356C324.71 78.3974 323.091 71.2724 319.023 65.5281C314.955 59.7838 308.772 55.8907 301.833 54.7054ZM162.419 3.96226L240.901 17.3708L236.431 43.5316L157.949 30.123L162.419 3.96226Z" fill="#E7DFD0" fill-opacity="0.6" />
+                  <path d="M321.364 69.6206C319.552 65.7444 316.83 62.3639 313.429 59.767C310.028 57.1701 306.05 55.4339 301.834 54.7064L92.548 18.9503C88.3292 18.2367 84.0004 18.5536 79.9305 19.8742C75.8606 21.1947 72.1704 23.4797 69.1743 26.5344C67.5016 28.1741 66.2927 30.2273 65.6704 32.4855C65.0482 34.7436 65.0348 37.1263 65.6315 39.3913L79.1394 97.4325C82.2464 110.004 88.9642 121.391 98.4646 130.191C107.965 138.99 119.833 144.817 132.605 146.954L220.505 161.971C233.404 164.433 246.743 163.013 258.834 157.889C270.925 152.765 281.223 144.169 288.425 133.189L320.983 82.883C322.205 80.9002 322.883 78.6308 322.95 76.3028C323.017 73.9748 322.47 71.6702 321.364 69.6206Z" fill="#D6CFC1" fill-opacity="0.8" />
+                  <path d="M201.18 113.232L175.019 108.762C167.795 107.528 160.938 112.384 159.704 119.608L155.235 145.768C154 152.993 158.856 159.849 166.08 161.084L192.241 165.553C199.465 166.787 206.322 161.932 207.556 154.708L212.026 128.547C213.26 121.323 208.404 114.466 201.18 113.232Z" fill="#E7DFD0" fill-opacity="0.6" />
+              </g>
+              <defs>
+                  <clipPath id="clip0_5368_67812">
+                      <rect width="318.478" height="318.478" fill="white" transform="translate(53.6342 -68.4727) rotate(9.69527)" />
+                  </clipPath>
+              </defs>
+          </svg>
+      - bg_color: "#E3EEF0"
+        title: "For Clinicians"
+        desc: "Give patients a voice between sessions with validated, real-time mental health tracking."
+        cta_text: "Learn more"
+        link: "/healthcare/"
+        svg_content: >
+          <svg width="284" height="230" viewBox="0 0 284 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M251.899 75.6864C239.491 79.9842 230.79 90.2359 227.943 102.13C221.946 104.039 217.038 106.963 213.18 110.895C201.365 122.888 202.322 140.506 203.225 157.535C204.578 182.552 204.366 198.305 184.082 206.77C174.454 210.787 165.851 210.89 157.964 206.992C146.315 201.24 135.461 180.878 130.439 170.262C128.567 166.316 128.946 161.693 131.418 158.1C163.759 111.111 173.708 73.1862 160.979 45.2831C148.892 18.7456 120.261 9.82691 105.992 6.97167C107.833 9.02361 107.833 9.02361 105.992 6.97167C100.462 0.874569 91.6355 -1.68998 83.389 1.16658C72.3491 4.99074 66.493 17.0398 70.3171 28.0797C74.1413 39.1195 86.1987 44.9728 97.2385 41.1486C103.476 38.9881 108.057 34.1791 110.169 28.4139C121.394 31.8099 136.288 38.922 142.933 53.4954C148.043 64.6876 147.639 79.0505 141.912 96.219L47.9377 128.818C32.9711 118.799 23.8315 107.835 20.9049 95.9894C17.3767 81.6252 29.7087 58.0222 29.7087 58.0222C34.5669 60.3736 40.2994 60.8814 45.8193 58.9693C56.8425 55.1509 62.6707 43.1022 58.8466 32.0623C55.0224 21.0225 42.9846 15.1718 31.953 18.9931C22.6892 22.202 17.082 31.1951 17.7687 40.5108C17.7716 40.5191 17.7745 40.5275 17.7745 40.5275C8.22498 52.9407 -4.55149 75.2875 1.62377 100.502C9.34699 132.315 44.5347 156.846 105.94 174.163C112.629 176.058 127.667 214.078 149.113 224.738C161.133 230.698 174.133 231.294 187.816 226.554C189.109 226.106 190.414 225.617 191.731 225.049C225.954 210.803 224.263 179.394 223.037 156.472C222.318 143.152 221.646 130.563 227.319 124.806C227.845 124.278 229.391 126.124 230.052 125.661C236.932 144.767 256.973 152.505 276.21 145.842C295.588 139.129 305.847 117.981 299.138 98.6114C292.417 79.2361 271.277 68.9739 251.899 75.6864ZM71.6635 141.154L131.074 120.575C125.991 130.516 120.635 138.834 115.366 146.402C111.913 151.315 105.698 153.459 99.9561 151.684C89.5848 148.488 80.1794 145.087 71.6635 141.154ZM284.819 113.891C284.643 112.737 284.362 111.574 283.969 110.44C280.538 100.534 269.768 95.2995 259.871 98.7279C249.965 102.159 244.728 112.948 248.156 122.846C248.552 123.988 249.056 125.065 249.631 126.079C247.244 123.825 245.335 120.984 244.183 117.657C240.388 106.7 246.186 94.7272 257.167 90.9233C268.107 87.1338 280.1 92.9348 283.898 103.9C285.059 107.224 285.308 110.639 284.819 113.891Z" fill="#D1E2E5" />
+          </svg>
+      - bg_color: "#EAEAEE"
+        title: "For Health Systems"
+        desc: "Scale preventive mental health screening across populations with clinical-grade precision."
+        cta_text: "Learn more"
+        link: "/healthcare/"
+        svg_content: >
+          <svg width="258" height="290" viewBox="0 0 258 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5368_67836)">
+                  <path d="M189.688 48.5591C209.304 52.0694 228.052 39.0134 231.562 19.3976C235.072 -0.218236 222.016 -18.9657 202.4 -22.476C182.785 -25.9863 164.037 -12.9303 160.527 6.68553C157.016 26.3013 170.073 45.0488 189.688 48.5591Z" fill="#D9D8E3" />
+                  <path d="M302.892 133.007L271.025 120.179C260.17 115.798 248.111 118.974 240.58 127.11C235.388 123.151 229.693 119.518 223.529 116.246L227.052 96.5616C229.731 81.6705 219.718 67.3098 204.877 64.654L171.03 58.597C156.111 55.9271 141.792 65.9335 139.127 80.827L135.585 100.615C128.742 101.519 122.206 102.963 115.921 104.883C111.686 94.6005 101.471 87.3978 89.7566 87.7397L55.3918 88.7162C40.3063 89.1554 28.2874 101.89 28.7173 117.028L29.9242 158.237C30.335 173.33 43.0827 185.352 58.1816 184.915L69.0555 184.597C72.9151 193.29 78.8999 201.703 87.105 209.449C104.192 225.601 128.512 237.173 155.649 242.03C197.171 249.46 235.924 239.166 256.688 218.135L266.94 222.273C280.94 227.903 297.063 221.062 302.683 207.048L318.119 168.818C323.758 154.766 316.902 138.653 302.892 133.007ZM158.062 228.465C133.549 224.078 111.68 213.793 96.5617 199.435C91.3745 194.546 87.2694 189.406 84.1845 184.139L92.5135 183.892C107.623 183.471 119.642 170.736 119.207 155.624L118.145 118.576C122.91 117.018 127.845 115.786 133.014 114.906L131.848 121.42C129.187 136.287 139.173 150.643 154.067 153.308L187.914 159.365C202.768 162.024 217.116 152.009 219.774 137.154L221 130.301C225.632 132.949 229.917 135.804 233.814 138.872L219.792 173.638C214.17 187.665 221.013 203.776 235.038 209.411L242.84 212.558C224.523 227.749 192.431 234.615 158.062 228.465Z" fill="#D9D8E3" />
+                  <path d="M72.7466 75.0497C92.6802 74.4677 108.321 57.8282 107.789 37.9166C107.176 18.0044 90.5846 2.31836 70.6377 2.89802C50.7325 3.4714 35.0418 20.0889 35.6261 40.0098C36.1955 59.9411 52.8152 75.619 72.7466 75.0497Z" fill="#D9D8E3" />
+              </g>
+              <defs>
+                  <clipPath id="clip0_5368_67836">
+                      <rect width="309" height="309" fill="white" transform="translate(54.4336 -69.4727) rotate(10.1459)" />
+                  </clipPath>
+              </defs>
+          </svg>
+  # hero:
+  #   title_span: "blood lab for mental health"
+  #   title_suffix: "— precision, personalization, and prevention in one platform."
+  #   subtitle: "Entrelacs transforms mental health assessment by combining conversational AI with dynamic psychometrics, creating assessments that adapt to each individual and become more accurate over time."
+  #   cta_learn: "Learn More"
+  #   cta_demo: "Request a Demo"
+  # problem:
+  #   title: "One-size-fits-all mental health assessments miss early signs, causing late support, ineffective interventions and costly outcomes."
+  # solution:
+  #   tag: "Our Solution"
+  #   title: "Mental health care with precision, personalization and prevention"
+  #   description: "Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving, individualized mental health assessments for precise, continuous insights across wellbeing."
+  #   cta_demo: "Request a demo"
+  # features:
+  #   precision:
+  #     title: "Precision"
+  #     text: "Entrelacs uses conversational AI and adaptive psychometrics to deliver evolving, personalized, and highly accurate mental and social health assessments at scale."
+  #   personalisation:
+  #     title: "Personalisation"
+  #     text: "Insights and recommendations adapt to each person’s patterns and context, becoming precise with each interaction."
+  #   prevention:
+  #     title: "Prevention"
+  #     text: "Continuous monitoring detects subtle shifts early, enabling preventive, personalized mental health care before crises escalate."
+  # how_it_works:
+  #   title: "From conversation to personalized care in three steps"
+  #   step1:
+  #     title: "Chat & Discover"
+  #     text: "Our AI engages with you through conversation, analysing language, tone, and patterns to provide insights into how you connect with others."
+  #   step2:
+  #     title: "AI maps your connections"
+  #     text: "Answer personalized assessment questions to help you better understand your social interactions and workplace relationships."
+  #   step3:
+  #     title: "Get personalized report"
+  #     text: "Personalized insights reveal your social and workplace connection patterns and guide you toward healthier, stronger relationships."
+  # better_outcomes:
+  #   title: "Better Assessment. Better Care. <br> Better Outcomes."
+  #   subtitle: "Beyond standard mental health screening"
+  #   science:
+  #     title: "Behavioral Science meets AI"
+  #     text: "AI combined with advanced psychometrics delivers nuanced, validated assessments backed by global research partnerships."
+  #   dynamic:
+  #     title: "Dynamic, not static"
+  #     text: "Entrelacs tracks changing mental health patterns over time for earlier detection and precise predictions."
+  #   holistic:
+  #     title: "Holistic assessment"
+  #     text: "Comprehensive mental and social health profiling uncovers symptoms, patterns, and risks that traditional screening overlooks."
+  #   privacy:
+  #     title: "Privacy-First Architecture"
+  #     text: "User-controlled data, strict security, and healthcare-grade privacy ensure safety and trust throughout the system."
+  # settings:
+  #   title: "One platform. <br> Every mental health setting."
+  #   workplace:
+  #     title: "Workplace social health"
+  #     text: "Proactively monitor employee well-being, detect disconnection early, and support retention through personalized, preventive mental health insights."
+  #   clinical:
+  #     title: "Clinical care"
+  #     text: "Provide clinicians with precise, continuous assessments for better diagnosis, treatment matching, and early intervention before crises emerge."
+  #   community:
+  #     title: "Community/Public health"
+  #     text: "Enable large-scale mental health screening and targeted resource allocation to support preventative public health strategies."
   cta_banner:
     title: "See how Entrelacs can help your organization"
     text: "Join us in building a future where mental health care is as unique as the individuals it serves"
