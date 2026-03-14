@@ -579,7 +579,7 @@ roi_calculator:
       strong_text: "Annual claims growth"
       text: "Mental health costs are rising faster than any other category of health spend."
       source: "Mercer Marsh Benefits, 2023"
-  cta: "See how Entrelacs can help"
+  cta: "Use our ROI calculator"
 
   link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/"
 

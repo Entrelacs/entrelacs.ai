@@ -9,16 +9,13 @@
         background-size: cover;
     }
 
-    .ctas {
+    .cctas {
         display: flex;
         justify-content: center;
         gap: 20px;
         margin-top: 24px;
     }
 
-    main .cta {
-        width: 350px;
-    }
 
     .tags {
         display: flex;
@@ -62,6 +59,10 @@
         .tags p{
             font-size: 12px;
         }
+        .cctas{
+            flex-direction: column;
+
+        }
     }
 </style>
 
@@ -74,8 +75,8 @@
     </div>
     <h2>{% t cta_banner.title %}</h2>
     <p>{% t cta_banner.description %}</p>
-    <div class="ctas" style="margin-top: 40px;">
-        <a href="{{ site.baseurl }}/contact/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
-        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t cta_banner.cta_secondary %}</a>
+    <div class="cctas" style="margin-top: 40px;">
+        <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
+        <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t cta_banner.cta_secondary %}</a>
     </div>
 </div>
