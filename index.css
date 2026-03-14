@@ -214,9 +214,11 @@ main .cta {
     border-radius: 20px;
     border: 1px solid #CFDEDE;
 }
-#fourthSectionBox .array{
+
+#fourthSectionBox .array {
     gap: 20px;
 }
+
 #fourthSectionBox .arrayItem {
     padding: 16px;
     border-radius: 8px;
@@ -231,6 +233,7 @@ main .cta {
     font-weight: 700;
     line-height: 150%;
 }
+
 #fourthSectionBox p {
     font-family: "DM Sans";
     font-size: 16px;
@@ -239,6 +242,7 @@ main .cta {
     line-height: 150%;
     color: var(--text-gray);
 }
+
 #fourthSectionLast {
     display: flex;
     flex-direction: column;
@@ -249,28 +253,34 @@ main .cta {
     border-radius: 8px;
     background: #bce0e433;
 }
+
 #fourthSectionLast div {
     display: flex;
     gap: 40px;
     align-items: center
 }
+
 #fourthSectionLast img {
     max-height: 90px;
     object-fit: contain;
 }
-#fourthSectionLast p{
+
+#fourthSectionLast p {
     font-size: 20px;
 }
 
 #fifthSectionBox {
     justify-content: left !important;
 }
-#fifthSectionBox .arrayItem{
+
+#fifthSectionBox .arrayItem {
     width: fit-content;
 }
-#fifthSectionBox .arrayItem img{
+
+#fifthSectionBox .arrayItem img {
     max-height: 45px;
 }
+
 @media (max-width: 800px) {
 
     #firstSectionBox,
@@ -472,9 +482,11 @@ main .cta {
     border-radius: 20px;
     border: 1px solid #CFDEDE;
 }
-#fourthSectionBox .array{
+
+#fourthSectionBox .array {
     gap: 20px;
 }
+
 #fourthSectionBox .arrayItem {
     padding: 16px;
     border-radius: 8px;
@@ -489,6 +501,7 @@ main .cta {
     font-weight: 700;
     line-height: 150%;
 }
+
 #fourthSectionBox p {
     font-family: "DM Sans";
     font-size: 16px;
@@ -497,6 +510,7 @@ main .cta {
     line-height: 150%;
     color: var(--text-gray);
 }
+
 #fourthSectionLast {
     display: flex;
     flex-direction: column;
@@ -507,28 +521,34 @@ main .cta {
     border-radius: 8px;
     background: #bce0e433;
 }
+
 #fourthSectionLast div {
     display: flex;
     gap: 40px;
     align-items: center
 }
+
 #fourthSectionLast img {
     max-height: 90px;
     object-fit: contain;
 }
-#fourthSectionLast p{
+
+#fourthSectionLast p {
     font-size: 20px;
 }
 
 #fifthSectionBox {
     justify-content: left !important;
 }
-#fifthSectionBox .arrayItem{
+
+#fifthSectionBox .arrayItem {
     width: fit-content;
 }
-#fifthSectionBox .arrayItem img{
+
+#fifthSectionBox .arrayItem img {
     max-height: 45px;
 }
+
 @media (max-width: 800px) {
 
     #firstSectionBox,
@@ -544,21 +564,47 @@ main .cta {
         width: 100%;
     }
 
+    #firstSectionBox .content p {
+        font-size: 16px;
+    }
+
     #firstSectionBox .content div:last-child h3 {
         font-size: 30px;
     }
+
+    #secondSectionBox h3 {
+        font-size: 40px;
+    }
+
+    #secondSectionBox p {
+        font-size: 16px;
+    }
+
+    #secondSectionBox.array,
+    #thirdSectionBox.array {
+        gap: 10px;
+    }
+
+
     #fourthSectionBox {
         padding: 24px;
     }
+
     #fourthSectionBox .arrayItem {
         margin-bottom: 10px;
     }
+
+    #fourthSectionLast p {
+        font-size: 16px;
+    }
+
     #fifthSectionBox {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center !important;
     }
+
     #fifthSectionBox .arrayItem {
         width: 40%;
     }
@@ -639,25 +685,35 @@ main .cta {
     line-height: 150%;
     color: var(--text-gray);
 }
+
 @media (max-width: 950px) {
-    .fcontent, .fsecond{
+
+    .fcontent,
+    .fsecond {
         flex-direction: column;
     }
-    .fcontent.r{
+
+    .fcontent.r {
         flex-direction: column-reverse;
     }
-    .ftext, .fimg {
+
+    .ftext,
+    .fimg {
         width: 100%;
     }
-    .ftext{
+
+    .ftext {
         padding: 80px 24px 50px;
     }
-    .ftext p{
+
+    .ftext p {
         font-size: 16px;
     }
-    .fsitem{
+
+    .fsitem {
         margin-bottom: 10px;
     }
+
     .fsitem p {
         font-size: 14px;
     }
@@ -796,6 +852,10 @@ main .cta {
         width: 100%;
         margin-bottom: 50px;
     }
+
+    .array p {
+        font-size: 16px;
+    }
 }
 
 .accord {
@@ -919,18 +979,21 @@ main .cta {
     right: 0px;
     z-index: 9;
 }
-.array3ItemLearn{
+
+.array3ItemLearn {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
     margin-top: 24px;
 }
-.array3ItemLearn p{
-        color: var(--teal-900);
-        font-size: 16px;   
+
+.array3ItemLearn p {
+    color: var(--teal-900);
+    font-size: 16px;
 }
-.array3ItemLearn svg{
+
+.array3ItemLearn svg {
     position: relative;
     transform: translateY(4px);
 }
@@ -947,7 +1010,6 @@ main .cta {
         max-width: none;
         width: 100%;
         margin-bottom: 50px;
-        text-align: center;
     }
 }
 
