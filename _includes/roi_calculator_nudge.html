@@ -121,37 +121,22 @@
 <div id="roiCalculator" class="pageItem">
     <div id="roiDiv">
         <div>
-            <div class="tag2">ROI Calculator</div>
-            <h2 style="margin: 16px 0;">You're paying for crisis. <br> You could be investing in prevention</h2>
-            <p class="rDsp">Mental health has no early warning system. By the time you see the impact
-                of absenteeism, turnover, emergency admissions, it's already costing you.</p>
+            <div class="tag2">{% t roi_calculator.tag %}</div>
+            <h2 style="margin: 16px 0;">{% t roi_calculator.title %}</h2>
+            <p class="rDsp">{% t roi_calculator.description %}</p>
         </div>
         <div id="roiArray">
+            {% for stat in site.translations[site.lang].roi_calculator.stats %}
             <div class="roiArrayItem">
                 <div>
-                    <header>~€15K</header>
-                    <p><strong>Lost per employee in crisis</strong></p>
-                    <p>Productivity loss, replacement costs, and management time for each serious case.</p>
+                    <header>{{ stat.value }}</header>
+                    <p><strong>{{ stat.strong_text }}</strong></p>
+                    <p>{{ stat.text }}</p>
                 </div>
-                <p>Deloitte, 2022</p>
+                <p>{{ stat.source }}</p>
             </div>
-            <div class="roiArrayItem">
-                <div>
-                    <header>&lt;5%</header>
-                    <p><strong>Of problems caught early</strong></p>
-                    <p>No routine mental health screening exists, issues surface only at breaking point.</p>
-                </div>
-                <p>OECD Health at a Glance, 2023</p>
-            </div>
-            <div class="roiArrayItem">
-                <div>
-                    <header>~10–20%</header>
-                    <p><strong>Annual claims growth</strong></p>
-                    <p>Mental health costs are rising faster than any other category of health spend.</p>
-                </div>
-                <p>Mercer Marsh Benefits, 2023</p>
-            </div>
+            {% endfor %}
         </div>
-        <a style="margin: 0 auto;" href="{{ site.baseurl }}/roi_calculator/" class="cta">See how Entrelacs can help</a>
+        <a style="margin: 0 auto;" href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t roi_calculator.cta %}</a>
     </div>
 </div>

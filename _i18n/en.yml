@@ -563,26 +563,35 @@ waiting_list:
 
 
 roi_calculator:
-  title: "What does loneliness really cost your organization?"
-  description: "See how loneliness impacts your bottom line—and what personalized intervention could save."
+  tag: "ROI Calculator"
+  title: "You're paying for crisis. <br> You could be investing in prevention"
+  description: "Mental health has no early warning system. By the time you see the impact of absenteeism, turnover, emergency admissions, it's already costing you."
   stats:
-    - value: "1 in 5"
-      text: "Employees worldwide feel lonely at work"
-      source: "Gallup, 2024"
-    - value: "2×"
-      text: "More likely to quit within 12 months"
-      source: "Cigna, 2020"
-    - value: "$154B"
-      text: "Annual cost to US employers from loneliness"
-      source: "Cigna/Surgeon General"
-    - value: "5.7"
-      text: "Extra sick days per year for lonely employees"
-      source: "Bowers et al, 2022"
-  cta: "Calculate your ROI"
+    - value: "~€15K"
+      strong_text: "Lost per employee in crisis"
+      text: "Productivity loss, replacement costs, and management time for each serious case."
+      source: "Deloitte, 2022"
+    - value: "<5%"
+      strong_text: "Of problems caught early"
+      text: "No routine mental health screening exists, issues surface only at breaking point."
+      source: "OECD Health at a Glance, 2023"
+    - value: "~10–20%"
+      strong_text: "Annual claims growth"
+      text: "Mental health costs are rising faster than any other category of health spend."
+      source: "Mercer Marsh Benefits, 2023"
+  cta: "See how Entrelacs can help"
+
   link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/"
 
-
-
+cta_banner:
+  tags:
+    - "Precision"
+    - "Personalization"
+    - "Prevention"
+  title: "The future of mental health care is here"
+  description: "Experience the first platform that combines clinical precision with personalized insights and preventive monitoring. Join leading organizations already building the future of mental wellness."
+  cta_primary: "Join our waiting list"
+  cta_secondary: "Request a demo"
 
 
 

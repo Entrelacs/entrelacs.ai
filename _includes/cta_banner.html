@@ -63,16 +63,14 @@
 
 <div class="pageItem ctaBanner">
     <div class="tags">
-        <p>Precision</p>
-        <p>Personalization</p>
-        <p>Prevention</p>
+        {% for tag in site.translations[site.lang].cta_banner.tags %}
+        <p>{{ tag }}</p>
+        {% endfor %}
     </div>
-    <h2>The future of mental health care is here</h2>
-    <p>Experience the first platform that combines clinical precision with personalized insights and preventive
-        monitoring. Join leading organizations already building the future of mental wellness.
-    </p>
+    <h2>{% t cta_banner.title %}</h2>
+    <p>{% t cta_banner.description %}</p>
     <div class="ctas" style="margin-top: 40px;">
-        <a href="{{ site.baseurl }}/contact/" class="cta cta1">Join our waiting list</a>
-        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">Request a demo</a>
+        <a href="{{ site.baseurl }}/contact/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
+        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t cta_banner.cta_secondary %}</a>
     </div>
 </div>
