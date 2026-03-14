@@ -30,7 +30,7 @@ home:
     title: "Entrelacs"
   video_link: https://www.youtube.com/embed/PdfPGtb_Aps?si=K_OAVAhh3ICuyiM 
   hero:
-    title_prefix: "Le"
+    title_prefix: "Mental health finally gets early detection"
     title_span: "plateforme d’évaluation du bien être mental"
     title_suffix: "— précision, personnalisation et prévention sur une seule plateforme."
     subtitle: "Entrelacs transforme l'évaluation de la santé mentale en combinant l'IA conversationnelle et la psychométrie dynamique, créant des évaluations qui s'adaptent à chaque individu et gagnent en précision au fil du temps."
@@ -221,10 +221,6 @@ employers:
     cta_roi: "Utiliser le calculateur ROI"
 
 
-
-
-
-
 healthcare:
   hero:
     tag: "ENTRELACS POUR LA SANTÉ"
@@ -358,7 +354,6 @@ healthcare:
       text: "Nous passerons en revue la modélisation du ROI spécifique à votre population de membres, la structure de votre réseau et les modèles d'utilisation actuels."
       list: []
       cta: "Contacter les ventes"
-
 
 
 technology:
@@ -539,7 +534,6 @@ team:
         image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
 
 
-
 contact:
   title: "Contactez-nous"
   subtitle: "Notre équipe sera ravie de vous entendre."
@@ -573,24 +567,32 @@ waiting_list:
 
 
 roi_calculator:
-  title: "Combien la solitude coûte-t-elle vraiment à votre organisation ?"
-  description: "Voyez comment la solitude impacte vos résultats—et ce qu'une intervention personnalisée pourrait économiser."
+  tag: "Calculateur de ROI"
+  title: "Vous payez pour la crise. <br> Vous pourriez investir dans la prévention"
+  description: "La santé mentale n'a pas de système d'alerte précoce. Au moment où vous constatez l'impact de l'absentéisme, du turnover, des admissions aux urgences, cela vous coûte déjà."
   stats:
-    - value: "1 sur 5"
-      text: "Employés dans le monde se sentent seuls au travail"
-      source: "Gallup, 2024"
-    - value: "2×"
-      text: "Plus susceptibles de démissionner dans les 12 mois"
-      source: "Cigna, 2020"
-    - value: "154 Mrd $"
-      text: "Coût annuel pour les employeurs américains dû à la solitude"
-      source: "Cigna/Surgeon General"
-    - value: "5,7"
-      text: "Jours de maladie supplémentaires par an pour les employés seuls"
-      source: "Bowers et al, 2022"
-  cta: "Calculez votre ROI"
+    - value: "~15 k€"
+      strong_text: "Perdu par employé en crise"
+      text: "Perte de productivité, coûts de remplacement et temps de gestion pour chaque cas grave."
+      source: "Deloitte, 2022"
+    - value: "< 5 %"
+      strong_text: "Des problèmes détectés tôt"
+      text: "Il n'existe pas de dépistage de routine de la santé mentale, les problèmes n'apparaissent qu'au point de rupture."
+      source: "Panorama de la santé de l'OCDE, 2023"
+    - value: "~10–20 %"
+      strong_text: "Croissance annuelle des réclamations"
+      text: "Les coûts de la santé mentale augmentent plus rapidement que toute autre catégorie de dépenses de santé."
+      source: "Mercer Marsh Benefits, 2023"
+  cta: "Découvrez comment Entrelacs peut aider"
   link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/?lang=fr"
 
 
-
-
+cta_banner:
+  tags:
+    - "Précision"
+    - "Personnalisation"
+    - "Prévention"
+  title: "L'avenir des soins de santé mentale est là"
+  description: "Découvrez la première plateforme qui combine la précision clinique avec des informations personnalisées et un suivi préventif. Rejoignez les organisations de pointe qui construisent déjà l'avenir du bien-être mental."
+  cta_primary: "Rejoindre notre liste d'attente"
+  cta_secondary: "Demander une démo"

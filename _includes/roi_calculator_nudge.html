@@ -9,107 +9,134 @@
         padding-top: 80px;
         padding-bottom: 80px;
         border-radius: 20px;
-        background: url(/images/toolBG.webp) no-repeat center center;
-        background-size: cover;
+        background-color: rgba(208, 223, 224, 0.45);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-
+        align-items: flex-start;
+        gap: 40px;
         box-shadow: 0px 0px 1px 1px #CFDEDE;
     }
+
     @media (min-width: 900px) {
         #roiDiv {
-            padding-left: 80px !important;
-            padding-right: 80px !important;
+            padding-left: 56px !important;
+            padding-right: 56px !important;
         }
     }
 
     #roiDiv h2 {
+        color: #080808;
+        font-family: "Libre Baskerville";
         font-size: 50px;
+        font-style: normal;
         font-weight: 700;
-        margin-bottom: 20px;
-        line-height: 120%;
+        line-height: 1.24;
+        letter-spacing: -1px;
     }
 
     #roiDiv .rDsp {
-        font-size: 18px;
-        line-height: 150%;
-        max-width: 670px;
-        color: var(--text-gray);
-        margin-bottom: 40px;
+        color: #495050;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145%;
+        max-width: 800px;
     }
 
     #roiArray {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 20px;
         margin-bottom: 60px;
-        box-shadow: 0px 0px 1px 1px #74A4A2;
-        padding: 40px 24px;
-        border-radius: 20px;
     }
 
     .roiArrayItem {
-        width: 25%;
+        width: 31%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-between;
+        border-radius: 8px;
+        background: #CFE2E3;
+        padding: 32px;
     }
 
     .roiArrayItem header {
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--teal);
-        margin-bottom: 10px;
-    }
-
-    .roiArrayItem div p {
-        font-size: 16px !important;
-        margin-bottom: 5px !important;
-        color: var(--text-gray2) !important;
+        color: #156B70;
+        font-family: "Libre Baskerville";
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 150%;
     }
 
     .roiArrayItem p {
-        font-size: 14px !important;
-        color: #869D9D !important;
+        font-size: 16px !important;
+        margin-top: 24px !important;
+        color: #080808;
     }
+
+    /* .roiArrayItem p {
+        font-size: 16px !important;
+        color: #869D9D !important;
+    } */
+
     @media (max-width: 1000px) {
         #roiArray {
             flex-wrap: wrap;
         }
-        .roiArrayItem{
+
+        .roiArrayItem {
             width: 47%;
             margin-bottom: 20px;
         }
     }
+
     @media (max-width: 700px) {
         #roiDiv h2 {
             font-size: 32px;
         }
-        .roiArrayItem{
+
+        .roiArrayItem {
             width: 100%;
             margin-bottom: 20px;
         }
     }
+
+    .tag2 {
+        background: #f8f8f8;
+        padding: 4px 12px;
+        border-radius: 16px;
+        color: var(--Text-text-dark-teal, #156B70);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
 </style>
 
 <div id="roiCalculator" class="pageItem">
-    <div id="roiDiv" class="pageItem">
-        <h2>{% t roi_calculator.title %}</h2>
-        <p class="rDsp">{% t roi_calculator.description %}</p>
+    <div id="roiDiv">
+        <div>
+            <div class="tag2">{% t roi_calculator.tag %}</div>
+            <h2 style="margin: 16px 0;">{% t roi_calculator.title %}</h2>
+            <p class="rDsp">{% t roi_calculator.description %}</p>
+        </div>
         <div id="roiArray">
             {% for stat in site.translations[site.lang].roi_calculator.stats %}
             <div class="roiArrayItem">
                 <div>
                     <header>{{ stat.value }}</header>
+                    <p><strong>{{ stat.strong_text }}</strong></p>
                     <p>{{ stat.text }}</p>
                 </div>
                 <p>{{ stat.source }}</p>
             </div>
             {% endfor %}
         </div>
-        <a href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t roi_calculator.cta %}</a>
+        <a style="margin: 0 auto;" href="{{ site.baseurl }}/roi_calculator/" class="cta">{% t roi_calculator.cta %}</a>
     </div>
 </div>

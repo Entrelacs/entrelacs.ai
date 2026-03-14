@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 :root {
@@ -10,6 +9,7 @@
   --text-gray2: #495050;
   --text-gray3: #343737;
   --text-lighter: #637475;
+  --gray: #CFDEDE;
 
   --charcoal: #4b4b4b;
   --orange: #f5bb3e;
@@ -22,6 +22,7 @@
   --teal: #1CAFBF;
   --teal-dark: #156B70;
   --teal-light: #CDE8EC;
+  --teal-800: #10494B;
   --teal-900: #092627;
   --teal-background: #def3f680;
   --tangerine: #002627;
@@ -34,8 +35,10 @@
   --error-700: #DF2107;
   --success-50: #ECFDF3;
   --success-700: #027A48;
+  --coral-900: #911708;
   
   --brown: #946d65;
+  --libre: 'Libre Baskerville', 'DM Sans', serif;
 }
 
 html, body {
@@ -77,19 +80,21 @@ img{
   font-size: 16px;
   font-weight: 700;
   padding: 15px 30px;
-  background-color: var(--teal);
+  background-color: var(--teal-dark);
   color: var(--background);
   transition: all 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .cta:hover{
   transform: scale(1.1);
 }
-/* .cta svg{
-  width: 10px;
-  height: 10px;
-} */
+
+.cta1{
+  background-color: var(--teal-light);
+  color: var(--teal-dark);
+}
 
 
 .main_container{
@@ -119,8 +124,8 @@ img{
 
 .pageItem{
   width: 100%;
-  padding-left: 160px !important;
-  padding-right: 160px !important;
+  padding-left: 120px !important;
+  padding-right: 120px !important;
 }
 
 @media (max-width: 900px) {
