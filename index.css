@@ -289,6 +289,21 @@ main .cta {
     #firstSectionBox .content div:last-child h3 {
         font-size: 30px;
     }
+    #fourthSectionBox {
+        padding: 24px;
+    }
+    #fourthSectionBox .arrayItem {
+        margin-bottom: 10px;
+    }
+    #fifthSectionBox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center !important;
+    }
+    #fifthSectionBox .arrayItem {
+        width: 40%;
+    }
 }
 
 
@@ -366,7 +381,29 @@ main .cta {
     line-height: 150%;
     color: var(--text-gray);
 }
-
+@media (max-width: 950px) {
+    .fcontent, .fsecond{
+        flex-direction: column;
+    }
+    .fcontent.r{
+        flex-direction: column-reverse;
+    }
+    .ftext, .fimg {
+        width: 100%;
+    }
+    .ftext{
+        padding: 80px 24px 50px;
+    }
+    .ftext p{
+        font-size: 16px;
+    }
+    .fsitem{
+        margin-bottom: 10px;
+    }
+    .fsitem p {
+        font-size: 14px;
+    }
+}
 
 .lsection {
     padding-top: 100px;
