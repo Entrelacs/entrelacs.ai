@@ -197,8 +197,11 @@ main {
         width: 47%;
     }
 
-    #advisors .groupListItem {
+    #extendedLeadership .groupListItem {
         width: 30%;
+    }
+    #advisors .groupListItem {
+        width: 100%;
     }
 }
 
@@ -207,12 +210,13 @@ main {
         padding: 60px 24px;
     }
 
-    .groupListItem {
+    .groupListItem, #extendedLeadership .groupListItem {
         width: 100%;
     }
 
     #advisors .groupListItem {
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .groupListItem h3 {

@@ -14,6 +14,7 @@
     <main>
         <section class="hero">
             <div class="herocontent pageItem">
+                <div class="tag2">ABOUT US</div>
                 <h1>The first platform built to predict mental health crises — before they happen</h1>
                 <p>Entrelacs is an AI-powered preventive mental health platform that screens, matches, and monitors
                     individuals with clinical precision — detecting deterioration weeks before crisis, so the right
@@ -87,19 +88,20 @@
                         {% endif %}
                     </div>
                     <div>
-                        <h3>{{ advisor.name }}</h3>
+                    <h3>{{ advisor.name }}</h3>
 
-                        {% if advisor.tag %}
-                        <p class="tag">{{ advisor.tag }}</p>
-                        {% endif %}
+                    {% if advisor.tag %}
+                    <p class="tag">{{ advisor.tag }}</p>
+                    {% endif %}
                         <header>{{ advisor.role }}</header>
-                        <p>{{ advisor.bio }}</p>
+                    <p>{{ advisor.bio }}</p>
 
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </section>
+        {% include cta_banner.html %}
     </main>
     {%- include footer.html -%}
 </body>

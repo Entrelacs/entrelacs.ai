@@ -97,6 +97,39 @@ img{
 }
 
 
+.tag {
+    padding: 7px 18px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    text-align: center;
+}
+
+.tag.red {
+    background: var(--error-50);
+    color: var(--error-700);
+}
+
+.tag.green {
+    background: var(--gray);
+    color: var(--teal-dark);
+}
+
+.tag2 {
+    background: #E6F9FA;
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: var(--Text-text-dark-teal, #156B70);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+
 .main_container{
   padding-left: 160px;
   padding-right: 160px;
