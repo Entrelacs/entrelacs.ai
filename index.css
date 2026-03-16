@@ -934,7 +934,7 @@ main .cta {
 }
 
 .array2Item h3,
-.array3Item h3 {
+.ctaCardItem h3 {
     color: var(--navy-blue);
     font-size: 20px;
     font-weight: 700;
@@ -942,26 +942,26 @@ main .cta {
     margin-top: 24px;
 }
 
-.array3Item h3 {
+.ctaCardItem h3 {
     position: relative;
     margin-top: 0px;
     z-index: 10;
 }
 
 .array2Item p,
-.array3Item p {
+.ctaCardItem p {
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-gray);
     margin-top: 8px;
 }
 
-.array3 {
+.ctaCard {
     display: flex;
     gap: 2%;
 }
 
-.array3Item {
+.ctaCardItem {
     width: 32%;
     border-radius: 20px;
     padding: 20px;
@@ -973,14 +973,14 @@ main .cta {
     justify-content: space-between;
 }
 
-.array3Item svg {
+.ctaCardItem svg {
     position: absolute;
     top: 0px;
     right: 0px;
     z-index: 9;
 }
 
-.array3ItemLearn {
+.ctaCardItemLearn {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -988,12 +988,12 @@ main .cta {
     margin-top: 24px;
 }
 
-.array3ItemLearn p {
+.ctaCardItemLearn p {
     color: var(--teal-900);
     font-size: 16px;
 }
 
-.array3ItemLearn svg {
+.ctaCardItemLearn svg {
     position: relative;
     transform: translateY(4px);
 }
@@ -1001,12 +1001,12 @@ main .cta {
 @media (max-width: 750px) {
 
     .array2,
-    .array3 {
+    .ctaCard {
         flex-direction: column;
     }
 
     .array2Item,
-    .array3Item {
+    .ctaCardItem {
         max-width: none;
         width: 100%;
         margin-bottom: 50px;

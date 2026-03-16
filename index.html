@@ -87,18 +87,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="pageItem lsection" style="background: #eaf1f1a6;">
             <h2 style="max-width: 900px;">{% t home.pillars.heading %}</h2>
             <p style="max-width: 650px;" class="lsectionP">{% t home.pillars.description %}</p>
@@ -260,44 +248,26 @@
 
 
 
-<div class="pageItem lsection" style="background: #eaf1f1a6;">
-    <h2>{% t home.partners.heading %}</h2>
-    <p class="lsectionP">{% t home.partners.description %}</p>
-    <div id="fifthSectionBox" class="array" style="margin-top: 60px">
-        {% for logo in site.translations[site.lang].home.partners.logos %}
-        <div class="arrayItem">
-            <img {% if logo.style %}style="{{ logo.style }}"{% endif %} src="{{ logo.src }}" alt="">
-        </div>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="pageItem lsection">
-    <div class="tag green">{% t home.who_we_serve.tag %}</div>
-    <h2>{% t home.who_we_serve.heading %}</h2>
-    <div class="array3" style="margin-top: 60px;">
-        {% for card in site.translations[site.lang].home.who_we_serve.cards %}
-        <div class="array3Item" style="background: {{ card.bg_color }};">
-            <div>
-                {{ card.svg_content }}
-                <h3>{{ card.title }}</h3>
-                <p>{{ card.desc }}</p>
+        <div class="pageItem lsection" style="background: #eaf1f1a6;">
+            <h2>{% t home.partners.heading %}</h2>
+            <p class="lsectionP">{% t home.partners.description %}</p>
+            <div id="fifthSectionBox" class="array" style="margin-top: 60px">
+                {% for logo in site.translations[site.lang].home.partners.logos %}
+                <div class="arrayItem">
+                    <img {% if logo.style %}style="{{ logo.style }}" {% endif %} src="{{ logo.src }}" alt="">
+                </div>
+                {% endfor %}
             </div>
-            <a href="{{ site.baseurl }}{{ card.link }}" class="array3ItemLearn">
-                <p>{{ card.cta_text }}</p>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#080808"
-                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M3.5 12H20.33" stroke="#080808" stroke-width="1.5" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </a>
         </div>
-        {% endfor %}
-    </div>
-</div>
+
+        <div class="pageItem lsection">
+            <div class="tag green">{% t home.who_we_serve.tag %}</div>
+            <h2>{% t home.who_we_serve.heading %}</h2>
+            {% assign card_data = site.translations[site.lang].home.who_we_serve.cards %}
+            {% if card_data %}
+            {% include ctaCards.html cards=card_data %}
+            {% endif %}
+        </div>
 
 
         {% include roi_calculator_nudge.html %}
