@@ -13,19 +13,31 @@
     {%- include navBar.html -%}
     <main>
         <section class="hero">
-            <div class="content main_container">
-                <h1>{% t team.hero.title %}</h1>
-                <h2>{% t team.hero.subtitle %}</h2>
+            <div class="herocontent pageItem">
+                <h1>The first platform built to predict mental health crises — before they happen</h1>
+                <p>Entrelacs is an AI-powered preventive mental health platform that screens, matches, and monitors
+                    individuals with clinical precision — detecting deterioration weeks before crisis, so the right
+                    support arrives before it's urgently needed.</p>
+                <p>Built on three years of R&D, 80,000+ research articles, and clinical validation across 8 countries
+                    and 37 global markets, Entrelacs brings together dynamic psychometric modeling, conversational AI,
+                    and continuous monitoring into a single platform — designed for employers, clinicians, and health
+                    systems.</p>
+                <p><strong>We exist because mental health is the only area of medicine without a reliable early warning
+                        system.
+                        We're here to change that.</strong></p>
             </div>
         </section>
 
         <section class="headerGroup pageItem">
-            <h2>{% t team.vision.title %}</h2>
-            <p>{% t team.vision.text %}</p>
+            <h2>Vision & mission</h2>
+            <p> A world where mental health crises are predicted, prevented, and no longer inevitable.</p>
         </section>
 
-        <section id="leadership" class="group main_container">
-            <header class="groupHeader">{% t team.leadership.title %}</header>
+        <section id="leadership" class="group pageItem">
+            <div class="headerGroup">
+                <h2>{% t team.leadership.title %}</h2>
+                <p>{% t team.leadership.subtitle %}</p>
+            </div>
             <div class="groupList">
                 {% for member in site.translations[site.lang].team.leadership.list %}
                 <div class="groupListItem">
@@ -41,9 +53,31 @@
                 {% endfor %}
             </div>
         </section>
+        <section id="extendedLeadership" class="group pageItem">
+            <div class="headerGroup">
+                <h2>{% t team.extendedLeadership.title %}</h2>
+            </div>
+            <div class="groupList">
+                {% for member in site.translations[site.lang].team.extendedLeadership.list %}
+                <div class="groupListItem">
+                    <div class="img">
+                        {% if member.image %}
+                        <img src="{{ member.image }}" alt="{{ member.name }}">
+                        {% endif %}
+                    </div>
+                    <h3>{{ member.name }}</h3>
+                    <header>{{ member.role }}</header>
+                    <p>{{ member.bio }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
 
-        <section id="advisors" class="group main_container">
-            <header class="groupHeader">{% t team.advisors.title %}</header>
+        <section id="advisors" class="group pageItem">
+            <div class="headerGroup">
+                <h2>{% t team.advisors.title %}</h2>
+                <p>{% t team.advisors.subtitle %}</p>
+            </div>
             <div class="groupList">
                 {% for advisor in site.translations[site.lang].team.advisors.list %}
                 <div class="groupListItem">
@@ -52,13 +86,16 @@
                         <img src="{{ advisor.image }}" alt="{{ advisor.name }}">
                         {% endif %}
                     </div>
-                    <h3>{{ advisor.name }}</h3>
-                    
-                    {% if advisor.tag %}
-                    <p class="tag">{{ advisor.tag }}</p>
-                    {% endif %}
+                    <div>
+                        <h3>{{ advisor.name }}</h3>
 
-                    <p>{{ advisor.bio }}</p>
+                        {% if advisor.tag %}
+                        <p class="tag">{{ advisor.tag }}</p>
+                        {% endif %}
+                        <header>{{ advisor.role }}</header>
+                        <p>{{ advisor.bio }}</p>
+
+                    </div>
                 </div>
                 {% endfor %}
             </div>
@@ -66,4 +103,5 @@
     </main>
     {%- include footer.html -%}
 </body>
+
 </html>
