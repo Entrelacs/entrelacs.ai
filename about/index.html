@@ -155,7 +155,7 @@
             </div>
         </section>
 
-        <!-- <section class="ourStory pageItem">
+        <section class="ourStory pageItem">
             <div class="headerGroup">
                 <h2>Our story</h2>
                 <p>Born from an uncomfortable truth. Built to fix it.</p>
@@ -171,7 +171,7 @@
                     </button>
                 </div>
 
-                <div class="ourStory-card">
+                <div id="ourStoryCard" class="ourStory-card">
                     <div class="ourStory-col ourStory-intro">
                         <p>Entrelacs began with a question that sounds simple but turns out to be radical:</p>
                         <p class="ourStory-question">What if the average<br>patient doesn't exist?</p>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="founderStory pageItem">
             <div class="founderStory-card">
@@ -208,12 +208,11 @@
                 </div>
 
                 <div class="founderStory-main">
-                    
+
 
                     <div class="founderStory-photo-block">
                         <div class="founderStory-photo-wrapper">
-                            <img src="/images/DrHansIjzerman.png"
-                                alt="Portrait of Dr. Hans Rocha IJzerman">
+                            <img src="/images/DrHansIjzerman.png" alt="Portrait of Dr. Hans Rocha IJzerman">
                         </div>
                         <div class="founderStory-meta">
                             <p class="founderStory-name">Dr. Hans Rocha IJzerman</p>
@@ -318,7 +317,7 @@
             </div>
         </section>
         {% include sponsors.html %}
-        <div class="pageItem">
+        <div class="pageItem" style="padding: 80px;">
             <div class="tag green">Contact us</div>
             <div class="headerGroup">
                 <h2>Let's build the future of mental health care together</h2>
@@ -332,6 +331,29 @@
             {% endif %}
         </div>
         {% include cta_banner.html %}
+        <script>
+            console.log('Script loaded');
+            const container = document.getElementById('ourStoryCard');
+            const leftBtn = document.querySelector('.story-arrow-left');
+            const rightBtn = document.querySelector('.story-arrow-right');
+            console.log(container, leftBtn, rightBtn);
+            // Define how far to scroll (e.g., 300px or container.clientWidth)
+            const scrollAmount = 350;
+
+            leftBtn.addEventListener('click', () => {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            rightBtn.addEventListener('click', () => {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
     </main>
     {%- include footer.html -%}
 </body>
