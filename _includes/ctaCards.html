@@ -1,0 +1,99 @@
+<style>
+    .ctaCardItem h3 {
+        color: var(--navy-blue);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-top: 24px;
+    }
+
+    .ctaCardItem h3 {
+        position: relative;
+        margin-top: 0px;
+        z-index: 10;
+    }
+
+    .ctaCardItem p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--text-gray);
+        margin-top: 8px;
+    }
+
+    .ctaCard {
+        display: flex;
+        gap: 2%;
+    }
+
+    .ctaCardItem {
+        width: 32%;
+        border-radius: 20px;
+        padding: 20px;
+        padding-top: 250px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ctaCardItem svg {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9;
+    }
+
+    .ctaCardItemLearn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        margin-top: 24px;
+    }
+
+    .ctaCardItemLearn p {
+        color: var(--teal-900);
+        font-size: 16px;
+    }
+
+    .ctaCardItemLearn svg {
+        position: relative;
+        transform: translateY(4px);
+    }
+
+    @media (max-width: 750px) {
+
+        .ctaCard {
+            flex-direction: column;
+        }
+
+        .ctaCardItem {
+            max-width: none;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+</style>
+
+<div class="ctaCard" style="margin-top: {{ include.margin_top | default: '60px' }};">
+    {% assign cards = include.cards | default: site.translations[site.lang].home.who_we_serve.cards %}
+    {% for card in cards %}
+    <div class="ctaCardItem" style="background: {{ card.bg_color }};">
+        <div>
+            {{ card.svg_content }}
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.desc }}</p>
+        </div>
+        <a href="{{ site.baseurl }}{{ card.link }}" class="ctaCardItemLearn">
+            <p>{{ card.cta_text }}</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#080808" stroke-width="1.5"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3.5 12H20.33" stroke="#080808" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+    {% endfor %}
+</div>
