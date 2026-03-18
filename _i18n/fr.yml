@@ -196,6 +196,29 @@ employers:
     description: "Entrelacs utilise des évaluations pilotées par l’IA pour détecter précocement la déconnexion des employés, proposer des recommandations relationnelles personnalisées et réduire le turnover, avec un retour sur investissement organisationnel mesurable."
     cta_sales: "Contacter les ventes"
     cta_demo: "Planifier une démo"
+  hidden_cost:
+    tag: "Le problème"
+    title: "Le coût caché de la déconnexion est déjà dans vos chiffres"
+    text_intro: "Les crises de santé mentale coûtent à votre organisation du temps, de l’argent et des talents — et les signaux d’alerte étaient présents bien avant la crise. Les chiffres parlent d’eux‑mêmes :"
+    stats:
+      - value: "36 %"
+        body_line1: "des employés dans le monde "
+        body_line2: "se sentent seuls au travail."
+        source: "Gallup, 2024"
+      - value: "2×"
+        body_line1: "plus susceptibles de quitter leur poste "
+        body_line2: "dans les 12 mois."
+        source: "Cigna, 2020"
+      - value: "$154 Md"
+        body_line1: "perdus chaque année par les employeurs américains"
+        body_line2: "en raison de la solitude au travail."
+        source: "Cigna, 2020"
+      - value: "5,7"
+        body_line1: "jours d’arrêt maladie supplémentaires par an "
+        body_line2: "pris par les employés isolés."
+        source: "Bowers et al., 2022"
+    bottom_text_line1: "Lorsque la solitude apparaît dans les entretiens de sortie, il est déjà trop tard. Entrelacs détecte la déconnexion "
+    bottom_text_line2: "4 à 6 semaines plus tôt — transformant une crise coûteuse en opportunité d’action proactive."
   problem:
     tag: "Le Problème"
     title: "La déconnexion sociale, moteur caché du turnover"
@@ -208,6 +231,13 @@ employers:
   how_it_works:
     title: "Comment Entrelacs fonctionne pour les employeurs"
     subtitle: "Du risque invisible à l'action mesurable"
+    steps:
+      - title: "Évaluation personnalisée de l'employé"
+        text: "Les employés participent à de brefs échanges conversationnels (5 à 7 minutes) sur leur connexion sociale, à la fois de manière générale et au sein de leur équipe."
+      - title: "Analyses et accompagnement individuels"
+        text: "Chaque employé reçoit des analyses confidentielles sur ses dynamiques relationnelles, ainsi que des recommandations pratiques et personnalisées adaptées à ses besoins et à son style."
+      - title: "Intelligence collective et organisationnelle"
+        text: "Avec le consentement des employés, des données anonymisées et agrégées offrent aux RH et aux managers une visibilité accrue sur les dynamiques d’équipe et la qualité des relations au sein de l’organisation."
     assessment:
       title: "Évaluation personnalisée de l'employé"
       text: "Les employés participent à de brefs échanges conversationnels (5-7 minutes) sur leur connexion sociale, tant de manière générale qu'au sein de leur équipe."
@@ -254,13 +284,13 @@ employers:
       title: "Prédictif et validé"
       text: "Basé sur des recherches validées reliant la solitude au travail au turnover, Entrelacs prédit le départ des employés grâce à des évaluations avancées et fondées sur des preuves."
   benefits:
-    title: "Avantages pour votre organisation"
-    subtitle: "Impact mesurable sur la culture et les résultats"
+    title: "Des avantages qui retiennent vos meilleurs talents"
+    subtitle: "Des informations précoces qui protègent votre personnel."
     hr:
       title: "RH et Leadership"
       list:
-        - "Détection précoce du risque de départ"
-        - "Réduction des coûts de roulement"
+        - "Détection précoce du risque de départ avant les entretiens de sortie"
+        - "Réduction des coûts de roulement — jusqu’à 50–200 % du salaire économisé par employé"
         - "Allocation des ressources basée sur les données"
         - "Indicateurs culturels renforcés (appartenance, sécurité, confiance)"
       cta: "Planifier une démo"
@@ -276,6 +306,27 @@ employers:
         - "Conscience de leurs besoins de connexion"
         - "Conseils pratiques et personnalisés"
         - "Expérience confidentielle avec contrôle total des données"
+  pricing:
+    title: "Tarifs et ROI"
+    bullets:
+      - strong: "Aucune donnée individuelle d’employé"
+        rest: " n’est partagée avec les employeurs"
+      - strong: "ROI de 4 à 5× "
+        rest: "sur les investissements préventifs en santé mentale"
+      - strong: "Des résultats visibles en quelques semaines,"
+        rest: " pas en plusieurs mois"
+    cta: "Contactez-nous"
+    price:
+      amount: "150 €"
+      suffix: "par employé et par an"
+      line_prefix: "Moins que votre programme d’aide aux employés actuel, avec "
+      line_roi: "un ROI de 4 à 5×"
+      line_suffix: ""
+    calculator:
+      before_link: "Utilisez notre "
+      link: "calculateur de ROI"
+      after_link: " pour estimer les économies potentielles"
+      line2: "liées à la réduction du turnover"
   journey:
     title: "Soutenir la connexion tout au long du parcours employé"
     onboarding:
@@ -297,6 +348,35 @@ employers:
       title: "Réduction du risque de départ"
       text: "Suivez la santé de la connexion dans les équipes distribuées ayant peu de signaux sociaux."
     cta: "Planifier une démo"
+  getting_started:
+    title: "Bien démarrer"
+    subtitle: "Pour les responsables RH et les organisations."
+    hero:
+      heading: "Planifiez une démonstration pour découvrir comment Entrelacs améliore vos flux de travail"
+      body: "De votre première conversation jusqu'à un pilote pleinement opérationnel, Entrelacs est conçu pour s'intégrer rapidement — afin que vos équipes passent d'une gestion de crise réactive à un accompagnement prédictif de votre personnel en quelques semaines."
+      what_title: "Ce que vous obtenez"
+      what_list:
+        - "Accès à la plateforme pour les groupes d’employés sélectionnés"
+        - "Formation des RH et des managers avec un accompagnement complet à la mise en œuvre"
+        - "Données de ROI et suivi des résultats montrant l’impact mesurable sur votre personnel"
+      next_title: "Prochaines étapes"
+      next_list:
+        - "Demander une démonstration personnalisée et une estimation du ROI"
+        - "Concevoir un programme pilote adapté à votre organisation"
+        - "Assurer la formation, l’onboarding et un soutien continu à l’optimisation"
+      cta: "Demander une démo"
+    timeline:
+      title: "Calendrier de mise en œuvre"
+      stages:
+        - label: "Démo et estimation du ROI"
+          period: "Semaines 1–2"
+        - label: "Mise en œuvre et formation"
+          period: "Semaines 3–4"
+        - label: "Conception et lancement du programme pilote"
+          period: "Semaines 5–8"
+        - label: "Optimisation et suivi des résultats"
+          period: "En continu"
+      cta: "Utiliser le calculateur de ROI"
   cta_banner:
     title: "Transformez votre stratégie de rétention"
     text: "Découvrez comment Entrelacs aide les organisations à bâtir des équipes plus fortes et connectées tout en réduisant le roulement coûteux."

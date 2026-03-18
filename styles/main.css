@@ -127,6 +127,7 @@ img{
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 16px;
+    width: fit-content;
 }
 
 

@@ -196,6 +196,29 @@ employers:
     description: "Entrelacs uses AI-driven assessments to detect early employee disconnection, deliver personalized relationship guidance, and reduce turnover with measurable organizational ROI."
     cta_sales: "Contact Sales"
     cta_demo: "Schedule a Demo"
+  hidden_cost:
+    tag: "The problem"
+    title: "The hidden cost of disconnection is already in your numbers"
+    text_intro: "Mental health crises cost your organization time, money, and talent — and the warning signs were there long before the crisis hit. The numbers tell the story:"
+    stats:
+      - value: "36%"
+        body_line1: "of employees worldwide "
+        body_line2: "feel lonely at work."
+        source: "Gallup, 2024"
+      - value: "2×"
+        body_line1: "more likely to quit "
+        body_line2: "within 12 months."
+        source: "Cigna, 2020"
+      - value: "$154B"
+        body_line1: "lost annually by US employers"
+        body_line2: "due to workplace loneliness."
+        source: "Cigna, 2020"
+      - value: "5.7"
+        body_line1: "extra sick days per year "
+        body_line2: "taken by lonely employees."
+        source: "Bowers et al, 2022"
+    bottom_text_line1: "By the time loneliness shows up in exit interviews, it's already too late. Entrelacs detects disconnection "
+    bottom_text_line2: "4–6 weeks early — turning a costly crisis into a proactive win."
   problem:
     tag: "The Problem"
     title: "Social Disconnection: The hidden driver of turnover"
@@ -208,6 +231,13 @@ employers:
   how_it_works:
     title: "How entrelacs works for employers"
     subtitle: "From Invisible Risk to Measurable Action"
+    steps:
+      - title: "Personalized Employee Assessment"
+        text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
+      - title: "Individual Insights & Support"
+        text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
+      - title: "Team & Organizational Intelligence"
+        text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
     assessment:
       title: "Personalized Employee Assessment"
       text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
@@ -254,13 +284,13 @@ employers:
       title: "Predictive & validated"
       text: "Built on validated research linking workplace loneliness to turnover, Entrelacs predicts employee departure using advanced, evidence-based assessments."
   benefits:
-    title: "Benefit for your organization"
-    subtitle: "Measurable impact on culture and outcomes"
+    title: "Benefits that keep your best people"
+    subtitle: "Early insights that protect your workforce."
     hr:
       title: "HR & Leadership"
       list:
-        - "Early detection of flight risk"
-        - "Reduced turnover costs"
+        - "Early detection of flight risk before exit interviews"
+        - "Reduced turnover costs — up to 50–200% of salary saved per employee"
         - "Data-driven resource allocation"
         - "Stronger cultural metrics (belonging, safety, trust)"
       cta: "Schedule a demo"
@@ -276,6 +306,27 @@ employers:
         - "Awareness of their connection needs"
         - "Practical, personalized guidance"
         - "Confidential experience with full control of their data"
+  pricing:
+    title: "Pricing & ROI"
+    bullets:
+      - strong: "No individual employee data"
+        rest: " shared with employers"
+      - strong: "4–5x ROI "
+        rest: "on preventive mental health investment"
+      - strong: "Results visible in weeks,"
+        rest: " not months"
+    cta: "Contact us"
+    price:
+      amount: "€150"
+      suffix: "per employee/year"
+      line_prefix: "Less than your current EAP, with "
+      line_roi: "4–5x"
+      line_suffix: " the ROI"
+    calculator:
+      before_link: "Use our "
+      link: "ROI calculator"
+      after_link: " to see potential savings"
+      line2: "from reduced turnover"
   journey:
     title: "Supporting connection across the employee journey"
     onboarding:
@@ -297,6 +348,35 @@ employers:
       title: "Exit risk reduction"
       text: "Track connection health in distributed teams with limited social signals."
     cta: "Schedule a demo"
+  getting_started:
+    title: "Getting started"
+    subtitle: "For HR leaders & organizations."
+    hero:
+      heading: "Schedule a demonstration to see how Entrelacs enhances your workflow"
+      body: "From your first conversation to a fully running pilot, Entrelacs is designed to integrate quickly — so your team can move from reactive crisis management to predictive workforce support in a matter of weeks."
+      what_title: "What you get"
+      what_list:
+        - "Platform access for your selected employee groups"
+        - "HR and manager training with full implementation support"
+        - "ROI data and outcome tracking showing measurable impact on your workforce"
+      next_title: "Next Steps"
+      next_list:
+        - "Request a personalized demo and ROI assessment"
+        - "Pilot program designed around your organization"
+        - "Training, onboarding, and ongoing optimization support"
+      cta: "Request a demo"
+    timeline:
+      title: "Implementation Timeline"
+      stages:
+        - label: "Demo & ROI Assessment"
+          period: "Week 1–2"
+        - label: "Implementation & Training"
+          period: "Week 3–4"
+        - label: "Pilot Program Design & Launch"
+          period: "Week 5–8"
+        - label: "Optimization & Results Tracking"
+          period: "Ongoing"
+      cta: "Use the ROI Calculator"
   cta_banner:
     title: "Transform your retention strategy"
     text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
