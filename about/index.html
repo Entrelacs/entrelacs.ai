@@ -14,54 +14,37 @@
     <main>
         <section class="hero">
             <div class="herocontent pageItem">
-                <div class="tag2">ABOUT US</div>
-                <h1>The first platform built to predict mental health crises — before they happen</h1>
-                <p>Entrelacs is an AI-powered preventive mental health platform that screens, matches, and monitors
-                    individuals with clinical precision — detecting deterioration weeks before crisis, so the right
-                    support arrives before it's urgently needed.</p>
-                <p>Built on three years of R&D, 80,000+ research articles, and clinical validation across 8 countries
-                    and 37 global markets, Entrelacs brings together dynamic psychometric modeling, conversational AI,
-                    and continuous monitoring into a single platform — designed for employers, clinicians, and health
-                    systems.</p>
-                <p><strong>We exist because mental health is the only area of medicine without a reliable early warning
-                        system.
-                        We're here to change that.</strong></p>
+                <div class="tag2">{% t about.hero.tag %}</div>
+                <h1>{% t about.hero.heading %}</h1>
+                <p>{% t about.hero.p1 %}</p>
+                <p>{% t about.hero.p2 %}</p>
+                <p><strong>{% t about.hero.p3 %}</strong></p>
             </div>
         </section>
 
-
-
         <section class="vision-mission pageItem">
             <div class="headerGroup">
-                <h2>Vision & mission</h2>
+                <h2>{% t about.vision_mission.heading %}</h2>
                 <p>
-                    A world where mental health crises are predicted, prevented, and no longer inevitable.
+                    {% t about.vision_mission.description %}
                 </p>
             </div>
 
             <div class="vision-mission-grid">
+                {% for card in site.translations[site.lang].about.vision_mission.cards %}
                 <article class="vision-card">
-                    <h3>Vision</h3>
+                    <h3>{{ card.title }}</h3>
                     <p>
-                        A future where mental health care works like every other area of medicine — with routine
-                        screening, early detection, and proactive intervention as the standard, not the exception.
+                        {{ card.desc }}
                     </p>
                 </article>
-
-                <article class="vision-card">
-                    <h3>Mission</h3>
-                    <p>
-                        To make preventive mental health care universally accessible through advanced psychometrics
-                        and clinical-grade AI — giving individuals, clinicians, employers, and health systems the tools
-                        to act before crisis strikes.
-                    </p>
-                </article>
+                {% endfor %}
             </div>
         </section>
 
         <section class="threePillars pageItem">
             <div class="headerGroup">
-                <h2>Our three pillars</h2>
+                <h2>{% t about.pillars.heading %}</h2>
             </div>
 
             <div class="pillars-grid">
@@ -95,12 +78,9 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-
-
                     </div>
-                    <h3>Precision</h3>
+                    <h3>{%t about.pillars.t1 %}</h3>
                 </div>
-
                 <div class="pillar-card">
                     <div class="pillar-icon">
                         <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,11 +103,9 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-
                     </div>
-                    <h3>Personalization</h3>
+                    <h3>{%t about.pillars.t2 %}</h3>
                 </div>
-
                 <div class="pillar-card">
                     <div class="pillar-icon">
                         <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,228 +125,123 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
-
                     </div>
-                    <h3>Prevention</h3>
+                    <h3>{%t about.pillars.t3 %}</h3>
                 </div>
             </div>
         </section>
 
         <section class="ourStory pageItem">
-            <div class="headerGroup">
-                <h2>Our story</h2>
-                <p>Born from an uncomfortable truth. Built to fix it.</p>
+    <div class="headerGroup">
+        <h2>{% t about.story.heading %}</h2>
+        <p>{% t about.story.subheading %}</p>
+    </div>
+
+    <div class="ourStory-inner">
+        <div class="ourStory-controls" aria-hidden="true">
+            <button class="story-arrow story-arrow-left" type="button">
+                <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
+            </button>
+            <button class="story-arrow story-arrow-right" type="button">
+                <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
+            </button>
+        </div>
+
+        <div id="ourStoryCard" class="ourStory-card">
+            <div class="ourStory-col ourStory-intro">
+                <p>{% t about.story.intro %}</p>
+                <p class="ourStory-question">{% t about.story.question %}</p>
             </div>
 
-            <div class="ourStory-inner">
-                <div class="ourStory-controls" aria-hidden="true">
-                    <button class="story-arrow story-arrow-left" type="button">
-                        <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
-                    </button>
-                    <button class="story-arrow story-arrow-right" type="button">
-                        <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
-                    </button>
+            <div class="ourStory-col ourStory-image-main">
+                <img src="/images/d284eb6a-0b62-4f5b-b2cf-6ab552d45ba4.webp"
+                    alt="Person holding their head in their hands">
+            </div>
+
+            <div class="ourStory-col ourStory-text-main">
+                <p>
+                    {% t about.story.main_text %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="founderStory pageItem">
+    <div class="founderStory-card">
+        <div class="founderStory-header headerGroup">
+            <h2>{% t about.founder.heading %}</h2>
+            <p>{% t about.founder.subheading %}</p>
+        </div>
+
+        <div class="founderStory-main">
+            <div class="founderStory-photo-block">
+                <div class="founderStory-photo-wrapper">
+                    <img src="/images/DrHansIjzerman.png" alt="Portrait of Dr. Hans Rocha IJzerman">
                 </div>
-
-                <div id="ourStoryCard" class="ourStory-card">
-                    <div class="ourStory-col ourStory-intro">
-                        <p>Entrelacs began with a question that sounds simple but turns out to be radical:</p>
-                        <p class="ourStory-question">What if the average<br>patient doesn't exist?</p>
-                    </div>
-
-                    <div class="ourStory-col ourStory-image-main">
-                        <img src="/images/d284eb6a-0b62-4f5b-b2cf-6ab552d45ba4.webp"
-                            alt="Person holding their head in their hands">
-                    </div>
-
-                    <div class="ourStory-col ourStory-text-main">
-                        <p>
-                            For decades, mental health science has operated on a shared assumption: find the pattern
-                            that fits most people, build around that center, and apply it broadly. It's a reasonable
-                            approach. But for a significant share of the people those tools are meant to help, it
-                            produces the wrong answer. Depression doesn't look the same in every person. Neither does
-                            anxiety, loneliness, or burnout. A scale score that means one thing in one individual may
-                            mean something entirely different in another — not because the instrument is broken, but
-                            because human beings genuinely differ in how they experience psychological states.
-                            Recommending care based on that score, without understanding those differences, causes
-                            real harm. And because every misdiagnosis compounds — wrong pathway, wrong treatment,
-                            months or years lost — the cost of getting it wrong is preventable deterioration.
-                        </p>
-                    </div>
+                <div class="founderStory-meta">
+                    <p class="founderStory-name">{% t about.founder.name %}</p>
+                    <p class="founderStory-role">{% t about.founder.role %}</p>
                 </div>
             </div>
-        </section>
 
-        <section class="founderStory pageItem">
-            <div class="founderStory-card">
-                <div class="founderStory-header headerGroup">
-                    <h2>Founder story</h2>
-                    <p>The scientist who stopped believing in the average person.</p>
-                </div>
+            <div class="founderStory-text">
+                <p class="founderStory-intro">
+                    {% t about.founder.intro %}
+                </p>
 
-                <div class="founderStory-main">
+                <p class="founderStory-pullquote">
+                    {% t about.founder.pullquote %}
+                </p>
 
-
-                    <div class="founderStory-photo-block">
-                        <div class="founderStory-photo-wrapper">
-                            <img src="/images/DrHansIjzerman.png" alt="Portrait of Dr. Hans Rocha IJzerman">
-                        </div>
-                        <div class="founderStory-meta">
-                            <p class="founderStory-name">Dr. Hans Rocha IJzerman</p>
-                            <p class="founderStory-role">CEO &amp; Co-Founder</p>
-                        </div>
-                    </div>
-
-                    <div class="founderStory-text">
-                        <p class="founderStory-intro">
-                            It took two decades inside the mainstream to understand exactly why it was asking the
-                            wrong question.
-                        </p>
-
-                        <p class="founderStory-pullquote">
-                            "Entrelacs isn't built for the average patient — because that patient doesn't exist. It's
-                            built for the actual, specific, irreducibly individual human being who needs care."
-                        </p>
-
-                        <p class="founderStory-body">
-                            A scientist who had spent years working within the mainstream — and slowly, reluctantly,
-                            became convinced it was asking the wrong question. A clinician who saw daily what happened
-                            when tools ignored those differences. A family that had felt the cost firsthand. That
-                            combination is what became Entrelacs.
-                        </p>
-                    </div>
-                </div>
-                <div id="foundertexthidden">
-                    <div>
-                        <p>Dr. Hans Rocha IJzerman left the Netherlands at 18 to play basketball in America. He ended up
-                            in
-                            rural Pennsylvania, at a small Benedictine college in the hills — Saint Vincent, where Fred
-                            Rogers, the beloved American television host known as Mister Rogers, had studied theology
-                            and
-                            first developed the convictions that would define his life’s work. The Benedictine monks who
-                            shaped the college had followed the same Rule for fifteen centuries: welcome every stranger,
-                            attend to every individual, treat no person as interchangeable with any other. It was
-                            something
-                            you could actually feel — in the way strangers were welcomed, in the weight given to
-                            listening,
-                            in the assumption that every person in the room had something irreplaceable to offer.</p>
-
-                        <p>For a young Dutch kid far from home, navigating a culture not his own, something about that
-                            community lodged deep. Not the theology — but the underlying conviction that every human
-                            being
-                            is specific, irreducible, and not interchangeable with any other.</p>
-
-                        <p>It's a conviction his own life has never let him forget. His family is Brazilian, Dutch, and
-                            French all at once — his children grow up navigating languages and worlds that don't map
-                            cleanly
-                            onto each other. The idea that a single instrument, designed for a single 'average' human,
-                            could
-                            capture what any one of them is going through has always felt, to him, self-evidently
-                            absurd.
-                        </p>
-
-                        <p>For two decades, that conviction sat uneasily alongside the dominant logic of his own field.
-                        </p>
-
-                        <p>Early in his career, Hans immersed himself in the study of honor culture — fascinated by how
-                            profoundly context shapes behavior and self-understanding. The lesson the data kept teaching
-                            was
-                            the same one he’d felt instinctively: who a person is changes what everything means. The
-                            same
-                            action, the same word, the same experience — interpreted through a different life, a
-                            different
-                            culture, a different self — is not the same thing.</p>
-
-                        <p>But mainstream psychology, including his own field, kept reaching for the average. Measure
-                            large
-                            groups. Find the central tendency. Build tools around that center. It was practical. It was
-                            scalable. And for a long time, Hans worked within that logic too — because it was the
-                            field’s
-                            logic, and because the tools to do otherwise didn’t yet exist. What changed, slowly and then
-                            undeniably, was the evidence.</p>
-
-                        <p>The moment the research made this undeniable came through an unexpected subject: romantic
-                            love.
-                            Hans and his collaborators set out to test whether the standard instruments used to measure
-                            relationship quality actually measured the same thing across different people. The answer
-                            was no
-                            — clearly, empirically, reproducibly no. Of course people experience love differently
-                            depending
-                            on who they are. And if that was true for love, the implications for depression, anxiety,
-                            loneliness, and every other psychological construct that clinical tools relied on were
-                            significant. The average wasn't just imprecise. It was systematically missing something.</p>
-
-                        <p>The clinical cost of that gap was something Hans saw through his partner, Daniela, a
-                            psychologist
-                            with 15 years of practice. She encountered it constantly — the difficulty of interpreting
-                            scale
-                            scores that didn't mean what they appeared to mean, the real risk of sending someone down
-                            the
-                            wrong treatment pathway because the instrument hadn't been built to understand them as an
-                            individual. Paul Meehl had spent decades arguing that clinicians needed better actuarial
-                            tools
-                            to translate assessment data into good decisions. Decades later, the tools still hadn't
-                            caught
-                            up.</p>
-
-                        <p>And then there was the experience — shared, in some form, by most families — of trying to
-                            find
-                            the right mental health care for someone you love. Not care in the abstract. The right care,
-                            for
-                            this person, now. Even with clinical training and with system knowledge. The mismatch
-                            between
-                            individual need and available support is not a minor inefficiency. It causes harm that
-                            compounds.</p>
-
-                        <p>A scientist who had spent years working within the mainstream — and slowly, reluctantly,
-                            became
-                            convinced it was asking the wrong question. A clinician who saw daily what happened when
-                            tools
-                            ignored those differences. A family that had felt the cost firsthand. That combination is
-                            what
-                            became Entrelacs.</p>
-
-                        <p>Entrelacs isn't built for the average patient — because that patient doesn't exist. It's
-                            built
-                            for the actual, specific, irreducibly individual human being who needs care.</p>
-                    </div>
-                </div>
-                <div id="founderReadMore" class="founderStory-footer">
-                    <p>Read more of Dr. Hans’ full story</p>
-                    <svg id="founderReadMoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.75 28.5C4.75 41.6168 15.3832 52.25 28.5 52.25C41.6168 52.25 52.25 41.6168 52.25 28.5C52.25 15.3832 41.6168 4.75 28.5 4.75C15.3832 4.75 4.75 15.3832 4.75 28.5Z"
-                            fill="#156B70" stroke="#FBFCFC" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M20.1153 25.5078L28.4991 33.8678L36.8828 25.5078" stroke="#FBFCFC" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </div>
+                <p class="founderStory-body">
+                    {% t about.founder.body %}
+                </p>
             </div>
-        </section>
-
-        <section id="leadership" class="group pageItem">
-            <div class="headerGroup">
-                <h2>{% t team.leadership.title %}</h2>
-                <p>{% t team.leadership.subtitle %}</p>
-            </div>
-            <div class="groupList">
-                {% for member in site.translations[site.lang].team.leadership.list %}
-                <div class="groupListItem">
-                    <div class="img">
-                        {% if member.image %}
-                        <img src="{{ member.image }}" alt="{{ member.name }}">
-                        {% endif %}
-                    </div>
-                    <h3>{{ member.name }}</h3>
-                    <header>{{ member.role }}</header>
-                    <p>{{ member.bio }}</p>
-                </div>
+        </div>
+        <div id="foundertexthidden">
+            <div>
+                {% for paragraph in site.translations[site.lang].about.founder.extended_story %}
+                <p>{{ paragraph }}</p>
                 {% endfor %}
             </div>
-        </section>
+        </div>
+        <div id="founderReadMore" class="founderStory-footer">
+            <p>{% t about.common.more %}</p>
+            <svg id="founderReadMoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.75 28.5C4.75 41.6168 15.3832 52.25 28.5 52.25C41.6168 52.25 52.25 41.6168 52.25 28.5C52.25 15.3832 41.6168 4.75 28.5 4.75C15.3832 4.75 4.75 15.3832 4.75 28.5Z"
+                    fill="#156B70" stroke="#FBFCFC" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.1153 25.5078L28.4991 33.8678L36.8828 25.5078" stroke="#FBFCFC" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+    </div>
+</section>
+
+<section id="leadership" class="group pageItem">
+    <div class="headerGroup">
+        <h2>{% t team.leadership.title %}</h2>
+        <p>{% t team.leadership.subtitle %}</p>
+    </div>
+    <div class="groupList">
+        {% for member in site.translations[site.lang].team.leadership.list %}
+        <div class="groupListItem">
+            <div class="img">
+                {% if member.image %}
+                <img src="{{ member.image }}" alt="{{ member.name }}">
+                {% endif %}
+            </div>
+            <h3>{{ member.name }}</h3>
+            <header>{{ member.role }}</header>
+            <p>{{ member.bio }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
         <section id="extendedLeadership" class="group pageItem">
             <div class="headerGroup">
                 <h2>{% t team.extendedLeadership.title %}</h2>
@@ -418,13 +291,12 @@
         </section>
         {% include sponsors.html %}
         <div class="pageItem" style="padding: 80px;">
-            <div class="tag green">Contact us</div>
+            <div class="tag green">{% t about.who_we_serve.tag %}</div>
             <div class="headerGroup">
-                <h2>Let's build the future of mental health care together</h2>
-                <p>Whether you're an employer, clinician, health system, investor, or researcher, we'd love to hear from
-                    you.</p>
+                <h2>{% t about.who_we_serve.heading %}</h2>
+                <p>{% t about.who_we_serve.des %}</p>
             </div>
-            {% assign card_data = site.translations[site.lang].home.who_we_serve.cards %}
+            {% assign card_data = site.translations[site.lang].about.who_we_serve.cards %}
 
             {% if card_data %}
             {% include ctaCards.html cards=card_data %}
@@ -467,7 +339,7 @@
                         // Reset text to "Learn More" (or translated equivalent if available)
                         // For simplicity, hardcoding English logic as in original, 
                         // but ideally: learnMoreButton.querySelector('p').innerText = "{{ site.translations[site.lang].technology.common.learn_more }}";
-                        learnMoreButton.querySelector('p').innerText = '{{ site.translations[site.lang].technology.common.learn_more }}';
+                        learnMoreButton.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.more }}";
                         learnMoreButton.classList.remove('less');
                         founderReadMoreButton.style.transform = 'rotate(0deg)'
                     }, 200);
@@ -476,7 +348,7 @@
                     foundertexthidden.classList.add('show');
 
                     setTimeout(() => {
-                        learnMoreButton.querySelector('p').innerText = '{{ site.translations[site.lang].technology.common.show_less }}';
+                        learnMoreButton.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.less }}";
                         learnMoreButton.classList.add('less');
                         founderReadMoreButton.style.transform = 'rotate(180deg)'
                     }, 200);
