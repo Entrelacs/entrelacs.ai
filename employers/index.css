@@ -417,9 +417,18 @@ main .cta {
     margin-left: 20px;
     cursor: pointer;
     flex-shrink: 0;
+    transition: .3s;
 }
 .howHidden{
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.howHidden.is-open {
+    max-height: 500px;
+    opacity: 1;
 }
 
 
