@@ -231,6 +231,13 @@ employers:
   how_it_works:
     title: "How entrelacs works for employers"
     subtitle: "From Invisible Risk to Measurable Action"
+    steps:
+      - title: "Personalized Employee Assessment"
+        text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
+      - title: "Individual Insights & Support"
+        text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
+      - title: "Team & Organizational Intelligence"
+        text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
     assessment:
       title: "Personalized Employee Assessment"
       text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."

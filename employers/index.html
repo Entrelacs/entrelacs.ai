@@ -21,7 +21,8 @@
                 <h1>{% t employers.hero.title %}</h1>
                 <p class="subheader">{% t employers.hero.description %}</p>
                 <div class="ctas">
-                    <a href="{{ site.baseurl}}/waiting-list/" class="cta" style="color: var(--teal); background: var(--teal-light);">
+                    <a href="{{ site.baseurl}}/waiting-list/" class="cta"
+                        style="color: var(--teal); background: var(--teal-light);">
                         {% t home.cta_banner.waiting_list %}
                     </a>
                     <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employers.hero.cta_demo %}</a>
@@ -68,42 +69,43 @@
             <section class="howSection">
                 <div class="howHeader">
                     <h2>{% t employers.how_it_works.title %}</h2>
-                    <p class="howSubtitle">{% t employers.how_it_works.subtitle %}</p>
+                    <p>{% t employers.how_it_works.subtitle %}</p>
                 </div>
 
                 <div class="howContent">
                     <div class="howSteps">
-                        <div class="howStep howStepActive">
-                            <div class="howStepHeader">
-                                <h3>{% t employers.how_it_works.assessment.title %}</h3>
-                                <span class="howChevron howChevronUp" aria-hidden="true"></span>
+                        {% assign steps = site.translations[site.lang].employers.how_it_works.steps %}
+                        {% for step in steps %}
+                        <div class="howStep{% if forloop.first %} howStepActive{% endif %}">
+                            <div>
+                                <h3>{{ step.title }}</h3>
+                                <div class="howHidden">
+                                    <p>{{ step.text }}</p>
+                                </div>
                             </div>
-                            <p class="howStepText">{% t employers.how_it_works.assessment.text %}</p>
-                            <p class="howStepSubhead">{% t employers.how_it_works.assessment.subhead %}</p>
-                            <ul class="howStepList">
-                                {% for item in site.translations[site.lang].employers.how_it_works.assessment.list %}
-                                <li>{{ item }}</li>
-                                {% endfor %}
-                            </ul>
+                            <div>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="#b30000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="Arrow / Caret_Circle_Down">
+                                            <path id="Vector"
+                                                d="M15 11L12 14L9 11M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
+                        {% endfor %}
 
-                        <div class="howStep howStepCollapsed">
-                            <div class="howStepHeader">
-                                <h3>{% t employers.how_it_works.insights.title %}</h3>
-                                <span class="howChevron" aria-hidden="true"></span>
-                            </div>
-                        </div>
-
-                        <div class="howStep howStepCollapsed">
-                            <div class="howStepHeader">
-                                <h3>{% t employers.how_it_works.intelligence.title %}</h3>
-                                <span class="howChevron" aria-hidden="true"></span>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="howImage">
-                        <img src="https://www.figma.com/api/mcp/asset/15a78c78-c5f7-475a-ab10-4f44aad2c86f" alt="Assessment screen mockup" loading="lazy">
+                        <img src="https://www.figma.com/api/mcp/asset/15a78c78-c5f7-475a-ab10-4f44aad2c86f"
+                            alt="Assessment screen mockup" loading="lazy">
                     </div>
                 </div>
             </section>
@@ -131,13 +133,21 @@
 
                     <div class="benefitsContent">
                         <div class="benefitsImage">
-                            <img src="https://www.figma.com/api/mcp/asset/cbf2a185-d48d-4aa8-bd58-dd800ab24162" alt="HR and leadership benefits" loading="lazy">
+                            <img src="https://www.figma.com/api/mcp/asset/cbf2a185-d48d-4aa8-bd58-dd800ab24162"
+                                alt="HR and leadership benefits" loading="lazy">
                         </div>
                         <div class="benefitsLists">
                             <ul class="benefitsList benefitsListActive" data-benefits-tab="hr">
                                 {% for item in site.translations[site.lang].employers.benefits.hr.list %}
                                 <li>
-                                    <span class="benefitsCheck" aria-hidden="true"></span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="30" height="30" rx="15" fill="#CFDEDE" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                            fill="#156B70" />
+                                    </svg>
+
                                     <p>{{ item }}</p>
                                 </li>
                                 {% endfor %}
@@ -190,12 +200,14 @@
                         </div>
                         <p class="pricingLine">
                             {{ pricing.price.line_prefix }}
-                            <span class="pricingLineHighlight">{{ pricing.price.line_roi }}</span>{{ pricing.price.line_suffix }}
+                            <span class="pricingLineHighlight">{{ pricing.price.line_roi }}</span>{{
+                            pricing.price.line_suffix }}
                         </p>
                         <div class="pricingCalculator">
                             <p>
                                 {{ pricing.calculator.before_link }}
-                                <a href="{{ site.baseurl }}/roi_calculator/" class="pricingCalculatorLink">{{ pricing.calculator.link }}</a>{{ pricing.calculator.after_link }}
+                                <a href="{{ site.baseurl }}/roi_calculator/" class="pricingCalculatorLink">{{
+                                    pricing.calculator.link }}</a>{{ pricing.calculator.after_link }}
                             </p>
                             <p>{{ pricing.calculator.line2 }}</p>
                         </div>
@@ -230,6 +242,7 @@
                                     {% endfor %}
                                 </ul>
                             </div>
+                            <hr>
                             <div class="gettingColumn">
                                 <h4>{{ gs.hero.next_title }}</h4>
                                 <ul>
@@ -246,7 +259,8 @@
                         <a href="{{ site.baseurl }}/contact-us/" class="cta gettingCta">{{ gs.hero.cta }}</a>
                     </div>
                     <div class="gettingMainRight">
-                        <img src="https://www.figma.com/api/mcp/asset/eca07060-7634-4247-a673-98df1325179a" alt="Team looking at camera in office" loading="lazy">
+                        <img src="https://www.figma.com/api/mcp/asset/eca07060-7634-4247-a673-98df1325179a"
+                            alt="Team looking at camera in office" loading="lazy">
                     </div>
                 </div>
 
@@ -261,7 +275,8 @@
                         </div>
                         {% endfor %}
                     </div>
-                    <a href="{{ site.baseurl }}/roi_calculator/" class="cta gettingTimelineCta">{{ gs.timeline.cta }}</a>
+                    <a href="{{ site.baseurl }}/roi_calculator/" class="cta gettingTimelineCta">{{ gs.timeline.cta
+                        }}</a>
                 </div>
             </section>
         </div>
@@ -300,4 +315,5 @@
         });
     </script>
 </body>
+
 </html>

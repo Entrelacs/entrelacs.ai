@@ -231,6 +231,13 @@ employers:
   how_it_works:
     title: "Comment Entrelacs fonctionne pour les employeurs"
     subtitle: "Du risque invisible à l'action mesurable"
+    steps:
+      - title: "Évaluation personnalisée de l'employé"
+        text: "Les employés participent à de brefs échanges conversationnels (5 à 7 minutes) sur leur connexion sociale, à la fois de manière générale et au sein de leur équipe."
+      - title: "Analyses et accompagnement individuels"
+        text: "Chaque employé reçoit des analyses confidentielles sur ses dynamiques relationnelles, ainsi que des recommandations pratiques et personnalisées adaptées à ses besoins et à son style."
+      - title: "Intelligence collective et organisationnelle"
+        text: "Avec le consentement des employés, des données anonymisées et agrégées offrent aux RH et aux managers une visibilité accrue sur les dynamiques d’équipe et la qualité des relations au sein de l’organisation."
     assessment:
       title: "Évaluation personnalisée de l'employé"
       text: "Les employés participent à de brefs échanges conversationnels (5-7 minutes) sur leur connexion sociale, tant de manière générale qu'au sein de leur équipe."
