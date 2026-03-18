@@ -341,7 +341,7 @@
 
                         document.querySelectorAll('.howHidden').forEach(function (el) {
                             if (el !== hidden) {
-                                el.style.display = 'none';
+                                el.classList.remove('is-open');
                                 var svg = el.closest('.howStep').querySelector('svg');
                                 if (svg) {
                                     svg.style.transform = 'rotate(0deg)';
@@ -349,8 +349,14 @@
                             }
                         });
 
-                        hidden.style.display = 'block';
-                        icon.style.transform = 'rotate(180deg)';
+                        var isOpen = hidden.classList.contains('is-open');
+                        if (isOpen) {
+                            hidden.classList.remove('is-open');
+                            icon.style.transform = 'rotate(0deg)';
+                        } else {
+                            hidden.classList.add('is-open');
+                            icon.style.transform = 'rotate(180deg)';
+                        }
                     });
                 });
             });

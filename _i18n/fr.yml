@@ -192,10 +192,10 @@ employers:
     title: "Entrelacs pour les Employeurs"
   hero:
     subtitle: "ENTRELACS POUR LES EMPLOYEURS"
-    title: "Identifiez la déconnexion avant que vos employés ne commencent à chercher un nouvel emploi"
-    description: "Entrelacs utilise des évaluations pilotées par l’IA pour détecter précocement la déconnexion des employés, proposer des recommandations relationnelles personnalisées et réduire le turnover, avec un retour sur investissement organisationnel mesurable."
-    cta_sales: "Contacter les ventes"
-    cta_demo: "Planifier une démo"
+    title: "Prévenez les crises de santé mentale avant qu'elles n'affectent vos résultats"
+    description: "Entrelacs vous offre une visibilité précoce sur le désengagement, la solitude et le risque de départ — afin que vous puissiez agir avant que cela ne se transforme en épuisement professionnel, en absence, en démission ou en crise."
+    cta_sales: "Contacter l'équipe commerciale"
+    cta_demo: "Demander une démo"
   hidden_cost:
     tag: "Le problème"
     title: "Le coût caché de la déconnexion est déjà dans vos chiffres"
