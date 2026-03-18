@@ -378,6 +378,7 @@ main .cta {
     justify-content: space-between;
     gap: 56px;
     padding: 56px;
+    padding-bottom: 0px;
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(247, 242, 230, 0.25) 2.37%, var(--Entrelacs-Yellow-100, rgba(255, 236, 187, 0.25)) 86.13%);
 }
@@ -417,7 +418,9 @@ main .cta {
     cursor: pointer;
     flex-shrink: 0;
 }
-
+.howHidden{
+    display: none;
+}
 
 
 
@@ -430,7 +433,6 @@ main .cta {
 .howImage img {
     width: 100%;
     display: block;
-    border-radius: 40px;
     box-shadow: 21px 0px 52px -27px rgba(0, 0, 0, 0.33);
     object-fit: cover;
 }
@@ -932,6 +934,7 @@ main .cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .gettingCheck::before {
@@ -955,6 +958,7 @@ main .cta {
     flex: 1 1 0;
     border-radius: 10px;
     overflow: hidden;
+    max-height: 85vh;
 }
 
 .gettingMainRight img {
@@ -998,7 +1002,7 @@ main .cta {
 .gettingTimelineTrack::before {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 50px;
     left: 0;
     right: 0;
     height: 6px;
@@ -1069,11 +1073,12 @@ main .cta {
 
 @media (max-width: 800px) {
     .gettingMainCard {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .gettingMainRight {
         width: 100%;
+        min-height: 280px;
     }
 
     .gettingColumns {
@@ -1099,6 +1104,8 @@ main .cta {
     .gettingMainCard,
     .gettingTimeline {
         padding: 32px 24px;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .gettingMainText p,
@@ -1110,16 +1117,48 @@ main .cta {
 
     .gettingTimelineTrack {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 32px;
         padding-top: 0;
+        margin-bottom: 32px;
     }
 
     .gettingTimelineTrack::before {
-        display: none;
+        display: block;
+        top: 16px;
+        bottom: 56px;
+        left: 10px;
+        right: auto;
+        width: 6px;
+        height: auto;
+    }
+
+    .gettingTimelineStage {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        gap: 24px;
     }
 
     .gettingTimelineDot {
-        margin-bottom: 16px;
+        margin: 4px 0;
+        width: 32px;
+        height: 32px;
+    }
+
+    .gettingTimelineTitle {
+        font-size: 20px;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .gettingTimelineLabel {
+        max-width: none;
+    }
+
+    .gettingTimelineCta {
+        width: 100%;
     }
 }

@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="howImage">
-                        <img src="https://www.figma.com/api/mcp/asset/15a78c78-c5f7-475a-ab10-4f44aad2c86f"
+                        <img src="/images/employerPage11.png"
                             alt="Assessment screen mockup" loading="lazy">
                     </div>
                 </div>
@@ -133,7 +133,7 @@
 
                     <div class="benefitsContent">
                         <div class="benefitsImage">
-                            <img src="https://www.figma.com/api/mcp/asset/cbf2a185-d48d-4aa8-bd58-dd800ab24162"
+                            <img src="/images/employersPage12.webp"
                                 alt="HR and leadership benefits" loading="lazy">
                         </div>
                         <div class="benefitsLists">
@@ -156,7 +156,14 @@
                             <ul class="benefitsList" data-benefits-tab="managers">
                                 {% for item in site.translations[site.lang].employers.benefits.managers.list %}
                                 <li>
-                                    <span class="benefitsCheck" aria-hidden="true"></span>
+
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="30" height="30" rx="15" fill="#CFDEDE" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                            fill="#156B70" />
+                                    </svg>
                                     <p>{{ item }}</p>
                                 </li>
                                 {% endfor %}
@@ -165,7 +172,14 @@
                             <ul class="benefitsList" data-benefits-tab="employees">
                                 {% for item in site.translations[site.lang].employers.benefits.employees.list %}
                                 <li>
-                                    <span class="benefitsCheck" aria-hidden="true"></span>
+
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="30" height="30" rx="15" fill="#CFDEDE" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                            fill="#156B70" />
+                                    </svg>
                                     <p>{{ item }}</p>
                                 </li>
                                 {% endfor %}
@@ -259,7 +273,7 @@
                         <a href="{{ site.baseurl }}/contact-us/" class="cta gettingCta">{{ gs.hero.cta }}</a>
                     </div>
                     <div class="gettingMainRight">
-                        <img src="https://www.figma.com/api/mcp/asset/eca07060-7634-4247-a673-98df1325179a"
+                        <img src="/images/employersPage2.webp"
                             alt="Team looking at camera in office" loading="lazy">
                     </div>
                 </div>
@@ -288,32 +302,62 @@
 
 
 
-    </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var tabs = document.querySelectorAll('[data-benefits-target]');
+                var lists = document.querySelectorAll('[data-benefits-tab]');
 
-    {% include footer.html %}
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var tabs = document.querySelectorAll('[data-benefits-target]');
-            var lists = document.querySelectorAll('[data-benefits-tab]');
+                if (!tabs.length || !lists.length) return;
 
-            if (!tabs.length || !lists.length) return;
+                tabs.forEach(function (tab) {
+                    tab.addEventListener('click', function () {
+                        var target = tab.getAttribute('data-benefits-target');
 
-            tabs.forEach(function (tab) {
-                tab.addEventListener('click', function () {
-                    var target = tab.getAttribute('data-benefits-target');
+                        tabs.forEach(function (t) {
+                            t.classList.toggle('benefitsTabActive', t === tab);
+                        });
 
-                    tabs.forEach(function (t) {
-                        t.classList.toggle('benefitsTabActive', t === tab);
-                    });
-
-                    lists.forEach(function (list) {
-                        var isActive = list.getAttribute('data-benefits-tab') === target;
-                        list.classList.toggle('benefitsListActive', isActive);
+                        lists.forEach(function (list) {
+                            var isActive = list.getAttribute('data-benefits-tab') === target;
+                            list.classList.toggle('benefitsListActive', isActive);
+                        });
                     });
                 });
             });
-        });
-    </script>
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var stepIcons = document.querySelectorAll('.howStep svg');
+
+                if (!stepIcons.length) return;
+
+                stepIcons.forEach(function (icon) {
+                    icon.addEventListener('click', function () {
+                        var step = icon.closest('.howStep');
+                        if (!step) return;
+
+                        var hidden = step.querySelector('.howHidden');
+                        if (!hidden) return;
+
+                        document.querySelectorAll('.howHidden').forEach(function (el) {
+                            if (el !== hidden) {
+                                el.style.display = 'none';
+                                var svg = el.closest('.howStep').querySelector('svg');
+                                if (svg) {
+                                    svg.style.transform = 'rotate(0deg)';
+                                }
+                            }
+                        });
+
+                        hidden.style.display = 'block';
+                        icon.style.transform = 'rotate(180deg)';
+                    });
+                });
+            });
+        </script>
+    </main>
+
+    {% include footer.html %}
 </body>
 
 </html>
