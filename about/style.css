@@ -40,27 +40,6 @@ main {
     width: 90%;
 }
 
-@media (max-width: 650px) {
-    .content h1 {
-        font-size: 3.8em;
-    }
-
-    .content h2 {
-        font-size: 1.7em;
-    }
-
-    .ob1 {
-        top: -280px;
-        left: -200px;
-    }
-
-    .ob2 {
-        bottom: -150px;
-        right: -280px;
-    }
-}
-
-
 /* .headerGroup {
 } */
 
@@ -81,6 +60,24 @@ main {
     margin-top: 20px;
     max-width: 800px;
 }
+
+@media (max-width: 650px) {
+    .herocontent{
+        align-items: flex-start;
+        text-align: left;
+    }
+    .herocontent h1 {
+        font-size: 30px;
+    }
+
+    .herocontent h2 {
+        font-size: 1.7em;
+    }
+    .headerGroup h2 {
+        font-size: 30px;
+    }
+}
+
 
 
 .vision-mission {
@@ -335,7 +332,6 @@ main {
     padding: 56px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
 }
 
 .founderStory-header h2 {
@@ -347,6 +343,7 @@ main {
     gap: 55px;
     align-items: flex-start;
     position: relative;
+    margin: 80px 0 50px;
 }
 
 .founderStory-quote-icon {
@@ -431,7 +428,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 23px;
+    gap: 10px;
     text-align: center;
 }
 
@@ -441,24 +438,6 @@ main {
     color: var(--text-gray);
 }
 
-.founderStory-arrow {
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-    border: none;
-    background: transparent;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: default;
-}
-
-.founderStory-arrow img {
-    width: 100%;
-    height: 100%;
-    transform: rotate(90deg);
-}
 
 @media (max-width: 1024px) {
     .founderStory-main {
@@ -637,4 +616,30 @@ main {
         font-size: 1.6em;
     }
 
+}
+
+#foundertexthidden {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+#foundertexthidden > div {
+    min-height: 0;
+}
+
+#foundertexthidden p {
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--text-gray2);
+    margin-bottom: 20px;
+}
+
+#foundertexthidden.show {
+    grid-template-rows: 1fr;
+}
+
+#foundertexthidden.hide {
+    grid-template-rows: 0fr;
 }
