@@ -2,6 +2,7 @@ navigation:
   home: "Home"
   employers: "Employers"
   healthcare: "Healthcare"
+  clinicians: "Clinicians"  
   technology: "Technology"
   roi_calculator: "ROI calculator"
   about: "About Us"
@@ -194,7 +195,6 @@ employers:
     subtitle: "ENTRELACS FOR EMPLOYERS"
     title: "Prevent mental health crises before they hit your bottom line"
     description: "Entrelacs gives you early visibility into disconnection, loneliness, and flight risk — so you can act before it becomes burnout, an absence, a resignation, or a crisis."
-    cta_sales: "Contact Sales"
     cta_demo: "Request a Demo"
   hidden_cost:
     tag: "The problem"
@@ -217,17 +217,7 @@ employers:
         body_line1: "extra sick days per year "
         body_line2: "taken by lonely employees."
         source: "Bowers et al, 2022"
-    bottom_text_line1: "By the time loneliness shows up in exit interviews, it's already too late. Entrelacs detects disconnection "
-    bottom_text_line2: "4–6 weeks early — turning a costly crisis into a proactive win."
-  problem:
-    tag: "The Problem"
-    title: "Social Disconnection: The hidden driver of turnover"
-    text: "Social connection drives retention and performance, yet organizations lack visibility into belonging until exit interviews—making support and intervention come too late."
-    stats:
-      - "<span>36%</span> of workers feel lonely at work"
-      - "Lonely employees are <span>2×</span> more likely to quit"
-      - "Replacing talent costs <span>50–200%</span> of salary"
-      - "A 500-person company can lose <span>$7.5M</span> yearly to avoidable turnover"
+    bottom_text_line1: "By the time loneliness shows up in exit interviews, it's already too late. Entrelacs detects disconnection 4–6 weeks early — turning a costly crisis into a proactive win."
   how_it_works:
     title: "How entrelacs works for employers"
     subtitle: "From Invisible Risk to Measurable Action"
@@ -238,51 +228,9 @@ employers:
         text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
       - title: "Team & Organizational Intelligence"
         text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
-    assessment:
-      title: "Personalized Employee Assessment"
-      text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
-      subhead: "What we measure:"
-      list:
-        - "Different types of social needs (deep 1-on-1 connections vs. group belonging)"
-        - "Connection quality across various relationship contexts"
-        - "Individual patterns and preferences in how they build relationships"
-        - "Early warning signs specific to that person's baseline"
-    insights:
-      title: "Individual Insights & Support"
-      text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
-      subhead: "Employee benefits:"
-      list:
-        - "Understanding their connection style and what they specifically need"
-        - "Early awareness of disconnection before it impacts mental health or career"
-        - "Actionable strategies matched to their situation (not generic \"virtual happy hour\" advice)"
-        - "Validation that others experience similar challenges"
-    intelligence:
-      title: "Team & Organizational Intelligence"
-      text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health"
-      subhead: "What you'll see:"
-      list:
-        - "Early warning system"
-        - "Predictive analytics"
-        - "Team-level patterns"
-        - "Trends over time"
   differentiation:
     title: "What makes Entrelacs different"
     subtitle: "Beyond traditional engagement surveys"
-    precision:
-      title: "Precision, not averages"
-      text: "Entrelacs replaces aggregate survey scores with dynamic psychometrics, revealing individual connection patterns across contexts to identify thriving and at-risk groups."
-    privacy:
-      title: "Privacy & trust built in"
-      text: "Employees control data sharing; managers see only anonymized insights, preserving trust, privacy, and psychological safety."
-    continuous:
-      title: "Continuous, not episodic"
-      text: "Regular check-ins build dynamic social health fingerprints, enabling early intervention before declines escalate into serious challenges."
-    actionable:
-      title: "Actionable, not just diagnostic"
-      text: "Beyond data, Entrelacs delivers personalized employee guidance, team-specific manager advice, and targeted HR resource allocation."
-    predictive:
-      title: "Predictive & validated"
-      text: "Built on validated research linking workplace loneliness to turnover, Entrelacs predicts employee departure using advanced, evidence-based assessments."
   benefits:
     title: "Benefits that keep your best people"
     subtitle: "Early insights that protect your workforce."
@@ -293,7 +241,6 @@ employers:
         - "Reduced turnover costs — up to 50–200% of salary saved per employee"
         - "Data-driven resource allocation"
         - "Stronger cultural metrics (belonging, safety, trust)"
-      cta: "Schedule a demo"
     managers:
       title: "Managers"
       list:
@@ -327,27 +274,6 @@ employers:
       link: "ROI calculator"
       after_link: " to see potential savings"
       line2: "from reduced turnover"
-  journey:
-    title: "Supporting connection across the employee journey"
-    onboarding:
-      title: "Onboarding & integration"
-      text: "Help new hires connect early and identify integration challenges."
-    restructuring:
-      title: "Team formation & restructuring"
-      text: "Reveal dynamics to accelerate cohesion and reduce friction quickly."
-    remote:
-      title: "Remote & hybrid work"
-      text: "Track connection health in distributed teams with limited social signals."
-    burnout:
-      title: "Burnout prevention"
-      text: "Help new hires connect early and identify integration challenges."
-    high_risk:
-      title: "High-risk populations"
-      text: "Reveal dynamics to accelerate cohesion and reduce friction quickly."
-    exit:
-      title: "Exit risk reduction"
-      text: "Track connection health in distributed teams with limited social signals."
-    cta: "Schedule a demo"
   getting_started:
     title: "Getting started"
     subtitle: "For HR leaders & organizations."
@@ -377,17 +303,78 @@ employers:
         - label: "Optimization & Results Tracking"
           period: "Ongoing"
       cta: "Use the ROI Calculator"
-  cta_banner:
-    title: "Transform your retention strategy"
-    text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
-    list:
-      - "Demo & ROI Assessment"
-      - "Implementation & Training"
-      - "Pilot Program Design"
-      - "Launch & Optimization"
-    roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
-    cta_sales: "Contact Sales"
-    cta_roi: "Use ROI Calculator"
+
+clinicians:
+  meta:
+    title: "Entrelacs for Clinicians"
+  hero:
+    subtitle: "ENTRELACS FOR CLINICIANS"
+    title: "Spend less time guessing. More time progressing."
+    description: "AI-powered assessments that reveal what static questionnaires miss — so you can match every patient to the right care, faster."
+    cta_demo: "Request a Demo"
+  solution:
+    title: "Better outcomes, less burden"
+    row1:
+      title: "From initial assessment to outcome optimization"
+      bullets:
+        - "AI-guided conversational assessment that adapts in real-time based on patient responses, unlike rigid traditional questionnaires"
+        - "Multi-dimensional evaluation across condition-specific symptoms, behavioral patterns and context"
+        - "An integrated clinical assessment that captures what traditional screening misses"
+    row2:
+      title: "Clinical intelligence built for outcomes, not just insights"
+      bullets:
+        - "Identifies person specific symptom networks compared to standard assessments improving diagnostic confidence"
+        - "2–3x faster patient improvement through precision care matching"
+        - "Predictive system prevents crises; alerts enable proactive intervention"
+        - "Sensitive to capturing changing psychological symptoms across time"
+    row3:
+      title: "Comprehensive support beyond sessions"
+      bullets:
+        - "Continuous monitoring between sessions without administrative burden"
+        - "Automated quality metrics collection (EDIS, STAR ratings)"
+        - "Evidence-based treatment matching reduces trial-and-error"
+        - "Personalized patient engagement improves therapeutic alliance and adherence"
+  hidden_cost:
+    tag: "The Problem"
+    title: "The assessment gap driving poor clinical outcomes"
+    text_intro: "From static snapshots to continuous insight."
+    stats:
+      - value: "Limited<br>diagnostics"
+        body: "miss evolving symptoms and subtle early-stage patterns"
+      - value: "Trial-and-error<br>treatment"
+        body: "delays the time to effective care"
+      - value: "Early risks<br>go unseen"
+        body: "deterioration only caught at crisis, not a month before"
+      - value: "Administrative<br>burden"
+        body: "from fragmented prep, scoring and documentation"
+    bottom_text_line1: "Mental health care faces a fundamental problem, the tools clinicians rely on weren't designed for the complexity of the conditions they treat. Current assessment tools miss nuances and early warning signs, leading to trial-and-error treatment — costing clinicians time and patients progress. Entrelacs combines advanced psychometrics and state-of-the-art AI to deliver precision assessments with continuous monitoring that surfaces subtle changes between sessions that static tools miss."
+  superpowers:
+    title: "Superpowers for Clinicians<br>Zero Extra Work"
+    subtitle: "From precision diagnostics to continuous between-session monitoring, Entrelacs gives you the clinical edge without adding a single minute to your workload."
+    cards:
+      - value: "30–60 min"
+        body: "of prep and documentation <strong>reduced to a few minutes</strong> per session"
+      - value: "52% → 39%"
+        body: "<strong>reduction in clinician burnout</strong> with AI documentation support (JAMA)"
+      - value: "~90%"
+        body: "<strong>reduction in documentation time</strong> through automated insights and pre-session summaries"
+  getting_started:
+    title: "Getting started"
+    subtitle: "For clinicians & practices"
+    hero:
+      heading: "Schedule a demonstration to see how Entrelacs enhances your clinical workflow"
+      body: "We'll customize the demo to your practice type and patient population."
+      what_title: "What you get"
+      what_list:
+        - "Platform access for selected patients"
+        - "Clinician training and integration support (EHR, practice management)"
+        - "Outcome data showing impact on your practice"
+      next_title: "Next steps"
+      next_list:
+        - "Request personalized demo"
+        - "Pilot program with your patients"
+        - "Training and onboarding support"
+      cta: "Request a clinician demo"
 
 healthcare:
   hero:
