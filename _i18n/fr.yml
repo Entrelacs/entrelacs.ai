@@ -2,6 +2,7 @@ navigation:
   home: "Accueil"
   employers: "Employeurs"
   healthcare: "Santé"
+  clinicians: "Cliniciens"
   technology: "Technologie"
   roi_calculator: "Calculateur de ROI"
   about: "À propos"
@@ -194,7 +195,6 @@ employers:
     subtitle: "ENTRELACS POUR LES EMPLOYEURS"
     title: "Prévenez les crises de santé mentale avant qu'elles n'affectent vos résultats"
     description: "Entrelacs vous offre une visibilité précoce sur le désengagement, la solitude et le risque de départ — afin que vous puissiez agir avant que cela ne se transforme en épuisement professionnel, en absence, en démission ou en crise."
-    cta_sales: "Contacter l'équipe commerciale"
     cta_demo: "Demander une démo"
   hidden_cost:
     tag: "Le problème"
@@ -217,17 +217,7 @@ employers:
         body_line1: "jours d’arrêt maladie supplémentaires par an "
         body_line2: "pris par les employés isolés."
         source: "Bowers et al., 2022"
-    bottom_text_line1: "Lorsque la solitude apparaît dans les entretiens de sortie, il est déjà trop tard. Entrelacs détecte la déconnexion "
-    bottom_text_line2: "4 à 6 semaines plus tôt — transformant une crise coûteuse en opportunité d’action proactive."
-  problem:
-    tag: "Le Problème"
-    title: "La déconnexion sociale, moteur caché du turnover"
-    text: "La connexion sociale favorise la rétention et la performance, mais les entreprises manquent de visibilité sur le sentiment d'appartenance jusqu'aux entretiens de départ—rendant l'intervention trop tardive."
-    stats:
-      - "<span>36 %</span> des travailleurs se sentent seuls au travail"
-      - "Les employés isolés sont <span>2×</span> plus susceptibles de démissionner"
-      - "Remplacer un salarié coûte entre <span>50%</span> et <span>200%</span> de son salaire"
-      - "Une entreprise de 500 personnes peut perdre jusqu’à <span>7,5 M$</span> par an en turnover évitable"
+    bottom_text_line1: "Lorsque la solitude apparaît dans les entretiens de sortie, il est déjà trop tard. Entrelacs détecte la déconnexion 4 à 6 semaines plus tôt — transformant une crise coûteuse en opportunité d’action proactive."
   how_it_works:
     title: "Comment Entrelacs fonctionne pour les employeurs"
     subtitle: "Du risque invisible à l'action mesurable"
@@ -238,51 +228,9 @@ employers:
         text: "Chaque employé reçoit des analyses confidentielles sur ses dynamiques relationnelles, ainsi que des recommandations pratiques et personnalisées adaptées à ses besoins et à son style."
       - title: "Intelligence collective et organisationnelle"
         text: "Avec le consentement des employés, des données anonymisées et agrégées offrent aux RH et aux managers une visibilité accrue sur les dynamiques d’équipe et la qualité des relations au sein de l’organisation."
-    assessment:
-      title: "Évaluation personnalisée de l'employé"
-      text: "Les employés participent à de brefs échanges conversationnels (5-7 minutes) sur leur connexion sociale, tant de manière générale qu'au sein de leur équipe."
-      subhead: "Ce que nous mesurons :"
-      list:
-        - "Différents types de besoins sociaux (relations individuelles versus appartenance à un groupe)"
-        - "Qualité des relations dans différents contextes relationnels"
-        - "Dynamiques individuelles et préférences relationnelles"
-        - "Signes avant-coureurs spécifiques au niveau de référence de chaque personne"
-    insights:
-      title: " Analyses et accompagnement individuels"
-      text: " Chaque employé reçoit des analyses confidentielles sur ses dynamiques relationnelles, ainsi que des recommandations pratiques et personnalisées adaptées à ses besoins et à son style."
-      subhead: "Avantages pour l'employé :"
-      list:
-        - "Compréhension de son style relationnel et de ses besoins spécifiques"
-        - "Prise de conscience précoce de la déconnexion avant qu’elle n’affecte le bien être ou la trajectoire professionnelle"
-        - "Stratégies concrètes adaptées à sa situation, plutôt que des conseils génériques)"
-        - "Validation que d’autres rencontrent des défis similaires"
-    intelligence:
-      title: "Intelligence collective et organisationnelle"
-      text: "Avec le consentement des employés, des données anonymisées et agrégées offrent aux RH et aux managers une visibilité accrue sur les dynamiques d’équipe et la qualité des relations au sein de l’organisation."
-      subhead: "Ce que vous verrez :"
-      list:
-        - "Système d'alerte précoce"
-        - "Analyses prédictives"
-        - "Dynamiques au niveau de l’équipe"
-        - "Tendances au fil du temps"
   differentiation:
     title: "Ce qui distingue Entrelacs"
     subtitle: "Au-delà des enquêtes d’engagement traditionnelles"
-    precision:
-      title: "Précision, pas de moyennes"
-      text: "Entrelacs remplace les scores globaux par une psychométrie dynamique, révélant les dynamiques relationnelles individuelles pour identifier les groupes épanouis et ceux à risque."
-    privacy:
-      title: "Confidentialité et confiance intégrées"
-      text: "Les employés contrôlent le partage des données ; les gestionnaires ne voient que des anonymisées, préservant la confiance, la confidentialité et la sécurité psychologique."
-    continuous:
-      title: "Continu, pas épisodique"
-      text: "Des suivis réguliers construisent une empreinte de santé sociale dynamique, permettant une intervention précoce avant que les déclins ne deviennent des problèmes majeurs."
-    actionable:
-      title: "Concret, pas seulement diagnostique"
-      text: "Au-delà des données, Entrelacs fournit des conseils personnalisés aux employés, des avis spécifiques aux gestionnaires et permet une allocation ciblée des ressources RH."
-    predictive:
-      title: "Prédictif et validé"
-      text: "Basé sur des recherches validées reliant la solitude au travail au turnover, Entrelacs prédit le départ des employés grâce à des évaluations avancées et fondées sur des preuves."
   benefits:
     title: "Des avantages qui retiennent vos meilleurs talents"
     subtitle: "Des informations précoces qui protègent votre personnel."
@@ -293,7 +241,6 @@ employers:
         - "Réduction des coûts de roulement — jusqu’à 50–200 % du salaire économisé par employé"
         - "Allocation des ressources basée sur les données"
         - "Indicateurs culturels renforcés (appartenance, sécurité, confiance)"
-      cta: "Planifier une démo"
     managers:
       title: "Gestionnaires"
       list:
@@ -327,27 +274,6 @@ employers:
       link: "calculateur de ROI"
       after_link: " pour estimer les économies potentielles"
       line2: "liées à la réduction du turnover"
-  journey:
-    title: "Soutenir la connexion tout au long du parcours employé"
-    onboarding:
-      title: "Intégration (Onboarding)"
-      text: "Aidez les nouvelles recrues à se connecter tôt et identifiez les défis d'intégration."
-    restructuring:
-      title: "Formation et restructuration d'équipe"
-      text: "Révélez les dynamiques pour accélérer la cohésion et réduire rapidement les frictions."
-    remote:
-      title: "Travail à distance et hybride"
-      text: "Suivez la santé de la connexion dans les équipes distribuées ayant peu de signaux sociaux."
-    burnout:
-      title: "Prévention de l'épuisement"
-      text: "Aidez les nouvelles recrues à se connecter tôt et identifiez les défis d'intégration."
-    high_risk:
-      title: "Populations à haut risque"
-      text: "Révélez les dynamiques pour accélérer la cohésion et réduire rapidement les frictions."
-    exit:
-      title: "Réduction du risque de départ"
-      text: "Suivez la santé de la connexion dans les équipes distribuées ayant peu de signaux sociaux."
-    cta: "Planifier une démo"
   getting_started:
     title: "Bien démarrer"
     subtitle: "Pour les responsables RH et les organisations."
@@ -377,17 +303,79 @@ employers:
         - label: "Optimisation et suivi des résultats"
           period: "En continu"
       cta: "Utiliser le calculateur de ROI"
-  cta_banner:
-    title: "Transformez votre stratégie de rétention"
-    text: "Découvrez comment Entrelacs aide les organisations à bâtir des équipes plus fortes et connectées tout en réduisant le roulement coûteux."
-    list:
-      - "Démo et évaluation du ROI"
-      - "Mise en œuvre et formation"
-      - "Conception de programme pilote"
-      - "Lancement et optimisation"
-    roi_text: "Utilisez notre calculateur de ROI pour voir comment Entrelacs peut réduire vos coûts."
-    cta_sales: "Contacter les ventes"
-    cta_roi: "Utiliser le calculateur ROI"
+
+
+clinicians:
+  meta:
+    title: "Entrelacs pour les Cliniciens"
+  hero:
+    subtitle: "ENTRELACS POUR LES CLINICIENS"
+    title: "Moins de temps à deviner. Plus de temps à soigner."
+    description: "Des évaluations alimentées par l'IA qui révèlent ce que les questionnaires statiques manquent — pour orienter chaque patient vers le bon niveau de soins, plus rapidement."
+    cta_demo: "Demander une démo"
+  solution:
+    title: "De meilleurs résultats, moins de charge"
+    row1:
+      title: "De l'évaluation initiale à l'optimisation des résultats"
+      bullets:
+        - "Évaluation conversationnelle guidée par l'IA qui s'adapte en temps réel aux réponses du patient, contrairement aux questionnaires traditionnels rigides"
+        - "Évaluation multidimensionnelle couvrant symptômes spécifiques à la condition, comportements et contexte"
+        - "Une évaluation clinique intégrée qui capte ce que le dépistage traditionnel manque"
+    row2:
+      title: "Une intelligence clinique pensée pour les résultats, pas seulement les insights"
+      bullets:
+        - "Identifie des réseaux de symptômes propres à chaque personne par rapport aux évaluations standards, améliorant la confiance diagnostique"
+        - "Amélioration 2–3x plus rapide des patients grâce à un appariement de soins de précision"
+        - "Un système prédictif qui prévient les crises ; les alertes permettent une intervention proactive"
+        - "Sensible aux variations des symptômes psychologiques au fil du temps"
+    row3:
+      title: "Un accompagnement complet entre les séances"
+      bullets:
+        - "Suivi continu entre les séances sans charge administrative supplémentaire"
+        - "Collecte automatisée des indicateurs de qualité (EDIS, notes STAR)"
+        - "Appariement thérapeutique fondé sur les preuves qui réduit l'essai-erreur"
+        - "Engagement patient personnalisé qui renforce l'alliance thérapeutique et l'adhésion"
+  hidden_cost:
+    tag: "Le problème"
+    title: "L'écart d'évaluation qui dégrade les résultats cliniques"
+    text_intro: "D'instantanés statiques à une compréhension continue."
+    stats:
+      - value: "Diagnostics<br>limités"
+        body: "ratent l'évolution des symptômes et les signaux précoces subtils"
+      - value: "Traitements<br>par essais-erreurs"
+        body: "retardent le moment où le soin devient réellement efficace"
+      - value: "Risques précoces<br>invisibles"
+        body: "la détérioration n'est repérée qu'en crise, et non un mois plus tôt"
+      - value: "Charge<br>administrative"
+        body: "due à une préparation, une cotation et une documentation fragmentées"
+    bottom_text_line1: "Les soins de santé mentale font face à un problème fondamental,  les outils sur lesquels les cliniciens s'appuient n'ont pas été conçus pour la complexité des troubles qu'ils traitent. Les outils d'évaluation actuels manquent les nuances et les signaux précoces, menant à des traitements par essais-erreurs — au détriment du temps des cliniciens et des progrès des patients. Entrelacs combine psychométrie avancée et IA de pointe pour fournir des évaluations de précision et un suivi continu qui met en lumière les changements subtils entre les séances que les outils statiques ne détectent pas."
+  superpowers:
+    title: "Des super-pouvoirs pour les cliniciens<br>Aucune charge de travail en plus"
+    subtitle: "De diagnostics de précision à un suivi continu entre les séances, Entrelacs vous donne un avantage clinique sans ajouter une seule minute à votre charge de travail."
+    cards:
+      - value: "30–60 min"
+        body: "de préparation et de documentation <strong>réduites à quelques minutes</strong> par séance"
+      - value: "52 % → 39 %"
+        body: "<strong>réduction du burnout des cliniciens</strong> grâce au soutien à la documentation par l'IA (JAMA)"
+      - value: "~90 %"
+        body: "<strong>réduction du temps de documentation</strong> grâce aux analyses automatisées et aux résumés pré-séance"
+  getting_started:
+    title: "Bien démarrer"
+    subtitle: "Pour les cliniciens et les cabinets"
+    hero:
+      heading: "Planifiez une démonstration pour voir comment Entrelacs améliore votre pratique clinique"
+      body: "Nous adaptons la démo à votre type de structure et à votre population de patients."
+      what_title: "Ce que vous obtenez"
+      what_list:
+        - "Accès à la plateforme pour un groupe de patients sélectionnés"
+        - "Formation des cliniciens et accompagnement à l'intégration (DPI, gestion de cabinet)"
+        - "Données de résultats montrant l'impact sur votre pratique"
+      next_title: "Prochaines étapes"
+      next_list:
+        - "Demander une démo personnalisée"
+        - "Lancer un programme pilote avec vos patients"
+        - "Bénéficier d'un accompagnement de formation et d'onboarding"
+      cta: "Demander une démo clinicien"
 
 
 healthcare:
