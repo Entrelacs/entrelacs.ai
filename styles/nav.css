@@ -127,6 +127,11 @@
   height: 40px;
   color: #fff;
 }
+@media (max-width: 1150px) {
+  .navLinks .cta{
+    display: none;
+  }
+}
 
 
 @media (max-width: 1050px) {

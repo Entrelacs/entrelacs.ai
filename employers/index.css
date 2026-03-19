@@ -243,7 +243,6 @@ main .cta {
 
 #hiddenCost .hiddenCostStats {
     display: flex;
-    gap: 80px;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -417,7 +416,7 @@ main .cta {
     margin-left: 20px;
     cursor: pointer;
     flex-shrink: 0;
-    transition: .3s;
+    transition: .6s;
 }
 .howHidden{
     max-height: 0;
