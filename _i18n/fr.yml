@@ -1,7 +1,7 @@
 navigation:
   home: "Accueil"
   employers: "Employeurs"
-  healthcare: "Santé"
+  health_systems: "Santé"
   clinicians: "Cliniciens"
   technology: "Technologie"
   roi_calculator: "Calculateur de ROI"
@@ -302,6 +302,80 @@ employers:
           period: "Semaines 5–8"
         - label: "Optimisation et suivi des résultats"
           period: "En continu"
+      cta: "Utiliser le calculateur de ROI"
+
+
+health_systems:
+  meta:
+    title: "Entrelacs pour les Systèmes de Santé"
+  hero:
+    subtitle: "ENTRELACS POUR LES SYSTÈMES DE SANTÉ"
+    title: "Des soins de santé mentale préventifs qui s'adaptent à vos populations"
+    description: "Une plateforme de dépistage de qualité clinique conçue pour s'intégrer sans friction à votre système de santé et améliorer les résultats pour les communautés que vous servez."
+    cta_demo: "Demander une démo"
+  hidden_cost:
+    tag: "Le problème"
+    title: "Mettre à l'échelle la prévention en santé mentale dans l'ensemble de votre population"
+    text_intro: "Les crises de santé mentale exercent une forte pression sur les ressources via des interventions d'urgence coûteuses. Entrelacs transforme la santé des populations grâce au dépistage prédictif et au suivi continu qui préviennent les crises avant qu'elles ne surviennent — avec à la clé jusqu'à 26 % de réduction des coûts de santé individuels et de meilleurs résultats cliniques."
+  solution:
+    title: "Des bénéfices pour les systèmes de santé qui transforment les soins"
+    subtitle: "Étendez l'accès à des soins de santé mentale mesurables pour l'ensemble de votre réseau."
+    row1:
+      title: "Des soins proactifs qui évitent les crises coûteuses"
+      bullets:
+        - "La détection précoce des crises évite des interventions d'urgence onéreuses"
+        - "La stratification des risques permet une allocation ciblée des ressources"
+        - "Le dépistage de population identifie proactivement les personnes à risque"
+        - "La prévention est bien moins coûteuse que la gestion de crise"
+    row2:
+      title: "Un impact financier que vous pouvez mesurer"
+      bullets:
+        - "26 % de réduction des coûts de santé individuels"
+        - "Moins d'essais-erreurs dans le choix des traitements, ce qui fait gagner temps et argent"
+        - "Réduction du recours aux services d'urgence grâce à l'intervention précoce"
+        - "Mesure du ROI avec un suivi clair des résultats"
+    row3:
+      title: "Une intégration fluide avec vos systèmes existants"
+      bullets:
+        - "Intégration aux DPI qui simplifie les flux de travail des professionnels"
+        - "Collecte automatisée des indicateurs de qualité (HEDIS, notes STAR)"
+        - "Aide à la décision clinique qui améliore la précision diagnostique"
+        - "Suivi des résultats de traitement à l'échelle de votre réseau de soins"
+    row4:
+      title: "Confiance réglementaire et crédibilité clinique"
+      bullets:
+        - "Parcours de certification marquage CE (T2 2026)"
+        - "Validation clinique dans 8 pays et 37 marchés"
+        - "Conforme HIPAA et certifié SOC 2 Type II"
+        - "Positionnement fondé sur les preuves pour répondre aux exigences d'achat public"
+  getting_started:
+    title: "Bien démarrer"
+    subtitle: "Pour les payeurs et les systèmes de santé."
+    hero:
+      heading: "Consultez notre équipe sur les stratégies de mise en œuvre à l'échelle des populations"
+      body: "Nous passerons en revue la modélisation du ROI spécifique à votre population de membres, à la structure de votre réseau et à vos schémas actuels d'utilisation des soins."
+      what_title: "Ce que vous obtenez"
+      what_list:
+        - "Analyse de santé populationnelle et modélisation du ROI"
+        - "Formation des professionnels et soutien clinique"
+        - "Mesure continue des résultats et optimisation"
+      next_title: "Prochaines étapes"
+      next_list:
+        - "Planifier une consultation sur la santé populationnelle"
+        - "Concevoir le périmètre d'un programme pilote"
+        - "Préparer une stratégie de déploiement à grande échelle"
+      cta: "Demander une démo"
+    timeline:
+      title: "Calendrier de mise en œuvre"
+      stages:
+        - label: "Phase de découverte"
+          period: "Analyser vos modèles actuels d'utilisation des services de santé mentale"
+        - label: "Conception du pilote"
+          period: "Déploiement ciblé auprès de groupes de professionnels ou de populations spécifiques"
+        - label: "Planification de l'intégration"
+          period: "Feuille de route d'intégration RH et flux de travail"
+        - label: "Suivi des résultats"
+          period: "Mesurer l'impact sur les coûts, les indicateurs de qualité et la satisfaction des patients"
       cta: "Utiliser le calculateur de ROI"
 
 
