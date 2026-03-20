@@ -5,6 +5,7 @@ navigation:
   clinicians: "Cliniciens"
   technology: "Technologie"
   roi_calculator: "Calculateur de ROI"
+  approach: "Our Approac" 
   about: "À propos"
   contact: "Contactez-nous"
 
@@ -38,7 +39,7 @@ home:
       item2: "avec l'IA clinique"
       item3: "avant la crise"
       item4: "quand cela compte"
-    cta_waitlist: "Rejoignez la liste d'attente pour un accès complet"
+    cta_waitlist: "Rejoignez notre liste d’attente"
     cta_demo: "Demander une démo"
   problem:
     tag: "Le problème"
@@ -928,3 +929,69 @@ cta_banner:
   description: "Découvrez la première plateforme qui combine la précision clinique avec des informations personnalisées et un suivi préventif. Rejoignez les organisations de pointe qui construisent déjà l'avenir du bien-être mental."
   cta_primary: "Rejoindre notre liste d'attente"
   cta_secondary: "Demander une démo"
+
+
+approach:
+  hero:
+    tag: "TECHNOLOGIE"
+    title: "La science de la santé mentale qui s'adapte à vous"
+    description: "Entrelacs combine la modélisation psychométrique dynamique avec l'IA conversationnelle pour créer des évaluations de santé mentale qui s'adaptent à chaque personne en temps réel — offrant des informations plus précises avec une meilleure expérience utilisateur et moins de charge d'évaluation."
+
+  science:
+    tag: "Notre fondement scientifique"
+    title: "La première plateforme d'évaluation fondée sur la théorie des réseaux de symptômes et l'IA adaptative"
+    intro: "La plupart des outils de santé mentale capturent un instantané. Le nôtre capture l'ensemble du tableau."
+    stats:
+      r_and_d: "3 ans de R&D"
+      research_articles: "80 000+ articles de recherche"
+      interviews: "350+ entretiens"
+      countries: "Validation dans 8 pays"
+    subtitle: "En commençant par le lien social — et en étendant à d'autres dimensions de la santé mentale."
+    cards:
+      network_psychometrics:
+        title: "Innovation en psychométrie en réseau"
+        body: "La santé mentale ne se résume pas à un seul symptôme — la dépression à elle seule implique ~52 symptômes interconnectés. Les évaluations traditionnelles submergent souvent les personnes avec trop de questions ou manquent des liens critiques en en posant trop peu. Notre combinaison de psychométrie avancée et d'IA identifie le minimum de questions nécessaires pour reconstruire avec précision un réseau complet de symptômes. C'est comme reconstituer une image entière à partir de pièces de puzzle soigneusement choisies."
+      cross_cultural:
+        title: "Validation interculturelle"
+        body: "La plupart des outils de santé mentale échouent en dehors de leur contexte de développement initial. Le nôtre non. En commençant par le lien social, notre système s'appuie sur une synthèse de plus de 80 000 articles de recherche, 350+ entretiens approfondis menés à l'échelle mondiale et une validation dans 8 pays. Cette base permet à Entrelacs de fonctionner à travers les géographies, les démographies et les cultures sans biais."
+        body_2: "Si nous commençons par la connexion sociale, d'autres dimensions de la santé mentale — comme la dépression et l'anxiété — seront développées selon la même feuille de route scientifique."
+      continuous_learning:
+        title: "Système d'apprentissage continu"
+        body: "Entrelacs s'améliore à chaque interaction. Notre IA crée une boucle vertueuse de données : plus d'utilisateurs génèrent des données longitudinales plus riches, qui alimentent des prédictions plus intelligentes, qui produisent de meilleurs résultats. Chaque évaluation renforce la capacité de l'algorithme à prédire quelles interventions fonctionnent pour des profils spécifiques, à détecter les signaux d'alerte précoces propres à chaque individu et à recommander des parcours de soins personnalisés."
+      regulatory_pathway:
+        title: "Parcours réglementaire et clinique"
+        body: "Entrelacs suit une trajectoire claire vers une validation de niveau médical — marquage CE (dispositif médical de classe IIa dans l'UE) ciblé pour T2 2027, soutenu par des études de validation clinique en cours et une feuille de route d'intégration aux hôpitaux et systèmes de santé."
+    bottom_cta_text: "Discutez avec l'équipe Entrelacs pour découvrir la science."
+    bottom_cta_button: "Nous contacter"
+
+  collabs:
+    badge: "Partenariats de recherche et validation"
+    title: "Des collaborations scientifiques de premier plan"
+    intro: "Entrelacs repose sur des partenariats avec les institutions qui façonnent l'avenir des politiques et de la recherche en santé mentale à l'échelle mondiale."
+    foundations:
+      policy: "Intégration aux politiques publiques"
+      academic: "Réseau académique"
+      evidence: "Données probantes en conditions réelles"
+
+  trust:
+    badge: "Fondation confidentialité et sécurité"
+    title: "Conçu pour une confiance de niveau médical"
+    intro: "Chaque élément d'Entrelacs est conçu pour répondre aux standards les plus élevés en matière de confidentialité des données, de sécurité et d'éthique clinique."
+    data:
+      title: "Architecture des données"
+      items:
+        - "Infrastructure chiffrée conforme au RGPD"
+        - "Conformité multi-juridictionnelle (UE, Royaume-Uni, Suisse, États-Unis)"
+        - "Feuille de route de certification ISO 13485 et ISO 27001"
+        - "Normes de sécurité au niveau des systèmes de santé"
+    privacy:
+      title: "Confidentialité dès la conception"
+      items:
+        - "Aucune donnée individuelle partagée avec les employeurs"
+        - "Contrôle et suppression des données à l'initiative de l'utilisateur"
+        - "Accès aux données individuelles réservé aux cliniciens et au personnel autorisé, avec consentement de l'utilisateur."
+        - "Consentement transparent pour la participation à l'entraînement de l'IA"
+    ctas:
+      privacy_policy: "Lire notre politique de confidentialité"
+      contact: "Nous contacter"
+
