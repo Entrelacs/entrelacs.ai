@@ -56,7 +56,7 @@ h1 span {
 
 .ctas {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
 }
 
