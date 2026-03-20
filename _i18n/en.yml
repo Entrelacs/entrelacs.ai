@@ -1,8 +1,8 @@
 navigation:
   home: "Home"
-  employers: "Employers"
-  healthcare: "Healthcare"
-  clinicians: "Clinicians"  
+  employers: "For Organizations"
+  health_systems: "For Health Systems"
+  clinicians: "For Clinicians"  
   technology: "Technology"
   roi_calculator: "ROI calculator"
   about: "About Us"
@@ -302,6 +302,79 @@ employers:
           period: "Week 5–8"
         - label: "Optimization & Results Tracking"
           period: "Ongoing"
+      cta: "Use the ROI Calculator"
+
+health_systems:
+  meta:
+    title: "Entrelacs for Health Systems"
+  hero:
+    subtitle: "ENTRELACS FOR HEALTH SYSTEMS"
+    title: "Preventive mental health care that scales with your population"
+    description: "A clinical-grade screening platform designed to integrate seamlessly with your health system and improve outcomes for the communities you serve."
+    cta_demo: "Request a Demo"
+  hidden_cost:
+    tag: "The Problem"
+    title: "Scale mental health prevention across your entire population"
+    text_intro: "Mental health crises strain resources with expensive emergency interventions. Entrelacs transforms population health with predictive screening and continuous monitoring that prevents crises before they occur—predicting reduced individual healthcare costs by up to 26% while improving outcomes."
+  solution:
+    title: "Health system benefits that transform care"
+    subtitle: "Expand access to mental health care that's measurably better for your entire network."
+    row1:
+      title: "Proactive care that prevents costly crises"
+      bullets:
+        - "Early crisis detection prevents expensive emergency interventions"
+        - "Risk stratification enables targeted resource allocation"
+        - "Population screening identifies at-risk individuals proactively"
+        - "Prevention focus dramatically cheaper than crisis response"
+    row2:
+      title: "Financial impact you can measure"
+      bullets:
+        - "26% reduction in individual health care costs"
+        - "Reduced trial-and-error in treatment selection saves time and money"
+        - "Lower emergency utilization through early intervention"
+        - "ROI measurement with clear outcomes tracking"
+    row3:
+      title: "Seamless integration with your existing systems"
+      bullets:
+        - "EHR integration streamlines provider workflows"
+        - "Automated quality metrics collection (EDIS, STAR ratings)"
+        - "Clinical decision support improves diagnostic accuracy"
+        - "Treatment outcome tracking across your provider network"
+    row4:
+      title: "Regulatory confidence and clinical trust"
+      bullets:
+        - "CE Mark certification pathway (Q2 2026)"
+        - "Clinical validation across 8 countries, 37 markets"
+        - "HIPAA compliant and SOC 2 Type II certified"
+        - "Evidence-based positioning for procurement requirements"
+  getting_started:
+    title: "Getting started"
+    subtitle: "For payers & health systems."
+    hero:
+      heading: "Consult with our team about population health implementation strategies"
+      body: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
+      what_title: "What you get"
+      what_list:
+        - "Population health analysis and ROI modeling"
+        - "Provider training and clinical support"
+        - "Ongoing outcome measurement and optimization"
+      next_title: "Next steps"
+      next_list:
+        - "Schedule population health consultation"
+        - "Design pilot program scope"
+        - "Plan full-scale deployment strategy"
+      cta: "Request a demo"
+    timeline:
+      title: "Implementation Timeline"
+      stages:
+        - label: "Discovery phase"
+          period: "Assess your current mental health utilization patterns"
+        - label: "Pilot design"
+          period: "Targeted deployment with specific provider groups or populations"
+        - label: "Integration planning"
+          period: "HR and workflow integration roadmap"
+        - label: "Outcome tracking"
+          period: "Measure impact on costs, quality metrics, and patient satisfaction"
       cta: "Use the ROI Calculator"
 
 clinicians:
