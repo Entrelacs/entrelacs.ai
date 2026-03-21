@@ -52,6 +52,33 @@ main {
     width: 350px;
 }
 
+@media (max-width: 650px) {
+    .herocontent {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .herocontent h1 {
+        font-size: 30px;
+    }
+
+    .herocontent h2 {
+        font-size: 1.7em;
+    }
+
+    .headerGroup h2 {
+        font-size: 30px;
+    }
+
+    .hero .ctas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        width: 100%;
+    }
+}
+
+
 .approach-science {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -189,7 +216,7 @@ main {
     color: var(--text-gray2);
 }
 
-.science-card p + p {
+.science-card p+p {
     margin-top: 16px;
 }
 
@@ -227,7 +254,7 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .science-card--reverse .science-card-text {
+    .science-card .science-card-text {
         order: 1;
     }
 }
@@ -321,10 +348,14 @@ main {
 .collabs-foundation-item {
     background: rgba(188, 224, 228, 0.35);
     border-radius: 8px;
-    padding: 24px 40px;
+    padding: 0;
+}
+.collabs-foundation-head{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    padding: 24px 40px 0px;
 }
 
 .collabs-foundation-label {
@@ -337,12 +368,13 @@ main {
     width: 24px;
     height: 12px;
     position: relative;
+    transition: transform 0.2s ease;
 }
 
 .collabs-foundation-icon::before {
     content: "";
     position: absolute;
-    left: 0;
+    cursor: pointer;
     right: 0;
     top: 50%;
     margin: 0 auto;
@@ -352,6 +384,21 @@ main {
     border-bottom: 2px solid var(--text-base);
     transform: translateY(-70%) rotate(-45deg);
 }
+
+.collabs-foundation-list {
+    padding: 0 40px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+}
+
+.collabs-foundation-list-item {
+    font-size: 1.6rem;
+    line-height: 1.45;
+    color: var(--text-gray);
+    margin-top: 10px;
+}
+
 
 .collabs-image {
     position: relative;
@@ -365,29 +412,26 @@ main {
     object-fit: cover;
 }
 
-.collabs-logos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
+
+.collabsHidden {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.25s ease, opacity 0.25s ease;
 }
 
-.collabs-logo-item {
-    flex: 0 1 auto;
-    max-width: 180px;
+.collabsHidden > * {
+    overflow: hidden;
 }
 
-.collabs-logo-item--small {
-    max-width: 80px;
+.collabsHidden.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
 }
 
-.collabs-logo-item img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+.collabs-foundation-head.is-open .collabs-foundation-icon {
+    transform: rotate(180deg);
 }
-
 @media (max-width: 1100px) {
     .collabs-main {
         grid-template-columns: 1fr;
@@ -406,7 +450,15 @@ main {
     }
 
     .collabs-foundation-item {
-        padding: 20px 24px;
+        padding: 0;
+    }
+
+    .collabs-foundation-head {
+        padding: 20px 24px 10px;
+    }
+
+    .collabs-foundation-list {
+        padding: 0 24px 20px 24px;
     }
 
     .collabs-foundation-label {

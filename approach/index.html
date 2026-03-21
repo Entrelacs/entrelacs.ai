@@ -311,18 +311,22 @@
 
                 <div class="collabs-main">
                     <div class="collabs-foundations" aria-label="Scientific foundations">
+                        {% assign foundations = site.translations[site.lang].approach.collabs.foundations.columns %}
+                        {% for foundation in foundations %}
                         <div class="collabs-foundation-item">
-                            <span class="collabs-foundation-label">{% t approach.collabs.foundations.policy %}</span>
-                            <span class="collabs-foundation-icon" aria-hidden="true"></span>
+                            <div class="collabs-foundation-head">
+                                <span class="collabs-foundation-label">{{ foundation.title }}</span>
+                                <span class="collabs-foundation-icon" aria-hidden="true"></span>
+                            </div>
+                            <div class="collabsHidden">
+                                <ul class="collabs-foundation-list">
+                                    {% for bullet in foundation.items %}
+                                    <li class="collabs-foundation-list-item">{{ bullet }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
                         </div>
-                        <div class="collabs-foundation-item">
-                            <span class="collabs-foundation-label">{% t approach.collabs.foundations.academic %}</span>
-                            <span class="collabs-foundation-icon" aria-hidden="true"></span>
-                        </div>
-                        <div class="collabs-foundation-item">
-                            <span class="collabs-foundation-label">{% t approach.collabs.foundations.evidence %}</span>
-                            <span class="collabs-foundation-icon" aria-hidden="true"></span>
-                        </div>
+                        {% endfor %}
                     </div>
 
                     <div class="collabs-image">
@@ -394,6 +398,43 @@
             </div>
         </section>
         {% include cta_banner.html %}
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var headers = document.querySelectorAll('.collabs-foundation-head');
+
+                if (!headers.length) return;
+
+                headers.forEach(function (head) {
+                    head.addEventListener('click', function () {
+                        var item = head.closest('.collabs-foundation-item');
+                        if (!item) return;
+
+                        var hidden = item.querySelector('.collabsHidden');
+                        if (!hidden) return;
+
+                        // Close other open items
+                        document.querySelectorAll('.collabs-foundation-item .collabsHidden.is-open').forEach(function (el) {
+                            if (el !== hidden) {
+                                el.classList.remove('is-open');
+                                var otherHead = el.closest('.collabs-foundation-item').querySelector('.collabs-foundation-head');
+                                if (otherHead) {
+                                    otherHead.classList.remove('is-open');
+                                }
+                            }
+                        });
+
+                        var isOpen = hidden.classList.contains('is-open');
+                        if (isOpen) {
+                            hidden.classList.remove('is-open');
+                            head.classList.remove('is-open');
+                        } else {
+                            hidden.classList.add('is-open');
+                            head.classList.add('is-open');
+                        }
+                    });
+                });
+            });
+        </script>
     </main>
     {%- include footer.html -%}
 </body>

@@ -969,9 +969,25 @@ approach:
     title: "Des collaborations scientifiques de premier plan"
     intro: "Entrelacs repose sur des partenariats avec les institutions qui façonnent l'avenir des politiques et de la recherche en santé mentale à l'échelle mondiale."
     foundations:
-      policy: "Intégration aux politiques publiques"
-      academic: "Réseau académique"
-      evidence: "Données probantes en conditions réelles"
+      columns:
+        - title: "Intégration aux politiques publiques"
+          items:
+            - "Collaboration avec l’OMS sur l’exercice mondial de hiérarchisation des priorités"
+            - "Projet de recherche européen LONELY‑EU (Horizon Europe, 3 M€)"
+            - "Coopérations avec l’OCDE sur les standards de mesure de la santé sociale"
+            - "Affiliation de recherche avec l’Université d’Oxford"
+        - title: "Réseau académique"
+          items:
+            - "Psychological Science Accelerator — réseau de recherche dans 80+ pays"
+            - "Partenariat avec l’Université de Stanford sur la prédiction comportementale par IA"
+            - "Partenariat avec l’Université UC Davis sur la mesure psychologique personnalisée"
+            - "Essais cliniques multi‑sites à travers les systèmes de santé"
+        - title: "Données probantes en conditions réelles"
+          items:
+            - "Publications évaluées par les pairs en préparation"
+            - "Suivi des résultats cliniques à travers les programmes pilotes"
+            - "Études d’impact populationnel en cours"
+            - "Validation de l’efficacité à long terme en cours"
 
   trust:
     badge: "Fondation confidentialité et sécurité"

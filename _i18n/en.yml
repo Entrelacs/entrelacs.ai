@@ -963,9 +963,25 @@ approach:
     title: "World-class scientific collaborations"
     intro: "Entrelacs is built on partnerships with the institutions shaping the future of global mental health policy and research."
     foundations:
-      policy: "Global policy integration"
-      academic: "Academic network"
-      evidence: "Real-world evidence"
+      columns:
+        - title: "Global policy integration"
+          items:
+            - "WHO collaboration on Global Priority Setting Exercise"
+            - "EU Horizon Europe €3M LONELY-EU research project"
+            - "OECD cooperations on social health measurement standards"
+            - "University of Oxford research affiliation"
+        - title: "Academic network"
+          items:
+            - "Psychological Science Accelerator — 80+ country research network"
+            - "Stanford University partnership on AI behavioral prediction"
+            - "UC Davis partnership on personalized psychological measurement"
+            - "Multi-site clinical trials across healthcare systems"
+        - title: "Real-world evidence"
+          items:
+            - "Peer-reviewed publications in preparation"
+            - "Clinical outcomes tracking across pilot programs"
+            - "Population health impact studies underway"
+            - "Long-term effectiveness validation ongoing"
 
   trust:
     badge: "Privacy & security foundation"
