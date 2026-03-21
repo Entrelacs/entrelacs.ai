@@ -5,6 +5,7 @@ navigation:
   clinicians: "For Clinicians"  
   technology: "Technology"
   roi_calculator: "ROI calculator"
+  approach: "Our Approach" 
   about: "About Us"
   contact: "Contact Us"
 
@@ -38,7 +39,7 @@ home:
       item2: "with clinical AI"
       item3: "before crisis"
       item4: "when it matters"
-    cta_waitlist: "Join the waitlist for full access"
+    cta_waitlist: "Join our waiting list"
     cta_demo: "Request a demo"
   problem:
     tag: "The Problem"
@@ -922,6 +923,87 @@ cta_banner:
   description: "Experience the first platform that combines clinical precision with personalized insights and preventive monitoring. Join leading organizations already building the future of mental wellness."
   cta_primary: "Join our waiting list"
   cta_secondary: "Request a demo"
+
+
+approach:
+  hero:
+    tag: "TECHNOLOGY"
+    title: "The science behind mental health that adapts to you"
+    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time — delivering more accurate insights with better user experience and less assessment burden."
+
+  science:
+    tag: "Our scientific foundation"
+    title: "The first assessment platform built on symptom network theory and adaptive AI"
+    intro: "Most mental health tools capture a snapshot. Ours captures the full picture."
+    stats:
+      r_and_d: "3 years of R&D"
+      research_articles: "80,000+ research articles"
+      interviews: "350+ interviews"
+      countries: "Validation across 8 countries"
+    subtitle: "Starting with social connection — expanding to additional mental health areas."
+    cards:
+      network_psychometrics:
+        title: "Network Psychometrics Innovation"
+        body: "Mental health isn't one symptom — depression alone involves ~52 interconnected symptoms. Traditional assessments often overwhelm users with too many questions or miss critical connections by asking too few. Our combination of advanced psychometrics and AI identifies the minimum set of questions that can accurately reconstruct a complete symptom network with clinical precision. It's like reconstructing a full picture from carefully chosen puzzle pieces."
+      cross_cultural:
+        title: "Cross-Cultural Validation"
+        body: "Most mental health tools fail outside their original development context. Ours doesn't. Starting with social connection, our system is built on evidence synthesized from 80,000+ research articles, 350+ in-depth interviews conducted globally, and validation across 8 countries. This foundation allows Entrelacs to work across geographies, demographics, and cultures without bias."
+        body_2: "While we begin with social connection, additional mental health areas such as depression and anxiety will be developed using the same scientific roadmap."
+      continuous_learning:
+        title: "Continuous Learning System"
+        body: "Entrelacs gets smarter with every interaction. Our AI creates a data flywheel: more users generate richer longitudinal data, which powers smarter predictions, which drive better outcomes. Each assessment improves the algorithm's ability to predict which interventions work for specific profiles, detect early warning signs unique to individuals, and recommend personalized care pathways."
+      regulatory_pathway:
+        title: "Regulatory & Clinical Pathway"
+        body: "Entrelacs is on a clear pathway to medical-grade validation — CE Mark certification (EU Class IIa) targeted for Q2 2027, supported by ongoing clinical validation studies and a healthcare integration roadmap for hospital and health system deployment."
+    bottom_cta_text: "Talk to the Entrelacs team to discover the science."
+    bottom_cta_button: "Contact us"
+
+  collabs:
+    badge: "Research partnerships & validation"
+    title: "World-class scientific collaborations"
+    intro: "Entrelacs is built on partnerships with the institutions shaping the future of global mental health policy and research."
+    foundations:
+      columns:
+        - title: "Global policy integration"
+          items:
+            - "WHO collaboration on Global Priority Setting Exercise"
+            - "EU Horizon Europe €3M LONELY-EU research project"
+            - "OECD cooperations on social health measurement standards"
+            - "University of Oxford research affiliation"
+        - title: "Academic network"
+          items:
+            - "Psychological Science Accelerator — 80+ country research network"
+            - "Stanford University partnership on AI behavioral prediction"
+            - "UC Davis partnership on personalized psychological measurement"
+            - "Multi-site clinical trials across healthcare systems"
+        - title: "Real-world evidence"
+          items:
+            - "Peer-reviewed publications in preparation"
+            - "Clinical outcomes tracking across pilot programs"
+            - "Population health impact studies underway"
+            - "Long-term effectiveness validation ongoing"
+
+  trust:
+    badge: "Privacy & security foundation"
+    title: "Built for healthcare-grade trust"
+    intro: "Every element of Entrelacs is designed to meet the highest standards of data privacy, security, and clinical ethics."
+    data:
+      title: "Data architecture"
+      items:
+        - "GDPR-compliant encrypted infrastructure"
+        - "Multi-jurisdiction compliance (EU, UK, Swiss, US)"
+        - "ISO 13485 and ISO 27001 certification roadmap"
+        - "Healthcare-grade security standards"
+    privacy:
+      title: "Privacy by design"
+      items:
+        - "Zero individual data shared with employers"
+        - "User-controlled data sharing and deletion"
+        - "Individual data is accessible only to authorized clinicians and personnel with user consent."
+        - "Transparent consent for AI training participation"
+    ctas:
+      privacy_policy: "Read our privacy policy"
+      contact: "Contact us"
 
 
 
