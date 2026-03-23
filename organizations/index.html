@@ -76,13 +76,8 @@
                         {% assign steps = site.translations[site.lang].employers.how_it_works.steps %}
                         {% for step in steps %}
                         <div class="howStep{% if forloop.first %} howStepActive{% endif %}">
-                            <div>
+                            <div class="howStepHeader">
                                 <h3>{{ step.title }}</h3>
-                                <div class="howHidden">
-                                    <p>{{ step.text }}</p>
-                                </div>
-                            </div>
-                            <div>
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     stroke="#b30000">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -97,14 +92,16 @@
                                     </g>
                                 </svg>
                             </div>
+                            <div class="howHidden">
+                                <p>{{ step.text }}</p>
+                            </div>
                         </div>
                         {% endfor %}
 
                     </div>
 
                     <div class="howImage">
-                        <img src="/images/employerPage11.png"
-                            alt="Assessment screen mockup" loading="lazy">
+                        <img src="/images/employerPage11.png" alt="Assessment screen mockup" loading="lazy">
                     </div>
                 </div>
             </section>
@@ -132,8 +129,7 @@
 
                     <div class="benefitsContent">
                         <div class="benefitsImage">
-                            <img src="/images/employersPage12.webp"
-                                alt="HR and leadership benefits" loading="lazy">
+                            <img src="/images/employersPage12.webp" alt="HR and leadership benefits" loading="lazy">
                         </div>
                         <div class="benefitsLists">
                             <ul class="benefitsList benefitsListActive" data-benefits-tab="hr">
@@ -249,7 +245,12 @@
                                 <ul>
                                     {% for item in gs.hero.what_list %}
                                     <li>
-                                        <span class="gettingCheck" aria-hidden="true"></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                                fill="#198D97" />
+                                        </svg>
                                         <p>{{ item }}</p>
                                     </li>
                                     {% endfor %}
@@ -261,7 +262,12 @@
                                 <ul>
                                     {% for item in gs.hero.next_list %}
                                     <li>
-                                        <span class="gettingCheck" aria-hidden="true"></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                                fill="#198D97" />
+                                        </svg>
                                         <p>{{ item }}</p>
                                     </li>
                                     {% endfor %}
@@ -272,8 +278,7 @@
                         <a href="{{ site.baseurl }}/contact-us/" class="cta gettingCta">{{ gs.hero.cta }}</a>
                     </div>
                     <div class="gettingMainRight">
-                        <img src="/images/employersPage2.webp"
-                            alt="Team looking at camera in office" loading="lazy">
+                        <img src="/images/employersPage2.webp" alt="Team looking at camera in office" loading="lazy">
                     </div>
                 </div>
 
@@ -326,13 +331,13 @@
         </script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var stepIcons = document.querySelectorAll('.howStep svg');
+                var stepHeaders = document.querySelectorAll('.howStepHeader');
 
-                if (!stepIcons.length) return;
+                if (!stepHeaders.length) return;
 
-                stepIcons.forEach(function (icon) {
-                    icon.addEventListener('click', function () {
-                        var step = icon.closest('.howStep');
+                stepHeaders.forEach(function (header) {
+                    header.addEventListener('click', function () {
+                        var step = header.closest('.howStep');
                         if (!step) return;
 
                         var hidden = step.querySelector('.howHidden');
@@ -348,13 +353,18 @@
                             }
                         });
 
+                        var icon = header.querySelector('svg');
                         var isOpen = hidden.classList.contains('is-open');
                         if (isOpen) {
                             hidden.classList.remove('is-open');
-                            icon.style.transform = 'rotate(0deg)';
+                            if (icon) {
+                                icon.style.transform = 'rotate(0deg)';
+                            }
                         } else {
                             hidden.classList.add('is-open');
-                            icon.style.transform = 'rotate(180deg)';
+                            if (icon) {
+                                icon.style.transform = 'rotate(180deg)';
+                            }
                         }
                     });
                 });

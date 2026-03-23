@@ -350,6 +350,10 @@ main {
     border-radius: 8px;
     padding: 0;
 }
+.collabs-foundation-item:hover{
+    transition: .4s;
+    background: #00000001;
+}
 .collabs-foundation-head{
     display: flex;
     align-items: center;

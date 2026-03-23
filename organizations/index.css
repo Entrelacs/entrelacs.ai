@@ -387,14 +387,24 @@ main .cta {
 }
 
 .howStep {
-    padding: 16px 0;
     border-bottom: 1px solid #d7d2c5;
-    display: flex;
-    justify-content: space-between;
 }
 
 .howStep:last-child {
     border-bottom: none;
+}
+
+.howStepHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 16px 5px 12px;
+    border-radius: 5px;
+}
+.howStepHeader:hover{
+    transition: .4s;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .howStep h3 {
@@ -405,10 +415,10 @@ main .cta {
 }
 
 .howStep p {
-    margin-top: 12px;
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-gray2);
+    margin-bottom: 16px;
 }
 .howStep svg{
     width: 40px;
@@ -423,6 +433,7 @@ main .cta {
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 0px 5px;    
 }
 
 .howHidden.is-open {
@@ -546,6 +557,10 @@ main .cta {
 }
 
 .benefitsTabActive {
+    background: #cfdede;
+    color: var(--teal-dark);
+}
+.benefitsTab:hover {
     background: #cfdede;
     color: var(--teal-dark);
 }
@@ -934,21 +949,8 @@ main .cta {
     margin-bottom: 8px;
 }
 
-.gettingCheck {
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    background: #eaf1f1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.gettingColumn li svg {
     flex-shrink: 0;
-}
-
-.gettingCheck::before {
-    content: "\2713";
-    font-size: 16px;
-    color: var(--teal-dark);
 }
 
 .gettingColumn p {

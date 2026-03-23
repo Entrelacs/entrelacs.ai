@@ -1,11 +1,11 @@
 navigation:
   home: "Accueil"
-  employers: "Employeurs"
-  health_systems: "Santé"
+  organizations: "Organisations"
+  health_systems: "Systèmes de santé"
   clinicians: "Cliniciens"
   technology: "Technologie"
   roi_calculator: "Calculateur de ROI"
-  approach: "Our Approac" 
+  approach: "Notre approche" 
   about: "À propos"
   contact: "Contactez-nous"
 
@@ -13,7 +13,7 @@ footer:
   company_name: "Entrelacs"
   nav:
     home: "Accueil"
-    employers: "Employeurs"
+    organizations: "Organisations"
     healthcare: "Santé"
     about: "À propos"
     technology: "Technologie"
