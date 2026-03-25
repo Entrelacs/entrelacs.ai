@@ -1,50 +1,107 @@
-<footer class="footer main_container">
+<footer class="footer">
 
   <div class="topSection">
 
-    <div class="companyInfoContainer">
-      <div class="logoContainer">
-        <img src="/images/logo.png" alt="Entrelacs Logo" width="120" height="120">
+    <div class="footerLeft">
+      <div class="companyInfoContainer">
+        <div class="logoContainer">
+          <img src="/images/logo.png" alt="Entrelacs Logo" width="120" height="120">
+        </div>
+        <h3 class="companyName">{% t footer.company_name %}</h3>
       </div>
-      <h3 class="companyName">{% t footer.company_name %}</h3>
+
+      <div class="linksContainer mobileOnly">
+        <div class="linkColumn">
+          <a href="{{ site.baseurl }}/">{% t footer.nav.home %}</a>
+          <a href="{{ site.baseurl }}/roi_calculator/">{% t footer.nav.roi_calculator %}</a>
+        </div>
+        <div class="linkColumn">
+          <a href="{{ site.baseurl }}/organizations/">{% t navigation.organizations %}</a>
+          <a href="{{ site.baseurl }}/technology/">{% t footer.nav.technology %}</a>
+        </div>
+        <div class="linkColumn">
+          <a href="{{ site.baseurl }}/clinicians/">{% t navigation.clinicians %}</a>
+          <a href="{{ site.baseurl }}/about/">{% t footer.nav.about %}</a>
+        </div>
+        <div class="linkColumn">
+          <a href="{{ site.baseurl }}/health_systems/">{% t navigation.health_systems %}</a>
+          <a href="{{ site.baseurl }}/contact-us/">{% t footer.nav.contact %}</a>
+        </div>
+      </div>
+
+      <div class="footerSponsers">
+        <a href="https://www.ftalps.com" target="_blank" class="footerSponsersImg">
+          <img src="/images/Alpes.png" alt="La French Tech in the Alps logo">
+        </a>
+        <a href="https://www.bpifrance.com/" target="_blank" class="footerSponsersImg">
+          <img src="/images/deeptech.png" alt="Bpifrance Deeptech logo">
+        </a>
+        <a href="https://levillagebyca.com/language/en/" target="_blank" class="footerSponsersImg">
+          <img src="/images/leVillage.png" alt="Le Village by CA logo">
+        </a>
+        <a href="https://www.digital-league.org/" target="_blank" class="footerSponsersImg" style="height: 95px;">
+          <img src="/images/digitalLeague.png" alt="Digital League logo">
+        </a>
+      </div>
     </div>
 
-    <div class="linksContainer">
-      <a href="{{ site.baseurl }}/">{% t footer.nav.home %}</a>
-      <a href="{{ site.baseurl }}/organizations">{% t footer.nav.organizations %}</a>
-      <a href="{{ site.baseurl }}/healthcare/">{% t footer.nav.healthcare %}</a>
-      <a href="{{ site.baseurl }}/about/">{% t footer.nav.about %}</a>
-      <a href="{{ site.baseurl }}/privacy-policy/">{% t footer.legal.privacy %}</a>
-      <a href="{{ site.baseurl }}/technology/">{% t footer.nav.technology %}</a>
-      <a href="{{ site.baseurl }}/roi_calculator/">{% t footer.nav.roi_calculator %}</a>
-      <a href="{{ site.baseurl }}/contact-us/">{% t footer.nav.contact %}</a>
-      <a href="{{ site.baseurl }}/terms-of-use/">{% t footer.legal.terms %}</a>
+    <div class="linksContainer pcOnly">
+      <div class="linkColumn">
+        <a href="{{ site.baseurl }}/">{% t footer.nav.home %}</a>
+        <a href="{{ site.baseurl }}/roi_calculator/">{% t footer.nav.roi_calculator %}</a>
+      </div>
+      <div class="linkColumn">
+        <a href="{{ site.baseurl }}/organizations/">{% t navigation.organizations %}</a>
+        <a href="{{ site.baseurl }}/technology/">{% t footer.nav.technology %}</a>
+      </div>
+      <div class="linkColumn">
+        <a href="{{ site.baseurl }}/clinicians/">{% t navigation.clinicians %}</a>
+        <a href="{{ site.baseurl }}/about/">{% t footer.nav.about %}</a>
+      </div>
+      <div class="linkColumn">
+        <a href="{{ site.baseurl }}/health_systems/">{% t navigation.health_systems %}</a>
+        <a href="{{ site.baseurl }}/contact-us/">{% t footer.nav.contact %}</a>
+      </div>
     </div>
-  </div>
-
-  <div class="footerSponsers">
-    <a href="https://www.ftalps.com" target="_blank" class="footerSponsersImg">
-      <img src="/images/la_french_tech_in_the_alps_logo.jpeg" alt="">
-    </a>
-    <a href="https://www.digital-league.org/" target="_blank" class="footerSponsersImg"
-      style="height: 95px;">
-      <img src="/images/digitaleague.png" alt="">
-    </a>
-    <a href="https://www.bpifrance.com/" target="_blank" class="footerSponsersImg">
-      <img src="/images/Labelised_deeptech.png" alt="">
-    </a>
-    <a href="https://levillagebyca.com/language/en/" target="_blank" class="footerSponsersImg"
-      style="">
-      <img src="/images/levillage.jpg" alt="">
-    </a>
   </div>
 
   <div class="bottomSection">
-    <div class="legalLinks">
-      <a href="{{ site.baseurl }}/legal-mentions/">{% t footer.legal.mentions %}</a>
-      <a href="{{ site.baseurl }}/privacy-policy/">{% t footer.legal.privacy %}</a>
-      <a href="{{ site.baseurl }}/terms-of-use/">{% t footer.legal.terms %}</a>
+    <div class="bottomRow">
+      <div class="footerSocials">
+        <a href="https://www.linkedin.com/company/entrelacs" target="_blank" aria-label="Entrelacs on LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+              fill="#FBFCFC" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="Entrelacs on YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M23.7609 7.20078C23.7609 7.20078 23.5266 5.54609 22.8047 4.81953C21.8906 3.86328 20.8688 3.85859 20.4 3.80234C17.0438 3.55859 12.0047 3.55859 12.0047 3.55859H11.9953C11.9953 3.55859 6.95625 3.55859 3.6 3.80234C3.13125 3.85859 2.10938 3.86328 1.19531 4.81953C0.473438 5.54609 0.24375 7.20078 0.24375 7.20078C0.24375 7.20078 0 9.14609 0 11.0867V12.9055C0 14.8461 0.239062 16.7914 0.239062 16.7914C0.239062 16.7914 0.473437 18.4461 1.19062 19.1727C2.10469 20.1289 3.30469 20.0961 3.83906 20.1992C5.76094 20.382 12 20.4383 12 20.4383C12 20.4383 17.0438 20.4289 20.4 20.1898C20.8688 20.1336 21.8906 20.1289 22.8047 19.1727C23.5266 18.4461 23.7609 16.7914 23.7609 16.7914C23.7609 16.7914 24 14.8508 24 12.9055V11.0867C24 9.14609 23.7609 7.20078 23.7609 7.20078ZM9.52031 15.1133V8.36797L16.0031 11.7523L9.52031 15.1133Z"
+              fill="#FBFCFC" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="bottomMeta">
+        <div class="legalLinks">
+          <a href="{{ site.baseurl }}/legal-mentions/">{% t footer.legal.mentions %}</a>
+          <a href="{{ site.baseurl }}/privacy-policy/">{% t footer.legal.privacy %}</a>
+          <a href="{{ site.baseurl }}/terms-of-use/">{% t footer.legal.terms %}</a>
+        </div>
+        <p class="copyright">
+
+
+
+
+
+
+
+
+          © {% t footer.copyright %}
+        </p>
+      </div>
     </div>
-    <p>{% t footer.copyright %}</p>
   </div>
 </footer>
