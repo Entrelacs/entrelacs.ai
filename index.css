@@ -209,7 +209,8 @@ main .cta {
 }
 
 #fourthSectionBox {
-    background: var(--background);
+    background: #f7f7f733;
+    backdrop-filter: 100px;
     padding: 56px;
     border-radius: 20px;
     border: 1px solid #CFDEDE;
@@ -223,6 +224,7 @@ main .cta {
     padding: 16px;
     border-radius: 8px;
     background: #bce0e433;
+    backdrop-filter: 100px;
 }
 
 #fourthSectionBox h3 {
@@ -296,8 +298,8 @@ main .cta {
         width: 100%;
     }
 
-    #firstSectionBox .content div:last-child h3 {
-        font-size: 30px;
+    #firstSectionBox .content h3 {
+        font-size: 20px !important;
     }
 }
 
@@ -375,6 +377,34 @@ main .cta {
     font-weight: 400;
     line-height: 150%;
     color: var(--text-gray);
+}
+
+.feature-carousel {
+    position: relative;
+    margin-top: 40px;
+}
+
+.feature-carousel-track {
+    width: 100%;
+}
+
+.feature-carousel-dots {
+    display: none;
+}
+
+.feature-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    border: none;
+    padding: 0;
+    background: #CFDEDE;
+    cursor: pointer;
+}
+
+.feature-carousel-dot.is-active {
+    width: 18px;
+    background: #156B70;
 }
 
 
@@ -597,6 +627,9 @@ main .cta {
     #fourthSectionLast p {
         font-size: 16px;
     }
+    #fourthSectionLast img{
+        max-height: 60px;
+    }
 
     #fifthSectionBox {
         flex-direction: row;
@@ -805,6 +838,34 @@ main .cta {
         font-size: 16px;
         max-width: 100%;
         line-height: 1.5;
+    }
+
+    .feature-carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .feature-carousel-track {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 16px;
+    }
+
+    .feature-carousel-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .feature-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        margin-top: 40px;
     }
 }
 

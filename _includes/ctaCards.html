@@ -1,30 +1,4 @@
 <style>
-    .ctaCardItem h3 {
-        color: var(--navy-blue);
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1.5;
-        margin-top: 24px;
-    }
-
-    .ctaCardItem h3 {
-        position: relative;
-        margin-top: 0px;
-        z-index: 10;
-    }
-
-    .ctaCardItem p {
-        font-size: 16px;
-        line-height: 1.5;
-        color: var(--text-gray);
-        margin-top: 8px;
-    }
-
-    .ctaCard {
-        display: flex;
-        gap: 2%;
-    }
-
     .ctaCardItem {
         width: 32%;
         border-radius: 20px;
@@ -36,12 +10,35 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .ctaCardItem h3 {
+        color: var(--navy-blue);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        position: relative;
+        margin-top: 0px;
+        z-index: 10;
+    }
+    .ctaCardItem p {
+        position: relative;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--text-gray);
+        margin-top: 8px;
+        z-index: 10;
+    }
+
+    .ctaCard {
+        display: flex;
+        gap: 2%;
+    }
+
 
     .ctaCardItem svg {
         position: absolute;
         top: 0px;
         right: 0px;
-        z-index: 9;
+        z-index: 1;
     }
 
     .ctaCardItemLearn {
@@ -83,6 +80,7 @@
             max-width: none;
             width: 100%;
             margin-bottom: 50px;
+            padding-top: 150px;
         }
     }
 </style>
