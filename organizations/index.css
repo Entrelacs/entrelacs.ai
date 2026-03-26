@@ -462,6 +462,7 @@ main .cta {
 .howImage {
     width: 45%;
     height: 420px;
+    transition: .5s;
     /* flex: 0 0 300px; */
     /* height: 100%; */
     /* max-width: 320px; */
@@ -470,6 +471,7 @@ main .cta {
 .howImage img {
     width: 100%;
 
+    transition: .5s;
     display: block;
     object-fit: contain;
 }
@@ -596,6 +598,7 @@ main .cta {
     flex: 0 0 50%;
     border-radius: 24px;
     overflow: hidden;
+    background: #99C3F4;
 }
 
 .benefitsImage img {
