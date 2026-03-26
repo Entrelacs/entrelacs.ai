@@ -78,18 +78,14 @@
                         <div class="howStep{% if forloop.first %} howStepActive{% endif %}">
                             <div class="howStepHeader">
                                 <h3>{{ step.title }}</h3>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    stroke="#b30000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g id="Arrow / Caret_Circle_Down">
-                                            <path id="Vector"
-                                                d="M15 11L12 14L9 11M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
-                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </g>
-                                    </g>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.33464 20.0007C3.33464 29.2054 10.7966 36.6673 20.0013 36.6673C29.206 36.6673 36.668 29.2054 36.668 20.0007C36.668 10.7959 29.2061 3.33399 20.0013 3.33399C10.7966 3.33398 3.33464 10.7959 3.33464 20.0007Z"
+                                        stroke="#869D9D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.1161 17.9004L19.9995 23.7671L25.8828 17.9004" stroke="#495050"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <div class="howHidden">
@@ -187,13 +183,21 @@
 
         <div id="pricingRoi" class="pageItem">
             {% assign pricing = site.translations[site.lang].employers.pricing %}
+
+            <h2 class="pricingMobileHeader">{{ pricing.title }}</h2>
             <section class="pricingSection">
                 <div class="pricingLeft">
                     <h2>{{ pricing.title }}</h2>
                     <ul class="pricingList">
                         {% for item in pricing.bullets %}
                         <li>
-                            <span class="pricingCheck" aria-hidden="true"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <rect width="32" height="32" rx="16" fill="#156B70" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.7934 9.8542L13.2467 19.0675L10.7134 16.3609C10.2467 15.9209 9.51338 15.8942 8.98005 16.2675C8.46005 16.6542 8.31338 17.3342 8.63338 17.8809L11.6334 22.7609C11.9267 23.2142 12.4334 23.4942 13.0067 23.4942C13.5534 23.4942 14.0734 23.2142 14.3667 22.7609C14.8467 22.1342 24.0067 11.2142 24.0067 11.2142C25.2067 9.98753 23.7534 8.90753 22.7934 9.84086V9.8542Z"
+                                    fill="#EAF1F1" />
+                            </svg>
                             <p><strong>{{ item.strong }}</strong>{{ item.rest }}</p>
                         </li>
                         {% endfor %}
@@ -285,13 +289,22 @@
                 <div class="gettingTimeline">
                     <h3 class="gettingTimelineTitle">{{ gs.timeline.title }}</h3>
                     <div class="gettingTimelineTrack">
-                        {% for stage in gs.timeline.stages %}
-                        <div class="gettingTimelineStage">
-                            <div class="gettingTimelineDot"></div>
-                            <div class="gettingTimelineLabel">{{ stage.label }}</div>
-                            <div class="gettingTimelinePeriod">{{ stage.period }}</div>
+                        <div class="gettingTimelineTrackDots">
+                            <div class="gettingTimelineBar"></div>
+                            {% for stage in gs.timeline.stages %}
+                            <div class="gettingTimelineDotWrapper">
+                                <div class="gettingTimelineDot"></div>
+                            </div>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
+                        <div class="gettingTimelineStages">
+                            {% for stage in gs.timeline.stages %}
+                            <div class="gettingTimelineStage">
+                                <div class="gettingTimelineLabel">{{ stage.label }}</div>
+                                <div class="gettingTimelinePeriod">{{ stage.period }}</div>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                     <a href="{{ site.baseurl }}/roi_calculator/" class="cta gettingTimelineCta">{{ gs.timeline.cta
                         }}</a>
@@ -307,64 +320,126 @@
 
 
         <script>
+            // Run this code only after the DOM is fully loaded
             document.addEventListener('DOMContentLoaded', function () {
+                // All clickable benefit tabs (HR, managers, employees)
                 var tabs = document.querySelectorAll('[data-benefits-target]');
+                // All corresponding benefit lists that we show / hide
                 var lists = document.querySelectorAll('[data-benefits-tab]');
 
+                // The main benefits image we want to swap
+                var benefitsImage = document.querySelector('.benefitsImage img');
+
+                // Map each tab target to an image (and optional alt)
+                var benefitsImageMap = {
+                    hr: {
+                        src: '/images/employersPage12.png',
+                        alt: 'HR and leadership benefits'
+                    },
+                    managers: {
+                        src: '/images/employerB1.webp',
+                        alt: 'Manager benefits overview'
+                    },
+                    employees: {
+                        src: '/images/employerB2.webp',
+                        alt: 'Employee benefits overview'
+                    }
+                };
+
+                // If there are no tabs or lists, do nothing
                 if (!tabs.length || !lists.length) return;
 
+                // Attach a click handler to each tab
                 tabs.forEach(function (tab) {
                     tab.addEventListener('click', function () {
+                        // Get which group of benefits this tab controls
                         var target = tab.getAttribute('data-benefits-target');
 
+                        // Visually mark the clicked tab as active and others as inactive
                         tabs.forEach(function (t) {
                             t.classList.toggle('benefitsTabActive', t === tab);
                         });
 
+                        // Show the matching benefits list and hide the others
                         lists.forEach(function (list) {
                             var isActive = list.getAttribute('data-benefits-tab') === target;
                             list.classList.toggle('benefitsListActive', isActive);
                         });
+
+                        // Update the benefits image to match the active tab
+                        if (benefitsImage && benefitsImageMap[target]) {
+                            var data = benefitsImageMap[target];
+                            benefitsImage.src = data.src;
+                            if (data.alt) {
+                                benefitsImage.alt = data.alt;
+                            }
+                        }
                     });
                 });
             });
         </script>
         <script>
+            // Accordion behavior for the "How it works" steps
             document.addEventListener('DOMContentLoaded', function () {
+                // Headers that can be clicked to open / close a step
                 var stepHeaders = document.querySelectorAll('.howStepHeader');
 
+                // Container whose background we want to change
+                var howContent = document.querySelector('.howContent');
+                // Image inside the .howImage block that we want to swap
+                var howImage = document.querySelector('.howImage img');
+
+                // Per-step backgrounds (override as you like)
+                // Index 0 = first step, 1 = second, 2 = third, etc.
+                var howBackgrounds = [
+                    'linear-gradient(180deg, rgba(247, 242, 230, 0.25) 2.37%, rgba(255, 236, 187, 0.6) 86.13%)',
+                    'linear-gradient(180deg, rgba(230, 249, 250, 0.4) 2.37%, rgba(205, 229, 233, 0.9) 86.13%)',
+                    'linear-gradient(180deg, rgba(234, 241, 241, 0.4) 2.37%, rgba(207, 222, 222, 0.9) 86.13%)'
+                ];
+
+                // Per-step images (update paths to whatever you prefer)
+                var howImages = [
+                    '/images/employerPage11.webp',
+                    '/images/iPhone15(1).png',
+                    '/images/employerLaptop.png'
+                ];
+
+                // If no headers are found, do nothing
                 if (!stepHeaders.length) return;
 
-                stepHeaders.forEach(function (header) {
+                // Attach a click handler to each header
+                stepHeaders.forEach(function (header, index) {
                     header.addEventListener('click', function () {
+                        // Find the parent step block
                         var step = header.closest('.howStep');
                         if (!step) return;
 
-                        var hidden = step.querySelector('.howHidden');
-                        if (!hidden) return;
+                        // Whether this step is already open
+                        var isOpen = step.classList.contains('is-open');
 
-                        document.querySelectorAll('.howHidden').forEach(function (el) {
-                            if (el !== hidden) {
+                        // Close all other open steps
+                        document.querySelectorAll('.howStep.is-open').forEach(function (el) {
+                            if (el !== step) {
                                 el.classList.remove('is-open');
-                                var svg = el.closest('.howStep').querySelector('svg');
-                                if (svg) {
-                                    svg.style.transform = 'rotate(0deg)';
-                                }
                             }
                         });
 
-                        var icon = header.querySelector('svg');
-                        var isOpen = hidden.classList.contains('is-open');
+                        // Toggle the open state on the step itself;
+                        // CSS will handle showing the content and rotating the icon
                         if (isOpen) {
-                            hidden.classList.remove('is-open');
-                            if (icon) {
-                                icon.style.transform = 'rotate(0deg)';
-                            }
+                            step.classList.remove('is-open');
                         } else {
-                            hidden.classList.add('is-open');
-                            if (icon) {
-                                icon.style.transform = 'rotate(180deg)';
-                            }
+                            step.classList.add('is-open');
+                        }
+
+                        // Update background and image based on which step was clicked
+                        if (howContent && howImage) {
+                            var bg = howBackgrounds[index] || howBackgrounds[0];
+                            var imgSrc = howImages[index] || howImages[0];
+
+                            howContent.style.transition = 'background 0.4s ease';
+                            howContent.style.background = bg;
+                            howImage.src = imgSrc;
                         }
                     });
                 });
