@@ -187,40 +187,23 @@
                         <div id="osth1" class="osthcombined">
                             <img src="/images/ourstory1.webp" alt="">
                             <p>
-                                This isn't a fringe hypothesis. It's what the research increasingly shows. And it's what
-                                many clinicians — and many patients — already know from experience: finding the right
-                                mental health care, matched to who you actually are, is genuinely hard. When your
-                                assessment doesn't actually capture who you are, the care pathway it points to may be
-                                the wrong one entirely. And finding the right care — matched to who you actually are —
-                                is already genuinely hard, even for people with clinical training and system knowledge.
-                                The technology to do better now exists. What was missing was the will — and the team —
-                                to build it properly.
+                                {% t about.story.hidden_text_1 %}
                             </p>
                         </div>
                         <div id="osth2" class="ourStory-col ourStory-image-main">
                             <img src="/images/ourstory2.webp" alt="">
                         </div>
                         <div id="osth3" class="ourStory-col ourStory-text-main">
-                            <p>Entrelacs was founded to close that gap. Built on a foundation of open science —informed by
-                                80,000+ research articles, and developed through years of interviews with individuals in 8
-                                countries— Entrelacs brings together AI, dynamic psychometric modeling, and continuous
-                                monitoring to do what no mental health tool has done before: assess, match, and track the
-                                individual, not the average. And because the platform understands who each person is — not
-                                just what their score is — it can do something no reactive system can: identify
-                                deterioration before it becomes crisis, and connect people to the right support before it’s
-                                urgently needed.
+                            <p>{% t about.story.hidden_text_2 %}
                             </p>
                         </div>
                         <div id="osth4" class="osthcombined">
-                            <p>Today, Entrelacs is moving toward CE Mark certification in 2027, with strategic
-                                partnerships spanning Stanford, UC Davis, Oxford, and the Psychological Science
-                                Accelerator — and a clear commercial pathway into the employers, health systems, and
-                                clinical networks that need it most.</p>
+                            <p>{% t about.story.hidden_text_3 %}</p>
                             <img src="/images/ourstory3.webp" alt="">
                         </div>
                     </div>
                     <div id="ourStoryReadmore" style="margin: 0 auto;" class="founderStory-footer">
-                        <p>Read more</p>
+                        <p>{% t about.common.more %}</p>
                         <svg id="ourStoryReadmoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -517,7 +500,7 @@
                         }
 
                         setTimeout(() => {
-                            ourStoryReadMore.querySelector('p').innerText = "close";
+                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.less }}";
                             ourStoryReadMore.classList.add('less');
                             ourStoryReadMoreButton.style.transform = 'rotate(180deg)';
                         }, 200);
@@ -526,7 +509,7 @@
                         ourStoryHidden.style.display = 'none';
 
                         setTimeout(() => {
-                            ourStoryReadMore.querySelector('p').innerText = "Read more";
+                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.more }}";
                             ourStoryReadMore.classList.remove('less');
                             ourStoryReadMoreButton.style.transform = 'rotate(0deg)';
                         }, 200);
