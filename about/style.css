@@ -320,8 +320,11 @@ main {
 
 .ourStory-image-main {
     width: 40%;
-    height: 700px;
-    max-height: 70vh;
+    border-radius: 24px;
+    height: 500px;
+}
+
+.ourStory-card img {
     border-radius: 24px;
 }
 
@@ -329,14 +332,57 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 24px;
 }
 
 .ourStory-text-main p {
-    max-width: 500px;
+    max-width: 800px;
+}
+
+.ourStory-text-main p,
+#ourStorytexthidden p {
     font-size: 20px;
     line-height: 1.5;
     color: var(--text-gray2);
+}
+
+#ourStorytexthidden {
+    display: flex;
+    width: fit-content;
+    gap: 60px;
+    transition: .4s;
+}
+
+.osthcombined {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.osthcombined img {
+    flex-shrink: 1;
+}
+
+#osth1 {
+    width: 700px;
+}
+
+#osth1 img {
+    height: 200px;
+}
+
+#osth2 {
+    width: 300px;
+}
+
+#osth3 {
+    width: 400px;
+}
+
+#osth4 {
+    width: 550px;
+}
+#ourStoryReadmore {
+    display: none;
 }
 
 @media (max-width: 850px) {
@@ -370,17 +416,37 @@ main {
         font-size: 18px;
         max-width: none;
     }
+
+    #ourStorytexthidden {
+        display: none;
+        flex-direction: column;
+    }
+
+    #osth1,
+    #osth1,
+    #osth2,
+    #osth3,
+    #osth4 {
+        width: 100%;
+    }
+    #ourStoryReadmore {
+        display: flex;
+    }
 }
+
 @media (max-width: 650px) {
-    .ourStory-card{
+    .ourStory-card {
         padding: 24px;
     }
-    .ourStory-intro p{
+
+    .ourStory-intro p {
         font-size: 16px;
     }
-    .ourStory-question{
+
+    .ourStory-question {
         font-size: 20px !important;
     }
+
     .ourStory-text-main p {
         font-size: 16px;
     }
@@ -559,20 +625,25 @@ main {
         padding: 0;
         font-size: 24px;
     }
-    .founderStory-name{
+
+    .founderStory-name {
         font-size: 20px;
     }
-    .founderStory-role{
+
+    .founderStory-role {
         font-size: 16px;
     }
-    .founderStory-intro{
+
+    .founderStory-intro {
         font-size: 16px;
     }
-    .founderStory-body{
+
+    .founderStory-body {
         font-size: 16px;
         line-height: 1.6;
     }
-    #foundertexthidden p{
+
+    #foundertexthidden p {
         font-size: 16px;
     }
 }
