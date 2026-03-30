@@ -330,7 +330,7 @@
                     </div>
 
                     <div class="collabs-image">
-                        <img src="/images/approach2.jpg" alt="Globe representing global policy and research"
+                        <img src="/images/approach1.jpg" alt="Globe representing global policy and research"
                             loading="lazy">
                     </div>
                 </div>
@@ -401,10 +401,33 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var headers = document.querySelectorAll('.collabs-foundation-head');
+                var collabsImage = document.querySelector('.collabs-image img');
+
+                // Image array mapped by foundation index (0, 1, 2...)
+                var collabsImages = [
+                    {
+                        src: '/images/approach1.jpg',
+                        alt: 'Globe representing global policy and research'
+                    },
+                    {
+                        src: '/images/approach2.webp',
+                        alt: 'Academic collaboration and scientific network visual'
+                    },
+                    {
+                        src: '/images/approach3.webp',
+                        alt: 'Real-world evidence and validation visual'
+                    }
+                ];
+
+                // Preload all collabs images to avoid jerky loading on item switch
+                collabsImages.forEach(function (image) {
+                    var img = new Image();
+                    img.src = image.src;
+                });
 
                 if (!headers.length) return;
 
-                headers.forEach(function (head) {
+                headers.forEach(function (head, index) {
                     head.addEventListener('click', function () {
                         var item = head.closest('.collabs-foundation-item');
                         if (!item) return;
@@ -430,6 +453,16 @@
                         } else {
                             hidden.classList.add('is-open');
                             head.classList.add('is-open');
+
+                            if (collabsImage) {
+                                var data = collabsImages[index] || collabsImages[0];
+                                if (data) {
+                                    collabsImage.src = data.src;
+                                    if (data.alt) {
+                                        collabsImage.alt = data.alt;
+                                    }
+                                }
+                            }
                         }
                     });
                 });

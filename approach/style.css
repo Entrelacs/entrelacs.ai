@@ -29,6 +29,7 @@ main {
     font-weight: 700;
     margin-bottom: 30px;
     font-family: var(--libre);
+    max-width: 900px;
 }
 
 .herocontent p {
@@ -53,6 +54,9 @@ main {
 }
 
 @media (max-width: 650px) {
+    main{
+        padding-top: 0;
+    }
     .herocontent {
         align-items: flex-start;
         text-align: left;
@@ -120,7 +124,7 @@ main {
     border-radius: 24px;
     padding: 40px 24px;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     text-align: center;
 }
@@ -128,6 +132,7 @@ main {
 .approach-stat-card p {
     font-family: var(--libre);
     font-size: 3.2rem;
+    font-weight: 700;
     line-height: 1.16;
     color: var(--navy-blue);
 }
@@ -275,6 +280,7 @@ main {
 
     .approach-stat-card {
         padding: 24px 20px;
+        min-height: 140px;
     }
 
     .approach-stat-card p {
@@ -401,6 +407,14 @@ main {
     line-height: 1.45;
     color: var(--text-gray);
     margin-top: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 1.2em;
+}
+.collabs-foundation-list-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
 }
 
 
@@ -594,9 +608,24 @@ main {
         padding-top: 72px;
         padding-bottom: 72px;
     }
+    .trust-intro{
+        font-size: 16px;
+    }
 
     .trust-title {
         font-size: 3.2rem;
         line-height: 4rem;
+    }
+    .trust-card {
+        padding: 24px 20px;
+    }
+    .trust-card h3{
+        font-size: 20px;
+    }
+    .trust-list-text {
+        font-size: 16px;
+    }
+     .trust-ctas .cta {
+        width: 100%;
     }
 }
