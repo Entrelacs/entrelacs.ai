@@ -143,12 +143,10 @@ main .cta {
 
     .lsection h2 {
         font-size: 30px;
-        text-align: center;
     }
 
     .lsectionP {
         font-size: 16px;
-        text-align: center;
         max-width: 100%;
         line-height: 1.5;
     }
@@ -364,6 +362,10 @@ main .cta {
     .solutionRowLeft,
     .solutionRowRight {
         padding: 24px;
+    }
+
+    .solutionRowLeft h3{
+        font-size: 24px
     }
 
     .solutionRowList p {

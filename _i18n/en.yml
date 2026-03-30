@@ -303,7 +303,7 @@ employers:
           period: "Week 5–8"
         - label: "Optimization & Results Tracking"
           period: "Ongoing"
-      cta: "Use the ROI Calculator"
+      cta: "See how Entrelacs can help"
 
 health_systems:
   meta:
@@ -376,7 +376,7 @@ health_systems:
           period: "HR and workflow integration roadmap"
         - label: "Outcome tracking"
           period: "Measure impact on costs, quality metrics, and patient satisfaction"
-      cta: "Use the ROI Calculator"
+      cta: "See how Entrelacs can help"
 
 clinicians:
   meta:
