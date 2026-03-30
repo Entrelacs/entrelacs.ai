@@ -73,6 +73,7 @@ main .cta {
         flex-direction: column;
         gap: 60px;
         padding-top: 120px;
+        padding-bottom: 64px;
     }
 
     #hero .right,
@@ -143,12 +144,10 @@ main .cta {
 
     .lsection h2 {
         font-size: 30px;
-        text-align: center;
     }
 
     .lsectionP {
         font-size: 16px;
-        text-align: center;
         max-width: 100%;
         line-height: 1.5;
     }
@@ -265,8 +264,8 @@ main .cta {
 
 @media (max-width: 650px) {
     #hiddenCost .hiddenCostSection {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 64px;
+        padding-bottom: 64px;
         align-items: stretch;
     }
 
@@ -281,14 +280,24 @@ main .cta {
 
     #hiddenCost .hiddenCostStats {
         flex-direction: column;
-        gap: 32px;
     }
 
     #hiddenCost .hiddenCostStat {
+        width: 100%;
         max-width: none;
         border-right: none;
+        border-top: 1px solid #eed9a6;
         padding-right: 0;
         margin-left: 0;
+        margin-bottom: 0;
+        min-height: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #hiddenCost .hiddenCostStat:first-child {
+        border-top: none;
+        padding-top: 0;
     }
 
     #hiddenCost .hiddenCostFooter {
@@ -329,6 +338,7 @@ main .cta {
     display: flex;
     border-radius: 24px;
     overflow: hidden;
+    min-height: 370px;
 }
 
 .solutionRowLeft {
@@ -396,6 +406,7 @@ main .cta {
     line-height: 1.5;
     color: var(--text-gray);
 }
+
 .solutionRowSVG {
     position: absolute;
     width: 220px;
@@ -442,6 +453,11 @@ main .cta {
     .solutionRowLeft,
     .solutionRowRight {
         padding: 24px;
+    }
+
+    .solutionRowLeft h3 {
+        font-size: 24px;
+        line-height: 1.4;
     }
 
     .solutionRowList p {
@@ -557,182 +573,3 @@ main .cta {
     }
 }
 
-
-/* Getting started */
-
-#gettingStarted {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background: rgba(234, 241, 241, 0.65);
-}
-
-.gettingSection {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gettingHeader {
-    margin-bottom: 56px;
-}
-
-.gettingHeader h2 {
-    font-family: var(--libre);
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: -1px;
-    color: var(--teal-900);
-}
-
-.gettingSubtitle {
-    margin-top: 16px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.45;
-    color: var(--text-gray);
-}
-
-.gettingMainCard {
-    display: flex;
-    gap: 56px;
-    padding: 56px;
-    border-radius: 24px;
-    background: #ffffff;
-}
-
-.gettingMainLeft {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.gettingMainText h3 {
-    font-family: var(--libre);
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--teal-900);
-    margin-bottom: 16px;
-}
-
-.gettingMainText p {
-    font-size: 22px;
-    line-height: 1.45;
-    color: var(--text-gray2);
-}
-
-.gettingColumns {
-    /* display: flex; */
-    gap: 40px;
-}
-
-.gettingColumns hr {
-    margin: 30px 0;
-    color: var(--text-lighter);
-}
-
-.gettingColumn h4 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: var(--teal-dark);
-    margin-bottom: 12px;
-}
-
-.gettingColumn ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.gettingColumn li {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 8px;
-}
-
-.gettingColumn svg {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
-.gettingColumn p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--text-gray2);
-}
-
-.gettingCta {
-    margin-top: 8px;
-    width: 280px;
-}
-
-.gettingMainRight {
-    flex: 1 1 0;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 85vh;
-}
-
-.gettingMainRight img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-@media (max-width: 1000px) {
-    #gettingStarted {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .gettingMainCard {
-        padding: 40px;
-    }
-}
-
-@media (max-width: 800px) {
-    .gettingMainCard {
-        flex-direction: column-reverse;
-    }
-
-    .gettingMainRight {
-        width: 100%;
-        min-height: 280px;
-    }
-
-    .gettingColumns {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 650px) {
-    #gettingStarted {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .gettingHeader h2 {
-        font-size: 30px;
-        line-height: 1.3;
-    }
-
-    .gettingSubtitle {
-        font-size: 16px;
-    }
-
-    .gettingMainCard {
-        padding: 32px 24px;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .gettingMainText p,
-    .gettingColumn p {
-        font-size: 16px;
-    }
-}

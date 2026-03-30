@@ -1,0 +1,448 @@
+{% comment %}
+Reusable Getting Started section
+Expected usage:
+  {% assign gs = site.translations[site.lang].employers.getting_started %}
+  {% include getting_started.html
+      hero_image="/images/employersPage2.webp" %}
+  
+Clinicians / health systems pages should assign `gs` similarly
+and pass the appropriate `hero_image` path.
+
+CSS for layout and timeline is defined in organizations/index.css
+and can be copied to other section stylesheets as needed.
+{% endcomment %}
+<style>
+    /* Getting started */
+
+#gettingStarted {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: rgba(234, 241, 241, 0.65);
+}
+
+.gettingSection {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gettingHeader {
+    margin-bottom: 56px;
+}
+
+.gettingHeader h2 {
+    font-family: var(--libre);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: -1px;
+    color: var(--teal-900);
+}
+
+.gettingSubtitle {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-gray);
+}
+
+.gettingMainCard {
+    display: flex;
+    gap: 32px;
+    padding: 56px;
+    border-radius: 24px;
+    background: #ffffff;
+}
+
+.gettingMainLeft {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gettingMainText h3 {
+    font-family: var(--libre);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--teal-900);
+    margin-bottom: 16px;
+}
+
+.gettingMainText p {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--text-gray2);
+}
+
+.gettingColumns {
+    /* display: flex; */
+    gap: 40px;
+}
+.gettingColumns hr{
+    margin: 30px 0;
+    color: var(--text-lighter);
+}
+.gettingColumn h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--teal-dark);
+    margin-bottom: 12px;
+}
+
+.gettingColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gettingColumn li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.gettingColumn li svg {
+    flex-shrink: 0;
+}
+
+.gettingColumn p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-gray2);
+}
+
+.gettingCta {
+    margin-top: 8px;
+    width: 280px;
+}
+
+.gettingMainRight {
+    flex: 1 1 0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 85vh;
+}
+
+.gettingMainRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gettingTimeline {
+    margin-top: 40px;
+    padding: 56px;
+    border-radius: 8px;
+    background: rgba(188, 224, 228, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gettingTimelineTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-gray2);
+    margin-bottom: 48px;
+}
+
+.gettingTimelineTrack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 960px;
+}
+
+.gettingTimelineTrackDots {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.gettingTimelineBar {
+    position: absolute;
+    top: 18px;
+    /* span from the center of the first dot to the last */
+    left: 12.5%;
+    right: 12.5%;
+    height: 12px;
+    border-radius: 999px;
+    background: #d4e5e6;
+    z-index: 0;
+}
+
+.gettingTimelineDotWrapper {
+    position: relative;
+    z-index: 1;
+    /* four equal columns across the track */
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.gettingTimelineDot {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    border-radius: 999px;
+    background: #d4e5e6;
+    /* box-shadow: 0 8px 16px rgba(16, 24, 40, 0.12); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gettingTimelineDot::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: var(--teal-dark);
+}
+
+.gettingTimelineStages {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* gap: 48px; */
+    width: 100%;
+}
+
+.gettingTimelineStage {
+    /* match dot wrapper width so dots stay centered over stages */
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+
+.gettingTimelineLabel {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #080808;
+    margin: 0 auto 8px;
+    max-width: 220px;
+}
+
+.gettingTimelinePeriod {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-gray);
+}
+
+.gettingTimelineCta {
+    width: 280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    #gettingStarted {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .gettingMainCard,
+    .gettingTimeline {
+        padding: 40px;
+    }
+}
+@media (max-width: 950px) {
+
+    .gettingTimelineTrack{
+        flex-direction: row;
+        min-height: 450px;
+    }
+    .gettingTimelineTrackDots{
+        flex-direction: column;
+        width: 100px;
+        align-self: stretch;
+        /* gap: 12px; */
+        /* height: 100%; */
+    }
+    .gettingTimelineDot {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+    .gettingTimelineDot::after{
+        width: 24px;
+        height: 24px;
+    }
+    .gettingTimelineBar{
+        top: 14px;
+        left: calc(50% - 4px);
+        width: 8px;
+        height: 85%;
+    }
+    .gettingTimelineStages {
+        flex-direction: column;
+        align-self: stretch;
+        /* gap: 24px; */
+        align-items: flex-start;
+    }
+
+    .gettingTimelineStage {
+        flex: 1 1 auto;
+        max-width: none;
+        width: 100%;
+        text-align: left;
+    }
+    .gettingTimelineTitle {
+        font-size: 20px;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .gettingTimelineLabel {
+        max-width: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .gettingMainCard {
+        flex-direction: column-reverse;
+    }
+
+    .gettingMainRight {
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .gettingColumns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    #gettingStarted {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .gettingHeader h2 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .gettingSubtitle {
+        font-size: 16px;
+    }
+
+    .gettingMainCard,
+    .gettingTimeline {
+        padding: 32px 24px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .gettingMainText h3 {
+        font-size: 22px;
+        line-height: 1.4;
+    }   
+    .gettingColumn h4{
+        font-size: 20px;
+    }
+    .gettingMainText p,
+    .gettingColumn p,
+    .gettingTimelineLabel,
+    .gettingTimelinePeriod {
+        font-size: 16px;
+    }
+}
+</style>
+<div id="gettingStarted" class="pageItem">
+  <section class="gettingSection">
+    <div class="gettingHeader">
+      <h2>{{ gs.title }}</h2>
+      <p class="gettingSubtitle">{{ gs.subtitle }}</p>
+    </div>
+
+    <div class="gettingMainCard">
+      <div class="gettingMainLeft">
+        <div class="gettingMainText">
+          <h3>{{ gs.hero.heading }}</h3>
+          <p>{{ gs.hero.body }}</p>
+        </div>
+
+        <div class="gettingColumns">
+          <div class="gettingColumn">
+            <h4>{{ gs.hero.what_title }}</h4>
+            <ul>
+              {% for item in gs.hero.what_list %}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                    fill="#198D97" />
+                </svg>
+                <p>{{ item }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <hr>
+          <div class="gettingColumn">
+            <h4>{{ gs.hero.next_title }}</h4>
+            <ul>
+              {% for item in gs.hero.next_list %}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                    fill="#198D97" />
+                </svg>
+                <p>{{ item }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <a href="{{ site.baseurl }}/contact-us/" class="cta gettingCta">{{ gs.hero.cta }}</a>
+      </div>
+      <div class="gettingMainRight">
+        <img src="{{ include.hero_image }}" alt="{{ gs.hero.image_alt | default: 'Team looking at camera in office' }}" loading="lazy">
+      </div>
+    </div>
+
+    {% if gs.timeline %}
+    <div class="gettingTimeline">
+      <h3 class="gettingTimelineTitle">{{ gs.timeline.title }}</h3>
+      <div class="gettingTimelineTrack">
+        <div class="gettingTimelineTrackDots">
+          <div class="gettingTimelineBar"></div>
+          {% for stage in gs.timeline.stages %}
+          <div class="gettingTimelineDotWrapper">
+            <div class="gettingTimelineDot"></div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="gettingTimelineStages">
+          {% for stage in gs.timeline.stages %}
+          <div class="gettingTimelineStage">
+            <div class="gettingTimelineLabel">{{ stage.label }}</div>
+            <div class="gettingTimelinePeriod">{{ stage.period }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <a href="{{ site.baseurl }}/roi_calculator/" class="cta gettingTimelineCta">{{ gs.timeline.cta }}</a>
+    </div>
+    {% endif %}
+  </section>
+</div>
