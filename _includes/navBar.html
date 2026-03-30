@@ -1,6 +1,6 @@
 <nav class="navbar">
   <div class="nav_container">
-    
+
     <a href="{{ site.baseurl }}/" class="logo">
       <img src="/images/logo.png" alt="Entrelacs Logo">
       Entrelacs
@@ -20,7 +20,7 @@
       <!-- <li><a href="{{ site.baseurl }}/roi_calculator/">{% t navigation.roi_calculator %}</a></li> -->
       <li><a href="{{ site.baseurl }}/about/">{% t navigation.about %}</a></li>
     </ul>
-    
+
     <ul class="navLinks">
       <li><a class="cta" href="{{ site.baseurl }}/contact-us/">{% t navigation.contact %}</a></li>
       <li>{% include language_switcher.html %}</li>
@@ -32,6 +32,7 @@
         <li><a href="{{ site.baseurl }}/organizations/">{% t navigation.organizations %}</a></li>
         <li><a href="{{ site.baseurl }}/health_systems">{% t navigation.health_systems %}</a></li>
         <li><a href="{{ site.baseurl }}/approach/">{% t navigation.approach %}</a></li>
+        <li><a href="{{ site.baseurl }}/clinicians/">{% t navigation.clinicians %}</a></li>
         <li><a href="{{ site.baseurl }}/roi_calculator/">{% t navigation.roi_calculator %}</a></li>
         <li><a href="{{ site.baseurl }}/about/">{% t navigation.about %}</a></li>
         <li><a class="cta" href="{{ site.baseurl }}/contact-us/">{% t navigation.contact %}</a></li>
@@ -73,42 +74,42 @@
 
   // Mark Nav item as active if the url matches it
   function setActiveNav() {
-      // Get current path and remove trailing slash (unless it is just "/")
-      // e.g. "/fr/employers/" becomes "/fr/employers"
-      let currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+    // Get current path and remove trailing slash (unless it is just "/")
+    // e.g. "/fr/employers/" becomes "/fr/employers"
+    let currentPath = window.location.pathname.replace(/\/$/, "") || "/";
 
-      const navLinks = document.querySelectorAll(".navLinks a");
+    const navLinks = document.querySelectorAll(".navLinks a");
 
-      navLinks.forEach(link => {
-        // Extract the path from the link (ignoring domain)
-        const urlObj = new URL(link.href);
-        let linkPath = urlObj.pathname.replace(/\/$/, "") || "/";
+    navLinks.forEach(link => {
+      // Extract the path from the link (ignoring domain)
+      const urlObj = new URL(link.href);
+      let linkPath = urlObj.pathname.replace(/\/$/, "") || "/";
 
-        // Check if this link is a "Home" link (Root "/" or Lang Root "/fr")
-        // Regex explains: Starts with /, has 2 letters, ends. (Matches /fr, /en, /es)
-        const isHomeLink = linkPath === "/" || /^\/[a-z]{2}$/i.test(linkPath);
+      // Check if this link is a "Home" link (Root "/" or Lang Root "/fr")
+      // Regex explains: Starts with /, has 2 letters, ends. (Matches /fr, /en, /es)
+      const isHomeLink = linkPath === "/" || /^\/[a-z]{2}$/i.test(linkPath);
 
-        let isActive = false;
+      let isActive = false;
 
-        if (isHomeLink) {
-          // Rule: Home links only active on EXACT match
-          // Prevents "/fr" from lighting up when you are on "/fr/about"
-          isActive = (currentPath === linkPath);
-        } else {
-          // Rule: Other links active on EXACT match OR Sub-path match
-          // e.g. "/employers" lights up if you are on "/employers/team"
-          isActive = (currentPath === linkPath || currentPath.startsWith(linkPath + "/"));
-        }
+      if (isHomeLink) {
+        // Rule: Home links only active on EXACT match
+        // Prevents "/fr" from lighting up when you are on "/fr/about"
+        isActive = (currentPath === linkPath);
+      } else {
+        // Rule: Other links active on EXACT match OR Sub-path match
+        // e.g. "/employers" lights up if you are on "/employers/team"
+        isActive = (currentPath === linkPath || currentPath.startsWith(linkPath + "/"));
+      }
 
-        // Apply class
-        if (isActive) {
-          link.classList.add("navactive");
-        } else {
-          link.classList.remove("navactive");
-        }
-      });
-    }
+      // Apply class
+      if (isActive) {
+        link.classList.add("navactive");
+      } else {
+        link.classList.remove("navactive");
+      }
+    });
+  }
 
-    // Run immediately
-    setActiveNav();
+  // Run immediately
+  setActiveNav();
 </script>

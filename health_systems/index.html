@@ -241,84 +241,8 @@
                 </div>
             </section>
         </div>
-
-
-        <div id="gettingStarted" class="pageItem">
-            {% assign gs = site.translations[site.lang].health_systems.getting_started %}
-            <section class="gettingSection">
-                <div class="gettingHeader">
-                    <h2>{{ gs.title }}</h2>
-                    <p class="gettingSubtitle">{{ gs.subtitle }}</p>
-                </div>
-
-                <div class="gettingMainCard">
-                    <div class="gettingMainLeft">
-                        <div class="gettingMainText">
-                            <h3>{{ gs.hero.heading }}</h3>
-                            <p>{{ gs.hero.body }}</p>
-                        </div>
-
-                        <div class="gettingColumns">
-                            <div class="gettingColumn">
-                                <h4>{{ gs.hero.what_title }}</h4>
-                                <ul>
-                                    {% for item in gs.hero.what_list %}
-                                    <li>
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
-                                                fill="#198D97" />
-                                        </svg>
-
-                                        <p>{{ item }}</p>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                            <hr>
-                            <div class="gettingColumn">
-                                <h4>{{ gs.hero.next_title }}</h4>
-                                <ul>
-                                    {% for item in gs.hero.next_list %}
-                                    <li>
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
-                                                fill="#198D97" />
-                                        </svg>
-
-                                        <p>{{ item }}</p>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <a href="{{ site.baseurl }}/contact-us/" class="cta gettingCta">{{ gs.hero.cta }}</a>
-                    </div>
-                    <div class="gettingMainRight">
-                        <img src="/images/healthSystem2.webp" alt="Team collaborating around a table" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="gettingTimeline">
-                    <h3 class="gettingTimelineTitle">{{ gs.timeline.title }}</h3>
-                    <div class="gettingTimelineTrack">
-                        {% for stage in gs.timeline.stages %}
-                        <div class="gettingTimelineStage">
-                            <div class="gettingTimelineDot"></div>
-                            <div class="gettingTimelineLabel">{{ stage.label }}</div>
-                            <div class="gettingTimelinePeriod">{{ stage.period }}</div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <a href="{{ site.baseurl }}/roi_calculator/" class="cta gettingTimelineCta">{{ gs.timeline.cta
-                        }}</a>
-                </div>
-            </section>
-        </div>
+        {% assign gs = site.translations[site.lang].health_systems.getting_started %}
+        {% include getting_started.html hero_image="/images/healthSystem2.webp" %}
         {% include roi_calculator_nudge.html %}
 
 
