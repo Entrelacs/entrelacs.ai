@@ -716,6 +716,9 @@ about:
     t1: "Precision"          
     t2: "Personalization"
     t3: "Prevention"
+    d1: "Screen with clinical accuracy, not guesswork. A 15-minute conversational assessment replaces fragmented questionnaires with objective, multi-dimensional risk stratification."
+    d2: "Match to the right care pathway, first time. AI connects each individual to the most effective intervention from day one — reducing failed treatments and accelerating improvement by 2–3x."
+    d3: "Detect deterioration before it becomes crisis. Continuous monitoring tracks passive signals between sessions, alerting care teams weeks before a crisis — turning reactive care into proactive care."
   story:
     heading: "Our story"
     subheading: "Born from an uncomfortable truth. Built to fix it."

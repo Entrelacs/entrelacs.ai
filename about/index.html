@@ -79,7 +79,10 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3>{%t about.pillars.t1 %}</h3>
+                    <div class="pillar-text">
+                        <h3>{% t about.pillars.t1 %}</h3>
+                        <p>{% t about.pillars.d1 %}</p>
+                    </div>
                 </div>
                 <div class="pillar-card">
                     <div class="pillar-icon">
@@ -104,7 +107,10 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3>{%t about.pillars.t2 %}</h3>
+                    <div class="pillar-text">
+                        <h3>{% t about.pillars.t2 %}</h3>
+                        <p>{% t about.pillars.d2 %}</p>
+                    </div>
                 </div>
                 <div class="pillar-card">
                     <div class="pillar-icon">
@@ -126,122 +132,135 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3>{%t about.pillars.t3 %}</h3>
+                    <div class="pillar-text">
+                        <h3>{% t about.pillars.t3 %}</h3>
+                        <p>{% t about.pillars.d3 %}</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="ourStory pageItem">
-    <div class="headerGroup">
-        <h2>{% t about.story.heading %}</h2>
-        <p>{% t about.story.subheading %}</p>
-    </div>
-
-    <div class="ourStory-inner">
-        <div class="ourStory-controls" aria-hidden="true">
-            <button class="story-arrow story-arrow-left" type="button">
-                <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
-            </button>
-            <button class="story-arrow story-arrow-right" type="button">
-                <img src="https://www.figma.com/api/mcp/asset/11c2c4f0-0fcd-4e19-a79a-ec8bdafeabcb" alt="">
-            </button>
-        </div>
-
-        <div id="ourStoryCard" class="ourStory-card">
-            <div class="ourStory-col ourStory-intro">
-                <p>{% t about.story.intro %}</p>
-                <p class="ourStory-question">{% t about.story.question %}</p>
+            <div class="headerGroup">
+                <h2>{% t about.story.heading %}</h2>
+                <p>{% t about.story.subheading %}</p>
             </div>
 
-            <div class="ourStory-col ourStory-image-main">
-                <img src="/images/d284eb6a-0b62-4f5b-b2cf-6ab552d45ba4.webp"
-                    alt="Person holding their head in their hands">
-            </div>
-
-            <div class="ourStory-col ourStory-text-main">
-                <p>
-                    {% t about.story.main_text %}
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="founderStory pageItem">
-    <div class="founderStory-card">
-        <div class="founderStory-header headerGroup">
-            <h2>{% t about.founder.heading %}</h2>
-            <p>{% t about.founder.subheading %}</p>
-        </div>
-
-        <div class="founderStory-main">
-            <div class="founderStory-photo-block">
-                <div class="founderStory-photo-wrapper">
-                    <img src="/images/DrHansIjzerman.png" alt="Portrait of Dr. Hans Rocha IJzerman">
+            <div class="ourStory-inner">
+                <div class="ourStory-controls" aria-hidden="true">
+                    <svg class="story-arrow story-arrow-left" xmlns="http://www.w3.org/2000/svg" width="56" height="56"
+                        viewBox="0 0 56 56" fill="none">
+                        <path
+                            d="M27.9987 51.3327C15.112 51.3327 4.66536 40.886 4.66536 27.9994C4.66536 15.1127 15.112 4.66602 27.9987 4.66602C40.8853 4.66602 51.332 15.1127 51.332 27.9994C51.332 40.886 40.8853 51.3327 27.9987 51.3327Z"
+                            fill="#FBFCFC" />
+                        <path d="M30.9414 36.237L22.7281 28.0003L30.9414 19.7637" stroke="#156B70" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="story-arrow story-arrow-right" xmlns="http://www.w3.org/2000/svg" width="56" height="56"
+                        viewBox="0 0 56 56" fill="none">
+                        <path
+                            d="M28.0013 51.3327C40.888 51.3327 51.3346 40.886 51.3346 27.9994C51.3346 15.1127 40.888 4.66602 28.0013 4.66602C15.1147 4.66602 4.66797 15.1127 4.66797 27.9994C4.66797 40.886 15.1147 51.3327 28.0013 51.3327Z"
+                            fill="#FBFCFC" />
+                        <path d="M25.0586 36.237L33.2719 28.0003L25.0586 19.7637" stroke="#156B70" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
-                <div class="founderStory-meta">
-                    <p class="founderStory-name">{% t about.founder.name %}</p>
-                    <p class="founderStory-role">{% t about.founder.role %}</p>
+
+                <div id="ourStoryCard" class="ourStory-card">
+                    <div class="ourStory-col ourStory-intro">
+                        <p>{% t about.story.intro %}</p>
+                        <p class="ourStory-question">{% t about.story.question %}</p>
+                    </div>
+
+                    <div class="ourStory-col ourStory-image-main">
+                        <img src="/images/d284eb6a-0b62-4f5b-b2cf-6ab552d45ba4.webp"
+                            alt="Person holding their head in their hands">
+                    </div>
+
+                    <div class="ourStory-col ourStory-text-main">
+                        <p>
+                            {% t about.story.main_text %}
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="founderStory-text">
-                <p class="founderStory-intro">
-                    {% t about.founder.intro %}
-                </p>
+        <section class="founderStory pageItem">
+            <div class="founderStory-card">
+                <div class="founderStory-header headerGroup">
+                    <h2>{% t about.founder.heading %}</h2>
+                    <p>{% t about.founder.subheading %}</p>
+                </div>
 
-                <p class="founderStory-pullquote">
-                    {% t about.founder.pullquote %}
-                </p>
+                <div class="founderStory-main">
+                    <div class="founderStory-photo-block">
+                        <div class="founderStory-photo-wrapper">
+                            <img src="/images/DrHansIjzerman.png" alt="Portrait of Dr. Hans Rocha IJzerman">
+                        </div>
+                        <div class="founderStory-meta">
+                            <p class="founderStory-name">{% t about.founder.name %}</p>
+                            <p class="founderStory-role">{% t about.founder.role %}</p>
+                        </div>
+                    </div>
 
-                <p class="founderStory-body">
-                    {% t about.founder.body %}
-                </p>
+                    <div class="founderStory-text">
+                        <p class="founderStory-intro">
+                            {% t about.founder.intro %}
+                        </p>
+
+                        <p class="founderStory-pullquote">
+                            {% t about.founder.pullquote %}
+                        </p>
+
+                        <p class="founderStory-body">
+                            {% t about.founder.body %}
+                        </p>
+                    </div>
+                </div>
+                <div id="foundertexthidden">
+                    <div>
+                        {% for paragraph in site.translations[site.lang].about.founder.extended_story %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="founderReadMore" class="founderStory-footer">
+                    <p>{% t about.common.more %}</p>
+                    <svg id="founderReadMoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.75 28.5C4.75 41.6168 15.3832 52.25 28.5 52.25C41.6168 52.25 52.25 41.6168 52.25 28.5C52.25 15.3832 41.6168 4.75 28.5 4.75C15.3832 4.75 4.75 15.3832 4.75 28.5Z"
+                            fill="#156B70" stroke="#FBFCFC" stroke-width="2" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.1153 25.5078L28.4991 33.8678L36.8828 25.5078" stroke="#FBFCFC" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
             </div>
-        </div>
-        <div id="foundertexthidden">
-            <div>
-                {% for paragraph in site.translations[site.lang].about.founder.extended_story %}
-                <p>{{ paragraph }}</p>
+        </section>
+
+        <section id="leadership" class="group pageItem">
+            <div class="headerGroup">
+                <h2>{% t team.leadership.title %}</h2>
+                <p>{% t team.leadership.subtitle %}</p>
+            </div>
+            <div class="groupList">
+                {% for member in site.translations[site.lang].team.leadership.list %}
+                <div class="groupListItem">
+                    <div class="img">
+                        {% if member.image %}
+                        <img src="{{ member.image }}" alt="{{ member.name }}">
+                        {% endif %}
+                    </div>
+                    <h3>{{ member.name }}</h3>
+                    <header>{{ member.role }}</header>
+                    <p>{{ member.bio }}</p>
+                </div>
                 {% endfor %}
             </div>
-        </div>
-        <div id="founderReadMore" class="founderStory-footer">
-            <p>{% t about.common.more %}</p>
-            <svg id="founderReadMoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M4.75 28.5C4.75 41.6168 15.3832 52.25 28.5 52.25C41.6168 52.25 52.25 41.6168 52.25 28.5C52.25 15.3832 41.6168 4.75 28.5 4.75C15.3832 4.75 4.75 15.3832 4.75 28.5Z"
-                    fill="#156B70" stroke="#FBFCFC" stroke-width="2" stroke-miterlimit="10"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.1153 25.5078L28.4991 33.8678L36.8828 25.5078" stroke="#FBFCFC" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-
-        </div>
-    </div>
-</section>
-
-<section id="leadership" class="group pageItem">
-    <div class="headerGroup">
-        <h2>{% t team.leadership.title %}</h2>
-        <p>{% t team.leadership.subtitle %}</p>
-    </div>
-    <div class="groupList">
-        {% for member in site.translations[site.lang].team.leadership.list %}
-        <div class="groupListItem">
-            <div class="img">
-                {% if member.image %}
-                <img src="{{ member.image }}" alt="{{ member.name }}">
-                {% endif %}
-            </div>
-            <h3>{{ member.name }}</h3>
-            <header>{{ member.role }}</header>
-            <p>{{ member.bio }}</p>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+        </section>
         <section id="extendedLeadership" class="group pageItem">
             <div class="headerGroup">
                 <h2>{% t team.extendedLeadership.title %}</h2>
