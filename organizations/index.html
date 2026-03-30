@@ -346,6 +346,12 @@
                     }
                 };
 
+                // Preload all benefit images to avoid jerky loading on tab switch
+                Object.keys(benefitsImageMap).forEach(function (key) {
+                    var img = new Image();
+                    img.src = benefitsImageMap[key].src;
+                });
+
                 // If there are no tabs or lists, do nothing
                 if (!tabs.length || !lists.length) return;
 
@@ -403,7 +409,12 @@
                     '/images/iPhone15(1).png',
                     '/images/employerLaptop.png'
                 ];
-
+                // Preload all images to avoid jerky loading on tab switch
+                howImages.forEach(function (src) {
+                    var img = new Image();
+                    img.src = src;
+                });
+                
                 // If no headers are found, do nothing
                 if (!stepHeaders.length) return;
 
