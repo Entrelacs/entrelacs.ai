@@ -303,7 +303,7 @@ employers:
           period: "Semaines 5–8"
         - label: "Optimisation et suivi des résultats"
           period: "En continu"
-      cta: "Utiliser le calculateur de ROI"
+      cta: "Voyez comment Entrelacs peut aide"
 
 
 health_systems:
@@ -377,7 +377,7 @@ health_systems:
           period: "Feuille de route d'intégration RH et flux de travail"
         - label: "Suivi des résultats"
           period: "Mesurer l'impact sur les coûts, les indicateurs de qualité et la satisfaction des patients"
-      cta: "Utiliser le calculateur de ROI"
+      cta: "Voir comment Entrelacs peut aider"
 
 
 clinicians:
