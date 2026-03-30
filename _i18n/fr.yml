@@ -720,6 +720,9 @@ about:
     t1: "Précision"          
     t2: "Personnalisation"
     t3: "Prévention"
+    d1: "Dépister avec une précision clinique, pas au hasard. Une évaluation conversationnelle de 15 minutes remplace les questionnaires fragmentés par une stratification des risques objective et multidimensionnelle."
+    d2: "Orienter vers le bon parcours de soins dès la première fois. L’IA connecte chaque individu à l’intervention la plus efficace dès le premier jour — réduisant les échecs de traitement et accélérant l’amélioration par 2 à 3 fois."
+    d3: "Détecter la détérioration avant qu’elle ne devienne une crise. Une surveillance continue suit les signaux passifs entre les séances et alerte les équipes de soins des semaines avant une crise — transformant des soins réactifs en soins proactifs."
   story:
     heading: "Notre histoire"
     subheading: "Née d'une vérité dérangeante. Conçue pour y remédier."

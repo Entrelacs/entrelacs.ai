@@ -62,10 +62,12 @@ main {
 }
 
 @media (max-width: 650px) {
-    .herocontent{
+    .herocontent {
         align-items: flex-start;
         text-align: left;
+        padding-bottom: 64px;
     }
+
     .herocontent h1 {
         font-size: 30px;
     }
@@ -73,8 +75,14 @@ main {
     .herocontent h2 {
         font-size: 1.7em;
     }
+
     .headerGroup h2 {
         font-size: 30px;
+    }
+
+    .headerGroup p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 
@@ -96,9 +104,9 @@ main {
     flex: 1 0 0;
     min-width: 0;
     padding: 24px;
-    border-radius: 24px;
-    border-radius: var(--Spacing-3, 24px);
+    border-radius: var(--Spacing-2, 16px);
     background: linear-gradient(180deg, rgba(247, 242, 230, 0.13) 2.37%, var(--Entrelacs-Yellow-100, rgba(255, 236, 187, 0.13)) 86.13%);
+    backdrop-filter: 100px;
 }
 
 .vision-card h3 {
@@ -122,6 +130,21 @@ main {
     }
 }
 
+@media (max-width: 650px) {
+    .vision-mission {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .vision-card h3 {
+        font-size: 24px;
+    }
+
+    .vision-card p {
+        font-size: 16px;
+    }
+}
+
 
 .threePillars {
     padding-top: 104px;
@@ -136,14 +159,15 @@ main {
 
 .pillar-card {
     width: 100%;
-    min-height: 300px;
+    min-height: 260px;
+    height: fit-content;
     padding: 40px;
     border-radius: 24px;
     background: rgba(188, 224, 228, 0.2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .pillar-icon svg {
@@ -160,6 +184,32 @@ main {
     color: var(--navy-blue);
 }
 
+.pillar-text {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.4s ease-in-out;
+}
+
+.pillar-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-gray2);
+    min-height: 0;
+    opacity: 0;
+    transform: translateY(8px);
+    overflow: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pillar-card:hover .pillar-text {
+    grid-template-rows: auto 1fr;
+}
+
+.pillar-card:hover .pillar-text p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width: 1024px) {
     .pillars-grid {
         flex-wrap: wrap;
@@ -170,8 +220,8 @@ main {
         width: 47%;
         min-height: 0px;
         flex-direction: row;
-        align-items: center;
-        justify-content: start;
+        align-items: flex-start;
+        justify-content: flex-start;
         padding: 40px 24px;
         gap: 20px;
     }
@@ -184,6 +234,12 @@ main {
 
     .pillar-card h3 {
         font-size: 24px;
+    }
+
+    .pillar-text {
+        flex: 1;
+        padding-top: 10px;
+        gap: 12px;
     }
 }
 
@@ -226,14 +282,7 @@ main {
     cursor: pointer;
 }
 
-.story-arrow img {
-    width: 100%;
-    height: 100%;
-}
 
-.story-arrow-left img {
-    transform: scaleX(-1);
-}
 
 .ourStory-card {
     background: #fbfcfc;
@@ -307,9 +356,11 @@ main {
         height: auto;
         max-height: none;
     }
+
     .ourStory-intro {
         width: 100%;
     }
+
     .ourStory-intro p {
         font-size: 24px;
         max-width: none;
@@ -318,6 +369,20 @@ main {
     .ourStory-text-main p {
         font-size: 18px;
         max-width: none;
+    }
+}
+@media (max-width: 650px) {
+    .ourStory-card{
+        padding: 24px;
+    }
+    .ourStory-intro p{
+        font-size: 16px;
+    }
+    .ourStory-question{
+        font-size: 20px !important;
+    }
+    .ourStory-text-main p {
+        font-size: 16px;
     }
 }
 
@@ -439,6 +504,31 @@ main {
     color: var(--text-gray);
 }
 
+#foundertexthidden {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+#foundertexthidden>div {
+    min-height: 0;
+}
+
+#foundertexthidden p {
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--text-gray2);
+    margin-bottom: 20px;
+}
+
+#foundertexthidden.show {
+    grid-template-rows: 1fr;
+}
+
+#foundertexthidden.hide {
+    grid-template-rows: 0fr;
+}
 
 @media (max-width: 1024px) {
     .founderStory-main {
@@ -467,6 +557,23 @@ main {
 
     .founderStory-pullquote {
         padding: 0;
+        font-size: 24px;
+    }
+    .founderStory-name{
+        font-size: 20px;
+    }
+    .founderStory-role{
+        font-size: 16px;
+    }
+    .founderStory-intro{
+        font-size: 16px;
+    }
+    .founderStory-body{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    #foundertexthidden p{
+        font-size: 16px;
     }
 }
 
@@ -606,41 +713,15 @@ main {
     }
 
     .groupListItem h3 {
-        font-size: 2em;
+        font-size: 20px;
     }
 
     .groupListItem header {
-        font-size: 2em;
+        font-size: 16px;
     }
 
     .groupListItem p {
-        font-size: 1.6em;
+        font-size: 14px;
     }
 
-}
-
-#foundertexthidden {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.8s ease-in-out;
-    overflow: hidden;
-}
-
-#foundertexthidden > div {
-    min-height: 0;
-}
-
-#foundertexthidden p {
-    font-size: 20px;
-    line-height: 1.45;
-    color: var(--text-gray2);
-    margin-bottom: 20px;
-}
-
-#foundertexthidden.show {
-    grid-template-rows: 1fr;
-}
-
-#foundertexthidden.hide {
-    grid-template-rows: 0fr;
 }
