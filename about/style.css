@@ -451,6 +451,20 @@ main {
         font-size: 16px;
     }
 }
+@media (max-width: 650px) {
+    .ourStory-card{
+        padding: 24px;
+    }
+    .ourStory-intro p{
+        font-size: 16px;
+    }
+    .ourStory-question{
+        font-size: 20px !important;
+    }
+    .ourStory-text-main p {
+        font-size: 16px;
+    }
+}
 
 .founderStory {
     padding-top: 104px;
