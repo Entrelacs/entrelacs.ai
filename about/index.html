@@ -182,6 +182,56 @@
                             {% t about.story.main_text %}
                         </p>
                     </div>
+
+                    <div id="ourStorytexthidden">
+                        <div id="osth1" class="osthcombined">
+                            <img src="/images/ourstory1.webp" alt="">
+                            <p>
+                                This isn't a fringe hypothesis. It's what the research increasingly shows. And it's what
+                                many clinicians — and many patients — already know from experience: finding the right
+                                mental health care, matched to who you actually are, is genuinely hard. When your
+                                assessment doesn't actually capture who you are, the care pathway it points to may be
+                                the wrong one entirely. And finding the right care — matched to who you actually are —
+                                is already genuinely hard, even for people with clinical training and system knowledge.
+                                The technology to do better now exists. What was missing was the will — and the team —
+                                to build it properly.
+                            </p>
+                        </div>
+                        <div id="osth2" class="ourStory-col ourStory-image-main">
+                            <img src="/images/ourstory2.webp" alt="">
+                        </div>
+                        <div id="osth3" class="ourStory-col ourStory-text-main">
+                            <p>Entrelacs was founded to close that gap. Built on a foundation of open science —informed by
+                                80,000+ research articles, and developed through years of interviews with individuals in 8
+                                countries— Entrelacs brings together AI, dynamic psychometric modeling, and continuous
+                                monitoring to do what no mental health tool has done before: assess, match, and track the
+                                individual, not the average. And because the platform understands who each person is — not
+                                just what their score is — it can do something no reactive system can: identify
+                                deterioration before it becomes crisis, and connect people to the right support before it’s
+                                urgently needed.
+                            </p>
+                        </div>
+                        <div id="osth4" class="osthcombined">
+                            <p>Today, Entrelacs is moving toward CE Mark certification in 2027, with strategic
+                                partnerships spanning Stanford, UC Davis, Oxford, and the Psychological Science
+                                Accelerator — and a clear commercial pathway into the employers, health systems, and
+                                clinical networks that need it most.</p>
+                            <img src="/images/ourstory3.webp" alt="">
+                        </div>
+                    </div>
+                    <div id="ourStoryReadmore" style="margin: 0 auto;" class="founderStory-footer">
+                        <p>Read more</p>
+                        <svg id="ourStoryReadmoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.75 28.5C4.75 41.6168 15.3832 52.25 28.5 52.25C41.6168 52.25 52.25 41.6168 52.25 28.5C52.25 15.3832 41.6168 4.75 28.5 4.75C15.3832 4.75 4.75 15.3832 4.75 28.5Z"
+                                fill="#156B70" stroke="#FBFCFC" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.1153 25.5078L28.4991 33.8678L36.8828 25.5078" stroke="#FBFCFC" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -323,26 +373,166 @@
         </div>
         {% include cta_banner.html %}
         <script>
-            const container = document.getElementById('ourStoryCard');
-            const leftBtn = document.querySelector('.story-arrow-left');
-            const rightBtn = document.querySelector('.story-arrow-right');
-            console.log(container, leftBtn, rightBtn);
-            // Define how far to scroll (e.g., 300px or container.clientWidth)
-            const scrollAmount = 350;
+            (function () {
+                const container = document.getElementById('ourStoryCard');
+                const leftBtn = document.querySelector('.story-arrow-left');
+                const rightBtn = document.querySelector('.story-arrow-right');
 
-            leftBtn.addEventListener('click', () => {
-                container.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
-            });
+                if (!container || !leftBtn || !rightBtn) return;
 
-            rightBtn.addEventListener('click', () => {
-                container.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
+                // Distance (in px) and duration (in ms) for one keyboard move
+                const scrollAmount = 350;
+                const duration = 350;
+
+                let animationFrameId = null;
+
+                const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+
+                const animateScroll = (direction) => {
+                    if (animationFrameId) {
+                        cancelAnimationFrame(animationFrameId);
+                        animationFrameId = null;
+                    }
+
+                    const start = container.scrollLeft;
+                    const distance = direction === 'left' ? -scrollAmount : scrollAmount;
+                    const startTime = performance.now();
+
+                    const step = (now) => {
+                        const elapsed = now - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = easeInOutQuad(progress);
+
+                        container.scrollLeft = start + distance * eased;
+
+                        if (progress < 1) {
+                            animationFrameId = requestAnimationFrame(step);
+                        } else {
+                            animationFrameId = null;
+                        }
+                    };
+
+                    animationFrameId = requestAnimationFrame(step);
+                };
+
+                // --- Continuous scroll while mouse is held down ---
+                let holdFrameId = null;
+                let isHolding = false;
+
+                const stopHoldScroll = () => {
+                    isHolding = false;
+                    if (holdFrameId) {
+                        cancelAnimationFrame(holdFrameId);
+                        holdFrameId = null;
+                    }
+                };
+
+                const startHoldScroll = (direction) => {
+                    stopHoldScroll();
+                    isHolding = true;
+
+                    const speedPxPerMs = 0.6; // ~600px/second, smooth and responsive
+                    let lastTime = null;
+
+                    const loop = (now) => {
+                        if (!isHolding) return;
+
+                        if (lastTime === null) {
+                            lastTime = now;
+                        }
+
+                        const delta = now - lastTime;
+                        lastTime = now;
+
+                        const deltaPx = delta * speedPxPerMs * (direction === 'left' ? -1 : 1);
+                        container.scrollLeft += deltaPx;
+
+                        holdFrameId = requestAnimationFrame(loop);
+                    };
+
+                    holdFrameId = requestAnimationFrame(loop);
+                };
+
+                // Mouse hold support on SVG arrows
+                leftBtn.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    startHoldScroll('left');
                 });
-            });
+
+                rightBtn.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    startHoldScroll('right');
+                });
+
+                ['mouseup', 'mouseleave'].forEach((eventName) => {
+                    leftBtn.addEventListener(eventName, stopHoldScroll);
+                    rightBtn.addEventListener(eventName, stopHoldScroll);
+                });
+
+                // Also stop when mouse is released anywhere on the page
+                document.addEventListener('mouseup', stopHoldScroll);
+
+                // Make SVG arrows keyboard-focusable and operable with Enter/Space
+                [leftBtn, rightBtn].forEach((btn, index) => {
+                    if (!btn) return;
+                    btn.setAttribute('tabindex', '0');
+                    btn.setAttribute('role', 'button');
+
+                    btn.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            animateScroll(index === 0 ? 'left' : 'right');
+                        }
+                    });
+                });
+
+                // Global keyboard support with ArrowLeft / ArrowRight
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        animateScroll('left');
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        animateScroll('right');
+                    }
+                });
+            })();
+        </script>
+        <script>
+            (function () {
+                const ourStoryHidden = document.querySelector('#ourStorytexthidden');
+                const ourStoryReadMore = document.querySelector('#ourStoryReadmore');
+                const ourStoryReadMoreButton = document.querySelector('#ourStoryReadmoreButton');
+
+                if (!ourStoryHidden || !ourStoryReadMore || !ourStoryReadMoreButton) return;
+
+                ourStoryReadMore.addEventListener('click', () => {
+                    const isHidden = window.getComputedStyle(ourStoryHidden).display === 'none';
+
+                    if (isHidden) {
+                        // Show extra story content
+                        ourStoryHidden.style.display = 'flex';
+                        if (window.innerWidth <= 850) {
+                            ourStoryHidden.style.flexDirection = 'column';
+                        }
+
+                        setTimeout(() => {
+                            ourStoryReadMore.querySelector('p').innerText = "close";
+                            ourStoryReadMore.classList.add('less');
+                            ourStoryReadMoreButton.style.transform = 'rotate(180deg)';
+                        }, 200);
+                    } else {
+                        // Hide extra story content
+                        ourStoryHidden.style.display = 'none';
+
+                        setTimeout(() => {
+                            ourStoryReadMore.querySelector('p').innerText = "Read more";
+                            ourStoryReadMore.classList.remove('less');
+                            ourStoryReadMoreButton.style.transform = 'rotate(0deg)';
+                        }, 200);
+                    }
+                });
+            })();
         </script>
         <script>
             const foundertexthidden = document.querySelector('#foundertexthidden')
