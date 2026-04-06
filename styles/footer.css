@@ -45,6 +45,7 @@
     margin-left: 20px;
     font-size: 50px;
     font-weight: 700;
+    font-family: Open Sans;
 }
 
 .logoContainer {
@@ -71,6 +72,9 @@
 .linksContainer a {
     font-size: 16px;
     font-weight: 700;
+}
+.linksContainer a:hover {
+    text-decoration: underline;
 }
 
 .footerSponsers {

@@ -223,11 +223,11 @@ employers:
     title: "How entrelacs works for employers"
     subtitle: "From Invisible Risk to Measurable Action"
     steps:
-      - title: "Personalized Employee Assessment"
+      - title: "Personalized employee assessment"
         text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
-      - title: "Individual Insights & Support"
+      - title: "Individual insights & support"
         text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
-      - title: "Team & Organizational Intelligence"
+      - title: "Team & organizational intelligence"
         text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
   differentiation:
     title: "What makes Entrelacs different"
@@ -728,6 +728,8 @@ about:
     hidden_text_1: "This isn't a fringe hypothesis. It's what the research increasingly shows. And it's what many clinicians — and many patients — already know from experience: finding the right mental health care, matched to who you actually are, is genuinely hard. When your assessment doesn't actually capture who you are, the care pathway it points to may be the wrong one entirely. And finding the right care — matched to who you actually are — is already genuinely hard, even for people with clinical training and system knowledge. The technology to do better now exists. What was missing was the will — and the team — to build it properly."
     hidden_text_2: "Entrelacs was founded to close that gap. Built on a foundation of open science — informed by 80,000+ research articles, and developed through years of interviews with individuals in 8 countries — Entrelacs brings together AI, dynamic psychometric modeling, and continuous monitoring to do what no mental health tool has done before: assess, match, and track the individual, not the average. And because the platform understands who each person is — not just what their score is — it can do something no reactive system can: identify deterioration before it becomes crisis, and connect people to the right support before it’s urgently needed."
     hidden_text_3: "Today, Entrelacs is moving toward CE Mark certification in 2027, with strategic partnerships spanning Stanford, UC Davis, Oxford, and the Psychological Science Accelerator — and a clear commercial pathway into the employers, health systems, and clinical networks that need it most."
+    more: 'Read more'
+    less: 'Collapse'
   founder:
     heading: "Founder story"
     subheading: "The scientist who stopped believing in the average person."

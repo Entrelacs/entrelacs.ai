@@ -80,7 +80,20 @@
                         </svg>
                     </div>
                     <div class="pillar-text">
-                        <h3>{% t about.pillars.t1 %}</h3>
+                        <div class="ptext-head">
+                            <h3>{% t about.pillars.t1 %}</h3>
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Arrow / Caret_Down_MD">
+                                        <path id="Vector" d="M16 10L12 14L8 10" stroke="var(--navy-blue)" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
                         <p>{% t about.pillars.d1 %}</p>
                     </div>
                 </div>
@@ -108,7 +121,20 @@
                         </svg>
                     </div>
                     <div class="pillar-text">
-                        <h3>{% t about.pillars.t2 %}</h3>
+                        <div class="ptext-head">
+                            <h3>{% t about.pillars.t2 %}</h3>
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Arrow / Caret_Down_MD">
+                                        <path id="Vector" d="M16 10L12 14L8 10" stroke="var(--navy-blue)" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
                         <p>{% t about.pillars.d2 %}</p>
                     </div>
                 </div>
@@ -133,7 +159,20 @@
                         </svg>
                     </div>
                     <div class="pillar-text">
-                        <h3>{% t about.pillars.t3 %}</h3>
+                        <div class="ptext-head">
+                            <h3>{% t about.pillars.t3 %}</h3>
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Arrow / Caret_Down_MD">
+                                        <path id="Vector" d="M16 10L12 14L8 10" stroke="var(--navy-blue)" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
                         <p>{% t about.pillars.d3 %}</p>
                     </div>
                 </div>
@@ -203,7 +242,7 @@
                         </div>
                     </div>
                     <div id="ourStoryReadmore" style="margin: 0 auto;" class="founderStory-footer">
-                        <p>{% t about.common.more %}</p>
+                        <p>{% t about.story.more %}</p>
                         <svg id="ourStoryReadmoreButton" width="57" height="57" viewBox="0 0 57 57" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -500,7 +539,7 @@
                         }
 
                         setTimeout(() => {
-                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.less }}";
+                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.story.less }}";
                             ourStoryReadMore.classList.add('less');
                             ourStoryReadMoreButton.style.transform = 'rotate(180deg)';
                         }, 200);
@@ -509,7 +548,7 @@
                         ourStoryHidden.style.display = 'none';
 
                         setTimeout(() => {
-                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.common.more }}";
+                            ourStoryReadMore.querySelector('p').innerText = "{{ site.translations[site.lang].about.story.more }}";
                             ourStoryReadMore.classList.remove('less');
                             ourStoryReadMoreButton.style.transform = 'rotate(0deg)';
                         }, 200);

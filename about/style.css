@@ -170,12 +170,28 @@ main {
     /* justify-content: center; */
 }
 
+.pillar-icon {
+    max-height: 84px;
+    margin-bottom: 24px;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: top left;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease, margin-bottom 0.35s ease;
+}
+
 .pillar-icon svg {
     width: 84px;
     height: 84px;
-    margin-bottom: 24px;
 }
-
+.pillar-card .ptext-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pillar-card .ptext-head svg{
+    display: none;
+}
 .pillar-card h3 {
     font-family: "DM Sans";
     font-size: 36px;
@@ -199,6 +215,15 @@ main {
     transform: translateY(8px);
     overflow: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 651px) {
+    .pillar-card:hover .pillar-icon {
+        max-height: 0;
+        opacity: 0;
+        transform: scale(0.94);
+        margin-bottom: 0;
+    }
 }
 
 .pillar-card:hover .pillar-text {
@@ -229,7 +254,12 @@ main {
     .pillar-icon svg {
         width: 50px;
         height: 50px;
+    }
+
+    .pillar-icon {
+        max-height: 50px;
         margin-bottom: 0;
+        flex-shrink: 0;
     }
 
     .pillar-card h3 {
@@ -246,6 +276,9 @@ main {
 @media (max-width: 800px) {
     .pillar-card {
         width: 100%;
+    }
+    .pillar-card .ptext-head svg {
+        display: block;
     }
 }
 
