@@ -793,6 +793,7 @@ main {
     height: 120px;
     margin-bottom: 0;
     flex-shrink: 0;
+    background: #E0EEFF;
 }
 
 @media (max-width: 890px) {
