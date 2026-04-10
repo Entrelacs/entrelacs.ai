@@ -17,13 +17,14 @@ footer:
     healthcare: "Healthcare"
     about: "About Us"
     technology: "Technology"
+    approach: "Our Approach"
     roi_calculator: "ROI Calculator"
     contact: "Contact Us"
   legal:
     privacy: "Privacy policy"
     terms: "Terms of Use"
     mentions: "Legal mentions"
-  copyright: "Entrelacs 2025"
+  copyright: "Entrelacs 2026"
 
 404: "Sorry but this page does not exist"
 
@@ -344,7 +345,7 @@ health_systems:
     row4:
       title: "Regulatory confidence and clinical trust"
       bullets:
-        - "CE Mark certification pathway (Q2 2026)"
+        - "CE Mark certification pathway (Q2 2027)"
         - "Clinical validation across 8 countries, 37 markets"
         - "HIPAA compliant and SOC 2 Type II certified"
         - "Evidence-based positioning for procurement requirements"
