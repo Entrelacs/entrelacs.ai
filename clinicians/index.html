@@ -16,6 +16,7 @@
     {% include navBar.html %}
     <main class="page">
         <div id="hero" class="pageItem">
+            <div class="pageItemContainer">
             <div class="left">
                 <h2>{% t clinicians.hero.subtitle %}</h2>
                 <h1>{% t clinicians.hero.title %}</h1>
@@ -30,9 +31,11 @@
             <div class="right">
                 <img src="/images/clinicans1.webp" alt="">
             </div>
+            </div>
         </div>
 
         <div id="hiddenCost" class="pageItem">
+            <div class="pageItemContainer">
             <section class="lsection lcentered hiddenCostSection">
                 <div class="hiddenCostHeader">
                     <div class="tag red">{% t clinicians.hidden_cost.tag %}</div>
@@ -59,10 +62,12 @@
                     <p>{{ hc.bottom_text_line1 }}</p>
                 </div>
             </section>
+            </div>
         </div>
 
 
         <div id="superpowers" class="pageItem">
+            <div class="pageItemContainer">
             {% assign sp = site.translations[site.lang].clinicians.superpowers %}
             <section class="superpowersSection">
                 <div class="superpowersHeader">
@@ -79,6 +84,7 @@
                     {% endfor %}
                 </div>
             </section>
+            </div>
         </div>
 
         <div id="solution" class="pageItem">

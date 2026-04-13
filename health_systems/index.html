@@ -16,6 +16,7 @@
     {% include navBar.html %}
     <main class="page">
         <div id="hero" class="pageItem">
+            <div class="pageItemContainer">
             <div class="left">
                 <h2>{% t health_systems.hero.subtitle %}</h2>
                 <h1>{% t health_systems.hero.title %}</h1>
@@ -30,9 +31,11 @@
             <div class="right">
                 <img src="/images/healthSystems1.webp" alt="">
             </div>
+            </div>
         </div>
 
         <div id="hiddenCost" class="pageItem">
+            <div class="pageItemContainer">
             <section class="lsection lcentered hiddenCostSection">
                 <div class="hiddenCostHeader">
                     <div class="tag red">{% t health_systems.hidden_cost.tag %}</div>
@@ -40,6 +43,7 @@
                     <p class="lsectionP">{% t health_systems.hidden_cost.text_intro %}</p>
                 </div>
             </section>
+            </div>
         </div>
 
         <div id="solution" class="pageItem">
