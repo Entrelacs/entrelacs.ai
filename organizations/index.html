@@ -16,51 +16,55 @@
     {% include navBar.html %}
     <main class="page">
         <div id="hero" class="pageItem">
-            <div class="left">
-                <h2>{% t employers.hero.subtitle %}</h2>
-                <h1>{% t employers.hero.title %}</h1>
-                <p class="subheader">{% t employers.hero.description %}</p>
-                <div class="ctas">
-                    <a href="{{ site.baseurl}}/waiting-list/" class="cta"
-                        style="color: var(--teal); background: var(--teal-light);">
-                        {% t home.cta_banner.waiting_list %}
-                    </a>
-                    <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employers.hero.cta_demo %}</a>
+            <div class="pageItemContainer">
+                <div class="left">
+                    <h2>{% t employers.hero.subtitle %}</h2>
+                    <h1>{% t employers.hero.title %}</h1>
+                    <p class="subheader">{% t employers.hero.description %}</p>
+                    <div class="ctas">
+                        <a href="{{ site.baseurl}}/waiting-list/" class="cta"
+                            style="color: var(--teal); background: var(--teal-light);">
+                            {% t home.cta_banner.waiting_list %}
+                        </a>
+                        <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employers.hero.cta_demo %}</a>
+                    </div>
                 </div>
-            </div>
-            <div class="right">
-                <img src="/images/employersHero.webp" alt="">
+                <div class="right">
+                    <img src="/images/employersHero.webp" alt="">
+                </div>
             </div>
         </div>
 
         <div id="hiddenCost" class="pageItem">
-            <section class="lsection lcentered hiddenCostSection">
-                <div class="hiddenCostHeader">
-                    <div class="tag red">{% t employers.hidden_cost.tag %}</div>
-                    <h2>{% t employers.hidden_cost.title %}</h2>
-                    <p class="lsectionP">{% t employers.hidden_cost.text_intro %}</p>
-                </div>
+            <div class="pageItemContainer">
+                <section class="lsection lcentered hiddenCostSection">
+                    <div class="hiddenCostHeader">
+                        <div class="tag red">{% t employers.hidden_cost.tag %}</div>
+                        <h2>{% t employers.hidden_cost.title %}</h2>
+                        <p class="lsectionP">{% t employers.hidden_cost.text_intro %}</p>
+                    </div>
 
-                <div class="hiddenCostCard">
-                    <div class="hiddenCostStats">
-                        {% assign stats = site.translations[site.lang].employers.hidden_cost.stats %}
-                        {% for stat in stats %}
-                        <div class="hiddenCostStat">
-                            <div class="hiddenCostValue">{{ stat.value }}</div>
-                            <div class="hiddenCostBody">
-                                <p>{{ stat.body_line1 }}</p>
-                                <p>{{ stat.body_line2 }}</p>
+                    <div class="hiddenCostCard">
+                        <div class="hiddenCostStats">
+                            {% assign stats = site.translations[site.lang].employers.hidden_cost.stats %}
+                            {% for stat in stats %}
+                            <div class="hiddenCostStat">
+                                <div class="hiddenCostValue">{{ stat.value }}</div>
+                                <div class="hiddenCostBody">
+                                    <p>{{ stat.body_line1 }}</p>
+                                    <p>{{ stat.body_line2 }}</p>
+                                </div>
+                                <p class="hiddenCostSource">{{ stat.source }}</p>
                             </div>
-                            <p class="hiddenCostSource">{{ stat.source }}</p>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
-                    </div>
 
-                    <div class="hiddenCostFooter">
-                        {% assign hc = site.translations[site.lang].employers.hidden_cost %}
-                        <p>{{ hc.bottom_text_line1 }}</p>
+                        <div class="hiddenCostFooter">
+                            {% assign hc = site.translations[site.lang].employers.hidden_cost %}
+                            <p>{{ hc.bottom_text_line1 }}</p>
+                        </div>
                     </div>
-                </div>
+            </div>
             </section>
         </div>
 
@@ -182,51 +186,53 @@
         </div>
 
         <div id="pricingRoi" class="pageItem">
-            {% assign pricing = site.translations[site.lang].employers.pricing %}
+            <div class="pageItemContainer">
+                {% assign pricing = site.translations[site.lang].employers.pricing %}
 
-            <h2 class="pricingMobileHeader">{{ pricing.title }}</h2>
-            <section class="pricingSection">
-                <div class="pricingLeft">
-                    <h2>{{ pricing.title }}</h2>
-                    <ul class="pricingList">
-                        {% for item in pricing.bullets %}
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none">
-                                <rect width="32" height="32" rx="16" fill="#156B70" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.7934 9.8542L13.2467 19.0675L10.7134 16.3609C10.2467 15.9209 9.51338 15.8942 8.98005 16.2675C8.46005 16.6542 8.31338 17.3342 8.63338 17.8809L11.6334 22.7609C11.9267 23.2142 12.4334 23.4942 13.0067 23.4942C13.5534 23.4942 14.0734 23.2142 14.3667 22.7609C14.8467 22.1342 24.0067 11.2142 24.0067 11.2142C25.2067 9.98753 23.7534 8.90753 22.7934 9.84086V9.8542Z"
-                                    fill="#EAF1F1" />
-                            </svg>
-                            <p><strong>{{ item.strong }}</strong>{{ item.rest }}</p>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    <a href="{{ site.baseurl }}/contact-us/" class="cta pricingCta">{{ pricing.cta }}</a>
-                </div>
+                <h2 class="pricingMobileHeader">{{ pricing.title }}</h2>
+                <section class="pricingSection">
+                    <div class="pricingLeft">
+                        <h2>{{ pricing.title }}</h2>
+                        <ul class="pricingList">
+                            {% for item in pricing.bullets %}
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <rect width="32" height="32" rx="16" fill="#156B70" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.7934 9.8542L13.2467 19.0675L10.7134 16.3609C10.2467 15.9209 9.51338 15.8942 8.98005 16.2675C8.46005 16.6542 8.31338 17.3342 8.63338 17.8809L11.6334 22.7609C11.9267 23.2142 12.4334 23.4942 13.0067 23.4942C13.5534 23.4942 14.0734 23.2142 14.3667 22.7609C14.8467 22.1342 24.0067 11.2142 24.0067 11.2142C25.2067 9.98753 23.7534 8.90753 22.7934 9.84086V9.8542Z"
+                                        fill="#EAF1F1" />
+                                </svg>
+                                <p><strong>{{ item.strong }}</strong>{{ item.rest }}</p>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <a href="{{ site.baseurl }}/contact-us/" class="cta pricingCta">{{ pricing.cta }}</a>
+                    </div>
 
-                <div class="pricingRight">
-                    <div class="pricingCard">
-                        <div class="pricingPriceRow">
-                            <span class="pricingAmount">{{ pricing.price.amount }}</span>
-                            <span class="pricingSuffix">{{ pricing.price.suffix }}</span>
-                        </div>
-                        <p class="pricingLine">
-                            {{ pricing.price.line_prefix }}
-                            <span class="pricingLineHighlight">{{ pricing.price.line_roi }}</span>{{
-                            pricing.price.line_suffix }}
-                        </p>
-                        <div class="pricingCalculator">
-                            <p>
-                                {{ pricing.calculator.before_link }}
-                                <a href="{{ site.baseurl }}/roi_calculator/" class="pricingCalculatorLink">{{
-                                    pricing.calculator.link }}</a>{{ pricing.calculator.after_link }}
+                    <div class="pricingRight">
+                        <div class="pricingCard">
+                            <div class="pricingPriceRow">
+                                <span class="pricingAmount">{{ pricing.price.amount }}</span>
+                                <span class="pricingSuffix">{{ pricing.price.suffix }}</span>
+                            </div>
+                            <p class="pricingLine">
+                                {{ pricing.price.line_prefix }}
+                                <span class="pricingLineHighlight">{{ pricing.price.line_roi }}</span>{{
+                                pricing.price.line_suffix }}
                             </p>
-                            <p>{{ pricing.calculator.line2 }}</p>
+                            <div class="pricingCalculator">
+                                <p>
+                                    {{ pricing.calculator.before_link }}
+                                    <a href="{{ site.baseurl }}/roi_calculator/" class="pricingCalculatorLink">{{
+                                        pricing.calculator.link }}</a>{{ pricing.calculator.after_link }}
+                                </p>
+                                <p>{{ pricing.calculator.line2 }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
         {% assign gs = site.translations[site.lang].employers.getting_started %}
         {% include getting_started.html hero_image="/images/employersPage2.webp" %}
@@ -333,7 +339,7 @@
                     var img = new Image();
                     img.src = src;
                 });
-                
+
                 // If no headers are found, do nothing
                 if (!stepHeaders.length) return;
 
