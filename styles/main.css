@@ -48,8 +48,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
-  max-width: 1500px;
-  margin: 0 auto;
 }
 
 * {
@@ -165,7 +163,16 @@ button{
   padding-left: 120px !important;
   padding-right: 120px !important;
 }
-
+.pageItemContainer{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
 @media (max-width: 900px) {
   .pageItem{
     padding-left: 80px !important;

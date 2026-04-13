@@ -46,6 +46,7 @@
         letter-spacing: -1px;
         margin: 12px 0 16px;
     }
+
     .ctaBanner p {
         color: #495050;
         text-align: center;
@@ -56,16 +57,19 @@
         line-height: 145%;
         max-width: 1000px;
     }
+
     @media (max-width: 750px) {
-        .tags p{
+        .tags p {
             font-size: 14px;
         }
-        .cctas{
+
+        .cctas {
             flex-direction: column;
             width: 100%;
 
         }
-        .ctaBanner h2{
+
+        .ctaBanner h2 {
             font-size: 30px;
             margin-top: 24px;
         }
@@ -74,15 +78,17 @@
 
 
 <div class="pageItem ctaBanner">
-    <div class="tags">
-        {% for tag in site.translations[site.lang].cta_banner.tags %}
-        <p>{{ tag }}</p>
-        {% endfor %}
-    </div>
-    <h2>{% t cta_banner.title %}</h2>
-    <p>{% t cta_banner.description %}</p>
-    <div class="cctas" style="margin-top: 40px;">
-        <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
-        <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t cta_banner.cta_secondary %}</a>
+    <div class="pageItemContainer">
+        <div class="tags">
+            {% for tag in site.translations[site.lang].cta_banner.tags %}
+            <p>{{ tag }}</p>
+            {% endfor %}
+        </div>
+        <h2>{% t cta_banner.title %}</h2>
+        <p>{% t cta_banner.description %}</p>
+        <div class="cctas" style="margin-top: 40px;">
+            <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
+            <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t cta_banner.cta_secondary %}</a>
+        </div>
     </div>
 </div>
