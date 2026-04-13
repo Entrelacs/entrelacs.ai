@@ -12,8 +12,8 @@
 <body>
     {%- include navBar.html -%}
     <main>
-        <section class="hero">
-            <div class="herocontent pageItem">
+        <section class="hero pageItem">
+            <div class="herocontent pageItemContainer">
                 <div class="tag2">{% t about.hero.tag %}</div>
                 <h1>{% t about.hero.heading %}</h1>
                 <p>{% t about.hero.p1 %}</p>
@@ -23,6 +23,7 @@
         </section>
 
         <section class="vision-mission pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t about.vision_mission.heading %}</h2>
                 <p>
@@ -40,9 +41,11 @@
                 </article>
                 {% endfor %}
             </div>
+            </div>
         </section>
 
         <section class="threePillars pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t about.pillars.heading %}</h2>
             </div>
@@ -177,9 +180,11 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <section class="ourStory pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t about.story.heading %}</h2>
                 <p>{% t about.story.subheading %}</p>
@@ -256,9 +261,11 @@
 
                 </div>
             </div>
+            </div>
         </section>
 
         <section class="founderStory pageItem">
+            <div class="pageItemContainer">
             <div class="founderStory-card">
                 <div class="founderStory-header headerGroup">
                     <h2>{% t about.founder.heading %}</h2>
@@ -311,9 +318,11 @@
 
                 </div>
             </div>
+            </div>
         </section>
 
         <section id="leadership" class="group pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t team.leadership.title %}</h2>
                 <p>{% t team.leadership.subtitle %}</p>
@@ -332,8 +341,10 @@
                 </div>
                 {% endfor %}
             </div>
+            </div>
         </section>
         <section id="extendedLeadership" class="group pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t team.extendedLeadership.title %}</h2>
             </div>
@@ -351,9 +362,11 @@
                 </div>
                 {% endfor %}
             </div>
+            </div>
         </section>
 
         <section id="advisors" class="group pageItem">
+            <div class="pageItemContainer">
             <div class="headerGroup">
                 <h2>{% t team.advisors.title %}</h2>
                 <p>{% t team.advisors.subtitle %}</p>
@@ -379,9 +392,11 @@
                 </div>
                 {% endfor %}
             </div>
+            </div>
         </section>
         {% include sponsors.html %}
         <div class="pageItem" style="padding: 80px;">
+            <div class="pageItemContainer">
             <div class="tag green">{% t about.who_we_serve.tag %}</div>
             <div class="headerGroup">
                 <h2>{% t about.who_we_serve.heading %}</h2>
@@ -392,6 +407,7 @@
             {% if card_data %}
             {% include ctaCards.html cards=card_data %}
             {% endif %}
+            </div>
         </div>
         {% include cta_banner.html %}
         <script>
