@@ -129,14 +129,22 @@
   height: 40px;
   color: #fff;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
+  .navLinks a{
+    font-size: 14px;
+  }
+}
+@media (max-width: 1290px) {
   .navLinks .cta{
     display: none;
+  }
+  .navLinks a{
+    font-size: 14px;
   }
 }
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
   .nav_container {
     padding: 0 24px;
   }
@@ -150,18 +158,10 @@
     display: block;
   }
 }
-
 .navactive{
   color: var(--teal);
 }
 
-
-.gtranslate_wrapper{
-  /* display: none; */
-  /* width: 0px;
-  height: 0px;
-  overflow: hidden; */
-}
 
 .languageSwitcher{
   width: 40px;
