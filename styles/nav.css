@@ -85,7 +85,7 @@
 .hamburger span {
   height: 4px;
   width: 100%;
-  background: var(--dark-blue);
+  background: var(--text-white);
   margin: 4px 0;
   border-radius: 2px;
   transition: 0.3s;
@@ -103,7 +103,7 @@
   width: 100%;
   padding: 1rem 0;
   z-index: 15;
-  background: #eaf6f3; 
+  background: var(--surface-teal); 
   backdrop-filter: blur(100px);
 }
 .mobileMenu ul {

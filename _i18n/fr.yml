@@ -1,5 +1,6 @@
 navigation:
   home: "Accueil"
+  employers: "Pour les employeurs"
   organizations: "Organisations"
   health_systems: "Systèmes de santé"
   clinicians: "Cliniciens"
@@ -33,8 +34,8 @@ home:
     title: "Entrelacs"
   video_link: https://www.youtube.com/embed/8Fzfn64_KF0?si=t0QUz5IS1bdXzJmB
   hero:
-    tag_text: "IA de qualité clinique pour la santé mentale"
-    title_prefix: "La santé mentale bénéficie enfin d'une détection précoce"
+    tag_text: "Santé cérébrale. Personnelle, privée, précise."
+    title_prefix: "L'actif sur lequel repose votre entreprise n'a jamais été mesuré."
     wheel:
       item1: "quand cela compte"
       item2: "avec l'IA clinique"
@@ -240,117 +241,135 @@ employers:
   meta:
     title: "Entrelacs pour les Employeurs"
   hero:
-    subtitle: "ENTRELACS POUR LES EMPLOYEURS"
-    title: "Prévenez les crises de santé mentale avant qu'elles n'affectent vos résultats"
-    description: "Entrelacs vous offre une visibilité précoce sur le désengagement, la solitude et le risque de départ — afin que vous puissiez agir avant que cela ne se transforme en épuisement professionnel, en absence, en démission ou en crise."
+    eyebrow: "ENTRELACS POUR LES EMPLOYEURS"
+    title: "Votre budget avantages sociaux est intégralement financé. Il ne voit simplement pas qui en a besoin."
+    description: "À mesure que l'IA absorbe l'exécution routinière, ce qui reste est le travail le plus sensible à la manière dont vos équipes se portent réellement — jugement, adaptation, collaboration. Cette capacité est du capital cérébral, et elle ne figure sur aucun tableau de bord que vous possédez. Entrelacs la mesure à travers le lien social, le déterminant disposant des preuves les plus solides et de la charge la plus faible — et la mesure personne par personne, car une moyenne vous dit que le groupe est en difficulté sans vous dire qui, ni pourquoi."
     cta_demo: "Demander une démo"
-  hidden_cost:
+    cta_sample: "Voir un exemple de rapport"
+  credibility:
+    items:
+      - "Pre-Submission FDA déposée"
+      - "Développé avec un programme de recherche EU Horizon LONELY-EU de 3 M€"
+      - "Conseillé par des chercheurs de Stanford et UC Davis"
+      - "Aligné sur les travaux politiques de l'OMS et de l'OCDE sur le lien social"
+  decade:
     tag: "Le problème"
-    title: "Le coût caché de la déconnexion est déjà dans vos chiffres"
-    text_intro: "Les crises de santé mentale coûtent à votre organisation du temps, de l’argent et des talents — et les signaux d’alerte étaient présents bien avant la crise. Les chiffres parlent d’eux‑mêmes :"
+    title: "Une décennie de dépenses. Toujours aucun signal."
+    intro:
+      - "Les organisations consacrent 93 % de leurs dépenses en IA à la technologie et 7 % à préparer les personnes censées l'absorber (Deloitte, Tech Trends 2026). Ce qui détermine le retour sur investissement, c'est la capacité d'adaptation de vos équipes — ce que l'OCDE appelle le capital cérébral. Il ne peut pas être testé directement : un test cognitif devient un examen de performance dès qu'on le répète. Il faut donc le lire à travers ses déterminants, ce que personne ne fait."
+      - "Les outils qui s'en approchent le plus n'aideraient pas même s'ils le pouvaient. Ils comparent les personnes à une moyenne de population, si bien que deux employés obtenant le même score peuvent être épuisés pour des raisons totalement différentes. L'un n'a personne vers qui se tourner ; l'autre ne se sent pas reconnu. Tous deux obtiennent 5,5 sur 7 à votre test. Une décennie de dépenses en programmes d'aide aux employés, applications de bien-être et enquêtes d'engagement a produit des programmes, pas une mesure. Chacun d'eux est aveugle au même endroit :"
+    rows:
+      - title: "Le programme d'aide aux employés attend d'être sollicité — et il ne l'est presque jamais."
+        text: "82 % des employeurs en proposent un ; le taux d'utilisation reste à un chiffre"
+        source: "SHRM, 2024"
+      - title: "L'enquête d'engagement rapporte des moyennes"
+        text: "Quelques fois par an, elle décrit le groupe — jamais l'individu — et les employés répondent en sachant que les résultats remontent à la direction. 42 % pensent que révéler une difficulté de santé mentale nuirait à leur carrière"
+        source: "NAMI & Ipsos, 2025"
+      - title: "Les solutions ponctuelles exigent de lever la main"
+        text: "Chaque outil ne s'active que lorsqu'un employé en difficulté s'identifie lui-même dans un contexte où cela semble risqué. Environ 97 % des utilisateurs d'outils de santé mentale numériques autonomes abandonnent en 30 jours ; la rétention médiane à 30 jours est de 3,3 %"
+        source: "Baumel et al., 2019"
     stats:
-      - value: "36 %"
-        body_line1: "des employés dans le monde "
-        body_line2: "se sentent seuls au travail."
+      - value: "1 sur 5"
+        text: "employés dans le monde déclarent se sentir souvent seuls la veille de l'enquête"
         source: "Gallup, 2024"
-      - value: "2×"
-        body_line1: "plus susceptibles de quitter leur poste "
-        body_line2: "dans les 12 mois."
-        source: "Cigna, 2020"
-      - value: "$154B"
-        body_line1: "perdus chaque année par les employeurs américains"
-        body_line2: "en raison de la solitude au travail."
-        source: "Cigna, 2020"
-      - value: "5,7"
-        body_line1: "jours d’arrêt maladie supplémentaires par an "
-        body_line2: "pris par les employés isolés."
-        source: "Bowers et al., 2022"
-    bottom_text_line1: "Lorsque la solitude apparaît dans les entretiens de sortie, il est déjà trop tard. Entrelacs détecte la déconnexion 4 à 6 semaines plus tôt — transformant une crise coûteuse en opportunité d’action proactive."
-  how_it_works:
-    title: "Comment Entrelacs fonctionne pour les employeurs"
-    subtitle: "Du risque invisible à l'action mesurable"
-    steps:
-      - title: "Évaluation personnalisée de l'employé"
-        text: "Les employés participent à de brefs échanges conversationnels (5 à 7 minutes) sur leur connexion sociale, à la fois de manière générale et au sein de leur équipe."
-      - title: "Analyses et accompagnement individuels"
-        text: "Chaque employé reçoit des analyses confidentielles sur ses dynamiques relationnelles, ainsi que des recommandations pratiques et personnalisées adaptées à ses besoins et à son style."
-      - title: "Intelligence collective et organisationnelle"
-        text: "Avec le consentement des employés, des données anonymisées et agrégées offrent aux RH et aux managers une visibilité accrue sur les dynamiques d’équipe et la qualité des relations au sein de l’organisation."
-  differentiation:
-    title: "Ce qui distingue Entrelacs"
-    subtitle: "Au-delà des enquêtes d’engagement traditionnelles"
-  benefits:
-    title: "Des avantages qui retiennent vos meilleurs talents"
-    subtitle: "Des informations précoces qui protègent votre personnel."
-    hr:
-      title: "RH et Leadership"
-      list:
-        - "Détection précoce du risque de départ avant les entretiens de sortie"
-        - "Réduction des coûts de roulement — jusqu’à 50–200 % du salaire économisé par employé"
-        - "Allocation des ressources basée sur les données"
-        - "Indicateurs culturels renforcés (appartenance, sécurité, confiance)"
-    managers:
-      title: "Gestionnaires"
-      list:
-        - "Visibilité claire sur les défis de connexion de l'équipe"
-        - "Conversations de soutien opportunes"
-        - "Renforcement d'équipe ciblé et efficace"
-    employees:
-      title: "Employés"
-      list:
-        - "Conscience de leurs besoins de connexion"
-        - "Conseils pratiques et personnalisés"
-        - "Expérience confidentielle avec contrôle total des données"
-  pricing:
-    title: "Tarifs et ROI"
-    bullets:
-      - strong: "Aucune donnée individuelle d’employé"
-        rest: " n’est partagée avec les employeurs"
-      - strong: "ROI de 4 à 5× "
-        rest: "sur les investissements préventifs en santé mentale"
-      - strong: "Des résultats visibles en quelques semaines,"
-        rest: " pas en plusieurs mois"
-    cta: "Contactez-nous"
-    price:
-      amount: "150 €"
-      suffix: "par employé et par an"
-      line_prefix: "Moins que votre programme d’aide aux employés actuel, avec "
-      line_roi: "un ROI de 4 à 5×"
-      line_suffix: ""
-    calculator:
-      before_link: "Utilisez notre "
-      link: "calculateur de ROI"
-      after_link: " pour estimer les économies potentielles"
-      line2: "liées à la réduction du turnover"
-  getting_started:
-    title: "Bien démarrer"
-    subtitle: "Pour les responsables RH et les organisations."
-    hero:
-      heading: "Planifiez une démonstration pour découvrir comment Entrelacs améliore vos flux de travail"
-      body: "De votre première conversation jusqu'à un pilote pleinement opérationnel, Entrelacs est conçu pour s'intégrer rapidement — afin que vos équipes passent d'une gestion de crise réactive à un accompagnement prédictif de votre personnel en quelques semaines."
-      what_title: "Ce que vous obtenez"
-      what_list:
-        - "Accès à la plateforme pour les groupes d’employés sélectionnés"
-        - "Formation des RH et des managers avec un accompagnement complet à la mise en œuvre"
-        - "Données de ROI et suivi des résultats montrant l’impact mesurable sur votre personnel"
-      next_title: "Prochaines étapes"
-      next_list:
-        - "Demander une démonstration personnalisée et une estimation du ROI"
-        - "Concevoir un programme pilote adapté à votre organisation"
-        - "Assurer la formation, l’onboarding et un soutien continu à l’optimisation"
-      cta: "Demander une démo"
-    timeline:
-      title: "Calendrier de mise en œuvre"
-      stages:
-        - label: "Démo et estimation du ROI"
-          period: "Semaines 1–2"
-        - label: "Mise en œuvre et formation"
-          period: "Semaines 3–4"
-        - label: "Conception et lancement du programme pilote"
-          period: "Semaines 5–8"
-        - label: "Optimisation et suivi des résultats"
-          period: "En continu"
-      cta: "Voyez comment Entrelacs peut aide"
+      - value: "154 Md$"
+        text: "coût annuel estimé du déficit de lien social au travail en perte de productivité et absentéisme"
+        source: "U.S. Surgeon General, 2023"
+      - value: "50–55 %"
+        text: "des emplois américains devraient être transformés par l'IA d'ici deux à trois ans"
+        source: "Boston Consulting Group, 2026"
+      - value: "2,2 %"
+        text: "des entreprises évaluées mènent des enquêtes auprès des employés centrées sur la santé et le bien-être"
+        source: "S&P Global / McKinsey Health Institute, 2025"
+    footer: "Quand le risque apparaît dans un entretien de sortie, vous lisez déjà de l'histoire. Ce qui manque n'est pas un autre programme. C'est la mesure."
+  three_moves:
+    tag: "Comment ça marche"
+    title: "De l'invisible à l'actionnable, en trois mouvements"
+    accordion:
+      - title: "Une conversation, pas une enquête"
+        text: "Les employés participent à un bref échange conversationnel — cinq à sept minutes — sur leur lien social, de manière générale et au sein de leur équipe. Cela ressemble à une conversation, pas à un exercice de conformité, ce qui favorise des réponses sincères."
+        image: "/images/employersPage/accordion1.png"
+      - title: "Un miroir privé pour chaque employé"
+        text: "Chaque personne voit sa propre signature et ses relations clés, accompagnées d'analyses qu'elle peut utiliser. Personne ne fait de rapport sur elle ; ce qu'elle en fait lui appartient."
+        image: "/images/employersPage/accordion2.png"
+      - title: "De vraies tendances pour votre organisation"
+        text: "Avec le consentement des employés, des signaux anonymisés et agrégés montrent si les différentes parties de votre organisation renforcent leur capacité de lien social ou la perdent — bien avant que cela n'apparaisse dans les données de départ."
+        image: "/images/employersPage/accordion3.png"
+    note: "Rien ici ne remplace une vraie conversation. Cela vous indique simplement où en avoir une."
+    cta_sample: "Voir un exemple de rapport"
+  cohort:
+    tag: "Ce que vous faites du signal"
+    title: "Quand la capacité d'un collectif commence à s'éroder"
+    subtitle: "La mesure ne compte que si elle change une décision. Deux boucles fonctionnent dès le premier jour."
+    employee_card:
+      title: "La boucle de l'employé, privée"
+      text: "Chaque personne voit sa propre signature et sa relation clé, accompagnées d'analyses qu'elle peut utiliser. Personne ne fait de rapport sur elle ; ce qu'elle en fait lui appartient."
+    org_card:
+      title: "Votre boucle, agrégée"
+      text: "Le tableau de bord vous montre, par exemple, que les domaines de lien social au travail d'une fonction se sont érodés deux relevés de suite, concentrés sur la sécurité psychologique des employés — les personnes ne se sentent pas libres de s'exprimer sans que cela leur coûte. C'est exploitable : entraînez les managers à répondre aux erreurs et aux désaccords, clarifiez les rôles et les droits de décision, réinitialisez les normes d'équipe sur la manière de soulever des préoccupations. Ce sont des signaux directionnels sur la main-d'œuvre, pas des alertes cliniques sur des individus, et nous fournissons des recommandations de gouvernance conçues par des cliniciens sur la façon de répondre. Sur un trimestre, ces mêmes relevés vous disent quelque chose qu'aucune enquête d'engagement ne peut : si les parties de votre organisation absorbant le plus de changement lié à l'IA maintiennent leur capacité, ou la perdent silencieusement."
+    roadmap:
+      title: "Sur la feuille de route"
+      text: "Un système de recommandation pour construire le capital cérébral au niveau de l'équipe, un routage intégré au produit qui connecte chaque personne, en privé, aux ressources nommées de votre offre d'avantages sociaux — jamais un rapport sur un individu à l'employeur — ainsi que des intégrations SIRH et outils collaboratifs."
+    consent:
+      title: "Votre consentement, en quatre lignes"
+      items:
+        - "La participation est volontaire. Ne pas participer n'a aucune visibilité pour votre employeur."
+        - "Le consentement est explicite et révocable à tout moment. Le retirer arrête la collecte."
+        - "L'usage à des fins de recherche fait l'objet d'un consentement séparé, demandé et révocable séparément."
+        - "L'infrastructure est chiffrée et conforme au RGPD, avec hébergement en UE pour les déploiements européens et un traitement aligné HIPAA dans les contextes de soin."
+  stop_guessing:
+    tag: "Pourquoi c'est différent"
+    title: "Arrêtez de deviner. Commencez à mesurer."
+    description: "Entrelacs ne concurrence pas votre PAE, votre plateforme clinique ou vos avantages bien-être. C'est la couche de mesure qui leur a toujours manqué. Votre dispositif a été conçu pour répondre ; ce qui lui manque, c'est l'instrument qui montre où une réponse est nécessaire. Lors d'une revue de consolidation, Entrelacs montre quelles solutions méritent leur renouvellement et lesquelles non — et parce qu'il mesure le déterminant de la capacité cognitive plutôt que le ressenti, il répond à une question que votre dispositif n'a jamais été conçu pour résoudre : votre main-d'œuvre peut-elle absorber le changement que vous lui demandez ?"
+    accordion:
+      - title: "Individuel, pas moyen — ce qui en fait un instrument"
+        text: "Tous les autres outils de ce budget mesurent le ressenti ou délivrent des soins, et évaluent les individus par rapport à une moyenne de population. Entrelacs mesure le déterminant de la capacité cognitive individu par individu : le premier instrument professionnel que nous connaissions qui modélise chaque personne sur sa propre référence. Un capital cérébral mesuré sur des moyennes n'est pas une mesure du capital cérébral — c'est une enquête d'engagement avec un nouveau vocabulaire."
+      - title: "Honnête, par construction"
+        text: "Les plateformes d'enquête ne peuvent pas modéliser les individus sans devenir de la surveillance ; les plateformes de soins ne peuvent pas mesurer tout le monde sans abandonner le modèle de soins qu'elles vendent. Le verrou de confidentialité est le mécanisme qui rend la donnée vraie, et c'est une position que les acteurs historiques ne peuvent structurellement pas copier."
+      - title: "Ancré cliniquement"
+        text: "Construit sur cinq ans de recherche — 354 entretiens approfondis dans huit pays et cinq continents, une revue systématique des instruments de lien social validés dans le monde, et une étude de validation psychométrique avec des échantillons représentatifs de trois pays — et conçu selon des standards cliniques : méthode de mesure en attente de brevet, pré-soumission FDA déposée, classification De Novo en cours. Un niveau de rigueur qu'aucune application de bien-être ou fournisseur d'enquête ne possède."
+  what_you_get:
+    tag: "Ce qui est disponible et ce qui arrive"
+    title: "Ce que vous obtenez aujourd'hui — et vers où va l'instrument."
+    live:
+      title: "Disponible dès maintenant (V1)"
+      items:
+        - "Évaluation conversationnelle et personnalisée du lien social (44 domaines : 26 vie personnelle, 18 milieu professionnel)"
+        - "Profil de lien social individuel par employé : signature en cinq domaines et relation clé à plus fort effet de levier"
+        - "Rapport de capital cérébral au niveau du collectif : quelles parties de l'organisation maintiennent leur capacité et lesquelles s'érodent"
+        - "Rapport de tendance directionnelle du collectif entre les relevés — où le lien social évolue, et dans quels domaines. Pas de prédiction."
+        - "Tableau de bord organisationnel agrégé (collectifs de dix personnes ou plus) : tendances, schémas, facteurs par domaine"
+        - "Infrastructure conforme au RGPD ; architecture priorisant la confidentialité, avec des données appartenant à l'employé"
+    roadmap:
+      title: "Sur la feuille de route"
+      items:
+        - "Recommandations privées et personnalisées adaptées à la relation clé de chaque employé, issues d'une bibliothèque d'interventions validées (V1.3)"
+        - "Alerte précoce prédictive validée à partir d'une mesure longitudinale (en cours de validation pour la V2)"
+        - "Domaines supplémentaires au-delà du lien social, incluant des dimensions liées à la dépression et à l'anxiété, sur le même pipeline scientifique"
+        - "Routage intégré au produit vers les ressources nommées de votre offre d'avantages sociaux — privé pour l'employé, jamais un rapport à l'employeur — ainsi que des intégrations SIRH et outils collaboratifs"
+    disclaimer: "Nous publions cette distinction volontairement. Les acheteurs de cette catégorie se sont vu promettre trop, trop vaguement, depuis une décennie — et nous préférons perdre une vente sur ce que nous ne savons pas encore faire que d'en gagner une sur cette base."
+  faq:
+    title: "Questions fréquentes"
+    items:
+      - q: "Que peut réellement voir mon organisation ?"
+        a: "Des tendances agrégées et anonymisées sur des cohortes d'au moins dix personnes : évolutions, domaines, direction. Jamais les réponses, scores ou l'identité d'un individu. Le même document d'une page en langage clair que nous remettons à vos employés décrit exactement ce que vous pouvez et ne pouvez pas voir."
+      - q: "Pourquoi les employés utiliseraient-ils cet outil alors qu'ils n'utilisent pas notre PAE ?"
+        a: "Le PAE demande à une personne en difficulté de lever la main. Entrelacs donne à chaque personne une lecture privée de son propre lien social. C'est un pari de conception, et nous le traitons comme tel : les taux de participation et de retour vous sont rapportés chaque trimestre, à partir de votre propre effectif."
+      - q: "Pourquoi mesurer le lien social plutôt que tester directement la capacité cognitive ?"
+        a: "Parce qu'un test cognitif à l'échelle de l'effectif devient un examen de performance. Les gens l'optimisent, il ne peut pas être répété à un rythme régulier, et il produit de l'anxiété d'évaluation exactement dans la population que vous cherchez à protéger. Le capital cérébral doit être mesuré à travers ses déterminants, et le lien social est le seul qui puisse être mesuré en continu sans que la mesure ne modifie ce qu'elle mesure."
+      - q: "Quel est le lien avec notre investissement dans l'IA ?"
+        a: "Direct. Le retour sur l'IA dépend de la capacité des personnes à assumer un travail plus stratégique, à s'adapter assez vite et à mettre en œuvre le changement. Vous mesurez déjà en détail le volet technologique de cet investissement. Voici l'instrument pour l'autre volet, sur le même rythme trimestriel."
+      - q: "Notre plateforme d'engagement ajoute des scores de bien-être. N'est-ce pas la même chose ?"
+        a: "Non, et la différence est structurelle, pas une simple fonctionnalité manquante. Une plateforme d'engagement rapporte des moyennes à la direction, car les managers en sont les acheteurs. Cette architecture ne peut pas produire une mesure au niveau individuel sans devenir de la surveillance, et elle ne peut pas produire de données honnêtes tant que les employés savent que les résultats remontent. Ajouter une question de bien-être à une enquête construite sur des moyennes vous donne un nouveau chiffre avec les deux mêmes défauts : il ne peut pas vous dire qui, ni pourquoi."
+      - q: "Est-ce que cela remplace ce que nous avons déjà ?"
+        a: "Cela remplace les suppositions, pas les programmes. Entrelacs est la couche de mesure au-dessus de votre dispositif existant — elle montre où votre PAE, votre plateforme clinique et vos dépenses de bien-être sont nécessaires, et lors d'une revue de consolidation, quelles solutions méritent leur renouvellement."
+  final_cta:
+    badge: "Santé cérébrale. Personnelle, privée, précise."
+    title: "Commencez à mesurer l'actif dont tout le reste dépend."
+    subtext: "Nous constituons notre prochaine cohorte de partenaires de conception avec un petit groupe d'employeurs qui souhaitent un accès anticipé, une influence directe sur la feuille de route, et un moyen proactif de protéger leur personnel."
+    cta_primary: "Demander une démo"
+    cta_secondary: "Devenir partenaire de conception →"
+
 
 
 health_systems:

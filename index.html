@@ -266,29 +266,7 @@
             </div>
         </div>
 
-        <div class="pageItem lsection" style="background: #F4F5F7;">
-            <div class="pageItemContainer">
-                <div class="helpNowCard">
-                    <div class="helpNowText">
-                        <h3>{% t home.help_now.heading %}</h3>
-                        <p>{% t home.help_now.intro1 %}</p>
-                        <p>{% t home.help_now.intro2 %}</p>
-                        <ul>
-                            {% for item in site.translations[site.lang].home.help_now.items %}
-                            <li>
-                                <strong>{{ item.label }}</strong> — {% if item.link %}<a href="{{ item.link }}"
-                                    target="_blank" rel="noopener">{{ item.link_text }}</a> {% endif %}{{ item.text }}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <p>{% t home.help_now.outro %}</p>
-                    </div>
-                    <div class="helpNowImage">
-                        <img src="{% t home.help_now.image %}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include helpNow.html %}
 
         {% include cta_banner.html %}
 

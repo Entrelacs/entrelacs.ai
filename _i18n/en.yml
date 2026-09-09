@@ -1,6 +1,6 @@
 navigation:
   home: "Home"
-  organizations: "For Organizations"
+  employers: "For Employers"
   health_systems: "For Health Systems"
   clinicians: "For Clinicians"  
   technology: "Technology"
@@ -13,7 +13,7 @@ footer:
   company_name: "Entrelacs"
   nav:
     home: "Home"
-    organizations: "Organizations"
+    employers: "For Employers"
     healthcare: "Healthcare"
     about: "About Us"
     technology: "Technology"
@@ -244,117 +244,135 @@ employers:
   meta:
     title: "Entrelacs for Employers"
   hero:
-    subtitle: "ENTRELACS FOR EMPLOYERS"
-    title: "Prevent mental health crises before they hit your bottom line"
-    description: "Entrelacs gives you early visibility into disconnection, loneliness, and flight risk — so you can act before it becomes burnout, an absence, a resignation, or a crisis."
-    cta_demo: "Request a Demo"
-  hidden_cost:
+    eyebrow: "ENTRELACS FOR EMPLOYERS"
+    title: "Your benefits stack is fully funded. It just can't see who needs it."
+    description: "As AI absorbs routine execution, what remains is the work most sensitive to how your people are actually doing — judgment, adaptation, collaboration. That capacity is brain capital, and it sits on no dashboard you own. Entrelacs measures it through social connection, the determinant with the strongest evidence and the lowest burden — and measures it one person at a time, because an average tells you the group is struggling without telling you who, or why."
+    cta_demo: "Request a demo"
+    cta_sample: "See a sample report"
+  credibility:
+    items:
+      - "FDA Pre-Submission filed"
+      - "Built alongside a €3M EU Horizon LONELY-EU research program"
+      - "Advised by researchers at Stanford and UC Davis"
+      - "Aligned with WHO and OECD policy work on social connection"
+  decade:
     tag: "The problem"
-    title: "The hidden cost of disconnection is already in your numbers"
-    text_intro: "Mental health crises cost your organization time, money, and talent — and the warning signs were there long before the crisis hit. The numbers tell the story:"
+    title: "A decade of spending. Still no signal."
+    intro:
+      - "Organizations put 93% of AI spending into technology and 7% into enabling the people expected to absorb it (Deloitte, Tech Trends 2026). What decides the return is your people's capacity to adapt — what the OECD calls brain capital. It can't be tested directly: a cognitive test becomes a performance exam the moment you repeat it. So it has to be read through its determinants, and nobody does."
+      - "The tools that come closest wouldn't help if they did. They score people against a population mean, so two employees returning the same number can be depleted for entirely different reasons. One person has no one to turn to; another feels they are not recognized. Both score a 5.5 out of 7 on your test. A decade of spend on EAPs, wellness apps and engagement surveys produced programs, not measurement. Every one of them is blind in the same place:"
+    rows:
+      - title: "The EAP waits to be called — and mostly isn't."
+        text: "82% of employers offer one; utilization sits in the low single digits"
+        source: "SHRM, 2024"
+      - title: "The engagement survey reports averages"
+        text: "A few times a year, it describes the group — never the individual — and employees answer knowing results roll up to management. 42% believe disclosing a mental health struggle would damage their career"
+        source: "NAMI & Ipsos, 2025"
+      - title: "Point solutions require a raised hand"
+        text: "Every tool activates only when a struggling employee self-identifies in an environment where doing so feels risky. Roughly 97% of users of standalone digital mental health tools drop out within 30 days; median 30-day retention is 3.3%"
+        source: "Baumel et al., 2019"
     stats:
-      - value: "36%"
-        body_line1: "of employees worldwide "
-        body_line2: "feel lonely at work."
+      - value: "1 in 5"
+        text: "employees worldwide report feeling lonely a lot of the previous day"
         source: "Gallup, 2024"
-      - value: "2×"
-        body_line1: "more likely to quit "
-        body_line2: "within 12 months."
-        source: "Cigna, 2020"
       - value: "$154B"
-        body_line1: "lost annually by US employers"
-        body_line2: "due to workplace loneliness."
-        source: "Cigna, 2020"
-      - value: "5.7"
-        body_line1: "extra sick days per year "
-        body_line2: "taken by lonely employees."
-        source: "Bowers et al, 2022"
-    bottom_text_line1: "By the time loneliness shows up in exit interviews, it's already too late. Entrelacs detects disconnection 4–6 weeks early — turning a costly crisis into a proactive win."
-  how_it_works:
-    title: "How entrelacs works for employers"
-    subtitle: "From Invisible Risk to Measurable Action"
-    steps:
-      - title: "Personalized employee assessment"
-        text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
-      - title: "Individual insights & support"
-        text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
-      - title: "Team & organizational intelligence"
-        text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
-  differentiation:
-    title: "What makes Entrelacs different"
-    subtitle: "Beyond traditional engagement surveys"
-  benefits:
-    title: "Benefits that keep your best people"
-    subtitle: "Early insights that protect your workforce."
-    hr:
-      title: "HR & Leadership"
-      list:
-        - "Early detection of flight risk before exit interviews"
-        - "Reduced turnover costs — up to 50–200% of salary saved per employee"
-        - "Data-driven resource allocation"
-        - "Stronger cultural metrics (belonging, safety, trust)"
-    managers:
-      title: "Managers"
-      list:
-        - "Clear visibility into team connection challenges"
-        - "Timely support conversations"
-        - "Targeted team-building that actually works"
-    employees:
-      title: "Employees"
-      list:
-        - "Awareness of their connection needs"
-        - "Practical, personalized guidance"
-        - "Confidential experience with full control of their data"
-  pricing:
-    title: "Pricing & ROI"
-    bullets:
-      - strong: "No individual employee data"
-        rest: " shared with employers"
-      - strong: "4–5x ROI "
-        rest: "on preventive mental health investment"
-      - strong: "Results visible in weeks,"
-        rest: " not months"
-    cta: "Contact us"
-    price:
-      amount: "€150"
-      suffix: "per employee/year"
-      line_prefix: "Less than your current EAP, with "
-      line_roi: "4–5x"
-      line_suffix: " the ROI"
-    calculator:
-      before_link: "Use our "
-      link: "ROI calculator"
-      after_link: " to see potential savings"
-      line2: "from reduced turnover"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For HR leaders & organizations."
-    hero:
-      heading: "Schedule a demonstration to see how Entrelacs enhances your workflow"
-      body: "From your first conversation to a fully running pilot, Entrelacs is designed to integrate quickly — so your team can move from reactive crisis management to predictive workforce support in a matter of weeks."
-      what_title: "What you get"
-      what_list:
-        - "Platform access for your selected employee groups"
-        - "HR and manager training with full implementation support"
-        - "ROI data and outcome tracking showing measurable impact on your workforce"
-      next_title: "Next Steps"
-      next_list:
-        - "Request a personalized demo and ROI assessment"
-        - "Pilot program designed around your organization"
-        - "Training, onboarding, and ongoing optimization support"
-      cta: "Request a demo"
-    timeline:
-      title: "Implementation Timeline"
-      stages:
-        - label: "Demo & ROI Assessment"
-          period: "Week 1–2"
-        - label: "Implementation & Training"
-          period: "Week 3–4"
-        - label: "Pilot Program Design & Launch"
-          period: "Week 5–8"
-        - label: "Optimization & Results Tracking"
-          period: "Ongoing"
-      cta: "See how Entrelacs can help"
+        text: "estimated annual cost of the workplace connection deficit in lost productivity and absenteeism"
+        source: "U.S. Surgeon General, 2023"
+      - value: "50–55%"
+        text: "of U.S. jobs expected to be reshaped by AI within two to three years"
+        source: "Boston Consulting Group, 2026"
+      - value: "2.2%"
+        text: "of companies assessed run employee surveys focused on health and wellbeing"
+        source: "S&P Global / McKinsey Health Institute, 2025"
+    footer: "By the time risk shows up in an exit interview, you're reading history. The gap isn't another program. It's measurement."
+  three_moves:
+    tag: "How it works"
+    title: "From unmeasured to actionable, in three moves"
+    accordion:
+      - title: "A conversation, not a survey"
+        text: "Employees talk privately with Entrelacs — about fifteen minutes the first time. Lacis places each person with people whose psychology moves the way theirs does, then draws only the questions that carry real information for someone in that group. Connection is the entry point for a reason: among the determinants of brain health it carries the strongest evidence at the lowest burden, and it is the only one you can measure repeatedly without the measurement becoming a test."
+        image: "/images/employersPage/accordion1.png"
+      - title: "A private mirror for every employee"
+        text: "Each person receives a confidential picture of their own connection: their Key Connection Signature, the five areas that matter most for them right now, and within it the Connection Keystone, the one place where acting would help most. The reading serves the employee first, which gives people a reason of their own to come back. Management is locked out in the architecture, not in a policy."
+        image: "/images/employersPage/accordion2.png"
+      - title: "True patterns for your organization"
+        text: "You see aggregated, anonymized patterns across cohorts of ten or more: which teams' connection is eroding, which domains are driving it, and where your existing programs are most needed. At a 1,000-person organization that typically means readouts by department, site, and function, with every cohort at or above the privacy threshold. No individual is ever exposed, and employees know it. That is why the data you act on is data people gave honestly."
+        image: "/images/employersPage/accordion3.png"
+    note: "See what you'd get — an annotated sample of the organizational dashboard and one anonymized individual report, including the in-product label that tells employees how their data is aggregated (“these results are aggregated across 15 employees”). We show the privacy architecture rather than describing it."
+    cta_sample: "See a sample report"
+  cohort:
+    tag: "What you do with the signal"
+    title: "When a cohort's capacity starts eroding"
+    subtitle: "Measurement only matters if it changes a decision. Two loops run from day one."
+    employee_card:
+      title: "The employee's loop, private"
+      text: "Each person sees their own signature and keystone, alongside insights they can use. No one reports on them; what they do with it is theirs alone."
+    org_card:
+      title: "Your loop, aggregate"
+      text: "The dashboard shows you, for example, that one function's workplace-connection domains have eroded two readings in a row, concentrated in employees' psychological safety — people don't feel they can speak up without it costing them. That is actionable: coach managers on how they respond to mistakes and dissent, clarify roles and decision rights, reset team norms on raising concerns. These are directional workforce signals, not clinical alerts on individuals, and we provide clinician-built governance guidance on how to respond. Read across a quarter, the same readouts tell you something no engagement survey can: whether the parts of your organization absorbing the most AI-driven change are holding their capacity, or quietly losing it."
+    roadmap:
+      title: "On the roadmap"
+      text: "A recommendation system for building brain capital at team level, in-product routing that connects each person privately to the named resources in your benefits stack — never a report on an individual to the employer — plus HRIS and collaboration tool integrations."
+    consent:
+      title: "Your consent, in four lines"
+      items:
+        - "Participation is voluntary. Not participating has no visibility to your employer."
+        - "Consent is explicit and revocable at any point. Withdrawing it stops collection."
+        - "Research use is a separate consent, asked separately and withdrawable separately."
+        - "Infrastructure is encrypted and GDPR-compliant, with EU hosting for European deployments and HIPAA-aligned handling in care settings."
+  stop_guessing:
+    tag: "Why different"
+    title: "Stop guessing. Start measuring."
+    description: "Entrelacs does not compete with your EAP, your clinical platform, or your wellness benefits. It is the measurement layer they have always been missing. Your stack was built to respond; what it lacks is the instrument that shows where response is needed. In a consolidation review, Entrelacs shows which lines are earning their renewal and which are not — and because it measures the determinant of cognitive capacity rather than sentiment, it answers a question your stack was never built to answer: whether your workforce can carry the change you're asking of it."
+    accordion:
+      - title: "Individual, not average — which is what makes it an instrument"
+        text: "Every other tool in this budget measures sentiment or delivers care, and scores people against a population mean. Entrelacs measures the determinant of cognitive capacity person by person: the first workplace instrument we know of that models each individual on their own baseline. Brain capital measured on averages isn't brain capital measurement — it's an engagement survey with new vocabulary."
+      - title: "Honest, by architecture"
+        text: "Survey platforms cannot model individuals without becoming surveillance; care platforms cannot measure everyone without abandoning the care model they sell. The privacy lockout is the mechanism that makes the data true, and it is a position incumbents structurally cannot copy."
+      - title: "Clinically grounded"
+        text: "Built on five years of research — 354 in-depth interviews across eight countries and five continents, a systematic review of the world's validated social-connection instruments, and psychometric validation study with representative samples from three countries — and engineered to clinical standards: patent-pending measurement method, FDA Pre-Submission filed, De Novo classification being pursued. A level of rigor no wellness app or survey vendor carries."
+  what_you_get:
+    tag: "What's live and what's next"
+    title: "What you get today — and where the instrument is going."
+    live:
+      title: "Live now (V1)"
+      items:
+        - "Conversational, person-specific assessment of social connection (44 domains: 26 life, 18 workplace)"
+        - "Individual connection profile per employee: five-domain signature and highest-leverage keystone"
+        - "Brain capital reporting at cohort level: which parts of the organization are holding capacity and which are eroding"
+        - "Directional cohort trend reporting across readings — where connection is moving, and in which domains. Not prediction."
+        - "Aggregated organizational dashboard (cohorts of ten or more): patterns, trends, domain drivers"
+        - "GDPR-compliant infrastructure; privacy-first architecture with employee-owned data"
+    roadmap:
+      title: "On the roadmap"
+      items:
+        - "Personalized private recommendations matched to each employee's keystone, from an evidence-tagged intervention library (V1.3)"
+        - "Validated predictive early warning from longitudinal measurement (in validation for V2)"
+        - "Additional domains beyond connection, including dimensions of depression and anxiety, on the same scientific pipeline"
+        - "In-product routing to the named resources in your benefits stack — private to the employee, never a report to the employer — plus HRIS and collaboration-tool integrations"
+    disclaimer: "We publish this distinction on purpose. Buyers in this category have been promised too much, too vaguely, for a decade — and we would rather lose a deal on what we can't do yet than win one on it."
+  faq:
+    title: "Frequently asked questions"
+    items:
+    - q: "What can my organization actually see?"
+      a: "Aggregated, anonymized patterns across cohorts of at least ten people: trends, domains, direction. Never an individual's responses, scores, or identity. The same plain-language one-pager we give your employees describes exactly what you can and cannot see."
+    - q: "Why will employees use this when they don't use our EAP?"
+      a: "The EAP asks a struggling person to raise a hand. Entrelacs gives every person a private reading of their own connection. That is a design bet, and we treat it like one: participation and return-use rates are reported to you quarterly, from your own workforce."
+    - q: "Why measure connection rather than testing cognitive capacity directly?"
+      a: "Because a cognitive test at workforce scale becomes a performance exam. People optimize for it, it can't be repeated at cadence, and it produces evaluation anxiety in exactly the population you're trying to protect. Brain capital has to be measured through its determinants, and connection is the only one that can be measured continuously without the measurement changing the thing measured."
+    - q: "How does this connect to our AI investment?"
+      a: "Directly. The return on AI depends on whether people can take on more strategic work, adapt fast enough, and implement the change. You already measure the technology side of that investment in detail. This is the instrument for the other side, on the same quarterly cadence."
+    - q: "Our engagement platform is adding wellbeing scores. Isn't that the same thing?"
+      a: "No, and the difference is structural rather than a feature gap. An engagement platform reports averages to management, because managers are the buyer. That architecture cannot produce person-level measurement without becoming surveillance, and it cannot produce honest data while employees know results roll up. Adding a wellbeing question to a survey built on averages gives you a new number with the same two defects: it can't tell you who, and it can't tell you why."
+    - q: "Does this replace anything we already have?"
+      a: "It replaces guesswork, not programs. Entrelacs is the measurement layer over your existing stack — it shows where your EAP, clinical platform and wellbeing spend are needed, and in a consolidation review, which lines are earning their renewal."
+  final_cta:
+    badge: "Brain Health. Personal, Private, Precise."
+    title: "Start measuring the asset everything else depends on."
+    subtext: "We're building our next design-partner cohort with a small group of employers who want early access, direct input into the roadmap, and a proactive way to protect their people."
+    cta_primary: "Request a demo"
+    cta_secondary: "Apply to be a design partner →"
+
 
 health_systems:
   meta:
