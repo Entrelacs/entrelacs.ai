@@ -182,7 +182,7 @@
   top: 100%;
   right: 0;
   width: 150px;
-  background: var(--background);
+  background: var(--surface-teal);
   font-size: 16px;
 }
 .langDropdownitem{
