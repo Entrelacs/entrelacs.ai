@@ -1,7 +1,7 @@
 navigation:
   home: "Accueil"
   employers: "Pour les employeurs"
-  organizations: "Organisations"
+  employees: "Pour les employés"
   health_systems: "Systèmes de santé"
   clinicians: "Cliniciens"
   technology: "Technologie"
@@ -14,7 +14,8 @@ footer:
   company_name: "Entrelacs"
   nav:
     home: "Accueil"
-    organizations: "Organisations"
+    employees: "Pour les employés"
+    employers: "Pour les employeurs"
     healthcare: "Santé"
     about: "À propos"
     technology: "Technologie"

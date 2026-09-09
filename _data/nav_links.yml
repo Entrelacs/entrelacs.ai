@@ -1,0 +1,16 @@
+# Main navigation links shared by the desktop nav bar and the mobile menu.
+# To add/remove/reorder a nav link, just edit this list — no template changes needed.
+- translation: navigation.employers
+  path: "employers/"
+- translation: navigation.employees
+  path: "employees/"
+- translation: navigation.clinicians
+  path: "clinicians/"
+- translation: navigation.health_systems
+  path: "health_systems/"
+- translation: navigation.approach
+  path: "approach/"
+- translation: navigation.roi_calculator
+  path: "roi_calculator/"
+- translation: navigation.about
+  path: "about/"

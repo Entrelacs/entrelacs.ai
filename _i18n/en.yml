@@ -1,6 +1,7 @@
 navigation:
   home: "Home"
   employers: "For Employers"
+  employees: "For Employees"
   health_systems: "For Health Systems"
   clinicians: "For Clinicians"  
   technology: "Technology"
@@ -14,6 +15,7 @@ footer:
   nav:
     home: "Home"
     employers: "For Employers"
+    employees: "For Employees"
     healthcare: "Healthcare"
     about: "About Us"
     technology: "Technology"

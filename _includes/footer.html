@@ -181,22 +181,13 @@
         </div>
 
         <div class="linksContainer mobileOnly">
+          {% for column in site.data.footer_links %}
           <div class="linkColumn">
-            <a href="{{ site.baseurl }}/">{% t footer.nav.home %}</a>
-            <a href="{{ site.baseurl }}/roi_calculator/">{% t footer.nav.roi_calculator %}</a>
+            {% for link in column %}
+            <a href="{{ site.baseurl }}/{{ link.path }}">{% t link.translation %}</a>
+            {% endfor %}
           </div>
-          <div class="linkColumn">
-            <a href="{{ site.baseurl }}/employers/">{% t navigation.employers %}</a>
-            <a href="{{ site.baseurl }}/technology/">{% t footer.nav.technology %}</a>
-          </div>
-          <div class="linkColumn">
-            <a href="{{ site.baseurl }}/clinicians/">{% t navigation.clinicians %}</a>
-            <a href="{{ site.baseurl }}/about/">{% t footer.nav.about %}</a>
-          </div>
-          <div class="linkColumn">
-            <a href="{{ site.baseurl }}/health_systems/">{% t navigation.health_systems %}</a>
-            <a href="{{ site.baseurl }}/contact-us/">{% t footer.nav.contact %}</a>
-          </div>
+          {% endfor %}
         </div>
 
         <div class="footerSponsers">
