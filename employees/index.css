@@ -33,8 +33,15 @@
 }
 
 #hero .tag2 {
-    background: rgba(244, 245, 247, 0.1);
-    color: var(--text-white);
+    color: var(--Text-text-white, #F4F5F7);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+    background: transparent;
+    padding: 0;
 }
 
 #hero h1 {

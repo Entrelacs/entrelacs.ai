@@ -7,7 +7,7 @@
     padding-bottom: 80px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     background: var(--surface-teal, #16223B);
 }
 
@@ -26,15 +26,22 @@
 
 #hero .right img {
     width: 100%;
-    max-width: 487px;
-    aspect-ratio: 487 / 568;
+    max-width: 485px;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 20px;
 }
 
 #hero .tag2 {
-    background: rgba(244, 245, 247, 0.1);
-    color: var(--text-white);
+    color: var(--Text-text-white, #F4F5F7);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+    background: transparent;
+    padding: 0;
 }
 
 #hero h1 {
@@ -82,6 +89,9 @@ main .cta {
     #hero .left {
         width: 100%;
     }
+    #hero .cta{
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -102,78 +112,6 @@ main .cta {
 @media (max-width: 350px) {
     .ctas .cta {
         width: 100%;
-    }
-}
-
-
-/* ==========================================================================
-   CREDIBILITY BAR
-   ========================================================================== */
-
-.credibilityBar {
-    background: #E62154;
-    padding-top: 56px;
-    padding-bottom: 56px;
-    box-shadow: 0px 15px 15px 0px rgba(199, 210, 228, 0.15);
-    overflow: hidden;
-}
-
-.credibilityMarquee {
-    width: 100%;
-    overflow: hidden;
-}
-
-.credibilityTrack {
-    display: flex;
-    width: max-content;
-    animation: credibilityScroll 30s linear infinite;
-}
-
-.credibilityTrack:hover {
-    animation-play-state: paused;
-}
-
-.credibilityTrackItems {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 56px;
-    padding-right: 56px;
-    flex-shrink: 0;
-}
-
-.credibilityBar p {
-    color: var(--text-white, #F4F5F7);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.45;
-    margin: 0;
-    white-space: nowrap;
-}
-
-@keyframes credibilityScroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 650px) {
-    .credibilityBar {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .credibilityTrackItems {
-        gap: 32px;
-        padding-right: 32px;
-    }
-
-    .credibilityBar p {
-        font-size: 16px;
     }
 }
 
@@ -223,56 +161,6 @@ main .cta {
     box-shadow: 0 15px 30px 0 #C7D2E4;
 }
 
-.array {
-    display: flex;
-    flex-direction: row;
-    gap: 56px;
-    justify-content: space-between;
-}
-
-.arrayItem {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.array h3 {
-    font-size: 60px;
-    font-weight: 600;
-    letter-spacing: -1.2px;
-    color: #E62154;
-    margin-bottom: 0;
-}
-
-.array p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-gray);
-}
-
-.array .statSource {
-    font-size: 16px;
-    font-style: normal;
-    color: var(--text-light-gray, #939BAD);
-}
-
-@media (max-width: 1050px) {
-    .array {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 0;
-    }
-    .arrayItem {
-        flex: 0 0 40%;
-        margin-bottom: 40px;
-    }
-}
-@media(max-width: 850px) {
-    .arrayItem {
-        flex: 0 0 100%;
-    }
-}
 @media (max-width: 650px) {
     .lsection {
         display: flex;
@@ -296,259 +184,52 @@ main .cta {
 
 
 /* ==========================================================================
-   DECADE OF SPENDING (the problem)
+   PARTNERSHIP CARDS
    ========================================================================== */
 
-.comparisonRows {
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.decadeIntro {
-    color: var(--text-primary, #0B0E14);
-}
-
-.comparisonRow {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 32px 0;
-    border-bottom: 1px solid var(--surface-gray3);
-}
-
-.comparisonRow:first-child {
-    padding-top: 0;
-}
-
-.comparisonRow h3 {
-    flex: 0 0 430px;
-    font-size: 32px;
+.partnershipSubtitle {
+    font-size: 24px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.96px;
-    color: var(--text-teal, #16223B);
-    margin: 0;
+    color: var(--teal-900);
+    margin-top: 56px;
+    margin-bottom: 0;
 }
 
-.comparisonDivider {
-    align-self: stretch;
-    flex: 0 0 1px;
-    background: var(--surface-gray3);
-}
-
-.comparisonBody {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.comparisonBody p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.45;
-    color: var(--text-gray);
-    margin: 0;
-}
-
-.comparisonSource {
-    margin-top: 0;
-    font-size: 16px;
-    font-style: normal;
-    color: var(--text-light-gray, #939BAD);
-}
-
-#decadeStatsBox {
-    background: #ffffff;
-    padding: 56px;
-    margin-top: 40px;
-    box-shadow: 0 15px 15px 0 #C7D2E4;
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-}
-
-.decadeFooter {
-    margin-top: 0;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.45;
-    color: var(--text-gray);
-    max-width: 900px;
-}
-
-
-@media (max-width: 800px) {
-    .comparisonRow {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .comparisonRow h3 {
-        flex: none;
-    }
-
-    .comparisonDivider {
-        display: none;
-    }
-
-    #decadeStatsBox {
-        padding: 32px 24px;
-        gap: 32px;
-    }
-}
-
-.movesNote {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    background: #F2F5FA;
-    border: 1px solid var(--surface-gray3, #D3D7E0);
-    border-radius: 20px;
-    padding: 24px;
-}
-
-.movesNote p {
-    flex: 1;
-    min-width: 260px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--text-primary, #000000);
-    margin: 0;
-}
-
-
-/* ==========================================================================
-   COHORT ERODING
-   ========================================================================== */
-
-.loopCards {
-    margin-top: 40px;
+.partnerCards {
+    margin-top: 24px;
     display: flex;
     gap: 24px;
 }
 
-.loopCard {
+.partnerCard {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.loopCardImage {
-    width: 100%;
-    aspect-ratio: 545 / 394;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loopCard-navy .loopCardImage {
-    background: #24344E;
-}
-
-.loopCard-pink .loopCardImage {
-    background: #EA516D;
-}
-
-.loopCardImage img {
-    max-width: 32%;
-    max-height: 91%;
-    object-fit: contain;
-    display: block;
-}
-
-.loopCard-pink .loopCardImage img {
-    max-width: 90%;
-    max-height: 69%;
-}
-
-.loopCardBody {
-    flex: 1;
-    padding: 24px;
-}
-
-.loopCard-navy .loopCardBody {
-    background: #E3E9F2;
-}
-
-.loopCard-pink .loopCardBody {
-    background: #FBF2FB;
-}
-
-.loopCardBody h4 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.96px;
-    color: var(--text-teal, #16223B);
-    margin: 0 0 16px;
-}
-
-.loopCardBody p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-gray);
-    margin: 0;
-}
-
-.noteBox {
-    margin-top: 32px;
-    padding: 24px;
+    padding: 32px;
     border-radius: 20px;
-    background: #F9F5F0;
-    border: 1px solid var(--surface-gray3, #D3D7E0);
+    display: flex;
+    align-items: flex-end;
 }
 
-.noteBox h4 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #000000;
-    margin: 0 0 16px;
-}
-
-.noteBox p {
+.partnerCard p {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--text-gray);
+    color: var(--text-primary, #0B0E14);
     margin: 0;
 }
 
-.checkList {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.partnerCard-1 {
+    background: #D4F0E2;
 }
 
-.checkList li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+.partnerCard-2 {
+    background: #E6CAE6;
 }
 
-.checkList svg {
-    flex-shrink: 0;
+.partnerCard-3 {
+    background: #FBB9C7;
 }
 
-.checkList p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-gray);
-    margin: 0;
-}
-
-@media (max-width: 800px) {
-    .loopCards {
+@media (max-width: 850px) {
+    .partnerCards {
         flex-direction: column;
     }
 }
@@ -636,7 +317,7 @@ main .cta {
     transform: rotate(180deg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     #stopGuessing .pageItemContainer {
         flex-direction: column;
     }
@@ -656,125 +337,6 @@ main .cta {
 
     .stopGuessingItem.is-open .stopGuessingItemBody {
         padding: 0 24px 20px;
-    }
-}
-
-
-/* ==========================================================================
-   WHAT YOU GET TODAY
-   ========================================================================== */
-
-.getCards {
-    margin-top: 40px;
-    display: flex;
-    gap: 32px;
-    align-items: stretch;
-}
-
-.getCard {
-    flex: 1;
-    padding: 24px;
-    border-radius: 20px;
-    background: #ffffff;
-}
-
-.getCard-live {
-    border: 3px solid #E62154;
-    box-shadow: 4px 5px 8.5px rgba(51, 72, 106, 0.55);
-}
-
-.getCard-roadmap {
-    background: #F9F5F0;
-    border: 1px solid #D3D7E0;
-}
-
-.getCard h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-primary, #0B0E14);
-    margin: 0 0 8px;
-    letter-spacing: -0.48px;
-}
-
-.getDisclaimer {
-    margin-top: 32px;
-    font-size: 14px;
-    font-style: italic;
-    color: var(--text-mid-gray);
-    max-width: 900px;
-}
-
-@media (max-width: 800px) {
-    .getCards {
-        flex-direction: column;
-    }
-}
-
-
-/* ==========================================================================
-   FAQ
-   ========================================================================== */
-
-.faqList {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.faqItem {
-    border-bottom: 1px solid var(--surface-gray3);
-}
-
-.faqItemHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 24px 0;
-}
-
-.faqItemHeader h4 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--text-teal);
-    margin: 0;
-}
-
-.faqItemHeader svg {
-    width: 32px;
-    height: 32px;
-    margin-left: 20px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: .4s;
-}
-
-.faqItemBody {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s linear, opacity 0.5s linear;
-}
-
-.faqItemBody p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-gray);
-    margin: 0 0 24px;
-}
-
-.faqItem.is-open .faqItemBody {
-    max-height: 400px;
-    opacity: 1;
-}
-
-.faqItem.is-open .faqItemHeader svg {
-    transform: rotate(180deg);
-}
-
-@media (max-width: 650px) {
-    .faqItemHeader h4 {
-        font-size: 18px;
     }
 }
 
@@ -866,7 +428,3 @@ main .cta {
         max-height: 320px;
     }
 }
-
-
-
-

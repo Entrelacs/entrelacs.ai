@@ -411,7 +411,7 @@ employees:
         text: "Your answers become a network where things hold each other up. That explains what never made sense: why you can be fine on paper and not fine, why the obvious fix didn't help, why one loss seemed to take three things with it."
         image: "/images/employeesPage/accordion3.png"
       - title: "It tells you the one place to push."
-        text: "Your answers become a network where things hold each other up. That explains what never made sense: why you can be fine on paper and not fine, why the obvious fix didn't help, why one loss seemed to take three things with it."
+        text: "Among everything the model reads, one point moves the rest of the network more than any other. That is your keystone — the single place where effort is most likely to ripple out everywhere else, so you're not left guessing where to start."
         image: "/images/employeesPage/accordion4.png"
   remembers:
     tag: "What changes when it remembers you"
@@ -486,6 +486,41 @@ employees:
       a: "[DECISION NEEDED — see build notes. Do not publish this page without an answer here; the sections above make every reader ask it.]"
     - q: "Who do I contact about my data?"
       a: "Our Data Protection Officer handles anything to do with your data — access, corrections, deletion, and consent, including withdrawing it. Reach them at dpo@entrelacs.ai. Your employer is not involved in these requests and cannot see them."
+
+
+care_settings:
+  meta:
+    title: "Entrelacs for Care Settings"
+  hero:
+    eyebrow: "ENTRELACS FOR CARE SETTINGS"
+    title: "Your patients live between your appointments. Measurement should too."
+    description: "Entrelacs is building the person-specific measurement instrument for mental health care — conversational, clinically grounded, and engineered toward regulatory clearance. We're opening a limited clinical partner programme for the clinics, health systems and research groups that will shape that path with us."
+    cta_primary: "Talk to our clinical team"
+    cta_secondary: "Explore research collaboration"
+  the_gap:
+    tag: "The gap"
+    title: "Care is continuous. Measurement is episodic."
+    text: "Clinical assessment today happens at the moments care can see: intake, sessions, crisis. Between those moments, where deterioration takes shape, standard instruments are silent. And the instruments themselves were normed on populations, not persons: two patients with identical scores can be struggling for entirely different reasons, and a score benchmarked against the average patient can point a clinician toward the wrong pathway for the real one."
+    text2: "The measurement science to do better now exists. Person-specific network modeling — the approach at Entrelacs' core — reads each individual against their own subgroup baseline rather than a population norm, and reports not just severity but which domain matters most for that person."
+  brings:
+    tag: "What Entrelacs brings"
+    title: "Measurement built for individuals — designed for clinical standards from day one."
+    accordion:
+      - title: "A validated, person-specific instrument"
+        text: "Lacis builds a person-specific model of social connection and its impact on well-being. Patients engage with the conversational interface, while the deterministic psychometrics run reliably underneath. The AI handles the conversation; it doesn't score, assess, or diagnose."
+      - title: "Clinical governance, not just claims"
+        text: "Our Chief Clinical Officer is a practicing clinical psychologist with fifteen years in care. We are forming a six-member cross-market Clinical Advisory Board, anchored in the US and France, with at least half its seats held by clinicians currently seeing patients, to govern the platform's clinical boundaries."
+      - title: "A regulatory trajectory, stated precisely"
+        text: "Entrelacs today is a measurement and development instrument — not a diagnostic, not a treatment — deployed within clinical boundaries governed by our CCO and advisory board. We have filed an FDA Pre-Submission and are pursuing De Novo classification in the US, alongside CE Mark Class IIa in the EU targeted for 2027, supported by ongoing validation studies and a French clinical track."
+  partnership:
+    tag: "Partnership"
+    title: "Where this goes next — with partners, not just customers."
+    text: "The same instrument that makes workforce capacity measurable is being built toward population-scale mental health measurement: the early-detection foundation that cardiology and oncology have relied on for decades. Getting there takes longitudinal evidence generated in real care settings."
+    subtitle: "Who we're building this with"
+    cards:
+      - text: "Clinics and health systems deploying the instrument commercially on per-patient platform fees, generating real-world evidence with us"
+      - text: "Research groups in our multi-country validation network, building the longitudinal cohorts behind the next generation of the engine"
+      - text: "Payers and public health bodies exploring what person-specific connection measurement means for population risk — a conversation that becomes commercial after clearance, and starts now."
 
 
 health_systems:
