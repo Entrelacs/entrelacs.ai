@@ -730,3 +730,8 @@ main .cta {
 .accordionImage img{
     object-fit: contain !important;
 }
+@media (max-width: 650px) {
+    .accordionImage{
+        max-height: 400px;
+    }
+}

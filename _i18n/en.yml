@@ -523,397 +523,6 @@ care_settings:
       - text: "Payers and public health bodies exploring what person-specific connection measurement means for population risk — a conversation that becomes commercial after clearance, and starts now."
 
 
-health_systems:
-  meta:
-    title: "Entrelacs for Health Systems"
-  hero:
-    subtitle: "ENTRELACS FOR HEALTH SYSTEMS"
-    title: "Preventive mental health care that scales with your population"
-    description: "A clinical-grade screening platform designed to integrate seamlessly with your health system and improve outcomes for the communities you serve."
-    cta_demo: "Request a Demo"
-  hidden_cost:
-    tag: "The Problem"
-    title: "Scale mental health prevention across your entire population"
-    text_intro: "Mental health crises strain resources with expensive emergency interventions. Entrelacs transforms population health with predictive screening and continuous monitoring that prevents crises before they occur—predicting reduced individual healthcare costs by up to 26% while improving outcomes."
-  solution:
-    title: "Health system benefits that transform care"
-    subtitle: "Expand access to mental health care that's measurably better for your entire network."
-    row1:
-      title: "Proactive care that prevents costly crises"
-      bullets:
-        - "Early crisis detection prevents expensive emergency interventions"
-        - "Risk stratification enables targeted resource allocation"
-        - "Population screening identifies at-risk individuals proactively"
-        - "Prevention focus dramatically cheaper than crisis response"
-    row2:
-      title: "Financial impact you can measure"
-      bullets:
-        - "26% reduction in individual health care costs"
-        - "Reduced trial-and-error in treatment selection saves time and money"
-        - "Lower emergency utilization through early intervention"
-        - "ROI measurement with clear outcomes tracking"
-    row3:
-      title: "Seamless integration with your existing systems"
-      bullets:
-        - "EHR integration streamlines provider workflows"
-        - "Automated quality metrics collection (EDIS, STAR ratings)"
-        - "Clinical decision support improves diagnostic accuracy"
-        - "Treatment outcome tracking across your provider network"
-    row4:
-      title: "Regulatory confidence and clinical trust"
-      bullets:
-        - "CE Mark certification pathway (Q2 2027)"
-        - "Clinical validation across 8 countries, 37 markets"
-        - "HIPAA compliant and SOC 2 Type II certified"
-        - "Evidence-based positioning for procurement requirements"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For payers & health systems."
-    hero:
-      heading: "Consult with our team about population health implementation strategies"
-      body: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
-      what_title: "What you get"
-      what_list:
-        - "Population health analysis and ROI modeling"
-        - "Provider training and clinical support"
-        - "Ongoing outcome measurement and optimization"
-      next_title: "Next steps"
-      next_list:
-        - "Schedule population health consultation"
-        - "Design pilot program scope"
-        - "Plan full-scale deployment strategy"
-      cta: "Request a demo"
-    timeline:
-      title: "Implementation Timeline"
-      stages:
-        - label: "Discovery phase"
-          period: "Assess your current mental health utilization patterns"
-        - label: "Pilot design"
-          period: "Targeted deployment with specific provider groups or populations"
-        - label: "Integration planning"
-          period: "HR and workflow integration roadmap"
-        - label: "Outcome tracking"
-          period: "Measure impact on costs, quality metrics, and patient satisfaction"
-      cta: "See how Entrelacs can help"
-
-clinicians:
-  meta:
-    title: "Entrelacs for Clinicians"
-  hero:
-    subtitle: "ENTRELACS FOR CLINICIANS"
-    title: "Spend less time guessing. More time progressing."
-    description: "AI-powered assessments that reveal what static questionnaires miss — so you can match every patient to the right care, faster."
-    cta_demo: "Request a Demo"
-  solution:
-    title: "Better outcomes, less burden"
-    row1:
-      title: "From initial assessment to outcome optimization"
-      bullets:
-        - "AI-guided conversational assessment that adapts in real-time based on patient responses, unlike rigid traditional questionnaires"
-        - "Multi-dimensional evaluation across condition-specific symptoms, behavioral patterns and context"
-        - "An integrated clinical assessment that captures what traditional screening misses"
-    row2:
-      title: "Clinical intelligence built for outcomes, not just insights"
-      bullets:
-        - "Identifies person specific symptom networks compared to standard assessments improving diagnostic confidence"
-        - "2–3x faster patient improvement through precision care matching"
-        - "Predictive system prevents crises; alerts enable proactive intervention"
-        - "Sensitive to capturing changing psychological symptoms across time"
-    row3:
-      title: "Comprehensive support beyond sessions"
-      bullets:
-        - "Continuous monitoring between sessions without administrative burden"
-        - "Automated quality metrics collection (EDIS, STAR ratings)"
-        - "Evidence-based treatment matching reduces trial-and-error"
-        - "Personalized patient engagement improves therapeutic alliance and adherence"
-  hidden_cost:
-    tag: "The Problem"
-    title: "The assessment gap driving poor clinical outcomes"
-    text_intro: "From static snapshots to continuous insight."
-    stats:
-      - value: "Limited<br>diagnostics"
-        body: "miss evolving symptoms and subtle early-stage patterns"
-      - value: "Trial-and-error<br>treatment"
-        body: "delays the time to effective care"
-      - value: "Early risks<br>go unseen"
-        body: "deterioration only caught at crisis, not a month before"
-      - value: "Administrative<br>burden"
-        body: "from fragmented prep, scoring and documentation"
-    bottom_text_line1: "Mental health care faces a fundamental problem, the tools clinicians rely on weren't designed for the complexity of the conditions they treat. Current assessment tools miss nuances and early warning signs, leading to trial-and-error treatment — costing clinicians time and patients progress. Entrelacs combines advanced psychometrics and state-of-the-art AI to deliver precision assessments with continuous monitoring that surfaces subtle changes between sessions that static tools miss."
-  superpowers:
-    title: "Superpowers for Clinicians<br>Zero Extra Work"
-    subtitle: "From precision diagnostics to continuous between-session monitoring, Entrelacs gives you the clinical edge without adding a single minute to your workload."
-    cards:
-      - value: "30–60 min"
-        body: "of prep and documentation <strong>reduced to a few minutes</strong> per session"
-      - value: "52% → 39%"
-        body: "<strong>reduction in clinician burnout</strong> with AI documentation support (JAMA)"
-      - value: "~90%"
-        body: "<strong>reduction in documentation time</strong> through automated insights and pre-session summaries"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For clinicians & practices"
-    hero:
-      heading: "Schedule a demonstration to see how Entrelacs enhances your clinical workflow"
-      body: "We'll customize the demo to your practice type and patient population."
-      what_title: "What you get"
-      what_list:
-        - "Platform access for selected patients"
-        - "Clinician training and integration support (EHR, practice management)"
-        - "Outcome data showing impact on your practice"
-      next_title: "Next steps"
-      next_list:
-        - "Request personalized demo"
-        - "Pilot program with your patients"
-        - "Training and onboarding support"
-      cta: "Request a clinician demo"
-
-healthcare:
-  hero:
-    tag: "ENTRELACS FOR HEALTHCARE"
-    title: "From assessment guesswork to precision mental healthcare"
-    list:
-      - "Unlock deeper accuracy with AI-powered conversational assessments and dynamic psychometrics."
-      - "Diagnose with confidence using continuous, data-rich mental health insights."
-      - "Deliver the right care faster through tailored, precision treatment matching."
-    cta_sales: "Contact Sales"
-    cta_demo: "Schedule a Demo"
-  problem:
-    tag: "The Problem"
-    title: "The assessment gap driving inefficiency and poor outcomes"
-    text: "Mental health care faces a fundamental problem: the assessment tools we rely on weren't designed for the complexity of the conditions we treat or the technology available to us today."
-    list:
-      - "Limited, inaccurate diagnostics miss nuances and evolving symptoms."
-      - "Early risks go unseen, leading to preventable mental-health crises."
-      - "Inefficient treatments rely on trial-and-error and delayed detection."
-      - "Ineffective care drives unnecessary costs and poor ROI."
-  solution:
-    tag: "Our Solution"
-    title: "Entrelacs addresses these challenges at their foundation with assessment technology designed for precision mental health care."
-  features:
-    assessment:
-      title: "Comprehensive initial assessment"
-      text: "Precision psychometrics deliver multi-dimensional insights, risk prediction, and diagnostic guidance."
-      subhead: "Clinical advantages:"
-      list:
-        - "Higher precision"
-        - "Captures nuanced patterns"
-        - "Better patient experience"
-        - "Structured documentation"
-        - "Adaptive questioning"
-    diagnostics:
-      title: "Precision diagnostic support"
-      text: "Advanced modeling offers precise, multi-dimensional diagnostic decision support."
-      subhead: "Diagnostic benefits:"
-      list:
-        - "Multidimensional profiling"
-        - "Differential diagnostic suggestions"
-        - "Risk stratification"
-        - "Severity assessment"
-        - "Confidence indicators"
-    monitoring:
-      title: "Continuous progress monitoring"
-      text: "Identifies changes early, boosting adherence, insight, and treatment outcomes."
-      subhead: "Treatment optimization:"
-      list:
-        - "Therapy modality recommendations based on symptom profiles"
-        - "Medication considerations aligned with symptom patterns and patient characteristics"
-        - "Patient-specific factors that may influence treatment response"
-        - "Contraindications and special considerations flagged automatically"
-        - "Expected treatment trajectory based on similar patient profiles"
-    predictive:
-      title: "Predictive early warning system"
-      text: "Predictive system prevents crises; alerts enable proactive intervention."
-      subhead: "Monitoring advantages:"
-      list:
-        - "Measurement-based care without administrative burden on clinicians"
-        - "Early detection of treatment non-response"
-        - "Patient engagement between sessions improves adherence and therapeutic alliance"
-        - "Trend analysis showing whether patient is improving, stable, or deteriorating"
-        - "Automatic alerts when concerning patterns emerge"
-    treatment:
-      title: "Personalized treatment matching (Coming soon)"
-      text: "AI recommends optimized, evidence-based treatments tailored to individual profiles."
-      subhead: "Prevention capabilities:"
-      list:
-        - "Crisis risk alerts notify clinicians of concerning changes requiring immediate attention"
-        - "Relapse prediction based on historical patterns and current trajectory"
-        - "Proactive outreach before patients reach crisis points"
-        - "Reduced emergency utilization"
-        - "Longitudinal understanding of each patient's unique warning signs and triggers"
-  benefits:
-    main_title: "Benefits for Clinicians"
-    main_subtitle: "Measurable impact on clinical practice and patient outcomes"
-    clinicians:
-      tag: "FOR CLINICIANS"
-      title: "Clinical tools that enhance your practice"
-      text: "Entrelacs integrates seamlessly into your clinical workflow, providing the tools you need to deliver more accurate diagnoses and personalized treatment, and continuous patient support."
-      list:
-        - "65-80% precise assessments for confident, accurate diagnosis and treatment planning."
-        - "Sleep easier knowing the system is watching for warning signs you might miss."
-        - "Personalized check-ins boost engagement and adherence"
-      cta: "Schedule a demo"
-    payers:
-      tag: "FOR PAYERS & HEALTH SYSTEMS"
-      title: "Data-driven mental healthcare management"
-      text: "Identify members at risk for crisis or deterioration before expensive emergency or inpatient interventions become necessary. Prevention is dramatically cheaper than crisis response."
-      list:
-        - "Measure treatment response across your network"
-        - "Reduce trial-and-error in treatment selection with precision matching."
-        - "Automated collection of required quality metrics (HEDIS, STAR ratings)."
-      cta: "Schedule a demo"
-  validation:
-    title: "Clinically Validated, Research-Backed"
-    initial_tab:
-      title: "Scientific Partnerships"
-      text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
-    tabs:
-      - image: "/images/h001.png"
-        title: "Scientific Partnerships"
-        text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
-      - image: "/images/h002.jpg"
-        title: "Peer-Reviewed Research"
-        text: "Our approach is grounded in published research on dynamic network modeling, adaptive assessment, conversational AI in mental health, and predictive modeling for crisis prevention.<br> <br>Founded by Dr. Hans Rocha IJzerman, Associate Researcher at Oxford Internet Institute and global expert on social connection."
-      - image: "/images/h003.jpg"
-        title: "Clinical Validation Studies"
-        text: "Ongoing validation studies in partnership with academic medical centers demonstrate diagnostic accuracy, treatment outcome prediction, and crisis prevention effectiveness."
-      - image: "/images/h004.jpg"
-        title: "Continuous Improvement"
-        text: "We continuously validate and refine our algorithms using de-identified aggregate data, ensuring the platform improves over time while maintaining privacy. Our models learn from outcomes across diverse populations."
-      - image: "/images/h005.jpg"
-        title: "Regulatory Compliance"
-        text: "Designed with healthcare standards in mind: HIPAA compliant, SOC 2 Type II certified, following FDA guidance for clinical decision support software."
-  getting_started:
-    title: "Getting started"
-    clinicians:
-      tag: "FOR CLINICIANS & PRACTICES"
-      title: "Schedule a demonstration to see how Entrelacs can enhance your clinical workflow"
-      text: "We'll customize the demo to your practice type and patient population."
-      list:
-        - "Platform access for selected patients"
-        - "Clinician training on interpreting insight"
-        - "Integration support (EHR, practice management)"
-        - "Outcome data showing impact on your practice"
-      cta: "Request Clinician Demo"
-    payers:
-      tag: "FOR PAYERS & HEALTH SYSTEMS"
-      title: "Consult with our team about population health implementation strategies"
-      text: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
-      list: []
-      cta: "Contact Us"
-
-technology:
-  hero:
-    tag: "TECHNOLOGY"
-    title: "How we're transforming mental health assessment"
-    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time, delivering more accurate insights with better user experience and less assessment burden"
-    cta_sales: "Contact Sales"
-    cta_demo: "Schedule a Demo"
-  innovation:
-    tag: "The Innovation"
-    title: "Dynamic assessments that evolve with you"
-    text: "Traditional mental health assessments ask everyone the same questions in the same order. It's like having a doctor follow a rigid script instead of adapting to what you tell them."
-    subtitle: "Entrelacs changes this by:"
-    list:
-      - "Making assessments feel natural and conversational."
-      - "Reducing burden by skipping unnecessary items."
-      - "Learning each person’s unique response patterns."
-      - "Probing deeper only where truly needed."
-      - "Adapting questions instantly for relevance."
-      - "Delivering faster, higher-precision clinical insights."
-    cta: "Schedule a Demo"
-  core_components:
-    tag: "Our Technology"
-    title: "Four core components"
-    headers:
-      usage: "How we use it"
-      advantage: "The advantage"
-      science: "The science"
-      benefits: "Benefits"
-      safeguards: "Technical safeguards"
-      works: "How it works"
-    psychometrics:
-      title: "Dynamic Psychometrics"
-      intro: "Entrelacs uses dynamic psychometrics to capture how thoughts, emotions, and behaviors interact over time, revealing each person’s unique mental health fingerprint beyond what static questionnaires can show."
-      usage_text: "Entrelacs creates a personalized dynamic network model that maps how an individual’s symptoms interact over time. It learns each person’s stable patterns and early warning shifts, even before symptoms become clinical. With every new interaction, the model becomes more accurate, detecting cascades like sleep issues → anxiety → withdrawal early for timely intervention."
-      advantage_text: "Traditional assessments capture snapshots; Entrelacs captures motion. This dynamic approach transforms assessment from reactive to preventive, enabling clinicians and organizations to act before crises emerge, tailor interventions to personal patterns, and measure progress with unprecedented precision."
-      science_text: "Built on network psychometrics research showing mental health conditions as systems of interacting symptoms rather than discrete disease entities. This approach has demonstrated superior predictive validity for clinical outcomes and treatment response."
-    llm:
-      title: "Large Language Models (LLM) for Personalized Assessment"
-      intro: "LLMs are AI systems trained on vast amounts of text, enabling them to understand context, generate natural responses, and conduct coherent conversations. Rather than just matching keywords, LLMs comprehend nuance, tone, and meaning."
-      usage_intro: "This is fundamentally different from chatbots that just generate responses. Our system:"
-      usage_list:
-        - "Making assessments feel natural and conversational"
-        - "Follows validated assessment frameworks ensuring clinical rigor"
-        - "Adapts questioning dynamically based on individual responses"
-        - "Extracts psychometric features from natural language (not just questionnaire scores)"
-        - "Maintains measurement precision while improving user experience"
-      advantage_text: "Traditional computerized adaptive testing (CAT) requires extensive pre-programmed question banks and complex statistical models. LLMs enable more flexible, conversational assessment while maintaining—and often exceeding—the precision of traditional psychometric approaches."
-      benefits_list:
-        - "Better engagement"
-        - "Adaptive depth"
-        - "Richer data"
-        - "Accessibility"
-      safeguards_list:
-        - "All LLM outputs validated against psychometric standards"
-        - "Human oversight and clinical review of assessment protocols"
-        - "Continuous monitoring for bias and fairness across populations"
-        - "Transparent methodology—clinicians understand how assessments work"
-    behavioral:
-      title: "Behavioral Data Integration - Coming soon"
-      intro: "Behavioral data includes digital traces of daily life: communication frequency, activity levels, sleep patterns, location patterns and app usage. Services like Google Takeout allow users to export this data from platforms they already use."
-      usage_text: "When individuals opt in, Entrelacs analyzes behavioral and conversational data together. Time-series patterns, like activity shifts, social engagement changes, routine disruptions, and sleep irregularities, are detected early. These signals are fused with self-reported data using multimodal models that learn which changes are meaningful for each person versus normal variation."
-      advantage_text: "Self-reported symptoms can be incomplete or biased. Behavioral data provides objective signals that complement conversational assessment:"
-      benefits_list:
-        - "Early detection"
-        - "Objective validation"
-        - "Personalized baselines"
-        - "Real-world context"
-    profiling:
-      title: "Multidimensional Profiling - Coming soon"
-      intro: "Rather than screening for single conditions, the platform assesses multiple psychological dimensions simultaneously: social connection and loneliness, anxiety symptoms, depressive symptoms, stress and burnout indicators, and condition-specific symptomatology."
-      works_text: "Traditional assessment approaches condition-by-condition: \"Do you have depression?\" then \"Do you have anxiety?\" This misses how conditions interact and co-occur."
-      benefits_list:
-        - "Reveals complexity"
-        - "Personalizes treatment"
-        - "Improves diagnosis"
-        - "Tracks holistically"
-  real_life:
-    title: "Technology that fits into real life"
-    subtitle: "The best assessment is one that people actually complete. We've designed our platform to work in real-world settings—whether that's a busy workplace, a clinical practice, or someone's home."
-    fast:
-      title: "Fast"
-      text: "Initial assessments take 5-7 minutes. Regular check-ins take 2-3 minutes. Compare this to 20-40 minute traditional questionnaire batteries. Time savings without precision loss."
-    accessible:
-      title: "Accessible"
-      text: "Natural conversation using plain language. No clinical jargon. Works across literacy levels and language preferences. Adapts to individual communication styles."
-    flexible:
-      title: "Flexible"
-      text: "Accessible anywhere with cross-device support, native Slack/Teams apps, EHR/HRIS integrations, offline capability, and flexible scheduled or on-demand assessments."
-    actionable:
-      title: "Actionable"
-      text: "You receive clear insights, personalized recommendations, progress tracking, baseline comparisons, and tailored guidance for clinicians, HR, or individuals."
-    inclusive:
-      title: "Inclusive"
-      text: "Built for fairness across diverse populations with cultural validation, multilingual support, accessibility features, and continuous bias monitoring."
-    engaging:
-      title: "Engaging"
-      text: "Adaptive questions maintain interest and reduce the fatigue of repetitive questionnaires. Conversational format feels more human than clinical. Immediate feedback provides value to the person being assessed."
-  cta_banner:
-    title: "Transform your retention strategy"
-    text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
-    list:
-      - "Demo & ROI Assessment"
-      - "Implementation & Training"
-      - "Pilot Program Design"
-      - "Launch & Optimization"
-    roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
-    cta_sales: "Contact Sales"
-    cta_demo: "Use ROI Calculator"
-  common:
-    learn_more: "Learn more"
-    show_less: "Show less"
-
 about:
   hero:
     tag: "ABOUT US"
@@ -1027,7 +636,6 @@ about:
     more: "Read more of Dr. Hans’ full story"
     less: "Close"
 
-
 team:
   leadership:
     title: "Leadership team"
@@ -1041,10 +649,6 @@ team:
         role: "Chief Scientific Officer"
         bio: "Associate Director of the Psychological Science Accelerator — a global research network spanning 80+ countries. PhD in Psychology, specializes in large-scale studies of complex psychological systems. Author of 1,200+ academic citations. Led flagship multi-country behavioral studies across 20+ countries to establish culturally robust, mutli-domain measurement frameworks. The scientific backbone behind Entrelacs' cross-cultural validation and psychometric methodology."
         image: "/images/LeadershipMigs.png"
-      - name: "Felix Moses"
-        role: "Chief Technology Officer"
-        bio: "Engineer and AI builder with deep experience in work with multidisciplinary teams to build market ready solutions. Expert in full-stack development, GCP infrastructure, and secure data pipelines — the architect behind Entrelacs' technical foundation."
-        image: "/images/LeadershipFelix.png"
   extendedLeadership:
     title: "Extended leadership team"
     list:
@@ -1149,85 +753,118 @@ cta_banner:
   cta_secondary: "Apply to be a design partner"
 
 
-approach:
+the_science:
+  meta:
+    title: "Entrelacs — The Science"
   hero:
-    tag: "TECHNOLOGY"
-    title: "The science behind mental health that adapts to you"
-    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time — delivering more accurate insights with better user experience and less assessment burden."
-
-  science:
-    tag: "Our scientific foundation"
-    title: "The first assessment platform built on symptom network theory and adaptive AI"
-    intro: "Most mental health tools capture a snapshot. Ours captures the full picture."
-    stats:
-      r_and_d: "3 years of R&D"
-      research_articles: "80,000+ research articles"
-      interviews: "350+ interviews"
-      countries: "Validation across 8 countries"
-    subtitle: "Starting with social connection — expanding to additional mental health areas."
+    title: "The average person doesn't exist. We stopped measuring them."
+    description: "Entrelacs is built on a finding the field spent decades resisting: psychological instruments normed on populations systematically mismeasure individuals. Lacis, our proprietary engine, models one person at a time. That changes what measurement can do."
+    cta_demo: "Request a demo"
+    cta_sample: "See a sample report"
+  problem:
+    tag: "The average problem"
+    title: "Why every survey you've taken was built for someone who isn't real."
+    stat1_value: "4,063"
+    stat1_label: "pilots measured on ten dimensions"
+    stat2_value: "0"
+    stat2_label: "fit the average on all ten"
+    paragraphs:
+      - "In 1952, the U.S. Air Force measured 4,063 pilots on ten dimensions to design a cockpit for the average pilot. Zero pilots fit the average on all ten. The fix — the adjustable seat — established the first law of personalization: you don't fit the human to the mean, you build the instrument around the individual (Daniels, 1952; Rose, 2016)."
+      - "Psychological measurement never had its adjustable seat. Engagement surveys, wellbeing questionnaires and most clinical scales still ask everyone the same questions and score answers against a population mean, carrying an assumption the measurement literature has formally rejected: that group-level statistics describe individuals (Molenaar, 2004). Two people with identical scores can be struggling for entirely different reasons. An average-based instrument can't tell them apart. And when a score drives a decision — a benefits allocation, a care pathway — mismeasurement compounds into real harm."
+      - "Our founding team spent two decades inside that problem as researchers, and helped produce the evidence that made it undeniable, including showing empirically that standard instruments don't measure the same construct across different people. Entrelacs is the instrument they built in response."
+  engine:
+    tag: "The engine"
+    title: "Lacis: person-specific measurement, engineered."
+    description: "Tailored questions and a clear map of your connections to show you exactly what to change."
+    ksr_title: "The four stages of the KSR (Key Signature Reconstruction) method — patent pending"
+    accordion:
+      - title: "Your subgroup, not the population"
+        text: "Before asking anything that matters, Lacis places you with people whose psychology moves the way yours does over time — a subgroup narrow enough that a conclusion drawn about the group is formally valid for the individual inside it. Population statistics assume this condition. They almost never meet it."
+        image: "/images/theSciencePage/engine-mockup.png"
+      - title: "The most informative questions, for you"
+        text: "Once Lacis has your subgroup, it selects the questions that carry the most information for someone like you — not a fixed battery answered by everyone, but the smallest set of items that resolves uncertainty about your specific pattern fastest."
+        image: "/images/theSciencePage/engine-mockup.png"
+      - title: "44-domain network modeling"
+        text: "Your answers are mapped into a network of 44 psychological domains, capturing how they relate to and reinforce one another for you specifically, rather than scoring each domain in isolation the way traditional instruments do."
+        image: "/images/theSciencePage/engine-mockup.png"
+      - title: "Signature and keystone"
+        text: "From that network, Lacis extracts your signature — the handful of domains driving the rest — and your keystone, the single lever most likely to move the whole system if you act on it."
+        image: "/images/theSciencePage/engine-mockup.png"
+    why_connection:
+      title: "Why connection first"
+      text: "Brain capital cannot be tested directly at workforce scale; the test itself would become a performance exam. It can be measured through its determinants, and among them social connection carries the strongest evidence base at the lowest measurement burden. The same engine is built to extend to further determinants, including dimensions of depression and anxiety, on the same validation pipeline."
+    why_now:
+      title: "Why now"
+      text: "The components have precedents. Regulators have already certified conversational clinical assessment as a medical device in Europe, and payers already fund the detection of loneliness in covered populations. What no one had assembled is a person-specific instrument for the workforce — the position Entrelacs is built to occupy."
+  trust:
+    tag: "Trust"
+    title: "The measurement belongs to the person being measured."
+    paragraphs:
+      - "A measurement instrument that people answer strategically is not measuring what it claims to. This is the failure mode legacy tools never solved: engagement surveys route answers to management, 42% of employees believe disclosure would damage their career (NAMI & Ipsos, 2025), and the resulting data is biased in a direction no statistical correction recovers. Entrelacs treats the trust architecture as part of the instrument."
+      - "The employee uses a private interface and gets results immediately: their own signature, keystone, and first move. Their answers, text, and data are encrypted and never shown to management or HR. The organization only sees patterns across groups of ten or more.  Never who said what."
+      - "This isn't a privacy feature bolted onto a measurement product. It's the precondition for the measurement being true. People tell a mirror things they will not tell an employer."
+  ai_boundary:
+    tag: "The AI boundary"
+    title: "What the AI does — and what it's forbidden to do."
+    paragraphs:
+      - "Buyers are right to be wary of generative AI in mental health. The research is blunt: general-purpose models perform poorly at high-risk clinical tasks, tend to agree with users rather than assess them, and are almost never evaluated longitudinally."
+      - "Entrelacs is built against those failure modes. The large language model manages the conversation: it turns natural dialogue into structured inputs and explains results in plain, supportive language. As validated items move into conversational phrasing, each one passes psychometric-equivalence checks before it ships — response distributions, completion rates, and item functioning benchmarked against the original instrument."
     cards:
-      network_psychometrics:
-        title: "Network Psychometrics Innovation"
-        body: "Mental health isn't one symptom — depression alone involves ~52 interconnected symptoms. Traditional assessments often overwhelm users with too many questions or miss critical connections by asking too few. Our combination of advanced psychometrics and AI identifies the minimum set of questions that can accurately reconstruct a complete symptom network with clinical precision. It's like reconstructing a full picture from carefully chosen puzzle pieces."
-      cross_cultural:
-        title: "Cross-Cultural Validation"
-        body: "Most mental health tools fail outside their original development context. Ours doesn't. Starting with social connection, our system is built on evidence synthesized from 80,000+ research articles, 350+ in-depth interviews conducted globally, and validation across 8 countries. This foundation allows Entrelacs to work across geographies, demographics, and cultures without bias."
-        body_2: "While we begin with social connection, additional mental health areas such as depression and anxiety will be developed using the same scientific roadmap."
-      continuous_learning:
-        title: "Continuous Learning System"
-        body: "Entrelacs gets smarter with every interaction. Our AI creates a data flywheel: more users generate richer longitudinal data, which powers smarter predictions, which drive better outcomes. Each assessment improves the algorithm's ability to predict which interventions work for specific profiles, detect early warning signs unique to individuals, and recommend personalized care pathways."
-      regulatory_pathway:
-        title: "Regulatory & Clinical Pathway"
-        body: "Entrelacs is on a clear pathway to medical-grade validation — CE Mark certification (EU Class IIa) targeted for Q2 2027, supported by ongoing clinical validation studies and a healthcare integration roadmap for hospital and health system deployment."
-    bottom_cta_text: "Talk to the Entrelacs team to discover the science."
-    bottom_cta_button: "Contact us"
-
-  collabs:
-    badge: "Research partnerships & validation"
-    title: "World-class scientific collaborations"
-    intro: "Entrelacs is built on partnerships with the institutions shaping the future of global mental health policy and research."
+      - title: "It never scores, assesses or diagnoses."
+        text: "All measurement, subgrouping, network estimation, and recommendation logic runs deterministically in Lacis — auditable, traceable, and grounded in a validated research corpus. The subgroup structure itself is learned offline from our research base, not invented in the moment by a generative model."
+      - title: "Entrelacs is not a therapy service and not a crisis service."
+        text: "When a conversation surfaces acute distress, a signposting protocol governed by our Chief Clinical Officer directs the person to human help and crisis resources immediately. The instrument measures; people care for people."
+  solution:
+    tag: "Validation & partnerships"
+    title: "Grounded in a research asset a competitor can't shortcut."
+    intro: "Lacis is calibrated on a proprietary research substrate built over five years by Annecy Behavioral Science Lab (ABSL), to which Entrelacs holds the exclusive commercial license — open as science, exclusive as an enterprise asset. Its two longest-lead inputs are complete: a field-wide review screening 9,032 articles across seven languages, mapping every validated social-connection instrument in the literature; and a cross-cultural corpus of 354 in-depth interviews across eight countries and five continents, coded into the 44-domain model. Both took years. A competitor starts from zero on both — it cannot be reproduced by web-scraping or reading the same published literature, and it compounds with every deployment."
     foundations:
       columns:
-        - title: "Global policy integration"
+        - title: "Global policy & research"
           items:
-            - "WHO collaboration on Global Priority Setting Exercise"
-            - "EU Horizon Europe €3M LONELY-EU research project"
-            - "OECD cooperations on social health measurement standards"
-            - "University of Oxford research affiliation"
+            - "ABSL’s work anchors the EU’s social-connection monitoring framework and informs the WHO’s development of a Global Index for Social Connection"
+            - "EU Horizon Europe - €3M LONELY-EU research project"
+            - "OECD cooperation on social health measurement"
+            - "Oxford University research affiliation"
         - title: "Academic network"
           items:
-            - "Psychological Science Accelerator — 80+ country research network"
-            - "Stanford University partnership on AI behavioral prediction"
-            - "UC Davis partnership on personalized psychological measurement"
-            - "Multi-site clinical trials across healthcare systems"
-        - title: "Real-world evidence"
+            - "Psychological Science Accelerator — research network spanning 80+ countries (our CSO is Associate Director)"
+            - "Strategic advisors at Stanford (Dr. Michal Kosinski — AI behavioral prediction) and UC Davis (Dr. Emorie Beck — personalized psychological measurement)"
+        - title: "Published, not just asserted"
           items:
-            - "Peer-reviewed publications in preparation"
-            - "Clinical outcomes tracking across pilot programs"
-            - "Population health impact studies underway"
-            - "Long-term effectiveness validation ongoing"
-
-  trust:
-    badge: "Privacy & security foundation"
-    title: "Built for healthcare-grade trust"
-    intro: "Every element of Entrelacs is designed to meet the highest standards of data privacy, security, and clinical ethics."
-    data:
-      title: "Data architecture"
-      items:
-        - "GDPR-compliant encrypted infrastructure"
-        - "Multi-jurisdiction compliance (EU, UK, Swiss, US)"
-        - "ISO 13485 and ISO 27001 certification roadmap"
-        - "Healthcare-grade security standards"
-    privacy:
-      title: "Privacy by design"
-      items:
-        - "Zero individual data shared with employers"
-        - "User-controlled data sharing and deletion"
-        - "Individual data is accessible only to authorized clinicians and personnel with user consent."
-        - "Transparent consent for AI training participation"
-    ctas:
-      privacy_policy: "Read our privacy policy"
-      contact: "Contact us"
-
+            - "Paris, B., Ropovik, I., Silan, M., d’Hombres, B., Casabianca, E., & IJzerman, H. (2026). Evaluating loneliness measurements across the European Union. Collabra: Psychology, 12(1)."
+            - "Coll-Planas, L., Akhter-Khan, S. C., Longworth, G., Srivastava, P., Mosalakanti, S., Silan, M. A., IJzerman, H., & McHugh Power, J. (2026). Rethinking loneliness interventions. — Why connection must be supported at the level of the individual, not the population."
+            - "Silan, M. A. (2024). Rethinking multi-site studies in social and personality psychology. Social and Personality Psychology Compass. — The cross-cultural validity problem the 354-interview corpus was built to solve."
+            - "Mosalakanti, S., Paris, B., Brickau, D., Luhmann, M., & Rocha IJzerman, H., (2026, August 25). A systematic review of social connection inventories."
+            - "Molenaar, P. C. M. (2004). A manifesto on psychology as idiographic science: Bringing the person back into scientific psychology, this time forever. Measurement: Interdisciplinary Research and Perspectives, 2(4), 201–218."
+            - "Borsboom, D. (2017). A network theory of mental disorders. World Psychiatry, 16(1), 5–13."
+            - "Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). Loneliness and social isolation as risk factors for mortality: A meta-analytic review. Perspectives on Psychological Science, 10(2), 227–237."
+            - "World Health Organization. (2025). From loneliness to social connection: Charting a path to healthier societies. Report of the WHO Commission on Social Connection. WHO."
+            - "Office of the U.S. Surgeon General. (2023). Our epidemic of loneliness and isolation: The U.S. Surgeon General’s advisory on the healing effects of social connection and community. U.S. Department of Health and Human Services."
+    in_progress_label: "In progress:"
+    in_progress_text: "further peer-reviewed publications from the Entrelacs validation program in preparation; longitudinal validation cohorts underway; clinical outcome tracking in pilot settings."
+  certifications:
+    tag: "Regulatory & security"
+    title: "Engineered to clinical standards. Certified step by step."
+    status:
+      title: "Status today"
+      text: "A measurement and development instrument — deliberately not a diagnostic or treatment device, with clinical boundaries governed by our CCO and Clinical Advisory Board."
+    items:
+    - q: "FDA (US)"
+      a: "Pre-Submission filed; pursuing De Novo classification (no clear predicate device exists — the route for novel instruments)"
+    - q: "CE Mark (EU)"
+      a: "Class IIa, targeted 2027"
+    - q: "Clinical governance"
+      a: "Clinical Advisory Board forming — six members across the US and France, at least half of them clinicians currently seeing patients; software development under ISO 13485/14971 discipline"
+    - q: "Intellectual property"
+      a: "The KSR measurement method is patent-pending (U.S. provisional application filed June 2026)"
+    - q: "Data protection"
+      a: "GDPR-compliant, encrypted infrastructure; EU data hosting for European deployments; multi-jurisdiction compliance programme (EU, UK, Swiss, US including state privacy laws)"
+    - q: "Care settings"
+      a: "HIPAA-aligned data handling"
+    - q: "Security certification"
+      a: "SOC 2 Type II audit preparation in progress; ISO 27001 on the roadmap — security documentation available to procurement teams on request"
+    - q: "Reporting threshold"
+      a: "Aggregation threshold of ten or more for any organisational reporting; voluntary participation with transparent, revocable consent, including for research use"
 
 

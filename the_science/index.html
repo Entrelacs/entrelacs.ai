@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% t employers.meta.title %}</title>
+    <title>{% t the_science.meta.title %}</title>
     {% include head.html %}
     <link rel="stylesheet" href="index.css">
 </head>
@@ -17,226 +17,163 @@
     <main class="page">
         <div id="hero" class="pageItem">
             <div class="pageItemContainer">
-                <div class="left">
-                    <div class="tag2">{% t employers.hero.eyebrow %}</div>
-                    <h1>{% t employers.hero.title %}</h1>
-                    <p class="heroSub">{% t employers.hero.description %}</p>
-                    <div class="ctas">
-                        <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employers.hero.cta_demo %}</a>
-                        <a href="{{ site.baseurl }}/contact-us/" class="cta cta1">{% t employers.hero.cta_sample %}</a>
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="/images/employersHero.jpg" alt="A small team collaborating around a table with laptops">
+                <h1>{% t the_science.hero.title %}</h1>
+                <p class="heroSub">{% t the_science.hero.description %}</p>
+                <div class="ctas">
+                    <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t the_science.hero.cta_demo %}</a>
+                    <a href="{{ site.baseurl }}/contact-us/" class="cta cta1">{% t the_science.hero.cta_sample %}</a>
                 </div>
             </div>
         </div>
 
-        <div class="pageItem credibilityBar">
-            <div class="credibilityMarquee">
-                <div class="credibilityTrack">
-                    <div class="credibilityTrackItems">
-                        {% for item in site.translations[site.lang].employers.credibility.items %}
-                        <p>{{ item }}</p>
-                        {% endfor %}
-                    </div>
-                    <div class="credibilityTrackItems" aria-hidden="true">
-                        {% for item in site.translations[site.lang].employers.credibility.items %}
-                        <p>{{ item }}</p>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pageItem lsection" id="decadeOfSpending" style="background: #F2F5FA;">
+        <div class="pageItem lsection" id="theProblem">
             <div class="pageItemContainer">
-                <div class="badge">{% t employers.decade.tag %}</div>
-                <h2>{% t employers.decade.title %}</h2>
-                {% assign intro = site.translations[site.lang].employers.decade.intro %}
-                {% for para in intro %}
-                <p class="lsectionP decadeIntro">{{ para }}</p>
+                <div class="badge">{% t the_science.problem.tag %}</div>
+                <h2>{% t the_science.problem.title %}</h2>
+                <div class="problemCard box">
+                    <div class="problemLeft">
+                        <div class="array problemStats">
+                            <div class="arrayItem">
+                                <h3>{% t the_science.problem.stat1_value %}</h3>
+                                <p>{% t the_science.problem.stat1_label %}</p>
+                            </div>
+                            <div class="arrayDivider"></div>
+                            <div class="arrayItem">
+                                <h3>{% t the_science.problem.stat2_value %}</h3>
+                                <p>{% t the_science.problem.stat2_label %}</p>
+                            </div>
+                        </div>
+                        {% assign problem_paragraphs = site.translations[site.lang].the_science.problem.paragraphs %}
+                        {% for para in problem_paragraphs %}
+                        <p class="lsectionP problemPara">{{ para }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="problemRight">
+                        <img src="/images/theSciencePage/problem.webp"
+                            alt="Person writing notes while reviewing data on a tablet" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="engine">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.engine.tag %}</div>
+                <h2>{% t the_science.engine.title %}</h2>
+                <p class="lsectionP">{% t the_science.engine.description %}</p>
+
+                <h3 class="engineSubheading">{% t the_science.engine.ksr_title %}</h3>
+
+                {% assign engine_items = site.translations[site.lang].the_science.engine.accordion %}
+                {% include accordion.html id="engineAccordion" items=engine_items
+                image_alt="Entrelacs Lacis assessment on mobile" %}
+
+                <div class="whyGrid">
+                    <div class="whyCard">
+                        <h4>{% t the_science.engine.why_connection.title %}</h4>
+                        <p>{% t the_science.engine.why_connection.text %}</p>
+                    </div>
+                    <div class="whyCard">
+                        <h4>{% t the_science.engine.why_now.title %}</h4>
+                        <p>{% t the_science.engine.why_now.text %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pageItem lsection" id="trust">
+            <div class="pageItemContainer">
+                <div class="trustLeft">
+                    <div class="badge">{% t the_science.trust.tag %}</div>
+                    <h2>{% t the_science.trust.title %}</h2>
+                    {% assign trust_paragraphs = site.translations[site.lang].the_science.trust.paragraphs %}
+                    {% for para in trust_paragraphs %}
+                    <p class="lsectionP">{{ para }}</p>
+                    {% endfor %}
+                </div>
+                <div class="trustRight">
+                    <img src="/images/theSciencePage/privacy.webp"
+                        alt="Employee smiling while reviewing private results" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="aiBoundary">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.ai_boundary.tag %}</div>
+                <h2>{% t the_science.ai_boundary.title %}</h2>
+                {% assign boundary_paragraphs = site.translations[site.lang].the_science.ai_boundary.paragraphs %}
+                {% for para in boundary_paragraphs %}
+                <p class="lsectionP">{{ para }}</p>
                 {% endfor %}
 
-                <div class="comparisonRows">
-                    {% assign rows = site.translations[site.lang].employers.decade.rows %}
-                    {% for row in rows %}
-                    <div class="comparisonRow">
-                        <h3>{{ row.title }}</h3>
-                        <div class="comparisonDivider"></div>
-                        <div class="comparisonBody">
-                            <p>{{ row.text }}</p>
-                            <p class="comparisonSource">{{ row.source }}</p>
-                        </div>
+                <div class="boundaryGrid">
+                    {% assign boundary_cards = site.translations[site.lang].the_science.ai_boundary.cards %}
+                    {% for card in boundary_cards %}
+                    <div class="boundaryCard">
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.text }}</p>
                     </div>
                     {% endfor %}
                 </div>
-
-                <div class="box" id="decadeStatsBox">
-                    <div class="array">
-                        {% assign stats = site.translations[site.lang].employers.decade.stats %}
-                        {% for stat in stats %}
-                        <div class="arrayItem">
-                            <h3>{{ stat.value }}</h3>
-                            <p>{{ stat.text }}</p>
-                            <p class="statSource">{{ stat.source }}</p>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <p class="decadeFooter">{% t employers.decade.footer %}</p>
-                </div>
             </div>
         </div>
 
-        <div class="pageItem lsection" id="threeMoves">
+
+        <div class="pageItem lsection collabs" id="validation">
             <div class="pageItemContainer">
-                <div class="badge">{% t employers.three_moves.tag %}</div>
-                <h2>{% t employers.three_moves.title %}</h2>
+                <div class="badge">{% t the_science.solution.tag %}</div>
+                <h2>{% t the_science.solution.title %}</h2>
+                <p class="lsectionP">{% t the_science.solution.intro %}</p>
 
-                {% assign moves_items = site.translations[site.lang].employers.three_moves.accordion %}
-                {% include accordion.html id="movesAccordion" items=moves_items image_alt="Entrelacs check-in on mobile" %}
-
-                <div class="movesNote">
-                    <p>{% t employers.three_moves.note %}</p>
-                    <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employers.three_moves.cta_sample %}</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="pageItem lsection" id="cohortEroding" style="background: #F2F5FA;">
-            <div class="pageItemContainer">
-                <div class="badge">{% t employers.cohort.tag %}</div>
-                <h2>{% t employers.cohort.title %}</h2>
-                <p class="lsectionP">{% t employers.cohort.subtitle %}</p>
-
-                <div class="loopCards">
-                    <div class="loopCard loopCard-navy">
-                        <div class="loopCardImage">
-                            <img src="/images/employersPage/cohort1.png" alt="" loading="lazy">
-                        </div>
-                        <div class="loopCardBody">
-                            <h4>{% t employers.cohort.employee_card.title %}</h4>
-                            <p>{% t employers.cohort.employee_card.text %}</p>
-                        </div>
-                    </div>
-                    <div class="loopCard loopCard-pink">
-                        <div class="loopCardImage">
-                            <img src="/images/employersPage/cohort2.png" alt="" loading="lazy">
-                        </div>
-                        <div class="loopCardBody">
-                            <h4>{% t employers.cohort.org_card.title %}</h4>
-                            <p>{% t employers.cohort.org_card.text %}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="noteBox">
-                    <h4>{% t employers.cohort.roadmap.title %}</h4>
-                    <p>{% t employers.cohort.roadmap.text %}</p>
-                </div>
-
-                <div class="noteBox">
-                    <h4>{% t employers.cohort.consent.title %}</h4>
-                    <ul class="checkList checkList-teal">
-                        {% for item in site.translations[site.lang].employers.cohort.consent.items %}
-                        <li>
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="30" height="30" rx="15" fill="#CFDEDE" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
-                                    fill="#156B70" />
-                            </svg>
-                            <p>{{ item }}</p>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="pageItem lsection" id="stopGuessing">
-            <div class="pageItemContainer">
-                <div class="stopGuessingLeft">
-                    <div class="badge">{% t employers.stop_guessing.tag %}</div>
-                    <h2>{% t employers.stop_guessing.title %}</h2>
-                    <p class="lsectionP">{% t employers.stop_guessing.description %}</p>
-
-                    <div class="stopGuessingAccordion">
-                        {% assign items = site.translations[site.lang].employers.stop_guessing.accordion %}
-                        {% for item in items %}
-                        <div class="stopGuessingItem">
-                            <div class="stopGuessingItemHeader">
-                                <h4>{{ item.title }}</h4>
-                                <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L12 11L23 1" stroke="#F4F5F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                <div class="collabs-main">
+                    <div class="collabs-foundations" aria-label="Scientific foundations">
+                        {% assign foundations = site.translations[site.lang].the_science.solution.foundations.columns %}
+                        {% for foundation in foundations %}
+                        <div class="collabs-foundation-item">
+                            <div class="collabs-foundation-head">
+                                <span class="collabs-foundation-label">{{ foundation.title }}</span>
+                                <span class="collabs-foundation-icon" aria-hidden="true"></span>
                             </div>
-                            <div class="stopGuessingItemBody">
-                                <p>{{ item.text }}</p>
+                            <div class="collabsHidden">
+                                <ul class="collabs-foundation-list">
+                                    {% for bullet in foundation.items %}
+                                    <li class="collabs-foundation-list-item">{{ bullet }}</li>
+                                    {% endfor %}
+                                </ul>
                             </div>
                         </div>
                         {% endfor %}
                     </div>
-                </div>
-                <div class="stopGuessingRight">
-                    <img src="/images/employersPage/guessing.png" alt="" loading="lazy">
-                </div>
-            </div>
-        </div>
 
-        <div class="pageItem lsection" id="whatYouGet" style="background: #F2F5FA;">
-            <div class="pageItemContainer">
-                <div class="badge">{% t employers.what_you_get.tag %}</div>
-                <h2>{% t employers.what_you_get.title %}</h2>
-
-                <div class="getCards">
-                    <div class="getCard getCard-live">
-                        <h4>{% t employers.what_you_get.live.title %}</h4>
-                        <ul class="checkList checkList-coral">
-                            {% for item in site.translations[site.lang].employers.what_you_get.live.items %}
-                            <li>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="30" height="30" rx="15" fill="#FBD9E0" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
-                                        fill="#E62154" />
-                                </svg>
-                                <p>{{ item }}</p>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="getCard getCard-roadmap">
-                        <h4>{% t employers.what_you_get.roadmap.title %}</h4>
-                        <ul class="checkList checkList-teal">
-                            {% for item in site.translations[site.lang].employers.what_you_get.roadmap.items %}
-                            <li>
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="30" height="30" rx="15" fill="#CFDEDE" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
-                                        fill="#156B70" />
-                                </svg>
-                                <p>{{ item }}</p>
-                            </li>
-                            {% endfor %}
-                        </ul>
+                    <div class="collabs-image">
+                        <img src="/images/approach1.jpg" alt="Globe representing global policy and research"
+                            loading="lazy">
                     </div>
                 </div>
 
-                <p class="getDisclaimer">{% t employers.what_you_get.disclaimer %}</p>
+                <div class="solutionProgress">
+                    <strong>{% t the_science.solution.in_progress_label %}</strong> {% t the_science.solution.in_progress_text %}
+                </div>
+
+                {%- include sponsors2.html -%}
             </div>
         </div>
 
-        <div class="pageItem lsection" id="faq">
+        <div class="pageItem lsection" id="certifications">
             <div class="pageItemContainer">
-                <h2>{% t employers.faq.title %}</h2>
+                <div class="badge">{% t the_science.certifications.tag %}</div>
+                <h2>{% t the_science.certifications.title %}</h2>
+
+                <div class="statusToday">
+                    <h4>{% t the_science.certifications.status.title %}</h4>
+                    <p>{% t the_science.certifications.status.text %}</p>
+                </div>
+
                 <div class="faqList">
-                    {% assign items = site.translations[site.lang].employers.faq.items %}
-                    {% for item in items %}
+                    {% assign cert_items = site.translations[site.lang].the_science.certifications.items %}
+                    {% for item in cert_items %}
                     <div class="faqItem">
                         <div class="faqItemHeader">
                             <h4>{{ item.q }}</h4>
@@ -258,6 +195,7 @@
                 </div>
             </div>
         </div>
+
 
         {% include helpNow.html %}
 
@@ -297,6 +235,76 @@
             });
         });
     </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var headers = document.querySelectorAll('.collabs-foundation-head');
+                var collabsImage = document.querySelector('.collabs-image img');
+
+                // Image array mapped by foundation index (0, 1, 2...)
+                var collabsImages = [
+                    {
+                        src: '/images/approach1.jpg',
+                        alt: 'Globe representing global policy and research'
+                    },
+                    {
+                        src: '/images/approach2.webp',
+                        alt: 'Academic collaboration and scientific network visual'
+                    },
+                    {
+                        src: '/images/approach3.webp',
+                        alt: 'Real-world evidence and validation visual'
+                    }
+                ];
+
+                // Preload all collabs images to avoid jerky loading on item switch
+                collabsImages.forEach(function (image) {
+                    var img = new Image();
+                    img.src = image.src;
+                });
+
+                if (!headers.length) return;
+
+                headers.forEach(function (head, index) {
+                    head.addEventListener('click', function () {
+                        var item = head.closest('.collabs-foundation-item');
+                        if (!item) return;
+
+                        var hidden = item.querySelector('.collabsHidden');
+                        if (!hidden) return;
+
+                        // Close other open items
+                        document.querySelectorAll('.collabs-foundation-item .collabsHidden.is-open').forEach(function (el) {
+                            if (el !== hidden) {
+                                el.classList.remove('is-open');
+                                var otherHead = el.closest('.collabs-foundation-item').querySelector('.collabs-foundation-head');
+                                if (otherHead) {
+                                    otherHead.classList.remove('is-open');
+                                }
+                            }
+                        });
+
+                        var isOpen = hidden.classList.contains('is-open');
+                        if (isOpen) {
+                            hidden.classList.remove('is-open');
+                            head.classList.remove('is-open');
+                        } else {
+                            hidden.classList.add('is-open');
+                            head.classList.add('is-open');
+
+                            if (collabsImage) {
+                                var data = collabsImages[index] || collabsImages[0];
+                                if (data) {
+                                    collabsImage.src = data.src;
+                                    if (data.alt) {
+                                        collabsImage.alt = data.alt;
+                                    }
+                                }
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
 </body>
 
 </html>
