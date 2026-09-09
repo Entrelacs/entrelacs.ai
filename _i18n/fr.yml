@@ -373,6 +373,122 @@ employers:
 
 
 
+employees:
+  meta:
+    title: "Entrelacs pour les Employés"
+  hero:
+    eyebrow: "ENTRELACS POUR LES EMPLOYÉS"
+    title: "Quinze minutes pour une lecture de votre propre vie, pas une comparaison à tout le monde."
+    description: "Entrelacs mesure le lien social — le déterminant du capital cérébral disposant des preuves les plus solides et de la charge de mesure la plus faible. Il vous le mesure spécifiquement, pas par rapport à une moyenne de population. Votre employeur a acheté l'instrument. Il ne peut voir vos réponses, ni maintenant ni jamais."
+    cta_sample: "Voir un exemple de rapport"
+    cta_employer: "Passer à ce que voit votre employeur"
+    image: "/images/employeesPage/hero.webp"
+  why_bother:
+    tag: "Pourquoi vous prendriez la peine"
+    title: "Le résultat est à vous en premier. C'est la conception, pas une faveur."
+    text: "La plupart des enquêtes en entreprise vous posent des questions et transmettent les données directement à la direction. Vous recevez une diapositive lors d'une réunion générale six semaines plus tard. Naturellement, vous répondez avec prudence plutôt qu'honnêtement."
+    text2: "La mesure ne fonctionne qu'avec des réponses honnêtes, et personne ne répond honnêtement à un système qui ne lui rend rien. Il faut donc que cela vaille votre temps dès la première conversation, et encore plus à la dixième."
+  forty_two:
+    tag: "Ce que cela vous dit vraiment"
+    title: "« Ça va, je suis juste fatigué(e) » est une phrase qui recouvre 42 choses différentes."
+    text: "Quand quelque chose ne va pas, la plupart des gens n'ont qu'un mot pour le dire. Fatigué. Terne. Pas dans son assiette. Un seul ressenti, donc une seule explication — généralement le travail, le sommeil, ou soi-même."
+    text2: "En dessous se trouvent des dizaines d'éléments distincts, tous des facettes d'une seule chose : la manière dont vous êtes connecté aux personnes qui vous entourent. Y a-t-il quelqu'un avec qui vous pouvez être entièrement ouvert. Une partie de vous s'inquiète-t-elle de déranger. Une semaine normale contient-elle un vrai contact ou surtout de la logistique. Pourriez-vous dire une chose difficile au travail sans que cela vous coûte. Le travail que vous faites est-il remarqué par quelqu'un."
+    text3: "Entrelacs lit 44 de ces éléments — 26 dans votre vie, 18 au travail, lus séparément parce qu'ils n'évoluent pas ensemble. Le lien social est ce qui est mesuré, et pour une bonne raison : parmi tout ce qui façonne votre état, c'est ce qui dispose des preuves les plus solides et de la charge de mesure la plus légère. Le rapport vous dit donc ce que vos quarante-deux éléments donnent au total — où vous en êtes sur l'épuisement, la solitude, la baisse de moral et la santé physique — et quel domaine de lien social en est le moteur. Des indications, pas des diagnostics, avec le levier qui va avec."
+    text4: "Un ressenti vague et pesant devient des éléments précis à des endroits précis. Les éléments précis peuvent être travaillés. Les éléments vagues ne peuvent qu'être supportés."
+    image: "/images/employeesPage/forty-two.webp"
+  four_moves:
+    tag: "Comment il vous lit"
+    title: "Quatre mouvements. La méthode s'appelle Reconstruction de la Signature Clé — voici ce que fait chaque partie pour vous."
+    subtitle: "C'est la partie qui rend cet outil différent de toutes les enquêtes que vous avez reçues. Pas les questions. Ce qui arrive à vos réponses."
+    accordion:
+      - title: "Il détermine avec qui vous lire."
+        text: "Pas des personnes qui vous ressemblent sur le papier, mais des personnes dont les tendances évoluent en même temps que les vôtres dans le temps. Ce qui veut dire que les conclusions s'appliquent réellement à vous — la raison pour laquelle les conseils génériques tombent si souvent à côté, c'est qu'ils ont été tirés d'une moyenne sur tout le monde, et la personne moyenne n'existe pas."
+        image: "/images/employeesPage/moves-phone.png"
+      - title: "Il arrête de vous demander ce qu'il peut déjà déduire."
+        text: "Dès qu'une question cesse d'apporter de l'information pour les personnes qui vous ressemblent, Lacis la retire de votre prochaine conversation. C'est pourquoi le même instrument devient plus rapide spécifiquement pour vous, sans jamais devenir plus court pour quelqu'un dont les réponses lui apprennent encore quelque chose de nouveau."
+        image: "/images/employeesPage/moves-phone.png"
+      - title: "Il vous cartographie comme un système, pas comme un bulletin de notes."
+        text: "Vos quarante-deux réponses ne sont pas des chiffres isolés côte à côte. Elles sont lues comme un réseau, montrant comment les différentes parties de votre vie évoluent ensemble — pour qu'un changement dans un domaine soit compris dans le contexte de tout ce qui y est lié, plutôt que signalé isolément."
+        image: "/images/employeesPage/moves-phone.png"
+      - title: "Il vous indique le seul endroit où agir."
+        text: "Parmi tout ce que le modèle lit, un point fait bouger le reste du réseau plus que tout autre. C'est votre relation clé — l'endroit unique où l'effort a le plus de chances de se répercuter partout ailleurs, pour que vous ne soyez pas laissé à deviner par où commencer."
+        image: "/images/employeesPage/moves-phone.png"
+  remembers:
+    tag: "Ce qui change quand il se souvient de vous"
+    title: "La plupart des outils vous disent comment vous vous comparez. Celui-ci vous dit comment vous avez changé."
+    text: "Chaque application de bien-être que vous avez essayée vous notait par rapport aux autres, ce qui explique pourquoi le chiffre n'a jamais vraiment eu de sens — il ne pouvait pas vous dire si un mois difficile était un vrai changement ou juste un mois difficile. Entrelacs construit un modèle de vous spécifiquement, pour pouvoir remarquer quand vous avez évolué."
+    image: "/images/employeesPage/remembers.webp"
+    cards:
+      - title: "Moins de questions, pas plus"
+        text: "À mesure qu'il apprend ce qui est stable chez vous, il arrête de demander. La conversation devient plus courte à chaque fois."
+      - title: "Vous découvrez si cela a fonctionné"
+        text: "Agissez sur votre relation clé, et la prochaine fois vous pourrez voir si le réseau a bougé. Les conseils sont partout ; la preuve que votre effort a changé votre situation ne l'est pas."
+      - title: "Vous voyez la dérive avant qu'elle ne devienne un mauvais mois"
+        text: "Avec suffisamment d'historique, le modèle peut signaler quand vos tendances commencent à évoluer comme elles le font habituellement avant que les choses ne deviennent difficiles — tôt, discrètement, et à vous seul. Personne d'autre n'en est jamais informé."
+      - title: "Il vous relit quand votre vie change"
+        text: "Nouveau manager, nouvelle ville, nouveau bébé. Le vôtre est réévalué, parce que le but n'a jamais été de vous enfermer dans un type."
+    note:
+      title: "Où en est cela aujourd'hui"
+      text: "Le modèle spécifique à la personne, votre signature, votre relation clé et le fait de poser des questions sur votre propre rapport sont disponibles dès maintenant. La continuité entre les conversations, le raccourcissement de l'évaluation et l'alerte précoce personnelle sont en développement. Nous vous informerons de l'arrivée de chacun, et rien de tout cela ne change qui peut voir vos données."
+  the_line:
+    tag: "La ligne"
+    title: "Ce que voit votre employeur. Et ce qu'il ne verra jamais."
+    you_card:
+      title: "Ce que vous voyez"
+      text: "Vos réponses. Vos mots. Votre rapport. Votre signature. Votre relation clé. Comment tout cela évolue dans le temps — l'historique, qui est la partie qui devient la plus utile pour vous."
+      image: "/images/employeesPage/what-you-see.webp"
+    them_card:
+      title: "Ce qu'il voit"
+      text: "Des tendances sur des groupes de dix personnes ou plus. Où le lien social s'érode au sein d'une équipe ou d'une fonction, et quelles ressources d'accompagnement déjà financées sont réellement nécessaires. Jamais attribuable à une personne. Aucun résultat individuel identifiable ne remonte à la direction, à aucun moment, sous aucune forme — même si elle le demande."
+      image: "/images/employeesPage/what-they-see.webp"
+    notes:
+      - title: "Pourquoi dix"
+        text: "En dessous de ce seuil, une moyenne de groupe peut être retracée jusqu'aux individus. Il n'y a donc aucun rapport en dessous. Pas un chiffre plus petit pour une équipe plus petite, pas d'exception pour une demande hiérarchique. C'est une propriété du système, pas une politique administrée par quelqu'un."
+      - title: "Où se trouvent vos données"
+        text: "Votre profil individuel est chiffré pour vous seul. La couche de reporting de votre employeur est un système séparé, en aval, qui ne reçoit que des agrégats au-dessus du seuil. Les deux ne sont pas reliés par un paramètre de permission que quelqu'un pourrait modifier."
+    consent:
+      title: "Votre consentement, en quatre lignes"
+      items:
+        - "La participation est volontaire. Ne pas participer n'a aucune visibilité pour votre employeur."
+        - "Le consentement est explicite et révocable à tout moment. Le retirer arrête la collecte."
+        - "L'usage à des fins de recherche fait l'objet d'un consentement séparé, demandé et révocable séparément."
+        - "L'infrastructure est chiffrée et conforme au RGPD, avec hébergement en UE pour les déploiements européens et un traitement aligné HIPAA dans les contextes de soin."
+    later:
+      title: "Bientôt disponible, et seulement si vous y consentez"
+      text: "Une future version pourra utiliser des signaux que vous générez déjà — un historique que vous exportez vous-même, ou des données d'objets connectés comme le sommeil et la variabilité de la fréquence cardiaque — pour affiner l'image entre les conversations. Une option activée par vous, révocable, dirigée vers votre propre profil. Cela ne passe jamais par votre employeur, cela n'existe pas dans la version que vous utilisez aujourd'hui, et cela ne sera jamais activé pour vous par quelqu'un d'autre."
+  ai_question:
+    tag: "La question de l'IA"
+    title: "Oui, il y a une IA. Non, ce n'est pas elle qui vous évalue."
+    text: "Vous devriez être sceptique face à l'IA dans tout ce qui touche à la santé mentale. Les agents conversationnels génériques sont peu fiables pour les jugements à fort enjeu, ils ont tendance à vous approuver plutôt qu'à vous évaluer, et presque aucun n'a été évalué dans la durée."
+    text2: "C'est pourquoi nous n'en avons pas construit. Le modèle de langage gère la conversation : il transforme ce que vous dites en données structurées, et vous explique vos résultats en langage clair. C'est tout son rôle."
+    text3: "Il ne vous note pas. Il ne vous évalue pas. Il ne vous diagnostique pas. Chaque mesure et chaque calcul de réseau s'exécute de manière déterministe dans Lacis — auditable et traçable. La structure dans laquelle vous êtes placé a été apprise à l'avance à partir de cinq ans de recherche ; elle n'est pas improvisée sur le moment par un modèle génératif."
+    image: "/images/employeesPage/ai-question.webp"
+  faq:
+    title: "Questions fréquentes"
+    items:
+      - q: "Combien de temps cela prend-il ?"
+        a: "Environ quinze minutes la première fois. Chaque conversation suivante devient plus courte, car Lacis arrête de demander ce qu'il sait déjà de vous."
+      - q: "À quelle fréquence serai-je sollicité(e) ?"
+        a: "Il n'y a pas de calendrier fixe qui vous soit imposé. Votre organisation définit un rythme — généralement tous les quelques mois — et vous êtes prévenu(e) quand votre prochaine conversation arrive."
+      - q: "Se souviendra-t-il de moi d'une conversation à l'autre ?"
+        a: "Oui. Chaque conversation s'appuie sur votre historique, afin de pouvoir vous dire non seulement où vous en êtes, mais si vous avez réellement évolué depuis la dernière fois."
+      - q: "Mon manager peut-il demander mes résultats ?"
+        a: "Non. Votre rapport individuel n'est jamais partagé avec votre employeur, sous aucune forme, même s'il le demande. Il ne voit que des tendances anonymisées et à seuil, sur des groupes de dix personnes ou plus."
+      - q: "Que se passe-t-il si j'arrête en cours de route ?"
+        a: "Rien ne vous est reproché. Vous pouvez arrêter à tout moment, et votre employeur n'a aucune visibilité sur le fait que vous ayez commencé, mis en pause, ou terminé."
+      - q: "Et si je suis la seule personne de mon équipe à l'utiliser ?"
+        a: "Votre rapport individuel fonctionne de la même façon dans tous les cas — il est construit à partir de votre propre historique, pas d'une comparaison avec vos collègues. Les tendances organisationnelles n'apparaissent qu'une fois qu'une cohorte de dix personnes ou plus y a participé."
+      - q: "Et si je ne me reconnais pas dans le rapport ?"
+        a: "Dites-le-lui. Le rapport est une lecture, pas un verdict, et une partie de son utilité vient du fait de le corriger quand il se trompe — cette correction est elle-même une information que Lacis utilise pour mieux vous lire la prochaine fois."
+      - q: "Et si je ne vais pas bien en ce moment ?"
+        a: "Entrelacs est un instrument de mesure, pas un service de crise. Si vous avez besoin d'aide maintenant, consultez les ressources ci-dessous — une personne, pas un rapport, est la bonne prochaine étape."
+      - q: "Que devient mon profil si je quitte l'entreprise ?"
+        a: "Votre profil cesse immédiatement d'être accessible via l'instrument de votre employeur. Ce qu'il advient de vos données ensuite suit les mêmes droits de consentement et de suppression que vous aviez dès le premier jour — quitter l'entreprise ne change rien à qui pourrait un jour voir vos résultats individuels."
+      - q: "Qui contacter au sujet de mes données ?"
+        a: "Vous pouvez contacter directement notre référent protection des données — les coordonnées figurent dans votre e-mail d'invitation et dans l'avis de confidentialité que vous avez accepté avant votre première conversation."
+
+
+
 health_systems:
   meta:
     title: "Entrelacs pour les Systèmes de Santé"

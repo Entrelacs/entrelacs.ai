@@ -82,6 +82,9 @@ main .cta {
     #hero .left {
         width: 100%;
     }
+    #hero .cta{
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px) {

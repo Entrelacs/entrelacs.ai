@@ -7,7 +7,7 @@
     padding-bottom: 80px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     background: var(--surface-teal, #16223B);
 }
 
@@ -82,9 +82,6 @@ main .cta {
     #hero .left {
         width: 100%;
     }
-    #hero .cta{
-        width: 100%;
-    }
 }
 
 @media (max-width: 650px) {
@@ -105,6 +102,78 @@ main .cta {
 @media (max-width: 350px) {
     .ctas .cta {
         width: 100%;
+    }
+}
+
+
+/* ==========================================================================
+   CREDIBILITY BAR
+   ========================================================================== */
+
+.credibilityBar {
+    background: #E62154;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    box-shadow: 0px 15px 15px 0px rgba(199, 210, 228, 0.15);
+    overflow: hidden;
+}
+
+.credibilityMarquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.credibilityTrack {
+    display: flex;
+    width: max-content;
+    animation: credibilityScroll 30s linear infinite;
+}
+
+.credibilityTrack:hover {
+    animation-play-state: paused;
+}
+
+.credibilityTrackItems {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 56px;
+    padding-right: 56px;
+    flex-shrink: 0;
+}
+
+.credibilityBar p {
+    color: var(--text-white, #F4F5F7);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin: 0;
+    white-space: nowrap;
+}
+
+@keyframes credibilityScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 650px) {
+    .credibilityBar {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .credibilityTrackItems {
+        gap: 32px;
+        padding-right: 32px;
+    }
+
+    .credibilityBar p {
+        font-size: 16px;
     }
 }
 
@@ -148,6 +217,62 @@ main .cta {
     color: #E62154;
 }
 
+.box {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px 0 #C7D2E4;
+}
+
+.array {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    justify-content: space-between;
+}
+
+.arrayItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.array h3 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    color: #E62154;
+    margin-bottom: 0;
+}
+
+.array p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-gray);
+}
+
+.array .statSource {
+    font-size: 16px;
+    font-style: normal;
+    color: var(--text-light-gray, #939BAD);
+}
+
+@media (max-width: 1050px) {
+    .array {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .arrayItem {
+        flex: 0 0 40%;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 850px) {
+    .arrayItem {
+        flex: 0 0 100%;
+    }
+}
 @media (max-width: 650px) {
     .lsection {
         display: flex;
@@ -171,265 +296,136 @@ main .cta {
 
 
 /* ==========================================================================
-   DARK SECTION VARIANT (AI question)
+   DECADE OF SPENDING (the problem)
    ========================================================================== */
 
-.lsection-dark {
-    background: var(--surface-teal, #16223B);
-}
-
-.lsection-dark h2,
-.lsection-dark .noteBox h4 {
-    color: var(--text-white);
-}
-
-.lsection-dark .lsectionP {
-    color: #C7D2E4;
-}
-
-.lsection-dark .badge {
-    background: rgba(244, 245, 247, 0.1);
-    color: var(--text-white);
-}
-
-
-/* ==========================================================================
-   AI QUESTION ROW (dark section — photo bleeds to the viewport edge)
-   ========================================================================== */
-
-
-.aiQuestionRow {
-    display: flex;
-
-    gap: 64px;
+.comparisonRows {
     width: 100%;
-}
-
-.aiQuestionText {
-    flex: 1;
-}
-
-.aiQuestionImage {
-    flex: 0 0 50%;
-    display: flex;
-    max-height: 650px;
-    border-radius: 20px 0px 0px 20px;
-    overflow: hidden;
-}
-
-.aiQuestionImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-@media (min-width: 1000px) {
-    #aiQuestion.pageItem {
-        padding-right: 0 !important;
-        overflow: hidden;
-    }
-}
-@media (max-width: 1000px) {
-
-    .aiQuestionRow {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .aiQuestionText {
-        max-width: 100%;
-        flex: 1 1 auto;
-    }
-
-    .aiQuestionImage img {
-        border-radius: 20px;
-    }
-}
-
-@media (max-width: 650px) {
-    #aiQuestion.pageItem {
-        padding-right: 80px !important;
-    }
-}
-
-
-/* ==========================================================================
-   TEXT + IMAGE ROW (42 things / precision / AI question)
-   ========================================================================== */
-
-.textImageRow {
-    display: flex;
-    align-items: center;
-    gap: 56px;
-}
-
-.textImageCol {
-    flex: 1;
-}
-
-.textImageImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.textImageImage img {
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    display: block;
-}
-
-@media (max-width: 900px) {
-    .textImageRow {
-        flex-direction: column-reverse;
-    }
-
-    .textImageCol {
-        width: 100%;
-    }
-}
-
-
-/* ==========================================================================
-   CARD + IMAGE ROW ("42 things" — card with flush bleed photo)
-   ========================================================================== */
-
-.cardImageRow {
-    display: flex;
-    align-items: stretch;
-    background: #F9F5F0;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.cardImageCol {
-    flex: 1 1 58%;
-    padding: 56px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.cardImageCol .lsectionP {
-    max-width: none;
+.decadeIntro {
+    color: var(--text-primary, #0B0E14);
 }
 
-.cardImageImage {
-    flex: 0 0 42%;
-}
-
-.cardImageImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-@media (max-width: 1200px) {
-    .cardImageRow {
-        flex-direction: column-reverse;
-    }
-
-    .cardImageCol,
-    .cardImageImage {
-        flex: 1 1 100%;
-    }
-
-    .cardImageCol {
-        padding: 32px;
-    }
-
-    .cardImageImage img {
-        aspect-ratio: 490 / 400;
-    }
-}
-
-
-/* ==========================================================================
-   PRECISION CARDS (what changes when it remembers you)
-   ========================================================================== */
-
-.precisionCards {
-    margin-top: 56px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-}
-
-.precisionCard {
+.comparisonRow {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 390px;
-    padding: 32px;
-    border-radius: 24px;
-    background: #33486A;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--surface-gray3);
 }
 
-.precisionCard h4 {
-    font-size: 22px;
+.comparisonRow:first-child {
+    padding-top: 0;
+}
+
+.comparisonRow h3 {
+    flex: 0 0 430px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -0.44px;
-    color: var(--text-white);
-    margin: 0 0 12px;
-}
-
-.precisionCard p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #C7D2E4;
+    line-height: 1.2;
+    letter-spacing: -0.96px;
+    color: var(--text-teal, #16223B);
     margin: 0;
 }
 
-@media (max-width: 1050px) {
-    .precisionCards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .precisionCard {
-        min-height: 320px;
-    }
+.comparisonDivider {
+    align-self: stretch;
+    flex: 0 0 1px;
+    background: var(--surface-gray3);
 }
 
-@media (max-width: 550px) {
-    .precisionCards {
-        grid-template-columns: 1fr;
-    }
-
-    .precisionCard {
-        min-height: 0;
-    }
+.comparisonBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-
-/* ==========================================================================
-   NOTE BOX ROW (why ten / where your data sits)
-   ========================================================================== */
-
-.noteBoxRow {
-    margin-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+.comparisonBody p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-gray);
+    margin: 0;
 }
 
-.noteBoxRow .noteBox {
+.comparisonSource {
     margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    color: var(--text-light-gray, #939BAD);
 }
+
+#decadeStatsBox {
+    background: #ffffff;
+    padding: 56px;
+    margin-top: 40px;
+    box-shadow: 0 15px 15px 0 #C7D2E4;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.decadeFooter {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-gray);
+    max-width: 900px;
+}
+
 
 @media (max-width: 800px) {
-    .noteBoxRow {
-        grid-template-columns: 1fr;
+    .comparisonRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
+
+    .comparisonRow h3 {
+        flex: none;
+    }
+
+    .comparisonDivider {
+        display: none;
+    }
+
+    #decadeStatsBox {
+        padding: 32px 24px;
+        gap: 32px;
+    }
+}
+
+.movesNote {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #F2F5FA;
+    border: 1px solid var(--surface-gray3, #D3D7E0);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.movesNote p {
+    flex: 1;
+    min-width: 260px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-primary, #000000);
+    margin: 0;
 }
 
 
 /* ==========================================================================
-   COHORT / LOOP CARDS (the line)
+   COHORT ERODING
    ========================================================================== */
 
 .loopCards {
@@ -452,8 +448,6 @@ main .cta {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    padding: 12px;
 }
 
 .loopCard-navy .loopCardImage {
@@ -465,10 +459,15 @@ main .cta {
 }
 
 .loopCardImage img {
-    width: 100%;
-    height: 100%;
+    max-width: 32%;
+    max-height: 91%;
     object-fit: contain;
     display: block;
+}
+
+.loopCard-pink .loopCardImage img {
+    max-width: 90%;
+    max-height: 69%;
 }
 
 .loopCardBody {
@@ -556,6 +555,163 @@ main .cta {
 
 
 /* ==========================================================================
+   STOP GUESSING
+   ========================================================================== */
+
+#stopGuessing .pageItemContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.stopGuessingLeft {
+    flex: 1;
+}
+
+.stopGuessingRight {
+    flex: 1;
+}
+
+.stopGuessingRight img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.stopGuessingAccordion {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stopGuessingItem {
+    border-radius: 8px;
+    background: #33486A;
+}
+
+.stopGuessingItemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 40px;
+    cursor: pointer;
+}
+
+.stopGuessingItemHeader h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0;
+}
+
+.stopGuessingItemHeader svg {
+    flex-shrink: 0;
+    transition: transform .4s;
+}
+
+.stopGuessingItemBody {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 40px;
+    transition: max-height 0.5s linear, opacity 0.5s linear, padding 0.5s linear;
+}
+
+.stopGuessingItemBody p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-white);
+    margin: 0;
+}
+
+.stopGuessingItem.is-open .stopGuessingItemBody {
+    max-height: 400px;
+    opacity: 1;
+    padding: 0 40px 24px;
+}
+
+.stopGuessingItem.is-open .stopGuessingItemHeader svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 900px) {
+    #stopGuessing .pageItemContainer {
+        flex-direction: column;
+    }
+
+    .stopGuessingLeft,
+    .stopGuessingRight {
+        width: 100%;
+    }
+
+    .stopGuessingItemHeader {
+        padding: 20px 24px;
+    }
+
+    .stopGuessingItemBody {
+        padding: 0 24px;
+    }
+
+    .stopGuessingItem.is-open .stopGuessingItemBody {
+        padding: 0 24px 20px;
+    }
+}
+
+
+/* ==========================================================================
+   WHAT YOU GET TODAY
+   ========================================================================== */
+
+.getCards {
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+}
+
+.getCard {
+    flex: 1;
+    padding: 24px;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.getCard-live {
+    border: 3px solid #E62154;
+    box-shadow: 4px 5px 8.5px rgba(51, 72, 106, 0.55);
+}
+
+.getCard-roadmap {
+    background: #F9F5F0;
+    border: 1px solid #D3D7E0;
+}
+
+.getCard h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary, #0B0E14);
+    margin: 0 0 8px;
+    letter-spacing: -0.48px;
+}
+
+.getDisclaimer {
+    margin-top: 32px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-mid-gray);
+    max-width: 900px;
+}
+
+@media (max-width: 800px) {
+    .getCards {
+        flex-direction: column;
+    }
+}
+
+
+/* ==========================================================================
    FAQ
    ========================================================================== */
 
@@ -621,7 +777,6 @@ main .cta {
         font-size: 18px;
     }
 }
-
 
 
 /* ==========================================================================
@@ -715,11 +870,3 @@ main .cta {
 
 
 
-/* Overide */
-.accordionImage{
-    max-height: 630px;
-    padding: 24px;
-}
-.accordionImage img{
-    object-fit: contain !important;
-}

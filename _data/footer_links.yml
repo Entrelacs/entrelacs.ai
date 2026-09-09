@@ -6,13 +6,13 @@
     path: "roi_calculator/"
 - - translation: navigation.employers
     path: "employers/"
-  - translation: footer.nav.technology
-    path: "technology/"
-- - translation: navigation.clinicians
-    path: "clinicians/"
+  - translation: footer.nav.employees
+    path: "employees/"
+- - translation: navigation.care_settings
+    path: "care_settings/"
   - translation: footer.nav.about
     path: "about/"
-- - translation: navigation.health_systems
-    path: "health_systems/"
+- - translation: navigation.the_science
+    path: "the_science/"
   - translation: footer.nav.contact
     path: "contact-us/"

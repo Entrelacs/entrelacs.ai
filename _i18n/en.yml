@@ -2,11 +2,9 @@ navigation:
   home: "Home"
   employers: "For Employers"
   employees: "For Employees"
-  health_systems: "For Health Systems"
-  clinicians: "For Clinicians"  
-  technology: "Technology"
+  care_settings: "For Care Settings"
+  the_science: "The Science"
   roi_calculator: "ROI calculator"
-  approach: "Our Approach" 
   about: "About Us"
   contact: "Contact Us"
 
@@ -16,10 +14,9 @@ footer:
     home: "Home"
     employers: "For Employers"
     employees: "For Employees"
-    healthcare: "Healthcare"
+    care_settings: "For Care Settings"
     about: "About Us"
-    technology: "Technology"
-    approach: "Our Approach"
+    the_science: "The Science"
     roi_calculator: "ROI Calculator"
     contact: "Contact Us"
   legal:
@@ -374,6 +371,121 @@ employers:
     subtext: "We're building our next design-partner cohort with a small group of employers who want early access, direct input into the roadmap, and a proactive way to protect their people."
     cta_primary: "Request a demo"
     cta_secondary: "Apply to be a design partner →"
+
+
+employees:
+  meta:
+    title: "Entrelacs for Employees"
+  hero:
+    eyebrow: "ENTRELACS FOR EMPLOYEES"
+    title: "Fifteen minutes for a read on your own life, not a comparison to everyone else's."
+    description: "Entrelacs measures social connection — the driver of brain capital with the strongest evidence behind it and the lowest burden to measure. It measures it for you specifically, not against a population average. Your employer bought the instrument. They cannot see your answers, now or ever."
+    cta_sample: "See a sample report"
+    cta_employer: "Skip to what your employer sees"
+    image: "/images/employeesPage/hero.webp"
+  why_bother:
+    tag: "Why you'd bother"
+    title: "The output is yours first. That's the design, not a courtesy."
+    text: "Most workplace surveys ask you questions and hand the data straight to management. You get a slide in an all-hands six weeks later. Naturally, you answer carefully rather than honestly."
+    text2: "The measurement only works on honest answers, and nobody answers honestly for a system that gives them nothing back. So it has to be worth your time on the first conversation, and worth even more on the tenth."
+  forty_two:
+    tag: "What it actually tells you"
+    title: "\"I'm fine, I'm just tired\" is one sentence covering 42 different things."
+    text: "When something's off, most people have one word for it. Tired. Flat. Off. One feeling, so it gets one explanation — usually work, or sleep, or yourself."
+    text2: "Underneath are dozens of separate things, and they're all facets of one: how you're connected to the people around you. Whether there's anyone you can be completely open with. Whether some part of you worries about being a bother. Whether a normal week holds real contact or mostly logistics. Whether you could say a difficult thing at work without it costing you. Whether the work you do gets noticed by anyone."
+    text3: "Entrelacs reads 44 of these — 26 across your life, 18 at work, read separately because they don't move together. Social connection is what gets measured for a good reason: of everything that shapes how you're doing, it carries the strongest evidence and the lightest measurement burden. So the report tells you what your forty-two add up to — where you stand on burnout, loneliness, low mood and physical health — and which connection domain is driving it. Indications, not diagnoses, with the lever attached."
+    text4: "A vague, heavy feeling becomes specific things in specific places. Specific things can be worked on. Vague ones can only be endured."
+    image: "/images/employeesPage/forty-two.webp"
+  four_moves:
+    tag: "How it reads you"
+    title: "Four moves. The method is called Key Signature Reconstruction — here's what each part does for you."
+    subtitle: "This is the part that makes it different from every survey you've been sent. Not the questions. What happens to your answers."
+    accordion:
+      - title: "It works out who to read you alongside."
+        text: "Not people who look like you on paper, but people whose patterns rise and fall together over time. Which means the conclusions actually apply to you — the reason generic advice so often lands wrong is that it was derived from an average across everyone, and the average person doesn't exist."
+        image: "/images/employeesPage/accordion1.png"
+      - title: "It stops asking you things it can already work out."
+        text: "It draws only the questions that carry real information for someone like you, and reconstructs the rest. Fifteen minutes instead of an hour, with no stretch of irrelevant questions. Most people notice the opposite of survey fatigue — a question arrives that feels uncomfortably well-aimed."
+        image: "/images/employeesPage/accordion2.png"
+      - title: "It maps you as a system, not a scorecard."
+        text: "Your answers become a network where things hold each other up. That explains what never made sense: why you can be fine on paper and not fine, why the obvious fix didn't help, why one loss seemed to take three things with it."
+        image: "/images/employeesPage/accordion3.png"
+      - title: "It tells you the one place to push."
+        text: "Your answers become a network where things hold each other up. That explains what never made sense: why you can be fine on paper and not fine, why the obvious fix didn't help, why one loss seemed to take three things with it."
+        image: "/images/employeesPage/accordion4.png"
+  remembers:
+    tag: "What changes when it remembers you"
+    title: "Most tools tell you how you compare. This one tells you how you've changed."
+    text: "Every wellbeing app you've tried scored you against other people, which is why the number never meant much — it couldn't tell you whether a hard month was a real shift or just a hard month. Entrelacs builds a model of you specifically, so it can notice when you have moved."
+    image: "/images/employeesPage/remembers.webp"
+    cards:
+      - title: "Fewer questions, not more"
+        text: "As it learns what's stable about you, it stops asking. The conversation gets shorter each time."
+      - title: "You find out whether it worked"
+        text: "Act on your keystone, and next time you can see whether the network moved. Advice is everywhere; evidence that your effort changed your situation is not."
+      - title: "You see drift before it becomes a bad month"
+        text: "With enough history the model can flag when your patterns start shifting the way they usually shift before things get difficult — early, quietly, and to you. Nobody else is told, ever."
+      - title: "It re-reads you when your life changes"
+        text: "New manager, new city, new baby. Yours gets re-estimated, because the point was never to file you into a type."
+    note:
+      title: "Where this stands today"
+      text: "The person-specific model, your signature, your keystone and asking questions about your own report are live now. Continuity between conversations, the shortening assessment and personal early warning are in development. We'll tell you when each arrives, and none of it changes who can see your data."
+  the_line:
+    tag: "The line"
+    title: "What your employer sees. And what they never will."
+    you_card:
+      title: "What you see"
+      text: "Your answers. Your words. Your report. Your signature. Your keystone. How all of it changes over time — the history, which is the part that becomes most useful to you."
+      image: "/images/employeesPage/what-you-see.webp"
+    them_card:
+      title: "What they see"
+      text: "Patterns across groups of ten people or more. Where connection is eroding across a team or a function, and which support resources they already pay for are actually needed. Never attributable to a person. No individual, identifiable result reaches management at any time, in any form — including if they ask for it."
+      image: "/images/employeesPage/what-they-see.webp"
+    notes:
+      - title: "Why ten"
+        text: "Below that threshold a group average can be worked backwards to individuals. So there is no reporting below it. Not a smaller number for a smaller team, not an exception for a senior request. It is a property of the system, not a policy someone administers."
+      - title: "Where your data sits"
+        text: "Your individual profile is encrypted to you. Your employer's reporting layer is a separate, downstream system that only ever receives thresholded aggregates. The two are not joined by a permission setting somebody could change."
+    consent:
+      title: "Your consent, in four lines"
+      items:
+        - "Participation is voluntary. Not participating has no visibility to your employer"
+        - "Consent is explicit and revocable at any point. Withdrawing it stops collection"
+        - "Research use is a separate consent, asked separately and withdrawable separately"
+        - "Infrastructure is encrypted and GDPR-compliant, with EU hosting for European deployments and HIPAA-aligned handling in care settings"
+    later:
+      title: "Coming later, and only if you opt in"
+      text: "A future version will be able to use signals you already generate — a history you export yourself, or wearable data such as sleep and heart-rate variability — to sharpen the picture between conversations. Opt-in, initiated by you, revocable, routed to your own profile. It never passes through your employer, it does not exist in the version you are using today, and it will never be switched on for you by someone else."
+  ai_question:
+    tag: "The AI question"
+    title: "Yes, there's an AI. No, it isn't the thing assessing you."
+    text: "You should be skeptical of AI in anything touching mental health. General-purpose chatbots are poor at high-stakes judgment, they tend to agree with you rather than assess you, and almost none have been evaluated over time."
+    text2: "So we didn't build one. The language model handles the conversation: it turns what you say into structured inputs, and explains your results back to you in plain language. That is the whole of its job."
+    text3: "It does not score you. It does not assess you. It does not diagnose you. Every measurement and every network calculation runs deterministically in Lacis — auditable and traceable. The structure it places you in was learned in advance from five years of research; it is not improvised in the moment by a generative model."
+    image: "/images/employeesPage/ai-question.webp"
+  faq:
+    title: "Frequently asked questions"
+    items:
+    - q: "How long does it take?"
+      a: "About fifteen minutes the first time, and less after that as the instrument learns what it can stop asking."
+    - q: "How often will I be asked?"
+      a: "As often as it's useful to you. There is no mandated cadence and no reminder you can't turn off. Most people find a check-in worthwhile when something has changed, or every few months."
+    - q: "Will it remember me between conversations?"
+      a: "Today each conversation stands on its own, and your profile persists so you can see your previous report. Continuity is in development. When it arrives it will be yours, encrypted to you, and still invisible to your employer."
+    - q: "Can my manager ask for my results?"
+      a: "They can ask. There is nothing to give them — individual results do not exist in any form your employer can reach."
+    - q: "What if I stop halfway through?"
+      a: "Nothing happens. Participation is voluntary throughout and consent is revocable, and neither is visible to your employer."
+    - q: "What if I'm the only person on my team using it?"
+      a: "Then there is no cohort, and nothing is reported. Ten is the floor."
+    - q: "What if I just don't recognize myself in the report?"
+      a: "Say so, in the conversation. You can ask why it read you that way and what would change the picture. The model is a reconstruction, not a ruling, and a mismatch is useful information rather than an argument you have to win."
+    - q: "What if I'm not okay right now?"
+      a: "See the block at the foot of every page. Entrelacs isn't the right thing to reach for in a hard moment, and it will point you to what is."
+    - q: "What happens to my profile if I leave the company?"
+      a: "[DECISION NEEDED — see build notes. Do not publish this page without an answer here; the sections above make every reader ask it.]"
+    - q: "Who do I contact about my data?"
+      a: "Our Data Protection Officer handles anything to do with your data — access, corrections, deletion, and consent, including withdrawing it. Reach them at dpo@entrelacs.ai. Your employer is not involved in these requests and cannot see them."
 
 
 health_systems:

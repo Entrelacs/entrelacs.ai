@@ -4,12 +4,10 @@
   path: "employers/"
 - translation: navigation.employees
   path: "employees/"
-- translation: navigation.clinicians
-  path: "clinicians/"
-- translation: navigation.health_systems
-  path: "health_systems/"
-- translation: navigation.approach
-  path: "approach/"
+- translation: navigation.care_settings
+  path: "care_settings/"
+- translation: navigation.the_science
+  path: "the_science/"
 - translation: navigation.roi_calculator
   path: "roi_calculator/"
 - translation: navigation.about
