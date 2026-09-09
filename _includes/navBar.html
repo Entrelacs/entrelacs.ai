@@ -1,10 +1,7 @@
 <nav class="navbar">
   <div class="nav_container">
 
-    <a href="{{ site.baseurl }}/" class="logo">
-      <img src="/images/logo.png" alt="Entrelacs Logo">
-      Entrelacs
-    </a>
+    {% include logo.html %}
 
     <div class="hamburger" id="hamburger">
       <span></span>
@@ -22,8 +19,8 @@
     </ul>
 
     <ul class="navLinks">
-      <li><a class="cta" href="{{ site.baseurl }}/contact-us/">{% t navigation.contact %}</a></li>
       <li>{% include language_switcher.html %}</li>
+      <li><a class="cta" href="{{ site.baseurl }}/contact-us/">{% t navigation.contact %}</a></li>
     </ul>
 
     <div class="mobileMenu" id="mobileMenu" style="display: none;">

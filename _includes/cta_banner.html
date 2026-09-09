@@ -5,7 +5,7 @@
         align-items: center;
         padding-top: 100px;
         padding-bottom: 100px;
-        background: url(/images/cta_banner.webp) no-repeat center;
+        background: radial-gradient(120% 150% at 50% 0%, #2E4064 0%, #16223B 60%, var(--surface-teal) 100%);
         background-size: cover;
     }
 
@@ -24,9 +24,9 @@
     }
 
     .tags p {
-        background: #EAF1F1;
-        padding: 4px 12px;
-        color: #156B70;
+        background: rgba(244, 245, 247, 0.1);
+        padding: 7px 18px;
+        color: var(--text-white);
         text-align: center;
         font-family: "DM Sans";
         font-size: 14px;
@@ -36,19 +36,19 @@
     }
 
     .ctaBanner h2 {
-        color: #092627;
+        color: var(--text-white);
         text-align: center;
-        font-family: "Libre Baskerville";
+        font-family: "DM Sans";
         font-size: 50px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 800;
         line-height: 1.24;
         letter-spacing: -1px;
-        margin: 12px 0 16px;
+        margin: 24px 0 16px;
     }
 
     .ctaBanner p {
-        color: #495050;
+        color: #C7D2E4;
         text-align: center;
         font-family: "DM Sans";
         font-size: 18px;
@@ -56,6 +56,11 @@
         font-weight: 500;
         line-height: 145%;
         max-width: 1000px;
+    }
+
+    .ctaBanner .cta1 {
+        color: var(--text-white);
+        gap: 8px;
     }
 
     @media (max-width: 750px) {
@@ -87,8 +92,16 @@
         <h2>{% t cta_banner.title %}</h2>
         <p>{% t cta_banner.description %}</p>
         <div class="cctas" style="margin-top: 40px;">
-            <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">{% t cta_banner.cta_primary %}</a>
-            <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t cta_banner.cta_secondary %}</a>
+            <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t cta_banner.cta_primary %}</a>
+            <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">
+                {% t cta_banner.cta_secondary %}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#F4F5F7" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.5 12H20.33" stroke="#F4F5F7" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
         </div>
     </div>
 </div>

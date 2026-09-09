@@ -33,8 +33,8 @@ home:
     title: "Entrelacs"
   video_link: https://www.youtube.com/embed/KT3zVYqUUn4?si=zRbS_7o-PsrSFgDD
   hero:
-    title_prefix: "Mental health finally gets early detection"
-    tag_text: "Clinical-Grade AI for Mental Health"
+    title_prefix: "The asset your company runs on has never been measured."
+    tag_text: "Brain Health. Personal, Private, Precise."
     wheel:
       item1: "when it matters"
       item2: "with clinical AI"
@@ -43,18 +43,32 @@ home:
     cta_waitlist: "Join our waiting list"
     cta_demo: "Request a demo"
   problem:
-    tag: "The Problem"
-    heading: "Mental health is the only area of medicine without early detection "
-    description: "Clinical-grade screening, matching, and monitoring — so you can act weeks before a crisis, not months after."
+    tag: "Why now"
+    heading: "You measure every asset <br> you manage. Except this one."
+    description: "Finance has a ledger. Sales has a pipeline. Infrastructure has uptime. The asset all three depend on—your people's capacity to think, adapt, and work together—is the only one without a measurement. As AI absorbs the routine, your people's capacity is now the single biggest factor in your organization's success. The OECD calls it brain capital. Companies pour 93% of their AI budgets into technology and 7% into the people who have to absorb it (Deloitte, 2026). Nobody develops what they can't measure."
+    image: "/images/problem-hero.png"
     cardiology:
       title: "In cardiology"
-      desc: "We catch warning signs years before a heart attack occurs."
+      desc: "We catch warning signs years before a heart attack."
     oncology:
       title: "In oncology"
       desc: "We screen before symptoms appear."
-    mental_health:
-      title: "But in <br> mental health"
-      desc: "We wait until someone is already in crisis — when the cost is highest and the window for prevention has already passed."
+    workforce:
+      title: "But in workforce <br> brain health"
+      desc: "There is no screen and no baseline. Nothing gets measured until something breaks, and the first data point is the exit interview."
+    stats:
+      - value: "20%"
+        text: "of employees worldwide are engaged at work — a post-2020 low, costing an estimated $10 trillion in lost productivity"
+        source: "Gallup, 2026"
+      - value: "49%"
+        text: "of U.S. workers now describe themselves as struggling — more than thriving (46%), for the first time on record"
+        source: "Gallup, 2026"
+      - value: "42%"
+        text: "believe disclosing a mental health struggle would damage their career"
+        source: "NAMI & Ipsos, 2025"
+      - value: "<10%"
+        text: "EAP utilization — though 82% of employers offer one"
+        source: "SHRM, 2024–2025"
   cost:
     heading: "The cost of waiting"
     description: "We're missing the early signs that could prevent bigger problems down the road, waiting until someone is already struggling before we act."
@@ -83,34 +97,38 @@ home:
         title: "Detect deterioration weeks before crisis"
         desc: "Continuous digital monitoring tracks changes in engagement, language patterns, and behavioral signals between sessions, alerting care teams days to weeks before a crisis — turning reactive care into preventive care."
   how_it_works:
-    tag: "How it works"
-    heading: "Three steps. No disruption. Live in weeks."
-    description: "Three steps that integrate into existing workflows — no additional clinical time required."
+    tag: "The instrument"
+    heading: "One private conversation. <br> One precise measurement. <br> A direction you can act on."
+    description: "An employee talks with Entrelacs — a brief, natural conversation, not a form, but a conversation partner. Underneath runs Lacis, our psychometric engine, which does what no survey does: it measures that specific person."
     cards:
       screen:
-        tag: "SCREEN"
-        title: "15-minute assessment"
-        desc: "A conversational AI assessment identifies the 5–7 most informative questions unique to each person, screening for mood, anxiety, social connection, burnout, and risk factors in a single 15-minute session."
-        benefits:
-          - "Clear risk categories per person"
-          - "Comprehensive"
-          - "No clinical time required"
+        title: "Person-specific, not <br> population-average"
+        desc: "A survey scores your answers against a norm. Lacis models you, and returns a picture of how your own connection actually works rather than the average of everyone else's."
       match:
-        tag: "MATCH"
-        title: "Precision care matching"
-        desc: "40–60% of people drop out of mental health care when the first treatment isn't the right fit. Precision matching connects each person to the right intervention from day one — achieving 2–3x faster improvement without trial and error."
-        benefits:
-          - "Right support, first time"
-          - "Fewer failed treatments"
-          - "2-3x faster improvement"
+        title: "Where to act, <br> not just a score"
+        desc: "44 domains, 26 in life and 18 at work. Each person gets a Key Connection Signature — the five areas carrying the most weight right now — and a Connection Keystone: the one place where acting carries furthest."
       monitor:
-        tag: "MONITOR"
-        title: "Continuous monitoring"
-        desc: "Between appointments, the platform continuously tracks behavioral patterns — including digital engagement, language indicators, activity, sleep, and self-reported mood — detecting signs of deterioration days to weeks before a crisis develops. This early warning capability creates a critical window for timely, low-cost intervention before situations escalate."
-        benefits:
-          - "Alerts before problems escalate"
-          - "Tracks changes between visits"
-          - "Early warning before a crisis"
+        title: "Private for the person, <br> patterns for the organization"
+        desc: "Employees get a confidential picture of their own connection. Leaders get aggregated patterns across groups of ten or more, with recommendations matched to the team's profile. Never an individual."
+  trust:
+    tag: "Trust architecture"
+    heading: "Private employee data is protected, free of management supervision. Private by design."
+    description: "Every workplace tool that routes sensitive data to management gets the same result: people stop telling the truth. 42% believe disclosing a mental health struggle would damage their career (NAMI & Ipsos, 2025). The reverse is just as well documented: people are measurably more honest with a system when no one who evaluates them is watching (Lucas et al., 2014)."
+    employee:
+      title: "What stays with the employee"
+      items:
+        - "Individual responses are never exposed to the employer"
+        - "Personal baselines and history belong to the employee alone"
+        - "The employee controls sharing and deletion at any time"
+        - "Participation is voluntary; consent is explicit and revocable"
+    organization:
+      title: "What the organisation sees:"
+      items:
+        - "Aggregate patterns only, never individuals"
+        - "Cohorts of at least ten people"
+        - "No path from a group result back to a person"
+        - "Research use requires separate, revocable consent"
+    note: "Without that condition the measurement would not be valid. <br> Entrelacs is a private mirror that serves the employee first, not a monitor that reports on them."
   research:
     heading: "Research-grade rigor, real-world proof"
     description: "Grounded in 80,000+ research articles, validated across 8 countries, and backed by €3M in EU funding."
@@ -134,54 +152,86 @@ home:
       - src: "/images/stanford_university.png"
       - src: "/images/european_commission.png"
         style: "max-height: 80px;"
+  scientific_credibility:
+    tag: "Scientific credibility"
+    title: "Research-grade, <br> by construction."
+    text_intro: "Built by researchers who spent two decades documenting why standard instruments fail individuals — then built the instrument the evidence called for."
+    stats:
+      - value: "9,000+"
+        desc: "research articles screened across seven languages, mapping every validated social-connection instrument in the literature"
+      - value: "354"
+        desc: "in-depth interviews across eight countries and five continents, coded into the domain model"
+      - value: "€3M"
+        desc: "EU Horizon LONELY-EU program, led by our CEO as Principal Investigator"
+      - value: "FDA"
+        subtitle: "Pre-Submission filed"
+        desc: "pursuing De Novo classification; CE Mark Class IIa targeted 2027"
+    bottom_text: "Developed with strategic advisors at Stanford and UC Davis, an Oxford research affiliation through our CEO, alongside WHO and OECD policy work on social connection."
+  help_now:
+    heading: "If you need help now"
+    intro1: "Entrelacs is a measurement instrument, not a crisis service. If you need help now, it can only point you toward it."
+    intro2: "If you're struggling, or worried about someone else, talk to a person — your doctor, a crisis line, or someone you trust. Your employer is not involved and cannot see that you looked."
+    items:
+      - label: "US"
+        text: "988 Suicide & Crisis Lifeline, call or text 988"
+      - label: "France"
+        text: "3114, national suicide prevention line"
+      - label: "UK"
+        text: "Samaritans, 116 123"
+      - label: "Elsewhere"
+        text: "lists services by country"
+        link_text: "findahelpline.com"
+        link: "https://findahelpline.com"
+      - label: "Immediate danger"
+        text: "emergency services"
+    outro: "If something in your report worried you, take it to a professional rather than sitting with it."
+    image: "/images/helpNow.jpg"
   who_we_serve:
     tag: "Who we serve"
-    heading: "One platform. Connecting employers, clinicians, and health systems"
+    heading: "Built for the workplace. <br> Engineered to clinical standards."
     cards:
-      - bg_color: "#F2EFE9"
+      - bg_color: "#33486A"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "For Employees"
+        desc: "A private mirror, not a monitor. Get a personalized picture of how connection is actually working in your life and where a change would carry furthest."
+        cta_text: "Learn more"
+        link: "/approach/"
+        svg_content: >
+          <svg width="211" height="262" viewBox="0 0 211 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.54">
+            <path d="M105.093 109.545C105.658 109.649 106.224 109.753 106.806 109.859C110.213 110.569 112.078 111.24 114.199 114.037C116.148 117.197 115.61 119.399 114.831 122.828C114.004 125.738 112.72 128.339 111.341 131.024C111.043 131.622 110.744 132.219 110.437 132.834C109.793 134.119 109.147 135.402 108.497 136.684C107.47 138.713 106.455 140.747 105.443 142.784C102.568 148.571 99.6772 154.349 96.7632 160.116C94.9764 163.653 93.2103 167.199 91.4551 170.752C90.7835 172.102 90.1046 173.448 89.4185 174.79C88.4616 176.664 87.5294 178.547 86.6019 180.435C86.3128 180.986 86.0238 181.538 85.726 182.106C84.3305 184.872 84.3305 184.872 84.5002 187.847C85.1469 189.055 85.8638 190.106 86.6969 191.193C87.0101 191.702 87.3233 192.212 87.646 192.737C87.9408 193.187 88.2357 193.637 88.5395 194.1C88.878 194.619 89.2165 195.137 89.5652 195.672C89.9221 196.215 90.2789 196.757 90.6466 197.317C91.0185 197.885 91.3903 198.454 91.7735 199.04C92.9522 200.842 94.1334 202.642 95.3146 204.442C96.1181 205.67 96.9215 206.897 97.7247 208.125C99.6858 211.121 101.649 214.116 103.613 217.11C114.191 214.604 128.565 207.083 134.803 197.794C137.049 191.932 136.594 185.618 136.021 179.483C135.983 179.072 135.944 178.662 135.905 178.238C135.534 174.442 135.074 170.659 134.53 166.883C133.359 158.764 132.995 150.706 132.799 142.513C132.739 140.338 132.646 138.166 132.543 135.993C132.489 134.669 132.435 133.345 132.382 132.022C132.35 131.43 132.318 130.839 132.286 130.23C132.166 126.605 132.573 123.763 134.598 120.686C136.328 118.853 138.126 117.689 140.628 117.25C142.681 117.432 144.682 117.908 146.695 118.343C147.276 118.469 147.857 118.594 148.455 118.723C153.52 119.87 158.158 121.466 162.839 123.692C163.371 123.937 163.371 123.937 163.914 124.186C177.037 130.311 187.324 140.27 195.791 151.81C196.153 152.301 196.514 152.792 196.887 153.298C201.869 160.486 205.178 168.84 207.51 177.221C207.715 177.937 207.92 178.654 208.131 179.392C209.331 183.853 209.936 188.274 210.279 192.878C210.316 193.377 210.354 193.876 210.392 194.389C211.747 216.698 202.738 241.634 198.596 261.233C133.059 247.431 67.5222 233.629 -0.000621618 219.409C16.2443 142.538 16.2443 142.538 43.4272 122.664C43.9191 122.303 44.411 121.941 44.9178 121.569C52.1187 116.595 60.4871 113.292 68.8825 110.964C69.9592 110.658 69.9592 110.658 71.0576 110.345C82.2438 107.347 93.788 107.36 105.093 109.545Z" fill="#445E88"/>
+            <path d="M105.093 109.545C105.658 109.649 106.224 109.753 106.806 109.859C110.213 110.569 112.078 111.24 114.199 114.037C116.148 117.197 115.61 119.399 114.831 122.828C114.004 125.738 112.72 128.339 111.341 131.024C111.043 131.622 110.744 132.219 110.437 132.834C109.793 134.119 109.147 135.402 108.497 136.684C107.47 138.713 106.455 140.747 105.443 142.784C102.568 148.571 99.6772 154.349 96.7632 160.116C94.9764 163.653 93.2103 167.199 91.4551 170.752C90.7835 172.102 90.1046 173.448 89.4185 174.79C88.4616 176.664 87.5294 178.547 86.6019 180.435C86.3128 180.986 86.0238 181.538 85.726 182.106C84.3305 184.872 84.3305 184.872 84.5002 187.847C85.1469 189.055 85.8638 190.106 86.6969 191.193C87.0101 191.702 87.3233 192.212 87.646 192.737C87.9408 193.187 88.2357 193.637 88.5395 194.1C88.878 194.619 89.2165 195.137 89.5652 195.672C89.9221 196.215 90.2789 196.757 90.6466 197.317C91.0185 197.885 91.3903 198.454 91.7735 199.04C92.9522 200.842 94.1334 202.642 95.3146 204.442C96.1181 205.67 96.9215 206.897 97.7247 208.125C99.6858 211.121 101.649 214.116 103.613 217.11C114.191 214.604 128.565 207.083 134.803 197.794C137.049 191.932 136.594 185.618 136.021 179.483C135.983 179.072 135.944 178.662 135.905 178.238C135.534 174.442 135.074 170.659 134.53 166.883C133.359 158.764 132.995 150.706 132.799 142.513C132.739 140.338 132.646 138.166 132.543 135.993C132.489 134.669 132.435 133.345 132.382 132.022C132.35 131.43 132.318 130.839 132.286 130.23C132.166 126.605 132.573 123.763 134.598 120.686C136.328 118.853 138.126 117.689 140.628 117.25C142.681 117.432 144.682 117.908 146.695 118.343C147.276 118.469 147.857 118.594 148.455 118.723C153.52 119.87 158.158 121.466 162.839 123.692C163.371 123.937 163.371 123.937 163.914 124.186C177.037 130.311 187.324 140.27 195.791 151.81C196.153 152.301 196.514 152.792 196.887 153.298C201.869 160.486 205.178 168.84 207.51 177.221C207.715 177.937 207.92 178.654 208.131 179.392C209.331 183.853 209.936 188.274 210.279 192.878C210.316 193.377 210.354 193.876 210.392 194.389C211.747 216.698 202.738 241.634 198.596 261.233C133.059 247.431 67.5222 233.629 -0.000621618 219.409C16.2443 142.538 16.2443 142.538 43.4272 122.664C43.9191 122.303 44.411 121.941 44.9178 121.569C52.1187 116.595 60.4871 113.292 68.8825 110.964C69.9592 110.658 69.9592 110.658 71.0576 110.345C82.2438 107.347 93.788 107.36 105.093 109.545Z" fill="#24344E"/>
+            </g>
+            <path d="M184.364 6.60556C191.448 15.6829 195.824 25.8692 196.999 37.3568C197.064 37.9415 197.129 38.5261 197.196 39.1285C198.047 54.2542 192.041 69.0797 182.133 80.2567C171.062 91.5769 156.602 97.6949 140.824 97.9471C125.989 97.6751 112.031 91.7915 101.483 81.5111C90.8089 70.0583 84.9689 55.8628 85.2572 40.1913C86.2726 25.1564 92.0987 11.3432 103.18 1.05106C112.816 -7.11885 123.804 -12.3379 136.468 -13.6292C137.054 -13.6939 137.64 -13.7586 138.243 -13.8253C155.637 -14.8007 173.483 -6.88339 184.364 6.60556Z" fill="#24344E"/>
+          </svg>
+
+      - bg_color: "#E62154"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
         title: "For Employers"
-        desc: "Spot workforce mental health risks early, before they become costly crises."
+        desc: "Measure the connection and capacity of your workforce, person by person, and see where the programs you already pay for are needed."
         cta_text: "Learn more"
-        link: "/employers/"
+        link: "/organizations/"
         svg_content: >
-          <svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67812)">
-                  <path d="M301.833 54.7054L262.592 48.0011L267.062 21.8403C268.247 14.9021 266.628 7.77709 262.56 2.0328C258.492 -3.71149 252.309 -7.60454 245.37 -8.78993L166.888 -22.1985C159.95 -23.3839 152.825 -21.7645 147.081 -17.6966C141.336 -13.6287 137.443 -7.44552 136.258 -0.507255L131.788 25.6535L92.5473 18.9492C85.6091 17.7638 78.4841 19.3832 72.7398 23.4511C66.9955 27.519 63.1025 33.7022 61.9171 40.6404L35.1 197.605C33.9146 204.543 35.534 211.668 39.6018 217.412C43.6697 223.157 49.8529 227.05 56.7912 228.235L266.077 263.991C273.015 265.177 280.14 263.557 285.885 259.489C291.629 255.422 295.522 249.238 296.707 242.3L323.525 85.3356C324.71 78.3974 323.091 71.2724 319.023 65.5281C314.955 59.7838 308.772 55.8907 301.833 54.7054ZM162.419 3.96226L240.901 17.3708L236.431 43.5316L157.949 30.123L162.419 3.96226Z" fill="#E7DFD0" fill-opacity="0.6" />
-                  <path d="M321.364 69.6206C319.552 65.7444 316.83 62.3639 313.429 59.767C310.028 57.1701 306.05 55.4339 301.834 54.7064L92.548 18.9503C88.3292 18.2367 84.0004 18.5536 79.9305 19.8742C75.8606 21.1947 72.1704 23.4797 69.1743 26.5344C67.5016 28.1741 66.2927 30.2273 65.6704 32.4855C65.0482 34.7436 65.0348 37.1263 65.6315 39.3913L79.1394 97.4325C82.2464 110.004 88.9642 121.391 98.4646 130.191C107.965 138.99 119.833 144.817 132.605 146.954L220.505 161.971C233.404 164.433 246.743 163.013 258.834 157.889C270.925 152.765 281.223 144.169 288.425 133.189L320.983 82.883C322.205 80.9002 322.883 78.6308 322.95 76.3028C323.017 73.9748 322.47 71.6702 321.364 69.6206Z" fill="#D6CFC1" fill-opacity="0.8" />
-                  <path d="M201.18 113.232L175.019 108.762C167.795 107.528 160.938 112.384 159.704 119.608L155.235 145.768C154 152.993 158.856 159.849 166.08 161.084L192.241 165.553C199.465 166.787 206.322 161.932 207.556 154.708L212.026 128.547C213.26 121.323 208.404 114.466 201.18 113.232Z" fill="#E7DFD0" fill-opacity="0.6" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67812">
-                      <rect width="318.478" height="318.478" fill="white" transform="translate(53.6342 -68.4727) rotate(9.69527)" />
-                  </clipPath>
-              </defs>
-          </svg>
-      - bg_color: "#E3EEF0"
-        title: "For Clinicians"
-        desc: "Give patients a voice between sessions with validated, real-time mental health tracking."
+          <svg width="259" height="265" viewBox="0 0 259 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M267.113 54.7112L227.872 48.0069L232.342 21.8462C233.527 14.9079 231.908 7.78295 227.84 2.03865C223.772 -3.70563 217.589 -7.59869 210.65 -8.78407L132.168 -22.1926C125.23 -23.378 118.105 -21.7586 112.361 -17.6907C106.616 -13.6229 102.723 -7.43966 101.538 -0.501396L97.0683 25.6594L57.8272 18.9551C50.8889 17.7697 43.7639 19.3891 38.0196 23.457C32.2754 27.5248 28.3823 33.708 27.1969 40.6463L0.379811 197.611C-0.805578 204.549 0.813796 211.674 4.88169 217.418C8.94959 223.163 15.1328 227.056 22.071 228.241L231.357 263.997C238.295 265.183 245.42 263.563 251.165 259.495C256.909 255.427 260.802 249.244 261.987 242.306L288.804 85.3415C289.99 78.4032 288.37 71.2782 284.303 65.5339C280.235 59.7897 274.051 55.8966 267.113 54.7112ZM127.699 3.96812L206.181 17.3767L201.711 43.5374L123.229 30.1289L127.699 3.96812Z" fill="#970C35"/>
+            <path d="M286.644 69.6264C284.832 65.7503 282.109 62.3697 278.709 59.7729C275.308 57.176 271.33 55.4398 267.114 54.7123L57.8278 18.9561C53.609 18.2425 49.2802 18.5595 45.2103 19.88C41.1405 21.2006 37.4502 23.4856 34.4541 26.5403C32.7814 28.18 31.5725 30.2332 30.9503 32.4913C30.328 34.7495 30.3146 37.1321 30.9113 39.3972L44.4193 97.4384C47.5263 110.01 54.2441 121.397 63.7445 130.196C73.2449 138.996 85.1127 144.823 97.8847 146.959L185.785 161.977C198.684 164.439 212.023 163.019 224.114 157.895C236.205 152.771 246.503 144.175 253.705 133.195L286.263 82.8889C287.484 80.9061 288.163 78.6367 288.23 76.3087C288.297 73.9807 287.75 71.6761 286.644 69.6264Z" fill="#750929"/>
+            <path d="M166.46 113.236L140.299 108.766C133.075 107.532 126.218 112.388 124.984 119.612L120.514 145.772C119.28 152.996 124.136 159.853 131.36 161.088L157.521 165.557C164.745 166.791 171.602 161.936 172.836 154.711L177.305 128.551C178.54 121.327 173.684 114.47 166.46 113.236Z" fill="#970C35"/>
+          </svg>  
+
+
+
+      - bg_color: "#1F7A5A"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "For Care Settings"
+        desc: "Measure a patient's connection between visits, with a person-specific instrument built toward regulatory clearance."
         cta_text: "Learn more"
         link: "/healthcare/"
         svg_content: >
-          <svg width="284" height="230" viewBox="0 0 284 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M251.899 75.6864C239.491 79.9842 230.79 90.2359 227.943 102.13C221.946 104.039 217.038 106.963 213.18 110.895C201.365 122.888 202.322 140.506 203.225 157.535C204.578 182.552 204.366 198.305 184.082 206.77C174.454 210.787 165.851 210.89 157.964 206.992C146.315 201.24 135.461 180.878 130.439 170.262C128.567 166.316 128.946 161.693 131.418 158.1C163.759 111.111 173.708 73.1862 160.979 45.2831C148.892 18.7456 120.261 9.82691 105.992 6.97167C107.833 9.02361 107.833 9.02361 105.992 6.97167C100.462 0.874569 91.6355 -1.68998 83.389 1.16658C72.3491 4.99074 66.493 17.0398 70.3171 28.0797C74.1413 39.1195 86.1987 44.9728 97.2385 41.1486C103.476 38.9881 108.057 34.1791 110.169 28.4139C121.394 31.8099 136.288 38.922 142.933 53.4954C148.043 64.6876 147.639 79.0505 141.912 96.219L47.9377 128.818C32.9711 118.799 23.8315 107.835 20.9049 95.9894C17.3767 81.6252 29.7087 58.0222 29.7087 58.0222C34.5669 60.3736 40.2994 60.8814 45.8193 58.9693C56.8425 55.1509 62.6707 43.1022 58.8466 32.0623C55.0224 21.0225 42.9846 15.1718 31.953 18.9931C22.6892 22.202 17.082 31.1951 17.7687 40.5108C17.7716 40.5191 17.7745 40.5275 17.7745 40.5275C8.22498 52.9407 -4.55149 75.2875 1.62377 100.502C9.34699 132.315 44.5347 156.846 105.94 174.163C112.629 176.058 127.667 214.078 149.113 224.738C161.133 230.698 174.133 231.294 187.816 226.554C189.109 226.106 190.414 225.617 191.731 225.049C225.954 210.803 224.263 179.394 223.037 156.472C222.318 143.152 221.646 130.563 227.319 124.806C227.845 124.278 229.391 126.124 230.052 125.661C236.932 144.767 256.973 152.505 276.21 145.842C295.588 139.129 305.847 117.981 299.138 98.6114C292.417 79.2361 271.277 68.9739 251.899 75.6864ZM71.6635 141.154L131.074 120.575C125.991 130.516 120.635 138.834 115.366 146.402C111.913 151.315 105.698 153.459 99.9561 151.684C89.5848 148.488 80.1794 145.087 71.6635 141.154ZM284.819 113.891C284.643 112.737 284.362 111.574 283.969 110.44C280.538 100.534 269.768 95.2995 259.871 98.7279C249.965 102.159 244.728 112.948 248.156 122.846C248.552 123.988 249.056 125.065 249.631 126.079C247.244 123.825 245.335 120.984 244.183 117.657C240.388 106.7 246.186 94.7272 257.167 90.9233C268.107 87.1338 280.1 92.9348 283.898 103.9C285.059 107.224 285.308 110.639 284.819 113.891Z" fill="#D1E2E5" />
-          </svg>
-      - bg_color: "#EAEAEE"
-        title: "For Health Systems"
-        desc: "Scale preventive mental health screening across populations with clinical-grade precision."
-        cta_text: "Learn more"
-        link: "/healthcare/"
-        svg_content: >
-          <svg width="258" height="290" viewBox="0 0 258 290" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67836)">
-                  <path d="M189.688 48.5591C209.304 52.0694 228.052 39.0134 231.562 19.3976C235.072 -0.218236 222.016 -18.9657 202.4 -22.476C182.785 -25.9863 164.037 -12.9303 160.527 6.68553C157.016 26.3013 170.073 45.0488 189.688 48.5591Z" fill="#D9D8E3" />
-                  <path d="M302.892 133.007L271.025 120.179C260.17 115.798 248.111 118.974 240.58 127.11C235.388 123.151 229.693 119.518 223.529 116.246L227.052 96.5616C229.731 81.6705 219.718 67.3098 204.877 64.654L171.03 58.597C156.111 55.9271 141.792 65.9335 139.127 80.827L135.585 100.615C128.742 101.519 122.206 102.963 115.921 104.883C111.686 94.6005 101.471 87.3978 89.7566 87.7397L55.3918 88.7162C40.3063 89.1554 28.2874 101.89 28.7173 117.028L29.9242 158.237C30.335 173.33 43.0827 185.352 58.1816 184.915L69.0555 184.597C72.9151 193.29 78.8999 201.703 87.105 209.449C104.192 225.601 128.512 237.173 155.649 242.03C197.171 249.46 235.924 239.166 256.688 218.135L266.94 222.273C280.94 227.903 297.063 221.062 302.683 207.048L318.119 168.818C323.758 154.766 316.902 138.653 302.892 133.007ZM158.062 228.465C133.549 224.078 111.68 213.793 96.5617 199.435C91.3745 194.546 87.2694 189.406 84.1845 184.139L92.5135 183.892C107.623 183.471 119.642 170.736 119.207 155.624L118.145 118.576C122.91 117.018 127.845 115.786 133.014 114.906L131.848 121.42C129.187 136.287 139.173 150.643 154.067 153.308L187.914 159.365C202.768 162.024 217.116 152.009 219.774 137.154L221 130.301C225.632 132.949 229.917 135.804 233.814 138.872L219.792 173.638C214.17 187.665 221.013 203.776 235.038 209.411L242.84 212.558C224.523 227.749 192.431 234.615 158.062 228.465Z" fill="#D9D8E3" />
-                  <path d="M72.7466 75.0497C92.6802 74.4677 108.321 57.8282 107.789 37.9166C107.176 18.0044 90.5846 2.31836 70.6377 2.89802C50.7325 3.4714 35.0418 20.0889 35.6261 40.0098C36.1955 59.9411 52.8152 75.619 72.7466 75.0497Z" fill="#D9D8E3" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67836">
-                      <rect width="309" height="309" fill="white" transform="translate(54.4336 -69.4727) rotate(10.1459)" />
-                  </clipPath>
-              </defs>
+          <svg xmlns="http://www.w3.org/2000/svg" width="285" height="230" viewBox="0 0 285 230" fill="none">
+            <path d="M251.899 75.6844C239.491 79.9823 230.79 90.2339 227.943 102.128C221.946 104.037 217.038 106.961 213.18 110.893C201.365 122.886 202.322 140.504 203.225 157.533C204.578 182.55 204.366 198.303 184.082 206.768C174.454 210.785 165.851 210.888 157.964 206.99C146.315 201.238 135.461 180.876 130.439 170.26C128.567 166.314 128.946 161.691 131.418 158.098C163.759 111.109 173.708 73.1842 160.979 45.2812C148.892 18.7436 120.261 9.82496 105.992 6.96972C107.833 9.02166 107.833 9.02166 105.992 6.96972C100.462 0.872616 91.6355 -1.69194 83.389 1.16463C72.3491 4.98879 66.493 17.0378 70.3171 28.0777C74.1413 39.1176 86.1987 44.9708 97.2385 41.1466C103.476 38.9862 108.057 34.1772 110.169 28.412C121.394 31.808 136.288 38.9201 142.933 53.4934C148.043 64.6857 147.639 79.0486 141.912 96.217L47.9377 128.816C32.9711 118.797 23.8315 107.833 20.9049 95.9875C17.3767 81.6232 29.7087 58.0202 29.7087 58.0202C34.5669 60.3717 40.2994 60.8794 45.8193 58.9674C56.8425 55.149 62.6707 43.1003 58.8466 32.0604C55.0224 21.0205 42.9846 15.1699 31.953 18.9911C22.6892 22.2001 17.082 31.1932 17.7687 40.5089C17.7716 40.5172 17.7745 40.5255 17.7745 40.5255C8.22498 52.9388 -4.55149 75.2856 1.62377 100.5C9.34699 132.313 44.5347 156.844 105.94 174.161C112.629 176.056 127.667 214.076 149.113 224.736C161.133 230.696 174.133 231.292 187.816 226.552C189.109 226.104 190.414 225.615 191.731 225.047C225.954 210.801 224.263 179.392 223.037 156.47C222.318 143.15 221.646 130.561 227.319 124.804C227.845 124.276 229.391 126.122 230.052 125.659C236.932 144.765 256.973 152.503 276.21 145.84C295.588 139.127 305.847 117.979 299.138 98.6094C292.417 79.2342 271.277 68.9719 251.899 75.6844ZM71.6635 141.152L131.074 120.573C125.991 130.514 120.635 138.832 115.366 146.4C111.913 151.313 105.698 153.457 99.9561 151.682C89.5848 148.486 80.1794 145.085 71.6635 141.152ZM284.819 113.889C284.643 112.735 284.362 111.572 283.969 110.438C280.538 100.532 269.768 95.2975 259.871 98.726C249.965 102.157 244.728 112.946 248.156 122.844C248.552 123.986 249.056 125.063 249.631 126.078C247.244 123.823 245.335 120.982 244.183 117.655C240.388 106.698 246.186 94.7253 257.167 90.9213C268.107 87.1318 280.1 92.9328 283.898 103.898C285.059 107.222 285.308 110.637 284.819 113.889Z" fill="#0E6E4F"/>
           </svg>
   cta_banner:
     title: "See how Entrelacs can help your organization"
@@ -925,13 +975,11 @@ roi_calculator:
 
 cta_banner:
   tags:
-    - "Precision"
-    - "Personalization"
-    - "Prevention"
-  title: "The future of mental health care is here"
-  description: "Experience the first platform that combines clinical precision with personalized insights and preventive monitoring. Join leading organizations already building the future of mental wellness."
-  cta_primary: "Join our waiting list"
-  cta_secondary: "Request a demo"
+    - "Brain Health. Personal, Private, Precise."
+  title: "Start measuring the asset <br> everything else depends on."
+  description: "Entrelacs is onboarding a limited design-partner cohort: organizations ready to deploy org-wide, on founding-partner terms."
+  cta_primary: "Request a demo"
+  cta_secondary: "Apply to be a design partner"
 
 
 approach:

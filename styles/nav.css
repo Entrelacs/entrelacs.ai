@@ -6,7 +6,8 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: var(--teal-background); 
+  background-color: var(--surface-teal); 
+  color: var(--text-white);
   backdrop-filter: blur(100px);
 }
 
@@ -29,8 +30,8 @@
   color: var(--dark-blue);
   align-items: center;
 }
-.logo img{
-  width: 45px;
+.logo svg{
+  width: auto;
   height: 45px;
   margin-right: 10px;
 }

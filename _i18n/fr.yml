@@ -43,18 +43,32 @@ home:
     cta_waitlist: "Rejoignez notre liste d’attente"
     cta_demo: "Demander une démo"
   problem:
-    tag: "Le problème"
-    heading: "La santé mentale est le seul domaine médical sans détection précoce "
-    description: "Dépistage, mise en relation et suivi de qualité clinique — pour que vous puissiez agir des semaines avant une crise, et non des mois après."
+    tag: "Pourquoi maintenant"
+    heading: "Vous mesurez chaque actif <br> que vous gérez. Sauf celui-ci."
+    description: "La finance a son grand livre. Les ventes ont leur pipeline. L'infrastructure a son taux de disponibilité. L'actif dont ces trois dépendent — la capacité de vos collaborateurs à penser, s'adapter et travailler ensemble — est le seul qui ne soit pas mesuré. À mesure que l'IA absorbe les tâches routinières, la capacité de vos collaborateurs devient le principal facteur de succès de votre organisation. L'OCDE appelle cela le capital cérébral. Les entreprises consacrent 93 % de leurs budgets IA à la technologie et seulement 7 % aux personnes qui doivent l'absorber (Deloitte, 2026). On ne développe pas ce qu'on ne mesure pas."
+    image: "/images/problem-hero.png"
     cardiology:
       title: "En cardiologie"
-      desc: "Nous détectons les signes avant-coureurs des années avant qu'une crise cardiaque ne se produise."
+      desc: "Nous détectons les signes avant-coureurs des années avant une crise cardiaque."
     oncology:
       title: "En oncologie"
       desc: "Nous effectuons des dépistages avant l'apparition des symptômes."
-    mental_health:
-      title: "Mais en <br> santé mentale"
-      desc: "Nous attendons que quelqu'un soit déjà en crise — lorsque le coût est le plus élevé et que la fenêtre de prévention est déjà passée."
+    workforce:
+      title: "Mais côté santé <br> cérébrale au travail"
+      desc: "Il n'y a ni dépistage ni référence de base. Rien n'est mesuré jusqu'à ce que quelque chose se brise, et le premier point de données est l'entretien de départ."
+    stats:
+      - value: "20 %"
+        text: "des employés dans le monde sont engagés au travail — un minimum depuis 2020, coûtant environ 10 000 milliards $ en productivité perdue"
+        source: "Gallup, 2026"
+      - value: "49 %"
+        text: "des travailleurs américains se décrivent désormais comme étant en difficulté — plus que ceux qui s'épanouissent (46 %), une première"
+        source: "Gallup, 2026"
+      - value: "42 %"
+        text: "pensent que révéler une difficulté de santé mentale nuirait à leur carrière"
+        source: "NAMI & Ipsos, 2025"
+      - value: "<10 %"
+        text: "taux d'utilisation des programmes d'aide aux employés — alors que 82 % des employeurs en proposent un"
+        source: "SHRM, 2024–2025"
   cost:
     heading: "Le coût de l'attente"
     description: "Nous manquons les signes avant-coureurs qui pourraient prévenir des problèmes plus importants à l'avenir, en attendant que quelqu'un soit déjà en difficulté avant d'agir."
@@ -83,34 +97,38 @@ home:
         title: "Détecter la détérioration des semaines avant la crise"
         desc: "La surveillance numérique continue suit les changements d'engagement, les modèles linguistiques et les signaux comportementaux entre les séances, alertant les équipes de soins des jours, voire des semaines avant une crise, transformant ainsi les soins réactifs en soins préventifs."
   how_it_works:
-    tag: "Comment ça marche"
-    heading: "Trois étapes. Aucune perturbation. En direct en quelques semaines."
-    description: "Trois étapes qui s'intègrent aux flux de travail existants, sans nécessiter de temps clinique supplémentaire."
+    tag: "L'instrument"
+    heading: "Une conversation privée. <br> Une mesure précise. <br> Une direction sur laquelle agir."
+    description: "Un employé s'entretient avec Entrelacs — une conversation brève et naturelle, pas un formulaire, mais un partenaire de conversation. En arrière-plan fonctionne Lacis, notre moteur psychométrique, qui fait ce qu'aucune enquête ne fait : il mesure cette personne en particulier."
     cards:
       screen:
-        tag: "DÉPISTAGE"
-        title: "Évaluation de 15 minutes"
-        desc: "Une évaluation par IA conversationnelle identifie les 5 à 7 questions les plus informatives propres à chaque personne, dépistant l'humeur, l'anxiété, les liens sociaux, l'épuisement professionnel et les facteurs de risque en une seule session de 15 minutes."
-        benefits:
-          - "Catégories de risque claires par personne"
-          - "Exhaustif"
-          - "Aucun temps clinique requis"
+        title: "Propre à la personne, <br> pas à la moyenne de la population"
+        desc: "Une enquête évalue vos réponses par rapport à une norme. Lacis vous modélise et renvoie une image du fonctionnement réel de vos propres liens, plutôt que la moyenne de tout le monde."
       match:
-        tag: "MISE EN RELATION"
-        title: "Mise en relation de soins de précision"
-        desc: "40 à 60 % des personnes abandonnent les soins de santé mentale lorsque le premier traitement ne convient pas. La mise en relation de précision connecte chaque personne à la bonne intervention dès le premier jour, permettant une amélioration 2 à 3 fois plus rapide sans essais et erreurs."
-        benefits:
-          - "Le bon soutien, du premier coup"
-          - "Moins d'échecs de traitement"
-          - "Amélioration 2 à 3 fois plus rapide"
+        title: "Où agir, <br> pas seulement un score"
+        desc: "44 domaines, 26 dans la vie et 18 au travail. Chaque personne obtient une Signature de Connexion Clé — les cinq domaines qui pèsent le plus lourd en ce moment — et une Pierre Angulaire de Connexion : l'endroit où agir porte le plus loin."
       monitor:
-        tag: "SUIVI"
-        title: "Suivi continu"
-        desc: "Entre les rendez-vous, la plateforme suit en permanence les modèles comportementaux (notamment l'engagement numérique, les indicateurs linguistiques, l'activité, le sommeil et l'humeur autodéclarée), détectant les signes de détérioration des jours, voire des semaines avant qu'une crise ne se développe. Cette capacité d'alerte précoce crée une fenêtre critique pour une intervention opportune et à faible coût avant que la situation ne s'aggrave."
-        benefits:
-          - "Alertes avant que les problèmes ne s'aggravent"
-          - "Suit les changements entre les visites"
-          - "Alerte précoce avant une crise"
+        title: "Privé pour la personne, <br> des tendances pour l'organisation"
+        desc: "Les employés obtiennent une image confidentielle de leurs propres liens. Les dirigeants obtiennent des tendances agrégées sur des groupes de dix personnes ou plus, avec des recommandations adaptées au profil de l'équipe. Jamais un individu."
+  trust:
+    tag: "Architecture de confiance"
+    heading: "Les données privées des employés sont protégées, à l'abri de la supervision de la direction. Privé par conception."
+    description: "Tout outil de travail qui achemine des données sensibles vers la direction obtient le même résultat : les gens cessent de dire la vérité. 42 % pensent que révéler une difficulté de santé mentale nuirait à leur carrière (NAMI & Ipsos, 2025). L'inverse est tout aussi bien documenté : les gens sont mesurablement plus honnêtes avec un système lorsque personne ne les évalue (Lucas et al., 2014)."
+    employee:
+      title: "Ce qui reste avec l'employé"
+      items:
+        - "Les réponses individuelles ne sont jamais exposées à l'employeur"
+        - "Les référentiels personnels et l'historique appartiennent uniquement à l'employé"
+        - "L'employé contrôle le partage et la suppression à tout moment"
+        - "La participation est volontaire ; le consentement est explicite et révocable"
+    organization:
+      title: "Ce que voit l'organisation :"
+      items:
+        - "Uniquement des tendances agrégées, jamais des individus"
+        - "Des cohortes d'au moins dix personnes"
+        - "Aucun lien entre un résultat de groupe et une personne"
+        - "L'usage à des fins de recherche nécessite un consentement distinct et révocable"
+    note: "Sans cette condition, la mesure ne serait pas valide. <br> Entrelacs est un miroir privé qui sert d'abord l'employé, pas un moniteur qui rapporte à son sujet."
   research:
     heading: "Rigueur de niveau recherche, preuves en conditions réelles"
     description: "Fondé sur plus de 80 000 articles de recherche, validé dans 8 pays et soutenu par 3 millions d'euros de financement de l'UE."
@@ -134,54 +152,82 @@ home:
       - src: "/images/stanford_university.png"
       - src: "/images/european_commission.png"
         style: "max-height: 80px;"
+  scientific_credibility:
+    tag: "Crédibilité scientifique"
+    title: "De qualité recherche, <br> par construction."
+    text_intro: "Conçu par des chercheurs qui ont passé deux décennies à documenter pourquoi les instruments standards échouent auprès des individus — puis ont construit l'instrument que les preuves exigeaient."
+    stats:
+      - value: "9 000+"
+        desc: "articles de recherche examinés dans sept langues, cartographiant chaque instrument de connexion sociale validé dans la littérature"
+      - value: "354"
+        desc: "entretiens approfondis menés dans huit pays et cinq continents, codés dans le modèle de domaine"
+      - value: "3 M€"
+        desc: "programme EU Horizon LONELY-EU, dirigé par notre PDG en tant qu'investigateur principal"
+      - value: "FDA"
+        subtitle: "Dossier de pré-soumission déposé"
+        desc: "poursuivant une classification De Novo ; marquage CE de classe IIa visé pour 2027"
+    bottom_text: "Développé avec des conseillers stratégiques à Stanford et UC Davis, une affiliation de recherche à Oxford par l'intermédiaire de notre PDG, ainsi que des travaux politiques auprès de l'OMS et de l'OCDE sur la connexion sociale."
+  help_now:
+    heading: "Si vous avez besoin d'aide maintenant"
+    intro1: "Entrelacs est un instrument de mesure, pas un service de crise. Si vous avez besoin d'aide maintenant, il peut seulement vous orienter vers elle."
+    intro2: "Si vous êtes en difficulté, ou inquiet pour quelqu'un d'autre, parlez à une personne — votre médecin, une ligne de crise, ou quelqu'un en qui vous avez confiance. Votre employeur n'est pas impliqué et ne peut pas voir que vous avez consulté cela."
+    items:
+      - label: "États-Unis"
+        text: "988 Suicide & Crisis Lifeline, appelez ou envoyez un texto au 988"
+      - label: "France"
+        text: "3114, numéro national de prévention du suicide"
+      - label: "Royaume-Uni"
+        text: "Samaritans, 116 123"
+      - label: "Ailleurs"
+        text: "répertorie les services par pays"
+        link_text: "findahelpline.com"
+        link: "https://findahelpline.com"
+      - label: "Danger immédiat"
+        text: "services d'urgence"
+    outro: "Si quelque chose dans votre rapport vous a inquiété, parlez-en à un professionnel plutôt que de rester seul avec cela."
+    image: "/images/helpNow.jpg"
   who_we_serve:
     tag: "Qui nous servons"
-    heading: "Une seule plateforme. Connecter les employeurs, les cliniciens et les systèmes de santé"
+    heading: "Conçu pour le lieu de travail. <br> Conçu selon les normes cliniques."
     cards:
-      - bg_color: "#F2EFE9"
+      - bg_color: "#24344E"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "Pour les employés"
+        desc: "Un miroir privé, pas un moniteur. Obtenez une image personnalisée de la façon dont vos liens fonctionnent réellement dans votre vie et de l'endroit où un changement porterait le plus loin."
+        cta_text: "En savoir plus"
+        link: "/approach/"
+        svg_content: >
+          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="230" cy="80" r="70" fill="#16223B" fill-opacity="0.6" />
+              <path d="M100 320C100 230 160 190 230 190C300 190 340 250 340 320H100Z" fill="#16223B" fill-opacity="0.6" />
+          </svg>
+      - bg_color: "#E62154"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
         title: "Pour les employeurs"
-        desc: "Repérez tôt les risques pour la santé mentale de vos employés, avant qu'ils ne se transforment en crises coûteuses."
+        desc: "Mesurez les liens et la capacité de vos employés, personne par personne, et identifiez où les programmes que vous financez déjà sont nécessaires."
         cta_text: "En savoir plus"
-        link: "/employers/"
+        link: "/organizations/"
         svg_content: >
-          <svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67812)">
-                  <path d="M301.833 54.7054L262.592 48.0011L267.062 21.8403C268.247 14.9021 266.628 7.77709 262.56 2.0328C258.492 -3.71149 252.309 -7.60454 245.37 -8.78993L166.888 -22.1985C159.95 -23.3839 152.825 -21.7645 147.081 -17.6966C141.336 -13.6287 137.443 -7.44552 136.258 -0.507255L131.788 25.6535L92.5473 18.9492C85.6091 17.7638 78.4841 19.3832 72.7398 23.4511C66.9955 27.519 63.1025 33.7022 61.9171 40.6404L35.1 197.605C33.9146 204.543 35.534 211.668 39.6018 217.412C43.6697 223.157 49.8529 227.05 56.7912 228.235L266.077 263.991C273.015 265.177 280.14 263.557 285.885 259.489C291.629 255.422 295.522 249.238 296.707 242.3L323.525 85.3356C324.71 78.3974 323.091 71.2724 319.023 65.5281C314.955 59.7838 308.772 55.8907 301.833 54.7054ZM162.419 3.96226L240.901 17.3708L236.431 43.5316L157.949 30.123L162.419 3.96226Z" fill="#E7DFD0" fill-opacity="0.6" />
-                  <path d="M321.364 69.6206C319.552 65.7444 316.83 62.3639 313.429 59.767C310.028 57.1701 306.05 55.4339 301.834 54.7064L92.548 18.9503C88.3292 18.2367 84.0004 18.5536 79.9305 19.8742C75.8606 21.1947 72.1704 23.4797 69.1743 26.5344C67.5016 28.1741 66.2927 30.2273 65.6704 32.4855C65.0482 34.7436 65.0348 37.1263 65.6315 39.3913L79.1394 97.4325C82.2464 110.004 88.9642 121.391 98.4646 130.191C107.965 138.99 119.833 144.817 132.605 146.954L220.505 161.971C233.404 164.433 246.743 163.013 258.834 157.889C270.925 152.765 281.223 144.169 288.425 133.189L320.983 82.883C322.205 80.9002 322.883 78.6308 322.95 76.3028C323.017 73.9748 322.47 71.6702 321.364 69.6206Z" fill="#D6CFC1" fill-opacity="0.8" />
-                  <path d="M201.18 113.232L175.019 108.762C167.795 107.528 160.938 112.384 159.704 119.608L155.235 145.768C154 152.993 158.856 159.849 166.08 161.084L192.241 165.553C199.465 166.787 206.322 161.932 207.556 154.708L212.026 128.547C213.26 121.323 208.404 114.466 201.18 113.232Z" fill="#E7DFD0" fill-opacity="0.6" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67812">
-                      <rect width="318.478" height="318.478" fill="white" transform="translate(53.6342 -68.4727) rotate(9.69527)" />
-                  </clipPath>
-              </defs>
+          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="140" y="90" width="160" height="130" rx="24" fill="#C01243" fill-opacity="0.4" transform="rotate(8 220 155)" />
+              <rect x="185" y="60" width="70" height="50" rx="14" fill="#C01243" fill-opacity="0.4" transform="rotate(8 220 85)" />
           </svg>
-      - bg_color: "#E3EEF0"
-        title: "Pour les cliniciens"
-        desc: "Donnez une voix aux patients entre les séances grâce à un suivi de la santé mentale validé et en temps réel."
+      - bg_color: "#1F7A5A"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "Pour les établissements de soins"
+        desc: "Mesurez les liens d'un patient entre les visites, avec un instrument propre à la personne conçu pour obtenir une autorisation réglementaire."
         cta_text: "En savoir plus"
         link: "/healthcare/"
         svg_content: >
-          <svg width="284" height="230" viewBox="0 0 284 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M251.899 75.6864C239.491 79.9842 230.79 90.2359 227.943 102.13C221.946 104.039 217.038 106.963 213.18 110.895C201.365 122.888 202.322 140.506 203.225 157.535C204.578 182.552 204.366 198.305 184.082 206.77C174.454 210.787 165.851 210.89 157.964 206.992C146.315 201.24 135.461 180.878 130.439 170.262C128.567 166.316 128.946 161.693 131.418 158.1C163.759 111.111 173.708 73.1862 160.979 45.2831C148.892 18.7456 120.261 9.82691 105.992 6.97167C107.833 9.02361 107.833 9.02361 105.992 6.97167C100.462 0.874569 91.6355 -1.68998 83.389 1.16658C72.3491 4.99074 66.493 17.0398 70.3171 28.0797C74.1413 39.1195 86.1987 44.9728 97.2385 41.1486C103.476 38.9881 108.057 34.1791 110.169 28.4139C121.394 31.8099 136.288 38.922 142.933 53.4954C148.043 64.6876 147.639 79.0505 141.912 96.219L47.9377 128.818C32.9711 118.799 23.8315 107.835 20.9049 95.9894C17.3767 81.6252 29.7087 58.0222 29.7087 58.0222C34.5669 60.3736 40.2994 60.8814 45.8193 58.9693C56.8425 55.1509 62.6707 43.1022 58.8466 32.0623C55.0224 21.0225 42.9846 15.1718 31.953 18.9931C22.6892 22.202 17.082 31.1951 17.7687 40.5108C17.7716 40.5191 17.7745 40.5275 17.7745 40.5275C8.22498 52.9407 -4.55149 75.2875 1.62377 100.502C9.34699 132.315 44.5347 156.846 105.94 174.163C112.629 176.058 127.667 214.078 149.113 224.738C161.133 230.698 174.133 231.294 187.816 226.554C189.109 226.106 190.414 225.617 191.731 225.049C225.954 210.803 224.263 179.394 223.037 156.472C222.318 143.152 221.646 130.563 227.319 124.806C227.845 124.278 229.391 126.124 230.052 125.661C236.932 144.767 256.973 152.505 276.21 145.842C295.588 139.129 305.847 117.981 299.138 98.6114C292.417 79.2361 271.277 68.9739 251.899 75.6864ZM71.6635 141.154L131.074 120.575C125.991 130.516 120.635 138.834 115.366 146.402C111.913 151.315 105.698 153.459 99.9561 151.684C89.5848 148.488 80.1794 145.087 71.6635 141.154ZM284.819 113.891C284.643 112.737 284.362 111.574 283.969 110.44C280.538 100.534 269.768 95.2995 259.871 98.7279C249.965 102.159 244.728 112.948 248.156 122.846C248.552 123.988 249.056 125.065 249.631 126.079C247.244 123.825 245.335 120.984 244.183 117.657C240.388 106.7 246.186 94.7272 257.167 90.9233C268.107 87.1338 280.1 92.9348 283.898 103.9C285.059 107.224 285.308 110.639 284.819 113.891Z" fill="#D1E2E5" />
-          </svg>
-      - bg_color: "#EAEAEE"
-        title: "Pour les systèmes de santé"
-        desc: "Mettez à l'échelle le dépistage préventif de la santé mentale à travers les populations avec une précision clinique."
-        cta_text: "En savoir plus"
-        link: "/healthcare/"
-        svg_content: >
-          <svg width="258" height="290" viewBox="0 0 258 290" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67836)">
-                  <path d="M189.688 48.5591C209.304 52.0694 228.052 39.0134 231.562 19.3976C235.072 -0.218236 222.016 -18.9657 202.4 -22.476C182.785 -25.9863 164.037 -12.9303 160.527 6.68553C157.016 26.3013 170.073 45.0488 189.688 48.5591Z" fill="#D9D8E3" />
-                  <path d="M302.892 133.007L271.025 120.179C260.17 115.798 248.111 118.974 240.58 127.11C235.388 123.151 229.693 119.518 223.529 116.246L227.052 96.5616C229.731 81.6705 219.718 67.3098 204.877 64.654L171.03 58.597C156.111 55.9271 141.792 65.9335 139.127 80.827L135.585 100.615C128.742 101.519 122.206 102.963 115.921 104.883C111.686 94.6005 101.471 87.3978 89.7566 87.7397L55.3918 88.7162C40.3063 89.1554 28.2874 101.89 28.7173 117.028L29.9242 158.237C30.335 173.33 43.0827 185.352 58.1816 184.915L69.0555 184.597C72.9151 193.29 78.8999 201.703 87.105 209.449C104.192 225.601 128.512 237.173 155.649 242.03C197.171 249.46 235.924 239.166 256.688 218.135L266.94 222.273C280.94 227.903 297.063 221.062 302.683 207.048L318.119 168.818C323.758 154.766 316.902 138.653 302.892 133.007ZM158.062 228.465C133.549 224.078 111.68 213.793 96.5617 199.435C91.3745 194.546 87.2694 189.406 84.1845 184.139L92.5135 183.892C107.623 183.471 119.642 170.736 119.207 155.624L118.145 118.576C122.91 117.018 127.845 115.786 133.014 114.906L131.848 121.42C129.187 136.287 139.173 150.643 154.067 153.308L187.914 159.365C202.768 162.024 217.116 152.009 219.774 137.154L221 130.301C225.632 132.949 229.917 135.804 233.814 138.872L219.792 173.638C214.17 187.665 221.013 203.776 235.038 209.411L242.84 212.558C224.523 227.749 192.431 234.615 158.062 228.465Z" fill="#D9D8E3" />
-                  <path d="M72.7466 75.0497C92.6802 74.4677 108.321 57.8282 107.789 37.9166C107.176 18.0044 90.5846 2.31836 70.6377 2.89802C50.7325 3.4714 35.0418 20.0889 35.6261 40.0098C36.1955 59.9411 52.8152 75.619 72.7466 75.0497Z" fill="#D9D8E3" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67836">
-                      <rect width="309" height="309" fill="white" transform="translate(54.4336 -69.4727) rotate(10.1459)" />
-                  </clipPath>
-              </defs>
+          <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="150" cy="70" r="22" fill="none" stroke="#145C42" stroke-opacity="0.55" stroke-width="14" />
+              <circle cx="260" cy="110" r="22" fill="none" stroke="#145C42" stroke-opacity="0.55" stroke-width="14" />
+              <path d="M150 92C150 160 180 190 220 190C260 190 260 150 260 132" stroke="#145C42" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round" fill="none" />
+              <path d="M220 190C220 230 250 260 290 250C320 240 330 210 320 185" stroke="#145C42" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round" fill="none" />
+              <circle cx="320" cy="185" r="20" fill="none" stroke="#145C42" stroke-opacity="0.55" stroke-width="14" />
           </svg>
   cta_banner:
     title: "Découvrez comment Entrelacs peut aider votre organisation"
@@ -931,13 +977,11 @@ roi_calculator:
 
 cta_banner:
   tags:
-    - "Précision"
-    - "Personnalisation"
-    - "Prévention"
-  title: "L'avenir des soins de santé mentale est là"
-  description: "Découvrez la première plateforme qui combine la précision clinique avec des informations personnalisées et un suivi préventif. Rejoignez les organisations de pointe qui construisent déjà l'avenir du bien-être mental."
-  cta_primary: "Rejoindre notre liste d'attente"
-  cta_secondary: "Demander une démo"
+    - "Santé cérébrale. Personnelle, privée, précise."
+  title: "Commencez à mesurer l'actif <br> dont tout le reste dépend."
+  description: "Entrelacs constitue une cohorte limitée de partenaires de conception : des organisations prêtes à déployer à l'échelle de l'entreprise, selon des conditions de partenaire fondateur."
+  cta_primary: "Demander une démo"
+  cta_secondary: "Devenir partenaire de conception"
 
 
 approach:
