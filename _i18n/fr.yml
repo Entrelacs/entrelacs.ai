@@ -30,7 +30,10 @@ footer:
   copyright: "Entrelacs 2026"
 
 
-404: "Désolé, cette page n’existe pas"
+404: 
+  meta:
+    title: "Page non trouvée"
+  message: "Désolé, cette page n’existe pas"
 
 home:
   meta:
@@ -714,6 +717,8 @@ team:
         image: "/images/teamMembers/JackieOurman.png"
 
 contact:
+  meta:
+    title: "Contactez-nous"
   title: "Écrivez-nous"
   subtitle: "Notre équipe sera ravie de vous lire."
   form:
@@ -731,6 +736,8 @@ contact:
     submit_button: "Envoyer"
 
 waiting_list:
+  meta:
+    title: "Rejoignez la liste d’attente d’Entrelacs"
   title: "Rejoignez notre liste d’attente"
   subtitle: "Découvrez Entrelacs avant tout le monde."
   form:
@@ -771,6 +778,7 @@ cta_banner:
   cta_secondary: "Postuler comme partenaire pilote"
 
 about:
+  title: "À propos d’Entrelacs"
   hero:
     title: "Nous créons l’instrument qui permet de mesurer l’actif que l’économie a oublié de prendre en compte."
     description: "Entrelacs rend mesurable le capital cérébral des travailleurs — la capacité humaine à créer des liens, à s’adapter et à réfléchir — afin que les organisations puissent enfin développer ce qu’elles n’ont jusqu’ici fait qu’espérer."

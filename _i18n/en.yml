@@ -29,7 +29,10 @@ footer:
     mentions: "Legal mentions"
   copyright: "Entrelacs 2026"
 
-404: "Sorry, but this page does not exist"
+404:
+  meta:
+    title: "Page Not Found"
+  message: "Sorry, but this page does not exist"
 
 home:
   meta:
@@ -685,6 +688,8 @@ team:
         image: "/images/teamMembers/JackieOurman.png"
       
 contact:
+  meta:
+    title: "Contact Entrelacs"
   title: "Get in touch"
   subtitle: "Our friendly team would love to hear from you."
   form:
@@ -702,16 +707,18 @@ contact:
     submit_button: "Send message"
 
 waiting_list:
-    title: "Join our waiting list"
-    subtitle: "Be the first to experience Entrelacs."
-    form:
-      name_label: "Your name"
-      name_placeholder: "John Smith"
-      organization_label: "Your organization"
-      organization_placeholder: "Company Inc."
-      email_placeholder: "you@company.com"
-      email_label: "Your email"
-      submit_button: "Join the waitlist"
+  meta:
+    title: "Join the Entrelacs waiting list"
+  title: "Join our waiting list"
+  subtitle: "Be the first to experience Entrelacs."
+  form:
+    name_label: "Your name"
+    name_placeholder: "John Smith"
+    organization_label: "Your organization"
+    organization_placeholder: "Company Inc."
+    email_placeholder: "you@company.com"
+    email_label: "Your email"
+    submit_button: "Join the waitlist"
 
 
 roi_calculator:
@@ -745,6 +752,7 @@ cta_banner:
 
 
 about:
+  title: "About Entrelacs"
   hero:
     title: "We build the instrument for the asset the economy forgot to measure."
     description: "Entrelacs makes workforce brain capital — the human capacity for connection, adaptation, and thought — measurable, so organizations can finally develop what they’ve only ever hoped for."
