@@ -761,11 +761,9 @@ cta_banner:
 
 about:
   hero:
-    tag: "À PROPOS DE NOUS"
-    heading: "La première plateforme conçue pour prédire les crises de santé mentale — avant qu'elles ne surviennent"
-    p1: "Entrelacs est une plateforme de santé mentale préventive alimentée par l'IA qui dépiste, oriente et surveille les individus avec une précision clinique — détectant la détérioration des semaines avant la crise, afin que le bon soutien arrive avant qu'il ne soit urgent."
-    p2: "S'appuyant sur trois ans de R&D, plus de 80 000 articles de recherche et une validation clinique dans 8 pays et 37 marchés mondiaux, Entrelacs réunit la modélisation psychométrique dynamique, l'IA conversationnelle et la surveillance continue en une seule plateforme — conçue pour les employeurs, les cliniciens et les systèmes de santé."
-    p3: "Nous existons parce que la santé mentale est le seul domaine médical sans système d'alerte précoce fiable. Nous sommes là pour changer cela."
+    title: "Nous créons l’instrument qui permet de mesurer l’actif que l’économie a oublié de prendre en compte."
+    description: "Entrelacs rend mesurable le capital cérébral des travailleurs — la capacité humaine à créer des liens, à s’adapter et à réfléchir — afin que les organisations puissent enfin développer ce qu’elles n’ont jusqu’ici fait qu’espérer."
+
   vision_mission:
     heading: "Vision et mission"
     description: "Un monde où ce qui conduit aux crises de santé mentale devient visible assez tôt pour qu’on puisse agir."

@@ -8,21 +8,21 @@
 
   <div class="langFlag">
     {% if site.lang == 'fr' %}
-      <img src="{{ site.data.flags.French.flag }}" alt="French">
+      {{ site.data.flags.French.flag }}
     {% else %}
-      <img src="{{ site.data.flags.English.flag }}" alt="English">
+      {{ site.data.flags.English.flag }}
     {% endif %}
   </div>
 
   <div class="langDropdown">
     
     <a href="{{ clean_url | relative_url }}" class="langDropdownitem">
-      <img src="{{ site.data.flags.English.flag }}" alt="English">
+      {{ site.data.flags.English.flag }}
       <p>English</p>
     </a>
 
     <a href="/fr{{ clean_url }}" class="langDropdownitem">
-      <img src="{{ site.data.flags.French.flag }}" alt="French">
+      {{ site.data.flags.French.flag }}
       <p>French</p>
     </a>
 
