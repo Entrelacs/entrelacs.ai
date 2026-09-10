@@ -493,8 +493,8 @@ main .cta {
 
 
 #leadership .groupListItem {
-    width: 40%;
-    margin: 0 24px;
+    width: 31%;
+    margin: 0 1%;
 }
 
 
@@ -539,8 +539,9 @@ main .cta {
         padding: 60px 80px;
     }
 
-    .groupListItem {
+    #leadership .groupListItem {
         width: 47%;
+        margin-bottom: 46px;
     }
 
     #extendedLeadership .groupListItem {
@@ -554,12 +555,13 @@ main .cta {
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .group {
         padding: 60px 24px;
     }
 
     .groupListItem,
+    #leadership .groupListItem,
     #extendedLeadership .groupListItem {
         width: 100%;
     }
