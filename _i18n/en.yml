@@ -111,7 +111,7 @@ home:
       - value: "8"
         label: "Countries in the research corpus"
       - value: "€3M"
-        label: "EU research funding awarded"
+        label: "EU Horizon research program"
       - value: "2027"
         label: "CE Mark Class IIa targeted"
   scientific_credibility:
@@ -326,6 +326,10 @@ employers:
       a: "No, and the difference is structural rather than a feature gap. An engagement platform reports averages to management, because managers are the buyer. That architecture cannot produce person-level measurement without becoming surveillance, and it cannot produce honest data while employees know results roll up. Adding a wellbeing question to a survey built on averages gives you a new number with the same two defects: it can't tell you who, and it can't tell you why."
     - q: "Does this replace anything we already have?"
       a: "It replaces guesswork, not programs. Entrelacs is the measurement layer over your existing stack — it shows where your EAP, clinical platform and wellbeing spend are needed, and in a consolidation review, which lines are earning their renewal."
+    - q: What do we need to take to our works council?
+      a: 'In France, deploying a tool that collects data on employees requires informing and consulting the CSE before rollout. We give you the pack for it: what is collected, what you can and cannot see, the ten-person reporting floor, the consent model, where the data is hosted, and the retention rule. Most of what a works council asks is what this architecture was built to answer.'
+    - q: What happens on data protection once we sign?
+      a: Before anyone is invited, we agree the data processing agreement, confirm which of us is controller for which processing, and share our data protection impact assessment for your DPO to review. Infrastructure is encrypted, with EU hosting for European deployments. Retention, deletion and the employee's own rights are set out in the employee-facing notice, which you get in full before deployment.
   final_cta:
     badge: "Brain Health. Personal, Private, Precise."
     title: "Start measuring the asset everything else depends on."
@@ -461,7 +465,7 @@ care_settings:
   the_gap:
     tag: "The gap"
     title: "Care is continuous. Measurement is episodic."
-    text: "Clinical assessment today happens at the moments care can see: intake, sessions, crisis. Between those moments, where deterioration takes shape, standard instruments are silent. And the instruments themselves were normed on populations, not persons: two patients with identical scores can be struggling for entirely different reasons, and a score benchmarked against the average patient can point a clinician toward the wrong pathway for the real one."
+    text: "Measurement today happens at the moments care can see: intake, sessions, crisis. Between those moments, where deterioration takes shape, standard instruments are silent. And the instruments themselves were normed on populations, not persons: two patients with identical scores can be struggling for entirely different reasons, and a score benchmarked against the average patient can point a clinician toward the wrong pathway for the real one."
     text2: "The measurement science to do better now exists. Person-specific network modeling — the approach at Entrelacs' core — reads each individual against their own subgroup baseline rather than a population norm, and reports not just severity but which domain matters most for that person."
   brings:
     tag: "What Entrelacs brings"
@@ -479,7 +483,7 @@ care_settings:
     text: "The same instrument that makes workforce capacity measurable is being built toward population-scale mental health measurement: the early-detection foundation that cardiology and oncology have relied on for decades. Getting there takes longitudinal evidence generated in real care settings."
     subtitle: "Who we're building this with"
     cards:
-      - text: "Clinics and health systems deploying the instrument commercially on per-patient platform fees, generating real-world evidence with us"
+      - text: "Clinics and health systems buying the measurement as a service, on a per-patient platform fee, and generating real-world evidence with us"
       - text: "Research groups in our multi-country validation network, building the longitudinal cohorts behind the next generation of the engine"
       - text: "Payers and public health bodies exploring what person-specific connection measurement means for population risk — a conversation that becomes commercial after clearance, and starts now."
 
@@ -577,7 +581,7 @@ the_science:
     in_progress_text: "further peer-reviewed publications from the Entrelacs validation program in preparation; longitudinal validation cohorts underway; clinical outcome tracking in pilot settings."
   certifications:
     tag: "Regulatory & security"
-    title: "Engineered to clinical standards. Certified step by step."
+    title: "Engineered to clinical standards. Certification, step by step."
     status:
       title: "Status today"
       text: "A measurement and development instrument — deliberately not a diagnostic or treatment device, with clinical boundaries governed by our CCO and Clinical Advisory Board."
@@ -726,12 +730,12 @@ about:
     description: "Entrelacs makes workforce brain capital — the human capacity for connection, adaptation, and thought — measurable, so organizations can finally develop what they’ve only ever hoped for."
   vision_mission:
     heading: "Vision & mission"
-    description: "A world where mental health crises are predicted, prevented, and no longer inevitable."
+    description: "A world where the conditions behind mental health crises are visible early enough to change."
     cards:
       - title: "Vision"
         desc: "A future where mental health care works like every other area of medicine — with routine screening, early detection, and proactive intervention as the standard, not the exception."
       - title: "Mission"
-        desc: "To make preventive mental health care universally accessible through advanced psychometrics and AI built to clinical standards — giving individuals, clinicians, employers, and health systems the tools to act before crisis strikes."
+        desc: "To make the determinants of mental health measurable for everyone, through advanced psychometrics and AI built to clinical standards, so that individuals, clinicians, employers and health systems have something to act on early rather than only in a crisis."
   origin_story:
     tag: "Our story"
     title: "Born from an uncomfortable truth. Built to fix it."
