@@ -34,12 +34,7 @@
                         </span>
                     </span> -->
                 </h1>
-                <p class="heroSub">Entrelacs measures social connection — the determinant of brain health with the
-                    strongest evidence
-                    and
-                    the lowest measurement burden — one person at a time, always in private.
-                    Employees see themselves. Employers see where the support they already fund is needed.
-                </p>
+                <p class="heroSub">{% t home.hero.subtitle %}</p>
                 <div class="ctas">
                     <a href="{{ site.baseurl}}/waiting-list/" class="cta cta1">
                         <p style="margin-right: 10px;">{% t home.hero.cta_waitlist %}</p>
@@ -48,12 +43,9 @@
                 </div>
             </div>
         </div>
-        <div class="pageItem credibilityBar">
-            <div class="pageItemContainer">
-                <p>FDA Pre-Submission filed</p>
-                <p>Built alongside a &euro;3M EU Horizon LONELY-EU research program</p>
-            </div>
-        </div>
+        {% assign credibility_item_1 = site.translations[site.lang].home.credibility_bar.fda_pre_submission %}
+        {% assign credibility_item_2 = site.translations[site.lang].home.credibility_bar.eu_research_program %}
+        {% include credibitlty_bar.html item_1=credibility_item_1 item_2=credibility_item_2 %}
         <div class="pageItem lsection" id="next" style="background: #F2F5FA;">
             <div class="pageItemContainer">
                 <div class="problemTop">

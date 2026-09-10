@@ -2,12 +2,12 @@
 ---
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentions Légales - ENTRELACS</title>
+  <title>{% t legal_mentions.meta.title %}</title>
   {% include head.html %}
   <link rel="stylesheet" href="/styles/legal.css">
 </head>
@@ -17,61 +17,52 @@
 
   <main class="pageItem">
     <div class="pageItemContainer">
-      <h1>Mentions Légales</h1>
+      <h1>{% t legal_mentions.title %}</h1>
 
-      <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance
-        dans l’économie numérique (LCEN), il est porté à la connaissance des utilisateurs et visiteurs du site les
-        présentes mentions légales.</p>
+      <p>{% t legal_mentions.intro %}</p>
 
-      <h2>1. Éditeur du site</h2>
-      <p><strong>ENTRELACS</strong><br>
-        Société par actions simplifiée (SAS) au capital social de 17 125,00 €<br>
-        Immatriculée au Registre du Commerce et des Sociétés d’Annecy sous le numéro 988 841 862 R.C.S. Annecy<br>
-        Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France<br>
-        <strong>d'immatriculation :</strong> 10 juillet 2025 <br>
-        <strong>E-mail :</strong> <a href="mailto:felix@absl.io">hans@entrelacs.ai</a><br>
-        <strong>Téléphone :</strong> 07 83 81 88 11
+      <h2>{% t legal_mentions.site_publisher.title %}</h2>
+      <p><strong>{% t legal_mentions.site_publisher.company_name %}</strong><br>
+        {% t legal_mentions.site_publisher.company_form %}<br>
+        {% t legal_mentions.site_publisher.registration %}<br>
+        {% t legal_mentions.site_publisher.address %}<br>
+        <strong>{% t legal_mentions.site_publisher.registration_date_label %}</strong> {% t legal_mentions.site_publisher.registration_date %}<br>
+        <strong>{% t legal_mentions.site_publisher.email_label %}</strong> <a href="mailto:{% t legal_mentions.site_publisher.email_value %}">{% t legal_mentions.site_publisher.email_value %}</a><br>
+        <strong>{% t legal_mentions.site_publisher.phone_label %}</strong> {% t legal_mentions.site_publisher.phone_value %}
       </p>
 
-      <h2>2. Directeur de la publication</h2>
-      <p>Le directeur de la publication est le Président de la société ENTRELACS :</p>
-      <p><strong>Annecy Behavioral Science Lab</strong><br>
-        Société par actions simplifiée à associé unique (SASU)<br>
-        RCS Annecy n° 892 741 430<br>
-        Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France</p>
+      <h2>{% t legal_mentions.publication_director.title %}</h2>
+      <p>{% t legal_mentions.publication_director.intro %}</p>
+      <p><strong>{% t legal_mentions.publication_director.company_name %}</strong><br>
+        {% t legal_mentions.publication_director.company_form %}<br>
+        {% t legal_mentions.publication_director.registration %}<br>
+        {% t legal_mentions.publication_director.address %}</p>
 
-      <h2>3. Hébergeur du site</h2>
-      <p>Le site est actuellement hébergé par :</p>
-      <p>Hostinger International Ltd.<br>
-        Adresse : 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>
-        Téléphone : +370.645.03378<br>
-        Site web : <a href="https://www.hostinger.fr" target="_blank">https://www.hostinger.fr</a></p>
+      <h2>{% t legal_mentions.hosting.title %}</h2>
+      <p>{% t legal_mentions.hosting.current_intro %}</p>
+      <p><strong>{% t legal_mentions.hosting.current_provider.name %}</strong><br>
+        {% t legal_mentions.hosting.current_provider.address %}<br>
+        {% t legal_mentions.hosting.current_provider.phone %}<br>
+        {% t legal_mentions.hosting.current_provider.website_label %} <a href="https://www.hostinger.fr" target="_blank" rel="noopener noreferrer">{% t legal_mentions.hosting.current_provider.website_text %}</a></p>
 
-      <p>Une migration vers Google Cloud Platform est prévue. À terme, l’hébergement sera assuré par :</p>
-      <p><strong>Google Cloud EMEA Ltd.</strong><br>
-        Adresse : 70 Sir John Rogerson's Quay, Dublin 2, Irlande<br>
-        Site web : <a href="https://cloud.google.com" target="_blank">https://cloud.google.com</a></p>
+      <p>{% t legal_mentions.hosting.future_intro %}</p>
+      <p><strong>{% t legal_mentions.hosting.future_provider.name %}</strong><br>
+        {% t legal_mentions.hosting.future_provider.address %}<br>
+        {% t legal_mentions.hosting.future_provider.website_label %} <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">{% t legal_mentions.hosting.future_provider.website_text %}</a></p>
 
-      <h2>4. Conditions d’utilisation</h2>
-      <p>L’utilisation du site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites
-        sur le site. Celles-ci peuvent être modifiées ou complétées à tout moment.</p>
+      <h2>{% t legal_mentions.conditions_of_use.title %}</h2>
+      <p>{% t legal_mentions.conditions_of_use.body %}</p>
 
-      <h2>5. Propriété intellectuelle</h2>
-      <p>L’ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de la
-        société ENTRELACS, sauf mentions contraires. Toute reproduction, représentation, modification, publication,
-        adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable.</p>
+      <h2>{% t legal_mentions.intellectual_property.title %}</h2>
+      <p>{% t legal_mentions.intellectual_property.body %}</p>
 
-      <h2>6. Protection des données personnelles</h2>
-      <p>Le site respecte les dispositions légales relatives à la protection des données personnelles. Pour toute
-        information ou demande relative à la collecte, au traitement ou à la suppression de vos données, veuillez
-        contacter : [adresse e-mail dédiée à la protection des données].</p>
+      <h2>{% t legal_mentions.data_protection.title %}</h2>
+      <p>{% t legal_mentions.data_protection.prefix %} <a href="mailto:{% t legal_mentions.data_protection.email_value %}">{% t legal_mentions.data_protection.email_value %}</a>.</p>
 
-      <h2>7. Cookies</h2>
-      <p>Le site peut être amené à utiliser des cookies. L’utilisateur est libre d’accepter ou de refuser ces cookies
-        via
-        les paramètres de son navigateur ou par une bannière de consentement affichée lors de la première visite.</p>
+      <h2>{% t legal_mentions.cookies.title %}</h2>
+      <p>{% t legal_mentions.cookies.body %}</p>
 
-      <p class="footer-note">Dernière mise à jour : 10 juillet 2025</p>
+      <p class="footer-note">{% t legal_mentions.last_updated_label %} {% t legal_mentions.last_updated_value %}</p>
     </div>
   </main>
   {% include footer.html %}

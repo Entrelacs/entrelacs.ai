@@ -18,12 +18,12 @@
     
     <a href="{{ clean_url | relative_url }}" class="langDropdownitem">
       {{ site.data.flags.English.flag }}
-      <p>English</p>
+      <p>{% t language_switcher.english %}</p>
     </a>
 
     <a href="/fr{{ clean_url }}" class="langDropdownitem">
       {{ site.data.flags.French.flag }}
-      <p>French</p>
+      <p>{% t language_switcher.french %}</p>
     </a>
 
   </div>

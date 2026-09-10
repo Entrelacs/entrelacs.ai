@@ -2,12 +2,12 @@
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrelacs</title>
+    <title>{% t privacy_policy.meta.title %}</title>
     {% include head.html %}
     <link rel="stylesheet" href="/styles/legal.css">
 </head>
@@ -17,265 +17,206 @@
     <main class="pageItem">
         <div class="pageItemContainer">
 
-            <h1><strong>Entrelacs Website Privacy Policy</strong></h1>
+            <h1><strong>{% t privacy_policy.title %}</strong></h1>
 
+            <p><strong>{% t privacy_policy.scope_notice %}</strong></p>
+            <p><strong>{% t privacy_policy.last_updated_label %} </strong>{% t privacy_policy.last_updated_value %}</p>
 
-            <p><strong>This policy applies to visitors and business contacts interacting with the Entrelacs website
-                    only.</strong></p>
-            <p><strong>Last updated: </strong> January 6, 2026</p>
+            <h2>{% t privacy_policy.introduction.title %}</h2>
 
-            <h2>1. Introduction</h2>
+            <p>{% t privacy_policy.introduction.p1 %}</p>
 
-            <p>
-                This Privacy Policy explains how <strong>Entrelacs</strong> (“we”, “our”, “us”) collects and processes
-                personal data when you visit or interact with the <strong>Entrelacs website</strong> (the “Website”).
-            </p>
+            <p>{% t privacy_policy.introduction.p2 %}</p>
 
-            <p>
-                This policy applies only to activities on the Website, such as browsing, submitting contact or demo
-                requests, and communicating with us.
-            </p>
+            <p>{% t privacy_policy.introduction.p3 %}</p>
 
-            <p>
-                Use of the Entrelacs platform, Proof of Concept (PoC), or any AI-powered assessments is governed by
-                <strong>separate privacy policies</strong>, which apply when you access those services.
-            </p>
-
-            <p>Entrelacs processes personal data in accordance with:</p>
+            <p>{% t privacy_policy.introduction.list_intro %}</p>
 
             <ul>
-                <li>Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)</li>
-                <li>French Data Protection Law No. 78-17 (<em>Loi Informatique et Libertés</em>)</li>
-                <li>Guidance issued by the French supervisory authority (CNIL)</li>
+                {% for item in site.translations[site.lang].privacy_policy.introduction.list_items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
             <hr>
 
-            <h2>2. Data Controller and Contact</h2>
+            <h2>{% t privacy_policy.controller.title %}</h2>
 
-            <p><strong>Data Controller:</strong> Entrelacs</p>
-            <p><strong>Contact Email:</strong> <a href="mailto:dpo@entrelacs.ai">dpo@entrelacs.ai</a></p>
-
-            <hr>
-
-            <h2>3. Personal Data We Collect</h2>
-
-            <p>We collect only data that is necessary for operating the Website and responding to inquiries.</p>
-
-            <h3>a. Information you provide voluntarily</h3>
-
-            <p>When you use the “Contact Us” or “Request a Demo” forms, we may collect:</p>
-
-            <ul>
-                <li>First and last name</li>
-                <li>Email address</li>
-                <li>Organization name</li>
-                <li>Message content</li>
-            </ul>
-
-            <p><strong>Purpose:</strong><br>
-                To respond to your inquiry, provide requested information, and communicate with you regarding your
-                request.
-            </p>
-
-            <h3>b. Technical and usage data</h3>
-
-            <p>When you visit the Website, we may collect:</p>
-
-            <ul>
-                <li>IP address</li>
-                <li>Browser type and device information</li>
-                <li>Pages visited and timestamps</li>
-            </ul>
-
-            <p><strong>Purpose:</strong><br>
-                To ensure website security, functionality, and performance.
-            </p>
-
-            <p><strong>🚫 The Website does not collect health data, clinical data, assessment responses, or protected
-                    health
-                    information (PHI).</strong></p>
+            <p><strong>{% t privacy_policy.controller.controller_label %}</strong> {% t privacy_policy.controller.controller_value %}</p>
+            <p><strong>{% t privacy_policy.controller.email_label %}</strong> <a href="mailto:{% t privacy_policy.controller.email_value %}">{% t privacy_policy.controller.email_value %}</a></p>
 
             <hr>
 
-            <h2>4. Legal Basis for Processing (GDPR)</h2>
+            <h2>{% t privacy_policy.data_collected.title %}</h2>
+
+            <p>{% t privacy_policy.data_collected.intro %}</p>
+
+            <h3>{% t privacy_policy.data_collected.voluntary.title %}</h3>
+
+            <p>{% t privacy_policy.data_collected.voluntary.intro %}</p>
+
+            <ul>
+                {% for item in site.translations[site.lang].privacy_policy.data_collected.voluntary.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <p><strong>{% t privacy_policy.data_collected.voluntary.purpose_label %}</strong><br>
+                {% t privacy_policy.data_collected.voluntary.purpose_body %}
+            </p>
+
+            <h3>{% t privacy_policy.data_collected.technical.title %}</h3>
+
+            <p>{% t privacy_policy.data_collected.technical.intro %}</p>
+
+            <ul>
+                {% for item in site.translations[site.lang].privacy_policy.data_collected.technical.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <p><strong>{% t privacy_policy.data_collected.technical.purpose_label %}</strong><br>
+                {% t privacy_policy.data_collected.technical.purpose_body %}
+            </p>
+
+            <p><strong>{% t privacy_policy.data_collected.health_notice %}</strong></p>
+
+            <hr>
+
+            <h2>{% t privacy_policy.legal_basis.title %}</h2>
 
             <table border="1" cellpadding="8" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>Processing Activity</th>
-                        <th>Legal Basis</th>
-                        <th>GDPR Article</th>
+                        <th>{% t privacy_policy.legal_basis.headers.activity %}</th>
+                        <th>{% t privacy_policy.legal_basis.headers.basis %}</th>
+                        <th>{% t privacy_policy.legal_basis.headers.article %}</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {% for row in site.translations[site.lang].privacy_policy.legal_basis.rows %}
                     <tr>
-                        <td>Responding to contact or demo requests</td>
-                        <td>Consent</td>
-                        <td>Art. 6(1)(a)</td>
+                        <td>{{ row.activity }}</td>
+                        <td>{{ row.basis }}</td>
+                        <td>{{ row.article }}</td>
                     </tr>
-                    <tr>
-                        <td>Website security and technical logs</td>
-                        <td>Legitimate interest</td>
-                        <td>Art. 6(1)(f)</td>
-                    </tr>
-                    <tr>
-                        <td>Business communications</td>
-                        <td>Legitimate interest</td>
-                        <td>Art. 6(1)(f)</td>
-                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
 
-            <p>
-                Where required, consent is obtained through an explicit checkbox at the time of data submission.
-            </p>
+            <p>{% t privacy_policy.legal_basis.note %}</p>
 
             <hr>
 
-            <h2>5. Cookies</h2>
+            <h2>{% t privacy_policy.cookies.title %}</h2>
 
-            <p>The Website uses <strong>essential cookies only</strong>, strictly necessary for:</p>
+            <p>{% t privacy_policy.cookies.intro %}</p>
 
             <ul>
-                <li>Security</li>
-                <li>Session management</li>
-                <li>Core website functionality</li>
+                {% for item in site.translations[site.lang].privacy_policy.cookies.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
-            <p>
-                We do <strong>not</strong> use advertising cookies, marketing trackers, or behavioral profiling cookies.
-            </p>
+            <p>{% t privacy_policy.cookies.note %}</p>
 
             <hr>
 
-            <h2>6. Data Retention</h2>
+            <h2>{% t privacy_policy.retention.title %}</h2>
 
             <ul>
-                <li>Contact and demo request data: <strong>Up to 12 months</strong>, unless continued communication is
-                    requested</li>
-                <li>Technical logs: <strong>Up to 30 days</strong></li>
-                <li>Data may be deleted earlier upon request</li>
+                {% for item in site.translations[site.lang].privacy_policy.retention.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
             <hr>
 
-            <h2>7. Data Sharing and Processors</h2>
+            <h2>{% t privacy_policy.sharing.title %}</h2>
 
-            <p>We do not sell or rent personal data.</p>
+            <p>{% t privacy_policy.sharing.p1 %}</p>
 
-            <p>Personal data may be shared only with:</p>
+            <p>{% t privacy_policy.sharing.p2 %}</p>
 
             <ul>
-                <li>Authorized Entrelacs personnel</li>
-                <li>Technical service providers (e.g., website hosting), acting as <strong>data processors</strong>
-                    under
-                    GDPR-compliant agreements</li>
+                {% for item in site.translations[site.lang].privacy_policy.sharing.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
-            <p>No data is shared with advertisers or third-party marketing platforms.</p>
+            <p>{% t privacy_policy.sharing.p3 %}</p>
 
             <hr>
 
-            <h2>8. Data Security</h2>
+            <h2>{% t privacy_policy.security.title %}</h2>
 
-            <p>
-                Entrelacs implements appropriate technical and organizational measures to protect personal data,
-                including:
-            </p>
+            <p>{% t privacy_policy.security.intro %}</p>
 
             <ul>
-                <li>Encrypted connections (HTTPS/TLS)</li>
-                <li>Restricted access to contact data</li>
-                <li>Secure hosting within the European Economic Area (EEA)</li>
+                {% for item in site.translations[site.lang].privacy_policy.security.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
             <hr>
 
-            <h2>9. HIPAA Notice (Clarification)</h2>
+            <h2>{% t privacy_policy.hipaa.title %}</h2>
 
-            <p>
-                The Entrelacs Website is <strong>not a HIPAA-covered service</strong> and does
-                <strong>not</strong> process Protected Health Information (PHI).
-            </p>
+            <p>{% t privacy_policy.hipaa.p1 %}</p>
 
-            <p>
-                Please <strong>do not submit health, medical, or diagnostic information</strong> through the Website
-                contact
-                forms.
-            </p>
+            <p>{% t privacy_policy.hipaa.p2 %}</p>
 
-            <p>
-                Any healthcare-related data processing occurs only within Entrelacs’ secure platform environments and is
-                governed by separate privacy notices.
-            </p>
+            <p>{% t privacy_policy.hipaa.p3 %}</p>
 
             <hr>
 
-            <h2>10. Your Rights (GDPR)</h2>
+            <h2>{% t privacy_policy.rights.title %}</h2>
 
-            <p>Under GDPR, you have the right to:</p>
+            <p>{% t privacy_policy.rights.intro %}</p>
 
             <ul>
-                <li>Access your personal data</li>
-                <li>Request correction or deletion</li>
-                <li>Withdraw consent at any time</li>
-                <li>Object to or restrict processing</li>
-                <li>Request data portability</li>
+                {% for item in site.translations[site.lang].privacy_policy.rights.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
             <p>
-                To exercise your rights, contact:<br>
-                <strong><a href="mailto:dpo@entrelacs.ai">dpo@entrelacs.ai</a></strong><br>
-                Subject line: <strong>Website Privacy Request</strong>
+                {% t privacy_policy.rights.contact_intro %}<br>
+                <strong><a href="mailto:{% t privacy_policy.rights.email_value %}">{% t privacy_policy.rights.email_value %}</a></strong><br>
+                {% t privacy_policy.rights.subject_label %} <strong>{% t privacy_policy.rights.subject_value %}</strong>
             </p>
 
-            <p>We respond within 30 days.</p>
+            <p>{% t privacy_policy.rights.response_time %}</p>
 
             <hr>
 
-            <h2>11. International Visitors</h2>
+            <h2>{% t privacy_policy.international_visitors.title %}</h2>
 
-            <p>
-                The Website is operated from the European Union.
-            </p>
+            <p>{% t privacy_policy.international_visitors.p1 %}</p>
 
-            <p>
-                Where applicable, international data transfers are protected using <strong>GDPR-approved
-                    safeguards</strong>.
-            </p>
+            <p>{% t privacy_policy.international_visitors.p2 %}</p>
 
             <hr>
 
-            <h2>12. External Links</h2>
+            <h2>{% t privacy_policy.external_links.title %}</h2>
 
-            <p>
-                The Website may contain links to third-party websites. Entrelacs is not responsible for the privacy
-                practices of those sites.
-            </p>
+            <p>{% t privacy_policy.external_links.body %}</p>
 
             <hr>
 
-            <h2>13. Updates to This Policy</h2>
+            <h2>{% t privacy_policy.updates.title %}</h2>
 
-            <p>
-                We may update this Privacy Policy from time to time. Any changes will be reflected by updating the “Last
-                Updated” date.
-            </p>
+            <p>{% t privacy_policy.updates.body %}</p>
 
             <hr>
 
-            <h2>14. Complaints</h2>
+            <h2>{% t privacy_policy.complaints.title %}</h2>
+
+            <p>{% t privacy_policy.complaints.intro %}</p>
 
             <p>
-                If you have concerns about how your personal data is handled, you may contact us or lodge a complaint
-                with
-                the competent supervisory authority:
-            </p>
-
-            <p>
-                <strong>France – CNIL</strong><br>
-                <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">https://www.cnil.fr</a>
+                <strong>{% t privacy_policy.complaints.authority_name %}</strong><br>
+                <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">{% t privacy_policy.complaints.authority_url %}</a>
             </p>
         </div>
     </main>

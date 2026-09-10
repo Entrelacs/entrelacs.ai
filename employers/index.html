@@ -33,22 +33,8 @@
             </div>
         </div>
 
-        <div class="pageItem credibilityBar">
-            <div class="credibilityMarquee">
-                <div class="credibilityTrack">
-                    <div class="credibilityTrackItems">
-                        {% for item in site.translations[site.lang].employers.credibility.items %}
-                        <p>{{ item }}</p>
-                        {% endfor %}
-                    </div>
-                    <div class="credibilityTrackItems" aria-hidden="true">
-                        {% for item in site.translations[site.lang].employers.credibility.items %}
-                        <p>{{ item }}</p>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% assign credibility_items = site.translations[site.lang].employers.credibility.items %}
+        {% include credibitlty_bar.html items=credibility_items %}
 
         <div class="pageItem lsection" id="decadeOfSpending" style="background: #F2F5FA;">
             <div class="pageItemContainer">

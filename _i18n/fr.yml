@@ -8,6 +8,10 @@ navigation:
   about: "À propos"
   contact: "Nous contacter"
 
+language_switcher:
+  english: "Anglais"
+  french: "Français"
+
 footer:
   company_name: "Entrelacs"
   nav:
@@ -25,6 +29,7 @@ footer:
     mentions: "Mentions légales"
   copyright: "Entrelacs 2026"
 
+
 404: "Désolé, cette page n’existe pas"
 
 home:
@@ -34,6 +39,7 @@ home:
   hero:
     tag_text: "Santé cérébrale. Personnelle, privée, précise."
     title_prefix: "L’actif qui fait tourner votre entreprise n’a jamais été mesuré."
+    subtitle: "Entrelacs mesure la connexion sociale — le déterminant de la santé cérébrale avec les preuves les plus solides et la charge de mesure la plus faible — une personne à la fois, toujours en privé. Les employés se voient eux-mêmes. Les employeurs voient où le soutien qu’ils financent déjà est nécessaire."
     wheel:
       item1: "au bon moment"
       item2: "avec la rigueur clinique"
@@ -41,6 +47,9 @@ home:
       item4: "au bon moment"
     cta_waitlist: "Entrer en liste d’attente"
     cta_demo: "Demander une démo"
+  credibility_bar:
+    fda_pre_submission: "FDA Pre-Submission déposée"
+    eu_research_program: "Développé en parallèle d’un programme de recherche européen Horizon LONELY-EU de 3 M €"
   problem:
     tag: "Le constat"
     heading: "Vous mesurez tous les actifs <br> que vous gérez. Sauf un seul."
@@ -642,6 +651,10 @@ team:
         role: "Directeur scientifique"
         bio: "Directeur associé du Psychological Science Accelerator, réseau de recherche mondial présent dans plus de 80 pays. Docteur en psychologie, spécialiste des études à grande échelle sur les systèmes psychologiques complexes. Ses travaux totalisent plus de 1 200 citations académiques. Il a dirigé des études comportementales de référence dans plus de 20 pays afin d’établir des cadres de mesure multidomaines robustes d’une culture à l’autre. C’est sur lui que reposent la validation interculturelle et la méthodologie psychométrique d’Entrelacs."
         image: "/images/teamMembers/DrMiguelSilan.png"
+      - name: "Dr Andrews Sobral"
+        role: "Directeur technique"
+        bio: "Docteur en vision par ordinateur et ancien responsable IA chez ActiveEon, avec plus de 2 800 citations académiques. Il construit le moteur Lacis et l’infrastructure de production qui le soutient, fort d’une expérience des plateformes d’apprentissage automatique et de leur orchestration à grande échelle."
+        image: "/images/teamMembers/DrAndrewsSobral.png"
   extendedLeadership:
     title: "Équipe de direction élargie"
     list:
@@ -649,10 +662,6 @@ team:
         role: "Directrice clinique"
         bio: "Psychologue clinicienne, plus de 15 ans d’expérience de la pratique et de l’organisation des soins en santé mentale. Directrice générale de Solstice Psychologues. Elle garantit l’intégrité clinique de chaque élément de la plateforme Entrelacs."
         image: "/images/teamMembers/DanielaRocha.png"
-      - name: "Dr Andrews Cordolino Sobral"
-        role: "Directeur de la technologie"
-        bio: "Docteur en vision par ordinateur et apprentissage automatique, ancien responsable de l'IA chez ActiveEon, où il a fait passer des plateformes d'IA du prototype à la production. Auteur de bibliothèques open source de vision par ordinateur utilisées dans le monde entier."
-        image: "/images/teamMembers/DrAndrewsSobral.png"
       - name: "Alexandra Lung"
         role: "Directrice produit (arrivée prochaine)"
         bio: "A dirigé le produit chez Aircall, de la série B au statut de licorne. Chez Entrelacs, elle pilote le produit sur toute l’expérience des personnes salariées et des équipes RH."
@@ -772,14 +781,6 @@ about:
         desc: "Un avenir où la santé mentale sera prise en charge comme toute autre spécialité médicale, avec un repérage systématique, une prise en compte précoce des signaux et une intervention anticipée pour norme plutôt que pour exception."
       - title: "Mission"
         desc: "Rendre mesurables les déterminants de la santé mentale, grâce à une psychométrie avancée et à une IA conçue selon des standards cliniques, pour que les personnes, les équipes soignantes, les entreprises et les systèmes de santé disposent de quelque chose sur quoi agir tôt, et pas seulement au moment de la crise."
-  pillars:
-    heading: "Nos trois piliers"
-    t1: "Précision"
-    t2: "Personnalisation"
-    t3: "Prévention"
-    d1: "Dépister avec une précision clinique, pas au hasard. Une évaluation conversationnelle de 15 minutes remplace les questionnaires fragmentés par une stratification des risques objective et multidimensionnelle."
-    d2: "Orienter vers le bon parcours de soins dès la première fois. L’IA connecte chaque individu à l’intervention la plus efficace dès le premier jour — réduisant les échecs de traitement et accélérant l’amélioration par 2 à 3 fois."
-    d3: "Détecter la détérioration avant qu’elle ne devienne une crise. Une surveillance continue suit les signaux passifs entre les séances et alerte les équipes de soins des semaines avant une crise — transformant des soins réactifs en soins proactifs."
   origin_story:
     tag: "Nos origines"
     title: "Né d’un constat dérangeant. Bâti pour corriger ce qu’il révèle."
@@ -869,3 +870,271 @@ about:
   common:
     more: "Lire toute l’histoire de Hans IJzerman"
     less: "Fermer"
+
+
+legal_mentions:
+  meta:
+    title: "Mentions légales - ENTRELACS"
+  title: "Mentions légales"
+  intro: "Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), les présentes mentions légales sont portées à la connaissance des utilisateurs et visiteurs du site."
+  site_publisher:
+    title: "1. Éditeur du site"
+    company_name: "ENTRELACS"
+    company_form: "Société par actions simplifiée (SAS) au capital social de 17 125,00 €"
+    registration: "Immatriculée au Registre du commerce et des sociétés d’Annecy sous le numéro 988 841 862 R.C.S. Annecy"
+    address: "Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France"
+    registration_date_label: "Date d’immatriculation :"
+    registration_date: "10 juillet 2025"
+    email_label: "E-mail :"
+    email_value: "hans@entrelacs.ai"
+    phone_label: "Téléphone :"
+    phone_value: "07 83 81 88 11"
+  publication_director:
+    title: "2. Directeur de la publication"
+    intro: "Le directeur de la publication est le Président de la société ENTRELACS :"
+    company_name: "Annecy Behavioral Science Lab"
+    company_form: "Société par actions simplifiée à associé unique (SASU)"
+    registration: "RCS Annecy n° 892 741 430"
+    address: "Siège social : 94 Route de Filly, 74410 Saint-Jorioz, France"
+  hosting:
+    title: "3. Hébergeur du site"
+    current_intro: "Le site est actuellement hébergé par :"
+    current_provider:
+      name: "Hostinger International Ltd."
+      address: "Adresse : 61 Lordou Vironos Street, 6023 Larnaca, Chypre"
+      phone: "Téléphone : +370.645.03378"
+      website_label: "Site web :"
+      website_text: "https://www.hostinger.fr"
+    future_intro: "Une migration vers Google Cloud Platform est prévue. À terme, l’hébergement sera assuré par :"
+    future_provider:
+      name: "Google Cloud EMEA Ltd."
+      address: "Adresse : 70 Sir John Rogerson's Quay, Dublin 2, Irlande"
+      website_label: "Site web :"
+      website_text: "https://cloud.google.com"
+  conditions_of_use:
+    title: "4. Conditions d’utilisation"
+    body: "L’utilisation du site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites sur le site. Celles-ci peuvent être modifiées ou complétées à tout moment."
+  intellectual_property:
+    title: "5. Propriété intellectuelle"
+    body: "L’ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de la société ENTRELACS, sauf mentions contraires. Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable."
+  data_protection:
+    title: "6. Protection des données personnelles"
+    prefix: "Le site respecte les dispositions légales relatives à la protection des données personnelles. Pour toute information ou demande relative à la collecte, au traitement ou à la suppression de vos données, veuillez contacter"
+    email_value: "dpo@entrelacs.ai"
+  cookies:
+    title: "7. Cookies"
+    body: "Le site peut être amené à utiliser des cookies. L’utilisateur est libre d’accepter ou de refuser ces cookies via les paramètres de son navigateur ou par une bannière de consentement affichée lors de la première visite."
+  last_updated_label: "Dernière mise à jour :"
+  last_updated_value: "10 juillet 2025"
+
+privacy_policy:
+  meta:
+    title: "Politique de confidentialité du site Entrelacs"
+  title: "Politique de confidentialité du site Entrelacs"
+  scope_notice: "Cette politique s’applique uniquement aux visiteurs et contacts professionnels interagissant avec le site Entrelacs."
+  last_updated_label: "Dernière mise à jour :"
+  last_updated_value: "6 janvier 2026"
+  introduction:
+    title: "1. Introduction"
+    p1: "La présente politique de confidentialité explique comment Entrelacs (\"nous\", \"notre\", \"nos\") collecte et traite les données personnelles lorsque vous visitez le site Entrelacs ou interagissez avec lui (le \"Site\")."
+    p2: "Cette politique s’applique uniquement aux activités réalisées sur le Site, comme la navigation, l’envoi de demandes de contact ou de démonstration, et les échanges avec nous."
+    p3: "L’utilisation de la plateforme Entrelacs, d’une preuve de concept (PoC) ou de tout bilan alimenté par l’IA est régie par des politiques de confidentialité distinctes, applicables lorsque vous accédez à ces services."
+    list_intro: "Entrelacs traite les données personnelles conformément :"
+    list_items:
+      - "au Règlement (UE) 2016/679 (Règlement général sur la protection des données - RGPD)"
+      - "à la loi française n° 78-17 relative à l’informatique, aux fichiers et aux libertés"
+      - "aux recommandations de l’autorité française de contrôle (CNIL)"
+  controller:
+    title: "2. Responsable du traitement et contact"
+    controller_label: "Responsable du traitement :"
+    controller_value: "Entrelacs"
+    email_label: "E-mail de contact :"
+    email_value: "dpo@entrelacs.ai"
+  data_collected:
+    title: "3. Données personnelles que nous collectons"
+    intro: "Nous collectons uniquement les données nécessaires au fonctionnement du Site et au traitement de vos demandes."
+    voluntary:
+      title: "a. Informations fournies volontairement"
+      intro: "Lorsque vous utilisez les formulaires \"Nous contacter\" ou \"Demander une démo\", nous pouvons collecter :"
+      items:
+        - "Prénom et nom"
+        - "Adresse e-mail"
+        - "Nom de l’organisation"
+        - "Contenu du message"
+      purpose_label: "Finalité :"
+      purpose_body: "Répondre à votre demande, vous fournir les informations sollicitées et communiquer avec vous au sujet de votre requête."
+    technical:
+      title: "b. Données techniques et d’usage"
+      intro: "Lorsque vous visitez le Site, nous pouvons collecter :"
+      items:
+        - "Adresse IP"
+        - "Type de navigateur et informations sur l’appareil"
+        - "Pages visitées et horodatages"
+      purpose_label: "Finalité :"
+      purpose_body: "Assurer la sécurité, le bon fonctionnement et la performance du Site."
+    health_notice: "Le Site ne collecte pas de données de santé, de données cliniques, de réponses à des bilans ni d’informations de santé protégées (PHI)."
+  legal_basis:
+    title: "4. Base juridique du traitement (RGPD)"
+    headers:
+      activity: "Activité de traitement"
+      basis: "Base juridique"
+      article: "Article du RGPD"
+    rows:
+      - activity: "Réponse aux demandes de contact ou de démonstration"
+        basis: "Consentement"
+        article: "Art. 6(1)(a)"
+      - activity: "Sécurité du site et journaux techniques"
+        basis: "Intérêt légitime"
+        article: "Art. 6(1)(f)"
+      - activity: "Communications professionnelles"
+        basis: "Intérêt légitime"
+        article: "Art. 6(1)(f)"
+    note: "Lorsque cela est requis, le consentement est recueilli au moyen d’une case à cocher explicite au moment de la soumission des données."
+  cookies:
+    title: "5. Cookies"
+    intro: "Le Site utilise uniquement des cookies essentiels, strictement nécessaires pour :"
+    items:
+      - "la sécurité"
+      - "la gestion de session"
+      - "le fonctionnement essentiel du site"
+    note: "Nous n’utilisons pas de cookies publicitaires, de traceurs marketing ni de cookies de profilage comportemental."
+  retention:
+    title: "6. Conservation des données"
+    items:
+      - "Données de contact et de demande de démonstration : jusqu’à 12 mois, sauf demande de poursuite des échanges"
+      - "Journaux techniques : jusqu’à 30 jours"
+      - "Les données peuvent être supprimées plus tôt sur demande"
+  sharing:
+    title: "7. Partage des données et sous-traitants"
+    p1: "Nous ne vendons ni ne louons de données personnelles."
+    p2: "Les données personnelles peuvent être partagées uniquement avec :"
+    items:
+      - "le personnel autorisé d’Entrelacs"
+      - "des prestataires techniques (par exemple l’hébergement du site), agissant comme sous-traitants dans le cadre d’accords conformes au RGPD"
+    p3: "Aucune donnée n’est partagée avec des annonceurs ni avec des plateformes marketing tierces."
+  security:
+    title: "8. Sécurité des données"
+    intro: "Entrelacs met en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données personnelles, notamment :"
+    items:
+      - "des connexions chiffrées (HTTPS/TLS)"
+      - "un accès restreint aux données de contact"
+      - "un hébergement sécurisé dans l’Espace économique européen (EEE)"
+  hipaa:
+    title: "9. Mention HIPAA (clarification)"
+    p1: "Le site Entrelacs n’est pas un service couvert par la HIPAA et ne traite pas d’informations de santé protégées (PHI)."
+    p2: "Merci de ne pas soumettre d’informations de santé, médicales ou diagnostiques via les formulaires du Site."
+    p3: "Tout traitement de données liées aux soins de santé a lieu uniquement dans les environnements sécurisés de la plateforme Entrelacs et relève de notices de confidentialité distinctes."
+  rights:
+    title: "10. Vos droits (RGPD)"
+    intro: "En vertu du RGPD, vous disposez des droits suivants :"
+    items:
+      - "accéder à vos données personnelles"
+      - "demander leur rectification ou leur suppression"
+      - "retirer votre consentement à tout moment"
+      - "vous opposer au traitement ou en demander la limitation"
+      - "demander la portabilité de vos données"
+    contact_intro: "Pour exercer vos droits, contactez :"
+    email_value: "dpo@entrelacs.ai"
+    subject_label: "Objet :"
+    subject_value: "Demande relative à la confidentialité du site"
+    response_time: "Nous répondons dans un délai de 30 jours."
+  international_visitors:
+    title: "11. Visiteurs internationaux"
+    p1: "Le Site est exploité depuis l’Union européenne."
+    p2: "Le cas échéant, les transferts internationaux de données sont encadrés par des garanties approuvées au titre du RGPD."
+  external_links:
+    title: "12. Liens externes"
+    body: "Le Site peut contenir des liens vers des sites tiers. Entrelacs n’est pas responsable des pratiques de confidentialité de ces sites."
+  updates:
+    title: "13. Mises à jour de cette politique"
+    body: "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera reflétée par une mise à jour de la date de dernière mise à jour."
+  complaints:
+    title: "14. Réclamations"
+    intro: "Si vous avez des préoccupations concernant la manière dont vos données personnelles sont traitées, vous pouvez nous contacter ou adresser une réclamation à l’autorité de contrôle compétente :"
+    authority_name: "France - CNIL"
+    authority_url: "https://www.cnil.fr"
+
+terms_of_use:
+  meta:
+    title: "Conditions d'utilisation du site Entrelacs"
+  title: "Conditions d'utilisation du site Entrelacs"
+  introduction:
+    title: "1. Introduction"
+    p1: "Les présentes conditions d'utilisation (les \"Conditions\") régissent votre accès au site Entrelacs et son utilisation (le \"Site\")."
+    p2_line1: "En accédant au Site ou en l'utilisant, vous acceptez d'être lié par ces Conditions."
+    p2_line2: "Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser le Site."
+    p3: "Ces Conditions s'appliquent uniquement au Site. L'utilisation de la plateforme Entrelacs, d'une preuve de concept (PoC) ou de tout bilan alimenté par l'IA est régie par des conditions et des politiques de confidentialité distinctes, applicables lorsque vous accédez à ces services."
+  purpose:
+    title: "2. Objet du site"
+    intro: "Le Site est fourni uniquement à des fins d'information et de communication professionnelle, notamment pour :"
+    items:
+      - "présenter la mission, la recherche et la technologie d'Entrelacs"
+      - "permettre aux visiteurs de contacter Entrelacs"
+      - "permettre aux organisations de demander des démonstrations ou des informations complémentaires"
+    note: "Le Site ne fournit pas de services cliniques, médicaux, diagnostiques ou thérapeutiques."
+  medical_advice:
+    title: "3. Absence d'avis médical ou clinique"
+    p1: "Le contenu du Site est fourni à des fins d'information générale uniquement."
+    intro: "Rien sur le Site ne constitue :"
+    items:
+      - "un avis médical"
+      - "un diagnostic de santé mentale"
+      - "une orientation thérapeutique"
+      - "une évaluation ou un traitement clinique"
+    p2: "Vous ne devez pas considérer le contenu du Site comme un substitut à un avis médical ou psychologique professionnel."
+  website_use:
+    title: "4. Utilisation du site"
+    p1: "Vous vous engagez à utiliser le Site de manière licite, respectueuse et responsable."
+    intro: "Il vous est interdit de :"
+    items:
+      - "utiliser le Site à des fins illicites ou trompeuses"
+      - "soumettre des informations fausses, inexactes ou trompeuses"
+      - "tenter de perturber ou d'entraver le fonctionnement ou la sécurité du Site"
+      - "tenter d'accéder sans autorisation à des zones ou systèmes restreints"
+      - "utiliser le Site d'une manière portant atteinte aux droits d'Entrelacs ou de tiers"
+  requests:
+    title: "5. Demandes de contact et de démonstration"
+    intro: "Lorsque vous soumettez des informations via les formulaires de contact ou de demande de démonstration du Site :"
+    items:
+      - "vous confirmez que les informations fournies sont exactes et licites"
+      - "vous acceptez qu'Entrelacs utilise ces informations pour répondre à votre demande"
+    note: "Merci de ne pas soumettre d'informations de santé, médicales ou diagnostiques via les formulaires du Site."
+    privacy_notice: "Le traitement des données personnelles est régi par la politique de confidentialité du Site."
+  intellectual_property:
+    title: "6. Propriété intellectuelle"
+    p1: "L'ensemble du contenu du Site, y compris les textes, graphismes, logos, marques, éléments de design et mise en page, est la propriété d'Entrelacs ou de ses concédants et est protégé par les lois applicables en matière de propriété intellectuelle."
+    p2: "Vous pouvez consulter et utiliser le contenu du Site uniquement à des fins personnelles ou pour vos besoins internes professionnels."
+    p3: "Vous ne pouvez pas copier, reproduire, modifier, distribuer, publier ou exploiter de toute autre manière le contenu du Site sans l'autorisation écrite préalable d'Entrelacs."
+  third_party_links:
+    title: "7. Liens vers des sites tiers"
+    p1: "Le Site peut contenir des liens vers des sites tiers à des fins de commodité ou d'information."
+    p2: "Entrelacs ne contrôle pas et n'est pas responsable du contenu, de la disponibilité ou des pratiques de confidentialité des sites tiers."
+  disclaimer:
+    title: "8. Exclusion de garanties"
+    p1: "Le Site est fourni en l'état et selon sa disponibilité."
+    intro: "Entrelacs ne donne aucune garantie ni représentation concernant :"
+    items:
+      - "l'exactitude, l'exhaustivité ou l'actualité du contenu du Site"
+      - "la disponibilité ou le fonctionnement ininterrompu du Site"
+      - "l'adéquation du Site à un usage particulier"
+  liability:
+    title: "9. Limitation de responsabilité"
+    intro: "Dans la mesure maximale permise par la loi applicable, Entrelacs ne pourra être tenue responsable d'aucun dommage direct ou indirect résultant de :"
+    items:
+      - "l'utilisation du Site ou l'impossibilité de l'utiliser"
+      - "la confiance accordée au contenu du Site"
+      - "des erreurs, interruptions ou problèmes techniques"
+      - "un accès non autorisé ou des incidents de sécurité"
+  changes:
+    title: "10. Modifications du site ou des conditions"
+    p1: "Entrelacs peut modifier, suspendre ou interrompre le Site à tout moment, sans préavis."
+    p2: "Les présentes Conditions peuvent être mises à jour périodiquement. La poursuite de l'utilisation du Site après la publication de modifications vaut acceptation des Conditions mises à jour."
+  governing_law:
+    title: "11. Droit applicable et juridiction"
+    p1: "Les présentes Conditions sont régies et interprétées conformément au droit français."
+    p2: "Tout litige relatif au Site ou aux présentes Conditions relève de la compétence exclusive des juridictions compétentes françaises."
+  contact:
+    title: "12. Contact"
+    intro: "Si vous avez des questions concernant ces Conditions, veuillez contacter :"
+    email_label: "E-mail :"
+    email_value: "dpo@entrelacs.ai"

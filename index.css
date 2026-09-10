@@ -71,53 +71,6 @@ main .cta {
 
 
 /* ==========================================================================
-   CREDIBILITY BAR
-   ========================================================================== */
-
-.credibilityBar {
-    background: #E62154;
-    padding-top: 56px;
-    padding-bottom: 56px;
-    box-shadow: 0px 15px 15px 0px rgba(199, 210, 228, 0.15);
-}
-
-.credibilityBar .pageItemContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 56px;
-}
-
-.credibilityBar p {
-    color: var(--text-white, #F4F5F7);
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.45;
-    margin: 0;
-}
-
-@media (max-width: 650px) {
-    .credibilityBar {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .credibilityBar .pageItemContainer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 16px;
-    }
-
-    .credibilityBar p {
-        font-size: 16px;
-    }
-}
-
-
-/* ==========================================================================
    SHARED SECTION UTILITIES
    (used by Problem, How It Works, Trust, Scientific Credibility,
    Cost, Pillars, Research and Partners sections)

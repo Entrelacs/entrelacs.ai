@@ -8,6 +8,10 @@ navigation:
   about: "About Us"
   contact: "Contact Us"
 
+language_switcher:
+  english: "English"
+  french: "French"
+
 footer:
   company_name: "Entrelacs"
   nav:
@@ -33,6 +37,7 @@ home:
   video_link: https://www.youtube.com/embed/KT3zVYqUUn4?si=zRbS_7o-PsrSFgDD
   hero:
     title_prefix: "The asset your company runs on has never been measured."
+    subtitle: "Entrelacs measures social connection — the determinant of brain health with the strongest evidence and the lowest measurement burden — one person at a time, always in private. Employees see themselves. Employers see where the support they already fund is needed."
     tag_text: "Brain Health. Personal, Private, Precise."
     wheel:
       item1: "when it matters"
@@ -41,6 +46,9 @@ home:
       item4: "when it matters"
     cta_waitlist: "Join our waiting list"
     cta_demo: "Request a demo"
+  credibility_bar:
+    fda_pre_submission: "FDA Pre-Submission filed"
+    eu_research_program: "Built alongside a €3M EU Horizon LONELY-EU research program"
   problem:
     tag: "Why now"
     heading: "You measure every asset <br> you manage. Except this one."
@@ -639,6 +647,14 @@ team:
         role: "Chief Operating Officer"
         bio: "PharmD, MBA. Healthcare operations expert with deep experience leading pharmaceutical strategy implementation across Europe. Drives operational excellence and EU market access for Entrelacs."
         image: "/images/teamMembers/DrCristinaClaver.png"
+      - name: "Katie Cobb"
+        role: "Chief Marketing Officer (incoming)"
+        bio: "Founder of Oxford Comma Strategy and architect of Entrelacs' category strategy as well as go-to-market messaging in the U.S."
+        image: "/images/teamMembers/katieCobb.png"
+      - name: "Cyril Marie"
+        role: "Head of Brand and Creative, France (incoming)"
+        bio: "Creative director and entrepreneur for twenty-five years. President of Inspire Studio, Annecy. Leads French brand identity, creative direction, and press strategy."
+        image: "/images/teamMembers/CyrilMarie.png"
   advisors:
     title: "Strategic advisors"
     subtitle: "Guided by the minds shaping the future of AI, behavioral science, and global health."
@@ -663,6 +679,10 @@ team:
         role: "UC Davis"
         bio: "Leading expert in personalized psychological measurement and individual differences research. Guides the psychometric methodology and measurement science that underpins the Entrelacs assessment engine."
         image: "/images/teamMembers/DrEmorieBeck.png"
+      - name: "Jackie Ourman, LMHC-D"
+        role: "Founder, Social Connection Collective"
+        bio: "Practicing psychotherapist and founder of the Social Connection Collective, formed out of the launch of the WHO Commission on Social Connection. Advises on connecting measurement to frontline practice."
+        image: "/images/teamMembers/JackieOurman.png"
       
 contact:
   title: "Get in touch"
@@ -826,3 +846,270 @@ about:
     more: "Read more of Dr. Hans’ full story"
     less: "Close"
 
+
+legal_mentions:
+  meta:
+    title: "Legal Mentions - ENTRELACS"
+  title: "Legal Mentions"
+  intro: "In accordance with Articles 6-III and 19 of French Law No. 2004-575 of June 21, 2004 on Confidence in the Digital Economy (LCEN), the following legal notices are brought to the attention of users and visitors of this website."
+  site_publisher:
+    title: "1. Site publisher"
+    company_name: "ENTRELACS"
+    company_form: "Simplified joint-stock company (SAS) with share capital of EUR 17,125.00"
+    registration: "Registered with the Annecy Trade and Companies Register under number 988 841 862 R.C.S. Annecy"
+    address: "Registered office: 94 Route de Filly, 74410 Saint-Jorioz, France"
+    registration_date_label: "Date of registration:"
+    registration_date: "July 10, 2025"
+    email_label: "Email:"
+    email_value: "hans@entrelacs.ai"
+    phone_label: "Phone:"
+    phone_value: "07 83 81 88 11"
+  publication_director:
+    title: "2. Publication director"
+    intro: "The publication director is the President of ENTRELACS:"
+    company_name: "Annecy Behavioral Science Lab"
+    company_form: "Single-shareholder simplified joint-stock company (SASU)"
+    registration: "Annecy Trade and Companies Register No. 892 741 430"
+    address: "Registered office: 94 Route de Filly, 74410 Saint-Jorioz, France"
+  hosting:
+    title: "3. Website hosting"
+    current_intro: "The website is currently hosted by:"
+    current_provider:
+      name: "Hostinger International Ltd."
+      address: "Address: 61 Lordou Vironos Street, 6023 Larnaca, Cyprus"
+      phone: "Phone: +370.645.03378"
+      website_label: "Website:"
+      website_text: "https://www.hostinger.fr"
+    future_intro: "A migration to Google Cloud Platform is planned. In the future, hosting will be provided by:"
+    future_provider:
+      name: "Google Cloud EMEA Ltd."
+      address: "Address: 70 Sir John Rogerson's Quay, Dublin 2, Ireland"
+      website_label: "Website:"
+      website_text: "https://cloud.google.com"
+  conditions_of_use:
+    title: "4. Conditions of use"
+    body: "Use of the website implies full acceptance of the general terms of use described on the website. These may be modified or supplemented at any time."
+  intellectual_property:
+    title: "5. Intellectual property"
+    body: "All content on the website (texts, images, graphics, logo, icons, etc.) is the exclusive property of ENTRELACS, unless stated otherwise. Any reproduction, representation, modification, publication, or adaptation of all or part of the website elements is prohibited without prior written authorization."
+  data_protection:
+    title: "6. Personal data protection"
+    prefix: "The website complies with the legal provisions relating to personal data protection. For any information or request relating to the collection, processing, or deletion of your data, please contact"
+    email_value: "dpo@entrelacs.ai"
+  cookies:
+    title: "7. Cookies"
+    body: "The website may use cookies. Users are free to accept or refuse these cookies through their browser settings or through a consent banner displayed on their first visit."
+  last_updated_label: "Last updated:"
+  last_updated_value: "July 10, 2025"
+
+privacy_policy:
+  meta:
+    title: "Entrelacs Website Privacy Policy"
+  title: "Entrelacs Website Privacy Policy"
+  scope_notice: "This policy applies to visitors and business contacts interacting with the Entrelacs website only."
+  last_updated_label: "Last updated:"
+  last_updated_value: "January 6, 2026"
+  introduction:
+    title: "1. Introduction"
+    p1: "This Privacy Policy explains how Entrelacs (\"we\", \"our\", \"us\") collects and processes personal data when you visit or interact with the Entrelacs website (the \"Website\")."
+    p2: "This policy applies only to activities on the Website, such as browsing, submitting contact or demo requests, and communicating with us."
+    p3: "Use of the Entrelacs platform, Proof of Concept (PoC), or any AI-powered assessments is governed by separate privacy policies, which apply when you access those services."
+    list_intro: "Entrelacs processes personal data in accordance with:"
+    list_items:
+      - "Regulation (EU) 2016/679 (General Data Protection Regulation - GDPR)"
+      - "French Data Protection Law No. 78-17 (Loi Informatique et Libertes)"
+      - "Guidance issued by the French supervisory authority (CNIL)"
+  controller:
+    title: "2. Data Controller and Contact"
+    controller_label: "Data Controller:"
+    controller_value: "Entrelacs"
+    email_label: "Contact Email:"
+    email_value: "dpo@entrelacs.ai"
+  data_collected:
+    title: "3. Personal Data We Collect"
+    intro: "We collect only data that is necessary for operating the Website and responding to inquiries."
+    voluntary:
+      title: "a. Information you provide voluntarily"
+      intro: "When you use the \"Contact Us\" or \"Request a Demo\" forms, we may collect:"
+      items:
+        - "First and last name"
+        - "Email address"
+        - "Organization name"
+        - "Message content"
+      purpose_label: "Purpose:"
+      purpose_body: "To respond to your inquiry, provide requested information, and communicate with you regarding your request."
+    technical:
+      title: "b. Technical and usage data"
+      intro: "When you visit the Website, we may collect:"
+      items:
+        - "IP address"
+        - "Browser type and device information"
+        - "Pages visited and timestamps"
+      purpose_label: "Purpose:"
+      purpose_body: "To ensure website security, functionality, and performance."
+    health_notice: "The Website does not collect health data, clinical data, assessment responses, or protected health information (PHI)."
+  legal_basis:
+    title: "4. Legal Basis for Processing (GDPR)"
+    headers:
+      activity: "Processing Activity"
+      basis: "Legal Basis"
+      article: "GDPR Article"
+    rows:
+      - activity: "Responding to contact or demo requests"
+        basis: "Consent"
+        article: "Art. 6(1)(a)"
+      - activity: "Website security and technical logs"
+        basis: "Legitimate interest"
+        article: "Art. 6(1)(f)"
+      - activity: "Business communications"
+        basis: "Legitimate interest"
+        article: "Art. 6(1)(f)"
+    note: "Where required, consent is obtained through an explicit checkbox at the time of data submission."
+  cookies:
+    title: "5. Cookies"
+    intro: "The Website uses essential cookies only, strictly necessary for:"
+    items:
+      - "Security"
+      - "Session management"
+      - "Core website functionality"
+    note: "We do not use advertising cookies, marketing trackers, or behavioral profiling cookies."
+  retention:
+    title: "6. Data Retention"
+    items:
+      - "Contact and demo request data: Up to 12 months, unless continued communication is requested"
+      - "Technical logs: Up to 30 days"
+      - "Data may be deleted earlier upon request"
+  sharing:
+    title: "7. Data Sharing and Processors"
+    p1: "We do not sell or rent personal data."
+    p2: "Personal data may be shared only with:"
+    items:
+      - "Authorized Entrelacs personnel"
+      - "Technical service providers (e.g., website hosting), acting as data processors under GDPR-compliant agreements"
+    p3: "No data is shared with advertisers or third-party marketing platforms."
+  security:
+    title: "8. Data Security"
+    intro: "Entrelacs implements appropriate technical and organizational measures to protect personal data, including:"
+    items:
+      - "Encrypted connections (HTTPS/TLS)"
+      - "Restricted access to contact data"
+      - "Secure hosting within the European Economic Area (EEA)"
+  hipaa:
+    title: "9. HIPAA Notice (Clarification)"
+    p1: "The Entrelacs Website is not a HIPAA-covered service and does not process Protected Health Information (PHI)."
+    p2: "Please do not submit health, medical, or diagnostic information through the Website contact forms."
+    p3: "Any healthcare-related data processing occurs only within Entrelacs' secure platform environments and is governed by separate privacy notices."
+  rights:
+    title: "10. Your Rights (GDPR)"
+    intro: "Under GDPR, you have the right to:"
+    items:
+      - "Access your personal data"
+      - "Request correction or deletion"
+      - "Withdraw consent at any time"
+      - "Object to or restrict processing"
+      - "Request data portability"
+    contact_intro: "To exercise your rights, contact:"
+    email_value: "dpo@entrelacs.ai"
+    subject_label: "Subject line:"
+    subject_value: "Website Privacy Request"
+    response_time: "We respond within 30 days."
+  international_visitors:
+    title: "11. International Visitors"
+    p1: "The Website is operated from the European Union."
+    p2: "Where applicable, international data transfers are protected using GDPR-approved safeguards."
+  external_links:
+    title: "12. External Links"
+    body: "The Website may contain links to third-party websites. Entrelacs is not responsible for the privacy practices of those sites."
+  updates:
+    title: "13. Updates to This Policy"
+    body: "We may update this Privacy Policy from time to time. Any changes will be reflected by updating the \"Last Updated\" date."
+  complaints:
+    title: "14. Complaints"
+    intro: "If you have concerns about how your personal data is handled, you may contact us or lodge a complaint with the competent supervisory authority:"
+    authority_name: "France - CNIL"
+    authority_url: "https://www.cnil.fr"
+
+terms_of_use:
+  meta:
+    title: "Entrelacs Website Terms of Use"
+  title: "Entrelacs Website Terms of Use"
+  introduction:
+    title: "1. Introduction"
+    p1: "These Terms of Use (\"Terms\") govern your access to and use of the Entrelacs website (the \"Website\")."
+    p2_line1: "By accessing or using the Website, you agree to be bound by these Terms."
+    p2_line2: "If you do not agree to these Terms, please do not use the Website."
+    p3: "These Terms apply only to the Website. Use of the Entrelacs platform, Proof of Concept (PoC), or any AI-powered assessments is governed by separate terms and privacy policies, which apply when you access those services."
+  purpose:
+    title: "2. Purpose of the Website"
+    intro: "The Website is provided for informational and business communication purposes only, including:"
+    items:
+      - "Presenting Entrelacs' mission, research, and technology"
+      - "Allowing visitors to contact Entrelacs"
+      - "Allowing organizations to request demonstrations or further information"
+    note: "The Website does not provide clinical, medical, diagnostic, or therapeutic services."
+  medical_advice:
+    title: "3. No Medical or Clinical Advice"
+    p1: "Content on the Website is provided for general informational purposes only."
+    intro: "Nothing on the Website constitutes:"
+    items:
+      - "Medical advice"
+      - "Mental health diagnosis"
+      - "Therapeutic guidance"
+      - "Clinical assessment or treatment"
+    p2: "You should not rely on Website content as a substitute for professional medical or mental health advice."
+  website_use:
+    title: "4. Use of the Website"
+    p1: "You agree to use the Website in a lawful, respectful, and responsible manner."
+    intro: "You must not:"
+    items:
+      - "Use the Website for unlawful or misleading purposes"
+      - "Submit false, inaccurate, or deceptive information"
+      - "Attempt to disrupt or interfere with the Website's operation or security"
+      - "Attempt to access restricted areas or systems without authorization"
+      - "Use the Website in a manner that infringes the rights of Entrelacs or third parties"
+  requests:
+    title: "5. Contact and Demo Requests"
+    intro: "When you submit information through the Website's contact or demo request forms:"
+    items:
+      - "You confirm that the information you provide is accurate and lawful"
+      - "You agree that Entrelacs may use the information to respond to your inquiry"
+    note: "Please do not submit health, medical, or diagnostic information through Website forms."
+    privacy_notice: "The processing of personal data is governed by the Website Privacy Policy."
+  intellectual_property:
+    title: "6. Intellectual Property"
+    p1: "All content on the Website, including text, graphics, logos, trademarks, design elements, and layout, is the property of Entrelacs or its licensors and is protected by applicable intellectual property laws."
+    p2: "You may view and use Website content for personal or internal business purposes only."
+    p3: "You may not copy, reproduce, modify, distribute, publish, or otherwise exploit Website content without prior written permission from Entrelacs."
+  third_party_links:
+    title: "7. Third-Party Links"
+    p1: "The Website may contain links to third-party websites for convenience or informational purposes."
+    p2: "Entrelacs does not control and is not responsible for the content, availability, or privacy practices of third-party websites."
+  disclaimer:
+    title: "8. Disclaimer of Warranties"
+    p1: "The Website is provided on an \"as is\" and \"as available\" basis."
+    intro: "Entrelacs makes no warranties or representations regarding:"
+    items:
+      - "The accuracy, completeness, or timeliness of Website content"
+      - "The availability or uninterrupted operation of the Website"
+      - "The suitability of the Website for any particular purpose"
+  liability:
+    title: "9. Limitation of Liability"
+    intro: "To the maximum extent permitted by applicable law, Entrelacs shall not be liable for any direct or indirect damages arising from:"
+    items:
+      - "Use of or inability to use the Website"
+      - "Reliance on Website content"
+      - "Errors, interruptions, or technical issues"
+      - "Unauthorized access or security incidents"
+  changes:
+    title: "10. Changes to the Website or Terms"
+    p1: "Entrelacs may modify, suspend, or discontinue the Website at any time without notice."
+    p2: "These Terms may be updated periodically. Continued use of the Website after changes are published constitutes acceptance of the updated Terms."
+  governing_law:
+    title: "11. Governing Law and Jurisdiction"
+    p1: "These Terms are governed by and construed in accordance with the laws of France."
+    p2: "Any disputes arising in connection with the Website or these Terms shall be subject to the exclusive jurisdiction of the competent courts of France."
+  contact:
+    title: "12. Contact"
+    intro: "If you have questions about these Terms, please contact:"
+    email_label: "Email:"
+    email_value: "dpo@entrelacs.ai"
