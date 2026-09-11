@@ -226,7 +226,10 @@
         padding-left: 24px;
         padding-right: 24px;
     }
-
+    .logoContainer svg{
+        width: 80vw;
+        height: auto;
+    }
     .footerLeft {
         align-items: flex-start;
     }
@@ -253,6 +256,11 @@
         align-items: flex-start;
         gap: 24px;
         margin: 14px 0;
+    }
+
+    .footerSponsers {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
