@@ -33,11 +33,13 @@ footer:
 404: 
   meta:
     title: "Page non trouvée"
+    description: "La page que vous recherchez est introuvable sur le site Entrelacs."
   message: "Désolé, cette page n’existe pas"
 
 home:
   meta:
     title: "Entrelacs"
+    description: "Entrelacs met la santé cérébrale au travail en mesure grâce à une IA à standard clinique, privée par conception, pour agir plus tôt et plus justement."
   video_link: https://www.youtube.com/embed/8Fzfn64_KF0?si=t0QUz5IS1bdXzJmB
   hero:
     tag_text: "Santé cérébrale. Personnelle, privée, précise."
@@ -250,6 +252,7 @@ home:
 employers:
   meta:
     title: "Entrelacs pour les employeurs"
+    description: "Découvrez comment Entrelacs aide les entreprises à mesurer le capital cérébral, repérer les besoins plus tôt et renforcer l’impact des dispositifs déjà financés."
   hero:
     eyebrow: "ENTRELACS POUR L’EMPLOYEUR"
     title: "Vos avantages sociaux sont financés. Rien ne vous dit qui en a besoin."
@@ -383,6 +386,7 @@ employers:
 employees:
   meta:
     title: "Entrelacs pour les personnes salariées"
+    description: "Découvrez comment Entrelacs offre aux personnes salariées une lecture privée et personnalisée de leur lien social, sans exposer leurs réponses à l’employeur."
   hero:
     eyebrow: "ENTRELACS POUR LES ÉQUIPES"
     title: "Quinze minutes pour une lecture de ce que vous vivez, sans comparaison avec les autres."
@@ -497,6 +501,7 @@ employees:
 care_settings:
   meta:
     title: "Entrelacs pour les structures de soins"
+    description: "Découvrez comment Entrelacs apporte une mesure de santé mentale propre à chaque personne aux cliniques, systèmes de santé et partenaires de recherche."
   hero:
     eyebrow: "ENTRELACS EN STRUCTURES DE SOINS"
     title: "Votre patientèle vit entre vos consultations, et la mesure devrait y être elle aussi."
@@ -531,6 +536,7 @@ care_settings:
 the_science:
   meta:
     title: "Entrelacs — La science"
+    description: "Découvrez la recherche qui fonde Entrelacs, pourquoi les mesures moyennes échouent et comment Lacis modélise chaque personne."
   hero:
     title: "La personne moyenne n’existe pas. Nous avons cessé de la mesurer."
     description: "Entrelacs repose sur un constat que la discipline a mis des décennies à accepter : les instruments psychologiques étalonnés sur des populations mesurent systématiquement mal les personnes prises une à une. Lacis, notre moteur propriétaire, modélise une personne à la fois, ce qui change ce que la mesure rend possible."
@@ -718,6 +724,7 @@ team:
 contact:
   meta:
     title: "Contactez-nous"
+    description: "Contactez Entrelacs pour demander une démo, poser une question ou discuter d’un partenariat entreprise, clinique ou recherche."
   title: "Écrivez-nous"
   subtitle: "Notre équipe sera ravie de vous lire."
   form:
@@ -737,6 +744,7 @@ contact:
 waiting_list:
   meta:
     title: "Rejoignez la liste d’attente d’Entrelacs"
+    description: "Rejoignez la liste d’attente Entrelacs pour accéder en avant-première à une mesure privée et personnalisée de la santé cérébrale."
   title: "Rejoignez notre liste d’attente"
   subtitle: "Découvrez Entrelacs avant tout le monde."
   form:
@@ -749,6 +757,9 @@ waiting_list:
     submit_button: "Rejoindre la liste"
 
 roi_calculator:
+  meta:
+    title: "Calculateur de rentabilité Entrelacs"
+    description: "Utilisez le calculateur de rentabilité Entrelacs pour estimer le coût d’une prise en charge tardive et la valeur d’une action plus précoce."
   tag: "Rentabilité"
   title: "Vous payez aujourd’hui le prix de la crise. <br> Vous pourriez investir dans la prévention"
   description: "La santé mentale ne dispose d’aucun système d’alerte précoce. Le temps que vous en voyiez les effets, absentéisme, départs, hospitalisations en urgence, la facture court déjà."
@@ -777,6 +788,9 @@ cta_banner:
   cta_secondary: "Postuler comme partenaire pilote"
 
 about:
+  meta:
+    title: "À propos d’Entrelacs"
+    description: "Découvrez Entrelacs, son équipe et sa mission : rendre la mesure de la santé mentale personnelle, privée et précise."
   title: "À propos d’Entrelacs"
   hero:
     title: "Nous créons l’instrument qui permet de mesurer l’actif que l’économie a oublié de prendre en compte."
@@ -884,6 +898,7 @@ about:
 legal_mentions:
   meta:
     title: "Mentions légales - ENTRELACS"
+    description: "Consultez les mentions légales, l’éditeur, l’hébergement et les informations juridiques du site Entrelacs."
   title: "Mentions légales"
   intro: "Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), les présentes mentions légales sont portées à la connaissance des utilisateurs et visiteurs du site."
   site_publisher:
@@ -939,6 +954,7 @@ legal_mentions:
 privacy_policy:
   meta:
     title: "Politique de confidentialité du site Entrelacs"
+    description: "Consultez la manière dont Entrelacs collecte, utilise, conserve et protège les données personnelles transmises via le site."
   title: "Politique de confidentialité du site Entrelacs"
   scope_notice: "Cette politique s’applique uniquement aux visiteurs et contacts professionnels interagissant avec le site Entrelacs."
   last_updated_label: "Dernière mise à jour :"
@@ -1066,6 +1082,7 @@ privacy_policy:
 terms_of_use:
   meta:
     title: "Conditions d'utilisation du site Entrelacs"
+    description: "Consultez les conditions d’utilisation du site Entrelacs, y compris les usages autorisés, avertissements et limites de responsabilité."
   title: "Conditions d'utilisation du site Entrelacs"
   introduction:
     title: "1. Introduction"

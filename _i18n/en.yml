@@ -32,11 +32,13 @@ footer:
 404:
   meta:
     title: "Page Not Found"
+    description: "The page you were looking for could not be found on the Entrelacs website."
   message: "Sorry, but this page does not exist"
 
 home:
   meta:
     title: "Entrelacs"
+    description: "Entrelacs provides clinical-grade AI to measure social connection and brain health in private, helping organizations act earlier and more precisely."
   video_link: https://www.youtube.com/embed/KT3zVYqUUn4?si=zRbS_7o-PsrSFgDD
   hero:
     title_prefix: "The asset your company runs on has never been measured."
@@ -213,6 +215,7 @@ home:
 employers:
   meta:
     title: "Entrelacs for Employers"
+    description: "See how Entrelacs helps employers measure workforce brain capital privately, spot support needs earlier, and strengthen the impact of the support they already fund."
   hero:
     eyebrow: "ENTRELACS FOR EMPLOYERS"
     title: "Your benefits stack is fully funded. It just can't see who needs it."
@@ -351,6 +354,7 @@ employers:
 employees:
   meta:
     title: "Entrelacs for Employees"
+    description: "Learn how Entrelacs gives employees a private, person-specific picture of social connection and wellbeing without exposing individual answers to employers."
   hero:
     eyebrow: "ENTRELACS FOR EMPLOYEES"
     title: "Fifteen minutes for a read on your own life, not a comparison to everyone else's."
@@ -466,6 +470,7 @@ employees:
 care_settings:
   meta:
     title: "Entrelacs for Care Settings"
+    description: "Explore how Entrelacs brings person-specific mental health measurement to clinics, health systems, and research partners."
   hero:
     eyebrow: "ENTRELACS FOR CARE SETTINGS"
     title: "Your patients live between your appointments. Measurement should too."
@@ -502,6 +507,7 @@ care_settings:
 the_science:
   meta:
     title: "Entrelacs — The Science"
+    description: "Discover the research behind Entrelacs, including why average-based mental health measurement fails and how Lacis models individuals instead."
   hero:
     title: "The average person doesn't exist. We stopped measuring them."
     description: "Entrelacs is built on a finding the field spent decades resisting: psychological instruments normed on populations systematically mismeasure individuals. Lacis, our proprietary engine, models one person at a time. That changes what measurement can do."
@@ -689,6 +695,7 @@ team:
 contact:
   meta:
     title: "Contact Entrelacs"
+    description: "Contact Entrelacs to request a demo, ask a question, or discuss employer, clinical, or research partnerships."
   title: "Get in touch"
   subtitle: "Our friendly team would love to hear from you."
   form:
@@ -708,6 +715,7 @@ contact:
 waiting_list:
   meta:
     title: "Join the Entrelacs waiting list"
+    description: "Join the Entrelacs waiting list for early access to private, person-specific brain health measurement."
   title: "Join our waiting list"
   subtitle: "Be the first to experience Entrelacs."
   form:
@@ -721,6 +729,9 @@ waiting_list:
 
 
 roi_calculator:
+  meta:
+    title: "Entrelacs ROI Calculator"
+    description: "Use the Entrelacs ROI calculator to estimate the cost of reactive mental health support and the value of earlier intervention."
   tag: "ROI Calculator"
   title: "You're paying for crisis. <br> You could be investing in prevention"
   description: "Mental health has no early warning system. By the time you see the impact of absenteeism, turnover, emergency admissions, it's already costing you."
@@ -751,6 +762,9 @@ cta_banner:
 
 
 about:
+  meta:
+    title: "About Entrelacs"
+    description: "Learn about Entrelacs, the team behind it, and the mission to make mental health measurement personal, private, and precise."
   title: "About Entrelacs"
   hero:
     title: "We build the instrument for the asset the economy forgot to measure."
@@ -857,6 +871,7 @@ about:
 legal_mentions:
   meta:
     title: "Legal Mentions - ENTRELACS"
+    description: "Read the legal notices, publisher details, hosting information, and website terms governing the Entrelacs site."
   title: "Legal Mentions"
   intro: "In accordance with Articles 6-III and 19 of French Law No. 2004-575 of June 21, 2004 on Confidence in the Digital Economy (LCEN), the following legal notices are brought to the attention of users and visitors of this website."
   site_publisher:
@@ -912,6 +927,7 @@ legal_mentions:
 privacy_policy:
   meta:
     title: "Entrelacs Website Privacy Policy"
+    description: "Read how Entrelacs collects, uses, stores, and protects personal data submitted through the website."
   title: "Entrelacs Website Privacy Policy"
   scope_notice: "This policy applies to visitors and business contacts interacting with the Entrelacs website only."
   last_updated_label: "Last updated:"
@@ -1039,6 +1055,7 @@ privacy_policy:
 terms_of_use:
   meta:
     title: "Entrelacs Website Terms of Use"
+    description: "Review the terms governing access to the Entrelacs website, including permitted use, disclaimers, and liability limits."
   title: "Entrelacs Website Terms of Use"
   introduction:
     title: "1. Introduction"

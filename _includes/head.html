@@ -1,5 +1,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% assign meta_title = include.meta_title | default: site.title | strip %}
+{% assign meta_description = include.meta_description | default: site.description | strip %}
+{% assign meta_type = include.meta_type | default: 'website' %}
+{% assign social_image = site.url | append: '/images/logo.png' | replace: '://', '__PROTOCOL__' | replace: '//', '/' | replace: '__PROTOCOL__', '://' %}
+{% assign localized_path = page.url %}
+{% if site.lang != site.default_lang %}
+{% assign localized_path = '/' | append: site.lang | append: page.url %}
+{% endif %}
+{% assign canonical_url = site.url | append: localized_path | replace: '://', '__PROTOCOL__' | replace: '//', '/' | replace: '__PROTOCOL__', '://' %}
+
+<title>{{ meta_title }}</title>
+<meta name="description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<link rel="canonical" href="{{ canonical_url }}" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
@@ -13,16 +26,17 @@
 
 
 <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Entrelacs" />
-<meta property="og:description" content="Entrelacs provides clinical-grade AI for mental health. We empower employers, clinicians, and health systems with early detection and precision care matching." />
-<meta property="og:url" content="https://entrelacs.ai" />
+<meta property="og:type" content="{{ meta_type }}" />
+<meta property="og:title" content="{{ meta_title | escape }}" />
+<meta property="og:description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:site_name" content="Entrelacs" />
-<meta property="og:image" content="https://entrelacs.ai/images/logo.png" />
+<meta property="og:image" content="{{ social_image }}" />
 <meta property="og:image:alt" content="Entrelacs Logo" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Entrelacs" />
-<meta name="twitter:description" content="Entrelacs provides clinical-grade AI for mental health. We empower employers, clinicians, and health systems with early detection and precision care matching." />
-<meta name="twitter:image" content="https://entrelacs.ai/images/logo.png" />
+<meta name="twitter:title" content="{{ meta_title | escape }}" />
+<meta name="twitter:description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<meta name="twitter:image" content="{{ social_image }}" />
+<meta name="twitter:image:alt" content="Entrelacs Logo" />

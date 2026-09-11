@@ -5,9 +5,10 @@
 <html lang="{{ site.lang | default: 'en' }}">
 
 <head>
-    {%- include head.html -%}
+    {% capture meta_title %}{% t about.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t about.meta.description %}{% endcapture %}
+    {%- include head.html meta_title=meta_title meta_description=meta_description -%}
     <link rel="stylesheet" href="./style.css">
-    <title>{% t about.title %}</title>
 </head>
 
 <body>

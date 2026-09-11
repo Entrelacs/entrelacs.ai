@@ -5,8 +5,9 @@
 <html lang="{{ site.lang | default: 'en' }}">
 
 <head>
-    {%- include head.html -%}
-    <title>{% t waiting_list.meta.title %}</title>
+    {% capture meta_title %}{% t waiting_list.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t waiting_list.meta.description %}{% endcapture %}
+    {%- include head.html meta_title=meta_title meta_description=meta_description -%}
     <link rel="stylesheet" href="./style.css">
 </head>
 

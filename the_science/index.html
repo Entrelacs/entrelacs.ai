@@ -5,10 +5,9 @@
 <html lang="{{ site.lang | default: 'en' }}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% t the_science.meta.title %}</title>
-    {% include head.html %}
+    {% capture meta_title %}{% t the_science.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t the_science.meta.description %}{% endcapture %}
+    {% include head.html meta_title=meta_title meta_description=meta_description %}
     <link rel="stylesheet" href="index.css">
 </head>
 
