@@ -231,7 +231,6 @@ main .cta {
 
 .problemTop {
     display: flex;
-    align-items: center;
     gap: 40px;
     width: 100%;
 }
@@ -340,6 +339,16 @@ main .cta {
     color: var(--text-mid-gray);
 }
 
+@media (max-width: 1050px) {
+    .problemTop {
+        flex-direction: column-reverse;
+    }
+    .problemImage {
+        width: 100%;
+        height: 300px;
+    }
+}
+
 @media (max-width: 800px) {
     #firstSectionBox {
         padding: 24px;
@@ -363,11 +372,6 @@ main .cta {
 
     #firstSectionBox .content div:last-child h3 {
         font-size: 30px;
-    }
-
-    .problemImage {
-        width: 320px;
-        height: auto;
     }
 
     #problemStatsBox {
