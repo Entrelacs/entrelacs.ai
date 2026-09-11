@@ -535,6 +535,17 @@ main .cta {
     gap: 16px;
     padding: 24px 40px;
     cursor: pointer;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    text-align: left;
+}
+
+.stopGuessingItemHeader:focus-visible,
+.faqItemHeader:focus-visible {
+    outline: 3px solid var(--surface-smartinsights);
+    outline-offset: -3px;
+    border-radius: 8px;
 }
 
 .stopGuessingItemHeader h4 {
@@ -669,6 +680,10 @@ main .cta {
     justify-content: space-between;
     cursor: pointer;
     padding: 24px 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    text-align: left;
 }
 
 .faqItemHeader h4 {

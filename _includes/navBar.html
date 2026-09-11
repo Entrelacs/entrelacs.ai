@@ -1,13 +1,13 @@
-<nav class="navbar">
+<nav class="navbar" aria-label="Primary">
   <div class="nav_container">
 
     {% include logo.html %}
 
-    <div class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
     <ul class="navLinks">
       {% for link in site.data.nav_links %}
@@ -20,7 +20,7 @@
       <li><a class="cta" href="{{ site.baseurl }}/contact-us/">{% t navigation.contact %}</a></li>
     </ul>
 
-    <div class="mobileMenu" id="mobileMenu" style="display: none;">
+    <div class="mobileMenu" id="mobileMenu" hidden aria-hidden="true">
       <ul>
         <li><a href="{{ site.baseurl }}/">{% t navigation.home %}</a></li>
         {% for link in site.data.nav_links %}
@@ -36,32 +36,45 @@
 <script>
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
-  let menuOpen = false;
 
-  hamburger.addEventListener('click', () => {
-    menuOpen = !menuOpen;
-
-    // Toggle mobile menu display
-    mobileMenu.style.display = menuOpen ? 'block' : 'none';
-
-    // Animate hamburger spans
+  if (hamburger && mobileMenu) {
     const spans = hamburger.querySelectorAll('span');
-    spans[0].style.transform = menuOpen ? 'rotate(45deg) translate(5px, 6px)' : 'none';
-    spans[1].style.opacity = menuOpen ? 0 : 1;
-    spans[2].style.transform = menuOpen ? 'rotate(-45deg) translate(5px, -7px)' : 'none';
-  });
 
-  // Optional: close menu when mobile links are clicked
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      menuOpen = false;
-      mobileMenu.style.display = 'none';
-      const spans = hamburger.querySelectorAll('span');
-      spans[0].style.transform = 'none';
-      spans[1].style.opacity = 1;
-      spans[2].style.transform = 'none';
+    function syncHamburgerVisualState(menuOpen) {
+      spans[0].style.transform = menuOpen ? 'rotate(45deg) translate(5px, 6px)' : 'none';
+      spans[1].style.opacity = menuOpen ? 0 : 1;
+      spans[2].style.transform = menuOpen ? 'rotate(-45deg) translate(5px, -7px)' : 'none';
+    }
+
+    function setMenuOpen(menuOpen) {
+      hamburger.setAttribute('aria-expanded', String(menuOpen));
+      mobileMenu.hidden = !menuOpen;
+      mobileMenu.setAttribute('aria-hidden', String(!menuOpen));
+      syncHamburgerVisualState(menuOpen);
+
+      if (!menuOpen) {
+        hamburger.focus();
+      }
+    }
+
+    hamburger.addEventListener('click', function () {
+      const menuOpen = hamburger.getAttribute('aria-expanded') === 'true';
+      setMenuOpen(!menuOpen);
     });
-  });
+
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        setMenuOpen(false);
+      });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && hamburger.getAttribute('aria-expanded') === 'true') {
+        event.preventDefault();
+        setMenuOpen(false);
+      }
+    });
+  }
 
   // Mark Nav item as active if the url matches it
   function setActiveNav() {

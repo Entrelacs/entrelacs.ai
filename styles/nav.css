@@ -64,6 +64,14 @@
   color: var(--teal);
 }
 
+.navLinks a:focus-visible,
+.mobileMenu a:focus-visible,
+.langFlag:focus-visible,
+.hamburger:focus-visible {
+  outline: 3px solid var(--surface-smartinsights);
+  outline-offset: 4px;
+}
+
 .navLinks .cta {
   font-weight: 700;
   font-size: 16px;
@@ -81,6 +89,9 @@
   height: 25px;
   cursor: pointer;
   z-index: 20;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 .hamburger span {
   height: 4px;
@@ -93,7 +104,6 @@
 
 /* Dropdown menu for mobile */
 .mobileMenu {
-  display: none;
   position: absolute;
   top: 60px;
   right: 0;
@@ -105,6 +115,9 @@
   z-index: 15;
   background: var(--surface-teal); 
   backdrop-filter: blur(100px);
+}
+.mobileMenu[hidden] {
+  display: none;
 }
 .mobileMenu ul {
   list-style: none;
@@ -171,19 +184,32 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.langFlag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
   cursor: pointer;
+  padding: 0;
 }
 .languageSwitcher svg, .languageSwitcher img{
   height: 30px;
 }
 .langDropdown{
-  display: none;
   position: absolute;
   top: 100%;
   right: 0;
   width: 150px;
   background: var(--surface-teal);
   font-size: 16px;
+}
+
+.langDropdown[hidden] {
+  display: none;
 }
 .langDropdownitem{
   padding: 10px 14px;
@@ -193,6 +219,11 @@
 }
 .langDropdownitem:hover{
   background: #ddd;
+}
+
+.langDropdownitem:focus-visible {
+  outline: 3px solid var(--surface-smartinsights);
+  outline-offset: -3px;
 }
 
 .langDropdownitem img{

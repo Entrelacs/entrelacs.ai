@@ -280,6 +280,12 @@ main .cta {
     cursor: pointer;
 }
 
+.stopGuessingItemHeader:focus-visible {
+    outline: 3px solid var(--surface-smartinsights);
+    outline-offset: -3px;
+    border-radius: 8px;
+}
+
 .stopGuessingItemHeader h4 {
     font-size: 20px;
     font-weight: 700;

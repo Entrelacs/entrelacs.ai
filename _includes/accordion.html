@@ -39,6 +39,10 @@ Optional params:
     justify-content: space-between;
     cursor: pointer;
     padding: 16px 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    text-align: left;
 }
 
 .accordionItemHeader h4 {
@@ -56,6 +60,12 @@ Optional params:
     cursor: pointer;
     flex-shrink: 0;
     transition: .4s;
+}
+
+.accordionItemHeader:focus-visible {
+    outline: 3px solid var(--surface-smartinsights);
+    outline-offset: 4px;
+    border-radius: 8px;
 }
 
 .accordionItemBody {
@@ -128,10 +138,12 @@ Optional params:
 <div class="accordionCard" id="{{ include.id }}">
     <div class="accordionList">
         {% for item in include.items %}
+        {% assign heading_id = include.id | append: '-heading-' | append: forloop.index %}
+        {% assign panel_id = include.id | append: '-panel-' | append: forloop.index %}
         <div class="accordionItem{% if forloop.first %} is-open{% endif %}" data-image="{{ item.image }}">
-            <div class="accordionItemHeader">
+            <button class="accordionItemHeader" type="button" id="{{ heading_id }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="{{ panel_id }}">
                 <h4>{{ item.title }}</h4>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <path
                         d="M3.33464 20.0007C3.33464 29.2054 10.7966 36.6673 20.0013 36.6673C29.206 36.6673 36.668 29.2054 36.668 20.0007C36.668 10.7959 29.2061 3.33399 20.0013 3.33399C10.7966 3.33398 3.33464 10.7959 3.33464 20.0007Z"
                         stroke="#F4F5F7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
@@ -139,8 +151,8 @@ Optional params:
                     <path d="M14.1161 17.9004L19.9995 23.7671L25.8828 17.9004" stroke="#F4F5F7" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-            </div>
-            <div class="accordionItemBody">
+            </button>
+            <div class="accordionItemBody" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
                 <p>{{ item.text }}</p>
             </div>
         </div>
@@ -158,15 +170,24 @@ Optional params:
         if (!root) return;
         var image = root.querySelector('.accordionImage img');
         var headers = root.querySelectorAll('.accordionItemHeader');
+
+        function setItemOpen(item, isOpen) {
+            item.classList.toggle('is-open', isOpen);
+            var button = item.querySelector('.accordionItemHeader');
+            if (button) {
+                button.setAttribute('aria-expanded', String(isOpen));
+            }
+        }
+
         headers.forEach(function (header) {
             header.addEventListener('click', function () {
                 var item = header.closest('.accordionItem');
                 if (!item) return;
                 var isOpen = item.classList.contains('is-open');
                 root.querySelectorAll('.accordionItem.is-open').forEach(function (el) {
-                    if (el !== item) el.classList.remove('is-open');
+                    if (el !== item) setItemOpen(el, false);
                 });
-                item.classList.toggle('is-open', !isOpen);
+                setItemOpen(item, !isOpen);
                 if (!isOpen && image) {
                     var src = item.getAttribute('data-image');
                     if (src) image.setAttribute('src', src);

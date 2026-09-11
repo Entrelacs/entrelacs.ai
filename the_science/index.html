@@ -131,12 +131,14 @@
                     <div class="collabs-foundations" aria-label="Scientific foundations">
                         {% assign foundations = site.translations[site.lang].the_science.solution.foundations.columns %}
                         {% for foundation in foundations %}
+                        {% assign heading_id = 'science-foundation-heading-' | append: forloop.index %}
+                        {% assign panel_id = 'science-foundation-panel-' | append: forloop.index %}
                         <div class="collabs-foundation-item">
-                            <div class="collabs-foundation-head">
+                            <div class="collabs-foundation-head" id="{{ heading_id }}" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ panel_id }}">
                                 <span class="collabs-foundation-label">{{ foundation.title }}</span>
                                 <span class="collabs-foundation-icon" aria-hidden="true"></span>
                             </div>
-                            <div class="collabsHidden">
+                            <div class="collabsHidden" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
                                 <ul class="collabs-foundation-list">
                                     {% for bullet in foundation.items %}
                                     <li class="collabs-foundation-list-item">{{ bullet }}</li>
@@ -149,7 +151,6 @@
 
                     <div class="collabs-image">
                         <img src="/images/theSciencePage/approach1.webp" alt="Globe representing global policy and research" loading="lazy">
-                            loading="lazy">
                     </div>
                 </div>
 
@@ -173,11 +174,13 @@
                 <div class="faqList">
                     {% assign cert_items = site.translations[site.lang].the_science.certifications.items %}
                     {% for item in cert_items %}
+                    {% assign heading_id = 'science-cert-heading-' | append: forloop.index %}
+                    {% assign panel_id = 'science-cert-panel-' | append: forloop.index %}
                     <div class="faqItem">
-                        <div class="faqItemHeader">
+                        <div class="faqItemHeader" id="{{ heading_id }}" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ panel_id }}">
                             <h4>{{ item.q }}</h4>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                 <path
                                     d="M3.33464 20.0007C3.33464 29.2054 10.7966 36.6673 20.0013 36.6673C29.206 36.6673 36.668 29.2054 36.668 20.0007C36.668 10.7959 29.2061 3.33399 20.0013 3.33399C10.7966 3.33398 3.33464 10.7959 3.33464 20.0007Z"
                                     stroke="#869D9D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
@@ -186,7 +189,7 @@
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <div class="faqItemBody">
+                        <div class="faqItemBody" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
                             <p>{{ item.a }}</p>
                         </div>
                     </div>
@@ -207,31 +210,34 @@
         // Accordion behavior for the FAQ list
         document.addEventListener('DOMContentLoaded', function () {
             var faqHeaders = document.querySelectorAll('.faqItemHeader');
+
+            function setItemOpen(item, selector, isOpen) {
+                item.classList.toggle('is-open', isOpen);
+                var trigger = item.querySelector(selector);
+                if (trigger) {
+                    trigger.setAttribute('aria-expanded', String(isOpen));
+                }
+            }
+
             faqHeaders.forEach(function (header) {
                 header.addEventListener('click', function () {
                     var item = header.closest('.faqItem');
                     if (!item) return;
                     var isOpen = item.classList.contains('is-open');
                     document.querySelectorAll('.faqItem.is-open').forEach(function (el) {
-                        if (el !== item) el.classList.remove('is-open');
+                        if (el !== item) setItemOpen(el, '.faqItemHeader', false);
                     });
-                    item.classList.toggle('is-open', !isOpen);
+                    setItemOpen(item, '.faqItemHeader', !isOpen);
+                });
+
+                header.addEventListener('keydown', function (event) {
+                    if (event.key !== 'Enter' && event.key !== ' ') return;
+
+                    event.preventDefault();
+                    header.click();
                 });
             });
 
-            // Accordion behavior for the Stop Guessing list
-            var stopGuessingHeaders = document.querySelectorAll('.stopGuessingItemHeader');
-            stopGuessingHeaders.forEach(function (header) {
-                header.addEventListener('click', function () {
-                    var item = header.closest('.stopGuessingItem');
-                    if (!item) return;
-                    var isOpen = item.classList.contains('is-open');
-                    document.querySelectorAll('.stopGuessingItem.is-open').forEach(function (el) {
-                        if (el !== item) el.classList.remove('is-open');
-                    });
-                    item.classList.toggle('is-open', !isOpen);
-                });
-            });
         });
     </script>
     <script>
@@ -278,6 +284,7 @@
                                 var otherHead = el.closest('.collabs-foundation-item').querySelector('.collabs-foundation-head');
                                 if (otherHead) {
                                     otherHead.classList.remove('is-open');
+                                    otherHead.setAttribute('aria-expanded', 'false');
                                 }
                             }
                         });
@@ -286,9 +293,11 @@
                         if (isOpen) {
                             hidden.classList.remove('is-open');
                             head.classList.remove('is-open');
+                            head.setAttribute('aria-expanded', 'false');
                         } else {
                             hidden.classList.add('is-open');
                             head.classList.add('is-open');
+                            head.setAttribute('aria-expanded', 'true');
 
                             if (collabsImage) {
                                 var data = collabsImages[index] || collabsImages[0];
@@ -300,6 +309,13 @@
                                 }
                             }
                         }
+                    });
+
+                    head.addEventListener('keydown', function (event) {
+                        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+                        event.preventDefault();
+                        head.click();
                     });
                 });
             });
