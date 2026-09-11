@@ -1,23 +1,26 @@
 navigation:
   home: "Home"
-  organizations: "For Organizations"
-  health_systems: "For Health Systems"
-  clinicians: "For Clinicians"  
-  technology: "Technology"
+  employers: "For Employers"
+  employees: "For Employees"
+  care_settings: "For Care Settings"
+  the_science: "The Science"
   roi_calculator: "ROI calculator"
-  approach: "Our Approach" 
   about: "About Us"
   contact: "Contact Us"
+
+language_switcher:
+  english: "English"
+  french: "French"
 
 footer:
   company_name: "Entrelacs"
   nav:
     home: "Home"
-    organizations: "Organizations"
-    healthcare: "Healthcare"
+    employers: "For Employers"
+    employees: "For Employees"
+    care_settings: "For Care Settings"
     about: "About Us"
-    technology: "Technology"
-    approach: "Our Approach"
+    the_science: "The Science"
     roi_calculator: "ROI Calculator"
     contact: "Contact Us"
   legal:
@@ -26,15 +29,21 @@ footer:
     mentions: "Legal mentions"
   copyright: "Entrelacs 2026"
 
-404: "Sorry but this page does not exist"
+404:
+  meta:
+    title: "Page Not Found"
+    description: "The page you were looking for could not be found on the Entrelacs website."
+  message: "Sorry, but this page does not exist"
 
 home:
   meta:
     title: "Entrelacs"
+    description: "Entrelacs provides clinical-grade AI to measure social connection and brain health in private, helping organizations act earlier and more precisely."
   video_link: https://www.youtube.com/embed/KT3zVYqUUn4?si=zRbS_7o-PsrSFgDD
   hero:
-    title_prefix: "Mental health finally gets early detection"
-    tag_text: "Clinical-Grade AI for Mental Health"
+    title_prefix: "The asset your company runs on has never been measured."
+    subtitle: "Entrelacs measures social connection — the determinant of brain health with the strongest evidence and the lowest measurement burden — one person at a time, always in private. Employees see themselves. Employers see where the support they already fund is needed."
+    tag_text: "Brain Health. Personal, Private, Precise."
     wheel:
       item1: "when it matters"
       item2: "with clinical AI"
@@ -42,146 +51,159 @@ home:
       item4: "when it matters"
     cta_waitlist: "Join our waiting list"
     cta_demo: "Request a demo"
+  credibility_bar:
+    fda_pre_submission: "FDA Pre-Submission filed"
+    eu_research_program: "Built alongside a €3M EU Horizon LONELY-EU research program"
   problem:
-    tag: "The Problem"
-    heading: "Mental health is the only area of medicine without early detection "
-    description: "Clinical-grade screening, matching, and monitoring — so you can act weeks before a crisis, not months after."
+    tag: "Why now"
+    heading: "You measure every asset <br> you manage. Except this one."
+    description: "Finance has a ledger. Sales has a pipeline. Infrastructure has uptime. The asset all three depend on—your people's capacity to think, adapt, and work together—is the only one without a measurement. As AI absorbs the routine, your people's capacity is now the single biggest factor in your organization's success. The OECD calls it brain capital. Companies pour 93% of their AI budgets into technology and 7% into the people who have to absorb it (Deloitte, 2026). Nobody develops what they can't measure."
     cardiology:
       title: "In cardiology"
-      desc: "We catch warning signs years before a heart attack occurs."
+      desc: "We catch warning signs years before a heart attack."
     oncology:
       title: "In oncology"
       desc: "We screen before symptoms appear."
-    mental_health:
-      title: "But in <br> mental health"
-      desc: "We wait until someone is already in crisis — when the cost is highest and the window for prevention has already passed."
-  cost:
-    heading: "The cost of waiting"
-    description: "We're missing the early signs that could prevent bigger problems down the road, waiting until someone is already struggling before we act."
+    workforce:
+      title: "But in workforce <br> brain health"
+      desc: "There is no screen and no baseline. Nothing gets measured until something breaks, and the first data point is the exit interview."
     stats:
-      - value: "€600B"
-        text: "Annual cost in EU alone from reactive mental health care."
-      - value: "10–20%"
-        text: "YoY growth in mental health claims seen by payers."
-      - value: "€15K"
-        text: "Lost per employee annually in productivity and turnover."
-  pillars:
-    heading: "From reactive to preventive in three steps"
-    description: "Three pillars that move mental health care from reactive crisis response to proactive, measurable outcomes."
-    cta: "Join the waiting list"
-    list:
-      - image: "/images/dart-mission-goal-success.svg"
-        tag: "PRECISION"
-        title: "Screen with clinical accuracy, not guesswork"
-        desc: "One 15-minute conversational assessment creates a unique mental health profile for each individual - replacing lengthy and burdensome traditional assessment."
-      - image: "/images/health.svg"
-        tag: "PERSONALIZATION"
-        title: "No more trial-and-error referrals"
-        desc: "AI matches each individual to the most effective intervention from day one — reducing failed treatments and accelerating time to improvement by 2–3x."
-      - image: "/images/fraudprotectmajor.svg"
-        tag: "PREVENTION"
-        title: "Detect deterioration weeks before crisis"
-        desc: "Continuous digital monitoring tracks changes in engagement, language patterns, and behavioral signals between sessions, alerting care teams days to weeks before a crisis — turning reactive care into preventive care."
+      - value: "20%"
+        text: "of employees worldwide are engaged at work — a post-2020 low, costing an estimated $10 trillion in lost productivity"
+        source: "Gallup, 2026"
+      - value: "49%"
+        text: "of U.S. workers now describe themselves as struggling — more than thriving (46%), for the first time on record"
+        source: "Gallup, 2026"
+      - value: "42%"
+        text: "believe disclosing a mental health struggle would damage their career"
+        source: "NAMI & Ipsos, 2025"
+      - value: "<10%"
+        text: "EAP utilization — though 82% of employers offer one"
+        source: "SHRM, 2024–2025"
   how_it_works:
-    tag: "How it works"
-    heading: "Three steps. No disruption. Live in weeks."
-    description: "Three steps that integrate into existing workflows — no additional clinical time required."
+    tag: "The instrument"
+    heading: "One private conversation. <br> One precise measurement. <br> A direction you can act on."
+    description: "An employee talks with Entrelacs — a brief, natural conversation, not a form, but a conversation partner. Underneath runs Lacis, our psychometric engine. It measures that specific person rather than scoring them against a population average."
     cards:
       screen:
-        tag: "SCREEN"
-        title: "15-minute assessment"
-        desc: "A conversational AI assessment identifies the 5–7 most informative questions unique to each person, screening for mood, anxiety, social connection, burnout, and risk factors in a single 15-minute session."
-        benefits:
-          - "Clear risk categories per person"
-          - "Comprehensive"
-          - "No clinical time required"
+        title: "Person-specific, not <br> population-average"
+        desc: "A survey scores your answers against a norm. Lacis models you, and returns a picture of how your own connection actually works rather than the average of everyone else's."
       match:
-        tag: "MATCH"
-        title: "Precision care matching"
-        desc: "40–60% of people drop out of mental health care when the first treatment isn't the right fit. Precision matching connects each person to the right intervention from day one — achieving 2–3x faster improvement without trial and error."
-        benefits:
-          - "Right support, first time"
-          - "Fewer failed treatments"
-          - "2-3x faster improvement"
+        title: "Where to act, <br> not just a score"
+        desc: "44 domains, 26 in life and 18 at work. Each person gets a Key Connection Signature — the five areas carrying the most weight right now — and a Connection Keystone: the one place where acting carries furthest."
       monitor:
-        tag: "MONITOR"
-        title: "Continuous monitoring"
-        desc: "Between appointments, the platform continuously tracks behavioral patterns — including digital engagement, language indicators, activity, sleep, and self-reported mood — detecting signs of deterioration days to weeks before a crisis develops. This early warning capability creates a critical window for timely, low-cost intervention before situations escalate."
-        benefits:
-          - "Alerts before problems escalate"
-          - "Tracks changes between visits"
-          - "Early warning before a crisis"
+        title: "Private for the person, <br> patterns for the organization"
+        desc: "Employees get a confidential picture of their own connection. Leaders get aggregated patterns across groups of ten or more, with recommendations matched to the team's profile. Never an individual."
+  trust:
+    tag: "Trust architecture"
+    heading: "Private employee data is protected, free of management supervision. Private by design."
+    description: "Every workplace tool that routes sensitive data to management gets the same result: people stop telling the truth. 42% believe disclosing a mental health struggle would damage their career (NAMI & Ipsos, 2025). The reverse is just as well documented: people are measurably more honest with a system when no one who evaluates them is watching (Lucas et al., 2014)."
+    employee:
+      title: "What stays with the employee"
+      items:
+        - "Individual responses are never exposed to the employer"
+        - "Personal baselines and history belong to the employee alone"
+        - "The employee controls sharing and deletion at any time"
+        - "Participation is voluntary; consent is explicit and revocable"
+    organization:
+      title: "What the organization sees"
+      items:
+        - "Aggregate patterns only, never individuals"
+        - "Cohorts of at least ten people"
+        - "No path from a group result back to a person"
+        - "Research use requires separate, revocable consent"
+    note: "Without that condition the measurement would not be valid. <br> Entrelacs is a private mirror that serves the employee first, not a monitor that reports on them."
   research:
     heading: "Research-grade rigor, real-world proof"
-    description: "Grounded in 80,000+ research articles, validated across 8 countries, and backed by €3M in EU funding."
-    partnership: "Developed in partnership with WHO and EU policy frameworks"
+    description: "Grounded in 9,000+ research articles, a database generated in 8 countries, and backed by €3M in EU funding."
+    partnership: "The research behind Entrelacs informs the WHO's global index work on social connection and anchors the EU's social-connection monitoring framework"
     stats:
-      - value: "80K+"
+      - value: "9K+"
         label: "Research articles reviewed"
       - value: "8"
-        label: "Countries validated"
+        label: "Countries in the research corpus"
       - value: "€3M"
-        label: "EU research funding awarded"
-      - value: "CE Mark"
-        label: "Certification pathway, 2027"
-  partners:
-    heading: "Developed in collaboration with the world's leading research institutions"
-    description: "Entrelacs is built on global scientific partnerships that ensure every clinical claim is grounded in evidence."
-    logos:
-      - src: "/images/university_of_california.png"
-      - src: "/images/oecd.png"
-      - src: "/images/university_of_oxford.png"
-      - src: "/images/stanford_university.png"
-      - src: "/images/european_commission.png"
-        style: "max-height: 80px;"
+        label: "EU Horizon research program"
+      - value: "2027"
+        label: "CE Mark Class IIa targeted"
+  scientific_credibility:
+    tag: "Scientific credibility"
+    title: "Research-grade, <br> by construction."
+    text_intro: "Built by researchers who spent two decades documenting why standard instruments fail individuals — then built the instrument the evidence called for."
+    stats:
+      - value: "9,000+"
+        desc: "research articles screened across seven languages, mapping every validated social-connection instrument in the literature"
+      - value: "354"
+        desc: "in-depth interviews across eight countries and four continents, coded into the domain model"
+      - value: "€3M"
+        desc: "EU Horizon LONELY-EU program, led by our CEO as Principal Investigator"
+      - value: "FDA"
+        subtitle: "Pre-Submission filed"
+        desc: "pursuing De Novo classification; CE Mark Class IIa targeted 2027"
+    bottom_text: "Developed with strategic advisors at Stanford and UC Davis, an Oxford research affiliation through our CEO, alongside WHO and OECD policy work on social connection."
+  help_now:
+    heading: "If you need help now"
+    intro1: "Entrelacs is a measurement instrument, not a crisis service. If you need help now, it can only point you toward it."
+    intro2: "If you're struggling, or worried about someone else, talk to a person — your doctor, a crisis line, or someone you trust. Your employer is not involved and cannot see that you looked."
+    items:
+      - label: "US"
+        text: "988 Suicide & Crisis Lifeline, call or text 988"
+      - label: "France"
+        text: "3114, national suicide prevention line"
+      - label: "UK"
+        text: "Samaritans, 116 123"
+      - label: "Elsewhere"
+        text: "lists services by country"
+        link_text: "findahelpline.com"
+        link: "https://findahelpline.com"
+      - label: "Immediate danger"
+        text: "emergency services"
+    outro: "If something in your report worried you, take it to a professional rather than sitting with it."
+    image: "/images/helpNow.jpg"
   who_we_serve:
     tag: "Who we serve"
-    heading: "One platform. Connecting employers, clinicians, and health systems"
+    heading: "Built for the workplace. <br> Engineered to clinical standards."
     cards:
-      - bg_color: "#F2EFE9"
+      - bg_color: "#33486A"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "For Employees"
+        desc: "A private mirror, not a monitor. Get a personalized picture of how connection is actually working in your life and where a change would carry furthest."
+        cta_text: "Learn more"
+        link: "/employees/"
+        svg_content: >
+          <svg width="211" height="262" viewBox="0 0 211 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.54">
+            <path d="M105.093 109.545C105.658 109.649 106.224 109.753 106.806 109.859C110.213 110.569 112.078 111.24 114.199 114.037C116.148 117.197 115.61 119.399 114.831 122.828C114.004 125.738 112.72 128.339 111.341 131.024C111.043 131.622 110.744 132.219 110.437 132.834C109.793 134.119 109.147 135.402 108.497 136.684C107.47 138.713 106.455 140.747 105.443 142.784C102.568 148.571 99.6772 154.349 96.7632 160.116C94.9764 163.653 93.2103 167.199 91.4551 170.752C90.7835 172.102 90.1046 173.448 89.4185 174.79C88.4616 176.664 87.5294 178.547 86.6019 180.435C86.3128 180.986 86.0238 181.538 85.726 182.106C84.3305 184.872 84.3305 184.872 84.5002 187.847C85.1469 189.055 85.8638 190.106 86.6969 191.193C87.0101 191.702 87.3233 192.212 87.646 192.737C87.9408 193.187 88.2357 193.637 88.5395 194.1C88.878 194.619 89.2165 195.137 89.5652 195.672C89.9221 196.215 90.2789 196.757 90.6466 197.317C91.0185 197.885 91.3903 198.454 91.7735 199.04C92.9522 200.842 94.1334 202.642 95.3146 204.442C96.1181 205.67 96.9215 206.897 97.7247 208.125C99.6858 211.121 101.649 214.116 103.613 217.11C114.191 214.604 128.565 207.083 134.803 197.794C137.049 191.932 136.594 185.618 136.021 179.483C135.983 179.072 135.944 178.662 135.905 178.238C135.534 174.442 135.074 170.659 134.53 166.883C133.359 158.764 132.995 150.706 132.799 142.513C132.739 140.338 132.646 138.166 132.543 135.993C132.489 134.669 132.435 133.345 132.382 132.022C132.35 131.43 132.318 130.839 132.286 130.23C132.166 126.605 132.573 123.763 134.598 120.686C136.328 118.853 138.126 117.689 140.628 117.25C142.681 117.432 144.682 117.908 146.695 118.343C147.276 118.469 147.857 118.594 148.455 118.723C153.52 119.87 158.158 121.466 162.839 123.692C163.371 123.937 163.371 123.937 163.914 124.186C177.037 130.311 187.324 140.27 195.791 151.81C196.153 152.301 196.514 152.792 196.887 153.298C201.869 160.486 205.178 168.84 207.51 177.221C207.715 177.937 207.92 178.654 208.131 179.392C209.331 183.853 209.936 188.274 210.279 192.878C210.316 193.377 210.354 193.876 210.392 194.389C211.747 216.698 202.738 241.634 198.596 261.233C133.059 247.431 67.5222 233.629 -0.000621618 219.409C16.2443 142.538 16.2443 142.538 43.4272 122.664C43.9191 122.303 44.411 121.941 44.9178 121.569C52.1187 116.595 60.4871 113.292 68.8825 110.964C69.9592 110.658 69.9592 110.658 71.0576 110.345C82.2438 107.347 93.788 107.36 105.093 109.545Z" fill="#445E88"/>
+            <path d="M105.093 109.545C105.658 109.649 106.224 109.753 106.806 109.859C110.213 110.569 112.078 111.24 114.199 114.037C116.148 117.197 115.61 119.399 114.831 122.828C114.004 125.738 112.72 128.339 111.341 131.024C111.043 131.622 110.744 132.219 110.437 132.834C109.793 134.119 109.147 135.402 108.497 136.684C107.47 138.713 106.455 140.747 105.443 142.784C102.568 148.571 99.6772 154.349 96.7632 160.116C94.9764 163.653 93.2103 167.199 91.4551 170.752C90.7835 172.102 90.1046 173.448 89.4185 174.79C88.4616 176.664 87.5294 178.547 86.6019 180.435C86.3128 180.986 86.0238 181.538 85.726 182.106C84.3305 184.872 84.3305 184.872 84.5002 187.847C85.1469 189.055 85.8638 190.106 86.6969 191.193C87.0101 191.702 87.3233 192.212 87.646 192.737C87.9408 193.187 88.2357 193.637 88.5395 194.1C88.878 194.619 89.2165 195.137 89.5652 195.672C89.9221 196.215 90.2789 196.757 90.6466 197.317C91.0185 197.885 91.3903 198.454 91.7735 199.04C92.9522 200.842 94.1334 202.642 95.3146 204.442C96.1181 205.67 96.9215 206.897 97.7247 208.125C99.6858 211.121 101.649 214.116 103.613 217.11C114.191 214.604 128.565 207.083 134.803 197.794C137.049 191.932 136.594 185.618 136.021 179.483C135.983 179.072 135.944 178.662 135.905 178.238C135.534 174.442 135.074 170.659 134.53 166.883C133.359 158.764 132.995 150.706 132.799 142.513C132.739 140.338 132.646 138.166 132.543 135.993C132.489 134.669 132.435 133.345 132.382 132.022C132.35 131.43 132.318 130.839 132.286 130.23C132.166 126.605 132.573 123.763 134.598 120.686C136.328 118.853 138.126 117.689 140.628 117.25C142.681 117.432 144.682 117.908 146.695 118.343C147.276 118.469 147.857 118.594 148.455 118.723C153.52 119.87 158.158 121.466 162.839 123.692C163.371 123.937 163.371 123.937 163.914 124.186C177.037 130.311 187.324 140.27 195.791 151.81C196.153 152.301 196.514 152.792 196.887 153.298C201.869 160.486 205.178 168.84 207.51 177.221C207.715 177.937 207.92 178.654 208.131 179.392C209.331 183.853 209.936 188.274 210.279 192.878C210.316 193.377 210.354 193.876 210.392 194.389C211.747 216.698 202.738 241.634 198.596 261.233C133.059 247.431 67.5222 233.629 -0.000621618 219.409C16.2443 142.538 16.2443 142.538 43.4272 122.664C43.9191 122.303 44.411 121.941 44.9178 121.569C52.1187 116.595 60.4871 113.292 68.8825 110.964C69.9592 110.658 69.9592 110.658 71.0576 110.345C82.2438 107.347 93.788 107.36 105.093 109.545Z" fill="#24344E"/>
+            </g>
+            <path d="M184.364 6.60556C191.448 15.6829 195.824 25.8692 196.999 37.3568C197.064 37.9415 197.129 38.5261 197.196 39.1285C198.047 54.2542 192.041 69.0797 182.133 80.2567C171.062 91.5769 156.602 97.6949 140.824 97.9471C125.989 97.6751 112.031 91.7915 101.483 81.5111C90.8089 70.0583 84.9689 55.8628 85.2572 40.1913C86.2726 25.1564 92.0987 11.3432 103.18 1.05106C112.816 -7.11885 123.804 -12.3379 136.468 -13.6292C137.054 -13.6939 137.64 -13.7586 138.243 -13.8253C155.637 -14.8007 173.483 -6.88339 184.364 6.60556Z" fill="#24344E"/>
+          </svg>
+
+      - bg_color: "#E62154"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
         title: "For Employers"
-        desc: "Spot workforce mental health risks early, before they become costly crises."
+        desc: "Measure the connection and capacity of your workforce, person by person, and see where the programs you already pay for are needed."
         cta_text: "Learn more"
         link: "/employers/"
         svg_content: >
-          <svg width="293" height="300" viewBox="0 0 293 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67812)">
-                  <path d="M301.833 54.7054L262.592 48.0011L267.062 21.8403C268.247 14.9021 266.628 7.77709 262.56 2.0328C258.492 -3.71149 252.309 -7.60454 245.37 -8.78993L166.888 -22.1985C159.95 -23.3839 152.825 -21.7645 147.081 -17.6966C141.336 -13.6287 137.443 -7.44552 136.258 -0.507255L131.788 25.6535L92.5473 18.9492C85.6091 17.7638 78.4841 19.3832 72.7398 23.4511C66.9955 27.519 63.1025 33.7022 61.9171 40.6404L35.1 197.605C33.9146 204.543 35.534 211.668 39.6018 217.412C43.6697 223.157 49.8529 227.05 56.7912 228.235L266.077 263.991C273.015 265.177 280.14 263.557 285.885 259.489C291.629 255.422 295.522 249.238 296.707 242.3L323.525 85.3356C324.71 78.3974 323.091 71.2724 319.023 65.5281C314.955 59.7838 308.772 55.8907 301.833 54.7054ZM162.419 3.96226L240.901 17.3708L236.431 43.5316L157.949 30.123L162.419 3.96226Z" fill="#E7DFD0" fill-opacity="0.6" />
-                  <path d="M321.364 69.6206C319.552 65.7444 316.83 62.3639 313.429 59.767C310.028 57.1701 306.05 55.4339 301.834 54.7064L92.548 18.9503C88.3292 18.2367 84.0004 18.5536 79.9305 19.8742C75.8606 21.1947 72.1704 23.4797 69.1743 26.5344C67.5016 28.1741 66.2927 30.2273 65.6704 32.4855C65.0482 34.7436 65.0348 37.1263 65.6315 39.3913L79.1394 97.4325C82.2464 110.004 88.9642 121.391 98.4646 130.191C107.965 138.99 119.833 144.817 132.605 146.954L220.505 161.971C233.404 164.433 246.743 163.013 258.834 157.889C270.925 152.765 281.223 144.169 288.425 133.189L320.983 82.883C322.205 80.9002 322.883 78.6308 322.95 76.3028C323.017 73.9748 322.47 71.6702 321.364 69.6206Z" fill="#D6CFC1" fill-opacity="0.8" />
-                  <path d="M201.18 113.232L175.019 108.762C167.795 107.528 160.938 112.384 159.704 119.608L155.235 145.768C154 152.993 158.856 159.849 166.08 161.084L192.241 165.553C199.465 166.787 206.322 161.932 207.556 154.708L212.026 128.547C213.26 121.323 208.404 114.466 201.18 113.232Z" fill="#E7DFD0" fill-opacity="0.6" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67812">
-                      <rect width="318.478" height="318.478" fill="white" transform="translate(53.6342 -68.4727) rotate(9.69527)" />
-                  </clipPath>
-              </defs>
-          </svg>
-      - bg_color: "#E3EEF0"
-        title: "For Clinicians"
-        desc: "Give patients a voice between sessions with validated, real-time mental health tracking."
+          <svg width="259" height="265" viewBox="0 0 259 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M267.113 54.7112L227.872 48.0069L232.342 21.8462C233.527 14.9079 231.908 7.78295 227.84 2.03865C223.772 -3.70563 217.589 -7.59869 210.65 -8.78407L132.168 -22.1926C125.23 -23.378 118.105 -21.7586 112.361 -17.6907C106.616 -13.6229 102.723 -7.43966 101.538 -0.501396L97.0683 25.6594L57.8272 18.9551C50.8889 17.7697 43.7639 19.3891 38.0196 23.457C32.2754 27.5248 28.3823 33.708 27.1969 40.6463L0.379811 197.611C-0.805578 204.549 0.813796 211.674 4.88169 217.418C8.94959 223.163 15.1328 227.056 22.071 228.241L231.357 263.997C238.295 265.183 245.42 263.563 251.165 259.495C256.909 255.427 260.802 249.244 261.987 242.306L288.804 85.3415C289.99 78.4032 288.37 71.2782 284.303 65.5339C280.235 59.7897 274.051 55.8966 267.113 54.7112ZM127.699 3.96812L206.181 17.3767L201.711 43.5374L123.229 30.1289L127.699 3.96812Z" fill="#970C35"/>
+            <path d="M286.644 69.6264C284.832 65.7503 282.109 62.3697 278.709 59.7729C275.308 57.176 271.33 55.4398 267.114 54.7123L57.8278 18.9561C53.609 18.2425 49.2802 18.5595 45.2103 19.88C41.1405 21.2006 37.4502 23.4856 34.4541 26.5403C32.7814 28.18 31.5725 30.2332 30.9503 32.4913C30.328 34.7495 30.3146 37.1321 30.9113 39.3972L44.4193 97.4384C47.5263 110.01 54.2441 121.397 63.7445 130.196C73.2449 138.996 85.1127 144.823 97.8847 146.959L185.785 161.977C198.684 164.439 212.023 163.019 224.114 157.895C236.205 152.771 246.503 144.175 253.705 133.195L286.263 82.8889C287.484 80.9061 288.163 78.6367 288.23 76.3087C288.297 73.9807 287.75 71.6761 286.644 69.6264Z" fill="#750929"/>
+            <path d="M166.46 113.236L140.299 108.766C133.075 107.532 126.218 112.388 124.984 119.612L120.514 145.772C119.28 152.996 124.136 159.853 131.36 161.088L157.521 165.557C164.745 166.791 171.602 161.936 172.836 154.711L177.305 128.551C178.54 121.327 173.684 114.47 166.46 113.236Z" fill="#970C35"/>
+          </svg>  
+
+      - bg_color: "#1F7A5A"
+        text_color: "#FFFFFF"
+        arrow_color: "#FFFFFF"
+        title: "For Care Settings"
+        desc: "Measure a patient's connection between visits, with a person-specific instrument built toward regulatory clearance."
         cta_text: "Learn more"
-        link: "/healthcare/"
+        link: "/care_settings/"
         svg_content: >
-          <svg width="284" height="230" viewBox="0 0 284 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M251.899 75.6864C239.491 79.9842 230.79 90.2359 227.943 102.13C221.946 104.039 217.038 106.963 213.18 110.895C201.365 122.888 202.322 140.506 203.225 157.535C204.578 182.552 204.366 198.305 184.082 206.77C174.454 210.787 165.851 210.89 157.964 206.992C146.315 201.24 135.461 180.878 130.439 170.262C128.567 166.316 128.946 161.693 131.418 158.1C163.759 111.111 173.708 73.1862 160.979 45.2831C148.892 18.7456 120.261 9.82691 105.992 6.97167C107.833 9.02361 107.833 9.02361 105.992 6.97167C100.462 0.874569 91.6355 -1.68998 83.389 1.16658C72.3491 4.99074 66.493 17.0398 70.3171 28.0797C74.1413 39.1195 86.1987 44.9728 97.2385 41.1486C103.476 38.9881 108.057 34.1791 110.169 28.4139C121.394 31.8099 136.288 38.922 142.933 53.4954C148.043 64.6876 147.639 79.0505 141.912 96.219L47.9377 128.818C32.9711 118.799 23.8315 107.835 20.9049 95.9894C17.3767 81.6252 29.7087 58.0222 29.7087 58.0222C34.5669 60.3736 40.2994 60.8814 45.8193 58.9693C56.8425 55.1509 62.6707 43.1022 58.8466 32.0623C55.0224 21.0225 42.9846 15.1718 31.953 18.9931C22.6892 22.202 17.082 31.1951 17.7687 40.5108C17.7716 40.5191 17.7745 40.5275 17.7745 40.5275C8.22498 52.9407 -4.55149 75.2875 1.62377 100.502C9.34699 132.315 44.5347 156.846 105.94 174.163C112.629 176.058 127.667 214.078 149.113 224.738C161.133 230.698 174.133 231.294 187.816 226.554C189.109 226.106 190.414 225.617 191.731 225.049C225.954 210.803 224.263 179.394 223.037 156.472C222.318 143.152 221.646 130.563 227.319 124.806C227.845 124.278 229.391 126.124 230.052 125.661C236.932 144.767 256.973 152.505 276.21 145.842C295.588 139.129 305.847 117.981 299.138 98.6114C292.417 79.2361 271.277 68.9739 251.899 75.6864ZM71.6635 141.154L131.074 120.575C125.991 130.516 120.635 138.834 115.366 146.402C111.913 151.315 105.698 153.459 99.9561 151.684C89.5848 148.488 80.1794 145.087 71.6635 141.154ZM284.819 113.891C284.643 112.737 284.362 111.574 283.969 110.44C280.538 100.534 269.768 95.2995 259.871 98.7279C249.965 102.159 244.728 112.948 248.156 122.846C248.552 123.988 249.056 125.065 249.631 126.079C247.244 123.825 245.335 120.984 244.183 117.657C240.388 106.7 246.186 94.7272 257.167 90.9233C268.107 87.1338 280.1 92.9348 283.898 103.9C285.059 107.224 285.308 110.639 284.819 113.891Z" fill="#D1E2E5" />
-          </svg>
-      - bg_color: "#EAEAEE"
-        title: "For Health Systems"
-        desc: "Scale preventive mental health screening across populations with clinical-grade precision."
-        cta_text: "Learn more"
-        link: "/healthcare/"
-        svg_content: >
-          <svg width="258" height="290" viewBox="0 0 258 290" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5368_67836)">
-                  <path d="M189.688 48.5591C209.304 52.0694 228.052 39.0134 231.562 19.3976C235.072 -0.218236 222.016 -18.9657 202.4 -22.476C182.785 -25.9863 164.037 -12.9303 160.527 6.68553C157.016 26.3013 170.073 45.0488 189.688 48.5591Z" fill="#D9D8E3" />
-                  <path d="M302.892 133.007L271.025 120.179C260.17 115.798 248.111 118.974 240.58 127.11C235.388 123.151 229.693 119.518 223.529 116.246L227.052 96.5616C229.731 81.6705 219.718 67.3098 204.877 64.654L171.03 58.597C156.111 55.9271 141.792 65.9335 139.127 80.827L135.585 100.615C128.742 101.519 122.206 102.963 115.921 104.883C111.686 94.6005 101.471 87.3978 89.7566 87.7397L55.3918 88.7162C40.3063 89.1554 28.2874 101.89 28.7173 117.028L29.9242 158.237C30.335 173.33 43.0827 185.352 58.1816 184.915L69.0555 184.597C72.9151 193.29 78.8999 201.703 87.105 209.449C104.192 225.601 128.512 237.173 155.649 242.03C197.171 249.46 235.924 239.166 256.688 218.135L266.94 222.273C280.94 227.903 297.063 221.062 302.683 207.048L318.119 168.818C323.758 154.766 316.902 138.653 302.892 133.007ZM158.062 228.465C133.549 224.078 111.68 213.793 96.5617 199.435C91.3745 194.546 87.2694 189.406 84.1845 184.139L92.5135 183.892C107.623 183.471 119.642 170.736 119.207 155.624L118.145 118.576C122.91 117.018 127.845 115.786 133.014 114.906L131.848 121.42C129.187 136.287 139.173 150.643 154.067 153.308L187.914 159.365C202.768 162.024 217.116 152.009 219.774 137.154L221 130.301C225.632 132.949 229.917 135.804 233.814 138.872L219.792 173.638C214.17 187.665 221.013 203.776 235.038 209.411L242.84 212.558C224.523 227.749 192.431 234.615 158.062 228.465Z" fill="#D9D8E3" />
-                  <path d="M72.7466 75.0497C92.6802 74.4677 108.321 57.8282 107.789 37.9166C107.176 18.0044 90.5846 2.31836 70.6377 2.89802C50.7325 3.4714 35.0418 20.0889 35.6261 40.0098C36.1955 59.9411 52.8152 75.619 72.7466 75.0497Z" fill="#D9D8E3" />
-              </g>
-              <defs>
-                  <clipPath id="clip0_5368_67836">
-                      <rect width="309" height="309" fill="white" transform="translate(54.4336 -69.4727) rotate(10.1459)" />
-                  </clipPath>
-              </defs>
+          <svg xmlns="http://www.w3.org/2000/svg" width="285" height="230" viewBox="0 0 285 230" fill="none">
+            <path d="M251.899 75.6844C239.491 79.9823 230.79 90.2339 227.943 102.128C221.946 104.037 217.038 106.961 213.18 110.893C201.365 122.886 202.322 140.504 203.225 157.533C204.578 182.55 204.366 198.303 184.082 206.768C174.454 210.785 165.851 210.888 157.964 206.99C146.315 201.238 135.461 180.876 130.439 170.26C128.567 166.314 128.946 161.691 131.418 158.098C163.759 111.109 173.708 73.1842 160.979 45.2812C148.892 18.7436 120.261 9.82496 105.992 6.96972C107.833 9.02166 107.833 9.02166 105.992 6.96972C100.462 0.872616 91.6355 -1.69194 83.389 1.16463C72.3491 4.98879 66.493 17.0378 70.3171 28.0777C74.1413 39.1176 86.1987 44.9708 97.2385 41.1466C103.476 38.9862 108.057 34.1772 110.169 28.412C121.394 31.808 136.288 38.9201 142.933 53.4934C148.043 64.6857 147.639 79.0486 141.912 96.217L47.9377 128.816C32.9711 118.797 23.8315 107.833 20.9049 95.9875C17.3767 81.6232 29.7087 58.0202 29.7087 58.0202C34.5669 60.3717 40.2994 60.8794 45.8193 58.9674C56.8425 55.149 62.6707 43.1003 58.8466 32.0604C55.0224 21.0205 42.9846 15.1699 31.953 18.9911C22.6892 22.2001 17.082 31.1932 17.7687 40.5089C17.7716 40.5172 17.7745 40.5255 17.7745 40.5255C8.22498 52.9388 -4.55149 75.2856 1.62377 100.5C9.34699 132.313 44.5347 156.844 105.94 174.161C112.629 176.056 127.667 214.076 149.113 224.736C161.133 230.696 174.133 231.292 187.816 226.552C189.109 226.104 190.414 225.615 191.731 225.047C225.954 210.801 224.263 179.392 223.037 156.47C222.318 143.15 221.646 130.561 227.319 124.804C227.845 124.276 229.391 126.122 230.052 125.659C236.932 144.765 256.973 152.503 276.21 145.84C295.588 139.127 305.847 117.979 299.138 98.6094C292.417 79.2342 271.277 68.9719 251.899 75.6844ZM71.6635 141.152L131.074 120.573C125.991 130.514 120.635 138.832 115.366 146.4C111.913 151.313 105.698 153.457 99.9561 151.682C89.5848 148.486 80.1794 145.085 71.6635 141.152ZM284.819 113.889C284.643 112.735 284.362 111.572 283.969 110.438C280.538 100.532 269.768 95.2975 259.871 98.726C249.965 102.157 244.728 112.946 248.156 122.844C248.552 123.986 249.056 125.063 249.631 126.078C247.244 123.823 245.335 120.982 244.183 117.655C240.388 106.698 246.186 94.7253 257.167 90.9213C268.107 87.1318 280.1 92.9328 283.898 103.898C285.059 107.222 285.308 110.637 284.819 113.889Z" fill="#0E6E4F"/>
           </svg>
   cta_banner:
     title: "See how Entrelacs can help your organization"
@@ -193,533 +215,578 @@ home:
 employers:
   meta:
     title: "Entrelacs for Employers"
+    description: "See how Entrelacs helps employers measure workforce brain capital privately, spot support needs earlier, and strengthen the impact of the support they already fund."
   hero:
-    subtitle: "ENTRELACS FOR EMPLOYERS"
-    title: "Prevent mental health crises before they hit your bottom line"
-    description: "Entrelacs gives you early visibility into disconnection, loneliness, and flight risk — so you can act before it becomes burnout, an absence, a resignation, or a crisis."
-    cta_demo: "Request a Demo"
-  hidden_cost:
+    eyebrow: "ENTRELACS FOR EMPLOYERS"
+    title: "Your benefits stack is fully funded. It just can't see who needs it."
+    description: "As AI absorbs routine execution, what remains is the work most sensitive to how your people are actually doing — judgment, adaptation, collaboration. That capacity is brain capital, and it sits on no dashboard you own. Entrelacs measures it through social connection, the determinant with the strongest evidence and the lowest burden — and measures it one person at a time, because an average tells you the group is struggling without telling you who, or why."
+    cta_demo: "Request a demo"
+    cta_sample: "See a sample report"
+  credibility:
+    items:
+      - "FDA Pre-Submission filed"
+      - "Built alongside a €3M EU Horizon LONELY-EU research program"
+      - "Advised by researchers at Stanford and UC Davis"
+      - "Research informing WHO and OECD work on social connection"
+  decade:
     tag: "The problem"
-    title: "The hidden cost of disconnection is already in your numbers"
-    text_intro: "Mental health crises cost your organization time, money, and talent — and the warning signs were there long before the crisis hit. The numbers tell the story:"
+    title: "A decade of spending. Still no signal."
+    intro:
+      - "Organizations put 93% of AI spending into technology and 7% into enabling the people expected to absorb it (Deloitte, 2026). What decides the return is your people's capacity to adapt — what the OECD calls brain capital. It can't be tested directly: a cognitive test becomes a performance exam the moment you repeat it. So it has to be read through its determinants, and nobody does."
+      - "The tools that come closest wouldn't help if they did. They score people against a population mean, so two employees returning the same number can be depleted for entirely different reasons. One person has no one to turn to; another feels they are not recognized. Both score a 5.5 out of 7 on your test. A decade of spend on EAPs, wellness apps and engagement surveys produced programs, not measurement. Every one of them is blind in the same place:"
+    rows:
+      - title: "The EAP waits to be called — and mostly isn't."
+        text: "82% of employers offer one; utilization sits in the low single digits"
+        source: "SHRM, 2024–2025"
+      - title: "The engagement survey reports averages"
+        text: "A few times a year, it describes the group — never the individual — and employees answer knowing results roll up to management. 42% believe disclosing a mental health struggle would damage their career"
+        source: "NAMI & Ipsos, 2025"
+      - title: "Point solutions require a raised hand"
+        text: "Every tool activates only when a struggling employee self-identifies in an environment where doing so feels risky. Roughly 97% of users of standalone digital mental health tools drop out within 30 days; median 30-day retention is 3.3%"
+        source: "Baumel et al., 2019"
     stats:
-      - value: "36%"
-        body_line1: "of employees worldwide "
-        body_line2: "feel lonely at work."
+      - value: "1 in 5"
+        text: "employees worldwide report feeling lonely a lot of the previous day"
         source: "Gallup, 2024"
-      - value: "2×"
-        body_line1: "more likely to quit "
-        body_line2: "within 12 months."
-        source: "Cigna, 2020"
       - value: "$154B"
-        body_line1: "lost annually by US employers"
-        body_line2: "due to workplace loneliness."
-        source: "Cigna, 2020"
-      - value: "5.7"
-        body_line1: "extra sick days per year "
-        body_line2: "taken by lonely employees."
-        source: "Bowers et al, 2022"
-    bottom_text_line1: "By the time loneliness shows up in exit interviews, it's already too late. Entrelacs detects disconnection 4–6 weeks early — turning a costly crisis into a proactive win."
-  how_it_works:
-    title: "How entrelacs works for employers"
-    subtitle: "From Invisible Risk to Measurable Action"
-    steps:
-      - title: "Personalized employee assessment"
-        text: "Employees engage in brief, conversational check-ins (5-7 minutes) about their social connection—both generally and specifically within their work team."
-      - title: "Individual insights & support"
-        text: "Each employee receives confidential insights about their social connection patterns and practical, personalized recommendations tailored to their unique needs and style."
-      - title: "Team & organizational intelligence"
-        text: "With employee consent, anonymized and aggregated data provides HR teams and managers with unprecedented visibility into team dynamics and organizational connection health."
-  differentiation:
-    title: "What makes Entrelacs different"
-    subtitle: "Beyond traditional engagement surveys"
-  benefits:
-    title: "Benefits that keep your best people"
-    subtitle: "Early insights that protect your workforce."
-    hr:
-      title: "HR & Leadership"
-      list:
-        - "Early detection of flight risk before exit interviews"
-        - "Reduced turnover costs — up to 50–200% of salary saved per employee"
-        - "Data-driven resource allocation"
-        - "Stronger cultural metrics (belonging, safety, trust)"
-    managers:
-      title: "Managers"
-      list:
-        - "Clear visibility into team connection challenges"
-        - "Timely support conversations"
-        - "Targeted team-building that actually works"
-    employees:
-      title: "Employees"
-      list:
-        - "Awareness of their connection needs"
-        - "Practical, personalized guidance"
-        - "Confidential experience with full control of their data"
-  pricing:
-    title: "Pricing & ROI"
-    bullets:
-      - strong: "No individual employee data"
-        rest: " shared with employers"
-      - strong: "4–5x ROI "
-        rest: "on preventive mental health investment"
-      - strong: "Results visible in weeks,"
-        rest: " not months"
-    cta: "Contact us"
-    price:
-      amount: "€150"
-      suffix: "per employee/year"
-      line_prefix: "Less than your current EAP, with "
-      line_roi: "4–5x"
-      line_suffix: " the ROI"
-    calculator:
-      before_link: "Use our "
-      link: "ROI calculator"
-      after_link: " to see potential savings"
-      line2: "from reduced turnover"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For HR leaders & organizations."
-    hero:
-      heading: "Schedule a demonstration to see how Entrelacs enhances your workflow"
-      body: "From your first conversation to a fully running pilot, Entrelacs is designed to integrate quickly — so your team can move from reactive crisis management to predictive workforce support in a matter of weeks."
-      what_title: "What you get"
-      what_list:
-        - "Platform access for your selected employee groups"
-        - "HR and manager training with full implementation support"
-        - "ROI data and outcome tracking showing measurable impact on your workforce"
-      next_title: "Next Steps"
-      next_list:
-        - "Request a personalized demo and ROI assessment"
-        - "Pilot program designed around your organization"
-        - "Training, onboarding, and ongoing optimization support"
-      cta: "Request a demo"
-    timeline:
-      title: "Implementation Timeline"
-      stages:
-        - label: "Demo & ROI Assessment"
-          period: "Week 1–2"
-        - label: "Implementation & Training"
-          period: "Week 3–4"
-        - label: "Pilot Program Design & Launch"
-          period: "Week 5–8"
-        - label: "Optimization & Results Tracking"
-          period: "Ongoing"
-      cta: "See how Entrelacs can help"
+        text: "estimated annual cost of the workplace connection deficit in lost productivity and absenteeism"
+        source: "Cigna, 2023"
+      - value: "50–55%"
+        text: "of U.S. jobs expected to be reshaped by AI within two to three years"
+        source: "Boston Consulting Group, 2026"
+      - value: "2.2%"
+        text: "of companies assessed run employee surveys focused on health and wellbeing"
+        source: "S&P Global / McKinsey Health Institute, 2024"
+    footer: "By the time risk shows up in an exit interview, you're reading history. The gap isn't another program. It's measurement."
+  three_moves:
+    tag: "How it works"
+    title: "From unmeasured to actionable, in three moves"
+    accordion:
+      - title: "A conversation, not a survey"
+        text: "Employees talk privately with Entrelacs — about fifteen minutes the first time. Lacis places each person with people whose psychology moves the way theirs does, then draws only the questions that carry real information for someone in that group. Connection is the entry point for a reason: among the determinants of brain health it carries the strongest evidence at the lowest burden, and it is the only one you can measure repeatedly without the measurement becoming a test."
+        image: "/images/employersPage/accordion1.webp"
+      - title: "A private mirror for every employee"
+        text: "Each person receives a confidential picture of their own connection: their Key Connection Signature, the five areas that matter most for them right now, and within it the Connection Keystone, the one place where acting would help most. The reading serves the employee first, which gives people a reason of their own to come back. Management is locked out in the architecture, not in a policy."
+        image: "/images/employersPage/accordion2.webp"
+      - title: "True patterns for your organization"
+        text: "You see aggregated, anonymized patterns across cohorts of ten or more: which teams' connection is eroding, which domains are driving it, and where your existing programs are most needed. At a 1,000-person organization that typically means readouts by department, site, and function, with every cohort at or above the privacy threshold. No individual is ever exposed, and employees know it. That is why the data you act on is data people gave honestly."
+        image: "/images/employersPage/accordion3.webp"
+    note: "See what you'd get — an annotated sample of the organizational dashboard and one anonymized individual report, including the in-product label that tells employees how their data is aggregated (“these results are aggregated across 10 employees”). We show the privacy architecture rather than describing it."
+    cta_sample: "See a sample report"
+  cohort:
+    tag: "What you do with the signal"
+    title: "When a cohort's capacity starts eroding"
+    subtitle: "Measurement only matters if it changes a decision. Two loops run from day one."
+    employee_card:
+      title: "The employee's loop, private"
+      text: "Each person sees their own signature and keystone, alongside insights they can use. No one reports on them; what they do with it is theirs alone."
+    org_card:
+      title: "Your loop, aggregate"
+      text: "The dashboard shows you, for example, that one function's workplace-connection domains have eroded two readings in a row, concentrated in employees' psychological safety — people don't feel they can speak up without it costing them. That is actionable: coach managers on how they respond to mistakes and dissent, clarify roles and decision rights, reset team norms on raising concerns. These are directional workforce signals, not clinical alerts on individuals, and we provide clinician-built governance guidance on how to respond. Read across a quarter, the same readouts tell you something no engagement survey can: whether the parts of your organization absorbing the most AI-driven change are holding their capacity, or quietly losing it."
+    roadmap:
+      title: "On the roadmap"
+      text: "A recommendation system for building brain capital at team level, in-product routing that connects each person privately to the named resources in your benefits stack — never a report on an individual to the employer — plus HRIS and collaboration tool integrations."
+    consent:
+      title: "Your consent, in four lines"
+      items:
+        - "Participation is voluntary. Not participating has no visibility to your employer."
+        - "Consent is explicit and revocable at any point. Withdrawing it stops collection."
+        - "Research use is a separate consent, asked separately and withdrawable separately."
+        - "Infrastructure is encrypted and GDPR-compliant, with EU hosting for European deployments and HIPAA-aligned handling in care settings."
+  stop_guessing:
+    tag: "Why different"
+    title: "Stop guessing. Start measuring."
+    description: "Entrelacs does not compete with your EAP, your clinical platform, or your wellness benefits. It is the measurement layer they have always been missing. Your stack was built to respond; what it lacks is the instrument that shows where response is needed. In a consolidation review, Entrelacs shows which lines are earning their renewal and which are not — and because it measures the determinant of cognitive capacity rather than sentiment, it answers a question your stack was never built to answer: whether your workforce can carry the change you're asking of it."
+    accordion:
+      - title: "Individual, not average — which is what makes it an instrument"
+        text: "Every other tool in this budget measures sentiment or delivers care, and scores people against a population mean. Entrelacs measures the determinant of cognitive capacity person by person: the first workplace instrument we know of that models each individual on their own baseline. Brain capital measured on averages isn't brain capital measurement — it's an engagement survey with new vocabulary."
+      - title: "Honest, by architecture"
+        text: "Survey platforms cannot model individuals without becoming surveillance; care platforms cannot measure everyone without abandoning the care model they sell. The privacy lockout is the mechanism that makes the data true, and it is a position incumbents structurally cannot copy."
+      - title: "Clinically grounded"
+        text: "Built on five years of research — 354 in-depth interviews across eight countries and four continents, a systematic review of the world's validated social-connection instruments, and psychometric validation study with representative samples from three countries — and engineered to clinical standards: patent-pending measurement method, FDA Pre-Submission filed, De Novo classification being pursued. A level of rigor no wellness app or survey vendor carries."
+  what_you_get:
+    tag: "What's live and what's next"
+    title: "What you get today — and where the instrument is going."
+    live:
+      title: "Live now (V1)"
+      items:
+        - "Conversational, person-specific assessment of social connection (44 domains: 26 life, 18 workplace)"
+        - "Individual connection profile per employee: five-domain signature and highest-leverage keystone"
+        - "Brain capital reporting at cohort level: which parts of the organization are holding capacity and which are eroding"
+        - "Directional cohort trend reporting across readings — where connection is moving, and in which domains. Not prediction."
+        - "Aggregated organizational dashboard (cohorts of ten or more): patterns, trends, domain drivers"
+        - "GDPR-compliant infrastructure; privacy-first architecture with employee-owned data"
+    roadmap:
+      title: "On the roadmap"
+      items:
+        - "Personalized private recommendations matched to each employee's keystone, from an evidence-tagged intervention library (V1.3)"
+        - "Validated predictive early warning from longitudinal measurement (in validation for V2)"
+        - "Additional domains beyond connection, including dimensions of depression and anxiety, on the same scientific pipeline"
+        - "In-product routing to the named resources in your benefits stack — private to the employee, never a report to the employer — plus HRIS and collaboration-tool integrations"
+    disclaimer: "We publish this distinction on purpose. Buyers in this category have been promised too much, too vaguely, for a decade — and we would rather lose a deal on what we can't do yet than win one on it."
+  faq:
+    title: "Frequently asked questions"
+    items:
+    - q: "What can my organization actually see?"
+      a: "Aggregated, anonymized patterns across cohorts of at least ten people: trends, domains, direction. Never an individual's responses, scores, or identity. The same plain-language one-pager we give your employees describes exactly what you can and cannot see."
+    - q: "Why will employees use this when they don't use our EAP?"
+      a: "The EAP asks a struggling person to raise a hand. Entrelacs gives every person a private reading of their own connection. That is a design bet, and we treat it like one: participation and return-use rates are reported to you quarterly, from your own workforce."
+    - q: "Why measure connection rather than testing cognitive capacity directly?"
+      a: "Because a cognitive test at workforce scale becomes a performance exam. People optimize for it, it can't be repeated at cadence, and it produces evaluation anxiety in exactly the population you're trying to protect. Brain capital has to be measured through its determinants, and connection is the only one that can be measured continuously without the measurement changing the thing measured."
+    - q: "How does this connect to our AI investment?"
+      a: "Directly. The return on AI depends on whether people can take on more strategic work, adapt fast enough, and implement the change. You already measure the technology side of that investment in detail. This is the instrument for the other side, on the same quarterly cadence."
+    - q: "Our engagement platform is adding wellbeing scores. Isn't that the same thing?"
+      a: "No, and the difference is structural rather than a feature gap. An engagement platform reports averages to management, because managers are the buyer. That architecture cannot produce person-level measurement without becoming surveillance, and it cannot produce honest data while employees know results roll up. Adding a wellbeing question to a survey built on averages gives you a new number with the same two defects: it can't tell you who, and it can't tell you why."
+    - q: "Does this replace anything we already have?"
+      a: "It replaces guesswork, not programs. Entrelacs is the measurement layer over your existing stack — it shows where your EAP, clinical platform and wellbeing spend are needed, and in a consolidation review, which lines are earning their renewal."
+    - q: What do we need to take to our works council?
+      a: 'In France, deploying a tool that collects data on employees requires informing and consulting the CSE before rollout. We give you the pack for it: what is collected, what you can and cannot see, the ten-person reporting floor, the consent model, where the data is hosted, and the retention rule. Most of what a works council asks is what this architecture was built to answer.'
+    - q: What happens on data protection once we sign?
+      a: Before anyone is invited, we agree the data processing agreement, confirm which of us is controller for which processing, and share our data protection impact assessment for your DPO to review. Infrastructure is encrypted, with EU hosting for European deployments. Retention, deletion and the employee's own rights are set out in the employee-facing notice, which you get in full before deployment.
+  final_cta:
+    badge: "Brain Health. Personal, Private, Precise."
+    title: "Start measuring the asset everything else depends on."
+    subtext: "We're building our next design-partner cohort with a small group of employers who want early access, direct input into the roadmap, and a proactive way to protect their people."
+    cta_primary: "Request a demo"
+    cta_secondary: "Apply to be a design partner →"
 
-health_systems:
-  meta:
-    title: "Entrelacs for Health Systems"
-  hero:
-    subtitle: "ENTRELACS FOR HEALTH SYSTEMS"
-    title: "Preventive mental health care that scales with your population"
-    description: "A clinical-grade screening platform designed to integrate seamlessly with your health system and improve outcomes for the communities you serve."
-    cta_demo: "Request a Demo"
-  hidden_cost:
-    tag: "The Problem"
-    title: "Scale mental health prevention across your entire population"
-    text_intro: "Mental health crises strain resources with expensive emergency interventions. Entrelacs transforms population health with predictive screening and continuous monitoring that prevents crises before they occur—predicting reduced individual healthcare costs by up to 26% while improving outcomes."
-  solution:
-    title: "Health system benefits that transform care"
-    subtitle: "Expand access to mental health care that's measurably better for your entire network."
-    row1:
-      title: "Proactive care that prevents costly crises"
-      bullets:
-        - "Early crisis detection prevents expensive emergency interventions"
-        - "Risk stratification enables targeted resource allocation"
-        - "Population screening identifies at-risk individuals proactively"
-        - "Prevention focus dramatically cheaper than crisis response"
-    row2:
-      title: "Financial impact you can measure"
-      bullets:
-        - "26% reduction in individual health care costs"
-        - "Reduced trial-and-error in treatment selection saves time and money"
-        - "Lower emergency utilization through early intervention"
-        - "ROI measurement with clear outcomes tracking"
-    row3:
-      title: "Seamless integration with your existing systems"
-      bullets:
-        - "EHR integration streamlines provider workflows"
-        - "Automated quality metrics collection (EDIS, STAR ratings)"
-        - "Clinical decision support improves diagnostic accuracy"
-        - "Treatment outcome tracking across your provider network"
-    row4:
-      title: "Regulatory confidence and clinical trust"
-      bullets:
-        - "CE Mark certification pathway (Q2 2027)"
-        - "Clinical validation across 8 countries, 37 markets"
-        - "HIPAA compliant and SOC 2 Type II certified"
-        - "Evidence-based positioning for procurement requirements"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For payers & health systems."
-    hero:
-      heading: "Consult with our team about population health implementation strategies"
-      body: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
-      what_title: "What you get"
-      what_list:
-        - "Population health analysis and ROI modeling"
-        - "Provider training and clinical support"
-        - "Ongoing outcome measurement and optimization"
-      next_title: "Next steps"
-      next_list:
-        - "Schedule population health consultation"
-        - "Design pilot program scope"
-        - "Plan full-scale deployment strategy"
-      cta: "Request a demo"
-    timeline:
-      title: "Implementation Timeline"
-      stages:
-        - label: "Discovery phase"
-          period: "Assess your current mental health utilization patterns"
-        - label: "Pilot design"
-          period: "Targeted deployment with specific provider groups or populations"
-        - label: "Integration planning"
-          period: "HR and workflow integration roadmap"
-        - label: "Outcome tracking"
-          period: "Measure impact on costs, quality metrics, and patient satisfaction"
-      cta: "See how Entrelacs can help"
 
-clinicians:
+employees:
   meta:
-    title: "Entrelacs for Clinicians"
+    title: "Entrelacs for Employees"
+    description: "Learn how Entrelacs gives employees a private, person-specific picture of social connection and wellbeing without exposing individual answers to employers."
   hero:
-    subtitle: "ENTRELACS FOR CLINICIANS"
-    title: "Spend less time guessing. More time progressing."
-    description: "AI-powered assessments that reveal what static questionnaires miss — so you can match every patient to the right care, faster."
-    cta_demo: "Request a Demo"
-  solution:
-    title: "Better outcomes, less burden"
-    row1:
-      title: "From initial assessment to outcome optimization"
-      bullets:
-        - "AI-guided conversational assessment that adapts in real-time based on patient responses, unlike rigid traditional questionnaires"
-        - "Multi-dimensional evaluation across condition-specific symptoms, behavioral patterns and context"
-        - "An integrated clinical assessment that captures what traditional screening misses"
-    row2:
-      title: "Clinical intelligence built for outcomes, not just insights"
-      bullets:
-        - "Identifies person specific symptom networks compared to standard assessments improving diagnostic confidence"
-        - "2–3x faster patient improvement through precision care matching"
-        - "Predictive system prevents crises; alerts enable proactive intervention"
-        - "Sensitive to capturing changing psychological symptoms across time"
-    row3:
-      title: "Comprehensive support beyond sessions"
-      bullets:
-        - "Continuous monitoring between sessions without administrative burden"
-        - "Automated quality metrics collection (EDIS, STAR ratings)"
-        - "Evidence-based treatment matching reduces trial-and-error"
-        - "Personalized patient engagement improves therapeutic alliance and adherence"
-  hidden_cost:
-    tag: "The Problem"
-    title: "The assessment gap driving poor clinical outcomes"
-    text_intro: "From static snapshots to continuous insight."
-    stats:
-      - value: "Limited<br>diagnostics"
-        body: "miss evolving symptoms and subtle early-stage patterns"
-      - value: "Trial-and-error<br>treatment"
-        body: "delays the time to effective care"
-      - value: "Early risks<br>go unseen"
-        body: "deterioration only caught at crisis, not a month before"
-      - value: "Administrative<br>burden"
-        body: "from fragmented prep, scoring and documentation"
-    bottom_text_line1: "Mental health care faces a fundamental problem, the tools clinicians rely on weren't designed for the complexity of the conditions they treat. Current assessment tools miss nuances and early warning signs, leading to trial-and-error treatment — costing clinicians time and patients progress. Entrelacs combines advanced psychometrics and state-of-the-art AI to deliver precision assessments with continuous monitoring that surfaces subtle changes between sessions that static tools miss."
-  superpowers:
-    title: "Superpowers for Clinicians<br>Zero Extra Work"
-    subtitle: "From precision diagnostics to continuous between-session monitoring, Entrelacs gives you the clinical edge without adding a single minute to your workload."
+    eyebrow: "ENTRELACS FOR EMPLOYEES"
+    title: "Fifteen minutes for a read on your own life, not a comparison to everyone else's."
+    description: "Entrelacs measures social connection — the driver of brain capital with the strongest evidence behind it and the lowest burden to measure. It measures it for you specifically, not against a population average. Your employer bought the instrument. They cannot see your answers, now or ever."
+    cta_sample: "See a sample report"
+    cta_employer: "Skip to what your employer sees"
+    image: "/images/employeesPage/hero.webp"
+  why_bother:
+    tag: "Why you'd bother"
+    title: "The output is yours first. That's the design, not a courtesy."
+    text: "Most workplace surveys ask you questions and hand the data straight to management. You get a slide in an all-hands six weeks later. Naturally, you answer carefully rather than honestly."
+    text2: "The measurement only works on honest answers, and nobody answers honestly for a system that gives them nothing back. So it has to be worth your time on the first conversation, and worth even more on the tenth."
+  forty_two:
+    tag: "What it actually tells you"
+    title: "\"I'm fine, I'm just tired\" is one sentence covering 44 different things."
+    text: "When something's off, most people have one word for it. Tired. Flat. Off. One feeling, so it gets one explanation — usually work, or sleep, or yourself."
+    text2: "Underneath are dozens of separate things, and they're all facets of one: how you're connected to the people around you. Whether there's anyone you can be completely open with. Whether some part of you worries about being a bother. Whether a normal week holds real contact or mostly logistics. Whether you could say a difficult thing at work without it costing you. Whether the work you do gets noticed by anyone."
+    text3: "Entrelacs reads 44 of these — 26 across your life, 18 at work, read separately because they don't move together. Social connection is what gets measured for a good reason: of everything that shapes how you're doing, it carries the strongest evidence and the lightest measurement burden. So the report tells you what your forty-four add up to — where you stand on burnout, loneliness, low mood and physical health — and which connection domain is driving it. Indications, not diagnoses, with the lever attached."
+    text4: "A vague, heavy feeling becomes specific things in specific places. Specific things can be worked on. Vague ones can only be endured."
+    image: "/images/employeesPage/forty-two.webp"
+  four_moves:
+    tag: "How it reads you"
+    title: "Four moves. The method is called Key Signature Reconstruction — here's what each part does for you."
+    subtitle: "This is the part that makes it different from every survey you've been sent. Not the questions. What happens to your answers."
+    accordion:
+      - title: "It works out who to read you alongside."
+        text: "Not people who look like you on paper, but people whose patterns rise and fall together over time. Which means the conclusions actually apply to you — the reason generic advice so often lands wrong is that it was derived from an average across everyone, and the average person doesn't exist."
+        image: "/images/employeesPage/accordion1.webp"
+      - title: "It stops asking you things it can already work out."
+        text: "It draws only the questions that carry real information for someone like you, and reconstructs the rest. Fifteen minutes instead of an hour, with no stretch of irrelevant questions. Most people notice the opposite of survey fatigue — a question arrives that feels uncomfortably well-aimed."
+        image: "/images/employeesPage/accordion2.webp"
+      - title: "It maps you as a system, not a scorecard."
+        text: "Your answers become a network where things hold each other up. That explains what never made sense: why you can be fine on paper and not fine, why the obvious fix didn't help, why one loss seemed to take three things with it."
+        image: "/images/employeesPage/accordion3.webp"
+      - title: "It tells you the one place to push."
+        text: "Among everything the model reads, one point moves the rest of the network more than any other. That is your keystone — the single place where effort is most likely to ripple out everywhere else, so you're not left guessing where to start."
+        image: "/images/employeesPage/accordion4.webp"
+  remembers:
+    tag: "What changes when it remembers you"
+    title: "Most tools tell you how you compare. This one tells you how you've changed."
+    text: "Every wellbeing app you've tried scored you against other people, which is why the number never meant much — it couldn't tell you whether a hard month was a real shift or just a hard month. Entrelacs builds a model of you specifically, so it can notice when you have moved."
+    image: "/images/employeesPage/remembers.webp"
     cards:
-      - value: "30–60 min"
-        body: "of prep and documentation <strong>reduced to a few minutes</strong> per session"
-      - value: "52% → 39%"
-        body: "<strong>reduction in clinician burnout</strong> with AI documentation support (JAMA)"
-      - value: "~90%"
-        body: "<strong>reduction in documentation time</strong> through automated insights and pre-session summaries"
-  getting_started:
-    title: "Getting started"
-    subtitle: "For clinicians & practices"
-    hero:
-      heading: "Schedule a demonstration to see how Entrelacs enhances your clinical workflow"
-      body: "We'll customize the demo to your practice type and patient population."
-      what_title: "What you get"
-      what_list:
-        - "Platform access for selected patients"
-        - "Clinician training and integration support (EHR, practice management)"
-        - "Outcome data showing impact on your practice"
-      next_title: "Next steps"
-      next_list:
-        - "Request personalized demo"
-        - "Pilot program with your patients"
-        - "Training and onboarding support"
-      cta: "Request a clinician demo"
+      - title: "Fewer questions, not more"
+        text: "As it learns what's stable about you, it stops asking. The conversation gets shorter each time."
+      - title: "You find out whether it worked"
+        text: "Act on your keystone, and next time you can see whether the network moved. Advice is everywhere; evidence that your effort changed your situation is not."
+      - title: "You see drift before it becomes a bad month"
+        text: "With enough history the model can flag when your patterns start shifting the way they usually shift before things get difficult — early, quietly, and to you. Nobody else is told, ever."
+      - title: "It re-reads you when your life changes"
+        text: "New manager, new city, new baby. Yours gets re-estimated, because the point was never to file you into a type."
+    note:
+      title: "Where this stands today"
+      text: "The person-specific model, your signature, your keystone and asking questions about your own report are live now. Continuity between conversations, the shortening assessment and personal early warning are in development. We'll tell you when each arrives, and none of it changes who can see your data."
+  the_line:
+    tag: "The line"
+    title: "What your employer sees. And what they never will."
+    you_card:
+      title: "What you see"
+      text: "Your answers. Your words. Your report. Your signature. Your keystone. How all of it changes over time — the history, which is the part that becomes most useful to you."
+      image: "/images/employeesPage/what-you-see.webp"
+    them_card:
+      title: "What they see"
+      text: "Patterns across groups of ten people or more. Where connection is eroding across a team or a function, and which support resources they already pay for are actually needed. Never attributable to a person. No individual, identifiable result reaches management at any time, in any form — including if they ask for it."
+      image: "/images/employeesPage/what-they-see.webp"
+    notes:
+      - title: "Why ten"
+        text: "Below that threshold a group average can be worked backwards to individuals. So there is no reporting below it. Not a smaller number for a smaller team, not an exception for a senior request. It is a property of the system, not a policy someone administers."
+      - title: "Where your data sits"
+        text: "Your individual profile is encrypted to you. Your employer's reporting layer is a separate, downstream system that only ever receives thresholded aggregates. The two are not joined by a permission setting somebody could change."
+    consent:
+      title: "Your consent, in four lines"
+      items:
+        - "Participation is voluntary. Not participating has no visibility to your employer"
+        - "Consent is explicit and revocable at any point. Withdrawing it stops collection"
+        - "Research use is a separate consent, asked separately and withdrawable separately"
+        - "Infrastructure is encrypted and GDPR-compliant, with EU hosting for European deployments and HIPAA-aligned handling in care settings"
+    later:
+      title: "Coming later, and only if you opt in"
+      text: "A future version will be able to use signals you already generate — a history you export yourself, or wearable data such as sleep and heart-rate variability — to sharpen the picture between conversations. Opt-in, initiated by you, revocable, routed to your own profile. It never passes through your employer, it does not exist in the version you are using today, and it will never be switched on for you by someone else."
+  ai_question:
+    tag: "The AI question"
+    title: "Yes, there's an AI. No, it isn't the thing assessing you."
+    text: "You should be skeptical of AI in anything touching mental health. General-purpose chatbots are poor at high-stakes judgment, they tend to agree with you rather than assess you, and almost none have been evaluated over time."
+    text2: "So we didn't build one. The language model handles the conversation: it turns what you say into structured inputs, and explains your results back to you in plain language. That is the whole of its job."
+    text3: "It does not score you. It does not assess you. It does not diagnose you. Every measurement and every network calculation runs deterministically in Lacis — auditable and traceable. The structure it places you in was learned in advance from five years of research; it is not improvised in the moment by a generative model."
+    image: "/images/employeesPage/ai-question.webp"
+  faq:
+    title: "Frequently asked questions"
+    items:
+    - q: "How long does it take?"
+      a: "About fifteen minutes the first time, and less after that as the instrument learns what it can stop asking."
+    - q: "How often will I be asked?"
+      a: "As often as it's useful to you. There is no mandated cadence and no reminder you can't turn off. Most people find a check-in worthwhile when something has changed, or every few months."
+    - q: "Will it remember me between conversations?"
+      a: "Today each conversation stands on its own, and your profile persists so you can see your previous report. Continuity is in development. When it arrives it will be yours, encrypted to you, and still invisible to your employer."
+    - q: "Can my manager ask for my results?"
+      a: "They can ask. There is nothing to give them — individual results do not exist in any form your employer can reach."
+    - q: "What if I stop halfway through?"
+      a: "Nothing happens. Participation is voluntary throughout and consent is revocable, and neither is visible to your employer."
+    - q: "What if I'm the only person on my team using it?"
+      a: "Then there is no cohort, and nothing is reported. Ten is the floor."
+    - q: "What if I just don't recognize myself in the report?"
+      a: "Say so, in the conversation. You can ask why it read you that way and what would change the picture. The model is a reconstruction, not a ruling, and a mismatch is useful information rather than an argument you have to win."
+    - q: "What if I'm not okay right now?"
+      a: "See the block at the foot of every page. Entrelacs isn't the right thing to reach for in a hard moment, and it will point you to what is."
+    - q: "What happens to my profile if I leave the company?"
+      a: "Your profile is tied to your employer's account. When you leave, it is deleted, and deletion completes within 30 days. If you consented to research use, that consent is separate, and you can withdraw it at any time, before or after you leave. Anything to do with your data goes to dpo@entrelacs.ai."
+    - q: "Who do I contact about my data?"
+      a: "Our Data Protection Officer handles anything to do with your data — access, corrections, deletion, and consent, including withdrawing it. Reach them at dpo@entrelacs.ai. Your employer is not involved in these requests and cannot see them."
 
-healthcare:
+
+care_settings:
+  meta:
+    title: "Entrelacs for Care Settings"
+    description: "Explore how Entrelacs brings person-specific mental health measurement to clinics, health systems, and research partners."
   hero:
-    tag: "ENTRELACS FOR HEALTHCARE"
-    title: "From assessment guesswork to precision mental healthcare"
-    list:
-      - "Unlock deeper accuracy with AI-powered conversational assessments and dynamic psychometrics."
-      - "Diagnose with confidence using continuous, data-rich mental health insights."
-      - "Deliver the right care faster through tailored, precision treatment matching."
-    cta_sales: "Contact Sales"
-    cta_demo: "Schedule a Demo"
+    eyebrow: "ENTRELACS FOR CARE SETTINGS"
+    title: "Your patients live between your appointments. Measurement should too."
+    description: "Entrelacs is building the person-specific measurement instrument for mental health care — conversational, clinically grounded, and engineered toward regulatory clearance. We're opening a limited clinical partner program for the clinics, health systems and research groups that will shape that path with us."
+    cta_primary: "Talk to our clinical team"
+    cta_secondary: "Explore research collaboration"
+  the_gap:
+    tag: "The gap"
+    title: "Care is continuous. Measurement is episodic."
+    text: "Measurement today happens at the moments care can see: intake, sessions, crisis. Between those moments, where deterioration takes shape, standard instruments are silent. And the instruments themselves were normed on populations, not persons: two patients with identical scores can be struggling for entirely different reasons, and a score benchmarked against the average patient can point a clinician toward the wrong pathway for the real one."
+    text2: "The measurement science to do better now exists. Person-specific network modeling — the approach at Entrelacs' core — reads each individual against their own subgroup baseline rather than a population norm, and reports not just severity but which domain matters most for that person."
+  brings:
+    tag: "What Entrelacs brings"
+    title: "Measurement built for individuals — designed for clinical standards from day one."
+    accordion:
+      - title: "Person-specific measurement, validated step by step"
+        text: "Lacis builds a person-specific model of social connection and its impact on well-being. Patients engage with the conversational interface, while the deterministic psychometrics run reliably underneath. The AI handles the conversation; it doesn't score, assess, or diagnose."
+      - title: "Clinical governance, not just claims"
+        text: "Our Chief Clinical Officer is a practicing clinical psychologist with fifteen years in care. We are forming a six-member cross-market Clinical Advisory Board, anchored in the US and France, with at least half its seats held by clinicians currently seeing patients, to govern the platform's clinical boundaries."
+      - title: "A regulatory trajectory, stated precisely"
+        text: "Entrelacs today is a measurement and development instrument — not a diagnostic, not a treatment — deployed within clinical boundaries governed by our CCO and advisory board. We have filed an FDA Pre-Submission and are pursuing De Novo classification in the US, alongside CE Mark Class IIa in the EU targeted for 2027, supported by ongoing validation studies and a French clinical track."
+  partnership:
+    tag: "Partnership"
+    title: "Where this goes next — with partners, not just customers."
+    text: "The same instrument that makes workforce capacity measurable is being built toward population-scale mental health measurement: the early-detection foundation that cardiology and oncology have relied on for decades. Getting there takes longitudinal evidence generated in real care settings."
+    subtitle: "Who we're building this with"
+    cards:
+      - text: "Clinics and health systems buying the measurement as a service, on a per-patient platform fee, and generating real-world evidence with us"
+      - text: "Research groups in our multi-country validation network, building the longitudinal cohorts behind the next generation of the engine"
+      - text: "Payers and public health bodies exploring what person-specific connection measurement means for population risk — a conversation that becomes commercial after clearance, and starts now."
+
+
+
+the_science:
+  meta:
+    title: "Entrelacs — The Science"
+    description: "Discover the research behind Entrelacs, including why average-based mental health measurement fails and how Lacis models individuals instead."
+  hero:
+    title: "The average person doesn't exist. We stopped measuring them."
+    description: "Entrelacs is built on a finding the field spent decades resisting: psychological instruments normed on populations systematically mismeasure individuals. Lacis, our proprietary engine, models one person at a time. That changes what measurement can do."
+    cta_demo: "Request a demo"
+    cta_sample: "See a sample report"
   problem:
-    tag: "The Problem"
-    title: "The assessment gap driving inefficiency and poor outcomes"
-    text: "Mental health care faces a fundamental problem: the assessment tools we rely on weren't designed for the complexity of the conditions we treat or the technology available to us today."
-    list:
-      - "Limited, inaccurate diagnostics miss nuances and evolving symptoms."
-      - "Early risks go unseen, leading to preventable mental-health crises."
-      - "Inefficient treatments rely on trial-and-error and delayed detection."
-      - "Ineffective care drives unnecessary costs and poor ROI."
+    tag: "The average problem"
+    title: "Why every survey you've taken was built for someone who isn't real."
+    stat1_value: "4,063"
+    stat1_label: "pilots measured on ten dimensions"
+    stat2_value: "0"
+    stat2_label: "fit the average on all ten"
+    paragraphs:
+      - "In 1952, the U.S. Air Force measured 4,063 pilots on ten dimensions to design a cockpit for the average pilot. Zero pilots fit the average on all ten. The fix — the adjustable seat — established the first law of personalization: you don't fit the human to the mean, you build the instrument around the individual (Daniels, 1952; Rose, 2016)."
+      - "Psychological measurement never had its adjustable seat. Engagement surveys, wellbeing questionnaires and most clinical scales still ask everyone the same questions and score answers against a population mean, carrying an assumption the measurement literature has formally rejected: that group-level statistics describe individuals (Molenaar, 2004). Two people with identical scores can be struggling for entirely different reasons. An average-based instrument can't tell them apart. And when a score drives a decision — a benefits allocation, a care pathway — mismeasurement compounds into real harm."
+      - "Our founding team spent two decades inside that problem as researchers, and helped produce the evidence that made it undeniable, including showing empirically that standard instruments don't measure the same construct across different people. Entrelacs is the instrument they built in response."
+  engine:
+    tag: "The engine"
+    title: "Lacis: person-specific measurement, engineered."
+    description: "Tailored questions and a clear map of your connections to show you exactly what to change."
+    ksr_title: "The four stages of the KSR (Key Signature Reconstruction) method — patent pending"
+    accordion:
+      - title: "Your subgroup, not the population"
+        text: "Before asking anything that matters, Lacis places you with people whose psychology moves the way yours does over time — a subgroup narrow enough that a conclusion drawn about the group is formally valid for the individual inside it. Population statistics assume this condition. They almost never meet it."
+        image: "/images/theSciencePage/engine-mockup.webp"
+      - title: "The most informative questions, for you"
+        text: "Once Lacis has your subgroup, it selects the questions that carry the most information for someone like you — not a fixed battery answered by everyone, but the smallest set of items that resolves uncertainty about your specific pattern fastest."
+        image: "/images/theSciencePage/engine-mockup.webp"
+      - title: "44-domain network modeling"
+        text: "Your answers are mapped into a network of 44 psychological domains, capturing how they relate to and reinforce one another for you specifically, rather than scoring each domain in isolation the way traditional instruments do."
+        image: "/images/theSciencePage/engine-mockup.webp"
+      - title: "Signature and keystone"
+        text: "From that network, Lacis extracts your signature — the handful of domains driving the rest — and your keystone, the single lever most likely to move the whole system if you act on it."
+        image: "/images/theSciencePage/engine-mockup.webp"
+    why_connection:
+      title: "Why connection first"
+      text: "Brain capital cannot be tested directly at workforce scale; the test itself would become a performance exam. It can be measured through its determinants, and among them social connection carries the strongest evidence base at the lowest measurement burden. The same engine is built to extend to further determinants, including dimensions of depression and anxiety, on the same validation pipeline."
+    why_now:
+      title: "Why now"
+      text: "The components have precedents. Regulators have already certified conversational clinical assessment as a medical device in Europe, and payers already fund the detection of loneliness in covered populations. What no one had assembled is a person-specific instrument for the workforce — the position Entrelacs is built to occupy."
+  trust:
+    tag: "Trust"
+    title: "The measurement belongs to the person being measured."
+    paragraphs:
+      - "A measurement instrument that people answer strategically is not measuring what it claims to. This is the failure mode legacy tools never solved: engagement surveys route answers to management, 42% of employees believe disclosure would damage their career (NAMI & Ipsos, 2025), and the resulting data is biased in a direction no statistical correction recovers. Entrelacs treats the trust architecture as part of the instrument."
+      - "The employee uses a private interface and gets results immediately: their own signature, keystone, and first move. Their answers, text, and data are encrypted and never shown to management or HR. The organization only sees patterns across groups of ten or more. Never who said what."
+      - "This isn't a privacy feature bolted onto a measurement product. It's the precondition for the measurement being true. People tell a mirror things they will not tell an employer."
+  ai_boundary:
+    tag: "The AI boundary"
+    title: "What the AI does — and what it's forbidden to do."
+    paragraphs:
+      - "Buyers are right to be wary of generative AI in mental health. The research is blunt: general-purpose models perform poorly at high-risk clinical tasks, tend to agree with users rather than assess them, and are almost never evaluated longitudinally."
+      - "Entrelacs is built against those failure modes. The large language model manages the conversation: it turns natural dialogue into structured inputs and explains results in plain, supportive language. As validated items move into conversational phrasing, each one passes psychometric-equivalence checks before it ships — response distributions, completion rates, and item functioning benchmarked against the original instrument."
+    cards:
+      - title: "It never scores, assesses or diagnoses."
+        text: "All measurement, subgrouping, network estimation, and recommendation logic runs deterministically in Lacis — auditable, traceable, and grounded in a validated research corpus. The subgroup structure itself is learned offline from our research base, not invented in the moment by a generative model."
+      - title: "Entrelacs is not a therapy service and not a crisis service."
+        text: "When a conversation surfaces acute distress, a signposting protocol governed by our Chief Clinical Officer directs the person to human help and crisis resources immediately. The instrument measures; people care for people."
   solution:
-    tag: "Our Solution"
-    title: "Entrelacs addresses these challenges at their foundation with assessment technology designed for precision mental health care."
-  features:
-    assessment:
-      title: "Comprehensive initial assessment"
-      text: "Precision psychometrics deliver multi-dimensional insights, risk prediction, and diagnostic guidance."
-      subhead: "Clinical advantages:"
-      list:
-        - "Higher precision"
-        - "Captures nuanced patterns"
-        - "Better patient experience"
-        - "Structured documentation"
-        - "Adaptive questioning"
-    diagnostics:
-      title: "Precision diagnostic support"
-      text: "Advanced modeling offers precise, multi-dimensional diagnostic decision support."
-      subhead: "Diagnostic benefits:"
-      list:
-        - "Multidimensional profiling"
-        - "Differential diagnostic suggestions"
-        - "Risk stratification"
-        - "Severity assessment"
-        - "Confidence indicators"
-    monitoring:
-      title: "Continuous progress monitoring"
-      text: "Identifies changes early, boosting adherence, insight, and treatment outcomes."
-      subhead: "Treatment optimization:"
-      list:
-        - "Therapy modality recommendations based on symptom profiles"
-        - "Medication considerations aligned with symptom patterns and patient characteristics"
-        - "Patient-specific factors that may influence treatment response"
-        - "Contraindications and special considerations flagged automatically"
-        - "Expected treatment trajectory based on similar patient profiles"
-    predictive:
-      title: "Predictive early warning system"
-      text: "Predictive system prevents crises; alerts enable proactive intervention."
-      subhead: "Monitoring advantages:"
-      list:
-        - "Measurement-based care without administrative burden on clinicians"
-        - "Early detection of treatment non-response"
-        - "Patient engagement between sessions improves adherence and therapeutic alliance"
-        - "Trend analysis showing whether patient is improving, stable, or deteriorating"
-        - "Automatic alerts when concerning patterns emerge"
-    treatment:
-      title: "Personalized treatment matching (Coming soon)"
-      text: "AI recommends optimized, evidence-based treatments tailored to individual profiles."
-      subhead: "Prevention capabilities:"
-      list:
-        - "Crisis risk alerts notify clinicians of concerning changes requiring immediate attention"
-        - "Relapse prediction based on historical patterns and current trajectory"
-        - "Proactive outreach before patients reach crisis points"
-        - "Reduced emergency utilization"
-        - "Longitudinal understanding of each patient's unique warning signs and triggers"
-  benefits:
-    main_title: "Benefits for Clinicians"
-    main_subtitle: "Measurable impact on clinical practice and patient outcomes"
-    clinicians:
-      tag: "FOR CLINICIANS"
-      title: "Clinical tools that enhance your practice"
-      text: "Entrelacs integrates seamlessly into your clinical workflow, providing the tools you need to deliver more accurate diagnoses and personalized treatment, and continuous patient support."
-      list:
-        - "65-80% precise assessments for confident, accurate diagnosis and treatment planning."
-        - "Sleep easier knowing the system is watching for warning signs you might miss."
-        - "Personalized check-ins boost engagement and adherence"
-      cta: "Schedule a demo"
-    payers:
-      tag: "FOR PAYERS & HEALTH SYSTEMS"
-      title: "Data-driven mental healthcare management"
-      text: "Identify members at risk for crisis or deterioration before expensive emergency or inpatient interventions become necessary. Prevention is dramatically cheaper than crisis response."
-      list:
-        - "Measure treatment response across your network"
-        - "Reduce trial-and-error in treatment selection with precision matching."
-        - "Automated collection of required quality metrics (HEDIS, STAR ratings)."
-      cta: "Schedule a demo"
-  validation:
-    title: "Clinically Validated, Research-Backed"
-    initial_tab:
-      title: "Scientific Partnerships"
-      text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
-    tabs:
-      - image: "/images/h001.png"
-        title: "Scientific Partnerships"
-        text: "Active collaborations with WHO and OECD social connection initiatives. Participant in EU Horizon 2020's LONELY-EU project validating measurement across diverse European populations. Advisory relationships with leading academic medical centers."
-      - image: "/images/h002.jpg"
-        title: "Peer-Reviewed Research"
-        text: "Our approach is grounded in published research on dynamic network modeling, adaptive assessment, conversational AI in mental health, and predictive modeling for crisis prevention.<br> <br>Founded by Dr. Hans Rocha IJzerman, Associate Researcher at Oxford Internet Institute and global expert on social connection."
-      - image: "/images/h003.jpg"
-        title: "Clinical Validation Studies"
-        text: "Ongoing validation studies in partnership with academic medical centers demonstrate diagnostic accuracy, treatment outcome prediction, and crisis prevention effectiveness."
-      - image: "/images/h004.jpg"
-        title: "Continuous Improvement"
-        text: "We continuously validate and refine our algorithms using de-identified aggregate data, ensuring the platform improves over time while maintaining privacy. Our models learn from outcomes across diverse populations."
-      - image: "/images/h005.jpg"
-        title: "Regulatory Compliance"
-        text: "Designed with healthcare standards in mind: HIPAA compliant, SOC 2 Type II certified, following FDA guidance for clinical decision support software."
-  getting_started:
-    title: "Getting started"
-    clinicians:
-      tag: "FOR CLINICIANS & PRACTICES"
-      title: "Schedule a demonstration to see how Entrelacs can enhance your clinical workflow"
-      text: "We'll customize the demo to your practice type and patient population."
-      list:
-        - "Platform access for selected patients"
-        - "Clinician training on interpreting insight"
-        - "Integration support (EHR, practice management)"
-        - "Outcome data showing impact on your practice"
-      cta: "Request Clinician Demo"
-    payers:
-      tag: "FOR PAYERS & HEALTH SYSTEMS"
-      title: "Consult with our team about population health implementation strategies"
-      text: "We'll walk through ROI modeling specific to your member population, network structure, and current utilization patterns."
-      list: []
-      cta: "Contact Us"
+    tag: "Validation & partnerships"
+    title: "Grounded in a research asset a competitor can't shortcut."
+    intro: "Lacis is calibrated on a research substrate built over five years by the Annecy Behavioral Science Lab (ABSL). The science is published and open; what Entrelacs licenses exclusively from ABSL is the personalized measurement method built on top of it. Its two longest-lead inputs are complete: a field-wide review screening 9,032 articles across seven languages, mapping every validated social-connection instrument in the literature; and a cross-cultural corpus of 354 in-depth interviews across eight countries and four continents, coded into the 44-domain model. Both took years. A competitor starts from zero on both — it cannot be reproduced by web-scraping or reading the same published literature, and it compounds with every deployment."
+    foundations:
+      columns:
+        - title: "Global policy & research"
+          items:
+            - "ABSL’s work anchors the EU’s social-connection monitoring framework and informs the WHO’s development of a Global Index for Social Connection"
+            - "EU Horizon Europe - €3M LONELY-EU research project"
+            - "OECD cooperation on social health measurement"
+            - "Oxford University research affiliation"
+        - title: "Academic network"
+          items:
+            - "Psychological Science Accelerator — research network spanning 80+ countries (our CSO is Associate Director)"
+            - "Strategic advisors at Stanford (Dr. Michal Kosinski — AI behavioral prediction) and UC Davis (Dr. Emorie Beck — personalized psychological measurement)"
+        - title: "Published, not just asserted"
+          items:
+            - "Paris, B., Ropovik, I., Silan, M., d’Hombres, B., Casabianca, E., & IJzerman, H. (2026). Evaluating loneliness measurements across the European Union. Collabra: Psychology, 12(1)."
+            - "Coll-Planas, L., Akhter-Khan, S. C., Longworth, G., Srivastava, P., Mosalakanti, S., Silan, M. A., IJzerman, H., & McHugh Power, J. (2026). Rethinking loneliness interventions. — Why connection must be supported at the level of the individual, not the population."
+            - "Silan, M. A. (2024). Rethinking multi-site studies in social and personality psychology. Social and Personality Psychology Compass. — The cross-cultural validity problem the 354-interview corpus was built to solve."
+            - "Mosalakanti, S., Paris, B., Brickau, D., Luhmann, M., & Rocha IJzerman, H., (2026, August 25). A systematic review of social connection inventories."
+            - "Molenaar, P. C. M. (2004). A manifesto on psychology as idiographic science: Bringing the person back into scientific psychology, this time forever. Measurement: Interdisciplinary Research and Perspectives, 2(4), 201–218."
+            - "Borsboom, D. (2017). A network theory of mental disorders. World Psychiatry, 16(1), 5–13."
+            - "Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). Loneliness and social isolation as risk factors for mortality: A meta-analytic review. Perspectives on Psychological Science, 10(2), 227–237."
+            - "World Health Organization. (2025). From loneliness to social connection: Charting a path to healthier societies. Report of the WHO Commission on Social Connection. WHO."
+            - "Office of the U.S. Surgeon General. (2023). Our epidemic of loneliness and isolation: The U.S. Surgeon General’s advisory on the healing effects of social connection and community. U.S. Department of Health and Human Services."
+    in_progress_label: "In progress:"
+    in_progress_text: "further peer-reviewed publications from the Entrelacs validation program in preparation; longitudinal validation cohorts underway; clinical outcome tracking in pilot settings."
+  certifications:
+    tag: "Regulatory & security"
+    title: "Engineered to clinical standards. Certification, step by step."
+    status:
+      title: "Status today"
+      text: "A measurement and development instrument — deliberately not a diagnostic or treatment device, with clinical boundaries governed by our CCO and Clinical Advisory Board."
+    items:
+    - q: "FDA (US)"
+      a: "Pre-Submission filed; pursuing De Novo classification (no clear predicate device exists — the route for novel instruments)"
+    - q: "CE Mark (EU)"
+      a: "Class IIa, targeted 2027"
+    - q: "Clinical governance"
+      a: "Clinical Advisory Board forming — six members across the US and France, at least half of them clinicians currently seeing patients; software development under ISO 13485/14971 discipline"
+    - q: "Intellectual property"
+      a: "The KSR measurement method is patent-pending (U.S. provisional application filed June 2026)"
+    - q: "Data protection"
+      a: "GDPR-compliant, encrypted infrastructure; EU data hosting for European deployments; multi-jurisdiction compliance program (EU, UK, Swiss, US including state privacy laws)"
+    - q: "Care settings"
+      a: "HIPAA-aligned data handling"
+    - q: "Security certification"
+      a: "SOC 2 Type II audit preparation in progress; ISO 27001 on the roadmap — security documentation available to procurement teams on request"
+    - q: "Reporting threshold"
+      a: "Aggregation threshold of ten or more for any organizational reporting; voluntary participation with transparent, revocable consent, including for research use"
 
-technology:
-  hero:
-    tag: "TECHNOLOGY"
-    title: "How we're transforming mental health assessment"
-    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time, delivering more accurate insights with better user experience and less assessment burden"
-    cta_sales: "Contact Sales"
-    cta_demo: "Schedule a Demo"
-  innovation:
-    tag: "The Innovation"
-    title: "Dynamic assessments that evolve with you"
-    text: "Traditional mental health assessments ask everyone the same questions in the same order. It's like having a doctor follow a rigid script instead of adapting to what you tell them."
-    subtitle: "Entrelacs changes this by:"
+team:
+  leadership:
+    title: "Leadership team"
+    subtitle: "Purpose-built expertise across science, technology, and healthcare."
     list:
-      - "Making assessments feel natural and conversational."
-      - "Reducing burden by skipping unnecessary items."
-      - "Learning each person’s unique response patterns."
-      - "Probing deeper only where truly needed."
-      - "Adapting questions instantly for relevance."
-      - "Delivering faster, higher-precision clinical insights."
-    cta: "Schedule a Demo"
-  core_components:
-    tag: "Our Technology"
-    title: "Four core components"
-    headers:
-      usage: "How we use it"
-      advantage: "The advantage"
-      science: "The science"
-      benefits: "Benefits"
-      safeguards: "Technical safeguards"
-      works: "How it works"
-    psychometrics:
-      title: "Dynamic Psychometrics"
-      intro: "Entrelacs uses dynamic psychometrics to capture how thoughts, emotions, and behaviors interact over time, revealing each person’s unique mental health fingerprint beyond what static questionnaires can show."
-      usage_text: "Entrelacs creates a personalized dynamic network model that maps how an individual’s symptoms interact over time. It learns each person’s stable patterns and early warning shifts, even before symptoms become clinical. With every new interaction, the model becomes more accurate, detecting cascades like sleep issues → anxiety → withdrawal early for timely intervention."
-      advantage_text: "Traditional assessments capture snapshots; Entrelacs captures motion. This dynamic approach transforms assessment from reactive to preventive, enabling clinicians and organizations to act before crises emerge, tailor interventions to personal patterns, and measure progress with unprecedented precision."
-      science_text: "Built on network psychometrics research showing mental health conditions as systems of interacting symptoms rather than discrete disease entities. This approach has demonstrated superior predictive validity for clinical outcomes and treatment response."
-    llm:
-      title: "Large Language Models (LLM) for Personalized Assessment"
-      intro: "LLMs are AI systems trained on vast amounts of text, enabling them to understand context, generate natural responses, and conduct coherent conversations. Rather than just matching keywords, LLMs comprehend nuance, tone, and meaning."
-      usage_intro: "This is fundamentally different from chatbots that just generate responses. Our system:"
-      usage_list:
-        - "Making assessments feel natural and conversational"
-        - "Follows validated assessment frameworks ensuring clinical rigor"
-        - "Adapts questioning dynamically based on individual responses"
-        - "Extracts psychometric features from natural language (not just questionnaire scores)"
-        - "Maintains measurement precision while improving user experience"
-      advantage_text: "Traditional computerized adaptive testing (CAT) requires extensive pre-programmed question banks and complex statistical models. LLMs enable more flexible, conversational assessment while maintaining—and often exceeding—the precision of traditional psychometric approaches."
-      benefits_list:
-        - "Better engagement"
-        - "Adaptive depth"
-        - "Richer data"
-        - "Accessibility"
-      safeguards_list:
-        - "All LLM outputs validated against psychometric standards"
-        - "Human oversight and clinical review of assessment protocols"
-        - "Continuous monitoring for bias and fairness across populations"
-        - "Transparent methodology—clinicians understand how assessments work"
-    behavioral:
-      title: "Behavioral Data Integration - Coming soon"
-      intro: "Behavioral data includes digital traces of daily life: communication frequency, activity levels, sleep patterns, location patterns and app usage. Services like Google Takeout allow users to export this data from platforms they already use."
-      usage_text: "When individuals opt in, Entrelacs analyzes behavioral and conversational data together. Time-series patterns, like activity shifts, social engagement changes, routine disruptions, and sleep irregularities, are detected early. These signals are fused with self-reported data using multimodal models that learn which changes are meaningful for each person versus normal variation."
-      advantage_text: "Self-reported symptoms can be incomplete or biased. Behavioral data provides objective signals that complement conversational assessment:"
-      benefits_list:
-        - "Early detection"
-        - "Objective validation"
-        - "Personalized baselines"
-        - "Real-world context"
-    profiling:
-      title: "Multidimensional Profiling - Coming soon"
-      intro: "Rather than screening for single conditions, the platform assesses multiple psychological dimensions simultaneously: social connection and loneliness, anxiety symptoms, depressive symptoms, stress and burnout indicators, and condition-specific symptomatology."
-      works_text: "Traditional assessment approaches condition-by-condition: \"Do you have depression?\" then \"Do you have anxiety?\" This misses how conditions interact and co-occur."
-      benefits_list:
-        - "Reveals complexity"
-        - "Personalizes treatment"
-        - "Improves diagnosis"
-        - "Tracks holistically"
-  real_life:
-    title: "Technology that fits into real life"
-    subtitle: "The best assessment is one that people actually complete. We've designed our platform to work in real-world settings—whether that's a busy workplace, a clinical practice, or someone's home."
-    fast:
-      title: "Fast"
-      text: "Initial assessments take 5-7 minutes. Regular check-ins take 2-3 minutes. Compare this to 20-40 minute traditional questionnaire batteries. Time savings without precision loss."
-    accessible:
-      title: "Accessible"
-      text: "Natural conversation using plain language. No clinical jargon. Works across literacy levels and language preferences. Adapts to individual communication styles."
-    flexible:
-      title: "Flexible"
-      text: "Accessible anywhere with cross-device support, native Slack/Teams apps, EHR/HRIS integrations, offline capability, and flexible scheduled or on-demand assessments."
-    actionable:
-      title: "Actionable"
-      text: "You receive clear insights, personalized recommendations, progress tracking, baseline comparisons, and tailored guidance for clinicians, HR, or individuals."
-    inclusive:
-      title: "Inclusive"
-      text: "Built for fairness across diverse populations with cultural validation, multilingual support, accessibility features, and continuous bias monitoring."
-    engaging:
-      title: "Engaging"
-      text: "Adaptive questions maintain interest and reduce the fatigue of repetitive questionnaires. Conversational format feels more human than clinical. Immediate feedback provides value to the person being assessed."
-  cta_banner:
-    title: "Transform your retention strategy"
-    text: "Discover how Entrelacs helps organizations build stronger, more connected teams while reducing costly turnover."
+      - name: "Dr Hans Rocha IJzerman"
+        role: "CEO & Co-Founder"
+        bio: "Has worked with the WHO and the European Commission on social connection measurement. University of Oxford affiliate researcher. Principal Investigator of the EU's €3M LONELY-EU Horizon Europe project. Published researcher with 10,000+ academic citations and one of the world's leading experts on social connection and mental health."
+        image: "/images/teamMembers/DrHansIjzerman.png"
+      - name: "Miguel Silan"
+        role: "Chief Scientific Officer"
+        bio: "Associate Director of the Psychological Science Accelerator — a global research network spanning 80+ countries. PhD in Psychology, specializes in large-scale studies of complex psychological systems. Author of 1,200+ academic citations. Led flagship multi-country behavioral studies across 20+ countries to establish culturally robust, multi-domain measurement frameworks. The scientific backbone behind Entrelacs' cross-cultural validation and psychometric methodology."
+        image: "/images/teamMembers/DrMiguelSilan.png"
+      - name: "Dr Andrews Sobral"
+        role: "Chief Technology Officer"
+        bio: "PhD in computer vision and former Head of AI at ActiveEon, with 2,800+ academic citations. Builds the Lacis engine and the production stack behind it, with a background in machine-learning platforms and orchestration at scale."
+        image: "/images/teamMembers/DrAndrewsSobral.webp"
+  extendedLeadership:
+    title: "Extended leadership team"
     list:
-      - "Demo & ROI Assessment"
-      - "Implementation & Training"
-      - "Pilot Program Design"
-      - "Launch & Optimization"
-    roi_text: "Use our ROI calculator to see how Entrelacs could reduce your costs."
-    cta_sales: "Contact Sales"
-    cta_demo: "Use ROI Calculator"
-  common:
-    learn_more: "Learn more"
-    show_less: "Show less"
+      - name: "Daniela Rocha Lopes"
+        role: "Chief Clinical Officer"
+        bio: "Clinical psychologist with 15+ years of experience in mental health practice and operations. Director-General of Solstice Psychologues. Ensures clinical integrity across every element of the Entrelacs platform."
+        image: "/images/teamMembers/DanielaRocha.webp"
+      - name: "Alexandra Lung"
+        role: "Chief Product Officer (incoming)"
+        bio: "Led product at Aircall through its growth from Series B to unicorn. Leads product across the employee and HR experience at Entrelacs."
+        image: "/images/teamMembers/AlexandraLung.webp"
+      - name: "Matthew Reed"
+        role: "Chief Financial Officer"
+        bio: "Finance executive with 15 years in clean energy and regulated industries. Former EDF Group executive. Has overseen $26B raised in ESG capital throughout his career. Leads Entrelacs' financial strategy and investor relations."
+        image: "/images/teamMembers/MatthewReed.webp"
+      - name: "Cristina Claver Sicilia"
+        role: "Chief Operating Officer"
+        bio: "PharmD, MBA. Healthcare operations expert with deep experience leading pharmaceutical strategy implementation across Europe. Drives operational excellence and EU market access for Entrelacs."
+        image: "/images/teamMembers/DrCristinaClaver.png"
+      - name: "Katie Cobb"
+        role: "Chief Marketing Officer (incoming)"
+        bio: "Founder of Oxford Comma Strategy and architect of Entrelacs' category strategy as well as go-to-market messaging in the U.S."
+        image: "/images/teamMembers/katieCobb.png"
+      - name: "Cyril Marie"
+        role: "Head of Brand and Creative, France (incoming)"
+        bio: "Creative director and entrepreneur for twenty-five years. President of Inspire Studio, Annecy. Leads French brand identity, creative direction, and press strategy."
+        image: "/images/teamMembers/CyrilMarie.webp"
+  advisors:
+    title: "Strategic advisors"
+    subtitle: "Guided by the minds shaping the future of AI, behavioral science, and global health."
+    list:
+      - name: "Dr. Michal Kosinski"
+        role: "Stanford University"
+        bio: "World-renowned expert in AI-driven behavioral prediction and psychometrics. His research on digital footprints and psychological profiling has been cited over 25,000 times. Advises on Entrelacs' AI methodology and behavioral prediction models."
+        image: "/images/teamMembers/DrMichalKosinski.png"
+      - name: "Jillian Miranda"
+        role: "Medtech Growth Strategist"
+        bio: "Previously scaled multiple digital health companies from pilot to global adoption. Expert in healthcare go-to-market strategy and B2B2C models. Guides Entrelacs' commercial strategy and enterprise growth."
+        image: "/images/teamMembers/JilianMiranda.png"
+      - name: "Ron Ivey"
+        role: "Harvard Human Flourishing Program; Founder, HumanConnections.AI"
+        bio: "Thought leader in AI ethics and responsible AI deployment in healthcare settings. Advises on regulatory positioning, ethical AI practices, and responsible deployment across clinical environments."
+        image: "/images/teamMembers/RonIvey.png"
+      - name: "Carson Kelly"
+        role: "Compassion 2.0"
+        bio: "Tech veteran and Compassion 2.0 advocate. Advises on embedding compassion-driven models into our platform."
+        image: "/images/teamMembers/CarsonKelly.png"
+      - name: "Emorie Beck"
+        role: "UC Davis"
+        bio: "Leading expert in personalized psychological measurement and individual differences research. Guides the psychometric methodology and measurement science that underpins the Entrelacs assessment engine."
+        image: "/images/teamMembers/DrEmorieBeck.png"
+      - name: "Jackie Ourman, LMHC-D"
+        role: "Founder, Social Connection Collective"
+        bio: "Practicing psychotherapist and founder of the Social Connection Collective, formed out of the launch of the WHO Commission on Social Connection. Advises on connecting measurement to frontline practice."
+        image: "/images/teamMembers/JackieOurman.png"
+      
+contact:
+  meta:
+    title: "Contact Entrelacs"
+    description: "Contact Entrelacs to request a demo, ask a question, or discuss employer, clinical, or research partnerships."
+  title: "Get in touch"
+  subtitle: "Our friendly team would love to hear from you."
+  form:
+    first_name_label: "First name"
+    first_name_placeholder: "First name"
+    last_name_label: "Last name"
+    last_name_placeholder: "Last name"
+    email_label: "Contact email"
+    email_placeholder: "you@company.com"
+    organization_label: "Organization name"
+    organization_placeholder: "Organization name"
+    message_label: "Message"
+    privacy_agreement_prefix: "You agree to our "
+    privacy_policy_link: "privacy policy"
+    submit_button: "Send message"
+
+waiting_list:
+  meta:
+    title: "Join the Entrelacs waiting list"
+    description: "Join the Entrelacs waiting list for early access to private, person-specific brain health measurement."
+  title: "Join our waiting list"
+  subtitle: "Be the first to experience Entrelacs."
+  form:
+    name_label: "Your name"
+    name_placeholder: "John Smith"
+    organization_label: "Your organization"
+    organization_placeholder: "Company Inc."
+    email_placeholder: "you@company.com"
+    email_label: "Your email"
+    submit_button: "Join the waitlist"
+
+
+roi_calculator:
+  meta:
+    title: "Entrelacs ROI Calculator"
+    description: "Use the Entrelacs ROI calculator to estimate the cost of reactive mental health support and the value of earlier intervention."
+  tag: "ROI Calculator"
+  title: "You're paying for crisis. <br> You could be investing in prevention"
+  description: "Mental health has no early warning system. By the time you see the impact of absenteeism, turnover, emergency admissions, it's already costing you."
+  stats:
+    - value: "~€15K"
+      strong_text: "Lost per employee in crisis"
+      text: "Productivity loss, replacement costs, and management time for each serious case."
+      source: "Deloitte, 2022"
+    - value: "<5%"
+      strong_text: "Of problems caught early"
+      text: "No routine mental health screening exists, issues surface only at breaking point."
+      source: "OECD Health at a Glance, 2023"
+    - value: "~10–20%"
+      strong_text: "Annual claims growth"
+      text: "Mental health costs are rising faster than any other category of health spend."
+      source: "Mercer Marsh Benefits, 2023"
+  cta: "Use our ROI calculator"
+
+  link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/"
+
+cta_banner:
+  tags:
+    - "Brain Health. Personal, Private, Precise."
+  title: "Start measuring the asset <br> everything else depends on."
+  description: "Entrelacs is onboarding a limited design-partner cohort: organizations ready to deploy org-wide, on founding-partner terms."
+  cta_primary: "Request a demo"
+  cta_secondary: "Apply to be a design partner"
+
 
 about:
+  meta:
+    title: "About Entrelacs"
+    description: "Learn about Entrelacs, the team behind it, and the mission to make mental health measurement personal, private, and precise."
+  title: "About Entrelacs"
   hero:
-    tag: "ABOUT US"
-    heading: "The first platform built to predict mental health crises — before they happen"
-    p1: "Entrelacs is an AI-powered preventive mental health platform that screens, matches, and monitors individuals with clinical precision — detecting deterioration weeks before crisis, so the right support arrives before it's urgently needed."
-    p2: "Built on three years of R&D, 80,000+ research articles, and clinical validation across 8 countries and 37 global markets, Entrelacs brings together dynamic psychometric modeling, conversational AI, and continuous monitoring into a single platform — designed for employers, clinicians, and health systems."
-    p3: "We exist because mental health is the only area of medicine without a reliable early warning system. We're here to change that."
+    title: "We build the instrument for the asset the economy forgot to measure."
+    description: "Entrelacs makes workforce brain capital — the human capacity for connection, adaptation, and thought — measurable, so organizations can finally develop what they’ve only ever hoped for."
   vision_mission:
     heading: "Vision & mission"
-    description: "A world where mental health crises are predicted, prevented, and no longer inevitable."
+    description: "A world where the conditions behind mental health crises are visible early enough to change."
     cards:
       - title: "Vision"
         desc: "A future where mental health care works like every other area of medicine — with routine screening, early detection, and proactive intervention as the standard, not the exception."
       - title: "Mission"
-        desc: "To make preventive mental health care universally accessible through advanced psychometrics and clinical-grade AI — giving individuals, clinicians, employers, and health systems the tools to act before crisis strikes."
-  pillars:
-    heading: "Our three pillars"
-    t1: "Precision"          
-    t2: "Personalization"
-    t3: "Prevention"
-    d1: "Screen with clinical accuracy, not guesswork. A 15-minute conversational assessment replaces fragmented questionnaires with objective, multi-dimensional risk stratification."
-    d2: "Match to the right care pathway, first time. AI connects each individual to the most effective intervention from day one — reducing failed treatments and accelerating improvement by 2–3x."
-    d3: "Detect deterioration before it becomes crisis. Continuous monitoring tracks passive signals between sessions, alerting care teams weeks before a crisis — turning reactive care into proactive care."
+        desc: "To make the determinants of mental health measurable for everyone, through advanced psychometrics and AI built to clinical standards, so that individuals, clinicians, employers and health systems have something to act on early rather than only in a crisis."
+  origin_story:
+    tag: "Our story"
+    title: "Born from an uncomfortable truth. Built to fix it."
+    card:
+      heading_lead: "Entrelacs started with a simple, radical question: "
+      heading_bold: "what if the average patient doesn’t exist?"
+      paragraphs:
+        - "For decades, psychological measurement operated on a shared assumption: find the pattern that fits most people, build around that center, apply it broadly. But for a large share of the people those tools are meant to help, the center produces the wrong answer. Depression doesn’t look the same in every person. Neither does anxiety, loneliness, or burnout. A score that means one thing in one person means something different in another — not because the instrument is broken, but because people genuinely differ. Decisions made on those scores compound: wrong reading, wrong pathway, months lost."
+        - "We finally have the science to model individuals, not just groups. We have the trust architecture to collect honest data. We just needed a team to build the instrument."
+        - "Today, Entrelacs measures social connection — the best-evidenced, lowest-burden determinant of mental wellbeing — for workforces first, with a regulatory trajectory into clinical care underway, and one conviction underneath it all: measure the individual, not the average."
   story:
     heading: "Our story"
     subheading: "Born from an uncomfortable truth. Built to fix it."
@@ -727,30 +794,20 @@ about:
     question: "What if the average<br>patient doesn't exist?"
     main_text: "For decades, mental health science has operated on a shared assumption: find the pattern that fits most people, build around that center, and apply it broadly. It's a reasonable approach. But for a significant share of the people those tools are meant to help, it produces the wrong answer. Depression doesn't look the same in every person. Neither does anxiety, loneliness, or burnout. A scale score that means one thing in one individual may mean something entirely different in another — not because the instrument is broken, but because human beings genuinely differ in how they experience psychological states. Recommending care based on that score, without understanding those differences, causes real harm. And because every misdiagnosis compounds — wrong pathway, wrong treatment, months or years lost — the cost of getting it wrong is preventable deterioration."
     hidden_text_1: "This isn't a fringe hypothesis. It's what the research increasingly shows. And it's what many clinicians — and many patients — already know from experience: finding the right mental health care, matched to who you actually are, is genuinely hard. When your assessment doesn't actually capture who you are, the care pathway it points to may be the wrong one entirely. And finding the right care — matched to who you actually are — is already genuinely hard, even for people with clinical training and system knowledge. The technology to do better now exists. What was missing was the will — and the team — to build it properly."
-    hidden_text_2: "Entrelacs was founded to close that gap. Built on a foundation of open science — informed by 80,000+ research articles, and developed through years of interviews with individuals in 8 countries — Entrelacs brings together AI, dynamic psychometric modeling, and continuous monitoring to do what no mental health tool has done before: assess, match, and track the individual, not the average. And because the platform understands who each person is — not just what their score is — it can do something no reactive system can: identify deterioration before it becomes crisis, and connect people to the right support before it’s urgently needed."
-    hidden_text_3: "Today, Entrelacs is moving toward CE Mark certification in 2027, with strategic partnerships spanning Stanford, UC Davis, Oxford, and the Psychological Science Accelerator — and a clear commercial pathway into the employers, health systems, and clinical networks that need it most."
+    hidden_text_2: "Entrelacs was founded to close that gap. Built on a foundation of open science — informed by 9,000+ research articles, and developed through years of interviews with individuals in 8 countries — Entrelacs brings together AI, dynamic psychometric modeling, and continuous monitoring to do what no mental health tool has done before: assess, match, and track the individual, not the average. And because the platform understands who each person is — not just what their score is — it can do something no reactive system can: identify deterioration before it becomes crisis, and connect people to the right support before it’s urgently needed."
+    hidden_text_3: "Today, Entrelacs is moving toward CE Mark certification in 2027, drawing on advisors at Stanford and UC Davis, a research affiliation with Oxford through our CEO, and the Psychological Science Accelerator, the global research network our CSO helps direct — with a clear commercial pathway into the employers, health systems, and clinical networks that need it most."
     more: 'Read more'
     less: 'Collapse'
   founder:
-    heading: "Founder story"
-    subheading: "The scientist who stopped believing in the average person."
+    tag: "Founder story"
+    title: "The scientist who stopped believing in the average person."
     name: "Dr. Hans Rocha IJzerman"
     role: "CEO & Co-Founder"
-    intro: "It took two decades inside the mainstream to understand exactly why it was asking the wrong question."
-    pullquote: "\"Entrelacs isn't built for the average patient — because that patient doesn't exist. It's built for the actual, specific, irreducibly individual human being who needs care.\""
-    body: "A scientist who had spent years working within the mainstream — and slowly, reluctantly, became convinced it was asking the wrong question. A clinician who saw daily what happened when tools ignored those differences. A family that had felt the cost firsthand. That combination is what became Entrelacs."
-    extended_story:
-      - "Dr. Hans Rocha IJzerman left the Netherlands at 18 to play basketball in America. He ended up in rural Pennsylvania, at a small Benedictine college in the hills — Saint Vincent, where Fred Rogers, the beloved American television host known as Mister Rogers, had studied theology and first developed the convictions that would define his life’s work. The Benedictine monks who shaped the college had followed the same Rule for fifteen centuries: welcome every stranger, attend to every individual, treat no person as interchangeable with any other. It was something you could actually feel — in the way strangers were welcomed, in the weight given to listening, in the assumption that every person in the room had something irreplaceable to offer."
-      - "For a young Dutch kid far from home, navigating a culture not his own, something about that community lodged deep. Not the theology — but the underlying conviction that every human being is specific, irreducible, and not interchangeable with any other."
-      - "It's a conviction his own life has never let him forget. His family is Brazilian, Dutch, and French all at once — his children grow up navigating languages and worlds that don't map cleanly onto each other. The idea that a single instrument, designed for a single 'average' human, could capture what any one of them is going through has always felt, to him, self-evidently absurd."
-      - "For two decades, that conviction sat uneasily alongside the dominant logic of his own field."
-      - "Early in his career, Hans immersed himself in the study of honor culture — fascinated by how profoundly context shapes behavior and self-understanding. The lesson the data kept teaching was the same one he’d felt instinctively: who a person is changes what everything means. The same action, the same word, the same experience — interpreted through a different life, a different culture, a different self — is not the same thing."
-      - "But mainstream psychology, including his own field, kept reaching for the average. Measure large groups. Find the central tendency. Build tools around that center. It was practical. It was scalable. And for a long time, Hans worked within that logic too — because it was the field’s logic, and because the tools to do otherwise didn’t yet exist. What changed, slowly and then undeniably, was the evidence."
-      - "The moment the research made this undeniable came through an unexpected subject: romantic love. Hans and his collaborators set out to test whether the standard instruments used to measure relationship quality actually measured the same thing across different people. The answer was no — clearly, empirically, reproducibly no. Of course people experience love differently depending on who they are. And if that was true for love, the implications for depression, anxiety, loneliness, and every other psychological construct that clinical tools relied on were significant. The average wasn't just imprecise. It was systematically missing something."
-      - "The clinical cost of that gap was something Hans saw through his partner, Daniela, a psychologist with 15 years of practice. She encountered it constantly — the difficulty of interpreting scale scores that didn't mean what they appeared to mean, the real risk of sending someone down the wrong treatment pathway because the instrument hadn't been built to understand them as an individual. Paul Meehl had spent decades arguing that clinicians needed better actuarial tools to translate assessment data into good decisions. Decades later, the tools still hadn't caught up."
-      - "And then there was the experience — shared, in some form, by most families — of trying to find the right mental health care for someone you love. Not care in the abstract. The right care, for this person, now. Even with clinical training and with system knowledge. The mismatch between individual need and available support is not a minor inefficiency. It causes harm that compounds."
-      - "A scientist who had spent years working within the mainstream — and slowly, reluctantly, became convinced it was asking the wrong question. A clinician who saw daily what happened when tools ignored those differences. A family that had felt the cost firsthand. That combination is what became Entrelacs."
-      - "Entrelacs isn't built for the average patient — because that patient doesn't exist. It's built for the actual, specific, irreducibly individual human being who needs care."     
+    paragraphs:
+      - "Hans Rocha IJzerman left the Netherlands at 18 to play basketball in the United States, and landed at a small Benedictine college in Pennsylvania whose monks had followed the same rule for fifteen centuries: attend to every individual; treat no person as interchangeable. The conviction lodged deep — and sat uneasily, for two decades, alongside the logic of his own field, which measured large groups, found the central tendency, and built its tools around the center."
+      - "What changed was the evidence. When Hans and his collaborators tested whether standard instruments for relationship quality measured the same thing across different people, the answer was no — clearly, empirically, reproducibly. If that was true for love, it was true for depression, anxiety, and loneliness — and every clinical tool built on the average was systematically missing something."
+      - "The cost of that gap had a face: his partner Daniela, a psychologist with fifteen years of practice, met it daily — scores that didn’t mean what they appeared to mean, patients sent down the wrong pathway because the instrument wasn’t built to understand them. A scientist convinced his field was asking the wrong question. A clinician who saw what that question cost."
+      - "That combination is Entrelacs."
   who_we_serve:
     tag: "Contact us"
     heading: "Let's build the future of mental health care together"
@@ -811,208 +868,272 @@ about:
     less: "Close"
 
 
-team:
-  leadership:
-    title: "Leadership team"
-    subtitle: "Purpose-built expertise across science, technology, and healthcare."
-    list:
-      - name: "Dr Hans Rocha IJzerman"
-        role: "CEO & Co-Founder"
-        bio: "WHO & EU mental health policy advisor. University of Oxford affiliate researcher. Principal Investigator of the EU's €3M LONELY-EU Horizon Europe project. Published researcher with 10,000+ academic citations and one of the world's leading experts on social connection and mental health."
-        image: "/images/LeadershipHans.png"
-      - name: "Miguel Silan"
-        role: "Chief Scientific Officer"
-        bio: "Associate Director of the Psychological Science Accelerator — a global research network spanning 80+ countries. PhD in Psychology, specializes in large-scale studies of complex psychological systems. Author of 1,200+ academic citations. Led flagship multi-country behavioral studies across 20+ countries to establish culturally robust, mutli-domain measurement frameworks. The scientific backbone behind Entrelacs' cross-cultural validation and psychometric methodology."
-        image: "/images/LeadershipMigs.png"
-      - name: "Felix Moses"
-        role: "Chief Technology Officer"
-        bio: "Engineer and AI builder with deep experience in work with multidisciplinary teams to build market ready solutions. Expert in full-stack development, GCP infrastructure, and secure data pipelines — the architect behind Entrelacs' technical foundation."
-        image: "/images/LeadershipFelix.png"
-  extendedLeadership:
-    title: "Extended leadership team"
-    list:
-      - name: "Daniela Rocha Lopes"
-        role: "Chief Clinical Officer"
-        bio: "Clinical psychologist with 15+ years of experience in mental health practice and operations. Director-General of Solstice Psychologues. Ensures clinical integrity across every element of the Entrelacs platform."
-        image: "/images/LeadershipDaniela.png"
-      - name: "Hilary Johnson"
-        role: "Chief Product Officer"
-        bio: "Former VP Product at Unmind. 15+ years in digital health UX. Brings world-class product leadership to Entrelacs' user experience and clinical workflows."
-        image: "/images/LeadershipHilary.png"
-      - name: "Matthew Reed"
-        role: "Chief Financial Officer"
-        bio: "Finance executive with 15 years in clean energy and regulated industries. Former EDF Group executive. Has overseen $26B raised in ESG capital throughout his career. Leads Entrelacs' financial strategy and investor relations."
-        image: "/images/LeadershipMatthew.png"
-      - name: "Cristina Claver Sicilia"
-        role: "Chief Operations Officer"
-        bio: "PharmD, MBA. Healthcare operations expert with deep experience leading pharmaceutical strategy implementation across Europe. Drives operational excellence and EU market access for Entrelacs."
-        image: "/images/LeadershipCristina.png"
-  advisors:
-    title: "Strategic advisors"
-    subtitle: "Guided by the minds shaping the future of AI, behavioral science, and global health."
-    list:
-      - name: "Dr. Michal Kosinski"
-        role: "Stanford University"
-        bio: "World-renowned expert in AI-driven behavioral prediction and psychometrics. His research on digital footprints and psychological profiling has been cited over 25,000 times. Advises on Entrelacs' AI methodology and behavioral prediction models."
-        image: "/images/DrMichalKosinski.png"
-      - name: "Jillian Miranda"
-        role: "Medtech Growth Strategist"
-        bio: "Previously scaled multiple digital health companies from pilot to global adoption. Expert in healthcare go-to-market strategy and B2B2C models. Guides Entrelacs' commercial strategy and enterprise growth."
-        image: "/images/JillianMiranda.png"
-      - name: "Ron Ivey"
-        role: "Founder, HumanConnection.AI"
-        bio: "Thought leader in AI ethics and responsible AI deployment in healthcare settings. Advises on regulatory positioning, ethical AI practices, and responsible deployment across clinical environments."
-        image: "/images/RonIvey.png"
-      - name: "Carson Kelly"
-        role: "Compassion 2.0"
-        bio: "Tech veteran and Compassion 2.0 advocate. Advises on embedding compassion-driven models into our platform."
-        image: "/images/CarsonKelly.png"
-      - name: "Emorie Beck"
-        role: "UC Davis"
-        bio: "Leading expert in personalized psychological measurement and individual differences research. Guides the psychometric methodology and measurement science that underpins the Entrelacs assessment engine."
-        image: "/images/emoriebeek.png"
-      
-contact:
-  title: "Get in touch"
-  subtitle: "Our friendly team would love to hear from you."
-  form:
-    first_name_label: "First name"
-    first_name_placeholder: "First name"
-    last_name_label: "Last name"
-    last_name_placeholder: "Last name"
-    email_label: "Contact email"
-    email_placeholder: "you@company.com"
-    organization_label: "Organization name"
-    organization_placeholder: "Organization name"
-    message_label: "Message"
-    privacy_agreement_prefix: "You agree to our "
-    privacy_policy_link: "privacy policy"
-    submit_button: "Send message"
+legal_mentions:
+  meta:
+    title: "Legal Mentions - ENTRELACS"
+    description: "Read the legal notices, publisher details, hosting information, and website terms governing the Entrelacs site."
+  title: "Legal Mentions"
+  intro: "In accordance with Articles 6-III and 19 of French Law No. 2004-575 of June 21, 2004 on Confidence in the Digital Economy (LCEN), the following legal notices are brought to the attention of users and visitors of this website."
+  site_publisher:
+    title: "1. Site publisher"
+    company_name: "ENTRELACS"
+    company_form: "Simplified joint-stock company (SAS) with share capital of EUR 17,125.00"
+    registration: "Registered with the Annecy Trade and Companies Register under number 988 841 862 R.C.S. Annecy"
+    address: "Registered office: 94 Route de Filly, 74410 Saint-Jorioz, France"
+    registration_date_label: "Date of registration:"
+    registration_date: "July 10, 2025"
+    email_label: "Email:"
+    email_value: "hans@entrelacs.ai"
+    phone_label: "Phone:"
+    phone_value: "07 83 81 88 11"
+  publication_director:
+    title: "2. Publication director"
+    intro: "The publication director is the President of ENTRELACS:"
+    company_name: "Annecy Behavioral Science Lab"
+    company_form: "Single-shareholder simplified joint-stock company (SASU)"
+    registration: "Annecy Trade and Companies Register No. 892 741 430"
+    address: "Registered office: 94 Route de Filly, 74410 Saint-Jorioz, France"
+  hosting:
+    title: "3. Website hosting"
+    current_intro: "The website is currently hosted by:"
+    current_provider:
+      name: "Hostinger International Ltd."
+      address: "Address: 61 Lordou Vironos Street, 6023 Larnaca, Cyprus"
+      phone: "Phone: +370.645.03378"
+      website_label: "Website:"
+      website_text: "https://www.hostinger.fr"
+    future_intro: "A migration to Google Cloud Platform is planned. In the future, hosting will be provided by:"
+    future_provider:
+      name: "Google Cloud EMEA Ltd."
+      address: "Address: 70 Sir John Rogerson's Quay, Dublin 2, Ireland"
+      website_label: "Website:"
+      website_text: "https://cloud.google.com"
+  conditions_of_use:
+    title: "4. Conditions of use"
+    body: "Use of the website implies full acceptance of the general terms of use described on the website. These may be modified or supplemented at any time."
+  intellectual_property:
+    title: "5. Intellectual property"
+    body: "All content on the website (texts, images, graphics, logo, icons, etc.) is the exclusive property of ENTRELACS, unless stated otherwise. Any reproduction, representation, modification, publication, or adaptation of all or part of the website elements is prohibited without prior written authorization."
+  data_protection:
+    title: "6. Personal data protection"
+    prefix: "The website complies with the legal provisions relating to personal data protection. For any information or request relating to the collection, processing, or deletion of your data, please contact"
+    email_value: "dpo@entrelacs.ai"
+  cookies:
+    title: "7. Cookies"
+    body: "The website may use cookies. Users are free to accept or refuse these cookies through their browser settings or through a consent banner displayed on their first visit."
+  last_updated_label: "Last updated:"
+  last_updated_value: "July 10, 2025"
 
-waiting_list:
-    title: "Join our waiting list"
-    subtitle: "Be the first to experience Entrelacs."
-    form:
-      name_label: "Your name"
-      name_placeholder: "John Smith"
-      organization_label: "Your organization"
-      organization_placeholder: "Company Inc."
-      email_placeholder: "you@company.com"
-      email_label: "Your email"
-      submit_button: "Join the waitlist"
-
-
-roi_calculator:
-  tag: "ROI Calculator"
-  title: "You're paying for crisis. <br> You could be investing in prevention"
-  description: "Mental health has no early warning system. By the time you see the impact of absenteeism, turnover, emergency admissions, it's already costing you."
-  stats:
-    - value: "~€15K"
-      strong_text: "Lost per employee in crisis"
-      text: "Productivity loss, replacement costs, and management time for each serious case."
-      source: "Deloitte, 2022"
-    - value: "<5%"
-      strong_text: "Of problems caught early"
-      text: "No routine mental health screening exists, issues surface only at breaking point."
-      source: "OECD Health at a Glance, 2023"
-    - value: "~10–20%"
-      strong_text: "Annual claims growth"
-      text: "Mental health costs are rising faster than any other category of health spend."
-      source: "Mercer Marsh Benefits, 2023"
-  cta: "Use our ROI calculator"
-
-  link: "https://absl.shinyapps.io/entrelacs_workplace_simulator/"
-
-cta_banner:
-  tags:
-    - "Precision"
-    - "Personalization"
-    - "Prevention"
-  title: "The future of mental health care is here"
-  description: "Experience the first platform that combines clinical precision with personalized insights and preventive monitoring. Join leading organizations already building the future of mental wellness."
-  cta_primary: "Join our waiting list"
-  cta_secondary: "Request a demo"
-
-
-approach:
-  hero:
-    tag: "TECHNOLOGY"
-    title: "The science behind mental health that adapts to you"
-    description: "Entrelacs combines dynamic psychometric modeling with conversational AI to create mental health assessments that adapt to each person in real-time — delivering more accurate insights with better user experience and less assessment burden."
-
-  science:
-    tag: "Our scientific foundation"
-    title: "The first assessment platform built on symptom network theory and adaptive AI"
-    intro: "Most mental health tools capture a snapshot. Ours captures the full picture."
-    stats:
-      r_and_d: "3 years of R&D"
-      research_articles: "80,000+ research articles"
-      interviews: "350+ interviews"
-      countries: "Validation across 8 countries"
-    subtitle: "Starting with social connection — expanding to additional mental health areas."
-    cards:
-      network_psychometrics:
-        title: "Network Psychometrics Innovation"
-        body: "Mental health isn't one symptom — depression alone involves ~52 interconnected symptoms. Traditional assessments often overwhelm users with too many questions or miss critical connections by asking too few. Our combination of advanced psychometrics and AI identifies the minimum set of questions that can accurately reconstruct a complete symptom network with clinical precision. It's like reconstructing a full picture from carefully chosen puzzle pieces."
-      cross_cultural:
-        title: "Cross-Cultural Validation"
-        body: "Most mental health tools fail outside their original development context. Ours doesn't. Starting with social connection, our system is built on evidence synthesized from 80,000+ research articles, 350+ in-depth interviews conducted globally, and validation across 8 countries. This foundation allows Entrelacs to work across geographies, demographics, and cultures without bias."
-        body_2: "While we begin with social connection, additional mental health areas such as depression and anxiety will be developed using the same scientific roadmap."
-      continuous_learning:
-        title: "Continuous Learning System"
-        body: "Entrelacs gets smarter with every interaction. Our AI creates a data flywheel: more users generate richer longitudinal data, which powers smarter predictions, which drive better outcomes. Each assessment improves the algorithm's ability to predict which interventions work for specific profiles, detect early warning signs unique to individuals, and recommend personalized care pathways."
-      regulatory_pathway:
-        title: "Regulatory & Clinical Pathway"
-        body: "Entrelacs is on a clear pathway to medical-grade validation — CE Mark certification (EU Class IIa) targeted for Q2 2027, supported by ongoing clinical validation studies and a healthcare integration roadmap for hospital and health system deployment."
-    bottom_cta_text: "Talk to the Entrelacs team to discover the science."
-    bottom_cta_button: "Contact us"
-
-  collabs:
-    badge: "Research partnerships & validation"
-    title: "World-class scientific collaborations"
-    intro: "Entrelacs is built on partnerships with the institutions shaping the future of global mental health policy and research."
-    foundations:
-      columns:
-        - title: "Global policy integration"
-          items:
-            - "WHO collaboration on Global Priority Setting Exercise"
-            - "EU Horizon Europe €3M LONELY-EU research project"
-            - "OECD cooperations on social health measurement standards"
-            - "University of Oxford research affiliation"
-        - title: "Academic network"
-          items:
-            - "Psychological Science Accelerator — 80+ country research network"
-            - "Stanford University partnership on AI behavioral prediction"
-            - "UC Davis partnership on personalized psychological measurement"
-            - "Multi-site clinical trials across healthcare systems"
-        - title: "Real-world evidence"
-          items:
-            - "Peer-reviewed publications in preparation"
-            - "Clinical outcomes tracking across pilot programs"
-            - "Population health impact studies underway"
-            - "Long-term effectiveness validation ongoing"
-
-  trust:
-    badge: "Privacy & security foundation"
-    title: "Built for healthcare-grade trust"
-    intro: "Every element of Entrelacs is designed to meet the highest standards of data privacy, security, and clinical ethics."
-    data:
-      title: "Data architecture"
+privacy_policy:
+  meta:
+    title: "Entrelacs Website Privacy Policy"
+    description: "Read how Entrelacs collects, uses, stores, and protects personal data submitted through the website."
+  title: "Entrelacs Website Privacy Policy"
+  scope_notice: "This policy applies to visitors and business contacts interacting with the Entrelacs website only."
+  last_updated_label: "Last updated:"
+  last_updated_value: "January 6, 2026"
+  introduction:
+    title: "1. Introduction"
+    p1: "This Privacy Policy explains how Entrelacs (\"we\", \"our\", \"us\") collects and processes personal data when you visit or interact with the Entrelacs website (the \"Website\")."
+    p2: "This policy applies only to activities on the Website, such as browsing, submitting contact or demo requests, and communicating with us."
+    p3: "Use of the Entrelacs platform, Proof of Concept (PoC), or any AI-powered assessments is governed by separate privacy policies, which apply when you access those services."
+    list_intro: "Entrelacs processes personal data in accordance with:"
+    list_items:
+      - "Regulation (EU) 2016/679 (General Data Protection Regulation - GDPR)"
+      - "French Data Protection Law No. 78-17 (Loi Informatique et Libertes)"
+      - "Guidance issued by the French supervisory authority (CNIL)"
+  controller:
+    title: "2. Data Controller and Contact"
+    controller_label: "Data Controller:"
+    controller_value: "Entrelacs"
+    email_label: "Contact Email:"
+    email_value: "dpo@entrelacs.ai"
+  data_collected:
+    title: "3. Personal Data We Collect"
+    intro: "We collect only data that is necessary for operating the Website and responding to inquiries."
+    voluntary:
+      title: "a. Information you provide voluntarily"
+      intro: "When you use the \"Contact Us\" or \"Request a Demo\" forms, we may collect:"
       items:
-        - "GDPR-compliant encrypted infrastructure"
-        - "Multi-jurisdiction compliance (EU, UK, Swiss, US)"
-        - "ISO 13485 and ISO 27001 certification roadmap"
-        - "Healthcare-grade security standards"
-    privacy:
-      title: "Privacy by design"
+        - "First and last name"
+        - "Email address"
+        - "Organization name"
+        - "Message content"
+      purpose_label: "Purpose:"
+      purpose_body: "To respond to your inquiry, provide requested information, and communicate with you regarding your request."
+    technical:
+      title: "b. Technical and usage data"
+      intro: "When you visit the Website, we may collect:"
       items:
-        - "Zero individual data shared with employers"
-        - "User-controlled data sharing and deletion"
-        - "Individual data is accessible only to authorized clinicians and personnel with user consent."
-        - "Transparent consent for AI training participation"
-    ctas:
-      privacy_policy: "Read our privacy policy"
-      contact: "Contact us"
+        - "IP address"
+        - "Browser type and device information"
+        - "Pages visited and timestamps"
+      purpose_label: "Purpose:"
+      purpose_body: "To ensure website security, functionality, and performance."
+    health_notice: "The Website does not collect health data, clinical data, assessment responses, or protected health information (PHI)."
+  legal_basis:
+    title: "4. Legal Basis for Processing (GDPR)"
+    headers:
+      activity: "Processing Activity"
+      basis: "Legal Basis"
+      article: "GDPR Article"
+    rows:
+      - activity: "Responding to contact or demo requests"
+        basis: "Consent"
+        article: "Art. 6(1)(a)"
+      - activity: "Website security and technical logs"
+        basis: "Legitimate interest"
+        article: "Art. 6(1)(f)"
+      - activity: "Business communications"
+        basis: "Legitimate interest"
+        article: "Art. 6(1)(f)"
+    note: "Where required, consent is obtained through an explicit checkbox at the time of data submission."
+  cookies:
+    title: "5. Cookies"
+    intro: "The Website uses essential cookies only, strictly necessary for:"
+    items:
+      - "Security"
+      - "Session management"
+      - "Core website functionality"
+    note: "We do not use advertising cookies, marketing trackers, or behavioral profiling cookies."
+  retention:
+    title: "6. Data Retention"
+    items:
+      - "Contact and demo request data: Up to 12 months, unless continued communication is requested"
+      - "Technical logs: Up to 30 days"
+      - "Data may be deleted earlier upon request"
+  sharing:
+    title: "7. Data Sharing and Processors"
+    p1: "We do not sell or rent personal data."
+    p2: "Personal data may be shared only with:"
+    items:
+      - "Authorized Entrelacs personnel"
+      - "Technical service providers (e.g., website hosting), acting as data processors under GDPR-compliant agreements"
+    p3: "No data is shared with advertisers or third-party marketing platforms."
+  security:
+    title: "8. Data Security"
+    intro: "Entrelacs implements appropriate technical and organizational measures to protect personal data, including:"
+    items:
+      - "Encrypted connections (HTTPS/TLS)"
+      - "Restricted access to contact data"
+      - "Secure hosting within the European Economic Area (EEA)"
+  hipaa:
+    title: "9. HIPAA Notice (Clarification)"
+    p1: "The Entrelacs Website is not a HIPAA-covered service and does not process Protected Health Information (PHI)."
+    p2: "Please do not submit health, medical, or diagnostic information through the Website contact forms."
+    p3: "Any healthcare-related data processing occurs only within Entrelacs' secure platform environments and is governed by separate privacy notices."
+  rights:
+    title: "10. Your Rights (GDPR)"
+    intro: "Under GDPR, you have the right to:"
+    items:
+      - "Access your personal data"
+      - "Request correction or deletion"
+      - "Withdraw consent at any time"
+      - "Object to or restrict processing"
+      - "Request data portability"
+    contact_intro: "To exercise your rights, contact:"
+    email_value: "dpo@entrelacs.ai"
+    subject_label: "Subject line:"
+    subject_value: "Website Privacy Request"
+    response_time: "We respond within 30 days."
+  international_visitors:
+    title: "11. International Visitors"
+    p1: "The Website is operated from the European Union."
+    p2: "Where applicable, international data transfers are protected using GDPR-approved safeguards."
+  external_links:
+    title: "12. External Links"
+    body: "The Website may contain links to third-party websites. Entrelacs is not responsible for the privacy practices of those sites."
+  updates:
+    title: "13. Updates to This Policy"
+    body: "We may update this Privacy Policy from time to time. Any changes will be reflected by updating the \"Last Updated\" date."
+  complaints:
+    title: "14. Complaints"
+    intro: "If you have concerns about how your personal data is handled, you may contact us or lodge a complaint with the competent supervisory authority:"
+    authority_name: "France - CNIL"
+    authority_url: "https://www.cnil.fr"
 
-
-
+terms_of_use:
+  meta:
+    title: "Entrelacs Website Terms of Use"
+    description: "Review the terms governing access to the Entrelacs website, including permitted use, disclaimers, and liability limits."
+  title: "Entrelacs Website Terms of Use"
+  introduction:
+    title: "1. Introduction"
+    p1: "These Terms of Use (\"Terms\") govern your access to and use of the Entrelacs website (the \"Website\")."
+    p2_line1: "By accessing or using the Website, you agree to be bound by these Terms."
+    p2_line2: "If you do not agree to these Terms, please do not use the Website."
+    p3: "These Terms apply only to the Website. Use of the Entrelacs platform, Proof of Concept (PoC), or any AI-powered assessments is governed by separate terms and privacy policies, which apply when you access those services."
+  purpose:
+    title: "2. Purpose of the Website"
+    intro: "The Website is provided for informational and business communication purposes only, including:"
+    items:
+      - "Presenting Entrelacs' mission, research, and technology"
+      - "Allowing visitors to contact Entrelacs"
+      - "Allowing organizations to request demonstrations or further information"
+    note: "The Website does not provide clinical, medical, diagnostic, or therapeutic services."
+  medical_advice:
+    title: "3. No Medical or Clinical Advice"
+    p1: "Content on the Website is provided for general informational purposes only."
+    intro: "Nothing on the Website constitutes:"
+    items:
+      - "Medical advice"
+      - "Mental health diagnosis"
+      - "Therapeutic guidance"
+      - "Clinical assessment or treatment"
+    p2: "You should not rely on Website content as a substitute for professional medical or mental health advice."
+  website_use:
+    title: "4. Use of the Website"
+    p1: "You agree to use the Website in a lawful, respectful, and responsible manner."
+    intro: "You must not:"
+    items:
+      - "Use the Website for unlawful or misleading purposes"
+      - "Submit false, inaccurate, or deceptive information"
+      - "Attempt to disrupt or interfere with the Website's operation or security"
+      - "Attempt to access restricted areas or systems without authorization"
+      - "Use the Website in a manner that infringes the rights of Entrelacs or third parties"
+  requests:
+    title: "5. Contact and Demo Requests"
+    intro: "When you submit information through the Website's contact or demo request forms:"
+    items:
+      - "You confirm that the information you provide is accurate and lawful"
+      - "You agree that Entrelacs may use the information to respond to your inquiry"
+    note: "Please do not submit health, medical, or diagnostic information through Website forms."
+    privacy_notice: "The processing of personal data is governed by the Website Privacy Policy."
+  intellectual_property:
+    title: "6. Intellectual Property"
+    p1: "All content on the Website, including text, graphics, logos, trademarks, design elements, and layout, is the property of Entrelacs or its licensors and is protected by applicable intellectual property laws."
+    p2: "You may view and use Website content for personal or internal business purposes only."
+    p3: "You may not copy, reproduce, modify, distribute, publish, or otherwise exploit Website content without prior written permission from Entrelacs."
+  third_party_links:
+    title: "7. Third-Party Links"
+    p1: "The Website may contain links to third-party websites for convenience or informational purposes."
+    p2: "Entrelacs does not control and is not responsible for the content, availability, or privacy practices of third-party websites."
+  disclaimer:
+    title: "8. Disclaimer of Warranties"
+    p1: "The Website is provided on an \"as is\" and \"as available\" basis."
+    intro: "Entrelacs makes no warranties or representations regarding:"
+    items:
+      - "The accuracy, completeness, or timeliness of Website content"
+      - "The availability or uninterrupted operation of the Website"
+      - "The suitability of the Website for any particular purpose"
+  liability:
+    title: "9. Limitation of Liability"
+    intro: "To the maximum extent permitted by applicable law, Entrelacs shall not be liable for any direct or indirect damages arising from:"
+    items:
+      - "Use of or inability to use the Website"
+      - "Reliance on Website content"
+      - "Errors, interruptions, or technical issues"
+      - "Unauthorized access or security incidents"
+  changes:
+    title: "10. Changes to the Website or Terms"
+    p1: "Entrelacs may modify, suspend, or discontinue the Website at any time without notice."
+    p2: "These Terms may be updated periodically. Continued use of the Website after changes are published constitutes acceptance of the updated Terms."
+  governing_law:
+    title: "11. Governing Law and Jurisdiction"
+    p1: "These Terms are governed by and construed in accordance with the laws of France."
+    p2: "Any disputes arising in connection with the Website or these Terms shall be subject to the exclusive jurisdiction of the competent courts of France."
+  contact:
+    title: "12. Contact"
+    intro: "If you have questions about these Terms, please contact:"
+    email_label: "Email:"
+    email_value: "dpo@entrelacs.ai"

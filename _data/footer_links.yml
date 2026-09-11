@@ -1,0 +1,18 @@
+# Footer link columns. Each top-level item is a column, containing a list of
+# { translation, path } links. Edit here to change the footer nav across the site.
+- - translation: footer.nav.home
+    path: ""
+  - translation: footer.nav.roi_calculator
+    path: "roi_calculator/"
+- - translation: navigation.employers
+    path: "employers/"
+  - translation: footer.nav.employees
+    path: "employees/"
+- - translation: navigation.care_settings
+    path: "care_settings/"
+  - translation: footer.nav.about
+    path: "about/"
+- - translation: navigation.the_science
+    path: "the_science/"
+  - translation: footer.nav.contact
+    path: "contact-us/"

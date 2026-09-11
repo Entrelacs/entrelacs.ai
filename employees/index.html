@@ -1,0 +1,252 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+
+<head>
+    {% capture meta_title %}{% t employees.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t employees.meta.description %}{% endcapture %}
+    {% include head.html meta_title=meta_title meta_description=meta_description %}
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    {% include navBar.html %}
+    <main class="page">
+        <div id="hero" class="pageItem">
+            <div class="pageItemContainer">
+                <div class="left">
+                    <div class="tag2">{% t employees.hero.eyebrow %}</div>
+                    <h1>{% t employees.hero.title %}</h1>
+                    <p class="heroSub">{% t employees.hero.description %}</p>
+                    <div class="ctas">
+                        <a href="{{ site.baseurl }}/waiting-list/" class="cta">{% t home.hero.cta_waitlist %}</a>
+                        <!-- <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t employees.hero.cta_sample %}</a> -->
+                        <a href="#theLine" class="cta cta1">{% t employees.hero.cta_employer %}</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/images/employeesPage/hero.webp" alt="A person reviewing their own private report">
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="whyBother" style="background: #F2F5FA;">
+            <div class="pageItemContainer">
+                <div class="badge">{% t employees.why_bother.tag %}</div>
+                <h2>{% t employees.why_bother.title %}</h2>
+                <p class="lsectionP">{% t employees.why_bother.text %}</p>
+                <p class="lsectionP">{% t employees.why_bother.text2 %}</p>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="fortyTwo" style="background: #FEF0F3;">
+            <div class="pageItemContainer">
+                <div class="cardImageRow">
+                    <div class="cardImageCol">
+                        <div class="badge">{% t employees.forty_two.tag %}</div>
+                        <h2>{% t employees.forty_two.title %}</h2>
+                        <p class="lsectionP">{% t employees.forty_two.text %}</p>
+                        <p class="lsectionP">{% t employees.forty_two.text2 %}</p>
+                        <p class="lsectionP">{% t employees.forty_two.text3 %}</p>
+                        <p class="lsectionP">{% t employees.forty_two.text4 %}</p>
+                    </div>
+                    <div class="cardImageCol cardImageImage">
+                        <img src="/images/employeesPage/forty-two.webp" alt="{% t employees.forty_two.title %}" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="fourMoves" style="background: #F2F5FA;">
+            <div class="pageItemContainer">
+                <div class="badge">{% t employees.four_moves.tag %}</div>
+                <h2>{% t employees.four_moves.title %}</h2>
+                <p class="lsectionP">{% t employees.four_moves.subtitle %}</p>
+
+                {% assign moves_items = site.translations[site.lang].employees.four_moves.accordion %}
+                {% include accordion.html id="fourMovesAccordion" items=moves_items image_alt="Entrelacs check-in on
+                mobile" %}
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="remembers">
+            <div class="pageItemContainer">
+                <div class="textImageRow">
+                    <div class="textImageCol">
+                        <div class="badge">{% t employees.remembers.tag %}</div>
+                        <h2>{% t employees.remembers.title %}</h2>
+                        <p class="lsectionP">{% t employees.remembers.text %}</p>
+                    </div>
+                    <div class="textImageCol textImageImage">
+                        <img src="/images/employeesPage/remembers.webp" alt="{% t employees.remembers.title %}" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="precisionCards">
+                    {% assign remembers_cards = site.translations[site.lang].employees.remembers.cards %}
+                    {% for card in remembers_cards %}
+                    <div class="precisionCard">
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.text }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="noteBox">
+                    <h4>{% t employees.remembers.note.title %}</h4>
+                    <p>{% t employees.remembers.note.text %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="theLine" style="background: #F2F5FA;">
+            <div class="pageItemContainer">
+                <div class="badge">{% t employees.the_line.tag %}</div>
+                <h2>{% t employees.the_line.title %}</h2>
+
+                <div class="loopCards">
+                    <div class="loopCard loopCard-navy">
+                        <div class="loopCardImage">
+                            <img src="/images/employersPage/cohort1.webp" alt="{% t employees.the_line.you_card.title %}" loading="lazy">
+                        </div>
+                        <div class="loopCardBody">
+                            <h4>{% t employees.the_line.you_card.title %}</h4>
+                            <p>{% t employees.the_line.you_card.text %}</p>
+                        </div>
+                    </div>
+                    <div class="loopCard loopCard-pink">
+                        <div class="loopCardImage">
+                            <img src="/images/employersPage/cohort2.webp" alt="{% t employees.the_line.them_card.title %}" loading="lazy">
+                        </div>
+                        <div class="loopCardBody">
+                            <h4>{% t employees.the_line.them_card.title %}</h4>
+                            <p>{% t employees.the_line.them_card.text %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="noteBoxRow">
+                    {% assign line_notes = site.translations[site.lang].employees.the_line.notes %}
+                    {% for note in line_notes %}
+                    <div class="noteBox">
+                        <h4>{{ note.title }}</h4>
+                        <p>{{ note.text }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="noteBox">
+                    <h4>{% t employees.the_line.consent.title %}</h4>
+                    <ul class="checkList checkList-teal">
+                        {% for item in site.translations[site.lang].employees.the_line.consent.items %}
+                        <li>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <rect width="30" height="30" rx="15" fill="#CFDEDE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.3705 9.23758L12.4205 17.8751L10.0455 15.3376C9.60801 14.9251 8.92051 14.9001 8.42051 15.2501C7.93301 15.6126 7.79551 16.2501 8.09551 16.7626L10.908 21.3376C11.183 21.7626 11.658 22.0251 12.1955 22.0251C12.708 22.0251 13.1955 21.7626 13.4705 21.3376C13.9205 20.7501 22.508 10.5126 22.508 10.5126C23.633 9.36258 22.2705 8.35008 21.3705 9.22508V9.23758Z"
+                                    fill="#156B70" />
+                            </svg>
+                            <p>{{ item }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="noteBox">
+                    <h4>{% t employees.the_line.later.title %}</h4>
+                    <p>{% t employees.the_line.later.text %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection lsection-dark" id="aiQuestion">
+            <div class="aiQuestionRow">
+                <div class="aiQuestionText">
+                    <div class="badge">{% t employees.ai_question.tag %}</div>
+                    <h2>{% t employees.ai_question.title %}</h2>
+                    <p class="lsectionP">{% t employees.ai_question.text %}</p>
+                    <p class="lsectionP">{% t employees.ai_question.text2 %}</p>
+                    <p class="lsectionP">{% t employees.ai_question.text3 %}</p>
+                </div>
+                <div class="aiQuestionImage">
+                    <img src="{% t employees.ai_question.image %}" alt="{% t employees.ai_question.title %}" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="faq">
+            <div class="pageItemContainer">
+                <h2>{% t employees.faq.title %}</h2>
+                <div class="faqList">
+                    {% assign items = site.translations[site.lang].employees.faq.items %}
+                    {% for item in items %}
+                    {% assign heading_id = 'employees-faq-heading-' | append: forloop.index %}
+                    {% assign panel_id = 'employees-faq-panel-' | append: forloop.index %}
+                    <div class="faqItem">
+                        <div class="faqItemHeader" id="{{ heading_id }}" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ panel_id }}">
+                            <h4>{{ item.q }}</h4>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M3.33464 20.0007C3.33464 29.2054 10.7966 36.6673 20.0013 36.6673C29.206 36.6673 36.668 29.2054 36.668 20.0007C36.668 10.7959 29.2061 3.33399 20.0013 3.33399C10.7966 3.33398 3.33464 10.7959 3.33464 20.0007Z"
+                                    stroke="#869D9D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M14.1161 17.9004L19.9995 23.7671L25.8828 17.9004" stroke="#495050"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="faqItemBody" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
+                            <p>{{ item.a }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        {% include helpNow.html %}
+
+        {% include cta_banner.html %}
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+        // Accordion behavior for the FAQ list
+        document.addEventListener('DOMContentLoaded', function () {
+            var faqHeaders = document.querySelectorAll('.faqItemHeader');
+
+            function setItemOpen(item, isOpen) {
+                item.classList.toggle('is-open', isOpen);
+                var button = item.querySelector('.faqItemHeader');
+                if (button) {
+                    button.setAttribute('aria-expanded', String(isOpen));
+                }
+            }
+
+            faqHeaders.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    var item = header.closest('.faqItem');
+                    if (!item) return;
+                    var isOpen = item.classList.contains('is-open');
+                    document.querySelectorAll('.faqItem.is-open').forEach(function (el) {
+                        if (el !== item) setItemOpen(el, false);
+                    });
+                    setItemOpen(item, !isOpen);
+                });
+
+                header.addEventListener('keydown', function (event) {
+                    if (event.key !== 'Enter' && event.key !== ' ') return;
+
+                    event.preventDefault();
+                    header.click();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

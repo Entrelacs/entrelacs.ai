@@ -1,0 +1,328 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+
+<head>
+    {% capture meta_title %}{% t the_science.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t the_science.meta.description %}{% endcapture %}
+    {% include head.html meta_title=meta_title meta_description=meta_description %}
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    {% include navBar.html %}
+    <main class="page">
+        <div id="hero" class="pageItem">
+            <div class="pageItemContainer">
+                <h1>{% t the_science.hero.title %}</h1>
+                <p class="heroSub">{% t the_science.hero.description %}</p>
+                <div class="ctas">
+                    <a href="{{ site.baseurl }}/contact-us/" class="cta">{% t the_science.hero.cta_demo %}</a>
+                        <a href="{{ site.baseurl }}/waiting-list/" class="cta cta1">{% t home.hero.cta_waitlist %}</a>
+                    <!-- <a href="{{ site.baseurl }}/contact-us/" class="cta cta1">{% t the_science.hero.cta_sample %}</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="theProblem">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.problem.tag %}</div>
+                <h2>{% t the_science.problem.title %}</h2>
+                <div class="problemCard box">
+                    <div class="problemLeft">
+                        <div class="array problemStats">
+                            <div class="arrayItem">
+                                <h3>{% t the_science.problem.stat1_value %}</h3>
+                                <p>{% t the_science.problem.stat1_label %}</p>
+                            </div>
+                            <div class="arrayDivider"></div>
+                            <div class="arrayItem">
+                                <h3>{% t the_science.problem.stat2_value %}</h3>
+                                <p>{% t the_science.problem.stat2_label %}</p>
+                            </div>
+                        </div>
+                        {% assign problem_paragraphs = site.translations[site.lang].the_science.problem.paragraphs %}
+                        {% for para in problem_paragraphs %}
+                        <p class="lsectionP problemPara">{{ para }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="problemRight">
+                        <img src="/images/theSciencePage/problem.webp"
+                            alt="Person writing notes while reviewing data on a tablet" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="engine">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.engine.tag %}</div>
+                <h2>{% t the_science.engine.title %}</h2>
+                <p class="lsectionP">{% t the_science.engine.description %}</p>
+
+                <h3 class="engineSubheading">{% t the_science.engine.ksr_title %}</h3>
+
+                {% assign engine_items = site.translations[site.lang].the_science.engine.accordion %}
+                {% include accordion.html id="engineAccordion" items=engine_items
+                image_alt="Entrelacs Lacis assessment on mobile" %}
+
+                <div class="whyGrid">
+                    <div class="whyCard">
+                        <h4>{% t the_science.engine.why_connection.title %}</h4>
+                        <p>{% t the_science.engine.why_connection.text %}</p>
+                    </div>
+                    <div class="whyCard">
+                        <h4>{% t the_science.engine.why_now.title %}</h4>
+                        <p>{% t the_science.engine.why_now.text %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pageItem lsection" id="trust">
+            <div class="pageItemContainer">
+                <div class="trustLeft">
+                    <div class="badge">{% t the_science.trust.tag %}</div>
+                    <h2>{% t the_science.trust.title %}</h2>
+                    {% assign trust_paragraphs = site.translations[site.lang].the_science.trust.paragraphs %}
+                    {% for para in trust_paragraphs %}
+                    <p class="lsectionP">{{ para }}</p>
+                    {% endfor %}
+                </div>
+                <div class="trustRight">
+                    <img src="/images/theSciencePage/privacy.webp"
+                        alt="Employee smiling while reviewing private results" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="aiBoundary">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.ai_boundary.tag %}</div>
+                <h2>{% t the_science.ai_boundary.title %}</h2>
+                {% assign boundary_paragraphs = site.translations[site.lang].the_science.ai_boundary.paragraphs %}
+                {% for para in boundary_paragraphs %}
+                <p class="lsectionP">{{ para }}</p>
+                {% endfor %}
+
+                <div class="boundaryGrid">
+                    {% assign boundary_cards = site.translations[site.lang].the_science.ai_boundary.cards %}
+                    {% for card in boundary_cards %}
+                    <div class="boundaryCard">
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.text }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pageItem lsection collabs" id="validation">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.solution.tag %}</div>
+                <h2>{% t the_science.solution.title %}</h2>
+                <p class="lsectionP">{% t the_science.solution.intro %}</p>
+
+                <div class="collabs-main">
+                    <div class="collabs-foundations" aria-label="Scientific foundations">
+                        {% assign foundations = site.translations[site.lang].the_science.solution.foundations.columns %}
+                        {% for foundation in foundations %}
+                        {% assign heading_id = 'science-foundation-heading-' | append: forloop.index %}
+                        {% assign panel_id = 'science-foundation-panel-' | append: forloop.index %}
+                        <div class="collabs-foundation-item">
+                            <div class="collabs-foundation-head" id="{{ heading_id }}" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ panel_id }}">
+                                <span class="collabs-foundation-label">{{ foundation.title }}</span>
+                                <span class="collabs-foundation-icon" aria-hidden="true"></span>
+                            </div>
+                            <div class="collabsHidden" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
+                                <ul class="collabs-foundation-list">
+                                    {% for bullet in foundation.items %}
+                                    <li class="collabs-foundation-list-item">{{ bullet }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="collabs-image">
+                        <img src="/images/theSciencePage/approach1.webp" alt="Globe representing global policy and research" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="solutionProgress">
+                    <strong>{% t the_science.solution.in_progress_label %}</strong> {% t the_science.solution.in_progress_text %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pageItem lsection" id="certifications">
+            <div class="pageItemContainer">
+                <div class="badge">{% t the_science.certifications.tag %}</div>
+                <h2>{% t the_science.certifications.title %}</h2>
+
+                <div class="statusToday">
+                    <h4>{% t the_science.certifications.status.title %}</h4>
+                    <p>{% t the_science.certifications.status.text %}</p>
+                </div>
+
+                <div class="faqList">
+                    {% assign cert_items = site.translations[site.lang].the_science.certifications.items %}
+                    {% for item in cert_items %}
+                    {% assign heading_id = 'science-cert-heading-' | append: forloop.index %}
+                    {% assign panel_id = 'science-cert-panel-' | append: forloop.index %}
+                    <div class="faqItem">
+                        <div class="faqItemHeader" id="{{ heading_id }}" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ panel_id }}">
+                            <h4>{{ item.q }}</h4>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M3.33464 20.0007C3.33464 29.2054 10.7966 36.6673 20.0013 36.6673C29.206 36.6673 36.668 29.2054 36.668 20.0007C36.668 10.7959 29.2061 3.33399 20.0013 3.33399C10.7966 3.33398 3.33464 10.7959 3.33464 20.0007Z"
+                                    stroke="#869D9D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M14.1161 17.9004L19.9995 23.7671L25.8828 17.9004" stroke="#495050"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="faqItemBody" id="{{ panel_id }}" role="region" aria-labelledby="{{ heading_id }}">
+                            <p>{{ item.a }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
+        {% include helpNow.html %}
+
+        {% include cta_banner.html %}
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+        // Accordion behavior for the FAQ list
+        document.addEventListener('DOMContentLoaded', function () {
+            var faqHeaders = document.querySelectorAll('.faqItemHeader');
+
+            function setItemOpen(item, selector, isOpen) {
+                item.classList.toggle('is-open', isOpen);
+                var trigger = item.querySelector(selector);
+                if (trigger) {
+                    trigger.setAttribute('aria-expanded', String(isOpen));
+                }
+            }
+
+            faqHeaders.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    var item = header.closest('.faqItem');
+                    if (!item) return;
+                    var isOpen = item.classList.contains('is-open');
+                    document.querySelectorAll('.faqItem.is-open').forEach(function (el) {
+                        if (el !== item) setItemOpen(el, '.faqItemHeader', false);
+                    });
+                    setItemOpen(item, '.faqItemHeader', !isOpen);
+                });
+
+                header.addEventListener('keydown', function (event) {
+                    if (event.key !== 'Enter' && event.key !== ' ') return;
+
+                    event.preventDefault();
+                    header.click();
+                });
+            });
+
+        });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var headers = document.querySelectorAll('.collabs-foundation-head');
+                var collabsImage = document.querySelector('.collabs-image img');
+
+                // Image array mapped by foundation index (0, 1, 2...)
+                var collabsImages = [
+                    {
+                        src: '/images/theSciencePage/approach1.webp',
+                        alt: 'Globe representing global policy and research'
+                    },
+                    {
+                        src: '/images/theSciencePage/approach2.webp',
+                        alt: 'Academic collaboration and scientific network visual'
+                    },
+                    {
+                        src: '/images/theSciencePage/approach3.webp',
+                        alt: 'Real-world evidence and validation visual'
+                    }
+                ];
+
+                // Preload all collabs images to avoid jerky loading on item switch
+                collabsImages.forEach(function (image) {
+                    var img = new Image();
+                    img.src = image.src;
+                });
+
+                if (!headers.length) return;
+
+                headers.forEach(function (head, index) {
+                    head.addEventListener('click', function () {
+                        var item = head.closest('.collabs-foundation-item');
+                        if (!item) return;
+
+                        var hidden = item.querySelector('.collabsHidden');
+                        if (!hidden) return;
+
+                        // Close other open items
+                        document.querySelectorAll('.collabs-foundation-item .collabsHidden.is-open').forEach(function (el) {
+                            if (el !== hidden) {
+                                el.classList.remove('is-open');
+                                var otherHead = el.closest('.collabs-foundation-item').querySelector('.collabs-foundation-head');
+                                if (otherHead) {
+                                    otherHead.classList.remove('is-open');
+                                    otherHead.setAttribute('aria-expanded', 'false');
+                                }
+                            }
+                        });
+
+                        var isOpen = hidden.classList.contains('is-open');
+                        if (isOpen) {
+                            hidden.classList.remove('is-open');
+                            head.classList.remove('is-open');
+                            head.setAttribute('aria-expanded', 'false');
+                        } else {
+                            hidden.classList.add('is-open');
+                            head.classList.add('is-open');
+                            head.setAttribute('aria-expanded', 'true');
+
+                            if (collabsImage) {
+                                var data = collabsImages[index] || collabsImages[0];
+                                if (data) {
+                                    collabsImage.src = data.src;
+                                    if (data.alt) {
+                                        collabsImage.alt = data.alt;
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    head.addEventListener('keydown', function (event) {
+                        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+                        event.preventDefault();
+                        head.click();
+                    });
+                });
+            });
+        </script>
+</body>
+
+</html>
+
+
+</html>

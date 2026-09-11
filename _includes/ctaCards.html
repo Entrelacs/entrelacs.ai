@@ -90,16 +90,18 @@
     {% for card in cards %}
     <div class="ctaCardItem" style="background: {{ card.bg_color }};">
         <div>
-            {{ card.svg_content }}
-            <h3>{{ card.title }}</h3>
-            <p>{{ card.desc }}</p>
+            <div aria-hidden="true">
+                {{ card.svg_content }}
+            </div>
+            <h3 {% if card.text_color %}style="color: {{ card.text_color }};"{% endif %}>{{ card.title }}</h3>
+            <p {% if card.text_color %}style="color: {{ card.text_color }}; opacity: 0.85;"{% endif %}>{{ card.desc }}</p>
         </div>
         <a href="{{ site.baseurl }}{{ card.link }}" class="ctaCardItemLearn">
-            <p>{{ card.cta_text }}</p>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#080808" stroke-width="1.5"
+            <p {% if card.text_color %}style="color: {{ card.text_color }};"{% endif %}>{{ card.cta_text }}</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="{{ card.arrow_color | default: '#080808' }}" stroke-width="1.5"
                     stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3.5 12H20.33" stroke="#080808" stroke-width="1.5" stroke-miterlimit="10"
+                <path d="M3.5 12H20.33" stroke="{{ card.arrow_color | default: '#080808' }}" stroke-width="1.5" stroke-miterlimit="10"
                     stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </a>

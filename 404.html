@@ -5,7 +5,9 @@
 <html lang="en">
 
 <head>
-  {%- include head.html -%}
+  {% capture meta_title %}{% t 404.meta.title %}{% endcapture %}
+  {% capture meta_description %}{% t 404.meta.description %}{% endcapture %}
+  {%- include head.html meta_title=meta_title meta_description=meta_description -%}
   <style type="text/css" media="screen">
     .container {
       margin: 150px auto;
@@ -48,7 +50,7 @@
       <img src="/images/logo.png" alt="">
     </div>
     <h1>404</h1>
-    <p><strong>{% t 404 %}</strong></p>
+    <p><strong>{% t 404.message %}</strong></p>
   </div>
 
 </body>

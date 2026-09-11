@@ -5,10 +5,9 @@
 <html lang="{{ site.lang | default: 'en' }}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROI Calculator</title>
-    {% include head.html %}
+    {% capture meta_title %}{% t roi_calculator.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t roi_calculator.meta.description %}{% endcapture %}
+    {% include head.html meta_title=meta_title meta_description=meta_description %}
     <style>
         .page{
             padding-top: 80px;

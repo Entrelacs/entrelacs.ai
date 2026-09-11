@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     min-height: 300px;
-    background-color: var(--teal-900);
+    background-color: var(--surface-teal);
     /* A very dark, rich black */
     color: #e0e0e0;
     display: flex;
@@ -53,12 +53,17 @@
     /* min-width: 128px;
     min-height: 128px;    */
 }
+.logoContainer svg{
+    height: 90px;
+    width: fit-content;
+}
 
 .linksContainer {
     width: 55%;
     display: flex;
     justify-content: flex-end;
     gap: 50px;
+    padding-top: 20px;
 }
 
 .linkColumn {
@@ -87,7 +92,7 @@
 }
 
 .footerSponsers img {
-    max-height: 50px;
+    max-height: 65px;
     width: auto;
     flex-shrink: 0;
 }
@@ -216,7 +221,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     .footer {
         padding-left: 24px;
         padding-right: 24px;

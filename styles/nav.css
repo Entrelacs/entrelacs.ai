@@ -6,7 +6,8 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: var(--teal-background); 
+  background-color: var(--surface-teal); 
+  color: var(--text-white);
   backdrop-filter: blur(100px);
 }
 
@@ -29,8 +30,8 @@
   color: var(--dark-blue);
   align-items: center;
 }
-.logo img{
-  width: 45px;
+.logo svg{
+  width: auto;
   height: 45px;
   margin-right: 10px;
 }
@@ -63,6 +64,14 @@
   color: var(--teal);
 }
 
+.navLinks a:focus-visible,
+.mobileMenu a:focus-visible,
+.langFlag:focus-visible,
+.hamburger:focus-visible {
+  outline: 3px solid var(--surface-smartinsights);
+  outline-offset: 4px;
+}
+
 .navLinks .cta {
   font-weight: 700;
   font-size: 16px;
@@ -80,11 +89,14 @@
   height: 25px;
   cursor: pointer;
   z-index: 20;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 .hamburger span {
   height: 4px;
   width: 100%;
-  background: var(--dark-blue);
+  background: var(--text-white);
   margin: 4px 0;
   border-radius: 2px;
   transition: 0.3s;
@@ -92,7 +104,6 @@
 
 /* Dropdown menu for mobile */
 .mobileMenu {
-  display: none;
   position: absolute;
   top: 60px;
   right: 0;
@@ -102,8 +113,11 @@
   width: 100%;
   padding: 1rem 0;
   z-index: 15;
-  background: #eaf6f3; 
+  background: var(--surface-teal); 
   backdrop-filter: blur(100px);
+}
+.mobileMenu[hidden] {
+  display: none;
 }
 .mobileMenu ul {
   list-style: none;
@@ -170,19 +184,32 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.langFlag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
   cursor: pointer;
+  padding: 0;
 }
 .languageSwitcher svg, .languageSwitcher img{
   height: 30px;
 }
 .langDropdown{
-  display: none;
   position: absolute;
   top: 100%;
   right: 0;
   width: 150px;
-  background: var(--background);
+  background: var(--surface-teal);
   font-size: 16px;
+}
+
+.langDropdown[hidden] {
+  display: none;
 }
 .langDropdownitem{
   padding: 10px 14px;
@@ -192,6 +219,11 @@
 }
 .langDropdownitem:hover{
   background: #ddd;
+}
+
+.langDropdownitem:focus-visible {
+  outline: 3px solid var(--surface-smartinsights);
+  outline-offset: -3px;
 }
 
 .langDropdownitem img{
