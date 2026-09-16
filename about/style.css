@@ -442,7 +442,6 @@ main .cta {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 56px;
 }
 
@@ -543,7 +542,9 @@ main .cta {
         width: 47%;
         margin-bottom: 46px;
     }
-
+    #extendedLeadership .groupList{
+        justify-content: space-between;
+    }
     #extendedLeadership .groupListItem {
         width: 30%;
     }

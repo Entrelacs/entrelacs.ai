@@ -43,8 +43,8 @@ home:
   video_link: https://www.youtube.com/embed/8Fzfn64_KF0?si=t0QUz5IS1bdXzJmB
   hero:
     tag_text: "Santé cérébrale. Personnelle, privée, précise."
-    title_prefix: "L’actif qui fait tourner votre entreprise n’a jamais été mesuré."
-    subtitle: "Entrelacs mesure la connexion sociale — le déterminant de la santé cérébrale avec les preuves les plus solides et la charge de mesure la plus faible — une personne à la fois, toujours en privé. Les employés se voient eux-mêmes. Les employeurs voient où le soutien qu’ils financent déjà est nécessaire."
+    title_prefix: "Votre entreprise repose sur le lien social.<br> Il n'a jamais été mesuré."
+    subtitle: "Entrelacs le mesure, une personne à la fois et toujours en privé. Chaque personne salariée voit sa propre lecture ; l'employeur voit où le soutien qu'il finance déjà est nécessaire."
     wheel:
       item1: "au bon moment"
       item2: "avec la rigueur clinique"
@@ -684,9 +684,9 @@ team:
         role: "Directrice des opérations"
         bio: "PharmD, MBA. Spécialiste des opérations dans la santé, forte d’une longue expérience du déploiement de stratégies pharmaceutiques à l’échelle européenne. Elle porte l’excellence opérationnelle et l’accès au marché européen pour Entrelacs."
         image: "/images/teamMembers/DrCristinaClaver.png"
-      - name: "Katie Cobb"
-        role: "Directrice marketing (à venir)"
-        bio: "Fondatrice d'Oxford Comma Strategy et architecte de la stratégie de catégorie d'Entrelacs ainsi que du discours de mise sur le marché aux États-Unis."
+      # - name: "Katie Cobb"
+      #   role: "Directrice marketing (à venir)"
+      #   bio: "Fondatrice d'Oxford Comma Strategy et architecte de la stratégie de catégorie d'Entrelacs ainsi que du discours de mise sur le marché aux États-Unis."
         image: "/images/teamMembers/katieCobb.png"
       - name: "Cyril Marie"
         role: "Responsable de la marque et de la création, France (à venir)"

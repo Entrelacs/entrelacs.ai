@@ -41,8 +41,8 @@ home:
     description: "Entrelacs provides clinical-grade AI to measure social connection and brain health in private, helping organizations act earlier and more precisely."
   video_link: https://www.youtube.com/embed/KT3zVYqUUn4?si=zRbS_7o-PsrSFgDD
   hero:
-    title_prefix: "The asset your company runs on has never been measured."
-    subtitle: "Entrelacs measures social connection — the determinant of brain health with the strongest evidence and the lowest measurement burden — one person at a time, always in private. Employees see themselves. Employers see where the support they already fund is needed."
+    title_prefix: "Your company runs on social connection.<br> It has never been measured."
+    subtitle: "Entrelacs measures it, one person at a time and always in private. Employees see themselves; employers see where the support they already fund is needed"
     tag_text: "Brain Health. Personal, Private, Precise."
     wheel:
       item1: "when it matters"
@@ -655,9 +655,9 @@ team:
         role: "Chief Operating Officer"
         bio: "PharmD, MBA. Healthcare operations expert with deep experience leading pharmaceutical strategy implementation across Europe. Drives operational excellence and EU market access for Entrelacs."
         image: "/images/teamMembers/DrCristinaClaver.png"
-      - name: "Katie Cobb"
-        role: "Chief Marketing Officer (incoming)"
-        bio: "Founder of Oxford Comma Strategy and architect of Entrelacs' category strategy as well as go-to-market messaging in the U.S."
+      # - name: "Katie Cobb"
+      #   role: "Chief Marketing Officer (incoming)"
+      #   bio: "Founder of Oxford Comma Strategy and architect of Entrelacs' category strategy as well as go-to-market messaging in the U.S."
         image: "/images/teamMembers/katieCobb.png"
       - name: "Cyril Marie"
         role: "Head of Brand and Creative, France (incoming)"
