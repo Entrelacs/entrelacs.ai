@@ -1,0 +1,184 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+
+<head>
+    {% capture meta_title %}{% t sample_report.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t sample_report.meta.description %}{% endcapture %}
+    {%- include head.html meta_title=meta_title meta_description=meta_description -%}
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    {%- include navBar.html -%}
+    {% assign report = site.translations[site.lang].sample_report %}
+    <main class="sample-report-page">
+        <section class="sample-report-section">
+            <div class="sample-report-header">
+                <h1>{% t sample_report.title %}</h1>
+            </div>
+
+            <div class="sample-report-shell">
+                <div class="sample-report-toolbar">
+                    <div class="sample-report-tabs" aria-label="{% t sample_report.report_type_label %}">
+                        <button type="button" class="sample-report-tab is-active">{% t sample_report.tabs.employee %}</button>
+                        <button type="button" class="sample-report-tab">{% t sample_report.tabs.company %}</button>
+                    </div>
+                    <button type="button" class="sample-report-download">{% t sample_report.download %}</button>
+                </div>
+
+                <p class="sample-report-intro">{% t sample_report.intro %}</p>
+
+                <div class="sample-report-stage">
+                    <article class="report-preview" id="report-preview" aria-label="{% t sample_report.preview_aria %}">
+                        <header class="report-preview__header">
+                            <div class="report-preview__brand" aria-hidden="true">e</div>
+                            <div class="report-preview__heading">
+                                <p class="report-preview__eyebrow">{% t sample_report.header.eyebrow %}</p>
+                                <h2>{% t sample_report.header.title %}</h2>
+                            </div>
+                            <button type="button" class="report-preview__icon" aria-label="{% t sample_report.menu_aria %}">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </header>
+
+                        <section class="report-preview__section report-preview__section--summary">
+                            <div class="report-preview__summary-top">
+                                <div class="report-preview__label-row">
+                                    <span class="report-preview__label report-preview__label--accent">{% t sample_report.labels.primary %}</span>
+                                    <span class="report-preview__label">{% t sample_report.labels.secondary %}</span>
+                                </div>
+                                <span class="report-preview__summary-action" aria-hidden="true">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <h3>{% t sample_report.summary.title %}</h3>
+                            <p class="report-preview__date">{% t sample_report.summary.date %}</p>
+                            <p class="report-preview__caption">{% t sample_report.summary.score_prefix %} <strong>{% t sample_report.summary.score_value %}</strong></p>
+                            <div class="report-preview__score-block">
+                                <h4 class="report-preview__score-title">{% t sample_report.summary.score_heading %}</h4>
+                                <div class="score-ring" aria-hidden="true">
+                                    <div class="score-ring__inner"></div>
+                                </div>
+                                <p class="report-preview__score-status">{% t sample_report.summary.ring_label %}</p>
+                            </div>
+
+                            <div class="report-preview__copy">
+                                <h4>{% t sample_report.summary.meaning_title %}</h4>
+                                <p>{% t sample_report.summary.meaning_body %}</p>
+                            </div>
+                        </section>
+
+                        <section class="report-preview__section">
+                            <div class="report-preview__section-title">
+                                <div class="report-preview__section-title-main">
+                                    <span class="section-dot"></span>
+                                    <h3>{% t sample_report.patterns.title %}</h3>
+                                </div>
+                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
+                            </div>
+                            <p>{% t sample_report.patterns.intro %}</p>
+
+                            <div class="signature-card">
+                                <div class="signature-card__header">
+                                    <h4>{% t sample_report.patterns.signature.title %}</h4>
+                                    <span class="signature-card__info">i</span>
+                                </div>
+                                <p>{% t sample_report.patterns.signature.body %}</p>
+                                <div class="signature-card__callout">
+                                    <span class="signature-card__marker"></span>
+                                    <p>{% t sample_report.patterns.signature.callout %}</p>
+                                </div>
+                            </div>
+
+                            <div class="metric-stack">
+                                {% for metric in report.patterns.metrics %}
+                                <article class="metric-card{% if metric.featured %} metric-card--featured{% endif %}">
+                                    <div class="metric-card__title-row">
+                                        <h4>{{ metric.title }}</h4>
+                                        {% if metric.featured %}
+                                        <span class="metric-card__accent">+</span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="metric-card__score-row">
+                                        <strong>{{ metric.value }}</strong>
+                                        <span>{{ metric.level }}</span>
+                                    </div>
+                                    <div class="metric-bar{% if metric.low %} metric-bar--low{% endif %}">
+                                        <span class="metric-bar__fill metric-bar__fill--{{ forloop.index }}"></span>
+                                    </div>
+                                    <div class="metric-bar__range">
+                                        <span>{% t sample_report.patterns.range_low %}</span>
+                                        <span>{% t sample_report.patterns.range_high %}</span>
+                                    </div>
+                                    <p>{{ metric.body }}</p>
+                                </article>
+                                {% endfor %}
+                            </div>
+
+                            <a class="report-preview__link" href="#themes">{% t sample_report.patterns.all_patterns %}</a>
+                            <span class="report-preview__link-indicator" aria-hidden="true"></span>
+                        </section>
+
+                        <section class="report-preview__section" id="themes">
+                            <div class="report-preview__section-title">
+                                <div class="report-preview__section-title-main">
+                                    <span class="section-dot section-dot--muted"></span>
+                                    <h3>{% t sample_report.themes.title %}</h3>
+                                </div>
+                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
+                            </div>
+                            <p>{% t sample_report.themes.intro %}</p>
+                            <p class="report-preview__supporting-copy">{% t sample_report.themes.outro %}</p>
+
+                            <div class="theme-list">
+                                {% for item in report.themes.items %}
+                                <article class="theme-item">
+                                    <div class="theme-item__head">
+                                        <div class="theme-item__icon theme-item__icon--{{ item.icon }}"></div>
+                                        <h4>{{ item.title }}</h4>
+                                    </div>
+                                    <div class="theme-item__body">
+                                        <p>{{ item.body }}</p>
+                                    </div>
+                                    <span class="theme-item__chevron theme-item__chevron--down"></span>
+                                </article>
+                                {% endfor %}
+                            </div>
+                        </section>
+
+                        <section class="report-preview__section">
+                            <div class="report-preview__section-title">
+                                <div class="report-preview__section-title-main">
+                                    <span class="section-dot section-dot--pale"></span>
+                                    <h3>{% t sample_report.challenges.title %}</h3>
+                                </div>
+                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
+                            </div>
+                            <p>{% t sample_report.challenges.intro %}</p>
+
+                            <div class="challenge-list">
+                                {% for item in report.challenges.items %}
+                                <article class="challenge-item">
+                                    <div class="challenge-item__row">
+                                        <span>{{ item.title }}</span>
+                                        <strong class="challenge-tag">{{ item.level }}</strong>
+                                    </div>
+                                    <p>{{ item.body }}</p>
+                                </article>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    {%- include footer.html -%}
+</body>
+
+</html>

@@ -27,8 +27,8 @@
                 </h1>
                 <p class="heroSub">{% t home.hero.subtitle %}</p>
                 <div class="ctas">
-                    <a href="{{ site.baseurl}}/waiting-list/" class="cta cta1">
-                        <p style="margin-right: 10px;">{% t home.hero.cta_waitlist %}</p>
+                    <a href="{{ site.baseurl}}/sample_report/" class="cta cta1">
+                        <p style="margin-right: 10px;">{% t home.hero.cta_sample_report %}</p>
                     </a>
                     <a href="{{ site.baseurl}}/contact-us/" class="cta">{% t home.hero.cta_demo %}</a>
                 </div>
@@ -36,7 +36,7 @@
         </div>
         {% assign credibility_item_1 = site.translations[site.lang].home.credibility_bar.fda_pre_submission %}
         {% assign credibility_item_2 = site.translations[site.lang].home.credibility_bar.eu_research_program %}
-        {% include credibitlty_bar.html item_1=credibility_item_1 item_2=credibility_item_2 %}
+        {% include credibility_bar.html item_1=credibility_item_1 item_2=credibility_item_2 %}
         <div class="pageItem lsection" id="next" style="background: #F2F5FA;">
             <div class="pageItemContainer">
                 <div class="problemTop">
