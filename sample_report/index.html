@@ -23,7 +23,8 @@
             <div class="sample-report-shell">
                 <div class="sample-report-toolbar">
                     <div class="sample-report-tabs" aria-label="{% t sample_report.report_type_label %}">
-                        <button type="button" class="sample-report-tab is-active">{% t sample_report.tabs.employee %}</button>
+                        <button type="button" class="sample-report-tab is-active">{% t sample_report.tabs.employee
+                            %}</button>
                         <button type="button" class="sample-report-tab">{% t sample_report.tabs.company %}</button>
                     </div>
                     <button type="button" class="sample-report-download">{% t sample_report.download %}</button>
@@ -39,138 +40,186 @@
                                 <p class="report-preview__eyebrow">{% t sample_report.header.eyebrow %}</p>
                                 <h2>{% t sample_report.header.title %}</h2>
                             </div>
-                            <button type="button" class="report-preview__icon" aria-label="{% t sample_report.menu_aria %}">
+                            <button type="button" class="report-preview__icon"
+                                aria-label="{% t sample_report.menu_aria %}">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </button>
                         </header>
 
-                        <section class="report-preview__section report-preview__section--summary">
-                            <div class="report-preview__summary-top">
-                                <div class="report-preview__label-row">
-                                    <span class="report-preview__label report-preview__label--accent">{% t sample_report.labels.primary %}</span>
-                                    <span class="report-preview__label">{% t sample_report.labels.secondary %}</span>
-                                </div>
-                                <span class="report-preview__summary-action" aria-hidden="true">
-                                    <span></span>
-                                </span>
-                            </div>
-                            <h3>{% t sample_report.summary.title %}</h3>
-                            <p class="report-preview__date">{% t sample_report.summary.date %}</p>
-                            <p class="report-preview__caption">{% t sample_report.summary.score_prefix %} <strong>{% t sample_report.summary.score_value %}</strong></p>
-                            <div class="report-preview__score-block">
-                                <h4 class="report-preview__score-title">{% t sample_report.summary.score_heading %}</h4>
-                                <div class="score-ring" aria-hidden="true">
-                                    <div class="score-ring__inner"></div>
-                                </div>
-                                <p class="report-preview__score-status">{% t sample_report.summary.ring_label %}</p>
-                            </div>
-
-                            <div class="report-preview__copy">
-                                <h4>{% t sample_report.summary.meaning_title %}</h4>
-                                <p>{% t sample_report.summary.meaning_body %}</p>
-                            </div>
-                        </section>
-
-                        <section class="report-preview__section">
-                            <div class="report-preview__section-title">
-                                <div class="report-preview__section-title-main">
-                                    <span class="section-dot"></span>
-                                    <h3>{% t sample_report.patterns.title %}</h3>
-                                </div>
-                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
-                            </div>
-                            <p>{% t sample_report.patterns.intro %}</p>
-
-                            <div class="signature-card">
-                                <div class="signature-card__header">
-                                    <h4>{% t sample_report.patterns.signature.title %}</h4>
-                                    <span class="signature-card__info">i</span>
-                                </div>
-                                <p>{% t sample_report.patterns.signature.body %}</p>
-                                <div class="signature-card__callout">
-                                    <span class="signature-card__marker"></span>
-                                    <p>{% t sample_report.patterns.signature.callout %}</p>
-                                </div>
-                            </div>
-
-                            <div class="metric-stack">
-                                {% for metric in report.patterns.metrics %}
-                                <article class="metric-card{% if metric.featured %} metric-card--featured{% endif %}">
-                                    <div class="metric-card__title-row">
-                                        <h4>{{ metric.title }}</h4>
-                                        {% if metric.featured %}
-                                        <span class="metric-card__accent">+</span>
-                                        {% endif %}
+                        <!-- <section class="pdf">
+                            <iframe class="pdfFrame" src="./Entrelacs.pdf" title="{% t sample_report.preview_aria %}" loading="lazy">
+                                <p class="pdf__fallback">
+                                    <a href="./Entrelacs.pdf" target="_blank" rel="noopener">{% t sample_report.download %}</a>
+                                </p>
+                            </iframe>
+                        </section> -->
+                        <section class="reportContent">
+                            <div class="assistantMessageRow">
+                                <section class="resultsReportShell"
+                                    aria-label="Your personalized connection report">
+                                    <div class="resultsReportCard">
+                                        <div class="resultsTopTabsWrap">
+                                            <div class="resultsTopTabs" role="tablist"
+                                                aria-label="Report sections"><button type="button" role="tab"
+                                                    aria-selected="true"
+                                                    class="resultsTopTabButton _resultsTopTabButtonActive">Social
+                                                    Connection</button><button type="button" role="tab"
+                                                    aria-selected="false"
+                                                    class="resultsTopTabButton ">Workplace</button></div>
+                                            <div class="resultsDownloadRow"><button type="button"
+                                                    class="resultsDownloadIconButton" aria-busy="false"
+                                                    aria-label="Download report as PDF"><svg viewBox="0 0 24 24"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true">
+                                                        <path d="M12 7L12 14M12 14L15 11M12 14L9 11" stroke="#22242a"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M16 17H12H8" stroke="#22242a" stroke-width="1.5"
+                                                            stroke-linecap="round"></path>
+                                                        <path opacity="0.5"
+                                                            d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                                                            stroke="#22242a" stroke-width="1.5"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                        <div class="resultsReportHeader">
+                                            <h2 class="resultsReportTitle">Your personalized connection
+                                                report</h2>
+                                            <p class="resultsReportDate">Completed September 15, 2026</p>
+                                        </div>
+                                        <div class="resultsScoreBlock">
+                                            <p class="resultsScoreLead">Your connection score is 91.2/100.
+                                            </p>
+                                            <div class="resultsScoreFrame">
+                                                <div class="resultsScoreInner">
+                                                    <div class="resultsScoreTitle">Overall Connection Score
+                                                    </div>
+                                                    <div class="resultsScoreBody">
+                                                        <div class="resultScoreCircle"><svg
+                                                                viewBox="0 0 108 108"
+                                                                class="resultScoreCircleSvg">
+                                                                <circle cx="54" cy="54" r="46" stroke="var(--gray-300)"
+                                                                    stroke-width="6" fill="none"></circle>
+                                                                <circle cx="54" cy="54" r="46" stroke="var(--teal-700)"
+                                                                    stroke-width="6" fill="none" stroke-linecap="round"
+                                                                    stroke-dasharray="289.02652413026095"
+                                                                    stroke-dashoffset="25.434334123462975"
+                                                                    transform="rotate(-90 54 54)"></circle>
+                                                            </svg>
+                                                            <div class="resultScoreCircleCenter"><span
+                                                                    class="resultScoreNumber">91.2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="resultBadge"
+                                                            style="background: linear-gradient(90deg, rgb(229, 255, 226) 0%, rgb(245, 255, 244) 100%); color: rgb(50, 105, 57);">
+                                                            Very High</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="resultsMeaningBlock">
+                                                <div class="resultsMeaningTitle">What does this mean?</div>
+                                                <p class="resultsMeaningBody">Your overall sense of
+                                                    connection is right about where most people with your secure,
+                                                    well-supported pattern sit. Close relationships and support flow
+                                                    steadily in both directions, giving you a dependable base to rely
+                                                    on.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="metric-card__score-row">
-                                        <strong>{{ metric.value }}</strong>
-                                        <span>{{ metric.level }}</span>
+                                    <div class="resultsAccordionList">
+                                        <div class="reportAccordion"><button type="button"
+                                                class="reportAccordionButton" aria-expanded="false"><span
+                                                    class="reportAccordionRow"><span
+                                                        class="reportSectionIconWrap" aria-hidden="true"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path opacity="0.4"
+                                                                d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M14.0809 14.15C11.2909 12.29 6.74094 12.29 3.93094 14.15C2.66094 15 1.96094 16.15 1.96094 17.38C1.96094 18.61 2.66094 19.75 3.92094 20.59C5.32094 21.53 7.16094 22 9.00094 22C10.8409 22 12.6809 21.53 14.0809 20.59C15.3409 19.74 16.0409 18.6 16.0409 17.36C16.0309 16.13 15.3409 14.99 14.0809 14.15Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path opacity="0.4"
+                                                                d="M19.9894 7.33999C20.1494 9.27999 18.7694 10.98 16.8594 11.21C16.8494 11.21 16.8494 11.21 16.8394 11.21H16.8094C16.7494 11.21 16.6894 11.21 16.6394 11.23C15.6694 11.28 14.7794 10.97 14.1094 10.4C15.1394 9.47999 15.7294 8.09999 15.6094 6.59999C15.5394 5.78999 15.2594 5.04999 14.8394 4.41999C15.2194 4.22999 15.6594 4.10999 16.1094 4.06999C18.0694 3.89999 19.8194 5.35999 19.9894 7.33999Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M21.9883 16.59C21.9083 17.56 21.2883 18.4 20.2483 18.97C19.2483 19.52 17.9883 19.78 16.7383 19.75C17.4583 19.1 17.8783 18.29 17.9583 17.43C18.0583 16.19 17.4683 15 16.2883 14.05C15.6183 13.52 14.8383 13.1 13.9883 12.79C16.1983 12.15 18.9783 12.58 20.6883 13.96C21.6083 14.7 22.0783 15.63 21.9883 16.59Z"
+                                                                fill="var(--blue-500)"></path>
+                                                        </svg></span><span class="reportAccordionTitle">Your
+                                                        Core Connection Patterns</span></span><svg viewBox="0 0 16 16"
+                                                    class="reportAccordionChevron" aria-hidden="true">
+                                                    <path d="M3 6.25 8 11l5-4.75" fill="none" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.6"></path>
+                                                </svg></button></div>
+                                        <div class="reportAccordion"><button type="button"
+                                                class="reportAccordionButton" aria-expanded="false"><span
+                                                    class="reportAccordionRow"><span
+                                                        class="reportSectionIconWrap" aria-hidden="true"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path opacity="0.4"
+                                                                d="M12 17V19.38C12 21.25 11.25 22 9.37 22H4.62C2.75 22 2 21.25 2 19.38V14.63C2 12.75 2.75 12 4.62 12H7V14.37C7 16.25 7.75 17 9.62 17H12Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path opacity="0.6"
+                                                                d="M17 12V14.37C17 16.25 16.25 17 14.37 17H9.62C7.75 17 7 16.25 7 14.37V9.62C7 7.75 7.75 7 9.62 7H12V9.37C12 11.25 12.75 12 14.62 12H17Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M22 4.62V9.37C22 11.25 21.25 12 19.37 12H14.62C12.75 12 12 11.25 12 9.37V4.62C12 2.75 12.75 2 14.62 2H19.37C21.25 2 22 2.75 22 4.62Z"
+                                                                fill="var(--blue-500)"></path>
+                                                        </svg></span><span
+                                                        class="reportAccordionTitle">Connection
+                                                        themes</span></span><svg viewBox="0 0 16 16"
+                                                    class="reportAccordionChevron" aria-hidden="true">
+                                                    <path d="M3 6.25 8 11l5-4.75" fill="none" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.6"></path>
+                                                </svg></button></div>
+                                        <div class="reportAccordion"><button type="button"
+                                                class="reportAccordionButton" aria-expanded="false"><span
+                                                    class="reportAccordionRow"><span
+                                                        class="reportSectionIconWrap" aria-hidden="true"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path opacity="0.4"
+                                                                d="M21.0802 8.58003V15.42C21.0802 16.54 20.4802 17.58 19.5102 18.15L13.5702 21.58C12.6002 22.14 11.4002 22.14 10.4202 21.58L4.48016 18.15C3.51016 17.59 2.91016 16.55 2.91016 15.42V8.58003C2.91016 7.46003 3.51016 6.41999 4.48016 5.84999L10.4202 2.42C11.3902 1.86 12.5902 1.86 13.5702 2.42L19.5102 5.84999C20.4802 6.41999 21.0802 7.45003 21.0802 8.58003Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M12 13.75C11.59 13.75 11.25 13.41 11.25 13V7.75C11.25 7.34 11.59 7 12 7C12.41 7 12.75 7.34 12.75 7.75V13C12.75 13.41 12.41 13.75 12 13.75Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M12 17.25C11.87 17.25 11.74 17.22 11.62 17.17C11.49 17.12 11.39 17.05 11.29 16.96C11.2 16.86 11.13 16.75 11.07 16.63C11.02 16.51 11 16.38 11 16.25C11 15.99 11.1 15.73 11.29 15.54C11.39 15.45 11.49 15.38 11.62 15.33C11.99 15.17 12.43 15.26 12.71 15.54C12.8 15.64 12.87 15.74 12.92 15.87C12.97 15.99 13 16.12 13 16.25C13 16.38 12.97 16.51 12.92 16.63C12.87 16.75 12.8 16.86 12.71 16.96C12.52 17.15 12.27 17.25 12 17.25Z"
+                                                                fill="var(--blue-500)"></path>
+                                                        </svg></span><span
+                                                        class="reportAccordionTitle">Connection
+                                                        challenges</span></span><svg viewBox="0 0 16 16"
+                                                    class="reportAccordionChevron" aria-hidden="true">
+                                                    <path d="M3 6.25 8 11l5-4.75" fill="none" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.6"></path>
+                                                </svg></button></div>
+                                        <div class="reportAccordion"><button type="button"
+                                                class="reportAccordionButton" aria-expanded="false"><span
+                                                    class="reportAccordionRow"><span
+                                                        class="reportSectionIconWrap" aria-hidden="true"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M20.5 16V18.5C20.5 20.43 18.93 22 17 22H7C5.07 22 3.5 20.43 3.5 18.5V17.85C3.5 16.28 4.78 15 6.35 15H19.5C20.05 15 20.5 15.45 20.5 16Z"
+                                                                fill="var(--blue-500)"></path>
+                                                            <path
+                                                                d="M15.5 2H8.5C4.5 2 3.5 3 3.5 7V14.58C4.26 13.91 5.26 13.5 6.35 13.5H19.5C20.05 13.5 20.5 13.05 20.5 12.5V7C20.5 3 19.5 2 15.5 2ZM13 10.75H8C7.59 10.75 7.25 10.41 7.25 10C7.25 9.59 7.59 9.25 8 9.25H13C13.41 9.25 13.75 9.59 13.75 10C13.75 10.41 13.41 10.75 13 10.75ZM16 7.25H8C7.59 7.25 7.25 6.91 7.25 6.5C7.25 6.09 7.59 5.75 8 5.75H16C16.41 5.75 16.75 6.09 16.75 6.5C16.75 6.91 16.41 7.25 16 7.25Z"
+                                                                fill="var(--blue-500)"></path>
+                                                        </svg></span><span class="reportAccordionTitle">Your
+                                                        Risk Profile</span></span><svg viewBox="0 0 16 16"
+                                                    class="reportAccordionChevron" aria-hidden="true">
+                                                    <path d="M3 6.25 8 11l5-4.75" fill="none" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.6"></path>
+                                                </svg></button></div>
                                     </div>
-                                    <div class="metric-bar{% if metric.low %} metric-bar--low{% endif %}">
-                                        <span class="metric-bar__fill metric-bar__fill--{{ forloop.index }}"></span>
-                                    </div>
-                                    <div class="metric-bar__range">
-                                        <span>{% t sample_report.patterns.range_low %}</span>
-                                        <span>{% t sample_report.patterns.range_high %}</span>
-                                    </div>
-                                    <p>{{ metric.body }}</p>
-                                </article>
-                                {% endfor %}
-                            </div>
-
-                            <a class="report-preview__link" href="#themes">{% t sample_report.patterns.all_patterns %}</a>
-                            <span class="report-preview__link-indicator" aria-hidden="true"></span>
-                        </section>
-
-                        <section class="report-preview__section" id="themes">
-                            <div class="report-preview__section-title">
-                                <div class="report-preview__section-title-main">
-                                    <span class="section-dot section-dot--muted"></span>
-                                    <h3>{% t sample_report.themes.title %}</h3>
-                                </div>
-                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
-                            </div>
-                            <p>{% t sample_report.themes.intro %}</p>
-                            <p class="report-preview__supporting-copy">{% t sample_report.themes.outro %}</p>
-
-                            <div class="theme-list">
-                                {% for item in report.themes.items %}
-                                <article class="theme-item">
-                                    <div class="theme-item__head">
-                                        <div class="theme-item__icon theme-item__icon--{{ item.icon }}"></div>
-                                        <h4>{{ item.title }}</h4>
-                                    </div>
-                                    <div class="theme-item__body">
-                                        <p>{{ item.body }}</p>
-                                    </div>
-                                    <span class="theme-item__chevron theme-item__chevron--down"></span>
-                                </article>
-                                {% endfor %}
-                            </div>
-                        </section>
-
-                        <section class="report-preview__section">
-                            <div class="report-preview__section-title">
-                                <div class="report-preview__section-title-main">
-                                    <span class="section-dot section-dot--pale"></span>
-                                    <h3>{% t sample_report.challenges.title %}</h3>
-                                </div>
-                                <span class="section-chevron section-chevron--up" aria-hidden="true"></span>
-                            </div>
-                            <p>{% t sample_report.challenges.intro %}</p>
-
-                            <div class="challenge-list">
-                                {% for item in report.challenges.items %}
-                                <article class="challenge-item">
-                                    <div class="challenge-item__row">
-                                        <span>{{ item.title }}</span>
-                                        <strong class="challenge-tag">{{ item.level }}</strong>
-                                    </div>
-                                    <p>{{ item.body }}</p>
-                                </article>
-                                {% endfor %}
+                                </section>
                             </div>
                         </section>
                     </article>
