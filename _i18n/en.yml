@@ -658,7 +658,7 @@ team:
       # - name: "Katie Cobb"
       #   role: "Chief Marketing Officer (incoming)"
       #   bio: "Founder of Oxford Comma Strategy and architect of Entrelacs' category strategy as well as go-to-market messaging in the U.S."
-        image: "/images/teamMembers/katieCobb.png"
+        # image: "/images/teamMembers/katieCobb.png"
       - name: "Cyril Marie"
         role: "Head of Brand and Creative, France (incoming)"
         bio: "Creative director and entrepreneur for twenty-five years. President of Inspire Studio, Annecy. Leads French brand identity, creative direction, and press strategy."

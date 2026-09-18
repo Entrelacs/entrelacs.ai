@@ -687,7 +687,7 @@ team:
       # - name: "Katie Cobb"
       #   role: "Directrice marketing (à venir)"
       #   bio: "Fondatrice d'Oxford Comma Strategy et architecte de la stratégie de catégorie d'Entrelacs ainsi que du discours de mise sur le marché aux États-Unis."
-        image: "/images/teamMembers/katieCobb.png"
+        # image: "/images/teamMembers/katieCobb.png"
       - name: "Cyril Marie"
         role: "Responsable de la marque et de la création, France (à venir)"
         bio: "Directeur créatif et entrepreneur depuis vingt-cinq ans ; président d'Inspire Studio, Annecy. Dirige l'identité de marque française, la direction créative et la stratégie presse."
