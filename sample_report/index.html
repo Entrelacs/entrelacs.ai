@@ -1,0 +1,50 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+
+<head>
+    {% capture meta_title %}{% t sample_report.meta.title %}{% endcapture %}
+    {% capture meta_description %}{% t sample_report.meta.description %}{% endcapture %}
+    {%- include head.html meta_title=meta_title meta_description=meta_description -%}
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    {%- include navBar.html -%}
+    {% assign report = site.translations[site.lang].sample_report %}
+    <main class="sample-report-page">
+        <section class="sample-report-section">
+            <div class="sample-report-header">
+                <h1>{% t sample_report.title %}</h1>
+            </div>
+
+            <div class="sample-report-shell">
+                <div class="sample-report-toolbar">
+                    <a href="./Entrelacs.pdf" class="sample-report-download">{% t sample_report.download %}</a>
+                </div>
+
+                <p class="sample-report-intro">{% t sample_report.intro %}</p>
+
+                <div class="sample-report-stage">
+                    <article class="report-preview" id="report-preview" aria-label="{% t sample_report.preview_aria %}">
+                        <header class="report-preview__header">
+                            <div class="report-preview__brand" aria-hidden="true">
+                                {% include logo.html %}
+                            </div>
+                            <div class="report-preview__heading">
+                            </div>
+                        </header>
+                        <section id="pageContent"></section>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    {%- include footer.html -%}
+    <script src="dist/assets/chat-embed.js" defer></script>
+    <link rel="stylesheet" href="dist/assets/chat-embed.css">
+</body>
+
+</html>
