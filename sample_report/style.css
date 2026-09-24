@@ -109,3 +109,12 @@
 .report-preview__brand svg{
   height: 40px !important;
 }
+
+
+@media (max-width: 650px) {
+	.sample-report-shell{
+		padding: 0;
+		width: 100%;
+		background: transparent;
+	}
+}
