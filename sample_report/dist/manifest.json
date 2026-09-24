@@ -1,0 +1,12 @@
+{
+  "src/chat-embed-main.jsx": {
+    "file": "assets/chat-embed.js",
+    "name": "chatEmbed",
+    "src": "src/chat-embed-main.jsx",
+    "isEntry": true
+  },
+  "style.css": {
+    "file": "assets/chat-embed.css",
+    "src": "style.css"
+  }
+}
